@@ -26,13 +26,16 @@ jobs:
         id: watch
         run: node scripts/watch-sources.js --report report.md
 
-      - name: Save new baselines and pending changes
+      - name: Refresh the CISA exploited vulnerabilities extract
+        run: node scripts/update-kev.js
+
+      - name: Save fingerprints and the vulnerabilities extract
         run: |
-          if ! git diff --quiet data/sources-state.json || [ -n "$(git ls-files --others --exclude-standard data/sources-state.json)" ]; then
+          git add data/sources-state.json data/kev.json
+          if ! git diff --cached --quiet; then
             git config user.name "github-actions[bot]"
             git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
-            git add data/sources-state.json
-            git commit -m "Source watch: record fingerprints"
+            git commit -m "Weekly refresh: source fingerprints and CISA KEV extract"
             git push
           fi
 

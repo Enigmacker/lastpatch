@@ -68,6 +68,21 @@ function tag(xml, name) {
   return m ? m[1].trim() : null;
 }
 
+// <service> entries of the description, with absolute control URLs.
+function parseServices(xml, location) {
+  const base = tag(xml, 'URLBase') || location;
+  const services = [];
+  for (const m of String(xml).matchAll(/<service>([\s\S]*?)<\/service>/gi)) {
+    const serviceType = tag(m[1], 'serviceType');
+    const control = tag(m[1], 'controlURL');
+    if (!serviceType || !control) continue;
+    let controlURL;
+    try { controlURL = new URL(control, base).href; } catch { continue; }
+    services.push({ serviceType, controlURL });
+  }
+  return services;
+}
+
 function parseDescription(xml, location) {
   return {
     ip: new URL(location).hostname,
@@ -76,6 +91,7 @@ function parseDescription(xml, location) {
     modelNumber: tag(xml, 'modelNumber'),
     modelDescription: tag(xml, 'modelDescription'),
     friendlyName: tag(xml, 'friendlyName'),
+    services: parseServices(xml, location),
     location,
   };
 }
@@ -95,4 +111,4 @@ async function discover({ timeoutMs = 3000 } = {}) {
   return [...devices.values()];
 }
 
-module.exports = { discover, parseDescription, isPrivateHost };
+module.exports = { discover, parseDescription, parseServices, isPrivateHost };

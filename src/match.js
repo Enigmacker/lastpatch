@@ -153,4 +153,6 @@ module.exports = {
   computeStatus,
   daysLeft,
   findDevice,
+  hasTokenRun,
+  stripSeries,
 };

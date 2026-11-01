@@ -6,6 +6,9 @@ const path = require('node:path');
 const { findDevice, computeStatus, daysLeft } = require('./match');
 const { collect, identify, label } = require('./discover');
 const { updateOui } = require('./oui');
+const kev = require('./kev');
+
+const exploitsOf = kev.indexer();
 
 const DATA_FILE = path.join(__dirname, '..', 'data', 'devices.json');
 
@@ -46,6 +49,24 @@ function parseArgs(argv) {
   return args;
 }
 
+// How much the date can be trusted, in plain words.
+function confidence(row, status) {
+  if (row.support_end && !row.end_is_minimum) return 'official end date';
+  if (row.support_end) return 'minimum guaranteed by the vendor (support may continue)';
+  if (status === 'expired') return 'vendor states support has ended (no date given)';
+  return 'no date published by the vendor';
+}
+
+function kevSummary(e) {
+  return {
+    cve: e.cveID,
+    name: e.vulnerabilityName,
+    description: e.shortDescription,
+    added: e.dateAdded,
+    ransomware: e.knownRansomwareCampaignUse === 'Known',
+  };
+}
+
 function describe(row, warn) {
   const status = computeStatus(row, new Date(), warn);
   const left = daysLeft(row);
@@ -59,8 +80,25 @@ function describe(row, warn) {
     end_is_minimum: !!row.end_is_minimum,
     days_left: left,
     region: row.region,
+    confidence: confidence(row, status),
     source_url: row.source_url,
+    exploited: exploitsOf(row).map(kevSummary),
   };
+}
+
+function printExploited(list, status) {
+  if (!list.length) return;
+  console.log(`    ACTIVELY EXPLOITED: ${list.length} vulnerability(ies) in the CISA KEV catalogue`);
+  for (const e of list) {
+    console.log(`      ${e.cve}${e.ransomware ? ' (used by ransomware)' : ''}: ${e.description}`);
+  }
+  if (status === 'expired') {
+    console.log('      This device gets no more fixes: replace it, or at least keep it off the Internet.');
+  } else if (status === 'unknown') {
+    console.log('      Check whether your device still receives updates (see the CISA note above); if not, replace it.');
+  } else {
+    console.log('      Install the latest firmware, and compare the hardware versions named above with the label under the device.');
+  }
 }
 
 function printResult(r) {
@@ -74,7 +112,9 @@ function printResult(r) {
     : '';
   console.log(`    status : ${LABELS[r.status]}${note}`);
   console.log(`    ends   : ${end}${r.days_left != null && r.days_left >= 0 ? ` (${r.days_left} days left)` : ''}`);
+  console.log(`    basis  : ${r.confidence}`);
   console.log(`    source : ${r.source_url} [${r.region}]`);
+  printExploited(r.exploited, r.status);
 }
 
 function lookup(devices, query, warn, region) {
@@ -86,6 +126,7 @@ function lookup(devices, query, warn, region) {
   return {
     query,
     found: matches.length > 0,
+    exploited_unlisted: matches.length ? [] : kev.forQuery(query).map(kevSummary),
     needs_hw_version:
       !hwVersion && matches.length > 1 && new Set(matches.map((m) => m.row.support_end)).size > 1,
     results: matches.map((m) => describe(m.row, warn)),
@@ -95,6 +136,9 @@ function lookup(devices, query, warn, region) {
 function printLookup(res) {
   if (!res.found) {
     console.log(`  "${res.query}": not in the dataset yet.`);
+    if (res.exploited_unlisted && res.exploited_unlisted.length) {
+      printExploited(res.exploited_unlisted, 'unknown');
+    }
     return;
   }
   res.results.forEach(printResult);
@@ -120,21 +164,40 @@ function scanReport(identified, warn, region) {
       needs_hw_version: !r.hwVersion && new Set(matches.map((m) => m.row.hw_version)).size > 1 &&
         new Set(matches.map((m) => m.row.support_end)).size > 1,
       results: matches.map((m) => describe(m.row, warn)),
+      exploited_unlisted: matches.length || !r.query ? [] : kev.forQuery(r.query).map(kevSummary),
+      exposed: (r.host.exposed || []).map((m) => ({
+        external_port: m.externalPort, protocol: m.protocol, internal_port: m.internalPort,
+        description: m.description, remote_host: m.remoteHost || null,
+      })),
     };
   });
 }
 
+function printExposure(list) {
+  if (!list.length) return;
+  console.log(`  REACHABLE FROM THE INTERNET (port forward opened on the router via UPnP):`);
+  for (const m of list) {
+    const desc = m.description ? ` "${m.description}"` : '';
+    console.log(`    ${m.protocol} external port ${m.external_port} -> port ${m.internal_port}${desc}`);
+  }
+}
+
 function printScan(report) {
   const known = report.filter((r) => r.results.length);
-  console.log(`${report.length} device(s) found on your network, ${known.length} identified in the dataset.\n`);
+  const exposed = report.filter((r) => r.exposed.length);
+  console.log(`${report.length} device(s) found on your network, ${known.length} identified in the dataset.`);
+  if (exposed.length) console.log(`${exposed.length} device(s) reachable from the Internet through router port forwards.`);
+  console.log('');
   for (const r of report) {
     const who = [r.mac_vendor, r.name].filter(Boolean).join(' - ') || 'unknown device';
     console.log(`${r.ip}  ${who}`);
+    printExposure(r.exposed);
     if (r.results.length) {
       console.log(`  identified via ${r.identified_via}`);
       printLookup({ query: r.query, found: true, needs_hw_version: r.needs_hw_version, results: r.results });
     } else if (r.query) {
       console.log(`  model not found in the dataset (seen as "${r.query}")`);
+      if (r.exploited_unlisted.length) printExploited(r.exploited_unlisted, 'unknown');
     } else {
       console.log('  model not announced: check it with "lastpatch check <vendor> <model>"');
     }

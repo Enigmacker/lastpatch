@@ -21,7 +21,20 @@ lastpatch list --expiring 180           # models whose support ends within 180 d
   AVM FRITZ!Box 7490
     status : NO LONGER SUPPORTED (guaranteed period is over; the vendor may still ship occasional fixes)
     ends   : 2025-10-01 or later
+    basis  : minimum guaranteed by the vendor (support may continue)
     source : https://fritz.com/pages/status-produktunterstuetzung [EU]
+```
+
+Each result says how far the date can be trusted (`basis`): an official end date, a minimum guaranteed by the vendor, a vendor statement without a date, or no date published.
+
+### Actively exploited vulnerabilities
+
+Results also list the vulnerabilities of the model that attackers are known to exploit, from the [CISA Known Exploited Vulnerabilities catalogue](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) (extract in `data/kev.json`, refreshed weekly). A device that is both unsupported and actively exploited should be replaced first. When CISA names the affected hardware versions, other versions of the model are not flagged. Models that are not in the dataset yet are still checked against the catalogue.
+
+```
+  "D-Link DIR-859": not in the dataset yet.
+    ACTIVELY EXPLOITED: 2 vulnerability(ies) in the CISA KEV catalogue
+      CVE-2019-17621: D-Link DIR-859 router contains a command execution vulnerability ...
 ```
 
 Options: `--json` for machine-readable output, `--warn <days>` to change the "ending soon" window (default 365), `--region <cc>` to prefer dates published for a given market. Exit code `2` means at least one device is past its end of support, so the tool can be used in scripts.
@@ -37,6 +50,7 @@ Options: `--json` for machine-readable output, `--warn <days>` to change the "en
 | UPnP / SSDP | manufacturer and model on routers, NAS, media devices |
 | mDNS / DNS-SD (Bonjour) | device name and model on NAS, printers, cameras, smart home |
 | Title and login prompt of the device's web admin page (HTTP, then HTTPS) | the model, on many routers and NAS |
+| Port forwards opened on the router through UPnP (read-only query) | the devices reachable from the Internet |
 
 A copy of the IEEE MAC registries ships with the tool; `lastpatch update-oui` optionally refreshes it from the IEEE website. Every probe contacts private addresses only, sends no credentials, and nothing leaves your network. Only scan networks you own or administer.
 
@@ -91,14 +105,14 @@ Add rows to a file in `raw/`, then run `npm run build:data`. Rows without a sour
 **Dataset**
 1. ~~Automatic source monitoring~~ (done in 0.4.0).
 2. Date history: keep every published version of a date, to spot a vendor shortening a support period (the UK PSTI regime forbids it).
-3. Confidence level per row: official date, minimum guarantee, or estimate from the last firmware release.
+3. ~~Confidence level per date~~ (done in 0.5.0). Next: estimate from the last firmware release when no date is published.
 4. More vendors and markets, prioritised by exposure to attacks and availability of official data; last firmware release date as a fallback signal for vendors that publish no end-of-support date.
 
 **Detection and risk**
 5. ~~Better LAN discovery~~ (done in 0.4.0). Next: optional expert mode using a locally installed Nmap (called, never bundled).
 6. Installed vs latest firmware: flag devices that are supported but not updated.
-7. Actively exploited vulnerabilities: cross-check devices with the CISA Known Exploited Vulnerabilities catalogue.
-8. Internet exposure: list the port forwards devices opened on the router through UPnP (read-only).
+7. ~~Actively exploited vulnerabilities (CISA KEV)~~ (done in 0.5.0).
+8. ~~Internet exposure through UPnP port forwards~~ (done in 0.5.0).
 
 **Products**
 9. Website with one page per model.
@@ -112,5 +126,6 @@ Add rows to a file in `raw/`, then run `npm run build:data`. Rows without a sour
 ## License
 
 - Code: MIT (see `LICENSE`).
+- Exploited vulnerabilities extract (`data/kev.json`): CISA KEV catalogue, a U.S. Government work in the public domain.
 - MAC vendor table (`data/oui.tsv`): public IEEE MA-L/MA-M/MA-S registries, as packaged by the `oui-data` npm package (BSD-2-Clause); regenerate with `npm run update:oui`.
 - Dataset (`data/devices.json`): Open Database License (ODbL) 1.0 (see `data/LICENSE`). You may reuse it, including commercially, but you must attribute LastPatch and share any database you derive from it under the same license.

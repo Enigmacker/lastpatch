@@ -7,10 +7,13 @@
 //   UPnP / SSDP                            -> manufacturer and model
 //   mDNS / DNS-SD                          -> device name and model (TXT)
 //   web admin page title and login realm   -> model, on many routers/NAS
+// plus the router's UPnP port forwards, to show which devices are reachable
+// from the Internet.
 
 const neighbors = require('./neighbors');
 const ssdp = require('./ssdp');
 const mdns = require('./mdns');
+const igd = require('./igd');
 const { probeHttp } = require('./httpprobe');
 const { vendorOf } = require('./oui');
 const { isPrivateHost } = require('./lan');
@@ -26,7 +29,7 @@ async function collect({ timeoutMs = 3000, sweep = true } = {}) {
 
   const hosts = new Map();
   const host = (ip) => {
-    if (!hosts.has(ip)) hosts.set(ip, { ip, mac: null, macVendor: null, upnp: [], mdns: null, http: null });
+    if (!hosts.has(ip)) hosts.set(ip, { ip, mac: null, macVendor: null, upnp: [], mdns: null, http: null, exposed: [] });
     return hosts.get(ip);
   };
   for (const [ip, mac] of table) {
@@ -38,6 +41,9 @@ async function collect({ timeoutMs = 3000, sweep = true } = {}) {
   for (const d of upnp) host(d.ip).upnp.push(d);
   for (const d of bonjour) if (isPrivateHost(d.ip)) host(d.ip).mdns = d;
   for (const ip of web) host(ip);
+  for (const m of await igd.portMappings(upnp)) {
+    if (m.enabled && isPrivateHost(m.internalClient)) host(m.internalClient).exposed.push(m);
+  }
 
   await Promise.all([...hosts.values()].map(async (h) => {
     if (web.has(h.ip) || h.upnp.length) h.http = await probeHttp(h.ip);

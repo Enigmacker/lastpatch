@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.0 - 2026-11-01
+
+- Actively exploited vulnerabilities: results list the CISA KEV entries that apply to the model (62 entries for the covered vendors, catalogue 2026.10.30), respecting the hardware versions CISA names; models missing from the dataset are checked too. Weekly refresh in the source watch workflow.
+- Internet exposure: the scan reads the router's UPnP port forwards (read-only) and shows which devices are reachable from the Internet.
+- Confidence: every result states its basis (official end date, minimum guarantee, vendor statement without date, no date).
+
 ## 0.4.1 - 2026-11-01
 
 - Scan: a copy of the IEEE MAC registries (MA-L, MA-M, MA-S) now ships with the tool, so manufacturers are recognised without any setup; longest prefix wins. `lastpatch update-oui` is optional.
