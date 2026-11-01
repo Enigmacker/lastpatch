@@ -39,6 +39,11 @@ for (const r of rows) {
   // 11 January and 1 November, and looks like a rolling minimum. Not used.
   if (row.vendor === 'Netgear' && row.region === 'AU' && /11\/01\/2029/.test(row.support_end_raw)) { dropped.push(row); continue; }
 
+  // Synology RT1900ac: the life-cycle policy ends SRM 1.2 in June 2023, but
+  // the product status page still lists security updates. Left out until
+  // Synology's two pages agree.
+  if (row.vendor === 'Synology' && /RT1900ac/i.test(row.model)) { dropped.push(row); continue; }
+
   // Tenda EOL Center: the bare date is the "End of service date" column.
   if (row.vendor === 'Tenda' && /^\d{4}-\d{2}-\d{2}$/.test(row.support_end_raw)) {
     row.support_end_raw = `End of service date: ${row.support_end_raw}`;

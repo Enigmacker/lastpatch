@@ -2,7 +2,7 @@
 
 ## 0.8.0 - 2026-11-01
 
-- Dataset 0.4.0: 3,642 rows, 2,767 devices, 28 brands (was 1,649 rows, 13 brands). New: eero, Blink, Amazon Echo and Fire TV, Google Nest and Google Wifi, Mercusys, Tenda, Zyxel, DrayTek, devolo, Xiaomi, Ubiquiti, eufy, Yale, Philips Hue, Wyze. Expanded: D-Link (US legacy list, security announcements), Linksys (per-market end-of-life page), Netgear (business EOL list), Ring (UK and US update pages).
+- Dataset 0.4.0: 3,882 rows from 31 brands (was 1,649 rows, 13 brands). New: Asustor, WD My Cloud, TerraMaster, eero, Blink, Amazon Echo and Fire TV, Google Nest and Google Wifi, Mercusys, Tenda, Zyxel, DrayTek, devolo, Xiaomi, Ubiquiti, eufy, Yale, Philips Hue, Wyze. Expanded: D-Link (US legacy list, security announcements), Linksys (per-market end-of-life page), Netgear (business EOL list), Ring (UK and US update pages), Synology (software life cycle policy: 152 rows instead of 20).
 - Exploited vulnerabilities: the CISA subset now covers the new brands (164 entries); 24 devices match.
 - Schema: region accepts vendor sales regions (EMEA, APAC, LATAM).
 - New `scripts/import-research.js` to import research batches with the cleanup rules decided on review.

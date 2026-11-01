@@ -58,7 +58,7 @@ Devices that announce nothing (phones with random MAC addresses, devices without
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.4.0, retrieved 2026-11-01: 3,642 rows covering 2,767 devices from 28 brands.
+`data/devices.json` (schema in `data/schema.json`), version 0.4.0, retrieved 2026-11-01: 3,882 rows from 31 brands.
 
 | Vendor | Rows | Source |
 |---|---|---|
@@ -79,7 +79,10 @@ Devices that announce nothing (phones with random MAC addresses, devices without
 | Ubiquiti | 29 | Ubiquiti legacy products list (no dates) |
 | EZVIZ | 23 | EZVIZ EOL product list (Europe) |
 | Reolink | 22 | UK PSTI statements |
-| Synology | 20 | DSM end-of-life announcements per model series |
+| Synology | 152 | Software life cycle policy (DSM, SRM, cameras, BeeStation); DSM 6.2 end-of-life announcement |
+| Asustor | 51 | ADM end-of-support notices and product status table |
+| WD (My Cloud) | 46 | WD product life cycle policy; My Cloud OS 3 end-of-support notice |
+| TerraMaster | 11 | TerraMaster end-of-support announcements |
 | Blink | 18 | Blink device software security updates page |
 | eero | 17 | eero software security updates page |
 | devolo | 15 | UK PSTI statements |
@@ -97,7 +100,7 @@ Each row records the date exactly as written (`support_end_raw`), whether it is 
 - **Some vendors publish no usable date.** Netgear UK statements only say support ends at "End of Service"; D-Link UK statements say "2 years" without a start date; Hikvision, Swann, Imou and Sonos publish no per-model dates at all. Xiaomi and Ubiquiti only list products that no longer get updates, without dates.
 - **Minimum guarantees run out.** Google, Amazon, ASUS and others promise updates "until at least" a date. Once it has passed, the device is shown as no longer supported, with a note that updates may still come.
 - **Tenda's "End of service date"** is often a day after its end of sale. Tenda's UK PSTI page promises security support for 3 years after end of life in the UK, without a per-model table, so UK units may be supported longer.
-- **Synology and QNAP publish few per-model dates.** Their status pages give categories ("limited updates") rather than end dates for current models, so recent NAS models are not listed yet.
+- **Recent NAS models have no dates yet.** Synology gives dates per DSM version, and models on DSM 7.2 or later have no announced end. QNAP's status page shows one model at a time and could not be read in bulk yet.
 - **ISP boxes are out of scope.** Routers supplied by internet providers (Livebox, Freebox, etc.) are updated by the provider.
 
 ## Keeping the dataset current
