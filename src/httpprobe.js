@@ -1,7 +1,9 @@
 'use strict';
 
-// Read the title of a device's web admin page: on many routers, cameras and
-// NAS it names the model. Read-only GET, LAN addresses only, small limits.
+// Read-only look at a device's web admin page. The page title and the HTTP
+// authentication realm (e.g. realm "TP-LINK Archer C7") often name the
+// model. GET only, LAN addresses only, small limits; nothing is submitted
+// and no password is tried.
 
 const http = require('node:http');
 const https = require('node:https');
@@ -33,26 +35,50 @@ function get(url, timeoutMs, maxBytes) {
 function extractTitle(html) {
   const m = String(html || '').match(/<title[^>]*>([\s\S]*?)<\/title>/i);
   if (!m) return null;
-  const t = m[1].replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+  const t = m[1].replace(/<[^>]+>/g, '')
+    .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&nbsp;/g, ' ')
+    .replace(/\s+/g, ' ').trim();
   return t || null;
 }
 
+function extractRealm(headers) {
+  const m = String((headers && headers['www-authenticate']) || '').match(/realm="([^"]{1,200})"/i);
+  return m ? m[1].trim() : null;
+}
+
 // Follows at most two redirects, and only to the same LAN host.
-async function probeHttp(ip, { timeoutMs = 2000, maxBytes = 128 * 1024 } = {}) {
-  if (!isPrivateHost(ip)) return null;
-  let url = `http://${ip}/`;
+async function fetchPage(startUrl, ip, timeoutMs, maxBytes) {
+  let url = startUrl;
   for (let i = 0; i < 3; i++) {
     const res = await get(url, timeoutMs, maxBytes);
     if (!res) return null;
     if (res.status >= 300 && res.status < 400 && res.headers.location) {
-      const next = new URL(res.headers.location, url);
-      if (next.hostname !== ip) return { title: null, server: res.headers.server || null };
+      let next;
+      try { next = new URL(res.headers.location, url); } catch { return res; }
+      if (next.hostname !== ip) return res;
       url = next.href;
       continue;
     }
-    return { title: extractTitle(res.body), server: res.headers.server || null };
+    return res;
   }
   return null;
 }
 
-module.exports = { probeHttp, extractTitle };
+// Tries HTTP, then HTTPS. Returns { title, realm, server } or null.
+async function probeHttp(ip, { timeoutMs = 2000, maxBytes = 128 * 1024 } = {}) {
+  if (!isPrivateHost(ip)) return null;
+  for (const scheme of ['http', 'https']) {
+    const res = await fetchPage(`${scheme}://${ip}/`, ip, timeoutMs, maxBytes);
+    if (!res) continue;
+    const hints = {
+      title: extractTitle(res.body),
+      realm: extractRealm(res.headers),
+      server: res.headers.server ? String(res.headers.server).slice(0, 200) : null,
+    };
+    if (hints.title || hints.realm) return hints;
+  }
+  return null;
+}
+
+module.exports = { probeHttp, extractTitle, extractRealm };

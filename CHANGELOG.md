@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.1 - 2026-11-01
+
+- Scan: a copy of the IEEE MAC registries (MA-L, MA-M, MA-S) now ships with the tool, so manufacturers are recognised without any setup; longest prefix wins. `lastpatch update-oui` is optional.
+- Scan: the admin page probe also reads the HTTP login prompt (realm), which often names the exact model, and falls back to HTTPS; the sweep also checks port 443.
+
 ## 0.4.0 - 2026-11-01
 
 - Scan: new discovery combining a light subnet sweep and the neighbour table, MAC vendor lookup (IEEE registry, `lastpatch update-oui`), UPnP, mDNS/DNS-SD and the web admin page title. Lists every device, including those that announce nothing. No admin rights, no dependency.

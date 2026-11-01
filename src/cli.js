@@ -5,7 +5,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { findDevice, computeStatus, daysLeft } = require('./match');
 const { collect, identify, label } = require('./discover');
-const { updateOui, loadOui } = require('./oui');
+const { updateOui } = require('./oui');
 
 const DATA_FILE = path.join(__dirname, '..', 'data', 'devices.json');
 
@@ -14,7 +14,7 @@ const USAGE = `lastpatch - is your device still getting security updates?
 Usage:
   lastpatch check "<vendor> <model> [hw version]"   look up one device
   lastpatch scan [--timeout <ms>] [--no-sweep]       find and check the devices on your LAN
-  lastpatch update-oui                               download the IEEE MAC vendor registry (once)
+  lastpatch update-oui                               refresh the IEEE MAC vendor registry (optional)
   lastpatch list [--vendor <name>] [--expiring <days>] [--expired]
 Options:
   --json        machine-readable output
@@ -155,9 +155,6 @@ async function main() {
     if (args.json) console.log(JSON.stringify(res, null, 2));
     else printLookup(res);
   } else if (cmd === 'scan') {
-    if (!loadOui()) {
-      console.error('Tip: run "lastpatch update-oui" once to identify manufacturers from MAC addresses.\n');
-    }
     const hosts = await collect({ timeoutMs: Number(args.timeout) || 3000, sweep: !args['no-sweep'] });
     const report = scanReport(identify(hosts, devices), warn, args.region);
     anyExpired = report.some((r) => r.results.some((x) => x.status === 'expired'));

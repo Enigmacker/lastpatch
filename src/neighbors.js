@@ -2,7 +2,7 @@
 
 // List the devices present on the local network without admin rights:
 // 1. a light TCP sweep of the local subnet(s) fills the system neighbour
-//    (ARP) table and tells us which hosts answer on HTTP;
+//    (ARP) table and tells us which hosts answer on HTTP(S);
 // 2. the neighbour table gives each host's MAC address.
 
 const net = require('node:net');
@@ -57,7 +57,7 @@ function probePort(ip, port, timeoutMs) {
   });
 }
 
-// Connect to port 80 on every host of the local subnets. Returns the hosts
+// Connect to ports 80 and 443 on every host of the local subnets. Returns the hosts
 // with an open web server. Side effect wanted: the OS learns every MAC.
 async function sweep({ timeoutMs = 400, concurrency = 64, subnets = localSubnets() } = {}) {
   const queue = subnets.flatMap(hostsOf);
@@ -65,7 +65,8 @@ async function sweep({ timeoutMs = 400, concurrency = 64, subnets = localSubnets
   async function worker() {
     while (queue.length) {
       const ip = queue.shift();
-      if (await probePort(ip, 80, timeoutMs)) web.add(ip);
+      const [h80, h443] = await Promise.all([probePort(ip, 80, timeoutMs), probePort(ip, 443, timeoutMs)]);
+      if (h80 || h443) web.add(ip);
     }
   }
   await Promise.all(Array.from({ length: concurrency }, worker));

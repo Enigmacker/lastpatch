@@ -6,8 +6,8 @@
 const test = require('node:test');
 const assert = require('node:assert');
 const { parseNeighbors, normalizeMac, isRandomMac, hostsOf, localSubnets } = require('../src/neighbors');
-const { parseOui, vendorOf } = require('../src/oui');
-const { extractTitle } = require('../src/httpprobe');
+const { parseOui, parseTsv, vendorOf, loadOui } = require('../src/oui');
+const { extractTitle, extractRealm } = require('../src/httpprobe');
 const mdns = require('../src/mdns');
 const { identify, candidates } = require('../src/discover');
 const { canonicalVendor } = require('../src/match');
@@ -69,6 +69,15 @@ MA-L,3CA62F,AVM Audiovisuelles Marketing und Computersysteme GmbH,Alt-Moabit 95 
   assert.strictEqual(vendorOf('00:11:22:33:44:55', table), null);
 });
 
+test('bundled registry: longest prefix wins', () => {
+  const t = parseTsv('001BC5\tIEEE Registration Authority\n001BC5001\tSmall Vendor Ltd\nnot a line\n');
+  assert.strictEqual(vendorOf('00:1b:c5:00:12:34', t), 'Small Vendor Ltd');
+  assert.strictEqual(vendorOf('00:1b:c5:99:12:34', t), 'IEEE Registration Authority');
+  const shipped = loadOui();
+  assert.ok(shipped && shipped.size > 40000);
+  assert.strictEqual(canonicalVendor(vendorOf('50:c7:bf:00:00:01', shipped)), 'tp-link');
+});
+
 test('vendor names match whole words only', () => {
   assert.strictEqual(canonicalVendor('Acme Engineering Ltd'), null); // not "Ring"
   assert.strictEqual(canonicalVendor('Ring LLC'), 'ring');
@@ -76,9 +85,21 @@ test('vendor names match whole words only', () => {
   assert.strictEqual(canonicalVendor('FRITZ!Box 7590'), 'avm');
 });
 
+test('admin login realm', () => {
+  assert.strictEqual(extractRealm({ 'www-authenticate': 'Basic realm="TP-LINK Archer C7"' }), 'TP-LINK Archer C7');
+  assert.strictEqual(extractRealm({}), null);
+});
+
+test('identify: login realm', () => {
+  const rows = [{ vendor: 'TP-Link', model: 'Archer C7', hw_version: null, support_end: '2020-01-01', support_end_raw: 'x', region: 'UK' }];
+  const host = { ip: '192.168.0.1', mac: null, macVendor: null, upnp: [], mdns: null, http: { title: 'Login', realm: 'TP-LINK Archer C7', server: null } };
+  const [r] = identify([host], rows);
+  assert.strictEqual(r.via, 'admin login prompt');
+});
+
 test('admin page title', () => {
   assert.strictEqual(extractTitle('<html><head><title>\n  Archer AX55 \n</title></head></html>'), 'Archer AX55');
-  assert.strictEqual(extractTitle('<TITLE>Synology&amp;DiskStation</TITLE>'), 'Synology&DiskStation');
+  assert.strictEqual(extractTitle('<TITLE>Synology&amp;DiskStation&nbsp;&quot;x&quot;</TITLE>'), 'Synology&DiskStation "x"');
   assert.strictEqual(extractTitle('<html>no title</html>'), null);
 });
 

@@ -1,13 +1,14 @@
 {
   "name": "lastpatch",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Is your router, camera or NAS still getting security updates? Open dataset of official end-of-support dates, plus a LAN scanner.",
   "bin": { "lastpatch": "src/cli.js" },
   "main": "src/match.js",
   "files": ["src", "data"],
   "scripts": {
     "test": "node --test test/*.test.js",
-    "build:data": "node scripts/build.js"
+    "build:data": "node scripts/build.js",
+    "update:oui": "npm install --no-save oui-data && node scripts/update-oui.js"
   },
   "engines": { "node": ">=20" },
   "keywords": ["end-of-life", "eol", "router", "iot", "security-updates", "psti", "upnp"],

@@ -6,7 +6,7 @@
 //   MAC vendor (IEEE registry)             -> manufacturer
 //   UPnP / SSDP                            -> manufacturer and model
 //   mDNS / DNS-SD                          -> device name and model (TXT)
-//   web admin page title                   -> model, on many routers/NAS
+//   web admin page title and login realm   -> model, on many routers/NAS
 
 const neighbors = require('./neighbors');
 const ssdp = require('./ssdp');
@@ -55,6 +55,7 @@ function candidates(h) {
     if (q) out.push({ via: 'UPnP', query: q });
   }
   if (h.mdns && h.mdns.model) out.push({ via: 'mDNS', query: `${vendorHint} ${h.mdns.model}`.trim() });
+  if (h.http && h.http.realm) out.push({ via: 'admin login prompt', query: `${vendorHint} ${h.http.realm}`.trim() });
   if (h.http && h.http.title) out.push({ via: 'web page title', query: `${vendorHint} ${h.http.title}`.trim() });
   if (h.mdns) for (const n of h.mdns.names) out.push({ via: 'mDNS name', query: `${vendorHint} ${n}`.trim() });
   return out;

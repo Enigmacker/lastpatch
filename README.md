@@ -33,12 +33,12 @@ Options: `--json` for machine-readable output, `--warn <days>` to change the "en
 | Step | What it finds |
 |---|---|
 | Light sweep of your local subnet (TCP port 80, /22 at most), then the system neighbour table | every device present and its MAC address |
-| MAC vendor lookup in the IEEE registry | the manufacturer, even when the device announces nothing |
+| MAC vendor lookup in the IEEE registries (copy included) | the manufacturer, even when the device announces nothing |
 | UPnP / SSDP | manufacturer and model on routers, NAS, media devices |
 | mDNS / DNS-SD (Bonjour) | device name and model on NAS, printers, cameras, smart home |
-| Title of the device's web admin page | the model, on many routers and NAS |
+| Title and login prompt of the device's web admin page (HTTP, then HTTPS) | the model, on many routers and NAS |
 
-Run `lastpatch update-oui` once to download the IEEE registry (it is cached locally, not bundled). Every probe contacts private addresses only, sends no credentials, and nothing leaves your network. Only scan networks you own or administer.
+A copy of the IEEE MAC registries ships with the tool; `lastpatch update-oui` optionally refreshes it from the IEEE website. Every probe contacts private addresses only, sends no credentials, and nothing leaves your network. Only scan networks you own or administer.
 
 Devices that announce nothing (phones with random MAC addresses, devices without a web page) are listed with "model not announced": check them with `lastpatch check`.
 
@@ -112,4 +112,5 @@ Add rows to a file in `raw/`, then run `npm run build:data`. Rows without a sour
 ## License
 
 - Code: MIT (see `LICENSE`).
+- MAC vendor table (`data/oui.tsv`): public IEEE MA-L/MA-M/MA-S registries, as packaged by the `oui-data` npm package (BSD-2-Clause); regenerate with `npm run update:oui`.
 - Dataset (`data/devices.json`): Open Database License (ODbL) 1.0 (see `data/LICENSE`). You may reuse it, including commercially, but you must attribute LastPatch and share any database you derive from it under the same license.
