@@ -67,8 +67,9 @@ Add rows to a file in `raw/`, then run `npm run build:data`. Rows without a sour
 ## Roadmap
 
 1. Full extraction of the TP-Link PSTI document (many more models than currently listed).
-2. Installed vs latest firmware: flag devices that are supported but not updated, and use the last firmware release date as a signal for vendors that publish no end-of-support date.
-3. Website with one page per model, then desktop apps for macOS, Windows and Linux.
+2. Better LAN discovery without extra tools or admin rights: list every device from the system neighbour table, identify the vendor from the MAC address (IEEE registry), read the model from the device's admin page title and from mDNS/DNS-SD announcements, alongside UPnP. Optional expert mode using a locally installed Nmap (called, never bundled).
+3. Installed vs latest firmware: flag devices that are supported but not updated, and use the last firmware release date as a signal for vendors that publish no end-of-support date.
+4. Website with one page per model, then desktop apps for macOS, Windows and Linux.
 
 ## License
 
