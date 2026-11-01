@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.1 - 2026-11-01
+
+- Website design: ink header and footer, a home page hero showing where the model and hardware version are printed on the device label, status bars for the whole dataset, each brand and each device type, a support timeline per hardware version on device pages, dark mode.
+- Website SEO: titles phrased as people search ("<model> end of life: security updates until <date>"), one page per device type (/routers/, /security-cameras/, ...), structured data for device pages (WebPage about a Product) and lists (ItemList), sitemap with last-modified dates and priorities, a richer footer with links to every type and the main brands.
+
 ## 0.6.0 - 2026-11-01
 
 - Website (`site/`): Astro static site with one page per model giving the support end date, the source document, the dates per hardware version, the exploited vulnerabilities and what to do; pages per brand, devices ending within a year, devices no longer supported, methodology and privacy. Search in the browser, no cookies, strict Content Security Policy, structured data (FAQ, breadcrumbs, dataset).
