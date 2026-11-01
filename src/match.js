@@ -17,13 +17,36 @@ const VENDOR_ALIASES = {
   arlo: ['arlo'],
   netatmo: ['netatmo'],
   ring: ['ring'],
-  ubiquiti: ['ubiquiti', 'unifi', 'ubnt'],
+  ubiquiti: ['ubiquiti', 'unifi', 'ubnt', 'amplifi'],
+  // Amazon brands first, so "Amazon eero Pro 6" is read as eero.
+  eero: ['eero'],
+  blink: ['blink', 'immedia'],
+  amazon: ['amazon', 'echo', 'fire tv'],
+  google: ['google', 'nest', 'chromecast'],
+  mercusys: ['mercusys'],
+  tenda: ['tenda'],
+  zyxel: ['zyxel'],
+  draytek: ['draytek', 'vigor'],
+  devolo: ['devolo'],
+  huawei: ['huawei'],
+  xiaomi: ['xiaomi', 'mi router'],
+  wd: ['wd', 'western digital', 'my cloud', 'mycloud'],
+  asustor: ['asustor'],
+  terramaster: ['terramaster', 'terra master'],
+  eufy: ['eufy', 'anker'],
+  wyze: ['wyze'],
+  'philips hue': ['philips hue', 'hue bridge', 'signify', 'philips lighting'],
+  hikvision: ['hikvision', 'hik-connect', 'hikconnect'],
+  imou: ['imou', 'dahua'],
+  swann: ['swann'],
+  yale: ['yale'],
+  sonos: ['sonos'],
 };
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
 // Marketing series names that devices often omit when they report their model.
-const SERIES = /^(nighthawk|orbi|eagle pro ai|zenwifi|velop|deco|tapo|archer)\s+/i;
+const SERIES = /^(nighthawk|orbi|eagle pro ai|zenwifi|velop|deco|tapo|archer|vigor|eufycam|my cloud)\s+/i;
 
 function tokens(s) {
   return String(s || '').toLowerCase().replace(/fritz!\s*/g, 'fritz').split(/[^a-z0-9]+/).filter(Boolean);
@@ -59,6 +82,22 @@ function canonicalVendor(text) {
     if (aliases.some(word)) return vendor;
   }
   return null;
+}
+
+// Brands made by the same company often share network card makers (MAC
+// prefixes): a Ring doorbell shows an Amazon MAC, a Mercusys router a TP-Link one.
+const FAMILIES = [
+  ['amazon', 'ring', 'blink', 'eero'],
+  ['google'],
+  ['tp-link', 'mercusys'],
+  ['hikvision', 'ezviz'],
+  ['imou'],
+];
+
+/** True when two canonical vendors may be the same maker. */
+function sameMaker(a, b) {
+  if (!a || !b || a === b) return true;
+  return FAMILIES.some((f) => f.includes(a) && f.includes(b));
 }
 
 // Extract a hardware version like "V3", "v1.2", "Rev. B" from free text.
@@ -149,6 +188,7 @@ function findDevice(devices, query) {
 module.exports = {
   normalize,
   canonicalVendor,
+  sameMaker,
   extractHwVersion,
   computeStatus,
   daysLeft,

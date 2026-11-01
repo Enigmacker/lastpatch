@@ -96,3 +96,12 @@ test('only LAN addresses are fetched', () => {
   assert.ok(!isPrivateHost('172.32.0.1'));
   assert.ok(!isPrivateHost('8.8.8.8'));
 });
+
+test('brands of one company are accepted against each other\'s MAC vendor', () => {
+  const { sameMaker, canonicalVendor } = require('../src/match');
+  assert.equal(canonicalVendor('Amazon eero Pro 6'), 'eero');
+  assert.equal(canonicalVendor('Amazon Technologies Inc.'), 'amazon');
+  assert.ok(sameMaker('amazon', 'ring'));
+  assert.ok(sameMaker('tp-link', 'mercusys'));
+  assert.ok(!sameMaker('netgear', 'tp-link'));
+});

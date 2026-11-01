@@ -17,7 +17,7 @@ const igd = require('./igd');
 const { probeHttp } = require('./httpprobe');
 const { vendorOf } = require('./oui');
 const { isPrivateHost } = require('./lan');
-const { findDevice, canonicalVendor } = require('./match');
+const { findDevice, canonicalVendor, sameMaker } = require('./match');
 
 async function collect({ timeoutMs = 3000, sweep = true } = {}) {
   const [web, upnp, bonjour] = await Promise.all([
@@ -75,7 +75,7 @@ function identify(hosts, devices) {
       const res = findDevice(devices, c.query);
       // A match must agree with the MAC vendor when we know it.
       const macV = canonicalVendor(h.macVendor);
-      const ok = res.matches.length && (!macV || canonicalVendor(res.matches[0].row.vendor) === macV);
+      const ok = res.matches.length && (!macV || sameMaker(canonicalVendor(res.matches[0].row.vendor), macV));
       if (ok) return { host: h, via: c.via, query: c.query, matches: res.matches, hwVersion: res.hwVersion };
     }
     return { host: h, via: null, query: tried[0] ? tried[0].query : null, matches: [], hwVersion: null };
