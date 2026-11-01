@@ -2,31 +2,113 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "lastpatch device support dataset",
   "type": "object",
-  "required": ["version", "generated", "devices"],
+  "required": [
+    "version",
+    "generated",
+    "devices"
+  ],
   "properties": {
-    "version": { "type": "string" },
-    "generated": { "type": "string", "format": "date" },
-    "license": { "type": "string" },
+    "version": {
+      "type": "string"
+    },
+    "generated": {
+      "type": "string",
+      "format": "date"
+    },
+    "license": {
+      "type": "string"
+    },
     "devices": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["vendor", "model", "category", "support_end", "support_end_raw", "source_url", "status_source", "retrieved"],
+        "required": [
+          "vendor",
+          "model",
+          "category",
+          "support_end",
+          "support_end_raw",
+          "source_url",
+          "status_source",
+          "retrieved"
+        ],
         "additionalProperties": false,
         "properties": {
-          "vendor": { "type": "string" },
-          "model": { "type": "string" },
-          "hw_version": { "type": ["string", "null"], "description": "Hardware revision(s) the date applies to, e.g. 'V3, V3.2'. Null when the source does not distinguish." },
-          "category": { "enum": ["router", "mesh", "repeater", "modem", "camera", "doorbell", "nas", "switch", "iot", "other"] },
-          "support_end": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$", "description": "Last day of security support (ISO date). Null when the source gives no date." },
-          "support_end_raw": { "type": "string", "description": "The date exactly as written in the source." },
-          "end_is_minimum": { "type": "boolean", "description": "True when the source says 'or later' / 'at least'." },
-          "status_source": { "enum": ["psti", "vendor_eol_page", "vendor_lifecycle_page"] },
-          "source_url": { "type": "string", "format": "uri" },
-          "source_title": { "type": ["string", "null"] },
-          "source_date": { "type": ["string", "null"] },
-          "region": { "type": "string", "pattern": "^(global|EU|[A-Z]{2})$", "description": "Market the source applies to: ISO 3166 country code, EU, or global. Dates can differ between regions for the same model." },
-          "retrieved": { "type": "string", "format": "date" }
+          "vendor": {
+            "type": "string"
+          },
+          "model": {
+            "type": "string"
+          },
+          "hw_version": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Hardware revision(s) the date applies to, e.g. 'V3, V3.2'. Null when the source does not distinguish."
+          },
+          "category": {
+            "enum": [
+              "router",
+              "mesh",
+              "repeater",
+              "modem",
+              "camera",
+              "doorbell",
+              "nas",
+              "switch",
+              "iot",
+              "other"
+            ]
+          },
+          "support_end": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "description": "Last day of security support (ISO date). Null when the source gives no date."
+          },
+          "support_end_raw": {
+            "type": "string",
+            "description": "The date exactly as written in the source."
+          },
+          "end_is_minimum": {
+            "type": "boolean",
+            "description": "True when the source says 'or later' / 'at least'."
+          },
+          "status_source": {
+            "enum": [
+              "psti",
+              "vendor_eol_page",
+              "vendor_lifecycle_page"
+            ]
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "source_title": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "region": {
+            "type": "string",
+            "pattern": "^(global|EU|EMEA|APAC|LATAM|[A-Z]{2})$",
+            "description": "Market the source applies to: ISO 3166 country code, EU, a vendor sales region (EMEA, APAC, LATAM) or global. Dates can differ between regions for the same model."
+          },
+          "retrieved": {
+            "type": "string",
+            "format": "date"
+          }
         }
       }
     }

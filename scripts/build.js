@@ -59,7 +59,7 @@ for (const file of fs.readdirSync(RAW_DIR).filter((f) => f.endsWith('.json')).so
       source_url: r.source_url.trim(),
       source_title: r.source_title || null,
       source_date: r.source_date || null,
-      region: /^(global|EU|[A-Z]{2})$/.test(r.region || '') ? r.region : 'global',
+      region: /^(global|EU|EMEA|APAC|LATAM|[A-Z]{2})$/.test(r.region || '') ? r.region : 'global',
       retrieved: RETRIEVED,
     };
     const key = [row.vendor, row.model, row.hw_version, row.region].join('|').toLowerCase();
@@ -84,7 +84,7 @@ const devices = [...seen.values()].sort((a, b) =>
 );
 
 fs.writeFileSync(OUT, JSON.stringify({
-  version: '0.3.0',
+  version: '0.4.0',
   generated: RETRIEVED,
   license: 'ODbL-1.0',
   devices,

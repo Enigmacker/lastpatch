@@ -58,23 +58,34 @@ Devices that announce nothing (phones with random MAC addresses, devices without
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.3.0, retrieved 2026-11-01: 1,649 devices from 13 vendors.
+`data/devices.json` (schema in `data/schema.json`), version 0.4.0, retrieved 2026-11-01: 3,642 rows covering 2,767 devices from 28 brands.
 
-| Vendor | Rows | Devices | Source |
-|---|---|---|---|
-| TP-Link | 1,354 | routers, mesh, cameras, smart home, switches, access points | UK PSTI statement of compliance (full document) |
-| ASUS | 85 | routers, mesh | UK PSTI support-period list; Singapore lifecycle list |
-| AVM (FRITZ!) | 62 | routers, repeaters | FRITZ! product support status page |
-| Ring | 25 | doorbells, cameras | UK PSTI statements; US lifecycle page |
-| EZVIZ | 23 | cameras | EZVIZ EOL product list (Europe) |
-| Reolink | 22 | cameras | UK PSTI statements |
-| Synology | 20 | NAS | DSM end-of-life announcements per model series |
-| Linksys | 19 | routers, mesh | Linksys end-of-life article |
-| D-Link | 14 | routers, mesh | US end-of-support notices; UK PSTI statements |
-| Arlo | 10 | cameras, doorbells | Arlo end-of-life page; UK PSTI statements |
-| QNAP | 6 | NAS | QNAP support status; UK PSTI statements |
-| Netgear | 5 | routers, mesh | UK PSTI statements (no dates published) |
-| Netatmo | 4 | cameras, doorbells | UK PSTI statements |
+| Vendor | Rows | Source |
+|---|---|---|
+| TP-Link | 1,354 | UK PSTI statement of compliance (full document) |
+| D-Link | 473 | US legacy product list; security announcements; US end-of-support notices; UK PSTI statements |
+| Zyxel | 368 | Service-provider end-of-life list; UK PSTI page; archived EOL list; end-of-life page |
+| Linksys | 287 | Linksys product end-of-life page (per market); end-of-life article |
+| Netgear | 256 | NETGEAR for Business end-of-life list (home and small-office models); UK PSTI statements |
+| Tenda | 136 | Tenda EOL Center ("End of service date") |
+| Mercusys | 127 | UK PSTI statement of compliance (full document) |
+| ASUS | 85 | UK PSTI support-period list; Singapore lifecycle list |
+| Ring | 85 | Ring device software security updates pages (UK, US); UK PSTI statements |
+| DrayTek | 84 | DrayTek UK product lifecycle and end-of-life pages |
+| Amazon (Echo, Fire TV) | 73 | Amazon device software security updates pages (UK, US) |
+| AVM (FRITZ!) | 62 | FRITZ! product support status page |
+| Google (Nest, Google Wifi) | 40 | Google guaranteed software update periods page |
+| Xiaomi | 39 | Xiaomi end-of-life product list (no dates) |
+| Ubiquiti | 29 | Ubiquiti legacy products list (no dates) |
+| EZVIZ | 23 | EZVIZ EOL product list (Europe) |
+| Reolink | 22 | UK PSTI statements |
+| Synology | 20 | DSM end-of-life announcements per model series |
+| Blink | 18 | Blink device software security updates page |
+| eero | 17 | eero software security updates page |
+| devolo | 15 | UK PSTI statements |
+| Arlo | 10 | Arlo end-of-life page; UK PSTI statements |
+| QNAP | 6 | QNAP support status; UK PSTI statements |
+| eufy, Netatmo, Yale, Philips Hue, Wyze | 13 | UK PSTI statements; end-of-support pages |
 
 Each row records the date exactly as written (`support_end_raw`), whether it is a minimum guarantee (`end_is_minimum`, for "or later" / "at least"), the hardware version it applies to, the market (`region`) and the source URL.
 
@@ -83,7 +94,9 @@ Each row records the date exactly as written (`support_end_raw`), whether it is 
 - **Hardware versions matter.** The same model can have different dates per hardware revision (e.g. Tapo C200 V3 vs V5). Check the label under the device.
 - **Sources sometimes contradict themselves.** When one document gives two dates for the same model and hardware version, the earlier date is kept and the build reports the conflict.
 - **Dates differ by market.** ASUS publishes different dates in the UK and Singapore for the same model. Rows are never merged across regions.
-- **Some vendors publish no usable date.** Netgear UK statements only say support ends at "End of Service"; D-Link UK statements say "2 years" without a start date. These rows are `unknown`.
+- **Some vendors publish no usable date.** Netgear UK statements only say support ends at "End of Service"; D-Link UK statements say "2 years" without a start date; Hikvision, Swann, Imou and Sonos publish no per-model dates at all. Xiaomi and Ubiquiti only list products that no longer get updates, without dates.
+- **Minimum guarantees run out.** Google, Amazon, ASUS and others promise updates "until at least" a date. Once it has passed, the device is shown as no longer supported, with a note that updates may still come.
+- **Tenda's "End of service date"** is often a day after its end of sale. Tenda's UK PSTI page promises security support for 3 years after end of life in the UK, without a per-model table, so UK units may be supported longer.
 - **Synology and QNAP publish few per-model dates.** Their status pages give categories ("limited updates") rather than end dates for current models, so recent NAS models are not listed yet.
 - **ISP boxes are out of scope.** Routers supplied by internet providers (Livebox, Freebox, etc.) are updated by the provider.
 
@@ -115,7 +128,7 @@ Deployment (Dokploy or any Docker host) uses the `Dockerfile` at the repository 
 
 ## Contributing data
 
-Add rows to a file in `raw/`, then run `npm run build:data`. Rows without a source URL or with a malformed date are rejected. Only official manufacturer documents are accepted.
+Add rows to a file in `raw/`, then run `npm run build:data`. Research batches are imported with `node scripts/import-research.js <batch.json> raw/<name>.json`, which applies the cleanup rules decided on review (canonical source addresses, one model per Linksys market SKU, ambiguous dates left out). Rows without a source URL or with a malformed date are rejected. Only official manufacturer documents are accepted.
 
 ## Roadmap
 
