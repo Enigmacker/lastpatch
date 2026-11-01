@@ -28,7 +28,19 @@ Options: `--json` for machine-readable output, `--warn <days>` to change the "en
 
 ## What the scan does
 
-`lastpatch scan` sends standard SSDP/UPnP discovery requests on your local network and reads the description each device advertises (manufacturer, model). It is read-only, contacts private addresses only, and sends nothing outside your network. Devices with UPnP disabled do not answer: check those with `lastpatch check`.
+`lastpatch scan` combines five read-only techniques, needs no admin rights and installs nothing:
+
+| Step | What it finds |
+|---|---|
+| Light sweep of your local subnet (TCP port 80, /22 at most), then the system neighbour table | every device present and its MAC address |
+| MAC vendor lookup in the IEEE registry | the manufacturer, even when the device announces nothing |
+| UPnP / SSDP | manufacturer and model on routers, NAS, media devices |
+| mDNS / DNS-SD (Bonjour) | device name and model on NAS, printers, cameras, smart home |
+| Title of the device's web admin page | the model, on many routers and NAS |
+
+Run `lastpatch update-oui` once to download the IEEE registry (it is cached locally, not bundled). Every probe contacts private addresses only, sends no credentials, and nothing leaves your network. Only scan networks you own or administer.
+
+Devices that announce nothing (phones with random MAC addresses, devices without a web page) are listed with "model not announced": check them with `lastpatch check`.
 
 ## The dataset
 
@@ -61,15 +73,41 @@ Each row records the date exactly as written (`support_end_raw`), whether it is 
 - **Synology and QNAP publish few per-model dates.** Their status pages give categories ("limited updates") rather than end dates for current models, so recent NAS models are not listed yet.
 - **ISP boxes are out of scope.** Routers supplied by internet providers (Livebox, Freebox, etc.) are updated by the provider.
 
+## Keeping the dataset current
+
+A weekly GitHub Action (`.github/workflows/watch-sources.yml`) downloads every official source the dataset cites, plus the index pages that link to new documents (`data/source-indexes.json`), and compares fingerprints with `data/sources-state.json`:
+
+- PDF files: hash of the bytes; web pages: hash of the visible text, so layout changes do not raise alerts;
+- index pages: new or removed document links.
+
+When something changed, it opens (or comments on) an issue labelled `source-watch`. After reviewing and updating the rows, run `node scripts/watch-sources.js --update` to accept the new fingerprints. Each source keeps a history of its fingerprints.
+
 ## Contributing data
 
 Add rows to a file in `raw/`, then run `npm run build:data`. Rows without a source URL or with a malformed date are rejected. Only official manufacturer documents are accepted.
 
 ## Roadmap
 
-1. Better LAN discovery without extra tools or admin rights: list every device from the system neighbour table, identify the vendor from the MAC address (IEEE registry), read the model from the device's admin page title and from mDNS/DNS-SD announcements, alongside UPnP. Optional expert mode using a locally installed Nmap (called, never bundled).
-2. Installed vs latest firmware: flag devices that are supported but not updated, and use the last firmware release date as a signal for vendors that publish no end-of-support date.
-3. Website with one page per model, then desktop apps for macOS, Windows and Linux.
+**Dataset**
+1. ~~Automatic source monitoring~~ (done in 0.4.0).
+2. Date history: keep every published version of a date, to spot a vendor shortening a support period (the UK PSTI regime forbids it).
+3. Confidence level per row: official date, minimum guarantee, or estimate from the last firmware release.
+4. More vendors and markets, prioritised by exposure to attacks and availability of official data; last firmware release date as a fallback signal for vendors that publish no end-of-support date.
+
+**Detection and risk**
+5. ~~Better LAN discovery~~ (done in 0.4.0). Next: optional expert mode using a locally installed Nmap (called, never bundled).
+6. Installed vs latest firmware: flag devices that are supported but not updated.
+7. Actively exploited vulnerabilities: cross-check devices with the CISA Known Exploited Vulnerabilities catalogue.
+8. Internet exposure: list the port forwards devices opened on the router through UPnP (read-only).
+
+**Products**
+9. Website with one page per model.
+10. Desktop apps for macOS, Windows and Linux, with alerts before a device reaches end of support (low-cost subscription including dataset updates).
+11. Browser extension showing the support end date on retailer product pages, before purchase.
+12. Replacement advice: models ranked by remaining support period (any affiliate links disclosed, ranking never based on commission).
+13. Paid API for retailers and marketplaces that must disclose support periods under the EU Cyber Resilience Act (from December 2027).
+14. PDF report for small businesses (device inventory, devices to replace).
+15. Localisation and outreach to consumer associations, national cybersecurity agencies and the press (yearly report).
 
 ## License
 

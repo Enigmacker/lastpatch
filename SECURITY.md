@@ -11,8 +11,10 @@ Please do not open a public issue for security problems. Use GitHub's private vu
 
 ## Design notes
 
-- The scanner is read-only. It sends SSDP discovery requests and fetches device description files over HTTP **only from private (RFC 1918 / link-local) addresses**, with size and time limits.
-- No data leaves your machine. The tool has no telemetry.
+- The scanner is read-only and needs no admin rights. It connects to TCP port 80 across the local subnet (at most a /22, never larger networks), reads the system neighbour table, sends SSDP and mDNS discovery queries, and fetches device description files and admin page titles over HTTP(S) **only from private (RFC 1918 / link-local) addresses**, with size and time limits. It never sends credentials.
+- TLS certificate checks are disabled only when reading an admin page title, because home devices use self-signed certificates; no data is sent to those pages.
+- No data leaves your machine, except the one-time download of the public IEEE MAC registry (`lastpatch update-oui`). The tool has no telemetry.
+- Only scan networks you own or administer.
 
 ## Wrong dates
 

@@ -1,107 +1,86 @@
 'use strict';
 
-// Local network discovery over SSDP/UPnP. Read-only: sends M-SEARCH
-// multicast requests and fetches the device description XML each device
-// advertises. Only private (LAN) addresses are contacted.
+// Full local network discovery, read-only and without admin rights.
+// Combines five sources of evidence per IP address:
+//   neighbour table (after a light sweep) -> every device and its MAC
+//   MAC vendor (IEEE registry)             -> manufacturer
+//   UPnP / SSDP                            -> manufacturer and model
+//   mDNS / DNS-SD                          -> device name and model (TXT)
+//   web admin page title                   -> model, on many routers/NAS
 
-const dgram = require('node:dgram');
-const http = require('node:http');
+const neighbors = require('./neighbors');
+const ssdp = require('./ssdp');
+const mdns = require('./mdns');
+const { probeHttp } = require('./httpprobe');
+const { vendorOf } = require('./oui');
+const { isPrivateHost } = require('./lan');
+const { findDevice, canonicalVendor } = require('./match');
 
-const SSDP_ADDR = '239.255.255.250';
-const SSDP_PORT = 1900;
-const SEARCH_TARGETS = ['ssdp:all', 'upnp:rootdevice'];
+async function collect({ timeoutMs = 3000, sweep = true } = {}) {
+  const [web, upnp, bonjour] = await Promise.all([
+    sweep ? neighbors.sweep() : Promise.resolve(new Set()),
+    ssdp.discover({ timeoutMs }),
+    mdns.browse({ timeoutMs }),
+  ]);
+  const table = await neighbors.readNeighborTable();
 
-function isPrivateHost(hostname) {
-  return (
-    /^10\./.test(hostname) ||
-    /^192\.168\./.test(hostname) ||
-    /^172\.(1[6-9]|2\d|3[01])\./.test(hostname) ||
-    /^169\.254\./.test(hostname) ||
-    /^fe80:/i.test(hostname)
-  );
-}
-
-function ssdpSearch(timeoutMs = 3000) {
-  return new Promise((resolve) => {
-    const locations = new Set();
-    const socket = dgram.createSocket({ type: 'udp4', reuseAddr: true });
-    socket.on('message', (msg) => {
-      const m = msg.toString().match(/^location:\s*(.+)$/im);
-      if (m) locations.add(m[1].trim());
-    });
-    socket.on('error', () => {
-      try { socket.close(); } catch { /* ignore */ }
-      resolve([...locations]);
-    });
-    socket.bind(() => {
-      for (const st of SEARCH_TARGETS) {
-        const req = Buffer.from(
-          'M-SEARCH * HTTP/1.1\r\n' +
-            `HOST: ${SSDP_ADDR}:${SSDP_PORT}\r\n` +
-            'MAN: "ssdp:discover"\r\n' +
-            'MX: 2\r\n' +
-            `ST: ${st}\r\n\r\n`
-        );
-        socket.send(req, SSDP_PORT, SSDP_ADDR);
-      }
-      setTimeout(() => {
-        socket.close();
-        resolve([...locations]);
-      }, timeoutMs);
-    });
-  });
-}
-
-function fetchText(url, timeoutMs = 3000, maxBytes = 256 * 1024) {
-  return new Promise((resolve) => {
-    let u;
-    try { u = new URL(url); } catch { return resolve(null); }
-    if (u.protocol !== 'http:' || !isPrivateHost(u.hostname)) return resolve(null);
-    const req = http.get(u, { timeout: timeoutMs }, (res) => {
-      let size = 0;
-      const chunks = [];
-      res.on('data', (c) => {
-        size += c.length;
-        if (size > maxBytes) { req.destroy(); return; }
-        chunks.push(c);
-      });
-      res.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')));
-    });
-    req.on('timeout', () => req.destroy());
-    req.on('error', () => resolve(null));
-  });
-}
-
-function tag(xml, name) {
-  const m = xml.match(new RegExp(`<${name}>([^<]*)</${name}>`, 'i'));
-  return m ? m[1].trim() : null;
-}
-
-function parseDescription(xml, location) {
-  return {
-    ip: new URL(location).hostname,
-    manufacturer: tag(xml, 'manufacturer'),
-    modelName: tag(xml, 'modelName'),
-    modelNumber: tag(xml, 'modelNumber'),
-    modelDescription: tag(xml, 'modelDescription'),
-    friendlyName: tag(xml, 'friendlyName'),
-    location,
+  const hosts = new Map();
+  const host = (ip) => {
+    if (!hosts.has(ip)) hosts.set(ip, { ip, mac: null, macVendor: null, upnp: [], mdns: null, http: null });
+    return hosts.get(ip);
   };
+  for (const [ip, mac] of table) {
+    if (!isPrivateHost(ip)) continue;
+    const h = host(ip);
+    h.mac = mac;
+    h.macVendor = neighbors.isRandomMac(mac) ? null : vendorOf(mac);
+  }
+  for (const d of upnp) host(d.ip).upnp.push(d);
+  for (const d of bonjour) if (isPrivateHost(d.ip)) host(d.ip).mdns = d;
+  for (const ip of web) host(ip);
+
+  await Promise.all([...hosts.values()].map(async (h) => {
+    if (web.has(h.ip) || h.upnp.length) h.http = await probeHttp(h.ip);
+  }));
+  return [...hosts.values()].sort((a, b) =>
+    a.ip.split('.').map(Number).reduce((x, y) => x * 256 + y) - b.ip.split('.').map(Number).reduce((x, y) => x * 256 + y));
 }
 
-async function discover({ timeoutMs = 3000 } = {}) {
-  const locations = await ssdpSearch(timeoutMs);
-  const devices = new Map();
-  await Promise.all(
-    locations.map(async (loc) => {
-      const xml = await fetchText(loc);
-      if (!xml) return;
-      const d = parseDescription(xml, loc);
-      const key = `${d.ip}|${d.manufacturer}|${d.modelName}|${d.modelNumber}`;
-      if (!devices.has(key)) devices.set(key, d);
-    })
-  );
-  return [...devices.values()];
+// Build the candidate descriptions of a host, most reliable first.
+function candidates(h) {
+  const out = [];
+  const vendorHint = h.macVendor || '';
+  for (const u of h.upnp) {
+    const q = [u.manufacturer, u.modelName, u.modelNumber].filter(Boolean).join(' ');
+    if (q) out.push({ via: 'UPnP', query: q });
+  }
+  if (h.mdns && h.mdns.model) out.push({ via: 'mDNS', query: `${vendorHint} ${h.mdns.model}`.trim() });
+  if (h.http && h.http.title) out.push({ via: 'web page title', query: `${vendorHint} ${h.http.title}`.trim() });
+  if (h.mdns) for (const n of h.mdns.names) out.push({ via: 'mDNS name', query: `${vendorHint} ${n}`.trim() });
+  return out;
 }
 
-module.exports = { discover, parseDescription, isPrivateHost };
+// Identify each host against the dataset.
+function identify(hosts, devices) {
+  return hosts.map((h) => {
+    const tried = candidates(h);
+    for (const c of tried) {
+      const res = findDevice(devices, c.query);
+      // A match must agree with the MAC vendor when we know it.
+      const macV = canonicalVendor(h.macVendor);
+      const ok = res.matches.length && (!macV || canonicalVendor(res.matches[0].row.vendor) === macV);
+      if (ok) return { host: h, via: c.via, query: c.query, matches: res.matches, hwVersion: res.hwVersion };
+    }
+    return { host: h, via: null, query: tried[0] ? tried[0].query : null, matches: [], hwVersion: null };
+  });
+}
+
+function label(h) {
+  const parts = [];
+  if (h.upnp[0] && h.upnp[0].friendlyName) parts.push(h.upnp[0].friendlyName);
+  else if (h.mdns && h.mdns.names[0]) parts.push(h.mdns.names[0]);
+  else if (h.http && h.http.title) parts.push(h.http.title);
+  return parts.join(' ');
+}
+
+module.exports = { collect, identify, candidates, label };

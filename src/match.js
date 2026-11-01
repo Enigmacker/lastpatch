@@ -53,8 +53,10 @@ function normalize(s) {
 
 function canonicalVendor(text) {
   const t = String(text || '').toLowerCase();
+  // Whole-word match: "ring" must not match "Engineering".
+  const word = (a) => new RegExp(`(^|[^a-z0-9])${a.replace(/[.*+?^${}()|[\]\\!]/g, '\\$&')}(?=$|[^a-z0-9])`).test(t);
   for (const [vendor, aliases] of Object.entries(VENDOR_ALIASES)) {
-    if (aliases.some((a) => t.includes(a))) return vendor;
+    if (aliases.some(word)) return vendor;
   }
   return null;
 }

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0 - 2026-11-01
+
+- Scan: new discovery combining a light subnet sweep and the neighbour table, MAC vendor lookup (IEEE registry, `lastpatch update-oui`), UPnP, mDNS/DNS-SD and the web admin page title. Lists every device, including those that announce nothing. No admin rights, no dependency.
+- Matching: vendor names now match whole words only ("Engineering" is no longer read as "Ring").
+- Source watch: weekly GitHub Action that fingerprints every official source and index page, opens an issue when one changes, and keeps a fingerprint history.
+- Roadmap: every planned improvement listed.
+
 ## 0.3.0 - 2026-11-01
 
 - Dataset: 1,649 devices. The whole TP-Link UK PSTI document is now included (1,354 rows: routers, mesh, Tapo cameras and smart home, switches, access points), instead of a selection of 43.

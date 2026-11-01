@@ -4,7 +4,8 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { findDevice, computeStatus, daysLeft } = require('./match');
-const { discover } = require('./discover');
+const { collect, identify, label } = require('./discover');
+const { updateOui, loadOui } = require('./oui');
 
 const DATA_FILE = path.join(__dirname, '..', 'data', 'devices.json');
 
@@ -12,7 +13,8 @@ const USAGE = `lastpatch - is your device still getting security updates?
 
 Usage:
   lastpatch check "<vendor> <model> [hw version]"   look up one device
-  lastpatch scan [--timeout <ms>]                    discover devices on your LAN (UPnP)
+  lastpatch scan [--timeout <ms>] [--no-sweep]       find and check the devices on your LAN
+  lastpatch update-oui                               download the IEEE MAC vendor registry (once)
   lastpatch list [--vendor <name>] [--expiring <days>] [--expired]
 Options:
   --json        machine-readable output
@@ -37,7 +39,7 @@ function parseArgs(argv) {
   const args = { _: [] };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
-    if (a === '--json' || a === '--expired') args[a.slice(2)] = true;
+    if (a === '--json' || a === '--expired' || a === '--no-sweep') args[a.slice(2)] = true;
     else if (a.startsWith('--')) args[a.slice(2)] = argv[++i];
     else args._.push(a);
   }
@@ -101,6 +103,45 @@ function printLookup(res) {
   }
 }
 
+function scanReport(identified, warn, region) {
+  return identified.map((r) => {
+    let matches = r.matches;
+    if (region) {
+      const local = matches.filter((m) => m.row.region === region.toUpperCase() || m.row.region === 'global');
+      if (local.length) matches = local;
+    }
+    return {
+      ip: r.host.ip,
+      mac: r.host.mac,
+      mac_vendor: r.host.macVendor,
+      name: label(r.host) || null,
+      identified_via: r.via,
+      query: r.query,
+      needs_hw_version: !r.hwVersion && new Set(matches.map((m) => m.row.hw_version)).size > 1 &&
+        new Set(matches.map((m) => m.row.support_end)).size > 1,
+      results: matches.map((m) => describe(m.row, warn)),
+    };
+  });
+}
+
+function printScan(report) {
+  const known = report.filter((r) => r.results.length);
+  console.log(`${report.length} device(s) found on your network, ${known.length} identified in the dataset.\n`);
+  for (const r of report) {
+    const who = [r.mac_vendor, r.name].filter(Boolean).join(' - ') || 'unknown device';
+    console.log(`${r.ip}  ${who}`);
+    if (r.results.length) {
+      console.log(`  identified via ${r.identified_via}`);
+      printLookup({ query: r.query, found: true, needs_hw_version: r.needs_hw_version, results: r.results });
+    } else if (r.query) {
+      console.log(`  model not found in the dataset (seen as "${r.query}")`);
+    } else {
+      console.log('  model not announced: check it with "lastpatch check <vendor> <model>"');
+    }
+    console.log('');
+  }
+}
+
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const warn = args.warn ? Number(args.warn) : 365;
@@ -114,23 +155,17 @@ async function main() {
     if (args.json) console.log(JSON.stringify(res, null, 2));
     else printLookup(res);
   } else if (cmd === 'scan') {
-    const found = await discover({ timeoutMs: Number(args.timeout) || 3000 });
-    const report = found.map((d) => {
-      const query = [d.manufacturer, d.modelName, d.modelNumber].filter(Boolean).join(' ');
-      return { device: d, ...lookup(devices, query, warn, args.region) };
-    });
-    anyExpired = report.some((r) => r.results.some((x) => x.status === 'expired'));
-    if (args.json) {
-      console.log(JSON.stringify(report, null, 2));
-    } else {
-      console.log(`${found.length} UPnP device(s) answered on your network.\n`);
-      for (const r of report) {
-        console.log(`${r.device.ip}  ${r.device.friendlyName || ''} [${r.query || 'no model info'}]`);
-        printLookup(r);
-        console.log('');
-      }
-      console.log('Devices with UPnP disabled do not appear here; check them with "lastpatch check".');
+    if (!loadOui()) {
+      console.error('Tip: run "lastpatch update-oui" once to identify manufacturers from MAC addresses.\n');
     }
+    const hosts = await collect({ timeoutMs: Number(args.timeout) || 3000, sweep: !args['no-sweep'] });
+    const report = scanReport(identify(hosts, devices), warn, args.region);
+    anyExpired = report.some((r) => r.results.some((x) => x.status === 'expired'));
+    if (args.json) console.log(JSON.stringify(report, null, 2));
+    else printScan(report);
+  } else if (cmd === 'update-oui') {
+    const { file, entries } = await updateOui();
+    console.log(`IEEE registry saved: ${entries} manufacturers (${file})`);
   } else if (cmd === 'list') {
     let rows = devices.map((d) => describe(d, warn));
     if (args.vendor) rows = rows.filter((r) => r.vendor.toLowerCase().includes(args.vendor.toLowerCase()));
@@ -149,7 +184,9 @@ async function main() {
   if (anyExpired) process.exitCode = 2;
 }
 
-main().catch((err) => {
+if (require.main === module) main().catch((err) => {
   console.error(err.message);
   process.exitCode = 1;
 });
+
+module.exports = { scanReport };

@@ -3,7 +3,7 @@
 const test = require('node:test');
 const assert = require('node:assert');
 const { findDevice, computeStatus, extractHwVersion, canonicalVendor } = require('../src/match');
-const { parseDescription, isPrivateHost } = require('../src/discover');
+const { parseDescription, isPrivateHost } = require('../src/ssdp');
 
 const fixture = [
   { vendor: 'TP-Link', model: 'Archer AX55', hw_version: 'V1', support_end: '2027-12-31', support_end_raw: '31/12/2027 or later*', end_is_minimum: true },

@@ -1,0 +1,20 @@
+{
+  "description": "Index pages that link to official end-of-support documents. The source watcher reports new or removed document links on these pages, so new versions of a document are noticed even when its URL changes.",
+  "indexes": [
+    {
+      "vendor": "TP-Link",
+      "url": "https://www.tp-link.com/uk/support/psti/",
+      "link_pattern": "PSTI.*\\.pdf"
+    },
+    {
+      "vendor": "Netgear",
+      "url": "https://kb.netgear.com/000066102/UK-PSTI-Declaration-of-Conformity",
+      "link_pattern": "\\.pdf"
+    },
+    {
+      "vendor": "ASUS",
+      "url": "https://www.asus.com/event/network/security_update_support/",
+      "link_pattern": "\\.(pdf|json)"
+    }
+  ]
+}
