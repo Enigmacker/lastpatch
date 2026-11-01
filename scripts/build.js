@@ -22,7 +22,18 @@ function validDate(s) {
   return !Number.isNaN(d.getTime()) && d.toISOString().slice(0, 10) === s;
 }
 
+// Normalise obvious typos in hardware versions ("5" -> "V5", "VV5.20" -> "V5.20").
+// Dates are never touched: support_end_raw keeps the source text.
+function cleanHw(hw) {
+  if (!hw) return null;
+  return String(hw)
+    .split(',')
+    .map((v) => v.trim().replace(/^V+/i, 'V').replace(/^(\d)/, 'V$1'))
+    .join(', ');
+}
+
 const rejected = [];
+const conflicts = [];
 const seen = new Map();
 
 for (const file of fs.readdirSync(RAW_DIR).filter((f) => f.endsWith('.json')).sort()) {
@@ -39,7 +50,7 @@ for (const file of fs.readdirSync(RAW_DIR).filter((f) => f.endsWith('.json')).so
     const row = {
       vendor: r.vendor.trim(),
       model: r.model.trim(),
-      hw_version: r.hw_version ? String(r.hw_version).trim() : null,
+      hw_version: cleanHw(r.hw_version),
       category: CATEGORIES.has(r.category) ? r.category : 'other',
       support_end: r.support_end,
       support_end_raw: String(r.support_end_raw).trim(),
@@ -53,8 +64,17 @@ for (const file of fs.readdirSync(RAW_DIR).filter((f) => f.endsWith('.json')).so
     };
     const key = [row.vendor, row.model, row.hw_version, row.region].join('|').toLowerCase();
     const prev = seen.get(key);
-    // On duplicates keep the most recent source document.
-    if (!prev || String(row.source_date || '') > String(prev.source_date || '')) seen.set(key, row);
+    if (!prev) { seen.set(key, row); continue; }
+    // On duplicates keep the most recent source document; when the same
+    // document gives two dates, keep the earlier one (the cautious choice).
+    const newer = String(row.source_date || '') > String(prev.source_date || '');
+    const sameDoc = String(row.source_date || '') === String(prev.source_date || '');
+    if (sameDoc && row.support_end_raw !== prev.support_end_raw) {
+      conflicts.push(`${row.vendor} ${row.model} ${row.hw_version || ''}: "${prev.support_end_raw}" vs "${row.support_end_raw}"`);
+      if (row.support_end && (!prev.support_end || row.support_end < prev.support_end)) seen.set(key, row);
+    } else if (newer) {
+      seen.set(key, row);
+    }
   }
 }
 
@@ -64,13 +84,17 @@ const devices = [...seen.values()].sort((a, b) =>
 );
 
 fs.writeFileSync(OUT, JSON.stringify({
-  version: '0.2.0',
+  version: '0.3.0',
   generated: RETRIEVED,
   license: 'ODbL-1.0',
   devices,
 }, null, 2) + '\n');
 
 console.log(`${devices.length} rows written to data/devices.json`);
+if (conflicts.length) {
+  console.log(`${conflicts.length} conflicting dates in a source (earlier date kept):`);
+  for (const c of conflicts) console.log(`  ${c}`);
+}
 if (rejected.length) {
   console.log(`${rejected.length} rows rejected:`);
   for (const r of rejected) console.log(`  ${r.file} ${r.model}: ${r.why.join(', ')}`);

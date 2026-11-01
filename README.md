@@ -32,13 +32,13 @@ Options: `--json` for machine-readable output, `--warn <days>` to change the "en
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.2.0, retrieved 2026-11-01: 338 devices from 13 vendors.
+`data/devices.json` (schema in `data/schema.json`), version 0.3.0, retrieved 2026-11-01: 1,649 devices from 13 vendors.
 
 | Vendor | Rows | Devices | Source |
 |---|---|---|---|
+| TP-Link | 1,354 | routers, mesh, cameras, smart home, switches, access points | UK PSTI statement of compliance (full document) |
 | ASUS | 85 | routers, mesh | UK PSTI support-period list; Singapore lifecycle list |
 | AVM (FRITZ!) | 62 | routers, repeaters | FRITZ! product support status page |
-| TP-Link | 43 | routers, Deco, Tapo cameras | UK PSTI statement of compliance |
 | Ring | 25 | doorbells, cameras | UK PSTI statements; US lifecycle page |
 | EZVIZ | 23 | cameras | EZVIZ EOL product list (Europe) |
 | Reolink | 22 | cameras | UK PSTI statements |
@@ -55,6 +55,7 @@ Each row records the date exactly as written (`support_end_raw`), whether it is 
 ### Known limits
 
 - **Hardware versions matter.** The same model can have different dates per hardware revision (e.g. Tapo C200 V3 vs V5). Check the label under the device.
+- **Sources sometimes contradict themselves.** When one document gives two dates for the same model and hardware version, the earlier date is kept and the build reports the conflict.
 - **Dates differ by market.** ASUS publishes different dates in the UK and Singapore for the same model. Rows are never merged across regions.
 - **Some vendors publish no usable date.** Netgear UK statements only say support ends at "End of Service"; D-Link UK statements say "2 years" without a start date. These rows are `unknown`.
 - **Synology and QNAP publish few per-model dates.** Their status pages give categories ("limited updates") rather than end dates for current models, so recent NAS models are not listed yet.
@@ -66,10 +67,9 @@ Add rows to a file in `raw/`, then run `npm run build:data`. Rows without a sour
 
 ## Roadmap
 
-1. Full extraction of the TP-Link PSTI document (many more models than currently listed).
-2. Better LAN discovery without extra tools or admin rights: list every device from the system neighbour table, identify the vendor from the MAC address (IEEE registry), read the model from the device's admin page title and from mDNS/DNS-SD announcements, alongside UPnP. Optional expert mode using a locally installed Nmap (called, never bundled).
-3. Installed vs latest firmware: flag devices that are supported but not updated, and use the last firmware release date as a signal for vendors that publish no end-of-support date.
-4. Website with one page per model, then desktop apps for macOS, Windows and Linux.
+1. Better LAN discovery without extra tools or admin rights: list every device from the system neighbour table, identify the vendor from the MAC address (IEEE registry), read the model from the device's admin page title and from mDNS/DNS-SD announcements, alongside UPnP. Optional expert mode using a locally installed Nmap (called, never bundled).
+2. Installed vs latest firmware: flag devices that are supported but not updated, and use the last firmware release date as a signal for vendors that publish no end-of-support date.
+3. Website with one page per model, then desktop apps for macOS, Windows and Linux.
 
 ## License
 
