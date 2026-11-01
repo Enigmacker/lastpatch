@@ -98,7 +98,9 @@ When something changed, it opens (or comments on) an issue labelled `source-watc
 
 ## Website
 
-`site/` is the public website: an Astro static site with one page per model (1,182 pages), a page per brand, the devices whose support ends within a year, and the devices no longer supported. The search runs in the browser; the site sets no cookies.
+`site/` is the public website: an Astro static site in English and French, with one page per model, a page per brand and per device type, the devices whose support ends within a year, and the devices no longer supported. The search runs in the browser; the site sets no cookies.
+
+English pages live at the root and French pages under `/fr/`, with French words in the addresses (`/fr/appareils/…`, `/fr/marques/…`, `/fr/routeurs/…`). Every page links to its counterpart with `hreflang` and a language switch. All wording is in `site/src/i18n/en.ts` and `fr.ts`; pages are shared views in `site/src/views/`, and the route files in `site/src/pages/` only pick the view. Adding a language means adding a dictionary and its route files.
 
 ```sh
 cd site
@@ -130,7 +132,7 @@ Add rows to a file in `raw/`, then run `npm run build:data`. Rows without a sour
 8. ~~Internet exposure through UPnP port forwards~~ (done in 0.5.0).
 
 **Products**
-9. ~~Website with one page per model~~ (done in 0.6.0). Next: French and other languages, alerts by email.
+9. ~~Website with one page per model~~ (done in 0.6.0), ~~in French too~~ (done in 0.7.0). Next: more languages, alerts by email.
 10. Desktop apps for macOS, Windows and Linux, with alerts before a device reaches end of support (low-cost subscription including dataset updates).
 11. Browser extension showing the support end date on retailer product pages, before purchase.
 12. Replacement advice: models ranked by remaining support period (any affiliate links disclosed, ranking never based on commission).

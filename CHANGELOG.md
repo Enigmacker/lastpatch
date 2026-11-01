@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.7.0 - 2026-11-01
+
+- Website in French: every page exists under /fr/ with French addresses, titles and descriptions written for French searches ("fin de support", "mises à jour de sécurité"), French dates and typography, a French search index and social image.
+- Both languages share the same views; all wording lives in one dictionary per language. Pages declare their counterpart (hreflang, og:locale:alternate) and offer a language switch.
+- When every date of a device is a minimum guarantee that has passed, its page says the guarantee period is over instead of saying updates stopped.
+- Matching recognises about twenty more brands, and discovery accepts sibling brands of the same company (Ring with an Amazon network card, Mercusys with a TP-Link one).
+
 ## 0.6.1 - 2026-11-01
 
 - Website design: ink header and footer, a home page hero showing where the model and hardware version are printed on the device label, status bars for the whole dataset, each brand and each device type, a support timeline per hardware version on device pages, dark mode.
