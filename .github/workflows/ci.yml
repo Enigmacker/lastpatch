@@ -34,3 +34,23 @@ jobs:
         run: |
           node scripts/build.js "$(node -p 'require("./data/devices.json").generated')"
           git diff --exit-code data/devices.json
+
+  site:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - run: npm ci
+      - name: Build
+        run: npm run build
+        env:
+          ASTRO_TELEMETRY_DISABLED: 1
+      - name: Check pages, links and scripts
+        run: npm run check:site

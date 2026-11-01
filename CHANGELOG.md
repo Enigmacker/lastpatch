@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.0 - 2026-11-01
+
+- Website (`site/`): Astro static site with one page per model giving the support end date, the source document, the dates per hardware version, the exploited vulnerabilities and what to do; pages per brand, devices ending within a year, devices no longer supported, methodology and privacy. Search in the browser, no cookies, strict Content Security Policy, structured data (FAQ, breadcrumbs, dataset).
+- Deployment: Dockerfile for Dokploy and a dependency-free static server with security headers.
+- CI: the site is built and checked (titles, descriptions, canonicals, one h1 per page, no inline scripts, internal links).
+
 ## 0.5.0 - 2026-11-01
 
 - Actively exploited vulnerabilities: results list the CISA KEV entries that apply to the model (62 entries for the covered vendors, catalogue 2026.10.30), respecting the hardware versions CISA names; models missing from the dataset are checked too. Weekly refresh in the source watch workflow.

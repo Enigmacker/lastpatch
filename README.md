@@ -96,6 +96,21 @@ A weekly GitHub Action (`.github/workflows/watch-sources.yml`) downloads every o
 
 When something changed, it opens (or comments on) an issue labelled `source-watch`. After reviewing and updating the rows, run `node scripts/watch-sources.js --update` to accept the new fingerprints. Each source keeps a history of its fingerprints.
 
+## Website
+
+`site/` is the public website: an Astro static site with one page per model (1,182 pages), a page per brand, the devices whose support ends within a year, and the devices no longer supported. The search runs in the browser; the site sets no cookies.
+
+```sh
+cd site
+npm ci
+npm run dev          # http://localhost:4321
+npm run build        # dist/, then: npm run check:site
+```
+
+`scripts/prepare-data.mjs` turns `data/devices.json` and `data/kev.json` into the data the pages use, with the same matching and status rules as the CLI. Statuses depend on the build date, so the site must be rebuilt regularly (at least weekly) to stay right; `BUILD_DATE=YYYY-MM-DD` fixes the date for a reproducible build.
+
+Deployment (Dokploy or any Docker host) uses the `Dockerfile` at the repository root, which builds the site and serves it with `site/server.mjs` (no dependencies, security headers, health check on `/healthz`). Build arguments: `SITE_URL` (default `https://lastpatch.org`), `NOINDEX=true` for a staging copy, `UMAMI_SCRIPT_URL` and `UMAMI_WEBSITE_ID` for optional cookie-free statistics.
+
 ## Contributing data
 
 Add rows to a file in `raw/`, then run `npm run build:data`. Rows without a source URL or with a malformed date are rejected. Only official manufacturer documents are accepted.
@@ -115,7 +130,7 @@ Add rows to a file in `raw/`, then run `npm run build:data`. Rows without a sour
 8. ~~Internet exposure through UPnP port forwards~~ (done in 0.5.0).
 
 **Products**
-9. Website with one page per model.
+9. ~~Website with one page per model~~ (done in 0.6.0). Next: French and other languages, alerts by email.
 10. Desktop apps for macOS, Windows and Linux, with alerts before a device reaches end of support (low-cost subscription including dataset updates).
 11. Browser extension showing the support end date on retailer product pages, before purchase.
 12. Replacement advice: models ranked by remaining support period (any affiliate links disclosed, ranking never based on commission).
