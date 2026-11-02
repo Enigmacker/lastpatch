@@ -61,6 +61,10 @@ for (const r of rows) {
     row.end_is_minimum = true;
   }
 
+  // Nuki statements give "defined" and "extended minimum" support periods:
+  // minimum guarantees, so a passed date means the promise ran out.
+  if (row.vendor === 'Nuki') row.end_is_minimum = true;
+
   // Tenda EOL Center: the bare date is the "End of service date" column.
   if (row.vendor === 'Tenda' && /^\d{4}-\d{2}-\d{2}$/.test(row.support_end_raw)) {
     row.support_end_raw = `End of service date: ${row.support_end_raw}`;

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.3 - 2026-11-02
+
+- Dataset 0.4.3: 4,645 rows from 45 brands. Smart home: Hive (48), Aqara (18), Bosch Smart Home (17), Shelly (17), Nuki (15), Netatmo (13), tado° (6), Samsung SmartThings (2). Nuki dates are minimum guarantees.
+
 ## 0.8.2 - 2026-11-02
 
 - Dataset 0.4.2: 4,517 rows from 39 brands. Routers for homes and small offices: GL.iNet (53), Teltonika (52), Keenetic (34), Cisco RV and Meraki Go (21), Edimax (8).
