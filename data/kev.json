@@ -1,7 +1,7 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-  "fetched_from": "https://raw.githubusercontent.com/cisagov/kev-data/main/known_exploited_vulnerabilities.json",
+  "fetched_from": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
   "catalogVersion": "2026.10.30",
   "dateReleased": "2026-10-30T17:02:45.3665Z",
   "license": "Public domain (U.S. Government work); see https://www.cisa.gov/known-exploited-vulnerabilities-catalog",

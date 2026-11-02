@@ -1,0 +1,2865 @@
+{
+  "https://www.amazon.com/gp/help/customer/display.html?nodeId=GMZQWNQRVENX4GTQ": {
+    "vendor": "Amazon",
+    "kind": "text",
+    "fingerprint": "1afe70724da889a33dbd888dc8a7edeb1cefa305c94837f1a5cfa407d3cc83b2",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "1afe70724da889a33dbd888dc8a7edeb1cefa305c94837f1a5cfa407d3cc83b2"
+      }
+    ]
+  },
+  "https://www.amazon.com/gp/help/customer/display.html?nodeId=G6SH55LKBSAZ2BAK": {
+    "vendor": "Amazon",
+    "kind": "text",
+    "fingerprint": "b993fe4c799ac447c777d156d95a2cd3786a12f81c980d1b1aaac921bf6ab348",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "b993fe4c799ac447c777d156d95a2cd3786a12f81c980d1b1aaac921bf6ab348"
+      }
+    ]
+  },
+  "https://www.aqara.com/wp-content/uploads/2025/08/PSTI-statements-Camera-E1.pdf": {
+    "vendor": "Aqara",
+    "kind": "bytes",
+    "fingerprint": "18d29fdb0c37121e4e468465287d827bc3ce908d675e947b2c8afbfaa9be899e",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "18d29fdb0c37121e4e468465287d827bc3ce908d675e947b2c8afbfaa9be899e"
+      }
+    ]
+  },
+  "https://www.aqara.com/wp-content/uploads/2025/07/PSTI-statements-Camera-G100.pdf": {
+    "vendor": "Aqara",
+    "kind": "bytes",
+    "fingerprint": "6318b3d2caf0ad54016705b422ce2cc15e28f9dfac4d2c350f8cec626c1e9be9",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "6318b3d2caf0ad54016705b422ce2cc15e28f9dfac4d2c350f8cec626c1e9be9"
+      }
+    ]
+  },
+  "https://www.aqara.com/wp-content/uploads/2025/07/PSTI-statements-Camera-Hub-G2H-Pro.pdf": {
+    "vendor": "Aqara",
+    "kind": "bytes",
+    "fingerprint": "4edb07cf2c52f614a2d2a566ec2d608bd409e8bb17dfed3515ddd32863be5f0b",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "4edb07cf2c52f614a2d2a566ec2d608bd409e8bb17dfed3515ddd32863be5f0b"
+      }
+    ]
+  },
+  "https://www.aqara.com/wp-content/uploads/2025/08/PSTI-statements-Camera-Hub-G3.pdf": {
+    "vendor": "Aqara",
+    "kind": "bytes",
+    "fingerprint": "3e20c46d07c5c8198687ff2e83e68220c65d1c24cd578bc8253100c74f541b01",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "3e20c46d07c5c8198687ff2e83e68220c65d1c24cd578bc8253100c74f541b01"
+      }
+    ]
+  },
+  "https://www.aqara.com/wp-content/uploads/2025/10/PSTI-Statements-Camera-Hub-G5-Pro-POE.pdf": {
+    "vendor": "Aqara",
+    "kind": "bytes",
+    "fingerprint": "71bf6f09c1383ac63e0a2fc144f6ec9442d4ce9d26f34e7da7be9e94122cad75",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "71bf6f09c1383ac63e0a2fc144f6ec9442d4ce9d26f34e7da7be9e94122cad75"
+      }
+    ]
+  },
+  "https://www.aqara.com/wp-content/uploads/2025/10/PSTI-Camera-Hub-G5-Pro-Wi-Fi.pdf": {
+    "vendor": "Aqara",
+    "kind": "bytes",
+    "fingerprint": "63c2d27afb294dcd49e85fb1d86016d1ad712bf42bc37305b19b10928eb5fdcc",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "63c2d27afb294dcd49e85fb1d86016d1ad712bf42bc37305b19b10928eb5fdcc"
+      }
+    ]
+  },
+  "https://www.aqara.com/wp-content/uploads/2025/10/PSTI-Statements-Camera-Y100.pdf": {
+    "vendor": "Aqara",
+    "kind": "bytes",
+    "fingerprint": "945b7e58780ba20acff5b62381ead30c158452322113a7ba7e72c52a2c81d461",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "945b7e58780ba20acff5b62381ead30c158452322113a7ba7e72c52a2c81d461"
+      }
+    ]
+  },
+  "https://www.aqara.com/wp-content/uploads/2026/02/PSTI-Statements-Doorbell-Camera-G400-Wired.pdf": {
+    "vendor": "Aqara",
+    "kind": "bytes",
+    "fingerprint": "24e092d71c688e2cea0b8923f81accd8591f9e609887da530d4ef155d007716d",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "24e092d71c688e2cea0b8923f81accd8591f9e609887da530d4ef155d007716d"
+      }
+    ]
+  },
+  "https://www.aqara.com/wp-content/uploads/2025/07/PSTI-statements-Doorbell-Camera-Hub-G410.pdf": {
+    "vendor": "Aqara",
+    "kind": "bytes",
+    "fingerprint": "d22426bc68786712be6bb18e653c4f921d15ed7fe14aad3c967f141e817143b3",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "d22426bc68786712be6bb18e653c4f921d15ed7fe14aad3c967f141e817143b3"
+      }
+    ]
+  },
+  "https://www.aqara.com/wp-content/uploads/2025/08/PSTI-statements-Hub-E1.pdf": {
+    "vendor": "Aqara",
+    "kind": "bytes",
+    "fingerprint": "e61922699124496faea35d5fee9df63fa6f7c98f563fac30ac3b672299fcb64a",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "e61922699124496faea35d5fee9df63fa6f7c98f563fac30ac3b672299fcb64a"
+      }
+    ]
+  },
+  "https://www.aqara.com/wp-content/uploads/2025/08/PSTI-statements-Hub-M1S-Gen-2.pdf": {
+    "vendor": "Aqara",
+    "kind": "bytes",
+    "fingerprint": "e13c0bfe98a523bf41a1bf3e9837d97e38ec4223fd06df386ecddd42ca592694",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "e13c0bfe98a523bf41a1bf3e9837d97e38ec4223fd06df386ecddd42ca592694"
+      }
+    ]
+  },
+  "https://www.aqara.com/wp-content/uploads/2025/08/PSTI-statements-Hub-M2.pdf": {
+    "vendor": "Aqara",
+    "kind": "bytes",
+    "fingerprint": "2ec8f3871ddf9d4e913835335021d6b3d6de215df9faab17eeb4e0730eaeb3ef",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "2ec8f3871ddf9d4e913835335021d6b3d6de215df9faab17eeb4e0730eaeb3ef"
+      }
+    ]
+  },
+  "https://www.aqara.com/wp-content/uploads/2025/08/PSTI-statements-Hub-M3.pdf": {
+    "vendor": "Aqara",
+    "kind": "bytes",
+    "fingerprint": "2f6b36dc66dc97bd990cce18de1368a3f0fd280d2a86e43a1590ea4803377da6",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "2f6b36dc66dc97bd990cce18de1368a3f0fd280d2a86e43a1590ea4803377da6"
+      }
+    ]
+  },
+  "https://www.aqara.com/wp-content/uploads/2025/07/PSTI-statements-Hub-M100.pdf": {
+    "vendor": "Aqara",
+    "kind": "bytes",
+    "fingerprint": "f8dcdafd7ee9726bfeab1f56a8752027ff7cc0b3821d41436299682542fffc8c",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "f8dcdafd7ee9726bfeab1f56a8752027ff7cc0b3821d41436299682542fffc8c"
+      }
+    ]
+  },
+  "https://www.aqara.com/wp-content/uploads/2025/07/PSTI-statements-Panel-Hub-S1-Plus.pdf": {
+    "vendor": "Aqara",
+    "kind": "bytes",
+    "fingerprint": "64227e1ad9428d383576fa02329c0792ceae75dd8a10df53a403b46f65bdd90a",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "64227e1ad9428d383576fa02329c0792ceae75dd8a10df53a403b46f65bdd90a"
+      }
+    ]
+  },
+  "https://www.aqara.com/wp-content/uploads/2025/10/PSTI-Statements-Smart-Lock-U200.pdf": {
+    "vendor": "Aqara",
+    "kind": "bytes",
+    "fingerprint": "bd8d311923f0c46d3ea86630bc5af68ca170b2296eedfa9a212842a8c5e5678a",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "bd8d311923f0c46d3ea86630bc5af68ca170b2296eedfa9a212842a8c5e5678a"
+      }
+    ]
+  },
+  "https://www.aqara.com/wp-content/uploads/2026/08/PSTI-statements-Smart-Lock-U200-Lite.pdf": {
+    "vendor": "Aqara",
+    "kind": "bytes",
+    "fingerprint": "06b0dc7a2f49b8fc8ffc7a9c1246d814a5d29fdca0075cd39f27de18444cf52f",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "06b0dc7a2f49b8fc8ffc7a9c1246d814a5d29fdca0075cd39f27de18444cf52f"
+      }
+    ]
+  },
+  "https://www.aqara.com/wp-content/uploads/2025/08/PSTI-statements-Smart-Video-Doorbell-G4.pdf": {
+    "vendor": "Aqara",
+    "kind": "bytes",
+    "fingerprint": "3d7de3ae4c1df3625359a14be53dc169f01fdec7197640927dc1ded9ff45a60a",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "3d7de3ae4c1df3625359a14be53dc169f01fdec7197640927dc1ded9ff45a60a"
+      }
+    ]
+  },
+  "https://downloads.arlo.com/images/PDFs/EOL_Policy/Arlo_End-of-Life-Policy-2022.pdf": {
+    "vendor": "Arlo",
+    "kind": "bytes",
+    "fingerprint": "9b0fa4ea406d40887a2c455c451f39a544c277ac126ccc903245108babc4bac1",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "9b0fa4ea406d40887a2c455c451f39a544c277ac126ccc903245108babc4bac1"
+      }
+    ]
+  },
+  "https://downloads.arlo.com/files/DoC/UKDOC_AC2001_AVD3001_AVD4001_FLW2001_VMB4540_VMB5000_VMC205X_VMC2060_VMC2070_VMC208X_VMC3050_VMC3060_VMC307X_VMC308X_VMC405X_VMC4070_VMC504X_VMC505X.pdf": {
+    "vendor": "Arlo",
+    "kind": "bytes",
+    "fingerprint": "bcfc25eef3596cfb70fa443ef5c46b19c224e3caced511d75bb7925630674cf9",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "bcfc25eef3596cfb70fa443ef5c46b19c224e3caced511d75bb7925630674cf9"
+      }
+    ]
+  },
+  "https://downloads.arlo.com/images/PDFs/EOL_Policy/arlo-end-of-life-policy-021023.pdf": {
+    "vendor": "Arlo",
+    "kind": "bytes",
+    "fingerprint": "9b0fa4ea406d40887a2c455c451f39a544c277ac126ccc903245108babc4bac1",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "9b0fa4ea406d40887a2c455c451f39a544c277ac126ccc903245108babc4bac1"
+      }
+    ]
+  },
+  "https://kb.arlo.com/000063018/Arlo-Legacy-Cameras-End-of-Life": {
+    "vendor": "Arlo",
+    "kind": "text",
+    "fingerprint": "73d5b841c1f5732e09c757e66ded2d04fad9a3dccb1b9f0608a12d1ee281fb92",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "73d5b841c1f5732e09c757e66ded2d04fad9a3dccb1b9f0608a12d1ee281fb92"
+      }
+    ]
+  },
+  "https://downloads.arlo.com/files/DoC/UKDOC_AVD1001B.pdf": {
+    "vendor": "Arlo",
+    "kind": "bytes",
+    "fingerprint": "a5444d28af757808955fc2739733ff4a3903151ad46e7547b92944d3b6ed3770",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "a5444d28af757808955fc2739733ff4a3903151ad46e7547b92944d3b6ed3770"
+      }
+    ]
+  },
+  "https://downloads.arlo.com/files/DoC/UKDOC_AVD2001_AVDK2001.pdf": {
+    "vendor": "Arlo",
+    "kind": "bytes",
+    "fingerprint": "47122132ca2430946822e9d83e4be1570ee9040781e278ddfab8219ea09153eb",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "47122132ca2430946822e9d83e4be1570ee9040781e278ddfab8219ea09153eb"
+      }
+    ]
+  },
+  "https://downloads.arlo.com/files/DoC/AUDOC_02_Feb_2026.pdf": {
+    "vendor": "Arlo",
+    "kind": "bytes",
+    "fingerprint": "8ab760db162b4347e2e9a4edff1f5fb00f9cc5bfe70056aa51ddf857bd8e9145",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "8ab760db162b4347e2e9a4edff1f5fb00f9cc5bfe70056aa51ddf857bd8e9145"
+      }
+    ]
+  },
+  "https://downloads.arlo.com/files/DoC/UKDOC_VMC2073_VMC3073.pdf": {
+    "vendor": "Arlo",
+    "kind": "bytes",
+    "fingerprint": "23dd5b39b6ffe1427b21a62000f531bb47a325b3d3b764cd5457fb8996b2d9e8",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "23dd5b39b6ffe1427b21a62000f531bb47a325b3d3b764cd5457fb8996b2d9e8"
+      }
+    ]
+  },
+  "https://downloads.arlo.com/files/DoC/UKDOC_FB1001_FB1001B.pdf": {
+    "vendor": "Arlo",
+    "kind": "bytes",
+    "fingerprint": "468ea525f72e387fadfe8c9ea20d4420ff2005c16803aa1703469bcf4a7cd8b1",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "468ea525f72e387fadfe8c9ea20d4420ff2005c16803aa1703469bcf4a7cd8b1"
+      }
+    ]
+  },
+  "https://downloads.arlo.com/files/DoC/UKDOC_FLW1001_FLW2001.pdf": {
+    "vendor": "Arlo",
+    "kind": "bytes",
+    "fingerprint": "d3279db49d98a37cf4b4916512d53e6c5bb61e8f23e6fd3ae0d668119a7a9d7b",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "d3279db49d98a37cf4b4916512d53e6c5bb61e8f23e6fd3ae0d668119a7a9d7b"
+      }
+    ]
+  },
+  "https://downloads.arlo.com/files/DoC/UKDOC_VMC5050_5052.pdf": {
+    "vendor": "Arlo",
+    "kind": "bytes",
+    "fingerprint": "32a692f5874f825f9a21d13ff3f5816d1cc9431f3b085ae38702fc24b1bb0543",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "32a692f5874f825f9a21d13ff3f5816d1cc9431f3b085ae38702fc24b1bb0543"
+      }
+    ]
+  },
+  "https://downloads.arlo.com/files/DoC/UKDOC_VMC2030_VMC2030B.pdf": {
+    "vendor": "Arlo",
+    "kind": "bytes",
+    "fingerprint": "5e87b2ec48e634cf4cd02cbb13f492b9669d1b73e6901e141c08e9331259ea86",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "5e87b2ec48e634cf4cd02cbb13f492b9669d1b73e6901e141c08e9331259ea86"
+      }
+    ]
+  },
+  "https://downloads.arlo.com/files/DoC/UKDOC_VMC2032.pdf": {
+    "vendor": "Arlo",
+    "kind": "bytes",
+    "fingerprint": "4f81069d38dbe371337567c857918dca6f689e2698484f43bb26903a2f6d0c8e",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "4f81069d38dbe371337567c857918dca6f689e2698484f43bb26903a2f6d0c8e"
+      }
+    ]
+  },
+  "https://downloads.arlo.com/files/DoC/UKDOC_VMC2040_VMC2040B.pdf": {
+    "vendor": "Arlo",
+    "kind": "bytes",
+    "fingerprint": "40823299301f415b89cdd2787b72c6946124c8acb8de38655941fc407b7cf8ff",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "40823299301f415b89cdd2787b72c6946124c8acb8de38655941fc407b7cf8ff"
+      }
+    ]
+  },
+  "https://downloads.arlo.com/files/DoC/UKDOC_VMC2081_VMC3081.pdf": {
+    "vendor": "Arlo",
+    "kind": "bytes",
+    "fingerprint": "8b5b23bcabe58510118b9dfa8731975a76805ed59370a0e588b7bfd790ae9a6c",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "8b5b23bcabe58510118b9dfa8731975a76805ed59370a0e588b7bfd790ae9a6c"
+      }
+    ]
+  },
+  "https://downloads.arlo.com/files/DoC/UKDOC_VMC2083_VMC3083.pdf": {
+    "vendor": "Arlo",
+    "kind": "bytes",
+    "fingerprint": "d424fbc8f0ab676a2be808b448bf96fff598e1f7c45d1d703b248eac21fb66b8",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "d424fbc8f0ab676a2be808b448bf96fff598e1f7c45d1d703b248eac21fb66b8"
+      }
+    ]
+  },
+  "https://downloads.arlo.com/files/DoC/UKDOC_VMC2052_VMC2252_VMC3052_VMC3252_VMC3352.pdf": {
+    "vendor": "Arlo",
+    "kind": "bytes",
+    "fingerprint": "7fc5adf36dbc1fc2986335596eccc081d215f177bd0534a55beac5d51141d6d1",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "7fc5adf36dbc1fc2986335596eccc081d215f177bd0534a55beac5d51141d6d1"
+      }
+    ]
+  },
+  "https://downloads.arlo.com/files/DoC/UKDOC_VMC4060.pdf": {
+    "vendor": "Arlo",
+    "kind": "bytes",
+    "fingerprint": "46f57b6441f0883d3d8bf2685ea4d6ade999f55fe38e23622aacf6e88a2dc3db",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "46f57b6441f0883d3d8bf2685ea4d6ade999f55fe38e23622aacf6e88a2dc3db"
+      }
+    ]
+  },
+  "https://downloads.arlo.com/files/DoC/UKDOC_VMC4060P_VMC4060B_VMC4260P_VMC4360P_VMC4360B_VMC4460P.pdf": {
+    "vendor": "Arlo",
+    "kind": "bytes",
+    "fingerprint": "0bd2435fd0dde8120a92231d80db22a0aa8d327a1f2ba55951ed89da72489084",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "0bd2435fd0dde8120a92231d80db22a0aa8d327a1f2ba55951ed89da72489084"
+      }
+    ]
+  },
+  "https://downloads.arlo.com/files/DoC/UKDOC_VML2030.pdf": {
+    "vendor": "Arlo",
+    "kind": "bytes",
+    "fingerprint": "ec2fe2a417217cefda1b41477c37a0bd566b6b0162a92cb678209ac359a62462",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "ec2fe2a417217cefda1b41477c37a0bd566b6b0162a92cb678209ac359a62462"
+      }
+    ]
+  },
+  "https://www.asus.com/uk/support/faq/1051929/": {
+    "vendor": "ASUS",
+    "kind": "text",
+    "fingerprint": "abc346954ae978cac051899e024b21021271737fbf09f51a414d6607b94cc001",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "abc346954ae978cac051899e024b21021271737fbf09f51a414d6607b94cc001"
+      }
+    ]
+  },
+  "https://www.asus.com/sg/support/FAQ/1051375": {
+    "vendor": "ASUS",
+    "kind": "text",
+    "fingerprint": "1eaeb487d88844b4328272a21ae6f61158a7c2ec9df24f20ea5a8058b1c3dc44",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "1eaeb487d88844b4328272a21ae6f61158a7c2ec9df24f20ea5a8058b1c3dc44"
+      }
+    ]
+  },
+  "https://www.asustor.com/product/status_detail?id=5": {
+    "vendor": "Asustor",
+    "kind": "text",
+    "fingerprint": "09b316b89a0a1332002e096420371f22e4f684b7201bcb8031c059e140a880ec",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "09b316b89a0a1332002e096420371f22e4f684b7201bcb8031c059e140a880ec"
+      }
+    ]
+  },
+  "https://www.asustor.com/product/status_detail?id=7": {
+    "vendor": "Asustor",
+    "kind": "text",
+    "fingerprint": "9d9d571c89acd09f28f76edf6be8732d7884c8df3513f8186031f9153d2f8198",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "9d9d571c89acd09f28f76edf6be8732d7884c8df3513f8186031f9153d2f8198"
+      }
+    ]
+  },
+  "https://www.asustor.com/product/status_detail?id=15": {
+    "vendor": "Asustor",
+    "kind": "text",
+    "fingerprint": "6074d6feb620999fc0177e6ff3d6e643bd23ae9b15222706a9fc36fded615ff3",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "6074d6feb620999fc0177e6ff3d6e643bd23ae9b15222706a9fc36fded615ff3"
+      }
+    ]
+  },
+  "https://fritz.com/pages/status-produktunterstuetzung": {
+    "vendor": "AVM",
+    "kind": "text",
+    "fingerprint": "bfcfa21e9d5593ed078fd12248a82b045e8d1c741eacdee54a8578ba8ed16c33",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "bfcfa21e9d5593ed078fd12248a82b045e8d1c741eacdee54a8578ba8ed16c33"
+      }
+    ]
+  },
+  "https://fritz.com/service/status-der-produktunterstuetzung/fritzbox": {
+    "vendor": "AVM",
+    "kind": "text",
+    "fingerprint": "bfcfa21e9d5593ed078fd12248a82b045e8d1c741eacdee54a8578ba8ed16c33",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "bfcfa21e9d5593ed078fd12248a82b045e8d1c741eacdee54a8578ba8ed16c33"
+      }
+    ]
+  },
+  "https://support.blinkforhome.com/en_GB/blink-device-software-security-updates": {
+    "vendor": "Blink",
+    "kind": "text",
+    "fingerprint": "3a0a5d76f0e18b8f082ce0869ef22b55ca576f9c3e7866d78056f33af54ca5e6",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "3a0a5d76f0e18b8f082ce0869ef22b55ca576f9c3e7866d78056f33af54ca5e6"
+      }
+    ]
+  },
+  "https://www.bosch-smarthome.com/gb/en/software-securityupdates": {
+    "vendor": "Bosch Smart Home",
+    "kind": "text",
+    "fingerprint": "808907f39d79af7d9c30422c66db19d26360ea81d5bb2a0c3bae553e54e0f48c",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "808907f39d79af7d9c30422c66db19d26360ea81d5bb2a0c3bae553e54e0f48c"
+      }
+    ]
+  },
+  "https://documentation.meraki.com/General_Administration/Other_Topics/Product_End-of-Life_(EOL)_Policies": {
+    "vendor": "Cisco",
+    "kind": "text",
+    "fingerprint": "b7d11038b5c5b2c2c2099ba3d314527a97a994f9ed751d7e73818eec5da80389",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "b7d11038b5c5b2c2c2099ba3d314527a97a994f9ed751d7e73818eec5da80389"
+      }
+    ]
+  },
+  "https://www.cisco.com/c/en/us/products/collateral/routers/small-business-rv-series-routers/eos-eol-notice-c51-2655972.html": {
+    "vendor": "Cisco",
+    "kind": "text",
+    "fingerprint": "15b727fd18584691e0f9ea99cb65df77810ac8195cd19ab550a7b33c3ad44a7f",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "15b727fd18584691e0f9ea99cb65df77810ac8195cd19ab550a7b33c3ad44a7f"
+      }
+    ]
+  },
+  "https://www.cisco.com/c/en/us/products/collateral/routers/small-business-rv-series-routers/small-business-rv340-rv345-series-eol.html": {
+    "vendor": "Cisco",
+    "kind": "text",
+    "fingerprint": "26249826bb669f867868a5136a25f7f7935ae8fa4e531024f8c8e026788b71d3",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "26249826bb669f867868a5136a25f7f7935ae8fa4e531024f8c8e026788b71d3"
+      }
+    ]
+  },
+  "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10520": {
+    "vendor": "D-Link",
+    "kind": "text",
+    "fingerprint": "6826fd1faf254d8c8426691c1fa63558f708a0933551468e21401f102853b29e",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "6826fd1faf254d8c8426691c1fa63558f708a0933551468e21401f102853b29e"
+      }
+    ]
+  },
+  "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10451": {
+    "vendor": "D-Link",
+    "kind": "text",
+    "fingerprint": "56dedf4831cdd3bdca6530e4e6348f7a32af2112400d677a32ade62263ee43f2",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "56dedf4831cdd3bdca6530e4e6348f7a32af2112400d677a32ade62263ee43f2"
+      }
+    ]
+  },
+  "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10271": {
+    "vendor": "D-Link",
+    "kind": "text",
+    "fingerprint": "4c1dbd74410c1040d67c54d25348a44e6d2b81b9deba37a289a9c8d5863ff132",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "4c1dbd74410c1040d67c54d25348a44e6d2b81b9deba37a289a9c8d5863ff132"
+      }
+    ]
+  },
+  "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10511": {
+    "vendor": "D-Link",
+    "kind": "text",
+    "fingerprint": "4ac9832defde9aea676c945e5eab75ae6e20cdef5cd59abd15ecc1fa0bedadbe",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "4ac9832defde9aea676c945e5eab75ae6e20cdef5cd59abd15ecc1fa0bedadbe"
+      }
+    ]
+  },
+  "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10393": {
+    "vendor": "D-Link",
+    "kind": "text",
+    "fingerprint": "a86b0e4f90f657ec7f55bc6e312f933023ad596e9783f7acbdfe1ca2b96f0c84",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "a86b0e4f90f657ec7f55bc6e312f933023ad596e9783f7acbdfe1ca2b96f0c84"
+      }
+    ]
+  },
+  "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10385": {
+    "vendor": "D-Link",
+    "kind": "text",
+    "fingerprint": "ef5ccc7c592a399eb903553cf22f3203888cf150b343d408018d50f6b9fd1205",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "ef5ccc7c592a399eb903553cf22f3203888cf150b343d408018d50f6b9fd1205"
+      }
+    ]
+  },
+  "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10410": {
+    "vendor": "D-Link",
+    "kind": "text",
+    "fingerprint": "3591958b85fd0a38fbe3cf238cf22618c7e079456a63711cf06e8824ec68a8a7",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "3591958b85fd0a38fbe3cf238cf22618c7e079456a63711cf06e8824ec68a8a7"
+      }
+    ]
+  },
+  "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10341": {
+    "vendor": "D-Link",
+    "kind": "text",
+    "fingerprint": "5d47a84a9aaa694c6775e03849386889432f326f52ba6ff2524e0095e70fbcba",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "5d47a84a9aaa694c6775e03849386889432f326f52ba6ff2524e0095e70fbcba"
+      }
+    ]
+  },
+  "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10325": {
+    "vendor": "D-Link",
+    "kind": "text",
+    "fingerprint": "79f774fdcb58bd7b7fa8884f267e82a2ac5d05bff953a100d10dc554b8dc069b",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "79f774fdcb58bd7b7fa8884f267e82a2ac5d05bff953a100d10dc554b8dc069b"
+      }
+    ]
+  },
+  "https://support.dlink.com/ProductInfo.aspx?m=DIR-878": {
+    "vendor": "D-Link",
+    "kind": "text",
+    "fingerprint": "2ab38fc35a05a35c5698ce98a0cfa2af8d0d878a15349021ed568428e494e19e",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "2ab38fc35a05a35c5698ce98a0cfa2af8d0d878a15349021ed568428e494e19e"
+      }
+    ]
+  },
+  "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10475": {
+    "vendor": "D-Link",
+    "kind": "text",
+    "fingerprint": "b87181fa0a373ba87e7f8124740b172ffb85d3f03fa69d1abcd7fe38d698e77c",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "b87181fa0a373ba87e7f8124740b172ffb85d3f03fa69d1abcd7fe38d698e77c"
+      }
+    ]
+  },
+  "https://www.dlink.com/uk/en/products/dir-x1860-ax1800-wifi-6-router": {
+    "vendor": "D-Link",
+    "kind": "text",
+    "fingerprint": "50aad49d86b05cd9b003e5563972b02b310eb0d1efeefb5421a9cc976ecb2a8b",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "50aad49d86b05cd9b003e5563972b02b310eb0d1efeefb5421a9cc976ecb2a8b"
+      }
+    ]
+  },
+  "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10521": {
+    "vendor": "D-Link",
+    "kind": "text",
+    "fingerprint": "4edd1500873b70ac1563cbebfe977378e053bc84c470d60eb2df610250bd6572",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "4edd1500873b70ac1563cbebfe977378e053bc84c470d60eb2df610250bd6572"
+      }
+    ]
+  },
+  "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10413": {
+    "vendor": "D-Link",
+    "kind": "text",
+    "fingerprint": "48fec714323e6f91e789a985aabe607fc62031a6dd5c15f522645f40ae3ebf8f",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "48fec714323e6f91e789a985aabe607fc62031a6dd5c15f522645f40ae3ebf8f"
+      }
+    ]
+  },
+  "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10519": {
+    "vendor": "D-Link",
+    "kind": "text",
+    "fingerprint": "e8dac9eb9b27eab6cc45d0e657010dcfc671bdd690a37878b5ac53a732d602c7",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "e8dac9eb9b27eab6cc45d0e657010dcfc671bdd690a37878b5ac53a732d602c7"
+      }
+    ]
+  },
+  "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10414": {
+    "vendor": "D-Link",
+    "kind": "text",
+    "fingerprint": "a6b307939f4c81c7e189882a0f92218a703572376ce7804b658a6f8a7e845706",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "a6b307939f4c81c7e189882a0f92218a703572376ce7804b658a6f8a7e845706"
+      }
+    ]
+  },
+  "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10415": {
+    "vendor": "D-Link",
+    "kind": "text",
+    "fingerprint": "7cfe7095530b617c2e32758da99941468b20236744f2c478c86776f3456cbb78",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "7cfe7095530b617c2e32758da99941468b20236744f2c478c86776f3456cbb78"
+      }
+    ]
+  },
+  "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10517": {
+    "vendor": "D-Link",
+    "kind": "text",
+    "fingerprint": "7bf186afa6fb4279577587294cf597aa24365fac00e52959d05dd8c3b94ea913",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "7bf186afa6fb4279577587294cf597aa24365fac00e52959d05dd8c3b94ea913"
+      }
+    ]
+  },
+  "https://media.dlink.eu/support/products/m/m15/documentation/M15_A1_PSTI%20DoC_v1.00%28UK%29.pdf": {
+    "vendor": "D-Link",
+    "kind": "bytes",
+    "fingerprint": "4ebd93ea04d371420beb4e9028608f07d3b6612350cc044a156e8fe38642d6a8",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "4ebd93ea04d371420beb4e9028608f07d3b6612350cc044a156e8fe38642d6a8"
+      }
+    ]
+  },
+  "https://media.dlink.eu/support/products/m/m30/documentation/M30_A1_PSTI%20DoC_v1.00%28UK%29.pdf": {
+    "vendor": "D-Link",
+    "kind": "bytes",
+    "fingerprint": "717183d9441abeb2132ab5f343ea83733b21aa30357447ddcbb3ca53578c76e4",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "717183d9441abeb2132ab5f343ea83733b21aa30357447ddcbb3ca53578c76e4"
+      }
+    ]
+  },
+  "https://media.dlink.eu/support/products/m/m32/m32-2/documentation/M32_A1_PSTI%20DoC_v1.00%28UK%29.pdf": {
+    "vendor": "D-Link",
+    "kind": "bytes",
+    "fingerprint": "66444ef417325fa160c5219a70ce43814c7f7a7b2049a1e2c160eaf0b17b34c5",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "66444ef417325fa160c5219a70ce43814c7f7a7b2049a1e2c160eaf0b17b34c5"
+      }
+    ]
+  },
+  "https://media.dlink.eu/products/R/R95/R95_A1_PSTI%20DoC_v1.00%28UK%29.pdf": {
+    "vendor": "D-Link",
+    "kind": "bytes",
+    "fingerprint": "f5cc7f33b14f615830e8d1c8419410ec2631ab1dd635438eb62bd9b4e5b3ebee",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "f5cc7f33b14f615830e8d1c8419410ec2631ab1dd635438eb62bd9b4e5b3ebee"
+      }
+    ]
+  },
+  "https://www.devolo.com/en/psti-statements-of-compliance-521": {
+    "vendor": "devolo",
+    "kind": "text",
+    "fingerprint": "368950dc853d8f97ab46a3f97591b965716117c92ed04e0407a47043b6cc5160",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "368950dc853d8f97ab46a3f97591b965716117c92ed04e0407a47043b6cc5160"
+      }
+    ]
+  },
+  "https://www.devolo.com/media/0b/75/39/1763116492/SoC_UK_PSTI_MT3007.pdf": {
+    "vendor": "devolo",
+    "kind": "bytes",
+    "fingerprint": "763d1b26f3f7ec7df84df85b72be334e6a44041fe6b0c25fbc86670ab4d73d0b",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "763d1b26f3f7ec7df84df85b72be334e6a44041fe6b0c25fbc86670ab4d73d0b"
+      }
+    ]
+  },
+  "https://www.devolo.com/media/01/9a/95/1763116493/SoC_UK_PSTI_MT3189.pdf": {
+    "vendor": "devolo",
+    "kind": "bytes",
+    "fingerprint": "96e325105430c71af14689b4155027c21f35fc318a8f369d995626e794e40383",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "96e325105430c71af14689b4155027c21f35fc318a8f369d995626e794e40383"
+      }
+    ]
+  },
+  "https://www.devolo.com/media/e1/7e/da/1764606713/SoC_UK_PSTI_MT3340_2025715.pdf": {
+    "vendor": "devolo",
+    "kind": "bytes",
+    "fingerprint": "216dd49ace90f6c42ccf9f546c3586e708af86c52154923d5b2259a8d6987326",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "216dd49ace90f6c42ccf9f546c3586e708af86c52154923d5b2259a8d6987326"
+      }
+    ]
+  },
+  "https://www.devolo.com/media/e7/b7/be/1763116493/SoC_UK_PSTI_MT3253.pdf": {
+    "vendor": "devolo",
+    "kind": "bytes",
+    "fingerprint": "56f6693bf15e6245c07305916f7601e3f413f1d55e438f1d7dd5a734b1c05288",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "56f6693bf15e6245c07305916f7601e3f413f1d55e438f1d7dd5a734b1c05288"
+      }
+    ]
+  },
+  "https://www.devolo.com/media/c3/62/1b/1764606714/SoC_UK_PSTI_MT3371_202561.pdf": {
+    "vendor": "devolo",
+    "kind": "bytes",
+    "fingerprint": "54c7ad7a2e7b5d0bd687a006a248bcad3690f3fd66a6975725adbaf1b6567b49",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "54c7ad7a2e7b5d0bd687a006a248bcad3690f3fd66a6975725adbaf1b6567b49"
+      }
+    ]
+  },
+  "https://www.devolo.com/media/bc/11/08/1764606714/SoC_UK_PSTI_MT3379_202611.pdf": {
+    "vendor": "devolo",
+    "kind": "bytes",
+    "fingerprint": "886bd87b3e91edbf3e4e720f44038ceebd7d12351422976319193b7b4fda209b",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "886bd87b3e91edbf3e4e720f44038ceebd7d12351422976319193b7b4fda209b"
+      }
+    ]
+  },
+  "https://www.devolo.com/media/59/c6/3f/1763382576/SoC_UK_PSTI_MT3395_20251115.pdf": {
+    "vendor": "devolo",
+    "kind": "bytes",
+    "fingerprint": "532fe1f192a2c5e35e3fadbc6b0081a0fed34b5f0ef494750a663916df7a8827",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "532fe1f192a2c5e35e3fadbc6b0081a0fed34b5f0ef494750a663916df7a8827"
+      }
+    ]
+  },
+  "https://www.devolo.com/media/db/ec/99/1763382576/SoC_UK_PSTI_MT3373_20251115.pdf": {
+    "vendor": "devolo",
+    "kind": "bytes",
+    "fingerprint": "67397c00e8bc095e4a0bdb2137ad4f362b833fecd07f80feca964a9094bc8ca7",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "67397c00e8bc095e4a0bdb2137ad4f362b833fecd07f80feca964a9094bc8ca7"
+      }
+    ]
+  },
+  "https://www.draytek.co.uk/information/eol-product-equivalents": {
+    "vendor": "DrayTek",
+    "kind": "text",
+    "fingerprint": "97455d281ad27653a22dd1a3e71df82c38ba3caa11438c6a57728310bfe8c8f0",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "97455d281ad27653a22dd1a3e71df82c38ba3caa11438c6a57728310bfe8c8f0"
+      }
+    ]
+  },
+  "https://www.draytek.co.uk/support/product-lifecycle": {
+    "vendor": "DrayTek",
+    "kind": "text",
+    "fingerprint": "1b69d97e995ebd37a39a77b7684a40c54ec8e8562563ca70bc32a456046a925c",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "1b69d97e995ebd37a39a77b7684a40c54ec8e8562563ca70bc32a456046a925c"
+      }
+    ]
+  },
+  "https://eero.com/support/articles/eero-software-security-updates": {
+    "vendor": "eero",
+    "kind": "text",
+    "fingerprint": "c1113de335c00304fea9ca8f6ea58666410174235e033ccaa08f450d2211fbc0",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "c1113de335c00304fea9ca8f6ea58666410174235e033ccaa08f450d2211fbc0"
+      }
+    ]
+  },
+  "https://passport.anker.com/uk/psti-related": {
+    "vendor": "eufy",
+    "kind": "text",
+    "fingerprint": "383483a663d927ff89f365892eaaec62be4ac254a39b0d4989a3419c21fd2c7a",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "383483a663d927ff89f365892eaaec62be4ac254a39b0d4989a3419c21fd2c7a"
+      }
+    ]
+  },
+  "https://support.ezviz.com/faq/article/EZVIZ-EOL-Product-List": {
+    "vendor": "EZVIZ",
+    "kind": "text",
+    "fingerprint": "7323b40d3196177a63c2e4d9796ad096e4f376345bc834d4815df2f26d69db41",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "7323b40d3196177a63c2e4d9796ad096e4f376345bc834d4815df2f26d69db41"
+      }
+    ]
+  },
+  "https://www.gl-inet.com/en-us/pages/psti-support-period": {
+    "vendor": "GL.iNet",
+    "kind": "text",
+    "fingerprint": "ba380e3650031aab198e74cf466c26636b110f6df8d60c1dfcbf4c01119e3a98",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "ba380e3650031aab198e74cf466c26636b110f6df8d60c1dfcbf4c01119e3a98"
+      }
+    ]
+  },
+  "https://www.gl-inet.com/blogs/blog/cirrus-gl-ap1300-product-end-of-life-notice": {
+    "vendor": "GL.iNet",
+    "kind": "text",
+    "fingerprint": "4d7840ab5b2cb5375227b3c3bdf46819b9c883bd8308efdae79813f26609541b",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "4d7840ab5b2cb5375227b3c3bdf46819b9c883bd8308efdae79813f26609541b"
+      }
+    ]
+  },
+  "https://www.gl-inet.com/products/discontinued/": {
+    "vendor": "GL.iNet",
+    "kind": "text",
+    "fingerprint": "44c03d351ce2892bafe6032e2eb7acfb78bcf458d836858ea09ed5abfcc4665a",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "44c03d351ce2892bafe6032e2eb7acfb78bcf458d836858ea09ed5abfcc4665a"
+      }
+    ]
+  },
+  "https://www.gl-inet.com/blogs/blog/products-end-of-life-eol-notice": {
+    "vendor": "GL.iNet",
+    "kind": "text",
+    "fingerprint": "04d42a7c3c958c7893c2b2e26bf7dd280bd9b76483aaff6793ab99c347f6b92a",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "04d42a7c3c958c7893c2b2e26bf7dd280bd9b76483aaff6793ab99c347f6b92a"
+      }
+    ]
+  },
+  "https://www.gl-inet.com/blogs/blog/convexa-b-gl-b1300-product-end-of-life-notice": {
+    "vendor": "GL.iNet",
+    "kind": "text",
+    "fingerprint": "89ad58e360c1dc60c8ae6fc111512a32da68b0af499d4eb01c5c4968f8654754",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "89ad58e360c1dc60c8ae6fc111512a32da68b0af499d4eb01c5c4968f8654754"
+      }
+    ]
+  },
+  "https://www.gl-inet.com/blogs/blog/velica-gl-b2200-product-end-of-life-notice": {
+    "vendor": "GL.iNet",
+    "kind": "text",
+    "fingerprint": "0c2dbdbb216c241fff127bce7367529d9773e57735a2bc21606ccf0762e04216",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "0c2dbdbb216c241fff127bce7367529d9773e57735a2bc21606ccf0762e04216"
+      }
+    ]
+  },
+  "https://www.gl-inet.com/blogs/blog/mudi-gl-e750v2-vsim-version-product-end-of-life-notice": {
+    "vendor": "GL.iNet",
+    "kind": "text",
+    "fingerprint": "6d1d4128768f36735251eb01828ad27e1772cb4e0472fbdf647acd5a1a0a8ed3",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "6d1d4128768f36735251eb01828ad27e1772cb4e0472fbdf647acd5a1a0a8ed3"
+      }
+    ]
+  },
+  "https://www.gl-inet.com/blogs/blog/beryl-gl-mt1300-product-end-of-life-notice": {
+    "vendor": "GL.iNet",
+    "kind": "text",
+    "fingerprint": "602026be33c6356b936a28cae5ab79aebc23ba2d59dcfd9c72a4f1153dcdc102",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "602026be33c6356b936a28cae5ab79aebc23ba2d59dcfd9c72a4f1153dcdc102"
+      }
+    ]
+  },
+  "https://www.gl-inet.com/blogs/blog/gl-sf1200-product-end-of-life-notice": {
+    "vendor": "GL.iNet",
+    "kind": "text",
+    "fingerprint": "42f17a760b4029537f8493342cddbe2fb0b491a43bc0017c01ec1e2f6c35e836",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "42f17a760b4029537f8493342cddbe2fb0b491a43bc0017c01ec1e2f6c35e836"
+      }
+    ]
+  },
+  "https://support.google.com/product-documentation/answer/10231940?hl=en-GB": {
+    "vendor": "Google",
+    "kind": "text",
+    "fingerprint": "2b96eb928def2da9c7cb00f63a5cf51824a1b2253c4b6ead2c2c16b219e000fc",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "2b96eb928def2da9c7cb00f63a5cf51824a1b2253c4b6ead2c2c16b219e000fc"
+      }
+    ]
+  },
+  "https://assets.ctfassets.net/mijf9lz5yt3u/3GyNpOz5vyN7miYMdZ5SEN/3ae0a382e6e5f52480c3fc4bdc0d68a9/PSTI_Statement_Oct_26.pdf": {
+    "vendor": "Hive",
+    "kind": "bytes",
+    "fingerprint": "ab2f4ac5059013946d11bab1f1553230ba4f63e4962f22f20bf78e9a17982f2a",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "ab2f4ac5059013946d11bab1f1553230ba4f63e4962f22f20bf78e9a17982f2a"
+      }
+    ]
+  },
+  "https://www.hivehome.com/product-news": {
+    "vendor": "Hive",
+    "kind": "text",
+    "fingerprint": "fe5df806bd6a1053ffaf60a854d9d2a7d7f1b36ec8abea3eb74a1f76be2eaab1",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "fe5df806bd6a1053ffaf60a854d9d2a7d7f1b36ec8abea3eb74a1f76be2eaab1"
+      }
+    ]
+  },
+  "https://support.keenetic.com/buddy-4/kn-3211/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "d365744be289c58a94b27a31671528654b0dd00af236efe66d740233f119cfad",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "d365744be289c58a94b27a31671528654b0dd00af236efe66d740233f119cfad"
+      }
+    ]
+  },
+  "https://support.keenetic.com/buddy-5/kn-3311/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "0616a99379c5ce9ae35762bd9340dfdcfc50f4c37705d19f3ef2f6452332e22d",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "0616a99379c5ce9ae35762bd9340dfdcfc50f4c37705d19f3ef2f6452332e22d"
+      }
+    ]
+  },
+  "https://support.keenetic.com/buddy-6/kn-3411/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "e16cfe828963da019ec4c7083dc677761f04b5ea73290ab43c8ccd943fef2bc2",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "e16cfe828963da019ec4c7083dc677761f04b5ea73290ab43c8ccd943fef2bc2"
+      }
+    ]
+  },
+  "https://support.keenetic.com/carrier/kn-1711/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "b853b26e0ea15709dd9a97803b94cc7034c757c92786a7552199a0ef667b1afc",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "b853b26e0ea15709dd9a97803b94cc7034c757c92786a7552199a0ef667b1afc"
+      }
+    ]
+  },
+  "https://support.keenetic.com/carrier/kn-1721/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "47d473796a224a3b85595dedc17d7f82b5a22465036b957ecd1112e9d3fd8731",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "47d473796a224a3b85595dedc17d7f82b5a22465036b957ecd1112e9d3fd8731"
+      }
+    ]
+  },
+  "https://support.keenetic.ua/city/kn-1510/en/24481-keenetic-product-lifecycle-support-policy.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "ae7a90b6c26b32df2e051b9b46a8666892e8e5ec83a2d30d4f44c2c869bb0714",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "ae7a90b6c26b32df2e051b9b46a8666892e8e5ec83a2d30d4f44c2c869bb0714"
+      }
+    ]
+  },
+  "https://support.keenetic.com/explorer/kn-1613/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "08b4c7a14dbd3ac826ac19cb8af1692939b4e6920a94408f549bcbcc718eb356",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "08b4c7a14dbd3ac826ac19cb8af1692939b4e6920a94408f549bcbcc718eb356"
+      }
+    ]
+  },
+  "https://support.keenetic.com/explorer-4g/kn-4910/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "3bcb98cc0ce510c0e200121f51bec30fc2cdfebead7ca40d39b850decc48921f",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "3bcb98cc0ce510c0e200121f51bec30fc2cdfebead7ca40d39b850decc48921f"
+      }
+    ]
+  },
+  "https://support.keenetic.com/hero/kn-1011/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "da7e1ce707660c6d039716bb3a3f370e580806825a304162ffb35dd7c89d7c4f",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "da7e1ce707660c6d039716bb3a3f370e580806825a304162ffb35dd7c89d7c4f"
+      }
+    ]
+  },
+  "https://support.keenetic.com/hero/kn-1012/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "94e331b21cc2a9c89937c57459310e195de950d893e3af4c46cbd3fe1e17f971",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "94e331b21cc2a9c89937c57459310e195de950d893e3af4c46cbd3fe1e17f971"
+      }
+    ]
+  },
+  "https://support.keenetic.com/hero-4g/kn-2310/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "7714e060bc43db0572cf3c37c52656bf6b2228bd3e7ebd07f54346cbec319ea7",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "7714e060bc43db0572cf3c37c52656bf6b2228bd3e7ebd07f54346cbec319ea7"
+      }
+    ]
+  },
+  "https://support.keenetic.com/hero-dsl/kn-2410/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "c8feca9563ac9c0daa2a1a19935ce2bc0061bc9458da8832e162d7b809fa3dfb",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "c8feca9563ac9c0daa2a1a19935ce2bc0061bc9458da8832e162d7b809fa3dfb"
+      }
+    ]
+  },
+  "https://support.keenetic.com/hopper/kn-3810/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "4ec8a6d1b4f33cbcff4bcd49190326ed1aff53ecfb1ae1ada43800b155ccb75e",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "4ec8a6d1b4f33cbcff4bcd49190326ed1aff53ecfb1ae1ada43800b155ccb75e"
+      }
+    ]
+  },
+  "https://support.keenetic.com/hopper-dsl/kn-3610/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "0b03ec0591576b62ecc8223044b095d14308795bea8778c9e568345a40c9a81d",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "0b03ec0591576b62ecc8223044b095d14308795bea8778c9e568345a40c9a81d"
+      }
+    ]
+  },
+  "https://support.keenetic.com/hopper-se/kn-3812/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "20ee1293c233cb0d500e3368cbc276e542aff31a6787377994093e798d3a2b75",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "20ee1293c233cb0d500e3368cbc276e542aff31a6787377994093e798d3a2b75"
+      }
+    ]
+  },
+  "https://support.keenetic.com/orbiter-pro/kn-2810/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "50672763abf0bbc36ddd07ff235e3a3a1829f72b6423e6f8710b61a9f4df0589",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "50672763abf0bbc36ddd07ff235e3a3a1829f72b6423e6f8710b61a9f4df0589"
+      }
+    ]
+  },
+  "https://support.keenetic.com/peak/kn-2710/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "7bd3db17c309a3efe879b02e266805d70fdb36ff3c9980b09a9b3bc8eb0b0618",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "7bd3db17c309a3efe879b02e266805d70fdb36ff3c9980b09a9b3bc8eb0b0618"
+      }
+    ]
+  },
+  "https://support.keenetic.com/runner-4g/kn-2210/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "7a0454feb23a084eeb3cbcaf5f8ac02213f073d6c6f1895f9f1a1dc2f97ce96a",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "7a0454feb23a084eeb3cbcaf5f8ac02213f073d6c6f1895f9f1a1dc2f97ce96a"
+      }
+    ]
+  },
+  "https://support.keenetic.com/runner-4g/kn-2211/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "ef5848da7b37f22ed247e1e51bfc14d50ba1c52ba8f58891f5c11550a84bfe56",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "ef5848da7b37f22ed247e1e51bfc14d50ba1c52ba8f58891f5c11550a84bfe56"
+      }
+    ]
+  },
+  "https://support.keenetic.com/runner-4g/kn-2212/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "fc074a9e23a3bcbe924dde47238fdf1b84cd2f34aa13871515d6949513c03937",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "fc074a9e23a3bcbe924dde47238fdf1b84cd2f34aa13871515d6949513c03937"
+      }
+    ]
+  },
+  "https://support.keenetic.com/skipper/kn-1910/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "7a12987c2ac2dfecd8dc7e41f642aafaf7ccae34d02ac1ed3c2c581cead1ee64",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "7a12987c2ac2dfecd8dc7e41f642aafaf7ccae34d02ac1ed3c2c581cead1ee64"
+      }
+    ]
+  },
+  "https://support.keenetic.com/skipper-4g/kn-2910/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "b55dd6cc972730f0d871fed615c69898d5b27268500f4308300bea38ece77e8a",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "b55dd6cc972730f0d871fed615c69898d5b27268500f4308300bea38ece77e8a"
+      }
+    ]
+  },
+  "https://support.keenetic.com/skipper-dsl/kn-2112/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "e91ae311cf07dfa5f04b4892604456429f4e28e0ec49b78e21334e3b46220a44",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "e91ae311cf07dfa5f04b4892604456429f4e28e0ec49b78e21334e3b46220a44"
+      }
+    ]
+  },
+  "https://support.keenetic.com/speedster/kn-3010/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "ffecd226d0cd45b85517308c91da61303b557d5d44b171f50f52fe94e1f927fa",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "ffecd226d0cd45b85517308c91da61303b557d5d44b171f50f52fe94e1f927fa"
+      }
+    ]
+  },
+  "https://support.keenetic.com/speedster/kn-3012/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "d30c926824c769fbfec9f5491acd9fee0f3d5cc641413855b90f8132c8d0baff",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "d30c926824c769fbfec9f5491acd9fee0f3d5cc641413855b90f8132c8d0baff"
+      }
+    ]
+  },
+  "https://support.keenetic.com/speedster/kn-3013/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "20aa23c17398754b926c6142fac29f664a6d1c546aad9f5b523c138088149bba",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "20aa23c17398754b926c6142fac29f664a6d1c546aad9f5b523c138088149bba"
+      }
+    ]
+  },
+  "https://support.keenetic.com/sprinter/kn-3710/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "0a0a30c7dff06f056b1745044dcaf3e15d73af09b22eaddbe904ef737f8d8c58",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "0a0a30c7dff06f056b1745044dcaf3e15d73af09b22eaddbe904ef737f8d8c58"
+      }
+    ]
+  },
+  "https://support.keenetic.com/sprinter-se/kn-3712/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "69aeec1958ec209fa84a3c455581170c94b791156c90e5be418f94c2e2e721e0",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "69aeec1958ec209fa84a3c455581170c94b791156c90e5be418f94c2e2e721e0"
+      }
+    ]
+  },
+  "https://support.keenetic.com/stellar-6/kap-650/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "741b8f5f1e82ec6b1c696997c7fd69128ac3ff6ba8b29e4d2f22c6455ce1473d",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "741b8f5f1e82ec6b1c696997c7fd69128ac3ff6ba8b29e4d2f22c6455ce1473d"
+      }
+    ]
+  },
+  "https://support.keenetic.com/titan/kn-1810/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "1ec6fc8948103309b81febdf0bb5ce3f296b495ebc7d956385c69feaaa5bc1ab",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "1ec6fc8948103309b81febdf0bb5ce3f296b495ebc7d956385c69feaaa5bc1ab"
+      }
+    ]
+  },
+  "https://support.keenetic.com/titan/kn-1811/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "9aa700201f27bfb3e41bdf5430fc251633450fb0fc735bdfbb4aa55ff89e0253",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "9aa700201f27bfb3e41bdf5430fc251633450fb0fc735bdfbb4aa55ff89e0253"
+      }
+    ]
+  },
+  "https://support.keenetic.com/titan/kn-1812/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "3037f12071012b775c62035a73c900b2f3439ee9abf0c0a2e0f5c70cf5b69aaf",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "3037f12071012b775c62035a73c900b2f3439ee9abf0c0a2e0f5c70cf5b69aaf"
+      }
+    ]
+  },
+  "https://support.keenetic.com/titan-se/kn-4210/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "aa9fc6958f7eb1e393698fef9a2906dd567f55a20803cb2565da14415f9fa8e2",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "aa9fc6958f7eb1e393698fef9a2906dd567f55a20803cb2565da14415f9fa8e2"
+      }
+    ]
+  },
+  "https://support.keenetic.com/voyager-pro/kn-3510/en/36677-warranty-and-support-periods.html": {
+    "vendor": "Keenetic",
+    "kind": "text",
+    "fingerprint": "69c08c74dc06c3ef0dad7fbc2ce7c256e043bc837368d509745789ca4eb86ac8",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "69c08c74dc06c3ef0dad7fbc2ce7c256e043bc837368d509745789ca4eb86ac8"
+      }
+    ]
+  },
+  "https://www.linksys.com/pages/linksys-product-end-of-life": {
+    "vendor": "Linksys",
+    "kind": "text",
+    "fingerprint": "fa9512d6767365dc191762acc02ff2683b3572ab5e73cd6f674de1042097477d",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "fa9512d6767365dc191762acc02ff2683b3572ab5e73cd6f674de1042097477d"
+      }
+    ]
+  },
+  "https://support.linksys.com/kb/article/434-en/": {
+    "vendor": "Linksys",
+    "kind": "text",
+    "fingerprint": "070b21b463fcfd00becfcbef6848d252c1e393b634384e390017bf8de967f2e7",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "070b21b463fcfd00becfcbef6848d252c1e393b634384e390017bf8de967f2e7"
+      }
+    ]
+  },
+  "https://lorextechnology.co.uk/pages/product-use-policy": {
+    "vendor": "Lorex",
+    "kind": "text",
+    "fingerprint": "adb05117e19dcd199fc527c32ea919ae1ed4cc071eca75dc40d8d13fc2c47446",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "adb05117e19dcd199fc527c32ea919ae1ed4cc071eca75dc40d8d13fc2c47446"
+      }
+    ]
+  },
+  "https://static.mercusys.com/manual/Statements_of_PSTI_Compliance_MERCUSYS20260610083812.pdf": {
+    "vendor": "Mercusys",
+    "kind": "bytes",
+    "fingerprint": "c04afa681f9932d77402bcc2a199d4267116acc61379519d079c000c964969da",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "c04afa681f9932d77402bcc2a199d4267116acc61379519d079c000c964969da"
+      }
+    ]
+  },
+  "https://www.netgear.com/au/about/eos/": {
+    "vendor": "Netgear",
+    "kind": "text",
+    "fingerprint": "50cf9e388b56bbadb8547297310328f592b0f7f638a605e6db78d6a172ab18fc",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "50cf9e388b56bbadb8547297310328f592b0f7f638a605e6db78d6a172ab18fc"
+      }
+    ]
+  },
+  "https://downloads1.netgear.com/files/netgear/pdfs/NFB_EOL_Product_List_Dec2025_updated.pdf": {
+    "vendor": "Netgear",
+    "kind": "bytes",
+    "fingerprint": "2cafbe1653e7fade5f979f1ccd653fe0d7035b7a91ec218991ae58cbcead2907",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "2cafbe1653e7fade5f979f1ccd653fe0d7035b7a91ec218991ae58cbcead2907"
+      }
+    ]
+  },
+  "https://www.netgear.com/about/eos/": {
+    "vendor": "Netgear",
+    "kind": "text",
+    "fingerprint": "06b889b74c1f2ef44dc3b7c5f54b28e02ebffcaed456d6787a1f6eafac923318",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "06b889b74c1f2ef44dc3b7c5f54b28e02ebffcaed456d6787a1f6eafac923318"
+      }
+    ]
+  },
+  "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10119-01_RAX70_DoC_PSTI_202404021505.pdf": {
+    "vendor": "Netgear",
+    "kind": "bytes",
+    "fingerprint": "8bf38f90d3657b151fc2ae78cc0d3e243dcab1e1f1c3aad79cdba54357c94982",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "8bf38f90d3657b151fc2ae78cc0d3e243dcab1e1f1c3aad79cdba54357c94982"
+      }
+    ]
+  },
+  "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10352-01_RS300_DoC_PSTI_202607171026.pdf": {
+    "vendor": "Netgear",
+    "kind": "bytes",
+    "fingerprint": "311e7e3c0243f3f6e48ec0b87a85836c083fcb3bb451356b12eade5db03c4728",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "311e7e3c0243f3f6e48ec0b87a85836c083fcb3bb451356b12eade5db03c4728"
+      }
+    ]
+  },
+  "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10336-01_RBE371&RBE370&RBE361&RBE360_DoC_PSTI_202509230859.pdf": {
+    "vendor": "Netgear",
+    "kind": "bytes",
+    "fingerprint": "439c3af2cb462aac7cedede0aa6ecd34c440d1298f2e99adaa17ce68bfdd9e2c",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "439c3af2cb462aac7cedede0aa6ecd34c440d1298f2e99adaa17ce68bfdd9e2c"
+      }
+    ]
+  },
+  "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10126-01_RBR750, RBS750, RBK75x_DoC_PSTI_202404021556.pdf": {
+    "vendor": "Netgear",
+    "kind": "bytes",
+    "fingerprint": "950d5764840366445cb49052427a030f0884f5aeb0ffd36d76a8f576c9841397",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "950d5764840366445cb49052427a030f0884f5aeb0ffd36d76a8f576c9841397"
+      }
+    ]
+  },
+  "https://nooie.com/pages/security-updates": {
+    "vendor": "Nooie",
+    "kind": "text",
+    "fingerprint": "be229b2e563efb9505db52225f794607335e10ef4563396d54ae49f6b5ff59df",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "be229b2e563efb9505db52225f794607335e10ef4563396d54ae49f6b5ff59df"
+      }
+    ]
+  },
+  "https://media.crystallize.com/nuki-production/26/8/24/446cfea9/psti_statement-nuki_bridge.pdf": {
+    "vendor": "Nuki",
+    "kind": "bytes",
+    "fingerprint": "f5d90ee6ca6f491ff0afdbbc4e58a328b016c89c82e6f0efb6dc1e2f9821f17d",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "f5d90ee6ca6f491ff0afdbbc4e58a328b016c89c82e6f0efb6dc1e2f9821f17d"
+      }
+    ]
+  },
+  "https://media.crystallize.com/nuki-production/26/8/24/66848484/psti_statement-nuki_doorsensor.pdf": {
+    "vendor": "Nuki",
+    "kind": "bytes",
+    "fingerprint": "2af25c61921b96d6e00b2d3110198e70b48b73f916720c8f7b464ce23b7fae3c",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "2af25c61921b96d6e00b2d3110198e70b48b73f916720c8f7b464ce23b7fae3c"
+      }
+    ]
+  },
+  "https://media.crystallize.com/nuki-production/26/8/24/713422da/psti_statement-nuki_fob.pdf": {
+    "vendor": "Nuki",
+    "kind": "bytes",
+    "fingerprint": "5e587b64df0e95afb5c419697d4520d00a4215b4ccec21495eeb9b05ae896eae",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "5e587b64df0e95afb5c419697d4520d00a4215b4ccec21495eeb9b05ae896eae"
+      }
+    ]
+  },
+  "https://media.crystallize.com/nuki-production/26/8/24/16c3f773/psti_statement-nuki_keypad.pdf": {
+    "vendor": "Nuki",
+    "kind": "bytes",
+    "fingerprint": "b92ee0065156e206f0d834efde7f81908f86ed4d6b08cdca654b4e7681769d7f",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "b92ee0065156e206f0d834efde7f81908f86ed4d6b08cdca654b4e7681769d7f"
+      }
+    ]
+  },
+  "https://media.crystallize.com/nuki-production/26/8/24/afc21d3f/psti_statement-nuki_keypad_2.pdf": {
+    "vendor": "Nuki",
+    "kind": "bytes",
+    "fingerprint": "6e826b16ba3b4a8a40325f43dfd9792a61c3b25b464a7e83187a986370fe673f",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "6e826b16ba3b4a8a40325f43dfd9792a61c3b25b464a7e83187a986370fe673f"
+      }
+    ]
+  },
+  "https://media.crystallize.com/nuki-production/26/8/24/882f0443/psti_statement-nuki_keypad_2_nfc.pdf": {
+    "vendor": "Nuki",
+    "kind": "bytes",
+    "fingerprint": "45059d0c0875c01c85364225ccd9b76fbadcbe25ebb34a7a4b3bcbfcf4e01ccc",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "45059d0c0875c01c85364225ccd9b76fbadcbe25ebb34a7a4b3bcbfcf4e01ccc"
+      }
+    ]
+  },
+  "https://media.crystallize.com/nuki-production/26/8/24/6adba739/psti_statement-nuki_keypad_2_pro.pdf": {
+    "vendor": "Nuki",
+    "kind": "bytes",
+    "fingerprint": "347311f8b5a46378968919842c0290a5d5d555dc1f1b4b45fd176abbb732877b",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "347311f8b5a46378968919842c0290a5d5d555dc1f1b4b45fd176abbb732877b"
+      }
+    ]
+  },
+  "https://media.crystallize.com/nuki-production/26/8/24/ed57e819/psti_statement-nuki_opener.pdf": {
+    "vendor": "Nuki",
+    "kind": "bytes",
+    "fingerprint": "2d0dd6e05aa8c4abf93ff42f20284a7f939b951a220342883b076337153180c3",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "2d0dd6e05aa8c4abf93ff42f20284a7f939b951a220342883b076337153180c3"
+      }
+    ]
+  },
+  "https://media.crystallize.com/nuki-production/26/8/24/90a10e9a/psti_statement-nuki_smart_lock_3.pdf": {
+    "vendor": "Nuki",
+    "kind": "bytes",
+    "fingerprint": "e8afb6dd7b1c0b13adacc267112493836eb1d13ce4cdb77c3621b9b621e4305e",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "e8afb6dd7b1c0b13adacc267112493836eb1d13ce4cdb77c3621b9b621e4305e"
+      }
+    ]
+  },
+  "https://media.crystallize.com/nuki-production/26/8/24/6f24a6cf/psti_statement-nuki_smart_lock_3_pro.pdf": {
+    "vendor": "Nuki",
+    "kind": "bytes",
+    "fingerprint": "08e968baf1dd832d4df25e6dab78862bdd18ac61632747395087b4bfbdc80e9b",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "08e968baf1dd832d4df25e6dab78862bdd18ac61632747395087b4bfbdc80e9b"
+      }
+    ]
+  },
+  "https://media.crystallize.com/nuki-production/26/8/24/06af3766/psti_statement-nuki_smart_lock.pdf": {
+    "vendor": "Nuki",
+    "kind": "bytes",
+    "fingerprint": "5831cdca5539682de589a284d5a67c1ac4f640db3b4cc824e48545627b701b79",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "5831cdca5539682de589a284d5a67c1ac4f640db3b4cc824e48545627b701b79"
+      }
+    ]
+  },
+  "https://media.crystallize.com/nuki-production/26/8/24/eb2f4249/psti_statement-nuki_smart_lock_5_go.pdf": {
+    "vendor": "Nuki",
+    "kind": "bytes",
+    "fingerprint": "3d7a2b5bb4e5edb55bb70275c13a415fbaeab27be8cbd30c5f040979465edfd9",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "3d7a2b5bb4e5edb55bb70275c13a415fbaeab27be8cbd30c5f040979465edfd9"
+      }
+    ]
+  },
+  "https://media.crystallize.com/nuki-production/26/8/24/f607c44b/psti_statement-nuki_smart_lock_pro.pdf": {
+    "vendor": "Nuki",
+    "kind": "bytes",
+    "fingerprint": "dbb62d03b42ee825a3c0f2b61cf35fe912029822c04945b84260e714bc59f2c3",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "dbb62d03b42ee825a3c0f2b61cf35fe912029822c04945b84260e714bc59f2c3"
+      }
+    ]
+  },
+  "https://media.crystallize.com/nuki-production/26/8/24/75c36530/psti_statement-nuki_smart_lock_5_pro.pdf": {
+    "vendor": "Nuki",
+    "kind": "bytes",
+    "fingerprint": "e1b46118eef9d8869c67145aa5568bbc8a9da8bf6337d288e6b1fa211606b399",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "e1b46118eef9d8869c67145aa5568bbc8a9da8bf6337d288e6b1fa211606b399"
+      }
+    ]
+  },
+  "https://media.crystallize.com/nuki-production/26/8/24/9b2ba72b/psti_statement-nuki_smart_lock_5_ultra.pdf": {
+    "vendor": "Nuki",
+    "kind": "bytes",
+    "fingerprint": "28f99c876ea0dfe1a2fa6223695a9a868e5423e9b93db8770a874266b4bd2b45",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "28f99c876ea0dfe1a2fa6223695a9a868e5423e9b93db8770a874266b4bd2b45"
+      }
+    ]
+  },
+  "https://www.philips-hue.com/en-gb/support/legal/end-of-support-policy": {
+    "vendor": "Philips Hue",
+    "kind": "text",
+    "fingerprint": "1b36174a60668b233531ee1a797a3717541e1b39cc7d8006ecd14fec477f1382",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "1b36174a60668b233531ee1a797a3717541e1b39cc7d8006ecd14fec477f1382"
+      }
+    ]
+  },
+  "https://download.qnap.com/Storage/PSTI/QNAP%20PSTI%20Statement%20of%20Compliance_TS-233.pdf": {
+    "vendor": "QNAP",
+    "kind": "bytes",
+    "fingerprint": "b7569fbce0e3ad48bac2d7e09caece8769c5778de65e321eaed1e9b04c4bb706",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "b7569fbce0e3ad48bac2d7e09caece8769c5778de65e321eaed1e9b04c4bb706"
+      }
+    ]
+  },
+  "https://www.qnap.com/en/product/eol.php": {
+    "vendor": "QNAP",
+    "kind": "text",
+    "fingerprint": "f23954f11cfc499f181b4e4b25369a76f3ce59a793a32a370df6ed3e5ad66222",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "f23954f11cfc499f181b4e4b25369a76f3ce59a793a32a370df6ed3e5ad66222"
+      }
+    ]
+  },
+  "https://download.qnap.com/Storage/PSTI/QNAP%20PSTI%20Statement%20of%20Compliance_TS-264.pdf": {
+    "vendor": "QNAP",
+    "kind": "bytes",
+    "fingerprint": "755a6774f9ee7664b21fb21a25d920c23c3659b2ea4e81e9c6941f35a8cd0f7c",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "755a6774f9ee7664b21fb21a25d920c23c3659b2ea4e81e9c6941f35a8cd0f7c"
+      }
+    ]
+  },
+  "https://download.qnap.com/Storage/PSTI/QNAP%20PSTI%20Statement%20of%20Compliance_TS-433.pdf": {
+    "vendor": "QNAP",
+    "kind": "bytes",
+    "fingerprint": "ab8c607b6b2a6b6e8b849f95a38b023e58994cd3a79782a45bd445aad23a9f1d",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "ab8c607b6b2a6b6e8b849f95a38b023e58994cd3a79782a45bd445aad23a9f1d"
+      }
+    ]
+  },
+  "https://download.qnap.com/Storage/PSTI/QNAP%20PSTI%20Statement%20of%20Compliance_TS-464.pdf": {
+    "vendor": "QNAP",
+    "kind": "bytes",
+    "fingerprint": "e4a68e20d3eda1e84142312c1e4d9bacae9ef834d0bdd884d69561f7590bb5e4",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "e4a68e20d3eda1e84142312c1e4d9bacae9ef834d0bdd884d69561f7590bb5e4"
+      }
+    ]
+  },
+  "https://download.qnap.com/Storage/PSTI/QNAP%20PSTI%20Statement%20of%20Compliance_TS-664.pdf": {
+    "vendor": "QNAP",
+    "kind": "bytes",
+    "fingerprint": "326647768e4a1880ca985c5acf6ea4cc367fa5597c4872b7cc61fa7604377bcc",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "326647768e4a1880ca985c5acf6ea4cc367fa5597c4872b7cc61fa7604377bcc"
+      }
+    ]
+  },
+  "https://home-cdn.reolink.us/wp-content/uploads/2026/05/Battery-WiFi-IP-Camera-5.20.pdf": {
+    "vendor": "Reolink",
+    "kind": "bytes",
+    "fingerprint": "ed9416ceea13d56f2959558f1007e743c85ffb1ac7e2ea7c6f9e453d22afeffe",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "ed9416ceea13d56f2959558f1007e743c85ffb1ac7e2ea7c6f9e453d22afeffe"
+      }
+    ]
+  },
+  "https://home-cdn.reolink.us/wp-content/uploads/2026/05/WiFi-IP-Camera-5.18.pdf": {
+    "vendor": "Reolink",
+    "kind": "bytes",
+    "fingerprint": "2fc202fea38ef552c012678570488eb8d49b1c3bc00ad6950a566222d269a858",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "2fc202fea38ef552c012678570488eb8d49b1c3bc00ad6950a566222d269a858"
+      }
+    ]
+  },
+  "https://home-cdn.reolink.us/wp-content/uploads/2026/05/PoE-IP-Camera-5.20.pdf": {
+    "vendor": "Reolink",
+    "kind": "bytes",
+    "fingerprint": "280833977f51001c6ad3462003f2020a23189fcc65e382e02e887773e50ebc45",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "280833977f51001c6ad3462003f2020a23189fcc65e382e02e887773e50ebc45"
+      }
+    ]
+  },
+  "https://home-cdn.reolink.us/wp-content/uploads/2026/05/Doorbell-5.18.pdf": {
+    "vendor": "Reolink",
+    "kind": "bytes",
+    "fingerprint": "deaec10499eb374b8a1dc48e054514e25232fdd56ebdd6e73a1d3d7825f67da8",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "deaec10499eb374b8a1dc48e054514e25232fdd56ebdd6e73a1d3d7825f67da8"
+      }
+    ]
+  },
+  "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates": {
+    "vendor": "Ring",
+    "kind": "text",
+    "fingerprint": "eb7fc1418d840fdd6563ce454e289bfa5f98e447286fdc990ff8c2e44fae66da",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "eb7fc1418d840fdd6563ce454e289bfa5f98e447286fdc990ff8c2e44fae66da"
+      }
+    ]
+  },
+  "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates": {
+    "vendor": "Ring",
+    "kind": "text",
+    "fingerprint": "d5452222fc24c8c88854b92601836521503a7c33d262550e8bc5e56fc4b0cffd",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "d5452222fc24c8c88854b92601836521503a7c33d262550e8bc5e56fc4b0cffd"
+      }
+    ]
+  },
+  "https://ring.com/support/articles/ri2p1/Information-on-Ring-Devices-Software-Security-Updates": {
+    "vendor": "Ring",
+    "kind": "text",
+    "fingerprint": "d5452222fc24c8c88854b92601836521503a7c33d262550e8bc5e56fc4b0cffd",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "d5452222fc24c8c88854b92601836521503a7c33d262550e8bc5e56fc4b0cffd"
+      }
+    ]
+  },
+  "https://ring.com/support/articles/h4rub/end-of-device-support": {
+    "vendor": "Ring",
+    "kind": "text",
+    "fingerprint": "499a09318305b3da809b776889455b8a62a2d8b398e1b44a79d155da073c6356",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "499a09318305b3da809b776889455b8a62a2d8b398e1b44a79d155da073c6356"
+      }
+    ]
+  },
+  "https://kb.shelly.cloud/__attachments/a_aef2d6c40f5fe3a3fea22c215e99ab0ed32f716e526bf17649f9f8e5204f6f50/Shelly%201%20Gen3%20UK%20PSTI%20ACT%20statement%20of%20compliance%20268%202026-03-13.pdf?cb=8b42b9fa8af21c89f5a9d7c0e38a31d4": {
+    "vendor": "Shelly",
+    "kind": "bytes",
+    "fingerprint": "80a5e9e3e16a193d8dbcbe6e39c570454bdf15e31bfd233b3149e4ed667f50d7",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "80a5e9e3e16a193d8dbcbe6e39c570454bdf15e31bfd233b3149e4ed667f50d7"
+      }
+    ]
+  },
+  "https://kb.shelly.cloud/__attachments/a_9ae31fd88efe9096d8aa44992dab2aaace48bd293a7d8a64bdf92a7f4efdcf67/Shelly%201%20Gen4%20UK%20PSTI%20ACT%20statement%20of%20compliance%20267%202026-03-13.pdf?cb=1015d368e3360a86fb7f3a972babc873": {
+    "vendor": "Shelly",
+    "kind": "bytes",
+    "fingerprint": "40d3a0d12b3a462b3fd270b42b5db40f96940578b73c76e78934c943925d7092",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "40d3a0d12b3a462b3fd270b42b5db40f96940578b73c76e78934c943925d7092"
+      }
+    ]
+  },
+  "https://kb.shelly.cloud/__attachments/a_b5ad3c305e1fd1311bbbc21f52aab3e3ef054ff439c805a97212b2b6dbfd65d8/Shelly%201PM%20Gen3%20UK%20PSTI%20ACT%20statement%20of%20compliance%20266%202026-03-13.pdf?cb=19799635e1fdc09b83190c5df4a4892c": {
+    "vendor": "Shelly",
+    "kind": "bytes",
+    "fingerprint": "4cb8907ab2cc9c457b68d1658748e92991fb2186df123e6b1dcf62d44ca68ba5",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "4cb8907ab2cc9c457b68d1658748e92991fb2186df123e6b1dcf62d44ca68ba5"
+      }
+    ]
+  },
+  "https://kb.shelly.cloud/__attachments/a_d2182f897efdbc1fd47abdb0f01916f9abe4dcce8baa427d1b9ee7c658d85bde/Shelly%201PM%20Gen4%20UK%20PSTI%20ACT%20statement%20of%20compliance%20269%202026-03-13.pdf?cb=53471a1869e25769745099e0d23c5fb9": {
+    "vendor": "Shelly",
+    "kind": "bytes",
+    "fingerprint": "a32aaa45e41f563cc689a7f3920b71206eecfba03593ab2ec11243ee0b032fdc",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "a32aaa45e41f563cc689a7f3920b71206eecfba03593ab2ec11243ee0b032fdc"
+      }
+    ]
+  },
+  "https://kb.shelly.cloud/__attachments/a_08b02005d8c4d4c2b4e30e2097fb3bbdae80c2bc1b4f088a931e0be86c210d60/Shelly%201PM%20Mini%20Gen3%20UK%20PSTI%20ACT%20statement%20of%20compliance%20270%202026-03-13.pdf?cb=59261df9c9ec30bd191ddde0d781403f": {
+    "vendor": "Shelly",
+    "kind": "bytes",
+    "fingerprint": "ea6920998e75ff9d863786379830e70fca7521afff6a227ae2f2a7a3baa664b6",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "ea6920998e75ff9d863786379830e70fca7521afff6a227ae2f2a7a3baa664b6"
+      }
+    ]
+  },
+  "https://kb.shelly.cloud/__attachments/a_03cf3f79803ec315d2518be7b959329abd15e28485c2afb08140ffd14eef55f1/Shelly%201PM%20Mini%20Gen4%20UK%20PSTI%20ACT%20statement%20of%20compliance%20271%202026-03-13.pdf?cb=22c2f2d545672bf968900ebdcea9fd30": {
+    "vendor": "Shelly",
+    "kind": "bytes",
+    "fingerprint": "de97b86a76536336021244e6ad533b6d18b5527f34ca6898f3d18c28105edc92",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "de97b86a76536336021244e6ad533b6d18b5527f34ca6898f3d18c28105edc92"
+      }
+    ]
+  },
+  "https://kb.shelly.cloud/__attachments/a_5df993ca2fe93fbafeda6dc6e31c1c7e4e12e3ad361ecef0406b4ebf943ba676/Shelly%202PM%20Gen3%20UK%20PSTI%20ACT%20statement%20of%20compliance%20272%202026-03-13.pdf?cb=3b82c870f6beb5d55bc0360c7e503162": {
+    "vendor": "Shelly",
+    "kind": "bytes",
+    "fingerprint": "3746ba83ce8164d2717fc8719a23255989992293095321b46bf342af241aea8f",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "3746ba83ce8164d2717fc8719a23255989992293095321b46bf342af241aea8f"
+      }
+    ]
+  },
+  "https://kb.shelly.cloud/__attachments/a_05443416fa17d3d63a6a7f00c12b55776b2c407614cdf6c029d37f840f2b0bb1/Shelly%20Duo%20Bulb%20E27%20Gen3%20UK%20PSTI%20ACT%20statement%20of%20compliance%20283%202026-04-14.pdf?cb=59620fdf491e175078e25ea4071da648": {
+    "vendor": "Shelly",
+    "kind": "bytes",
+    "fingerprint": "e918c5333ff6102b35c8a4f327e4bedc7f418c42a9eb73c611d7f56b92447ef5",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "e918c5333ff6102b35c8a4f327e4bedc7f418c42a9eb73c611d7f56b92447ef5"
+      }
+    ]
+  },
+  "https://kb.shelly.cloud/__attachments/a_6b2937840b3a14d7a5cd4cbfcddb7ecb31dafa708dec3097fc0d9e500b27f3a6/Shelly%20EM%20Gen4%20UK%20PSTI%20ACT%20statement%20of%20compliance%20287%202026-04-23.pdf?cb=43bdc391099f0d7c733bbf6f2919e6a4": {
+    "vendor": "Shelly",
+    "kind": "bytes",
+    "fingerprint": "4db57c0c442331da0338997c9734e2ccf5d5d4dce5e0ce9e806fb3d2be9ab33f",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "4db57c0c442331da0338997c9734e2ccf5d5d4dce5e0ce9e806fb3d2be9ab33f"
+      }
+    ]
+  },
+  "https://kb.shelly.cloud/__attachments/a_34b1335c1570fadb4e05e47581d7da21e2222f0932cb22c1a760c8becc6e2b4a/Shelly%20i4%20Gen4%20UK%20PSTI%20ACT%20statement%20of%20compliance%20329%202026-09-25.pdf?cb=47e5b6401eb28efa3c2665d57bfd4bbe": {
+    "vendor": "Shelly",
+    "kind": "bytes",
+    "fingerprint": "3bc439b43f19d3e51b00cacb5be909478e3a6acc082aa51e9f7152c94f958232",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "3bc439b43f19d3e51b00cacb5be909478e3a6acc082aa51e9f7152c94f958232"
+      }
+    ]
+  },
+  "https://kb.shelly.cloud/__attachments/a_e33dfb6ac0a38c41910e999be06ecf1dca0f5f32855c7090a05bef409faa9416/Shelly%20Plus%20RGBW%20PM%20UK%20PSTI%20ACT%20statement%20of%20compliance%20275%202026-03-13.pdf?cb=17dc4c90a060a025f08ce0912ccc5d34": {
+    "vendor": "Shelly",
+    "kind": "bytes",
+    "fingerprint": "33fad0c5909be7462ced28353c65b921244e78c79629e03488c5c1cb1d4686d3",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "33fad0c5909be7462ced28353c65b921244e78c79629e03488c5c1cb1d4686d3"
+      }
+    ]
+  },
+  "https://kb.shelly.cloud/__attachments/a_7b9d1255904de57afef1c3816dcbf14b261e02e68eda340210477ed95a30dc62/Shelly%20Plus%20Uni%20UK%20PSTI%20ACT%20statement%20of%20compliance%20265%202026-03-10.pdf?cb=857df231497c97c5bab255a1714610a3": {
+    "vendor": "Shelly",
+    "kind": "bytes",
+    "fingerprint": "1c16f8e7ceb4c418847207e244186747a4c655cb0e9e295348913ad8a9b80c72",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "1c16f8e7ceb4c418847207e244186747a4c655cb0e9e295348913ad8a9b80c72"
+      }
+    ]
+  },
+  "https://kb.shelly.cloud/__attachments/a_afa80fec71f3412ad17ac9cfad82ec67907fd2dcdd543f8068a4fa10385ce657/Shelly%20Power%20Strip%204%20Gen4%20UK%20PSTI%20ACT%20statement%20of%20compliance%20255%202025-12-12.pdf?cb=6e4ee4d3eb8b01e8c3868a4ea4396adb": {
+    "vendor": "Shelly",
+    "kind": "bytes",
+    "fingerprint": "da01caa76cf22269856167c56caa7efbacfa5c46f0587a0f739d93fdec6f5ad4",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "da01caa76cf22269856167c56caa7efbacfa5c46f0587a0f739d93fdec6f5ad4"
+      }
+    ]
+  },
+  "https://kb.shelly.cloud/__attachments/a_3006e1612e7c4a47d6ce9757abf998a7ada919c71be29d24251c797e50fb7e05/Shelly%20Presence%20Gen4%20UK%20PSTI%20ACT%20statement%20of%20compliance%20328%202026-09-23.pdf?cb=bca91c099902344bfba9c153bb78784d": {
+    "vendor": "Shelly",
+    "kind": "bytes",
+    "fingerprint": "14873260fa4d285028a1fa26eb049a01b076de6cc1379732f530e109f6688e68",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "14873260fa4d285028a1fa26eb049a01b076de6cc1379732f530e109f6688e68"
+      }
+    ]
+  },
+  "https://kb.shelly.cloud/__attachments/a_1dbe3db0b1235794512d286c43e0a5c51fc667a32923f8f3be6117e22732ea1d/Shelly%20Pro%203EM%20UK%20PSTI%20ACT%20statement%20of%20compliance%20279%202026-04-02.pdf?cb=c72d6a2c0a0afbdd0baa8b7330d7e922": {
+    "vendor": "Shelly",
+    "kind": "bytes",
+    "fingerprint": "c3462c5257ff984f79370923d160b21d928d20e0c04ab879358236990a239efc",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "c3462c5257ff984f79370923d160b21d928d20e0c04ab879358236990a239efc"
+      }
+    ]
+  },
+  "https://kb.shelly.cloud/__attachments/a_98bbda9e3a77d8b371ac5d3374e194f695b7a732d6a3f68f6059b053e1bf5d38/Shelly%20Pro%20RGBWW%20PM%20UK%20PSTI%20ACT%20statement%20of%20compliance%20301%202026-08-10.pdf?cb=1deca0773d80f0754e1735cc7184ba98": {
+    "vendor": "Shelly",
+    "kind": "bytes",
+    "fingerprint": "22041f00b27bfbdf3666a209b886a8a75880c7e84b4f61eccd661322a9033de7",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "22041f00b27bfbdf3666a209b886a8a75880c7e84b4f61eccd661322a9033de7"
+      }
+    ]
+  },
+  "https://kb.shelly.cloud/__attachments/a_9eaf607ed344ff2965cc2f51d0a88390078e160d70ccfb502ca25b0cf521e9ec/The%20Pill%20by%20Shelly%20UK%20PSTI%20ACT%20statement%20of%20compliance%20253%202025-12-11.pdf?cb=78c7ff0e027c97a860a4074920c9eac5": {
+    "vendor": "Shelly",
+    "kind": "bytes",
+    "fingerprint": "fa71196a11cf997b3ef5cda2ee6ff04070a6337fcf648e69a51acd46005e547f",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "fa71196a11cf997b3ef5cda2ee6ff04070a6337fcf648e69a51acd46005e547f"
+      }
+    ]
+  },
+  "https://kb.synology.com/en-global/WP/Software_Life_Cycle_Policy/4": {
+    "vendor": "Synology",
+    "kind": "text",
+    "fingerprint": "38e1670e6d1dd78049a4623ef9a5e70682b7745adce220b6523d33907952cebf",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "38e1670e6d1dd78049a4623ef9a5e70682b7745adce220b6523d33907952cebf"
+      }
+    ]
+  },
+  "https://kb.synology.com/en-global/WP/Software_Life_Cycle_Policy/6": {
+    "vendor": "Synology",
+    "kind": "text",
+    "fingerprint": "38e1670e6d1dd78049a4623ef9a5e70682b7745adce220b6523d33907952cebf",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "38e1670e6d1dd78049a4623ef9a5e70682b7745adce220b6523d33907952cebf"
+      }
+    ]
+  },
+  "https://www.synology.com/en-global/products/status": {
+    "vendor": "Synology",
+    "kind": "text",
+    "fingerprint": "21acbf5a008ad511ece4f280a135f9887e333958406b6b4d604254fb11244ceb",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "21acbf5a008ad511ece4f280a135f9887e333958406b6b4d604254fb11244ceb"
+      }
+    ]
+  },
+  "https://www.synology.com/en-global/products/status/eol-dsm62": {
+    "vendor": "Synology",
+    "kind": "text",
+    "fingerprint": "986801746fde89a895e3445bc3586f2c6b0b9c96d8c8c63a44c2363f2012331d",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "986801746fde89a895e3445bc3586f2c6b0b9c96d8c8c63a44c2363f2012331d"
+      }
+    ]
+  },
+  "https://kb.synology.com/en-global/WP/Software_Life_Cycle_Policy/2": {
+    "vendor": "Synology",
+    "kind": "text",
+    "fingerprint": "38e1670e6d1dd78049a4623ef9a5e70682b7745adce220b6523d33907952cebf",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "38e1670e6d1dd78049a4623ef9a5e70682b7745adce220b6523d33907952cebf"
+      }
+    ]
+  },
+  "https://shop.tado.com/cdn/shop/files/2024-06-03--UK-PSTI-SoC-HPO01-_CK04.pdf": {
+    "vendor": "tado°",
+    "kind": "bytes",
+    "fingerprint": "c617b82d22112cbe4889de96f79920ac1cb7906eb74c6118e528876411e178b3",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "c617b82d22112cbe4889de96f79920ac1cb7906eb74c6118e528876411e178b3"
+      }
+    ]
+  },
+  "https://shop.tado.com/cdn/shop/files/2024-02-28--UK-PSTI-SoC-IB01.pdf": {
+    "vendor": "tado°",
+    "kind": "bytes",
+    "fingerprint": "3136d841f6bc3ec0e355a7bb63ac8338ab4970714354c2e02f6fd5b6738a6af4",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "3136d841f6bc3ec0e355a7bb63ac8338ab4970714354c2e02f6fd5b6738a6af4"
+      }
+    ]
+  },
+  "https://shop.tado.com/cdn/shop/files/2024-02-28--UK-PSTI-SoC-AC02-_WR02.pdf": {
+    "vendor": "tado°",
+    "kind": "bytes",
+    "fingerprint": "a54b378e5bff851770a3fccb8d9cc24769d75b145968aa86391cae71b4a40cce",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "a54b378e5bff851770a3fccb8d9cc24769d75b145968aa86391cae71b4a40cce"
+      }
+    ]
+  },
+  "https://shop.tado.com/cdn/shop/files/2024-02-28--UK-PSTI-SoC-SRT01-_VA02.pdf": {
+    "vendor": "tado°",
+    "kind": "bytes",
+    "fingerprint": "450b650fa434223a76bc7fa65a3e86887f32a4d8c531b9ade09f6a19ffa3364a",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "450b650fa434223a76bc7fa65a3e86887f32a4d8c531b9ade09f6a19ffa3364a"
+      }
+    ]
+  },
+  "https://shop.tado.com/cdn/shop/files/2024-02-28--UK-PSTI-SoC-ST01-_RU02.pdf": {
+    "vendor": "tado°",
+    "kind": "bytes",
+    "fingerprint": "7c94debb0d76c6334624f835e4ad46ac3b5757dfa6cc335041c014b0e344f096",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "7c94debb0d76c6334624f835e4ad46ac3b5757dfa6cc335041c014b0e344f096"
+      }
+    ]
+  },
+  "https://shop.tado.com/cdn/shop/files/2024-02-28--UK-PSTI-SoC-WTS01-_SU02.pdf": {
+    "vendor": "tado°",
+    "kind": "bytes",
+    "fingerprint": "610456923bf91fb7c8bb8fcd7510c9397e18341e6cd06bbce6842514c018f94b",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "610456923bf91fb7c8bb8fcd7510c9397e18341e6cd06bbce6842514c018f94b"
+      }
+    ]
+  },
+  "https://teltonika-networks.com/support/eol-products": {
+    "vendor": "Teltonika",
+    "kind": "text",
+    "fingerprint": "6d917646ae4b7d2df88836593c56dd7de1eb2a8ac6f4d3d0f59991620181e74e",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "6d917646ae4b7d2df88836593c56dd7de1eb2a8ac6f4d3d0f59991620181e74e"
+      }
+    ]
+  },
+  "https://www.tendacn.com/product/eol": {
+    "vendor": "Tenda",
+    "kind": "text",
+    "fingerprint": "675decc82a932a29bcff1f95af576972325a88d30ab72ea8592c63ae272eaa95",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "675decc82a932a29bcff1f95af576972325a88d30ab72ea8592c63ae272eaa95"
+      }
+    ]
+  },
+  "https://www.terra-master.com/blogs/news/technical-support": {
+    "vendor": "TerraMaster",
+    "kind": "text",
+    "fingerprint": "d63106d27c726abcff5d720fc8fc056e6fc67c90eb23c4a994b434efca3530ec",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "d63106d27c726abcff5d720fc8fc056e6fc67c90eb23c4a994b434efca3530ec"
+      }
+    ]
+  },
+  "https://static.tp-link.com/upload/manual/2026/202609/20260907/Statements%20of%20PSTI%20Compliance_TP-Link.pdf": {
+    "vendor": "TP-Link",
+    "kind": "bytes",
+    "fingerprint": "dad041a0023107cf33c02d42c31dc6d9730b2e04ec7da9cf8877d512bd7429e5",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "dad041a0023107cf33c02d42c31dc6d9730b2e04ec7da9cf8877d512bd7429e5"
+      }
+    ]
+  },
+  "https://www.westerndigital.com/support/software/product-life-cycle-policy": {
+    "vendor": "WD",
+    "kind": "text",
+    "fingerprint": "908517fc7632c2b39fe56142661cbe788f9e11e8cff8eacd2ac2e5c33743e3fa",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "908517fc7632c2b39fe56142661cbe788f9e11e8cff8eacd2ac2e5c33743e3fa"
+      }
+    ]
+  },
+  "https://www.westerndigital.com/support/software/my-cloud-os/os3/os3-eos": {
+    "vendor": "WD",
+    "kind": "text",
+    "fingerprint": "1b07f474f6d17a949e2e76c4e0852fa5256b8a8d993c07a64ff222e3ac987b70",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "1b07f474f6d17a949e2e76c4e0852fa5256b8a8d993c07a64ff222e3ac987b70"
+      }
+    ]
+  },
+  "https://www.wyze.com/pages/response-to-3-29-22-security-report": {
+    "vendor": "Wyze",
+    "kind": "text",
+    "fingerprint": "9b5dac93554709cb7dda3c302c61bfe4fb4f39be88b051decc9aa2b94d5bd533",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "9b5dac93554709cb7dda3c302c61bfe4fb4f39be88b051decc9aa2b94d5bd533"
+      }
+    ]
+  },
+  "https://trust.mi.com/misrc/updates/iot": {
+    "vendor": "Xiaomi",
+    "kind": "text",
+    "fingerprint": "29734cff4118c0f10f8022006a577570a6d2fee44ba69270007a97ce9d7d5b28",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "29734cff4118c0f10f8022006a577570a6d2fee44ba69270007a97ce9d7d5b28"
+      }
+    ]
+  },
+  "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE0001SLK_Linus_L1_1_.pdf": {
+    "vendor": "Yale",
+    "kind": "bytes",
+    "fingerprint": "3bfa06555a4c16459f90faf326655145c95a9c3426bbb332c56e4006e2d94247",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "3bfa06555a4c16459f90faf326655145c95a9c3426bbb332c56e4006e2d94247"
+      }
+    ]
+  },
+  "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE0006SLK_Smart_Opener_1_.pdf": {
+    "vendor": "Yale",
+    "kind": "bytes",
+    "fingerprint": "0396aaeb0a1d9b743c31d9ea3735243c0e89d6afd036922f20744e45114ead3e",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "0396aaeb0a1d9b743c31d9ea3735243c0e89d6afd036922f20744e45114ead3e"
+      }
+    ]
+  },
+  "https://www.zyxel.com/service-provider/global/en/end-of-life": {
+    "vendor": "Zyxel",
+    "kind": "text",
+    "fingerprint": "fe3f646e73243f6df0f2a1d91dc2ab25cccb16e5338050db6e4653b074cec664",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "fe3f646e73243f6df0f2a1d91dc2ab25cccb16e5338050db6e4653b074cec664"
+      }
+    ]
+  },
+  "https://www.zyxel.com/global/en/support/end-of-life": {
+    "vendor": "Zyxel",
+    "kind": "text",
+    "fingerprint": "1dc0cdf9fe9a395cb589fed1e708e0abd04cdf30950c5064f0d09e361f56dc78",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "1dc0cdf9fe9a395cb589fed1e708e0abd04cdf30950c5064f0d09e361f56dc78"
+      }
+    ]
+  },
+  "https://www.zyxel.com/zyxel-file/eol/ArchivedEOLModel.pdf": {
+    "vendor": "Zyxel",
+    "kind": "bytes",
+    "fingerprint": "b7f9fe91b112536bfaed1dbabebbe17d6bd813549ec7fb9e9a2cac731ede6cc7",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "b7f9fe91b112536bfaed1dbabebbe17d6bd813549ec7fb9e9a2cac731ede6cc7"
+      }
+    ]
+  },
+  "https://www.zyxel.com/service-provider/emea/en/uk-psti-act": {
+    "vendor": "Zyxel",
+    "kind": "text",
+    "fingerprint": "e026e966f5c0a466241882b15f7fbeaa2d1b8edee141f2fe7fe4ee4b242782b5",
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "e026e966f5c0a466241882b15f7fbeaa2d1b8edee141f2fe7fe4ee4b242782b5"
+      }
+    ]
+  },
+  "https://www.tp-link.com/uk/support/psti/": {
+    "vendor": "TP-Link",
+    "kind": "links",
+    "fingerprint": "4cb88471dd8e3a7ea546a7eff1dbbc3b2923c00729db65b6bdc24f91b341e017",
+    "links": [
+      "https://static.tp-link.com/upload/manual/2026/202609/20260907/Statements%20of%20PSTI%20Compliance_TP-Link.pdf"
+    ],
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "4cb88471dd8e3a7ea546a7eff1dbbc3b2923c00729db65b6bdc24f91b341e017"
+      }
+    ]
+  },
+  "https://kb.netgear.com/000066102/UK-PSTI-Declaration-of-Conformity": {
+    "vendor": "Netgear",
+    "kind": "links",
+    "fingerprint": "d701b1f0f1d80b46efed8b94cef1b121156e9957d49d7c3307999a9b753151b7",
+    "links": [
+      "https://downloads1.netgear.com/files/netgear/documents/netgear-reseller-policy.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10001-01_GSM4212P_DoC_PSTI_202404011219.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10004-01_GSM4230P_DoC_PSTI_202404011219.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10005-01_GSM4230PX_DoC_PSTI_202404011219.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10006-01_GSM4230UP_DoC_PSTI_202404011219.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10007-01_GSM4248P_DoC_PSTI_202404011219.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10008-01_GSM4248PX_DoC_PSTI_202404011219.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10009-01_GSM4248UX_DoC_PSTI_202404011219.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10010-01_MR6150,%20MR6110_DoC_PSTI_202404011309.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10011-01_GSM4328_DoC_PSTI_202404011219.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10012-01_GSM4328S,%20GSM4328PS_DoC_PSTI_202404011309.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10013-01_GSM4352_DoC_PSTI_202404011309.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10014-01_GSM4352S,%20GSM4352PS_DoC_PSTI_202404011309.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10015-01_MSM4352_DoC_PSTI_202404011309.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10016-01_VSM4320C_DoC_PSTI_202404011309.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10017-01_XS728T_DoC_PSTI_202404011309.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10018-01_XS748T_DoC_PSTI_202404011309.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10019-01_XSM4316_DoC_PSTI_202404011309.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10020-01_XSM4316PS_DoC_PSTI_202404011309.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10021-01_XSM4316S_DoC_PSTI_202404011339.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10022-01_XSM4324_DoC_PSTI_202404011339.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10023-01_XSM4324CS_DoC_PSTI_202404011339.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10024-01_XSM4324FS_DoC_PSTI_202404011339.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10025-01_XSM4324S_DoC_PSTI_202404011339.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10026-01_XSM4328CV_DoC_PSTI_202404011339.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10027-01_XSM4328FV_DoC_PSTI_202404011339.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10028-01_XSM4340CV_DoC_PSTI_202404011339.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10029-01_XSM4340FV_DoC_PSTI_202404011339.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10030-01_XSM4340V_DoC_PSTI_202404011339.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10031-01_XSM4344C_DoC_PSTI_202404011353.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10032-01_XSM4348CS_DoC_PSTI_202404011353.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10033-01_XSM4348FS_DoC_PSTI_202404011353.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10034-01_XSM4348S_DoC_PSTI_202404011353.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10035-01_XSM4396S,%20APM408,%20APS600W,%20APS1200W_DoC_PSTI_202404011353.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10036-01_A6100_DoC_PSTI_202404011353.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10037-01_A6150_DoC_PSTI_202404011353.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10038-01_A6210_DoC_PSTI_202404011353.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10039-01_A7000_DoC_PSTI_202404011353.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10040-01_A8000_DoC_PSTI_202404011353.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10041-01_AC797_DoC_PSTI_202404011419.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10042-01_EAX12_DoC_PSTI_202404011419.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10043-01_EAX15_DoC_PSTI_202404011419.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10044-01_EAX20_DoC_PSTI_202404011419.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10045-01_EAX80_DoC_PSTI_202404011419.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10046-01_EX3700_DoC_PSTI_202404011419.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10047-01_EX3110,%20EX6110_DoC_PSTI_202404011419.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10048-01_EX6120_DoC_PSTI_202404011419.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10049-01_EX7700_DoC_PSTI_202404011419.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10050-01_GS105Ev2_DoC_PSTI_202404011419.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10052-01_GS108Ev3_DoC_PSTI_202404011447.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10054-01_GS108PEv3_DoC_PSTI_202404011447.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10056-01_GS108Tv3_DoC_PSTI_202404011447.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10058-01_GS110EMX_DoC_PSTI_202404011447.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10059-01_GS110TPv3_DoC_PSTI_202404011447.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10062-01_GS305E_DoC_PSTI_202404020935.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10063-01_GS305EP_DoC_PSTI_202404020935.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10064-01_GS305EPP_DoC_PSTI_202404020935.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10068-01_GS308E_DoC_PSTI_202404020935.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10069-01_GS308EP_DoC_PSTI_202404020935.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10070-01_GS308EPP_DoC_PSTI_202404020935.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10072-01_GS310TP_DoC_PSTI_202404020945.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10073-01_GS316EP_DoC_PSTI_202404020945.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10074-01_GS316EPP_DoC_PSTI_202404020945.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10080-01_GS324T_DoC_PSTI_202404020945.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10081-01_GS324TP_DoC_PSTI_202404021034.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10084-01_GS510TPPv1_DoC_PSTI_202404021034.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10086-01_GS516UP_DoC_PSTI_202404021034.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10089-01_GS710TUP_DoC_PSTI_202404021034.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10090-01_GS716Tv3_DoC_PSTI_202404021034.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10091-01_GS716TP_DoC_PSTI_202404021049.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10093-01_GS724Tv4_DoC_PSTI_202404021049.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10094-01_GS724TPv2_DoC_PSTI_202404021049.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10095-01_GS724TPP_DoC_PSTI_202404021049.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10096-01_GS728TPv2,%20GS728TPPv2_DoC_PSTI_202404021049.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10097-01_GS752TPP,%20GS752TPv2_DoC_PSTI_202404021049.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10098-01_GS752TXPv3,%20GS752TPv3,%20GS752TPPv3_DoC_PSTI_202404021049.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10099-01_LAX20_DoC_PSTI_202404021049.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10100-01_LBR20_DoC_PSTI_202404021049.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10101-01_LM1200_DoC_PSTI_202404021450.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10102-01_MC315_DoC_PSTI_202404021450.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10103-01_MR70,%20MS70,%20MK72,%20MK73_DoC_PSTI_202404021450.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10104-01_MR1100_DoC_PSTI_202404021450.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10105-01_MR2100_DoC_PSTI_202404021450.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10106-01_MR5100,%20MR5200_DoC_PSTI_202404021450.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10107-01_MR6450_DoC_PSTI_202404021450.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10108-01_MS108EUP_DoC_PSTI_202404021450.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10111-01_MS510TXM_DoC_PSTI_202404021450.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10112-01_MS510TXPP_DoC_PSTI_202404021450.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10113-01_MS510TXUP_DoC_PSTI_202404021505.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10114-01_NBR750_DoC_PSTI_202404021505.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10115-01_RAX10_DoC_PSTI_202404021505.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10116-01_RAX30_DoC_PSTI_202404021505.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10118-01_RAX50_DoC_PSTI_202404021505.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10119-01_RAX70_DoC_PSTI_202404021505.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10120-01_RAX120_DoC_PSTI_202404021505.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10121-01_RAX200_DoC_PSTI_202404021505.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10122-01_RAXE300_DoC_PSTI_202404021505.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10123-01_RAXE500_DoC_PSTI_202404021556.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10124-01_RBE973,972,971,970%20_DoC_PSTI_202404171119.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10125-01_RBR350,%20RBS350,%20RBk35x_DoC_PSTI_202404021556.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10126-01_RBR750,%20RBS750,%20RBK75x_DoC_PSTI_202404021556.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10127-01_RBR760,%20RBS760,%20RBK76x_DoC_PSTI_202404021556.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10128-01_RBR850,RBS850,%20RBK852,RBK853_DoC_PSTI_202404021556.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10129-01_RBR860,%20RBS860,%20RBK86x_DoC_PSTI_202404021556.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10130-01_RBRE960,%20RBSE960,%20RBKE96x_DoC_PSTI_202404021556.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10131-01_RS700_DoC_PSTI_202404021556.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10132-01_SXR30,%20SXS30,%20SXK30_DoC_PSTI_202404021556.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10133-01_SXR80,SXS80_DoC_PSTI_202404021556.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10134-01_WAC540_DoC_PSTI_202404021610.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10135-01_WAX202_DoC_PSTI_202404021610.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10136-01_WAX206_DoC_PSTI_202404021610.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10137-01_WAX214_DoC_PSTI_202404021610.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10138-01_WAX214v2_DoC_PSTI_202404021610.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10139-01_WAX218_DoC_PSTI_202404021610.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10140-01_WAX220_DoC_PSTI_202404021610.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10141-01_WAX610_DoC_PSTI_202404021610.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10142-01_WAX610Y_DoC_PSTI_202404021610.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10143-01_WAX615_DoC_PSTI_202404021610.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10144-01_WAX620_DoC_PSTI_202404021620.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10145-01_WAX625_DoC_PSTI_202404021620.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10146-01_WAX630_DoC_PSTI_202404021620.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10147-01_WAX630E_DoC_PSTI_202404021620.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10148-01_XR500_DoC_PSTI_202404021620.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10152-01_XS512EM_DoC_PSTI_202404021620.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10153-01_XS724EM_DoC_PSTI_202404021620.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10154-01_A7500_DoC_PSTI_202404021620.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10155-01_CSM4532_DoC_PSTI_202404021620.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10156-01_GS728TXPv3,%20GS728TPv3,%20GS728TPPv3_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10157-01_GSM4210PD_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10158-01_GSM4210PX_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10160-01_MS108TUP_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10161-01_MS324TXUP_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10162-01_MSM4214X_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10163-01_PR60X_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10164-01_PR460X_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10165-01_WAX608Y_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10166-01_WAX618_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10167-01_WAX628_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10168-01_WAX638E%20Model%20Type%20WAX630E_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10169-01_XS508TM_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10170-01_XS516TM_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10171-01_XSM4216F_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10172-01_XSM4556_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10174-01_RAX40_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10175-01_WAC124_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10176-01_MS510TX_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10177-01_WAX204_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10180-01_MR60,%20MS60,%20MK62,%20MK63_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10181-01_PLP1000_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10182-01_SRR60,%20SRS60,%20SRK60,%20SRK60B0x_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10183-01_WAC104_DoC_PSTI_202404021639.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10256-01_WBE710%20(WBE718)_DoC_PSTI_202405221156.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10257-01_SXR50v2_DoC_PSTI_202407161112.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10258-01_XS724TM_DoC_PSTI_202411251030.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10264-01_RS100_DoC_PSTI_202501031142.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10266-01_RS200_DoC_PSTI_202407081459.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10267-01_WAX210_DoC_PSTI_202406271332.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10268-01_MH3150_DoC_PSTI_202411071550.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10269-01_RS500_DoC_PSTI_202407081459.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10270-01_MS308E,%20MS108E,%20MS305E,%20MS105E_DoC_PSTI_202406041135.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10277-01_RAX9_DoC_PSTI_202411271015.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10282-01_RBE771,RBE770_DoC_PSTI_202408080938.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10286-001_RS600_DoC_PSTI_202407081459.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10289-01_RBE871,RBE870_DoC_PSTI_202411131009.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10290-01_USB2ETH_DoC_PSTI_202504111057.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10291-01_MSM4310_DoC_PSTI_202504020955.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10292-01_MSM4332_DoC_PSTI_202504020957.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10293-01_MSM4328F_DoC_PSTI_202504020958.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10294-01_XSM4344FC_DoC_PSTI_202504020959.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10296-01_MD200_DoC_PSTI_202504231435.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10297-01_RS200v2_DoC_PSTI_202503110952.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10298-01_A9000_DoC_PSTI_202507080950.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10299-01_GS728TXv3,GS752TXv3,GS728TXUPv3,GS752TXUPv3_DoC_PSTI_202502042003.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10301-01_RBE771v2,%20RBE770v2_DoC_PSTI_202601291106.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10305-01_WBE700&WBE708_DoC_PSTI_202605121151.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10306-01_GS108EPP_DoC_PSTI_202504141032.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10307-01_GS105EP_DoC_PSTI_202504141032.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10308-01_GS105EPP_DoC_PSTI_202504141032.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10309-01_GS116EP_DoC_PSTI_202504141032.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10310-01_GS116EPP_DoC_PSTI_202504141032.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10311-01_GS108EP_DoC_PSTI_202504141032.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10312-01_WAX605_DoC_PSTI_202504171041.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10314-01_MR7400_DoC_PSTI_202506171700.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10315-02_MH7110&MH7150_DoC_PSTI_202511211523.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10316-01_EAX17_DoC_PSTI_202503110954.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10317-01_MR6550_DoC_PSTI_202503061610.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10318-01_MSM4320_DoC_PSTI_202602091329.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10319-01_CSM4316%20_DoC_PSTI_202602091329.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10320-01_XS512EMv2_DoC_PSTI_202506201343.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10321-01_XS724EMv2_DoC_PSTI_202506201340.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10322-01_MR7450_DoC_PSTI_202506171700.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10324-01_WAX610W_DoC_PSTI_202508261149.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10327-01_A8500_DoC_PSTI_202508121018.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10328-01_MS110TX_DoC_PSTI_202603181642.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10332-01_GS310TPv2_DoC_PSTI_202511061043.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10333-01_GS324TPv2_DoC_PSTI_202511061043.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10334-01_GS348TPv2_DoC_PSTI_202511061043.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10335-01_RS90_DoC_PSTI_202509091135.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10336-01_RBE371&RBE370&RBE361&RBE360_DoC_PSTI_202509230859.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10337-01_XS748TM_DoC_PSTI_202604211033.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10340-01_WBE700Y&WBE708Y_DoC_PSTI_202607161351.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10341-01_PR30SG_DoC_PSTI_202608261105.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10342-01_EXS27_DoC_PSTI_202605271039.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10343-01_MS110TXUP_DoC_PSTI_202603181642.pdf",
+      "https://www.downloads.netgear.com/files/UK_PSTI_DoC/211-10352-01_RS300_DoC_PSTI_202607171026.pdf"
+    ],
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "d701b1f0f1d80b46efed8b94cef1b121156e9957d49d7c3307999a9b753151b7"
+      }
+    ]
+  },
+  "https://www.asus.com/event/network/security_update_support/": {
+    "vendor": "ASUS",
+    "kind": "links",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "links": [],
+    "first_seen": "2026-11-02",
+    "history": [
+      {
+        "date": "2026-11-02",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  }
+}
