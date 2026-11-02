@@ -58,7 +58,7 @@ Devices that announce nothing (phones with random MAC addresses, devices without
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.4.1, retrieved 2026-11-02: 4,349 rows from 34 brands.
+`data/devices.json` (schema in `data/schema.json`), version 0.4.2, retrieved 2026-11-02: 4,517 rows from 39 brands.
 
 | Vendor | Rows | Source |
 |---|---|---|
@@ -89,6 +89,11 @@ Devices that announce nothing (phones with random MAC addresses, devices without
 | Arlo | 102 | Arlo end-of-life page; UK and Australian statements of compliance |
 | Lorex | 76 | Lorex UK PSTI end-of-life table |
 | Hive | 4 | Hive product news (end-of-support notices) |
+| GL.iNet | 53 | GL.iNet discontinued products page; end-of-life notices; UK PSTI support period page |
+| Teltonika | 52 | Teltonika EOL products page |
+| Keenetic | 34 | Keenetic warranty and support periods page of each model |
+| Cisco (RV, Meraki Go) | 21 | Cisco end-of-life notices (End of Vulnerability/Security Support); Meraki EOL table |
+| Edimax | 8 | Edimax end-of-support announcement |
 | Nooie | 7 | Nooie security updates page (no dates) |
 | QNAP | 6 | QNAP support status; UK PSTI statements |
 | eufy, Netatmo, Yale, Philips Hue, Wyze | 13 | UK PSTI statements; end-of-support pages |
@@ -102,6 +107,7 @@ Each row records the date exactly as written (`support_end_raw`), whether it is 
 - **Dates differ by market.** ASUS publishes different dates in the UK and Singapore for the same model. Rows are never merged across regions.
 - **Some vendors publish no usable date.** Netgear UK statements only say support ends at "End of Service"; D-Link UK statements say "2 years" without a start date; Hikvision, Swann, Imou, Sonos, Logitech, SimpliSafe, Foscam and Amcrest publish no per-model dates at all. Xiaomi and Ubiquiti only list products that no longer get updates, without dates.
 - **Minimum guarantees run out.** Google, Amazon, ASUS and others promise updates "until at least" a date. Once it has passed, the device is shown as no longer supported, with a note that updates may still come.
+- **Keenetic** pages give three dates; the dataset uses the end of "Limited updates", the last phase in which security updates are promised, not the later "support discontinuation" date.
 - **Tenda's "End of service date"** is often a day after its end of sale. Tenda's UK PSTI page promises security support for 3 years after end of life in the UK, without a per-model table, so UK units may be supported longer.
 - **Recent NAS models have no dates yet.** Synology gives dates per DSM version, and models on DSM 7.2 or later have no announced end. QNAP's status page shows one model at a time and could not be read in bulk yet.
 - **ISP boxes are out of scope.** Routers supplied by internet providers (Livebox, Freebox, etc.) are updated by the provider.

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.2 - 2026-11-02
+
+- Dataset 0.4.2: 4,517 rows from 39 brands. Routers for homes and small offices: GL.iNet (53), Teltonika (52), Keenetic (34), Cisco RV and Meraki Go (21), Edimax (8).
+
 ## 0.8.1 - 2026-11-02
 
 - Dataset 0.4.1: 4,349 rows from 34 brands. Cameras: Arlo complete (UK and Australian statements, 102 rows instead of 10), Lorex (76), the full EZVIZ European list (311 instead of 23), Hive and Nooie.

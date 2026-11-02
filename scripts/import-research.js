@@ -48,6 +48,19 @@ for (const r of rows) {
   // "VMY4X7XY", so the date is not tied to this model explicitly.
   if (row.vendor === 'Arlo' && /VMC4072/.test(row.model)) { dropped.push(row); continue; }
 
+  // Keenetic: security fixes are guaranteed until the end of the "Limited
+  // updates" phase (at least 4 years after release). The "Support
+  // discontinuation no earlier than" date, one year later by Keenetic's own
+  // definition (5 years after launch), only says when updates may stop.
+  if (row.vendor === 'Keenetic' && /^[A-Z][a-z]+ \d{4}$/.test(row.support_end_raw)) {
+    const [month, year] = row.support_end_raw.split(' ');
+    const limitedYear = Number(year) - 1;
+    const d = new Date(Date.UTC(limitedYear, new Date(`${month} 1, 2000`).getMonth() + 1, 0));
+    row.support_end = d.toISOString().slice(0, 10);
+    row.support_end_raw = `Limited updates (security updates) until at least ${month} ${limitedYear}; support discontinuation no earlier than ${month} ${year}`;
+    row.end_is_minimum = true;
+  }
+
   // Tenda EOL Center: the bare date is the "End of service date" column.
   if (row.vendor === 'Tenda' && /^\d{4}-\d{2}-\d{2}$/.test(row.support_end_raw)) {
     row.support_end_raw = `End of service date: ${row.support_end_raw}`;
