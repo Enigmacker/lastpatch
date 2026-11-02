@@ -33,7 +33,8 @@ for (const r of rows) {
   }
 
   // Ring: model names without the brand, as in the rest of the dataset.
-  if (row.vendor === 'Ring') row.model = row.model.replace(/^Ring\s+/, '');
+  // Same for brands whose sources repeat the brand in the model name.
+  if (['Ring', 'Netatmo', 'Nuki', 'Hive'].includes(row.vendor)) row.model = row.model.replace(new RegExp(`^${row.vendor}\\s+`), '');
 
   // Netgear Australia: every date reads "11/01/2029", ambiguous between
   // 11 January and 1 November, and looks like a rolling minimum. Not used.

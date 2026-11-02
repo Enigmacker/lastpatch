@@ -323,7 +323,7 @@
  },
  {
   "vendor": "Nuki",
-  "model": "Nuki Bridge (020.218)",
+  "model": "Bridge (020.218)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2026-03-07",
@@ -337,7 +337,7 @@
  },
  {
   "vendor": "Nuki",
-  "model": "Nuki Door Sensor (080.121)",
+  "model": "Door Sensor (080.121)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2026-03-07",
@@ -351,7 +351,7 @@
  },
  {
   "vendor": "Nuki",
-  "model": "Nuki Fob (400.217)",
+  "model": "Fob (400.217)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2026-03-07",
@@ -365,7 +365,7 @@
  },
  {
   "vendor": "Nuki",
-  "model": "Nuki Keypad (030.118)",
+  "model": "Keypad (030.118)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2026-03-07",
@@ -379,7 +379,7 @@
  },
  {
   "vendor": "Nuki",
-  "model": "Nuki Keypad 2 (030.218)",
+  "model": "Keypad 2 (030.218)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2026-03-07",
@@ -393,7 +393,7 @@
  },
  {
   "vendor": "Nuki",
-  "model": "Nuki Keypad 2 Pro (031.218)",
+  "model": "Keypad 2 Pro (031.218)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2025-11-01",
@@ -407,7 +407,7 @@
  },
  {
   "vendor": "Nuki",
-  "model": "Nuki Opener (060.119)",
+  "model": "Opener (060.119)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2026-03-07",
@@ -421,7 +421,7 @@
  },
  {
   "vendor": "Nuki",
-  "model": "Nuki Smart Lock 3.0 (010.318)",
+  "model": "Smart Lock 3.0 (010.318)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2026-05-13",
@@ -435,7 +435,7 @@
  },
  {
   "vendor": "Nuki",
-  "model": "Nuki Smart Lock 3.0 Pro (011.318)",
+  "model": "Smart Lock 3.0 Pro (011.318)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2026-05-13",
@@ -449,7 +449,7 @@
  },
  {
   "vendor": "Nuki",
-  "model": "Nuki Smart Lock 4th Generation (010.418)",
+  "model": "Smart Lock 4th Generation (010.418)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2026-11-01",
@@ -463,7 +463,7 @@
  },
  {
   "vendor": "Nuki",
-  "model": "Nuki Smart Lock Pro 4th Generation (011.418)",
+  "model": "Smart Lock Pro 4th Generation (011.418)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2025-11-01",
@@ -477,7 +477,7 @@
  },
  {
   "vendor": "Nuki",
-  "model": "Nuki Smart Lock Go 5th Generation (011.518)",
+  "model": "Smart Lock Go 5th Generation (011.518)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2030-11-01",
@@ -491,7 +491,7 @@
  },
  {
   "vendor": "Nuki",
-  "model": "Nuki Smart Lock Pro 5th Generation (013.518)",
+  "model": "Smart Lock Pro 5th Generation (013.518)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2030-11-01",
@@ -505,7 +505,7 @@
  },
  {
   "vendor": "Nuki",
-  "model": "Nuki Smart Lock Ultra 5th Generation (012.518)",
+  "model": "Smart Lock Ultra 5th Generation (012.518)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2030-11-01",
@@ -519,7 +519,7 @@
  },
  {
   "vendor": "Nuki",
-  "model": "Nuki Keypad 2 NFC (032.218)",
+  "model": "Keypad 2 NFC (032.218)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2030-11-01",
@@ -771,7 +771,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Hub Nano 2.0 (HUB320)",
+  "model": "Hub Nano 2.0 (HUB320)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -785,7 +785,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Hub Nano 2.5 (HUB500)",
+  "model": "Hub Nano 2.5 (HUB500)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -799,7 +799,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Hub Nano 2.5 (HUB502)",
+  "model": "Hub Nano 2.5 (HUB502)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -813,7 +813,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Hub Nano 3.0 (HUB600)",
+  "model": "Hub Nano 3.0 (HUB600)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -827,7 +827,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Hub Nano 3.0 (HUB601)",
+  "model": "Hub Nano 3.0 (HUB601)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -841,7 +841,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Modbus Bridge (MBR1)",
+  "model": "Modbus Bridge (MBR1)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -855,7 +855,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Thermostat (SLT3c)",
+  "model": "Thermostat (SLT3c)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -869,7 +869,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Thermostat (SLT3d)",
+  "model": "Thermostat (SLT3d)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -883,7 +883,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Thermostat (SLT3e)",
+  "model": "Thermostat (SLT3e)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -897,7 +897,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Mini Thermostat (SLT6)",
+  "model": "Mini Thermostat (SLT6)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -911,7 +911,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Mini Thermostat (SLT6b)",
+  "model": "Mini Thermostat (SLT6b)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -925,7 +925,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Single Channel Receiver (SLR1c)",
+  "model": "Single Channel Receiver (SLR1c)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -939,7 +939,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Single Channel Receiver (SLR1d)",
+  "model": "Single Channel Receiver (SLR1d)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -953,7 +953,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Dual Channel Receiver (SLR2c)",
+  "model": "Dual Channel Receiver (SLR2c)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -967,7 +967,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Dual Channel Receiver (SLR2d)",
+  "model": "Dual Channel Receiver (SLR2d)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -981,7 +981,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive OpenTherm Receiver (OTR1)",
+  "model": "OpenTherm Receiver (OTR1)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -995,7 +995,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Radiator Valve eTRV (TRV001)",
+  "model": "Radiator Valve eTRV (TRV001)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1009,7 +1009,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Radiator Valve eTRV (TRV003)",
+  "model": "Radiator Valve eTRV (TRV003)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1023,7 +1023,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Colour Bulb Bayonet (RGBBulb02UK-B22)",
+  "model": "Colour Bulb Bayonet (RGBBulb02UK-B22)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1037,7 +1037,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Colour Bulb Bayonet (RGBBulb03UK-B22)",
+  "model": "Colour Bulb Bayonet (RGBBulb03UK-B22)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1051,7 +1051,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Colour Bulb Screw (RGBBulb02UK-E27)",
+  "model": "Colour Bulb Screw (RGBBulb02UK-E27)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1065,7 +1065,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Colour Bulb Screw (RGBBulb03UK-E27)",
+  "model": "Colour Bulb Screw (RGBBulb03UK-E27)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1079,7 +1079,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Dimmable Bulb Bayonet (FWBulb02UK-B22)",
+  "model": "Dimmable Bulb Bayonet (FWBulb02UK-B22)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1093,7 +1093,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Dimmable Bulb Bayonet (FWBulb03UK-B22)",
+  "model": "Dimmable Bulb Bayonet (FWBulb03UK-B22)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1107,7 +1107,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Dimmable Bulb Screw (FWBulb02UK-E27)",
+  "model": "Dimmable Bulb Screw (FWBulb02UK-E27)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1121,7 +1121,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Dimmable Bulb Screw (FWBulb03UK-E27)",
+  "model": "Dimmable Bulb Screw (FWBulb03UK-E27)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1135,7 +1135,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Tuneable Bulb Bayonet (TWBulb02UK-B22)",
+  "model": "Tuneable Bulb Bayonet (TWBulb02UK-B22)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1149,7 +1149,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Tuneable Bulb Screw (TWBulb02UK-E27)",
+  "model": "Tuneable Bulb Screw (TWBulb02UK-E27)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1163,7 +1163,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Tuneable Bulb Screw (TWBulb03UK-E27)",
+  "model": "Tuneable Bulb Screw (TWBulb03UK-E27)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1177,7 +1177,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Dimmable Candle (FWCLBulb02UK)",
+  "model": "Dimmable Candle (FWCLBulb02UK)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1191,7 +1191,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Dimmable Candle (FWCLBulb03UK)",
+  "model": "Dimmable Candle (FWCLBulb03UK)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1205,7 +1205,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Tuneable Candle (TWCLBulb02UK)",
+  "model": "Tuneable Candle (TWCLBulb02UK)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1219,7 +1219,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Tuneable Candle (TWCLBulb03UK)",
+  "model": "Tuneable Candle (TWCLBulb03UK)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1233,7 +1233,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Dimmable Spotlight (FWGU10Bulb02UK)",
+  "model": "Dimmable Spotlight (FWGU10Bulb02UK)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1247,7 +1247,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Dimmable Spotlight (FWGU10Bulb03UK)",
+  "model": "Dimmable Spotlight (FWGU10Bulb03UK)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1261,7 +1261,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Tuneable Spotlight (TWGU10Bulb02UK)",
+  "model": "Tuneable Spotlight (TWGU10Bulb02UK)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1275,7 +1275,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Tuneable Spotlight (TWGU10Bulb03UK)",
+  "model": "Tuneable Spotlight (TWGU10Bulb03UK)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1289,7 +1289,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Motion Sensor (MOT003)",
+  "model": "Motion Sensor (MOT003)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1303,7 +1303,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Door & Window Sensor (DWS003)",
+  "model": "Door & Window Sensor (DWS003)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1317,7 +1317,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Pet Friendly Sensor (PFMOT001)",
+  "model": "Pet Friendly Sensor (PFMOT001)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1331,7 +1331,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Smart Plug (SLP)",
+  "model": "Smart Plug (SLP)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1345,7 +1345,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Smart Plug (SLP2)",
+  "model": "Smart Plug (SLP2)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1359,7 +1359,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Smart Plug (SLP3)",
+  "model": "Smart Plug (SLP3)",
   "hw_version": null,
   "category": "iot",
   "support_end": "2028-04-01",
@@ -1373,7 +1373,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive View Camera",
+  "model": "View Camera",
   "hw_version": null,
   "category": "camera",
   "support_end": "2025-08-01",
@@ -1387,7 +1387,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Hub Nano 1",
+  "model": "Hub Nano 1",
   "hw_version": null,
   "category": "iot",
   "support_end": "2023-08-01",
@@ -1513,7 +1513,7 @@
  },
  {
   "vendor": "Netatmo",
-  "model": "Netatmo Indoor Camera ADVANCE (NPC-B-UK, NPC-B-AMZ, NPC-W-UK, NPC-W-AMZ)",
+  "model": "Indoor Camera ADVANCE (NPC-B-UK, NPC-B-AMZ, NPC-W-UK, NPC-W-AMZ)",
   "hw_version": null,
   "category": "camera",
   "support_end": "2030-12-31",

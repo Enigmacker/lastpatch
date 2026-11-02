@@ -2353,7 +2353,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive View Camera",
+  "model": "View Camera",
   "hw_version": null,
   "category": "camera",
   "support_end": "2025-08-01",
@@ -2367,7 +2367,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive HomeShield",
+  "model": "HomeShield",
   "hw_version": null,
   "category": "iot",
   "support_end": "2025-08-01",
@@ -2381,7 +2381,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Leak Sensor",
+  "model": "Leak Sensor",
   "hw_version": null,
   "category": "iot",
   "support_end": "2023-09-01",
@@ -2395,7 +2395,7 @@
  },
  {
   "vendor": "Hive",
-  "model": "Hive Nano 1 Hub",
+  "model": "Nano 1 Hub",
   "hw_version": null,
   "category": "iot",
   "support_end": "2023-08-01",
