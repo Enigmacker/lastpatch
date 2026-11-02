@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.8.4 - 2026-11-02
+
+- Dataset 0.4.4: 4,871 rows from 45 brands. Netgear consumer End of Service dates (Nighthawk, Orbi kits, extenders, cable modems) and the Australian list as minimum dates (375 Netgear rows); the full eufy UK table (113 rows instead of 5).
+- Left out on review: standalone Orbi routers dated from their kits (an inference), and QNAP dates read only once.
+
 ## 0.8.3 - 2026-11-02
 
 - Dataset 0.4.3: 4,645 rows from 45 brands. Smart home: Hive (48), Aqara (18), Bosch Smart Home (17), Shelly (17), Nuki (15), Netatmo (13), tado° (6), Samsung SmartThings (2). Nuki dates are minimum guarantees.

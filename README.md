@@ -58,7 +58,7 @@ Devices that announce nothing (phones with random MAC addresses, devices without
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.4.3, retrieved 2026-11-02: 4,645 rows from 45 brands.
+`data/devices.json` (schema in `data/schema.json`), version 0.4.4, retrieved 2026-11-02: 4,871 rows from 45 brands.
 
 | Vendor | Rows | Source |
 |---|---|---|
@@ -66,7 +66,7 @@ Devices that announce nothing (phones with random MAC addresses, devices without
 | D-Link | 473 | US legacy product list; security announcements; US end-of-support notices; UK PSTI statements |
 | Zyxel | 368 | Service-provider end-of-life list; UK PSTI page; archived EOL list; end-of-life page |
 | Linksys | 287 | Linksys product end-of-life page (per market); end-of-life article |
-| Netgear | 256 | NETGEAR for Business end-of-life list (home and small-office models); UK PSTI statements |
+| Netgear | 375 | End of Service list (consumer Nighthawk, Orbi, extenders, cable modems; searched model by model); Australian EOS page (minimum dates); NETGEAR for Business EOL list; UK PSTI statements |
 | Tenda | 136 | Tenda EOL Center ("End of service date") |
 | Mercusys | 127 | UK PSTI statement of compliance (full document) |
 | ASUS | 85 | UK PSTI support-period list; Singapore lifecycle list |
@@ -102,7 +102,8 @@ Devices that announce nothing (phones with random MAC addresses, devices without
 | Nuki | 15 | UK PSTI statements |
 | tado° | 6 | UK PSTI statements |
 | Samsung SmartThings | 2 | SmartThings hub retirement notice |
-| eufy, Netatmo, Yale, Philips Hue, Wyze | 13 | UK PSTI statements; end-of-support pages |
+| eufy | 113 | Anker UK PSTI table (cameras, doorbells, HomeBase, locks) |
+| Netatmo, Yale, Philips Hue, Wyze | 16 | UK PSTI statements; end-of-support pages |
 
 Each row records the date exactly as written (`support_end_raw`), whether it is a minimum guarantee (`end_is_minimum`, for "or later" / "at least"), the hardware version it applies to, the market (`region`) and the source URL.
 
@@ -115,7 +116,7 @@ Each row records the date exactly as written (`support_end_raw`), whether it is 
 - **Minimum guarantees run out.** Google, Amazon, ASUS and others promise updates "until at least" a date. Once it has passed, the device is shown as no longer supported, with a note that updates may still come.
 - **Keenetic** pages give three dates; the dataset uses the end of "Limited updates", the last phase in which security updates are promised, not the later "support discontinuation" date.
 - **Tenda's "End of service date"** is often a day after its end of sale. Tenda's UK PSTI page promises security support for 3 years after end of life in the UK, without a per-model table, so UK units may be supported longer.
-- **Recent NAS models have no dates yet.** Synology gives dates per DSM version, and models on DSM 7.2 or later have no announced end. QNAP's status page shows one model at a time and could not be read in bulk yet.
+- **Recent NAS models have no dates yet.** Synology gives dates per DSM version, and models on DSM 7.2 or later have no announced end. QNAP's status page shows one model at a time; only one model has been read twice so far, so QNAP stays thin until more are checked.
 - **ISP boxes are out of scope.** Routers supplied by internet providers (Livebox, Freebox, etc.) are updated by the provider.
 
 ## Keeping the dataset current

@@ -84,7 +84,7 @@ const devices = [...seen.values()].sort((a, b) =>
 );
 
 fs.writeFileSync(OUT, JSON.stringify({
-  version: '0.4.3',
+  version: '0.4.4',
   generated: RETRIEVED,
   license: 'ODbL-1.0',
   devices,

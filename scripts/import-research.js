@@ -36,9 +36,10 @@ for (const r of rows) {
   // Same for brands whose sources repeat the brand in the model name.
   if (['Ring', 'Netatmo', 'Nuki', 'Hive'].includes(row.vendor)) row.model = row.model.replace(new RegExp(`^${row.vendor}\\s+`), '');
 
-  // Netgear Australia: every date reads "11/01/2029", ambiguous between
-  // 11 January and 1 November, and looks like a rolling minimum. Not used.
-  if (row.vendor === 'Netgear' && row.region === 'AU' && /11\/01\/2029/.test(row.support_end_raw)) { dropped.push(row); continue; }
+  // Netgear Australia writes "11/01/2029" for an "earliest possible" end:
+  // month first (an older copy of the same table showed "08/01/2029", so the
+  // rolling date moves by months), i.e. 1 November 2029, a minimum.
+  if (row.vendor === 'Netgear' && row.region === 'AU' && /11\/01\/2029/.test(row.support_end_raw)) row.end_is_minimum = true;
 
   // Synology RT1900ac: the life-cycle policy ends SRM 1.2 in June 2023, but
   // the product status page still lists security updates. Left out until
@@ -65,6 +66,15 @@ for (const r of rows) {
   // Nuki statements give "defined" and "extended minimum" support periods:
   // minimum guarantees, so a passed date means the promise ran out.
   if (row.vendor === 'Nuki') row.end_is_minimum = true;
+
+  // Netgear consumer EOS list: one brand spelling for the whole dataset.
+  if (row.vendor === 'NETGEAR') row.vendor = 'Netgear';
+  // Standalone Orbi routers and satellites were given the latest date of
+  // their series' kits, an inference rather than a Netgear value. Left out.
+  if (row.vendor === 'Netgear' && /netgear\.com\/about\/eos/.test(row.source_url) && /^(RBR20|RBR50|RBR750|RBS40|RBS50)$/.test(row.model)) { dropped.push(row); continue; }
+  // QNAP: only TS-253D was read twice; the other dates come from one run
+  // that also returned unrelated models. Left out until checked in a browser.
+  if (row.vendor === 'QNAP' && /qnap\.com\/en\/product\/status/.test(row.source_url) && row.model !== 'TS-253D') { dropped.push(row); continue; }
 
   // Tenda EOL Center: the bare date is the "End of service date" column.
   if (row.vendor === 'Tenda' && /^\d{4}-\d{2}-\d{2}$/.test(row.support_end_raw)) {
