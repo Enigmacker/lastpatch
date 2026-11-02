@@ -58,7 +58,7 @@ Devices that announce nothing (phones with random MAC addresses, devices without
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.4.0, retrieved 2026-11-01: 3,882 rows from 31 brands.
+`data/devices.json` (schema in `data/schema.json`), version 0.4.1, retrieved 2026-11-02: 4,349 rows from 34 brands.
 
 | Vendor | Rows | Source |
 |---|---|---|
@@ -77,7 +77,7 @@ Devices that announce nothing (phones with random MAC addresses, devices without
 | Google (Nest, Google Wifi) | 40 | Google guaranteed software update periods page |
 | Xiaomi | 39 | Xiaomi end-of-life product list (no dates) |
 | Ubiquiti | 29 | Ubiquiti legacy products list (no dates) |
-| EZVIZ | 23 | EZVIZ EOL product list (Europe) |
+| EZVIZ | 311 | EZVIZ EOL product list (Europe, firmware update end dates) |
 | Reolink | 22 | UK PSTI statements |
 | Synology | 152 | Software life cycle policy (DSM, SRM, cameras, BeeStation); DSM 6.2 end-of-life announcement |
 | Asustor | 51 | ADM end-of-support notices and product status table |
@@ -86,7 +86,10 @@ Devices that announce nothing (phones with random MAC addresses, devices without
 | Blink | 18 | Blink device software security updates page |
 | eero | 17 | eero software security updates page |
 | devolo | 15 | UK PSTI statements |
-| Arlo | 10 | Arlo end-of-life page; UK PSTI statements |
+| Arlo | 102 | Arlo end-of-life page; UK and Australian statements of compliance |
+| Lorex | 76 | Lorex UK PSTI end-of-life table |
+| Hive | 4 | Hive product news (end-of-support notices) |
+| Nooie | 7 | Nooie security updates page (no dates) |
 | QNAP | 6 | QNAP support status; UK PSTI statements |
 | eufy, Netatmo, Yale, Philips Hue, Wyze | 13 | UK PSTI statements; end-of-support pages |
 
@@ -97,7 +100,7 @@ Each row records the date exactly as written (`support_end_raw`), whether it is 
 - **Hardware versions matter.** The same model can have different dates per hardware revision (e.g. Tapo C200 V3 vs V5). Check the label under the device.
 - **Sources sometimes contradict themselves.** When one document gives two dates for the same model and hardware version, the earlier date is kept and the build reports the conflict.
 - **Dates differ by market.** ASUS publishes different dates in the UK and Singapore for the same model. Rows are never merged across regions.
-- **Some vendors publish no usable date.** Netgear UK statements only say support ends at "End of Service"; D-Link UK statements say "2 years" without a start date; Hikvision, Swann, Imou and Sonos publish no per-model dates at all. Xiaomi and Ubiquiti only list products that no longer get updates, without dates.
+- **Some vendors publish no usable date.** Netgear UK statements only say support ends at "End of Service"; D-Link UK statements say "2 years" without a start date; Hikvision, Swann, Imou, Sonos, Logitech, SimpliSafe, Foscam and Amcrest publish no per-model dates at all. Xiaomi and Ubiquiti only list products that no longer get updates, without dates.
 - **Minimum guarantees run out.** Google, Amazon, ASUS and others promise updates "until at least" a date. Once it has passed, the device is shown as no longer supported, with a note that updates may still come.
 - **Tenda's "End of service date"** is often a day after its end of sale. Tenda's UK PSTI page promises security support for 3 years after end of life in the UK, without a per-model table, so UK units may be supported longer.
 - **Recent NAS models have no dates yet.** Synology gives dates per DSM version, and models on DSM 7.2 or later have no announced end. QNAP's status page shows one model at a time and could not be read in bulk yet.

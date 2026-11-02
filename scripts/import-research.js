@@ -44,6 +44,10 @@ for (const r of rows) {
   // Synology's two pages agree.
   if (row.vendor === 'Synology' && /RT1900ac/i.test(row.model)) { dropped.push(row); continue; }
 
+  // Arlo VMC4072: its UK statement names the model only as the pattern
+  // "VMY4X7XY", so the date is not tied to this model explicitly.
+  if (row.vendor === 'Arlo' && /VMC4072/.test(row.model)) { dropped.push(row); continue; }
+
   // Tenda EOL Center: the bare date is the "End of service date" column.
   if (row.vendor === 'Tenda' && /^\d{4}-\d{2}-\d{2}$/.test(row.support_end_raw)) {
     row.support_end_raw = `End of service date: ${row.support_end_raw}`;

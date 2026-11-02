@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.8.1 - 2026-11-02
+
+- Dataset 0.4.1: 4,349 rows from 34 brands. Cameras: Arlo complete (UK and Australian statements, 102 rows instead of 10), Lorex (76), the full EZVIZ European list (311 instead of 23), Hive and Nooie.
+- Matching recognises the next brands being researched (GL.iNet, Cudy, Teltonika, Keenetic, Cisco, Aruba Instant On, tado, Bosch, Nuki, Shelly, IKEA, Hive, Somfy, Sonoff, Aqara, SwitchBot, SmartThings and camera brands).
+
 ## 0.8.0 - 2026-11-01
 
 - Dataset 0.4.0: 3,882 rows from 31 brands (was 1,649 rows, 13 brands). New: Asustor, WD My Cloud, TerraMaster, eero, Blink, Amazon Echo and Fire TV, Google Nest and Google Wifi, Mercusys, Tenda, Zyxel, DrayTek, devolo, Xiaomi, Ubiquiti, eufy, Yale, Philips Hue, Wyze. Expanded: D-Link (US legacy list, security announcements), Linksys (per-market end-of-life page), Netgear (business EOL list), Ring (UK and US update pages), Synology (software life cycle policy: 152 rows instead of 20).
