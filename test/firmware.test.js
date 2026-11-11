@@ -299,3 +299,19 @@ test('AVM: full folder read with a fake server, and merge keeps old rows', async
     { vendor: 'AVM', model: 'FRITZ!Box 7590', hw_version: null, latest_version: '8.25' }], [row]);
   assert.deepStrictEqual(merged.map((r) => `${r.model} ${r.latest_version}`), ['FRITZ!Box 7490 7.62', 'FRITZ!Box 7590 8.51']);
 });
+
+test('GL.iNet 4.x: the login challenge identifies the firmware without a password', async () => {
+  const seen = [];
+  const fetch = async (url, opts) => {
+    seen.push([url, opts.json]);
+    return { status: 200, body: '{"id":1,"jsonrpc":"2.0","result":{"salt":"OmQ05MKx","hash-method":"sha256","alg":1,"nonce":"pQyXzFo2tJ5n2nZZH4B8TqLRt0vQ5X4Z"}}' };
+  };
+  const host = { ip: '192.168.8.1', macVendor: 'GL Technologies (Hong Kong) Limited', upnp: [], http: { title: null } };
+  assert.match(await probe.probeNote(host, { fetch }), /GL\.iNet router, firmware 4\.x/);
+  assert.deepStrictEqual(seen, [['http://192.168.8.1/rpc', { jsonrpc: '2.0', id: 1, method: 'challenge', params: { username: 'root' } }]]);
+  assert.ok(!JSON.stringify(seen).includes('password'));
+  // Other makers are not asked.
+  assert.strictEqual(await probe.probeNote({ ...host, macVendor: 'Apple, Inc.' }, { fetch }), null);
+  assert.strictEqual(seen.length, 1);
+  assert.strictEqual(probe.isGlinetChallenge('403 Forbidden'), false);
+});

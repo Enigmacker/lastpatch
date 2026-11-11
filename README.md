@@ -69,6 +69,8 @@ Options: `--json` for machine-readable output, `--warn <days>` to change the "en
 
 A copy of the IEEE MAC registries ships with the tool; `lastpatch update-oui` optionally refreshes it from the IEEE website. Every probe contacts private addresses only, sends no credentials, and nothing leaves your network. Only scan networks you own or administer.
 
+Some devices only give their model after a login, which the scan never attempts. For GL.iNet routers on firmware 4.x, the scan asks for the first step of the login (the "challenge", which involves no password) to confirm it is one, and says so; read the model on the label and run `lastpatch check`. Phones, tablets and computers usually join Wi-Fi with a private, randomised MAC address: the scan reports them as such, since the maker cannot be read from that address.
+
 The installed firmware is read only from files these devices publish without a password; no login is tried, and the serial number they also contain is not kept. Most other brands do not publish their version this way, so the scan shows it for FRITZ!Box and NETGEAR routers, and for devices whose UPnP description includes it.
 
 Devices that announce nothing (phones with random MAC addresses, devices without a web page) are listed with "model not announced": check them with `lastpatch check`.

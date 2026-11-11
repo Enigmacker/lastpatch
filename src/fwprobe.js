@@ -85,6 +85,31 @@ function vendorsOf(h) {
   return new Set(names.filter(Boolean).map(canonicalVendor).filter(Boolean));
 }
 
+// GL.iNet firmware 4.x gives its model and version only after login. The
+// first step of its login (the "challenge", no password involved) does
+// answer, which tells a 4.x router apart from other devices.
+const GLINET_CHALLENGE = { jsonrpc: '2.0', id: 1, method: 'challenge', params: { username: 'root' } };
+
+function isGlinetChallenge(body) {
+  try {
+    const r = JSON.parse(body).result;
+    return Boolean(r && r.salt && r.nonce);
+  } catch { return false; }
+}
+
+// What can be said about a device whose model is not published without a
+// login. Returns a short sentence, or null.
+async function probeNote(h, { fetch = fetchLan, timeoutMs = 2000 } = {}) {
+  if (!h || !isPrivateHost(h.ip)) return null;
+  if (vendorsOf(h).has('gl.inet')) {
+    const res = await fetch(`http://${h.ip}/rpc`, { timeoutMs, json: GLINET_CHALLENGE });
+    if (res && res.status === 200 && isGlinetChallenge(res.body)) {
+      return 'GL.iNet router, firmware 4.x: the model and version are only given after login';
+    }
+  }
+  return null;
+}
+
 // Returns { version, source, model, lab, oem } or null.
 // `fetch` is injectable for tests: (url) => Promise<{status, body}|null>.
 async function readFirmware(h, { fetch = fetchLan, timeoutMs = 2000 } = {}) {
@@ -110,4 +135,4 @@ async function readFirmware(h, { fetch = fetchLan, timeoutMs = 2000 } = {}) {
   return null;
 }
 
-module.exports = { readFirmware, parseJasonBoxinfo, parseTr64Desc, parseCurrentSetting, fromUpnp };
+module.exports = { readFirmware, probeNote, isGlinetChallenge, parseJasonBoxinfo, parseTr64Desc, parseCurrentSetting, fromUpnp };

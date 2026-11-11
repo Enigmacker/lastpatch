@@ -9,13 +9,15 @@ const http = require('node:http');
 const https = require('node:https');
 const { isPrivateHost } = require('./lan');
 
-function get(url, timeoutMs, maxBytes) {
+function get(url, timeoutMs, maxBytes, { method = 'GET', body = null, type = null } = {}) {
   return new Promise((resolve) => {
     const u = new URL(url);
     const mod = u.protocol === 'https:' ? https : http;
+    const headers = { 'User-Agent': 'lastpatch' };
+    if (body) { headers['Content-Type'] = type; headers['Content-Length'] = Buffer.byteLength(body); }
     // Admin pages use self-signed certificates; we only read a title and
     // send no credentials, so certificate checks are not needed here.
-    const req = mod.get(u, { timeout: timeoutMs, rejectUnauthorized: false, headers: { 'User-Agent': 'lastpatch' } }, (res) => {
+    const req = mod.request(u, { method, timeout: timeoutMs, rejectUnauthorized: false, headers }, (res) => {
       let size = 0;
       const chunks = [];
       res.on('data', (c) => {
@@ -29,6 +31,7 @@ function get(url, timeoutMs, maxBytes) {
     });
     req.on('timeout', () => req.destroy());
     req.on('error', () => resolve(null));
+    req.end(body || undefined);
   });
 }
 
@@ -83,11 +86,14 @@ async function probeHttp(ip, { timeoutMs = 2000, maxBytes = 128 * 1024 } = {}) {
 
 // One GET of a small file on a LAN device (plain HTTP, any port), without
 // following redirects. Returns { status, headers, body } or null.
-async function fetchLan(url, { timeoutMs = 2000, maxBytes = 64 * 1024 } = {}) {
+// With `json`, sends it as a POST body instead (used for one JSON-RPC
+// question that needs no login, see fwprobe.js).
+async function fetchLan(url, { timeoutMs = 2000, maxBytes = 64 * 1024, json = null } = {}) {
   let u;
   try { u = new URL(url); } catch { return null; }
   if (u.protocol !== 'http:' || !isPrivateHost(u.hostname)) return null;
-  return get(u.href, timeoutMs, maxBytes);
+  const post = json ? { method: 'POST', body: JSON.stringify(json), type: 'application/json' } : undefined;
+  return get(u.href, timeoutMs, maxBytes, post);
 }
 
 module.exports = { probeHttp, fetchLan, extractTitle, extractRealm };

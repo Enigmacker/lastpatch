@@ -16,7 +16,7 @@ const ssdp = require('./ssdp');
 const mdns = require('./mdns');
 const igd = require('./igd');
 const { probeHttp } = require('./httpprobe');
-const { readFirmware } = require('./fwprobe');
+const { readFirmware, probeNote } = require('./fwprobe');
 const { vendorOf } = require('./oui');
 const { isPrivateHost } = require('./lan');
 const { findDevice, canonicalVendor, sameMaker } = require('./match');
@@ -31,14 +31,15 @@ async function collect({ timeoutMs = 3000, sweep = true } = {}) {
 
   const hosts = new Map();
   const host = (ip) => {
-    if (!hosts.has(ip)) hosts.set(ip, { ip, mac: null, macVendor: null, upnp: [], mdns: null, http: null, firmware: null, exposed: [] });
+    if (!hosts.has(ip)) hosts.set(ip, { ip, mac: null, macVendor: null, randomMac: false, note: null, upnp: [], mdns: null, http: null, firmware: null, exposed: [] });
     return hosts.get(ip);
   };
   for (const [ip, mac] of table) {
     if (!isPrivateHost(ip)) continue;
     const h = host(ip);
     h.mac = mac;
-    h.macVendor = neighbors.isRandomMac(mac) ? null : vendorOf(mac);
+    h.randomMac = neighbors.isRandomMac(mac);
+    h.macVendor = h.randomMac ? null : vendorOf(mac);
   }
   for (const d of upnp) host(d.ip).upnp.push(d);
   for (const d of bonjour) if (isPrivateHost(d.ip)) host(d.ip).mdns = d;
@@ -50,6 +51,7 @@ async function collect({ timeoutMs = 3000, sweep = true } = {}) {
   await Promise.all([...hosts.values()].map(async (h) => {
     if (web.has(h.ip) || h.upnp.length) h.http = await probeHttp(h.ip);
     if (h.http || h.upnp.length) h.firmware = await readFirmware(h);
+    if (h.http && !h.firmware) h.note = await probeNote(h);
   }));
   return [...hosts.values()].sort((a, b) =>
     a.ip.split('.').map(Number).reduce((x, y) => x * 256 + y) - b.ip.split('.').map(Number).reduce((x, y) => x * 256 + y));

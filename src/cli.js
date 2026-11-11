@@ -190,7 +190,9 @@ function scanReport(identified, warn, region) {
       ip: r.host.ip,
       mac: r.host.mac,
       mac_vendor: r.host.macVendor,
+      random_mac: Boolean(r.host.randomMac),
       name: label(r.host) || null,
+      note: r.host.note || null,
       identified_via: r.via,
       query: r.query,
       needs_hw_version: !r.hwVersion && new Set(matches.map((m) => m.row.hw_version)).size > 1 &&
@@ -222,7 +224,8 @@ function printScan(report) {
   if (exposed.length) console.log(`${exposed.length} device(s) reachable from the Internet through router port forwards.`);
   console.log('');
   for (const r of report) {
-    const who = [r.mac_vendor, r.name].filter(Boolean).join(' - ') || 'unknown device';
+    const who = [r.mac_vendor, r.name].filter(Boolean).join(' - ') ||
+      (r.random_mac ? 'device with a private MAC address' : 'unknown device');
     console.log(`${r.ip}  ${who}`);
     printExposure(r.exposed);
     if (r.results.length) {
@@ -233,6 +236,11 @@ function printScan(report) {
       console.log(`  model not found in the dataset (seen as "${r.query}")`);
       if (r.exploited_unlisted.length) printExploited(r.exploited_unlisted, 'unknown');
       printFirmware(r.firmware);
+    } else if (r.note) {
+      console.log(`  ${r.note}`);
+      console.log('  read the model on its label, then: lastpatch check "<vendor> <model>"');
+    } else if (r.random_mac && !r.name) {
+      console.log('  the address is randomised (private Wi-Fi address of a phone, tablet or computer), so the maker cannot be read');
     } else {
       console.log('  model not announced: check it with "lastpatch check <vendor> <model>"');
       printFirmware(r.firmware);

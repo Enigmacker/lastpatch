@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.9.2 - 2026-11-11
+
+From the first scan of a real network:
+
+- The IEEE name of GL.iNet ("GL Technologies (Hong Kong) Limited") is matched to the brand.
+- GL.iNet routers on firmware 4.x publish their model only after login. The scan now recognises them from the first login step (the "challenge", no password sent) and says so, instead of "model not announced".
+- Devices with a private (randomised) MAC address, usually phones, tablets and computers, are reported as such instead of "unknown device". JSON output has `random_mac` and `note`.
+
 ## 0.9.1 - 2026-11-11
 
 - QNAP: 219 models from the full QNAP product support status table (NAS, routers, switches), read from the page's data feed, replace the hand-copied rows. Month-only dates ("2027-12") are read as the last day of that month; models marked "EOL" have no date.
