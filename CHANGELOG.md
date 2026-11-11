@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.9.5 - 2026-11-11
+
+- Dahua: 1,120 products from its end-of-life policy milestone list ("End of Service & Support", the last date of firmware and security updates): IP and PTZ cameras, network and digital video recorders, door entry (outdoor stations as doorbells), switches and alarms. Displays, analogue HDCVI cameras, decoders and security inspection equipment are left out. Where the list gives a model twice with two dates, the earlier one is kept. Dahua is now its own brand, no longer an alias of Imou (same maker).
+- Hikvision: 45 iDS-2CD7x network cameras, security updates guaranteed until 30 June 2031 (announcement of 2 April 2026). Two China-only variants are left out. Hikvision publishes no other dated list.
+- French operator boxes (Livebox, Freebox, SFR Box, Bbox): no official end-of-support date is published; operators update and replace their boxes themselves. Not included.
+- 6,350 rows, 5,440 models, 50 brands.
+
 ## 0.9.4 - 2026-11-11
 
 - Website: legal notice page in English (`/legal/`) and French (`/fr/mentions-legales/`), linked from the footer. LastPatch is a service offered by Securissima, Ireland; the publisher also appears in the site's structured data.

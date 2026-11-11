@@ -77,7 +77,7 @@ Devices that announce nothing (phones with random MAC addresses, devices without
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.4.4, retrieved 2026-11-11: 5,193 rows from 48 brands.
+`data/devices.json` (schema in `data/schema.json`), version 0.4.4, retrieved 2026-11-11: 6,350 rows (5,440 models) from 50 brands.
 
 | Vendor | Rows | Source |
 |---|---|---|
@@ -125,6 +125,8 @@ Devices that announce nothing (phones with random MAC addresses, devices without
 | Netatmo, Yale, Philips Hue, Wyze | 16 | UK PSTI statements; end-of-support pages |
 | Roborock | 49 | Roborock software security support policy (robot vacuums, wet and dry vacuums, lawn mowers; listed by model code) |
 | Drayton (Wiser, Digistat) | 28 | Drayton security support policy and UK PSTI statements |
+| Dahua | 1,120 | Dahua product end-of-life policy, milestone list (UK site, updated 27 October 2025): IP and PTZ cameras, recorders, door entry, switches, alarms |
+| Hikvision | 45 | Hikvision security support timeline for the iDS-2CD7x camera series (2 April 2026) |
 | Belkin (Wemo) | 27 | Belkin "Wemo support ending" page (cloud, app and support end on 31 January 2026) |
 
 Each row records the date exactly as written (`support_end_raw`), whether it is a minimum guarantee (`end_is_minimum`, for "or later" / "at least"), the hardware version it applies to, the market (`region`) and the source URL.

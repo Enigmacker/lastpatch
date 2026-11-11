@@ -37,7 +37,8 @@ const VENDOR_ALIASES = {
   wyze: ['wyze'],
   'philips hue': ['philips hue', 'hue bridge', 'signify', 'philips lighting'],
   hikvision: ['hikvision', 'hik-connect', 'hikconnect'],
-  imou: ['imou', 'dahua'],
+  imou: ['imou'],
+  dahua: ['dahua'],
   swann: ['swann'],
   yale: ['yale'],
   sonos: ['sonos'],
@@ -117,7 +118,7 @@ const FAMILIES = [
   ['google'],
   ['tp-link', 'mercusys'],
   ['hikvision', 'ezviz'],
-  ['imou'],
+  ['dahua', 'imou'],
 ];
 
 /** True when two canonical vendors may be the same maker. */

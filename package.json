@@ -1,6 +1,6 @@
 {
   "name": "lastpatch",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "description": "Is your router, camera or NAS still getting security updates? Open dataset of official end-of-support dates, plus a LAN scanner.",
   "bin": {
     "lastpatch": "src/cli.js"
