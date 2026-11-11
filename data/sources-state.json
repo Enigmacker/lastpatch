@@ -13,7 +13,9 @@
     "pending": {
       "date": "2026-11-09",
       "fingerprint": "d6c168f667b0a86390ea1fca2f4f49b093fec8a7009e1ea813fb74d8c459b649"
-    }
+    },
+    "failures": 1,
+    "failing_since": "2026-11-11"
   },
   "https://www.amazon.com/gp/help/customer/display.html?nodeId=G6SH55LKBSAZ2BAK": {
     "vendor": "Amazon",
@@ -29,7 +31,9 @@
     "pending": {
       "date": "2026-11-09",
       "fingerprint": "4932ede5a2b4817d9725f47bd9c945f253182a508c889f14f3ad44d0756b2cff"
-    }
+    },
+    "failures": 1,
+    "failing_since": "2026-11-11"
   },
   "https://www.aqara.com/wp-content/uploads/2025/08/PSTI-statements-Camera-E1.pdf": {
     "vendor": "Aqara",
@@ -285,19 +289,32 @@
   },
   "https://kb.arlo.com/000063018/Arlo-Legacy-Cameras-End-of-Life": {
     "vendor": "Arlo",
-    "kind": "text",
-    "fingerprint": "73d5b841c1f5732e09c757e66ded2d04fad9a3dccb1b9f0608a12d1ee281fb92",
+    "kind": "rows",
+    "fingerprint": "9074aecd5fda5ad911709d0e90782d0b3c0758ad83f916eb4f19aab4904cf74b",
+    "lines": [
+      "Arlo Audio Doorbell (AAD1001)",
+      "Arlo Baby (ABC1000)",
+      "Arlo Pro 2 (VMC4030P)",
+      "Arlo Pro Camera (VMC4030)",
+      "Arlo Q (VMC3040)",
+      "Arlo Q+ (VMC3040S)",
+      "Arlo Security Light System (ALS1101)",
+      "Arlo Wire-Free Camera (VMC3030)",
+      "Note: US customers who first onboarded an Arlo Wire-Free Camera (VMC3030) or Arlo Pro Camera (VMC4030) before January 1, 2023, are eligible for upgrade offers.",
+      "The following Arlo hardware devices were moved to EOL on January 1, 2025:",
+      "The following Arlo hardware devices were moved to EOL on July 1, 2023:"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "73d5b841c1f5732e09c757e66ded2d04fad9a3dccb1b9f0608a12d1ee281fb92"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "9074aecd5fda5ad911709d0e90782d0b3c0758ad83f916eb4f19aab4904cf74b"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "6b99a38e1917d9faa68370e57e79dd9939096d04642724aacc591f0df346f550"
-    }
+    ]
   },
   "https://downloads.arlo.com/files/DoC/UKDOC_AVD1001B.pdf": {
     "vendor": "Arlo",
@@ -493,385 +510,917 @@
   },
   "https://www.asus.com/uk/support/faq/1051929/": {
     "vendor": "ASUS",
-    "kind": "text",
-    "fingerprint": "abc346954ae978cac051899e024b21021271737fbf09f51a414d6607b94cc001",
+    "kind": "rows",
+    "fingerprint": "98eaa86091112f18149fdf2dcbcaf8d54c72efd8bd1dea897371a0dfe5c357db",
+    "lines": [
+      "4 years (until 31th December 2025)",
+      "4 years (until 31th December 2026)",
+      "4 years (until 31th December 2028)",
+      "4 years (until 31th December 2029)",
+      "4 years (until 31th December 2030)",
+      "4G-AX56",
+      "4G-BE58",
+      "4G-N16",
+      "DSL-AX82U",
+      "GS-AX5400",
+      "GS-BE18000",
+      "GS-BE7200",
+      "GT-AX11000",
+      "GT-AX11000 Pro",
+      "GT-AX6000",
+      "GT-AXE11000",
+      "GT-AXE16000",
+      "GT-BE19000",
+      "GT-BE19000AI",
+      "GT-BE98",
+      "PRT-BE5000",
+      "RP-AX50",
+      "RP-AX58",
+      "RP-BE58",
+      "RT-AX1800U",
+      "RT-AX3000E",
+      "RT-AX50",
+      "RT-AX52",
+      "RT-AX52 Pro",
+      "RT-AX53U",
+      "RT-AX5400",
+      "RT-AX57",
+      "RT-AX57 Go",
+      "RT-AX58U V2",
+      "RT-AX59U",
+      "RT-AX82U V2",
+      "RT-AX86U Pro",
+      "RT-AX88U Pro",
+      "RT-AX89X",
+      "RT-AXE7800",
+      "RT-BE3600E",
+      "RT-BE50",
+      "RT-BE55",
+      "RT-BE58 Go",
+      "RT-BE58U",
+      "RT-BE58U V2",
+      "RT-BE82U",
+      "RT-BE86U",
+      "RT-BE88U",
+      "RT-BE90U",
+      "RT-BE92U",
+      "TUF-AX3000 V2",
+      "TUF-AX4200",
+      "TUF-AX6000",
+      "TUF-BE3600",
+      "TUF-BE3600 V2",
+      "TUF-BE6500",
+      "TUF-BE9400",
+      "ZenWiFi AX Mini XD4(XD4R+XD4N)",
+      "ZenWiFi BD4",
+      "ZenWiFi BD4 Outdoor",
+      "ZenWiFi BQ16",
+      "ZenWiFi BT10",
+      "ZenWiFi BT7",
+      "ZenWiFi BT7 Z",
+      "ZenWiFi BT8",
+      "ZenWiFi Pro ET12",
+      "ZenWiFi Pro XT12",
+      "ZenWiFi XD4 PLUS",
+      "ZenWiFi XD5",
+      "ZenWiFi XD6",
+      "ZenWiFi XD6S",
+      "ZenWiFi XT8",
+      "ZenWiFi XT9"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "abc346954ae978cac051899e024b21021271737fbf09f51a414d6607b94cc001"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "98eaa86091112f18149fdf2dcbcaf8d54c72efd8bd1dea897371a0dfe5c357db"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "cc6315713077d7e11802543d44705f7739358b653407352549cf0f4fb873241e"
-    }
+    ]
   },
   "https://www.asus.com/sg/support/FAQ/1051375": {
     "vendor": "ASUS",
-    "kind": "text",
-    "fingerprint": "1eaeb487d88844b4328272a21ae6f61158a7c2ec9df24f20ea5a8058b1c3dc44",
+    "kind": "rows",
+    "fingerprint": "e3a98499e3a3f962968add8acf201e66ac3dd9ff9d1f8e6ec6963d1b2c72e2e3",
+    "lines": [
+      "27th March 2028",
+      "28th February 2025",
+      "ROG Rapture GT-AX11000",
+      "ROG Rapture GT-AX11000 Pro",
+      "RT-AX1800HP (RT-AX54HP)",
+      "RT-AX55",
+      "RT-AX56U",
+      "RT-AX58U",
+      "RT-AX82U",
+      "RT-AX86S",
+      "RT-AX86U",
+      "RT-AX86U Pro",
+      "RT-AX92U",
+      "TUF-AX3000",
+      "TUF-AX5400",
+      "TUF-AX6000",
+      "ZenWiFi AX Mini XD4",
+      "ZenWiFi AX XP4",
+      "ZenWiFi AX XT8",
+      "ZenWiFi XD4S"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "1eaeb487d88844b4328272a21ae6f61158a7c2ec9df24f20ea5a8058b1c3dc44"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "e3a98499e3a3f962968add8acf201e66ac3dd9ff9d1f8e6ec6963d1b2c72e2e3"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "b431d428cdc625a9dc76ade00780b4c6f969e1069933bab76ec898d6d7b26912"
-    }
+    ]
   },
   "https://www.asustor.com/product/status_detail?id=5": {
     "vendor": "Asustor",
-    "kind": "text",
-    "fingerprint": "09b316b89a0a1332002e096420371f22e4f684b7201bcb8031c059e140a880ec",
+    "kind": "rows",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": [],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "09b316b89a0a1332002e096420371f22e4f684b7201bcb8031c059e140a880ec"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
     ]
   },
   "https://www.asustor.com/product/status_detail?id=7": {
     "vendor": "Asustor",
-    "kind": "text",
-    "fingerprint": "9d9d571c89acd09f28f76edf6be8732d7884c8df3513f8186031f9153d2f8198",
+    "kind": "rows",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": [],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "9d9d571c89acd09f28f76edf6be8732d7884c8df3513f8186031f9153d2f8198"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
     ]
   },
   "https://www.asustor.com/product/status_detail?id=15": {
     "vendor": "Asustor",
-    "kind": "text",
-    "fingerprint": "6074d6feb620999fc0177e6ff3d6e643bd23ae9b15222706a9fc36fded615ff3",
+    "kind": "rows",
+    "fingerprint": "45c64e13e0fb6993877c43254f68f893b966d1cc0d628d10a9f0ddea71286e36",
+    "lines": [
+      "AS3102T v2, AS3204T v2",
+      "AS3102T, AS3104T, AS3202T, AS3204T",
+      "AS4002T, AS4004T",
+      "AS6102T, AS6104T, AS6202T, AS6204T, AS6208T, AS6210T",
+      "AS6204RS, AS6204RD, AS6212RD"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "6074d6feb620999fc0177e6ff3d6e643bd23ae9b15222706a9fc36fded615ff3"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "45c64e13e0fb6993877c43254f68f893b966d1cc0d628d10a9f0ddea71286e36"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "e1b5d0564682a399f253fd2cf7ac10eef2db5ffdd9f784734f981da7426fc478"
-    }
+    ]
   },
   "https://fritz.com/pages/status-produktunterstuetzung": {
     "vendor": "AVM",
-    "kind": "text",
-    "fingerprint": "bfcfa21e9d5593ed078fd12248a82b045e8d1c741eacdee54a8578ba8ed16c33",
+    "kind": "rows",
+    "fingerprint": "32e5c2d97f821026592449e3e4dad0b39b5ecad6f00c89d18a8ce4a50f7fb082",
+    "lines": [
+      "FRITZ!Box 4020",
+      "FRITZ!Box 4040",
+      "FRITZ!Box 4050",
+      "FRITZ!Box 4060",
+      "FRITZ!Box 4630",
+      "FRITZ!Box 4690",
+      "FRITZ!Box 5490",
+      "FRITZ!Box 5491",
+      "FRITZ!Box 5530 Fiber",
+      "FRITZ!Box 5590 Fiber",
+      "FRITZ!Box 5630",
+      "FRITZ!Box 5690",
+      "FRITZ!Box 5690 Pro",
+      "FRITZ!Box 5690 XGS",
+      "FRITZ!Box 6430 Cable",
+      "FRITZ!Box 6490 Cable",
+      "FRITZ!Box 6590 Cable",
+      "FRITZ!Box 6591 Cable",
+      "FRITZ!Box 6660 Cable",
+      "FRITZ!Box 6670 Cable",
+      "FRITZ!Box 6690 Cable",
+      "FRITZ!Box 6690 Pro",
+      "FRITZ!Box 6820",
+      "FRITZ!Box 6825 4G",
+      "FRITZ!Box 6850 4G",
+      "FRITZ!Box 6850 5G",
+      "FRITZ!Box 6850 LTE",
+      "FRITZ!Box 6860 5G",
+      "FRITZ!Box 6890 LTE",
+      "FRITZ!Box 7490",
+      "FRITZ!Box 7510",
+      "FRITZ!Box 7520",
+      "FRITZ!Box 7530",
+      "FRITZ!Box 7530 AX",
+      "FRITZ!Box 7560",
+      "FRITZ!Box 7580",
+      "FRITZ!Box 7582",
+      "FRITZ!Box 7583",
+      "FRITZ!Box 7583 VDSL",
+      "FRITZ!Box 7590",
+      "FRITZ!Box 7590 AX",
+      "FRITZ!Box 7620",
+      "FRITZ!Box 7630",
+      "FRITZ!Box 7632",
+      "FRITZ!Box 7682",
+      "FRITZ!Box 7690",
+      "FRITZ!Box DSL/Fiber 7-90",
+      "FRITZ!Repeater 1200",
+      "FRITZ!Repeater 1200 AX",
+      "FRITZ!Repeater 1610 Outdoor",
+      "FRITZ!Repeater 1700",
+      "FRITZ!Repeater 2400",
+      "FRITZ!Repeater 2700",
+      "FRITZ!Repeater 3000",
+      "FRITZ!Repeater 3000 AX",
+      "FRITZ!Repeater 600",
+      "FRITZ!Repeater 6000",
+      "FRITZ!WLAN Repeater 1750E"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "bfcfa21e9d5593ed078fd12248a82b045e8d1c741eacdee54a8578ba8ed16c33"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "32e5c2d97f821026592449e3e4dad0b39b5ecad6f00c89d18a8ce4a50f7fb082"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "8f75ee173696fcc6ecf2d82799ace826f6e32dad1005ead419566929d9260bb2"
-    }
+    ]
   },
   "https://fritz.com/service/status-der-produktunterstuetzung/fritzbox": {
     "vendor": "AVM",
-    "kind": "text",
-    "fingerprint": "bfcfa21e9d5593ed078fd12248a82b045e8d1c741eacdee54a8578ba8ed16c33",
+    "kind": "rows",
+    "fingerprint": "a6d2753ea114ed553c49f592dfb33134a4c1fbb1e47f9708fe21cb1b6bb89687",
+    "lines": [
+      "FRITZ!Mesh Set 1600",
+      "FRITZ!Mesh Set 1700",
+      "FRITZ!Mesh Set 2700",
+      "FRITZ!Mesh Set 4200"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "bfcfa21e9d5593ed078fd12248a82b045e8d1c741eacdee54a8578ba8ed16c33"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "a6d2753ea114ed553c49f592dfb33134a4c1fbb1e47f9708fe21cb1b6bb89687"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "8f75ee173696fcc6ecf2d82799ace826f6e32dad1005ead419566929d9260bb2"
-    }
+    ]
   },
   "https://support.blinkforhome.com/en_GB/blink-device-software-security-updates": {
     "vendor": "Blink",
-    "kind": "text",
-    "fingerprint": "3a0a5d76f0e18b8f082ce0869ef22b55ca576f9c3e7866d78056f33af54ca5e6",
+    "kind": "rows",
+    "fingerprint": "7a9b3324d43fec4fa3930df84a24158a5de447dc8565f136396e88c5acfa5dd0",
+    "lines": [
+      "31 December 2030",
+      "Blink Indoor (3rd Gen) (2020 Release)",
+      "Blink Outdoor (3rd Gen) (2020 Release)",
+      "December 31, 2030",
+      "Indoor (2016 Release)",
+      "Mini (2020 Release)",
+      "Mini (2022 Release)",
+      "Mini 2 Camera (2024 Release)",
+      "Mini 2K+ (2025 Release)",
+      "No longer guaranteed",
+      "Outdoor 2K+ (2025 Release)",
+      "Outdoor 4 Camera (2023 Release)",
+      "Sync Module (2016 Release)",
+      "Sync Module 2 (2020 Release)",
+      "Sync Module Core (2025 Release)",
+      "Sync Module XR (2025 Release)",
+      "Video Doorbell (2021 Release)",
+      "Video Doorbell (2nd Gen) (2025 Release)",
+      "Wired Floodlight Camera (2023 Release)",
+      "XT (2017 Release)",
+      "XT2 (2018 Release)"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "3a0a5d76f0e18b8f082ce0869ef22b55ca576f9c3e7866d78056f33af54ca5e6"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "7a9b3324d43fec4fa3930df84a24158a5de447dc8565f136396e88c5acfa5dd0"
       }
     ]
   },
   "https://www.bosch-smarthome.com/gb/en/software-securityupdates": {
     "vendor": "Bosch Smart Home",
-    "kind": "text",
-    "fingerprint": "808907f39d79af7d9c30422c66db19d26360ea81d5bb2a0c3bae553e54e0f48c",
+    "kind": "rows",
+    "fingerprint": "f25f50886467706bc01c3642578174d9ec8069fa8e3b714c909cdf1f52286043",
+    "lines": [
+      "Universal switch",
+      "Universal switch /",
+      "Universal switch Flex"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "808907f39d79af7d9c30422c66db19d26360ea81d5bb2a0c3bae553e54e0f48c"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "f25f50886467706bc01c3642578174d9ec8069fa8e3b714c909cdf1f52286043"
       }
     ]
   },
   "https://documentation.meraki.com/General_Administration/Other_Topics/Product_End-of-Life_(EOL)_Policies": {
     "vendor": "Cisco",
-    "kind": "text",
-    "fingerprint": "b7d11038b5c5b2c2c2099ba3d314527a97a994f9ed751d7e73818eec5da80389",
+    "kind": "rows",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": [],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "b7d11038b5c5b2c2c2099ba3d314527a97a994f9ed751d7e73818eec5da80389"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "b7c71975f9c5a2d216585cf6dccda940ca592a721e0978256c00711fdfea93c8"
-    }
+    ]
   },
   "https://www.cisco.com/c/en/us/products/collateral/routers/small-business-rv-series-routers/eos-eol-notice-c51-2655972.html": {
     "vendor": "Cisco",
-    "kind": "text",
-    "fingerprint": "15b727fd18584691e0f9ea99cb65df77810ac8195cd19ab550a7b33c3ad44a7f",
+    "kind": "rows",
+    "fingerprint": "ba6707a77176e644d2899101f554b6521160cdbbdd6c524282c66b2188848b0e",
+    "lines": [
+      "Cisco RV160 VPN Router",
+      "Cisco RV160W Wireless-AC VPN Router",
+      "Cisco RV260 VPN Router",
+      "Cisco RV260P VPN Router",
+      "Cisco RV260W Wireless-AC VPN Router",
+      "Cisco RV340W Wireless-AC Dual WAN Gigabit VPN Router",
+      "Cisco RV345P Dual Gigabit WAN VPN Router",
+      "Cisco RV345P Dual WAN Gigabit VPN Router",
+      "Cisco announces the end-of-sale Cisco RV 160, RV260, RV345P, RV340W, RV260W, RV260P and RV160W VPN Router. The last day to order the affected product(s) is September 15, 2021. Customers will continue to receive phone support from the Cisco Small Business Support Center (SBSC) as shown in Table 1 of ",
+      "End-of-Sale and End-of-Life Announcement for the Cisco RV 160, RV260, RV345P, RV340W, RV260W, RV260P and RV160W VPN Router",
+      "End-of-Sale and End-of-Life Announcement for the Cisco RV 160, RV260, RV345P, RV340W, RV260W, RV260P and RV160W VPN Router - Cisco",
+      "RV160-K8-RU",
+      "RV160-K9-AR",
+      "RV160-K9-AU",
+      "RV160-K9-BR",
+      "RV160-K9-CN",
+      "RV160-K9-G5",
+      "RV160-K9-IN",
+      "RV160-K9-KR",
+      "RV160-K9-NA",
+      "RV160W-A-K9-AR",
+      "RV160W-A-K9-AU",
+      "RV160W-A-K9-BR",
+      "RV160W-A-K9-NA",
+      "RV160W-C-K9-CN",
+      "RV160W-E-K9-G5",
+      "RV160W-I-K9-IN",
+      "RV160W-R-K8-RU",
+      "RV260-K8-RU",
+      "RV260-K9-AR",
+      "RV260-K9-AU",
+      "RV260-K9-BR",
+      "RV260-K9-CN",
+      "RV260-K9-G5",
+      "RV260-K9-IN",
+      "RV260-K9-KR",
+      "RV260-K9-NA",
+      "RV260P-K8-RU",
+      "RV260P-K9-AR",
+      "RV260P-K9-AU",
+      "RV260P-K9-BR",
+      "RV260P-K9-CN",
+      "RV260P-K9-G5",
+      "RV260P-K9-IN",
+      "RV260P-K9-NA",
+      "RV260W-A-K9-AR",
+      "RV260W-A-K9-AU",
+      "RV260W-A-K9-BR",
+      "RV260W-A-K9-NA",
+      "RV260W-C-K9-CN",
+      "RV260W-E-K9-G5",
+      "RV260W-I-K9-IN",
+      "RV260W-R-K8-RU",
+      "RV340W-A-K9-NA",
+      "RV340W-C-K9-IN",
+      "RV340W-E-K9-AU",
+      "RV340W-E-K9-G5",
+      "RV345P-K8-RU",
+      "RV345P-K9-AR",
+      "RV345P-K9-AU",
+      "RV345P-K9-BR",
+      "RV345P-K9-CN",
+      "RV345P-K9-G5",
+      "RV345P-K9-IN",
+      "RV345P-K9-NA",
+      "September 15, 2022",
+      "Table 1. End-of-life milestones and dates for the Cisco RV 160, RV260, RV345P, RV340W, RV260W, RV260P and RV160W VPN Router",
+      "There is no replacement available for the Cisco RV 160, RV260, RV345P, RV340W, RV260W, RV260P and RV160W VPN Router at this time."
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "15b727fd18584691e0f9ea99cb65df77810ac8195cd19ab550a7b33c3ad44a7f"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "ba6707a77176e644d2899101f554b6521160cdbbdd6c524282c66b2188848b0e"
       }
     ]
   },
   "https://www.cisco.com/c/en/us/products/collateral/routers/small-business-rv-series-routers/small-business-rv340-rv345-series-eol.html": {
     "vendor": "Cisco",
-    "kind": "text",
-    "fingerprint": "26249826bb669f867868a5136a25f7f7935ae8fa4e531024f8c8e026788b71d3",
+    "kind": "rows",
+    "fingerprint": "b52d8a7049b19cab9d8f7878a6b66c249b76149c6bbd77d801055f6cc83473bd",
+    "lines": [
+      "Cisco RV340 Dual WAN Gigabit Router",
+      "Cisco RV340 Dual WAN Gigabit VPN Router",
+      "Cisco RV345 Dual WAN Gigabit VPN Router",
+      "Cisco announces the end-of-sale Cisco Small Business RV340 and RV345 Series. The last day to order the affected product(s) is October 28, 2021. Customers will continue to receive phone support from the Cisco Small Business Support Center (SBSC) as shown in Table 1 of the EoL bulletin. Table 1 descri",
+      "End-of-Sale and End-of-Life Announcement for the Cisco Small Business RV340 and RV345 Series",
+      "End-of-Sale and End-of-Life Announcement for the Cisco Small Business RV340 and RV345 Series - Cisco",
+      "October 28, 2022",
+      "RV340-K8-RU",
+      "RV340-K9-AR",
+      "RV340-K9-AU",
+      "RV340-K9-BR",
+      "RV340-K9-CN",
+      "RV340-K9-G5",
+      "RV340-K9-IN",
+      "RV340-K9-NA",
+      "RV345-K8-RU",
+      "RV345-K9-AR",
+      "RV345-K9-AU",
+      "RV345-K9-BR",
+      "RV345-K9-CN",
+      "RV345-K9-G5",
+      "RV345-K9-IN",
+      "RV345-K9-NA",
+      "Table 1. End-of-life milestones and dates for the Cisco Small Business RV340 and RV345 Series",
+      "There is no replacement available for the Cisco Small Business RV340 and RV345 Series at this time."
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "26249826bb669f867868a5136a25f7f7935ae8fa4e531024f8c8e026788b71d3"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "b52d8a7049b19cab9d8f7878a6b66c249b76149c6bbd77d801055f6cc83473bd"
       }
     ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10520": {
     "vendor": "D-Link",
-    "kind": "text",
-    "fingerprint": "6826fd1faf254d8c8426691c1fa63558f708a0933551468e21401f102853b29e",
+    "kind": "rows",
+    "fingerprint": "d941afe80ea0f79f04368a56f7faa8076ff0bf81e2c0b1a5b3cc960fab31c1eb",
+    "lines": [
+      "(Non-US) DAP-1330: All Hardware Revisions / All Firmware Versions : End-of-Support (EOS) / End of Life (EOL): Vulnerabilities Reported",
+      "- Product: DAP-1330 (HW Rev A1)",
+      "DAP-1330",
+      "The DAP-1330, all harware versions and firmware version have been EOL/EOS as of 1/15/2024."
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "6826fd1faf254d8c8426691c1fa63558f708a0933551468e21401f102853b29e"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "d941afe80ea0f79f04368a56f7faa8076ff0bf81e2c0b1a5b3cc960fab31c1eb"
       }
     ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10451": {
     "vendor": "D-Link",
-    "kind": "text",
-    "fingerprint": "56dedf4831cdd3bdca6530e4e6348f7a32af2112400d677a32ade62263ee43f2",
+    "kind": "rows",
+    "fingerprint": "fa14b8d7e355b9d448ce1696b69e7fea6770f71c5b5149533fc641e390021bfa",
+    "lines": [
+      "- CVE-2026-95675 - Link - 09/22/2026 - Br andon Tarr : btarr _at_ vulncheck _dot_ com : 09/18/2026 : D-Link DAP-1360 firmware version 6.14 and earlier contains an unauthenticated remote code execution vulnerability that allows remote attackers to execute arbitrary commands as root by sending crafted",
+      "- Ziqi Wei : ziqi37578 _at_ gmail _dot_ com : 07/21/2025 : D-LINK DAP-1360 Firmware::DAP-1360_fw_revf_615eub01_EU_en_20230114 : default credential in etc/passwd or etc/shadow",
+      "DAP-1360",
+      "DAP-1360: All Hardware Revisions / All Firmware Versions : End-of-Life (EoL) / End-of-Service (EoS) : Vulnerabiliites Reported",
+      "The DAP-1360, all hardware revisions, have reached their End of Life (&quot;EOL&quot;) /End of Service Life (&quot;EOS&quot;) Life-Cycle as of 08/20/2020. D-Link US recommends D-Link devices that have reached EOL/EOS, to be retired and replaced. Please contact your regional office for recommendation"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "56dedf4831cdd3bdca6530e4e6348f7a32af2112400d677a32ade62263ee43f2"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "fa14b8d7e355b9d448ce1696b69e7fea6770f71c5b5149533fc641e390021bfa"
       }
     ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10271": {
     "vendor": "D-Link",
-    "kind": "text",
-    "fingerprint": "4c1dbd74410c1040d67c54d25348a44e6d2b81b9deba37a289a9c8d5863ff132",
+    "kind": "rows",
+    "fingerprint": "9c31922939c926701d2976afb248bc73f69621ccfa73011e14b352d8bdcf04ab",
+    "lines": [
+      "DCS-1100 / DCS-1130 / DCS-6045L :: All H/W Revisions :: All Firmware Versions :: End of Support / End of Life Product :: Reported Vulnerability",
+      "DCS-6045L",
+      "Report 2: Spike Reply Cyber Security Team - cybersecurity _dot_ advisory _at_ reply _dot_ .it :09/24/2026: DCS-6045L Hardware Rev. Ax : Firmware ver. dcs6045l_v1.02.01 : Unauthenticated Command Injection",
+      "The DCS-1100 / DCS-1130 / DCS-6045L IP Cameras all hardware revisions are legacy devices which listed below in the table. All hardware revisions, have reached their End of Life (&quot;EOL&quot;) /End of Service Life (&quot;EOS&quot;) Life-Cycle . D-Link US recommends D-Link devices that have reached"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "4c1dbd74410c1040d67c54d25348a44e6d2b81b9deba37a289a9c8d5863ff132"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "9c31922939c926701d2976afb248bc73f69621ccfa73011e14b352d8bdcf04ab"
       }
     ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10511": {
     "vendor": "D-Link",
-    "kind": "text",
-    "fingerprint": "4ac9832defde9aea676c945e5eab75ae6e20cdef5cd59abd15ecc1fa0bedadbe",
+    "kind": "rows",
+    "fingerprint": "b8e436f862dbabb8d0c07177933a071f66228e084840653992976ecaf7afa73d",
+    "lines": [
+      "(non-US) DHP-W610AV :: All Models / All H/W Revisions / All F/W Versions :: End-of-Life (EOL) / End-of-Service :: Post EOL/EOS Vulnerabilities Reported",
+      "DHP-W610AV",
+      "The (non-US) DHP-W610AV all harware versions and firmware version have been EOL/EOS as of 11/05/2025."
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "4ac9832defde9aea676c945e5eab75ae6e20cdef5cd59abd15ecc1fa0bedadbe"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "b8e436f862dbabb8d0c07177933a071f66228e084840653992976ecaf7afa73d"
       }
     ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10393": {
     "vendor": "D-Link",
-    "kind": "text",
-    "fingerprint": "a86b0e4f90f657ec7f55bc6e312f933023ad596e9783f7acbdfe1ca2b96f0c84",
+    "kind": "rows",
+    "fingerprint": "7af4f95e79b92a2e9c371856d9f14f1b7e849f2972fa23c09ea320cb4f672656",
+    "lines": [
+      "- 09/06/2026: rian _dot_ security - at_ rian _dash_ friedt _dot_ de - D-Link DIR-600 B5, firmware 2.11DE B06. An unauthenticated CRLF injection in the REPORT parameter of /session.cgi can set an attacker-selected uid cookie in a victim browser. After the victim authenticates as administrator, the de",
+      "- CVE-2026-86297 - Link - A vulnerability was identified in D-Link DIR-605 B1v202WWB03. L2TP Control Message tunnel.c tunnel_set_params off-by-one",
+      "DIR-600",
+      "DIR-600 / DIR-605 / DIR-605L : All H/W Revisions : End of Life (EoL) / End of Service (EoS) :: Vulnerability Report",
+      "DIR-605",
+      "DIR-605L",
+      "The DIR-600 / DIR-605 / DIR-605L are legacy devices listed below with details in the table. All Models and all hardware revisions have reached their End of Life (&quot;EOL&quot;) /End of Service Life (&quot;EOS&quot;) Cycle. D-Link North America recommends that D-Link devices that have reached EOL/E"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "a86b0e4f90f657ec7f55bc6e312f933023ad596e9783f7acbdfe1ca2b96f0c84"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "7af4f95e79b92a2e9c371856d9f14f1b7e849f2972fa23c09ea320cb4f672656"
       }
     ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10385": {
     "vendor": "D-Link",
-    "kind": "text",
-    "fingerprint": "ef5ccc7c592a399eb903553cf22f3203888cf150b343d408018d50f6b9fd1205",
+    "kind": "rows",
+    "fingerprint": "3b6103e06497d26f3784f78dcd8741cc214110f003bd56b2ec6438ba0a3c2ac1",
+    "lines": [
+      "DIR-619L",
+      "DIR-619L :: All Models :: All Hardware Revisions :: End-of-Life (EoL) :: End-of-Service (EoS) :: Vulnerability Report",
+      "DIR-619L-ES",
+      "Disclosure : DIR-619L Buffer Overflow :: GitHub Link",
+      "Disclosure: CVE-2025-6114 : ( Link ) : D-Link DIR-619L form_portforwarding stack-based overflow",
+      "Disclosure: CVE-2025-6115 : ( Link ) : D-Link DIR-619L form_macfilter stack-based overflow",
+      "Disclosure: CVE-2025-6367 : ( Link ) D-Link DIR-619L formSetDomainFilter stack-based overflow",
+      "Disclosure: CVE-2025-6368 : ( Link ) : D-Link DIR-619L formSetEmail stack-based overflow",
+      "Disclosure: CVE-2025-6369 : ( Link ) : D-Link DIR-619L formdumpeasysetup stack-based overflow",
+      "Disclosure: CVE-2025-6370 : ( Link ) D-Link DIR-619L formWlanGuestSetup stack-based overflow",
+      "Disclosure: CVE-2025-6371 : ( Link ) : D-Link DIR-619L formSetEnableWizard stack-based overflow",
+      "Disclosure: CVE-2025-6372 : ( Link ) : D-Link DIR-619L formSetWizard1 stack-based overflow",
+      "Disclosure: CVE-2025-6373 : ( Link ) : D-Link DIR-619L formWlSiteSurvey formSetWizard1 stack-based overflow",
+      "Disclosure: CVE-2025-6374 : ( Link ) : D-Link DIR-619L formSetACLFilter stack-based overflow",
+      "Disclosure: CVE-2025-6614 : ( Link ) D-Link DIR-619L formSetWANType_Wizard5 stack-based overflow",
+      "Disclosure: CVE-2025-6615 : ( Link ) D-Link DIR-619L formAutoDetecWAN_wizard4 stack-based overflow",
+      "Disclosure: CVE-2025-6616 : ( Link ) D-Link DIR-619L formSetWAN_Wizard51 stack-based overflow",
+      "Disclosure: CVE-2025-6617 : ( Link ) D-Link DIR-619L formAdvanceSetup stack-based overflow",
+      "Report 16: 08/14/2025 - CVE-2025-8978 - ( Link ) - D-Link DIR-619L boa FirmwareUpgrade data authenticity",
+      "Report 17: 08/22/2025 - CVE-2025-55599 - ( Link ) - D-Link DIR-619L F/W v2.06B01 is vulnerable to Buffer Overflow in the formWlanSetup function via the parameter f_wds_wepKey.",
+      "Report 18: 08/14/2025 - CVE-2025-55602 - ( Link ) - D-Link DIR-619L F/W v 2.06B01 is vulnerable to Buffer Overflow in the formSysCmd function via the submit-url parameter.",
+      "Report 19: 08/14/2025 - CVE-2025-55611 - ( Link) - D-Link DIR-619L F/W v2.06B01 is vulnerable to Buffer Overflow in the formLanguageChange function via the nextPage parameter.",
+      "Report 20: 10/07/2026 - buck _dot_ 20 _dot_ two _AT_gmail _dot_ com - D-Link DIR-619L H/W Rev: F1",
+      "Th e DIR-619L, including all models, Derivative Models, All Revisions, and All Firmware , has reached its E nd-of- L ife (EOL)/End-of-Service Life (EOS) l ife c ycle . D-Link Corporation and D-Link North America ( D-Link Systems, Inc. ) recommend that all current users tak e one or more of the follo"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "ef5ccc7c592a399eb903553cf22f3203888cf150b343d408018d50f6b9fd1205"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "3b6103e06497d26f3784f78dcd8741cc214110f003bd56b2ec6438ba0a3c2ac1"
       }
     ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10410": {
     "vendor": "D-Link",
-    "kind": "text",
-    "fingerprint": "3591958b85fd0a38fbe3cf238cf22618c7e079456a63711cf06e8824ec68a8a7",
+    "kind": "rows",
+    "fingerprint": "893032872b3daceba992093c50c9853dcf2360a1533bec37a8b8ffa0ec53cb54",
+    "lines": [
+      "(non-US) DIR-823G :: All Models / All H/W Revisions / All F/W Versions :: End-of-Life (EOL) / End-of-Service :: Multiple Vulnerabilities Reported",
+      "CVE-2025-60671 : Link : D-Link DIR-8 23G F/W v1.0.2B05_20181207 Command Injection Vulnerability",
+      "CVE-2025-60675 : Link : D-Link DIR-8 23G F/W v1.0.2B05_20181207 Command Injection Vulnerability",
+      "CVE-2026-11492 : Link : D-Link DIR-823G vsftpd vsftpd.conf least privilege violation",
+      "CVE-2026-15270 : Link : A weakness has been identified in D-link DIR-823G 1.0.2B05_20181207. Affected by this vulnerability is an unknown functionality of the file /etc/boa/boa.conf of the component Web Interface.",
+      "CVE-2026-90680 : Link : A security flaw has been discovered in D-Link DIR-823G 1.0.2B05_20181207. The impacted element is the function strcpy of the file /HNAP1/SetStaticRouteSettings of the component HNAP1. The manipulation of the argument PAddress/SubnetMask/Gateway results in stack-based buffer o",
+      "DIR-823G",
+      "The DIR-823G all harware versions and firmware version have been EOL/EOS as of 02/10/2021."
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "3591958b85fd0a38fbe3cf238cf22618c7e079456a63711cf06e8824ec68a8a7"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "893032872b3daceba992093c50c9853dcf2360a1533bec37a8b8ffa0ec53cb54"
       }
     ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10341": {
     "vendor": "D-Link",
-    "kind": "text",
-    "fingerprint": "5d47a84a9aaa694c6775e03849386889432f326f52ba6ff2524e0095e70fbcba",
+    "kind": "rows",
+    "fingerprint": "da28199b4e3ad76bef2ca108f1ebaf895bfdb842a9106922ec3b77369d718ab8",
+    "lines": [
+      "DIR-825",
+      "DIR-825 ( v2.09EU Build: 09beta03 ) reference: /sbin/httpd",
+      "DIR-825 (H/W Rev. Bx F/W v2.10) stack-based buffer overflow",
+      "DIR-825 :: All H/W Revisions :: All F/W Version :: End-of-Life / End-of-Service :: Reported Security Vulnerability",
+      "Description: vulnerability found in the DIR-825 firmware, version Rev.B 2.10. This critical vulnerability is located within the /sbin/httpd file. It can be exploited to execute arbitrary code through the manipulation of the URI in the GET method of an HTTP request. A successful attack would enable t",
+      "Report 4: 06/20/2025 - CVE-2025-6291 : ( Link ) : D-Link DIR-825 HTTP POST Request do_file stack-based overflow",
+      "Report 5: 07/08/2025 - CVE-2025-7206 : ( Link ): D-Link DIR-825 httpd switch_language.cgi sub_410DDC stack-based overflow",
+      "Report 6: 08/14/2025 - CVE-2025-8949: ( Link ): D-Link DIR-825 httpd ping_response.cgi get_ping_app_stat stack-based overflo w",
+      "Report 7: 09/06/2025 - CVE-2025-10034: ( Link ): D-Link DIR-825 httpd ping6_response.cg get_ping6_app_stat buffer overflow",
+      "Report 8: 09/18/2025 - CVE-2025-10666: ( Link ): D-Link DIR-825 apply.cgi sub_4106d4 buffer overflow",
+      "Report 9: 09/28/2026 - CVE-2026-96891 - Link - A vulnerability was identified in D-Link DIR-825 3.00b32. Affected is the function tunnel_set_params of the file tunnel.c of the component rp-l2tp. The manipulation of the argument peer_hostname leads to out-of-bounds write.",
+      "The D-Link DIR-825 Wi-Fi Router, all hardware revisions, are legacy devices as listed below in the table. All hardware revisions have reached their End of Life (&quot;EOL&quot;) /End of Service Life (&quot;EOS&quot;) Life-Cycle. D-Link US recommends that D-Link devices that have reached EOL/EOS be r"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "5d47a84a9aaa694c6775e03849386889432f326f52ba6ff2524e0095e70fbcba"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "da28199b4e3ad76bef2ca108f1ebaf895bfdb842a9106922ec3b77369d718ab8"
       }
     ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10325": {
     "vendor": "D-Link",
-    "kind": "text",
-    "fingerprint": "79f774fdcb58bd7b7fa8884f267e82a2ac5d05bff953a100d10dc554b8dc069b",
+    "kind": "rows",
+    "fingerprint": "236f768f616eb564dbd47c4afd8d91f64ce55ef5aa8131759e6b2c63e3bc0218",
+    "lines": [
+      "DIR-868L",
+      "DIR-868L :: All Hardware Revisions :: All Firmware Revisions :: End-of-Life (EoL) / End-of-Service (EoS) :: Stack-Based Overflow Security Report",
+      "On January 30, 2023, a 3rd Party security professional brought a public disclosure from Panasonic Security Center of Panasonic Holdings Corporation to our attention. This disclosure report for the DIR-868L hardware revision A1, firmware version v1.12 . The vulnerability is in scandir.sgi binary, the",
+      "Report # 2 - C VE-2025-63932 : Link : DIR-868L Rev Ax - F/W v106KRb01.bin has an unauthenticated remote code execution vulnerability in the cgibin binary. The HNAP service provided by cgibin does not filter the HTTP SOAPAction header field.",
+      "Report # 23 - CVE-2026-94089 : Link : A vulnerability was determined in D-Link DIR-868L f/w version 2.01b05. This issue affects the function strcpy of the file /webfa_authentication.cgi of the component Authentication Handler. Executing a manipulation of the argument id/password can lead to stack-ba"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "79f774fdcb58bd7b7fa8884f267e82a2ac5d05bff953a100d10dc554b8dc069b"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "236f768f616eb564dbd47c4afd8d91f64ce55ef5aa8131759e6b2c63e3bc0218"
       }
     ]
   },
   "https://support.dlink.com/ProductInfo.aspx?m=DIR-878": {
     "vendor": "D-Link",
-    "kind": "text",
-    "fingerprint": "2ab38fc35a05a35c5698ce98a0cfa2af8d0d878a15349021ed568428e494e19e",
+    "kind": "rows",
+    "fingerprint": "24c943365d8c16a82d6e886f4644d0690d9a2c2ebeda10de7fb060a9ec44a271",
+    "lines": [
+      "DIR-878"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "2ab38fc35a05a35c5698ce98a0cfa2af8d0d878a15349021ed568428e494e19e"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "24c943365d8c16a82d6e886f4644d0690d9a2c2ebeda10de7fb060a9ec44a271"
       }
     ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10475": {
     "vendor": "D-Link",
-    "kind": "text",
-    "fingerprint": "b87181fa0a373ba87e7f8124740b172ffb85d3f03fa69d1abcd7fe38d698e77c",
+    "kind": "rows",
+    "fingerprint": "a7bc9d4951a6cfb571d387ff4c3b177847cc69197109375abe195bc91e879c05",
+    "lines": [
+      "CVE-2026-90692 - Link - A vulnerability was detected in D-Link DIR-878 f/w version 120B05. This affects the function SetDynamicDNSIPv6Settings of the component Dynamic DNS IPv6 Settings. The manipulation of the argument IPv6Address/Hostname results in stack-based buffer overflow.",
+      "CVE-2026-90693 - Link - A flaw has been found in D-Link DIR-878 120B05. This impacts the function SetWan3Settings of the component WAN Settings. This manipulation of the argument Primary/Secondary causes stack-based buffer overflow.",
+      "DIR-878",
+      "DIR-878 : All Revisions / All Firmware : End-of-Life (EoL) / End-of-Serivce (EoS) : Vulnerabilities Reported",
+      "Th e DIR-878 060 :: All Models, Derivative Models, All Revisions, and All Firmware reached their E nd-of- L ife (EOL)/ End-of-Service Life (EOS) l ife c ycle. D-Link Corporation and D-Link North America ( D-Link Systems, Inc. ) recommend that all current users tak e one or more of the following acti"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "b87181fa0a373ba87e7f8124740b172ffb85d3f03fa69d1abcd7fe38d698e77c"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "a7bc9d4951a6cfb571d387ff4c3b177847cc69197109375abe195bc91e879c05"
       }
     ]
   },
   "https://www.dlink.com/uk/en/products/dir-x1860-ax1800-wifi-6-router": {
     "vendor": "D-Link",
-    "kind": "text",
-    "fingerprint": "50aad49d86b05cd9b003e5563972b02b310eb0d1efeefb5421a9cc976ecb2a8b",
+    "kind": "rows",
+    "fingerprint": "c00cd792ad8ed322010267fa85804fca3acffec39e7a92ecd1e40e152ab59f7a",
+    "lines": [
+      "1 The DIR-X1860 may not support all of the mandatory features, established in Wave 1 of the IEEE 802.11ax specifications",
+      "DIR-X1860",
+      "DIR-X1860 AX1800 Wi-Fi 6 Router | D-Link UK",
+      "Privacy has become essential to digital life. With a built-in firewall (NAT), automatic security and firmware updates and backups, a VPN wizard for virtual private networking, and the most advanced Wi-Fi 6 security, the DIR-X1860 provides peace of mind while you’re online.",
+      "Set the ground rules to keep your children safe online. Whether you need to get everyone around the table for a meal, it’s time for homework or you need a break from the screens, the DIR-X1860 comes with parental controls on the D-Link Wi-Fi mobile app so that you’re always in charge.",
+      "With far more processing power over any common Wi-Fi 5 router, the DIR-X1860’s dual-core 880 MHz CPU can tackle huge amounts of data transfers, so you can enjoy lag-free gaming and vivid 4k//HD streaming without buffering."
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "50aad49d86b05cd9b003e5563972b02b310eb0d1efeefb5421a9cc976ecb2a8b"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "c00cd792ad8ed322010267fa85804fca3acffec39e7a92ecd1e40e152ab59f7a"
       }
     ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10521": {
     "vendor": "D-Link",
-    "kind": "text",
-    "fingerprint": "4edd1500873b70ac1563cbebfe977378e053bc84c470d60eb2df610250bd6572",
+    "kind": "rows",
+    "fingerprint": "2fadd9961b946e125f0f3300d08035282740ab437e96b2fa7ee739d8cd3d9cdd",
+    "lines": [
+      "DIR-X4860",
+      "DIR-X4860: All Hardware Revisions / All Firmware Versions : End-of-Support (EOS) / End of Life (EOL); After Life Vulnerabilities"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "4edd1500873b70ac1563cbebfe977378e053bc84c470d60eb2df610250bd6572"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "2fadd9961b946e125f0f3300d08035282740ab437e96b2fa7ee739d8cd3d9cdd"
       }
     ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10413": {
     "vendor": "D-Link",
-    "kind": "text",
-    "fingerprint": "48fec714323e6f91e789a985aabe607fc62031a6dd5c15f522645f40ae3ebf8f",
+    "kind": "rows",
+    "fingerprint": "f4cac9cf1d74f2b93d0b9c3330cb8511fc842a3334bd06a57bd1b9852013b224",
+    "lines": [
+      "- DNS-320LW Version 1.01.0914.2012",
+      "DNS-315L",
+      "DNS-320LW"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "48fec714323e6f91e789a985aabe607fc62031a6dd5c15f522645f40ae3ebf8f"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "f4cac9cf1d74f2b93d0b9c3330cb8511fc842a3334bd06a57bd1b9852013b224"
       }
     ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10519": {
     "vendor": "D-Link",
-    "kind": "text",
-    "fingerprint": "e8dac9eb9b27eab6cc45d0e657010dcfc671bdd690a37878b5ac53a732d602c7",
+    "kind": "rows",
+    "fingerprint": "26b795c9140d51c84fff2f586296bacac3ffd92a87eae675e8ba12c757b8408f",
+    "lines": [
+      "(Non-US) DSL-224: All Hardware Revisions / All Firmware Versions : End-of-Support (EOS) / End of Life (EOL): Vulnerabilities Reported",
+      "DSL-224",
+      "The DSL-224, not distributed in US or Canada, all harware versions and firmware version have been EOL/EOS as of 11/05/2025."
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "e8dac9eb9b27eab6cc45d0e657010dcfc671bdd690a37878b5ac53a732d602c7"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "26b795c9140d51c84fff2f586296bacac3ffd92a87eae675e8ba12c757b8408f"
       }
     ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10414": {
     "vendor": "D-Link",
-    "kind": "text",
-    "fingerprint": "a6b307939f4c81c7e189882a0f92218a703572376ce7804b658a6f8a7e845706",
+    "kind": "rows",
+    "fingerprint": "e3365c747a0311e5d4ca85f20476ffa4765e9641032fc9a293efb9076d69206a",
+    "lines": [
+      "(non-US) DSL-6740C :: All H/W Revisions :: End-of-Life / End-of-Service :: CVE-2024-11068 - Unauthorized Configuration Access Vulnerability",
+      "DSL-6740C",
+      "Firmware: DSL6740C.V6.TR069.20211230",
+      "The ( n on-US a vailable) DSL-6740C model and all its hardware revisions have reached their e nd-of- l ife (&quot;EOL&quot;)/ e nd-of- s ervice (&quot;EOS&quot;) l ife c ycle no later than January 15, 2024."
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "a6b307939f4c81c7e189882a0f92218a703572376ce7804b658a6f8a7e845706"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "e3365c747a0311e5d4ca85f20476ffa4765e9641032fc9a293efb9076d69206a"
       }
     ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10415": {
     "vendor": "D-Link",
-    "kind": "text",
-    "fingerprint": "7cfe7095530b617c2e32758da99941468b20236744f2c478c86776f3456cbb78",
+    "kind": "rows",
+    "fingerprint": "c4c22c2829e3185337b255d288cf7ea171278aad7578543e9a3843e650cfe771",
+    "lines": [
+      "DSR-1000N",
+      "DSR-150/DSR-150N/DSR-250/DSR-250N/DSR-500N/DSR-1000N: - End-of-Life / End-of-Service in North America"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "7cfe7095530b617c2e32758da99941468b20236744f2c478c86776f3456cbb78"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "c4c22c2829e3185337b255d288cf7ea171278aad7578543e9a3843e650cfe771"
       }
     ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10517": {
     "vendor": "D-Link",
-    "kind": "text",
-    "fingerprint": "7bf186afa6fb4279577587294cf597aa24365fac00e52959d05dd8c3b94ea913",
+    "kind": "rows",
+    "fingerprint": "70bf103bfab0a24d518869dbaee7ee8338e45aa4a264a0ac3d6de65aed6542d1",
+    "lines": [
+      "(non-US) DWR-978: All Hardware Revisions / All Firmware Versions : End-of-Life (EoL) / End-of-Service (EoS) : Vulnerabiliites Reported",
+      "DWR-978",
+      "The DWR-978, all hardware revisions, have reached their End of Life (&quot;EOL&quot;) /End of Service Life (&quot;EOS&quot;) Life-Cycle as of 10/02/24. D-Link US recommends D-Link devices that have reached EOL/EOS, to be retired and replaced. Please contact your regional office for recommendations ("
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "7bf186afa6fb4279577587294cf597aa24365fac00e52959d05dd8c3b94ea913"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "70bf103bfab0a24d518869dbaee7ee8338e45aa4a264a0ac3d6de65aed6542d1"
       }
     ]
   },
@@ -925,13 +1474,26 @@
   },
   "https://www.devolo.com/en/psti-statements-of-compliance-521": {
     "vendor": "devolo",
-    "kind": "text",
-    "fingerprint": "368950dc853d8f97ab46a3f97591b965716117c92ed04e0407a47043b6cc5160",
+    "kind": "rows",
+    "fingerprint": "c5426f5f8357f406734bbc52a18de57ffd29d59b1f388fe9f3b281beda37ca88",
+    "lines": [
+      "devolo Giga Bridge",
+      "devolo Magic 1 LAN 1-1",
+      "devolo Magic 1 WiFi 2-1",
+      "devolo Magic 2 LAN triple",
+      "devolo Magic 2 WiFi next",
+      "devolo WiFi 6 Repeater 3000",
+      "devolo WiFi 6 Repeater 5400"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "368950dc853d8f97ab46a3f97591b965716117c92ed04e0407a47043b6cc5160"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "c5426f5f8357f406734bbc52a18de57ffd29d59b1f388fe9f3b281beda37ca88"
       }
     ]
   },
@@ -1033,235 +1595,899 @@
   },
   "https://www.draytek.co.uk/information/eol-product-equivalents": {
     "vendor": "DrayTek",
-    "kind": "text",
-    "fingerprint": "97455d281ad27653a22dd1a3e71df82c38ba3caa11438c6a57728310bfe8c8f0",
+    "kind": "rows",
+    "fingerprint": "9a5d0dc310dfde950fc32444c1d171ab4f7c7efa9e9b93e75cff8c39ce2f5e8d",
+    "lines": [
+      "It's important to note that the new product will not be identical, feature-wise, so do check the new product's specification particular where there is more that one possible replacement, depending on your requirements. Also, in some cases, although we list the closest equivalent, you may want to con",
+      "Vigor 120",
+      "Vigor 2110",
+      "Vigor 2110n",
+      "Vigor 2710",
+      "Vigor 2710n",
+      "Vigor 2760",
+      "Vigor 2760n",
+      "Vigor 2820",
+      "Vigor 2820n",
+      "Vigor 2830",
+      "Vigor 2830n",
+      "Vigor 2850",
+      "Vigor 2850n",
+      "Vigor 2860",
+      "Vigor 2860Ln",
+      "Vigor 2860ac",
+      "Vigor 2860n",
+      "Vigor 2920",
+      "Vigor 2920n",
+      "Vigor 2925",
+      "Vigor 2925ac",
+      "Vigor 2925n",
+      "Vigor 2950",
+      "Vigor 2955",
+      "Vigor 3200",
+      "Vigor 3300V",
+      "Vigor IPPBX 2820",
+      "Vigor IPPBX 3510",
+      "VigorAP 700",
+      "VigorAP 800",
+      "VigorAP 900",
+      "VigorAP 902",
+      "VigorBX 2000n",
+      "VigorPro 5500",
+      "VigorSwitch G1240",
+      "VigorSwitch G1260",
+      "VigorSwitch G2240",
+      "VigorSwitch G2260",
+      "VigorSwitch G2280",
+      "VigorSwitch G2280x",
+      "VigorSwitch P1080",
+      "VigorSwitch P1090",
+      "VigorSwitch P1100",
+      "VigorSwitch P2261",
+      "VigorSwitch V1281",
+      "VigorTalk ATA"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "97455d281ad27653a22dd1a3e71df82c38ba3caa11438c6a57728310bfe8c8f0"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "9a5d0dc310dfde950fc32444c1d171ab4f7c7efa9e9b93e75cff8c39ce2f5e8d"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "229b151e5e157096a5f5fc52e24d399f90b2293ac850c9fafc83e0b780328573"
-    }
+    ]
   },
   "https://www.draytek.co.uk/support/product-lifecycle": {
     "vendor": "DrayTek",
-    "kind": "text",
-    "fingerprint": "1b69d97e995ebd37a39a77b7684a40c54ec8e8562563ca70bc32a456046a925c",
+    "kind": "rows",
+    "fingerprint": "529b42560b8fe43761d143113832c0e4c3e52e9a6f4f5b9f3494639f05239410",
+    "lines": [
+      "Vigor130",
+      "Vigor2133 Series",
+      "Vigor2762 Series",
+      "Vigor2862 LTE Series",
+      "Vigor2862 Series",
+      "Vigor2926 LTE Series",
+      "Vigor2926 Series",
+      "Vigor2952",
+      "Vigor2952P",
+      "Vigor2960",
+      "Vigor2962P",
+      "Vigor300B",
+      "Vigor3220",
+      "Vigor3900",
+      "VigorAP 1000C",
+      "VigorAP 1060C",
+      "VigorAP 710",
+      "VigorAP 802",
+      "VigorAP 810",
+      "VigorAP 906",
+      "VigorAP 910C",
+      "VigorAP 920R Series",
+      "VigorAP 960C",
+      "VigorBX 2000",
+      "VigorNIC 132 Series",
+      "VigorSwitch G1085",
+      "VigorSwitch G1280",
+      "VigorSwitch G2121",
+      "VigorSwitch G2280x",
+      "VigorSwitch G2500",
+      "VigorSwitch G2540x",
+      "VigorSwitch G2540xs",
+      "VigorSwitch P1085",
+      "VigorSwitch P1092",
+      "VigorSwitch P1280",
+      "VigorSwitch P2121",
+      "VigorSwitch P2280",
+      "VigorSwitch P2280x",
+      "VigorSwitch P2500",
+      "VigorSwitch P2540x",
+      "VigorSwitch P2540xs"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "1b69d97e995ebd37a39a77b7684a40c54ec8e8562563ca70bc32a456046a925c"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "529b42560b8fe43761d143113832c0e4c3e52e9a6f4f5b9f3494639f05239410"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "867d6c1b83b8580dc67dd317cecc1b1a3bb5d6fce2b0815c03773315655283b2"
-    }
+    ]
   },
   "https://eero.com/support/articles/eero-software-security-updates": {
     "vendor": "eero",
-    "kind": "text",
-    "fingerprint": "c1113de335c00304fea9ca8f6ea58666410174235e033ccaa08f450d2211fbc0",
+    "kind": "rows",
+    "fingerprint": "f543097179f1b2777441c8e7c2bbfd7e16dbd10f9cc1296f493acc10b3d562db",
+    "lines": [
+      "April 28, 2030",
+      "July 14, 2030",
+      "March 11, 2030",
+      "eero (2nd Generation)",
+      "eero 6",
+      "eero 6 Extender",
+      "eero 6+",
+      "eero 7",
+      "eero Beacon",
+      "eero Max 7",
+      "eero Outdoor 7",
+      "eero PoE 6",
+      "eero PoE 7",
+      "eero PoE Gateway",
+      "eero Pro",
+      "eero Pro 6",
+      "eero Pro 6E",
+      "eero Pro 7",
+      "eero Signal",
+      "eero Telephone Adapter",
+      "eero products and services are subject to the disclaimers located at eero.com/legal/disclaimers"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "c1113de335c00304fea9ca8f6ea58666410174235e033ccaa08f450d2211fbc0"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "f543097179f1b2777441c8e7c2bbfd7e16dbd10f9cc1296f493acc10b3d562db"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "509ff2c909572ead2a3fc2dbd1bd73df1f2a98b2a7323f09eb4db1d805b48ed1"
-    }
+    ]
   },
   "https://passport.anker.com/uk/psti-related": {
     "vendor": "eufy",
-    "kind": "text",
-    "fingerprint": "383483a663d927ff89f365892eaaec62be4ac254a39b0d4989a3419c21fd2c7a",
+    "kind": "rows",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": [],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "383483a663d927ff89f365892eaaec62be4ac254a39b0d4989a3419c21fd2c7a"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
     ]
   },
   "https://support.ezviz.com/faq/article/EZVIZ-EOL-Product-List": {
     "vendor": "EZVIZ",
-    "kind": "text",
-    "fingerprint": "7323b40d3196177a63c2e4d9796ad096e4f376345bc834d4815df2f26d69db41",
+    "kind": "rows",
+    "fingerprint": "2659e594c371ff30ce7dba8aa52de8e445f3bbef6fc6c914be4219e830d829a5",
+    "lines": [
+      "2019/12/31",
+      "2021/12/31",
+      "2022/12/31",
+      "2023/12/31",
+      "2024/12/31",
+      "2025/12/31",
+      "2026/12/31",
+      "2027/12/31",
+      "2028/1/20",
+      "2028/10/31",
+      "2028/12/31",
+      "2028/7/28",
+      "2029/12/26",
+      "2029/12/31",
+      "2029/3/3",
+      "2029/4/22",
+      "2029/6/1",
+      "2029/8/16",
+      "2029/8/2",
+      "2030/1/20",
+      "2030/11/10",
+      "2030/12/31",
+      "2030/4/8",
+      "2031/1/12",
+      "2031/12/31",
+      "2031/8/5",
+      "2031/8/6",
+      "2032/1/11",
+      "2032/12/2",
+      "2032/4/15",
+      "2032/9/11",
+      "2033/1/12",
+      "2033/1/8",
+      "CS-A1-32W",
+      "CS-A3-A0-W",
+      "CS-A3-R200-WBG",
+      "CS-BC1-A0-2C4WPBL",
+      "CS-BC1-B0-2C2WPBL",
+      "CS-BC1-B3(4MP,W1)",
+      "CS-BC1-B3-B0",
+      "CS-BC1C-A0-2C2WPBDL",
+      "CS-BC1C-A0-2C4WPBDL",
+      "CS-BC1C-B0-2C2WPBDL",
+      "CS-BC1C/SP(2MP)",
+      "CS-BC1c-R100-2F8WFL",
+      "CS-C1C-D0-1D1WFR",
+      "CS-C1C-D0-1D2WFR",
+      "CS-C1C-D0-1D2WPFR",
+      "CS-C1C-E0-1E2WF",
+      "CS-C1C-E0-1G1WF",
+      "CS-C1C-F0-1E2WF",
+      "CS-C1HC-D0-1D1WFR",
+      "CS-C1HC-D0-1D2WFR",
+      "CS-C1HC-E0-1E2WF",
+      "CS-C1HC-E0-1G1WF",
+      "CS-C1HC-F0-1E2WF",
+      "CS-C1T-A0-1D2WF",
+      "CS-C2C-A0-1E2WF",
+      "CS-C2C-B0-1E2WF",
+      "CS-C2mini-31WFR",
+      "CS-C3A-A0-1C2WPMFBR(868MHz)",
+      "CS-C3A-B0-1C2WPMFBR(868MHz)",
+      "CS-C3N-A0-3G2WFL1(2.8mm)",
+      "CS-C3N-A0-3G2WFL1(4mm)",
+      "CS-C3N-A0-3H2WFRL(2.8mm)",
+      "CS-C3N-A0-3H2WFRL(4mm)",
+      "CS-C3TN-A0-1H2WF",
+      "CS-C3TN-A0-1H2WF(2.8mm)",
+      "CS-C3TN-A0-1H2WFL(2.8mm)",
+      "CS-C3TN-A0-1H3WKFL(2.8mm)",
+      "CS-C3TN-A0-1H3WKFL-B(2.8mm)",
+      "CS-C3W-A0-1F4WFL",
+      "CS-C3W-A0-1H2WKFL(2.8mm)",
+      "CS-C3W-A0-1H2WKFL(4mm)",
+      "CS-C3W-A0-3H2WFL(2.8mm)",
+      "CS-C3W-A0-3H2WFL(4mm)",
+      "CS-C3W-A0-3H4WFRL(2.8mm)",
+      "CS-C3W-A0-3H4WFRL(4mm)",
+      "CS-C3W-R100-1F4WKFL",
+      "CS-C6-A0-8C4WF",
+      "CS-C6-A0-8C4WF(4mm)",
+      "CS-C6CN-A0-3H2WF",
+      "CS-C6CN-R100-8B4WF",
+      "CS-C6N-A0-1C2WFR",
+      "CS-C6N-B0-1G2WF",
+      "CS-C6N-C0-2C2WF",
+      "CS-C6N-D0-2C3WF",
+      "CS-C6N-D0-8B4WF",
+      "CS-C6Wi-A0-3E4WF",
+      "CS-C6c-R100-1H3WF",
+      "CS-C8C-A0-1F2WF",
+      "CS-C8C-A0-1F2WFL1",
+      "CS-C8C-A0-3H2WFL1(4mm)",
+      "CS-C8C-A0-3H2WFL1(6mm)",
+      "CS-C8PF-A0-6E22WFR",
+      "CS-C8W-A0-1H3WKFL",
+      "CS-C8W-A0-1J5WKFL",
+      "CS-C8c-R100-1J4WKFL",
+      "CS-C8c-R100-1J5WKFL",
+      "CS-C8c-R100-8H8WKFL",
+      "CS-C90-R100-8H44WKFL",
+      "CS-CB8-R100-2C3WFL",
+      "CS-CB8-R105-2C3WFL",
+      "CS-CH1-A0-10AWFK",
+      "CS-CH1-R100-10AWFK",
+      "CS-CMT-A0-CHIME",
+      "CS-CMT-B0-CHIME",
+      "CS-CP1-A0-2C3WF",
+      "CS-CP1-A0-8B4WF",
+      "CS-CP4-R100-6E2WPFBS",
+      "CS-CV200-A0-52WFR",
+      "CS-CV206-A0-1B2W2FR",
+      "CS-CV206-C0-1A1WFR",
+      "CS-CV206-C0-3B2WFR",
+      "CS-CV206-D0-1E2WFR",
+      "CS-CV206-D0-1G1WF",
+      "CS-CV206-E0-1D1WF",
+      "CS-CV210-A0-52EFR(4mm)",
+      "CS-CV210-A0-52WFR(4mm)",
+      "CS-CV216-A0-31EFR(2.8mm)",
+      "CS-CV216-A0-31EFR(4mm)",
+      "CS-CV216-A0-31WFR(2.8mm)",
+      "CS-CV216-A0-31WFR(4mm)",
+      "CS-CV216-A0-3B1WFR(2.8mm)",
+      "CS-CV216-A0-3B1WFR(4mm)",
+      "CS-CV220-A0-52WFR(4mm)",
+      "CS-CV228-A0-3C2WFR(2.8mm)",
+      "CS-CV228-A0-3C2WFR(4mm)",
+      "CS-CV240-B0-21WFR",
+      "CS-CV246-A0-1C2WFR",
+      "CS-CV246-A0-3B1WFR",
+      "CS-CV246-B0-3B2WFR",
+      "CS-CV248-A0-32WFR",
+      "CS-CV248-B0-32WFR",
+      "CS-CV248-B0-32WMFR(868MHz)",
+      "CS-CV310-A0-1B2WFR(2.8mm)",
+      "CS-CV310-A0-1B2WFR(4mm)",
+      "CS-CV310-A0-1B2WFR(6mm)",
+      "CS-CV310-A0-1C2WFR(2.8mm)",
+      "CS-CV310-A0-1C2WFR(4mm)",
+      "CS-CV310-A0-1C2WFR-C(2.8mm)",
+      "CS-CV310-A0-1C2WFR-C(4mm)",
+      "CS-CV310-A0-3B1WFR(2.8mm)",
+      "CS-CV310-A0-3B1WFR(4mm)",
+      "CS-CV310-A0-3B1WFR(6mm)",
+      "CS-CV310-A0-3C2WFRL(2.8mm)",
+      "CS-CV310-A0-3C2WFRL(4mm)",
+      "CS-CV310-B0-1B2ER(2.8mm)",
+      "CS-CV310-B0-1B2ER(4mm)",
+      "CS-CV310-B0-1B2ER(6mm)",
+      "CS-CV310-B0-1B2WR(2.8mm)",
+      "CS-CV310-B0-1B2WR(4mm)",
+      "CS-CV310-B0-1B2WR(6mm)",
+      "CS-CV310-B0-3B1ER(2.8mm)",
+      "CS-CV310-B0-3B1ER(4mm)",
+      "CS-CV310-B0-3B1ER(6mm)",
+      "CS-CV310-B0-3B1WR(2.8mm)",
+      "CS-CV310-B0-3B1WR(4mm)",
+      "CS-CV310-B0-3B1WR(6mm)",
+      "CS-CV310-C0-6B22WFR",
+      "CS-CV346-A0-7A3WFR",
+      "CS-DB1-A0-1B3WPFR",
+      "CS-DB1-B0-1J5W2FR",
+      "CS-DB1C-A0-1E2W2FR",
+      "CS-DB2-A0-1B3WPMFBR",
+      "CS-DB2-A0-2C5WPBR-B",
+      "CS-DB2C-A0-1E3WPBR",
+      "CS-DL01-R200-ZB-BK",
+      "CS-DL01-R200-ZB-BK-LK",
+      "CS-DL01/DL01CP-BK",
+      "CS-DL01/DL01CP/A3-BK",
+      "CS-DL01CP-BT",
+      "CS-DL01P-BT",
+      "CS-DL01S-0ZBTA",
+      "CS-DL01S-0ZBTA-Bk",
+      "CS-DL01S/DL01CP-BK",
+      "CS-DL01S/DL01CP/A3-BK",
+      "CS-DP1-A0-4A1WPFBSR",
+      "CS-DP1C-A0-4A1WPFBSR",
+      "CS-DP2-A0-6E2WPFBS",
+      "CS-EB3-R100-2C3WFL",
+      "CS-EB3-R105-2C3WFL(Type-C)",
+      "CS-EB8-R100-1K3FL4GA",
+      "CS-EL3-R100-8C3WFL",
+      "CS-EP3x-R100-6E32WPDL(PRO)",
+      "CS-EP7-R100-1W2HTFC",
+      "CS-EPD7-R100-1K3H",
+      "CS-H3-R100-1H3WKFL",
+      "CS-H3-R100-1J5WKFL",
+      "CS-H3c-R100-1J4WKFL",
+      "CS-H3c-R100-1J5WKFL",
+      "CS-H3c-R100-1K2WF",
+      "CS-H3c-R100-1K2WFL",
+      "CS-H3c-R100-1K3WKFL",
+      "CS-H4-R201-1H3EKFL",
+      "CS-H4-R201-1H3WKFL",
+      "CS-H5-R201-1H3EKFL",
+      "CS-H5-R201-1H3KFL4GA",
+      "CS-H6-R100-1J4WF",
+      "CS-H6-R100-1J5WF",
+      "CS-H6c-R100-8B4WF",
+      "CS-H6c-R101-1G2WF",
+      "CS-H6c-R103-8B4WF",
+      "CS-H6c-R105-1J4WF",
+      "CS-H6c-R105-1L2WF",
+      "CS-H7c-R100-8G44WF",
+      "CS-H7c-R101-8H33WF",
+      "CS-H8-R100-1H3WKFL",
+      "CS-H8-R100-1J5WKFL",
+      "CS-H80f-R100-8G444WKFL",
+      "CS-H8c-R100-1J4WKFL",
+      "CS-H8c-R100-1K2WKFL",
+      "CS-H8c-R100-1K3WKFL",
+      "CS-H8c-R200-1J4WKFL",
+      "CS-H8c-R200-1J5WKFL",
+      "CS-H8c-R200-1K3EKFL",
+      "CS-H8c-R200-1K3KFL4GA",
+      "CS-H8c-R200-1K3WKFL",
+      "CS-H8c-R200-8H8WKFL",
+      "CS-H90-R100-8H44WKFL",
+      "CS-HB3-R100-2C3HL",
+      "CS-HB3-R105-2C3HL",
+      "CS-HB8-R105-2C4WDL",
+      "CS-HP5-R106-1W2TFC",
+      "CS-HP7-R105-1W2TFC",
+      "CS-HPD7-R105-1K3",
+      "CS-K2-A",
+      "CS-K3-A",
+      "CS-L2-11FCP",
+      "CS-L2S-11FCP",
+      "CS-L2S-11FCP-A0",
+      "CS-L2S-R200-11FCP",
+      "CS-LC1-A0-1B2WPFRL(2.8mm)",
+      "CS-LC1C-A0-1F2WPFRL",
+      "CS-LC3-A0-8B4WDL",
+      "CS-LT70-R200-WBCP-BK",
+      "CS-RE4-PBT2",
+      "CS-RE4-PBT5",
+      "CS-RE4-PWT2",
+      "CS-RE4-PWT5",
+      "CS-RE4-PWT9",
+      "CS-RE4C-YWT2",
+      "CS-RE4C-YWT5",
+      "CS-RE4CP-YWT2",
+      "CS-RE4CP-YWT5",
+      "CS-RE4P-PBT2",
+      "CS-RE4P-PBT5",
+      "CS-RE4P-PWT2",
+      "CS-RE4P-PWT5",
+      "CS-RE4P-PWT9",
+      "CS-RE5-TWT2",
+      "CS-RE5-TWT5",
+      "CS-RE5-TWT9",
+      "CS-RE5P-TWT2",
+      "CS-RE5P-TWT5",
+      "CS-RE5P-TWT9",
+      "CS-RE5S-TWT2",
+      "CS-RE5S-TWT5",
+      "CS-RE5SP-TWT2",
+      "CS-RE5SP-TWT5",
+      "CS-RS2-TWT2",
+      "CS-RS2-TWT5",
+      "CS-RS20-PRO-PGA2",
+      "CS-RS20-PRO-PGA5",
+      "CS-RS20-PRO-SGA2",
+      "CS-RS20-PRO-TGA2",
+      "CS-RS20-PRO-TGA5",
+      "CS-RS20-PRO-UGA2",
+      "CS-RT1-R100-1G2G",
+      "CS-RT1-R100-1G8G",
+      "CS-RT1-R100-3G0G",
+      "CS-SD3-R100-8W2SB",
+      "CS-SP206-A0-54WFBS",
+      "CS-SP206-B0-68WFBS",
+      "CS-SP206-C0-68WFBS",
+      "CS-SP208-A0-212WFBS",
+      "CS-SP208-B0-6C12WFBS",
+      "CS-T1-C/12M",
+      "CS-T10-A",
+      "CS-T10C-A0-BG",
+      "CS-T1C-A0-BG",
+      "CS-T2-A",
+      "CS-T2C-A0-BG",
+      "CS-T31-16A-EU",
+      "CS-T31-16A-UK",
+      "CS-T31-16B-EU",
+      "CS-T31-16B-UK",
+      "CS-T3C-A0-BG",
+      "CS-T4-B",
+      "CS-T4C-A0-BG",
+      "CS-T5-A",
+      "CS-T51C-A0-BG",
+      "CS-T55-R100-G",
+      "CS-T6-A",
+      "CS-T8-A/CH4",
+      "CS-T9-A",
+      "CS-T9C-A0-BG",
+      "CS-TP7-R100-1W2TFC",
+      "CS-TP7P-R200-BT-GR",
+      "CS-TPD7-R100-1K3",
+      "CS-TY1-C0-8B4WF",
+      "CS-TY1-R105-1L3WF",
+      "CS-TY2-B0-1G2WF",
+      "CS-TY2-R101-1G2WF",
+      "CS-W2D-B2-EUP",
+      "CS-W2D-B3-EUP",
+      "CS-W2D-EUP",
+      "CS-W2S-EUP",
+      "CS-W2S-UK",
+      "CS-W3-WD1200G-EUP",
+      "CS-W3C-WD1200G",
+      "CS-W3R-R100-X1G8GM",
+      "CS-W5S-A0-MT1200GP",
+      "CS-W6-SD05G",
+      "CS-W6-SD05GP",
+      "CS-W6-SD09G",
+      "CS-W6-SD09GP",
+      "CS-X5C-4APEC",
+      "CS-X5C-4APEC-B/1T",
+      "CS-X5C-4APEC/1T",
+      "CS-X5C-4EU",
+      "CS-X5C-4EU-B/1T",
+      "CS-X5C-4EU-B/2T",
+      "CS-X5C-4EU/1T",
+      "CS-X5C-4US-B/1T",
+      "CS-X5C-8APEC",
+      "CS-X5C-8APEC-B/1T",
+      "CS-X5C-8APEC/1T",
+      "CS-X5C-8EU",
+      "CS-X5C-8EU-B/1T",
+      "CS-X5C-8EU-B/2T",
+      "CS-X5C-8EU/1T",
+      "CS-X5C-8US",
+      "CS-X5C-8US-B/1T",
+      "CS-X5S-16H",
+      "CS-X5S-16L2",
+      "CS-X5S-4PEUP",
+      "CS-X5S-4W",
+      "CS-X5S-4W-B",
+      "CS-X5S-4W-B/1T",
+      "CS-X5S-8PEUP",
+      "CS-X5S-8W",
+      "CS-X5S-8W-B",
+      "CS-X5S-8W-B/1T"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "7323b40d3196177a63c2e4d9796ad096e4f376345bc834d4815df2f26d69db41"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "2659e594c371ff30ce7dba8aa52de8e445f3bbef6fc6c914be4219e830d829a5"
       }
     ]
   },
   "https://www.gl-inet.com/en-us/pages/psti-support-period": {
     "vendor": "GL.iNet",
-    "kind": "text",
-    "fingerprint": "ba380e3650031aab198e74cf466c26636b110f6df8d60c1dfcbf4c01119e3a98",
+    "kind": "rows",
+    "fingerprint": "d61f2fad08e53cc18c19bed72b3558dce905b3443348b7269606f3e9ac0dc6eb",
+    "lines": [
+      "Beryl (GL-MT1300)",
+      "Beryl AX (GL-MT3000)",
+      "Collie (GL-X300B-BLE)",
+      "Collie (GL-X300B-GPS)",
+      "Flint (GL-AX1800)",
+      "Flint 2 (GL-MT6000)",
+      "Flint 3 (GL-BE9300)",
+      "GL-S10",
+      "GL-S20",
+      "GL-S200",
+      "June 11, 2027 or later*",
+      "Mango (GL-MT300N-V2)",
+      "Marble (GL-B3000)",
+      "Mudi (GL-E750V2)",
+      "Opal (GL-SFT1200)",
+      "Puli (GL-XE300)",
+      "Puli AX (GL-XE3000)",
+      "Shadow (GL-AR300M Series)",
+      "Slate 7 (GL-BE3600)",
+      "Slate AX (GL-AXT1800)",
+      "Slate Plus (GL-A1300)",
+      "Spitz (GL-X750V2)",
+      "Spitz AX (GL-X3000)",
+      "Spitz Plus (GL-X2000)",
+      "Velica (GL-B2200)"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "ba380e3650031aab198e74cf466c26636b110f6df8d60c1dfcbf4c01119e3a98"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "d61f2fad08e53cc18c19bed72b3558dce905b3443348b7269606f3e9ac0dc6eb"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "cb79e3d1d3f0d9c04b2a77f13f9038a5d74e9f8fdaa17fb52f79cf7f21e17c1e"
-    }
+    ]
   },
   "https://www.gl-inet.com/blogs/blog/cirrus-gl-ap1300-product-end-of-life-notice": {
     "vendor": "GL.iNet",
-    "kind": "text",
-    "fingerprint": "4d7840ab5b2cb5375227b3c3bdf46819b9c883bd8308efdae79813f26609541b",
+    "kind": "rows",
+    "fingerprint": "b20ae1dde4c9d98ee65778f55a5371d31e0fe01283b308c9f3ca980961a0b6e9",
+    "lines": [
+      "Cirrus (GL-AP1300) – Product End of Life Notice",
+      "Cirrus (GL-AP1300) – Product End of Life Notice — GL.iNet",
+      "For customers currently using the Cirrus (GL-AP1300), please rest assured",
+      "GL-AP1300",
+      "June 10, 2027",
+      "technology and enhancing user experience, we are officially announcing the End of Life (EOL) for the Cirrus (GL-AP1300) ."
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "4d7840ab5b2cb5375227b3c3bdf46819b9c883bd8308efdae79813f26609541b"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "b20ae1dde4c9d98ee65778f55a5371d31e0fe01283b308c9f3ca980961a0b6e9"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "da6ec9a221d74c827f4aec2a97a8532b63354e5e0fa27fc185d4b131e568b5aa"
-    }
+    ]
   },
   "https://www.gl-inet.com/products/discontinued/": {
     "vendor": "GL.iNet",
-    "kind": "text",
-    "fingerprint": "44c03d351ce2892bafe6032e2eb7acfb78bcf458d836858ea09ed5abfcc4665a",
+    "kind": "rows",
+    "fingerprint": "c43fa789e1428fbf3a018a4c59411571d5e3f39c137f4138c6aa28cf25aca0a2",
+    "lines": [
+      "GL-AR150 / White",
+      "GL-AR300",
+      "GL-AR750 / Creta",
+      "GL-AR750S / Slate",
+      "GL-M7620N",
+      "GL-M9331 Plus",
+      "GL-M9331-Core / Domino",
+      "GL-M9531",
+      "GL-MT300A",
+      "GL-MT300N",
+      "GL-MT750",
+      "GL-MV1000 / Brume",
+      "GL-MV1000W / Brume-W",
+      "GL-MiFi",
+      "GL-Moto-Mini",
+      "GL-S1300 / Convexa-S",
+      "GL-USB150 / Microuter",
+      "GL-X1200 / Amarok",
+      "GL.iNet6416",
+      "Mango (GL-MT300N-V2)",
+      "Support Ends: Until December 31st, 2023",
+      "Support Ends: Until March 27th, 2025",
+      "Support Ends: Until November 2nd, 2024",
+      "Support Ends: Until October 26th, 2024",
+      "Support ended.",
+      "microuter-N300"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "44c03d351ce2892bafe6032e2eb7acfb78bcf458d836858ea09ed5abfcc4665a"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "c43fa789e1428fbf3a018a4c59411571d5e3f39c137f4138c6aa28cf25aca0a2"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "354b7332dd8bfce85e25a60b11070a9a0123941b06247a3f5a7deffc74bc059e"
-    }
+    ]
   },
   "https://www.gl-inet.com/blogs/blog/products-end-of-life-eol-notice": {
     "vendor": "GL.iNet",
-    "kind": "text",
-    "fingerprint": "04d42a7c3c958c7893c2b2e26bf7dd280bd9b76483aaff6793ab99c347f6b92a",
+    "kind": "rows",
+    "fingerprint": "dae6a9127c6ac065d62b0be0b3a773a8fb2744f714151abf41f0df3d8d374c70",
+    "lines": [
+      "Model Names: GL-AR150, GL-AR150-Ext, GL-AR150-PoE, GL-AR150-Ext-PoE"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "04d42a7c3c958c7893c2b2e26bf7dd280bd9b76483aaff6793ab99c347f6b92a"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "dae6a9127c6ac065d62b0be0b3a773a8fb2744f714151abf41f0df3d8d374c70"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "558aef0350b3c0918ed5df7013590e058addcbce66851cad84c0390ec3a522b7"
-    }
+    ]
   },
   "https://www.gl-inet.com/blogs/blog/convexa-b-gl-b1300-product-end-of-life-notice": {
     "vendor": "GL.iNet",
-    "kind": "text",
-    "fingerprint": "89ad58e360c1dc60c8ae6fc111512a32da68b0af499d4eb01c5c4968f8654754",
+    "kind": "rows",
+    "fingerprint": "df7c2671e8db0aaaba4acd548d2b454b4224effe07d599e301325783b5bc04fd",
+    "lines": [
+      "Convexa-B (GL-B1300) – Product End of Life Notice",
+      "Convexa-B (GL-B1300) – Product End of Life Notice — GL.iNet",
+      "For customers currently using the Convexa-B (GL-B1300), please rest assured",
+      "GL-B1300",
+      "June 10, 2027",
+      "technology and enhancing user experience, we are officially announcing the End of Life (EOL) for the Convexa-B (GL-B1300) ."
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "89ad58e360c1dc60c8ae6fc111512a32da68b0af499d4eb01c5c4968f8654754"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "df7c2671e8db0aaaba4acd548d2b454b4224effe07d599e301325783b5bc04fd"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "0b09ae46330e5e26ff43556a4fdc4367ba2bab2af75d7e896300b36f60523adf"
-    }
+    ]
   },
   "https://www.gl-inet.com/blogs/blog/velica-gl-b2200-product-end-of-life-notice": {
     "vendor": "GL.iNet",
-    "kind": "text",
-    "fingerprint": "0c2dbdbb216c241fff127bce7367529d9773e57735a2bc21606ccf0762e04216",
+    "kind": "rows",
+    "fingerprint": "9636239a30cc00699d303329655e1bb177845688d57b79261bfbc1ca44560135",
+    "lines": [
+      "Model Name: GL-B2200",
+      "Supported until: Oct 10th, 2026 (Security fixes and firmware",
+      "Velica (GL-B2200) – Product End of Life Notice",
+      "Velica (GL-B2200) – Product End of Life Notice — GL.iNet",
+      "We are discontinuing the manufacturing of Velica (GL-B2200) as we now have an alternative product available to offer better performance"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "0c2dbdbb216c241fff127bce7367529d9773e57735a2bc21606ccf0762e04216"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "9636239a30cc00699d303329655e1bb177845688d57b79261bfbc1ca44560135"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "1cfc8850acde2f7506ea22062b8ad062f3f8ae3be8f37b0b8c58d9d37e2bb634"
-    }
+    ]
   },
   "https://www.gl-inet.com/blogs/blog/mudi-gl-e750v2-vsim-version-product-end-of-life-notice": {
     "vendor": "GL.iNet",
-    "kind": "text",
-    "fingerprint": "6d1d4128768f36735251eb01828ad27e1772cb4e0472fbdf647acd5a1a0a8ed3",
+    "kind": "rows",
+    "fingerprint": "d247f8c2907ba3918811a0e5c057e5ee99d06aa53c533463e99d546643a84be5",
+    "lines": [
+      "Mudi (GL-E750V2) [VSIM version] – Product End of Life Notice",
+      "Mudi (GL-E750V2) [VSIM version] – Product End of Life Notice — GL.iNet",
+      "Support End Date: April 29, 2027 (security updates and firmware upgrades"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "6d1d4128768f36735251eb01828ad27e1772cb4e0472fbdf647acd5a1a0a8ed3"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "d247f8c2907ba3918811a0e5c057e5ee99d06aa53c533463e99d546643a84be5"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "f7ccdb679bcf149580a3a4d275695b12722db661bcecbd05125e5cc26b7c800e"
-    }
+    ]
   },
   "https://www.gl-inet.com/blogs/blog/beryl-gl-mt1300-product-end-of-life-notice": {
     "vendor": "GL.iNet",
-    "kind": "text",
-    "fingerprint": "602026be33c6356b936a28cae5ab79aebc23ba2d59dcfd9c72a4f1153dcdc102",
+    "kind": "rows",
+    "fingerprint": "837bd987bfcadeed62975c66ec8180b88368175b336ba387dabb235ed85985ad",
+    "lines": [
+      "Beryl (GL-MT1300) – Product End of Life Notice",
+      "Beryl (GL-MT1300) – Product End of Life Notice — GL.iNet",
+      "End of Life (EOL) for the Beryl (GL-MT1300).",
+      "For customers currently using the Beryl (GL-MT1300), please rest assured",
+      "GL-MT1300",
+      "June 8, 2028"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "602026be33c6356b936a28cae5ab79aebc23ba2d59dcfd9c72a4f1153dcdc102"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "837bd987bfcadeed62975c66ec8180b88368175b336ba387dabb235ed85985ad"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "ef398455c25caa27be63015b46ba6bcc1ac37915c21b7fa3d5deabf64c3cd700"
-    }
+    ]
   },
   "https://www.gl-inet.com/blogs/blog/gl-sf1200-product-end-of-life-notice": {
     "vendor": "GL.iNet",
-    "kind": "text",
-    "fingerprint": "42f17a760b4029537f8493342cddbe2fb0b491a43bc0017c01ec1e2f6c35e836",
+    "kind": "rows",
+    "fingerprint": "9a8d59cb994a72c4986993032a4181ba72c3dcc1e7422d7ef0fe3f260968f893",
+    "lines": [
+      "For those considering GL-SF1200, we recommend Flint 2 (GL-MT6000) or Flint (GL-AX1800) , our secure and ultra-fast Wi-Fi 6 routers engineered for excellent",
+      "GL-SF1200 – Product End of Life Notice",
+      "GL-SF1200 – Product End of Life Notice — GL.iNet",
+      "Model Name: GL-SF1200",
+      "We are discontinuing the manufacturing of GL-SF1200 as we now have an alternative product available to offer better performance",
+      "and efficiency. If you’re currently using GL-SF1200, please note it will still"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "42f17a760b4029537f8493342cddbe2fb0b491a43bc0017c01ec1e2f6c35e836"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "9a8d59cb994a72c4986993032a4181ba72c3dcc1e7422d7ef0fe3f260968f893"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "b65ace15570f5a166458345d0ee1e42ccdc8d9fae85f5cb605f3e4d571e09feb"
-    }
+    ]
   },
   "https://support.google.com/product-documentation/answer/10231940?hl=en-GB": {
     "vendor": "Google",
-    "kind": "text",
-    "fingerprint": "2b96eb928def2da9c7cb00f63a5cf51824a1b2253c4b6ead2c2c16b219e000fc",
+    "kind": "rows",
+    "fingerprint": "1e212861527df6529dc6a6a520d50b576858bbc6bebb606c3ae07d6f3a2dcad1",
+    "lines": [
+      "01/10/2030",
+      "04/10/2027",
+      "04/11/2021",
+      "05/10/2025",
+      "05/10/2026",
+      "05/12/2021",
+      "06/11/2021",
+      "09/09/2024",
+      "11/12/2022",
+      "15/06/2020",
+      "15/10/2021",
+      "19/10/2022",
+      "20/08/2029",
+      "22/09/2027",
+      "22/10/2023",
+      "22/10/2024",
+      "24/08/2026",
+      "24/09/2029",
+      "25/06/2031",
+      "27/10/2027",
+      "28/06/2022",
+      "28/10/2024",
+      "29/09/2020",
+      "30/03/2026",
+      "30/09/2020",
+      "30/09/2025",
+      "30/10/2025",
+      "30/11/2022",
+      "31/03/2023",
+      "31/07/2018",
+      "31/08/2022",
+      "Buy and manage your Google Home Premium subscription",
+      "Chromecast (1st gen)",
+      "Chromecast (2nd gen)",
+      "Chromecast (3rd gen)",
+      "Chromecast Audio",
+      "Chromecast Ultra",
+      "Chromecast with Google TV (4K) and Chromecast Voice Remote",
+      "Chromecast with Google TV (4K) and Chromecast Voice Remote results PDF",
+      "Chromecast with Google TV (HD) and Chromecast Voice Remote",
+      "Google Home",
+      "Google Home Max",
+      "Google Home Mini",
+      "Google Home Speaker (2026)",
+      "Google Home Speaker (2026) results PDF",
+      "Google Nest Wifi Pro",
+      "Google Nest Wifi Pro results PDF",
+      "Google TV Streamer (4K) and Voice Remote",
+      "Google TV Streamer (4K) and Voice Remote results PDF",
+      "Google Wifi",
+      "Nest Audio",
+      "Nest Audio results PDF",
+      "Nest Cam (battery)",
+      "Nest Cam (battery) results PDF",
+      "Nest Cam (wired)",
+      "Nest Cam (wired) results PDF",
+      "Nest Cam IQ Indoor and Outdoor",
+      "Nest Cam Indoor",
+      "Nest Cam Indoor (wired, 3rd gen)",
+      "Nest Cam Indoor (wired, 3rd gen) results PDF",
+      "Nest Cam Outdoor",
+      "Nest Cam Outdoor (wired, 2nd gen)",
+      "Nest Cam Outdoor (wired, 2nd gen) results PDF",
+      "Nest Cam with floodlight",
+      "Nest Cam with floodlight results PDF",
+      "Nest Doorbell (battery)",
+      "Nest Doorbell (battery) results PDF",
+      "Nest Doorbell (wired)",
+      "Nest Doorbell (wired) results PDF",
+      "Nest Doorbell (wired, 3rd gen)",
+      "Nest Hello",
+      "Nest Hub (1st gen)",
+      "Nest Hub (2nd gen)",
+      "Nest Hub (2nd gen) results PDF",
+      "Nest Hub Max",
+      "Nest Hub Max results PDF",
+      "Nest Learning Thermostat",
+      "Nest Learning Thermostat (4th gen)",
+      "Nest Learning Thermostat (4th gen) results PDF",
+      "Nest Mini",
+      "Nest Mini results PDF",
+      "Nest Protect",
+      "Nest Secure",
+      "Nest Thermostat",
+      "Nest Thermostat E",
+      "Nest Thermostat results PDF",
+      "Nest Wifi",
+      "Nest Wifi results PDF",
+      "Nest x Yale lock",
+      "​Chromecast with Google TV (HD) and Chromecast Voice Remote results PDF​"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "2b96eb928def2da9c7cb00f63a5cf51824a1b2253c4b6ead2c2c16b219e000fc"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "1e212861527df6529dc6a6a520d50b576858bbc6bebb606c3ae07d6f3a2dcad1"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "b3fea4807def70c1e16dd89b1febd9374e9319650e74714d74a14b0f0aa6e03a"
-    }
+    ]
   },
   "https://assets.ctfassets.net/mijf9lz5yt3u/3GyNpOz5vyN7miYMdZ5SEN/3ae0a382e6e5f52480c3fc4bdc0d68a9/PSTI_Statement_Oct_26.pdf": {
     "vendor": "Hive",
@@ -1277,461 +2503,801 @@
   },
   "https://www.hivehome.com/product-news": {
     "vendor": "Hive",
-    "kind": "text",
-    "fingerprint": "fe5df806bd6a1053ffaf60a854d9d2a7d7f1b36ec8abea3eb74a1f76be2eaab1",
+    "kind": "rows",
+    "fingerprint": "959b9f951d5a5d153de91445645ebd9d4b2966b746900bd9fd3b0a8e54f90a91",
+    "lines": [
+      "As part of our shared commitment to environmental responsibility, we encourage you to consider recycling your Nano 1 hub. Once the support period concludes on 01/08/23, please take it to your local Household Waste Recycling Centre, where it can be properly disposed of.",
+      "Depending on routers, some yellow ports on some router models could be a WAN or 2.5gbps port which the hub doesn’t work with. This user-friendly guide will walk you through the process of setting up your new hub and transferring settings/devices from your Nano 1 hub.&gt;Setting up the Nano 2 Hub:",
+      "Hive HomeShield",
+      "Hive Leak Sensor",
+      "Hive View Camera",
+      "Nano 1 Hub",
+      "No, the camera will no longer function following the three-year support period ending on 01/08/2025.",
+      "No, your HomeShield system no longer function following the three-year support period ending on 01/08/2025.",
+      "No, your Leak Sensor device will no longer function following the three-year support period ending on 01/09/2023.",
+      "We’re providing 12 months of ongoing support for the Nano 1. This support will end on 01/08/2023.",
+      "What will happen to my HomeShield subscription?",
+      "What will happen to my Nano 1 hub?",
+      "Your Hive View camera will work as normal until the three-year support period ends on 01/08/2025. After this, the camera will no longer function.",
+      "Your HomeShield system will work as normal until the three-year support period ends on 01/08/2025. After this, the system will no longer function.",
+      "Your Leak Sensor device will work as normal until the three-year support period ends on 01/08/2025. After this, the device will no longer function.",
+      "Your Leak Sensor device will work as normal until the three-year support period ends on 01/09/2023. After this, the system will no longer function."
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "fe5df806bd6a1053ffaf60a854d9d2a7d7f1b36ec8abea3eb74a1f76be2eaab1"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "959b9f951d5a5d153de91445645ebd9d4b2966b746900bd9fd3b0a8e54f90a91"
       }
     ]
   },
   "https://support.keenetic.com/buddy-4/kn-3211/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "d365744be289c58a94b27a31671528654b0dd00af236efe66d740233f119cfad",
+    "kind": "rows",
+    "fingerprint": "e0dd2ac84659a21e66196a2307505f3e80a2e6a8e95225457a592fd9f5836270",
+    "lines": [
+      "Buddy 4 ( KN-3211 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "d365744be289c58a94b27a31671528654b0dd00af236efe66d740233f119cfad"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "e0dd2ac84659a21e66196a2307505f3e80a2e6a8e95225457a592fd9f5836270"
       }
     ]
   },
   "https://support.keenetic.com/buddy-5/kn-3311/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "0616a99379c5ce9ae35762bd9340dfdcfc50f4c37705d19f3ef2f6452332e22d",
+    "kind": "rows",
+    "fingerprint": "2e5cd3100c50930aea0666d5243eae6a0f0b1a68d196e6722eef6d3d7343d98d",
+    "lines": [
+      "Buddy 5 ( KN-3311 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "0616a99379c5ce9ae35762bd9340dfdcfc50f4c37705d19f3ef2f6452332e22d"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "2e5cd3100c50930aea0666d5243eae6a0f0b1a68d196e6722eef6d3d7343d98d"
       }
     ]
   },
   "https://support.keenetic.com/buddy-6/kn-3411/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "e16cfe828963da019ec4c7083dc677761f04b5ea73290ab43c8ccd943fef2bc2",
+    "kind": "rows",
+    "fingerprint": "6ba3f63805e3628f7d0ba176838809337508644ed476c402b1394937709e3de7",
+    "lines": [
+      "Buddy 6 ( KN-3411 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "e16cfe828963da019ec4c7083dc677761f04b5ea73290ab43c8ccd943fef2bc2"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "6ba3f63805e3628f7d0ba176838809337508644ed476c402b1394937709e3de7"
       }
     ]
   },
   "https://support.keenetic.com/carrier/kn-1711/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "b853b26e0ea15709dd9a97803b94cc7034c757c92786a7552199a0ef667b1afc",
+    "kind": "rows",
+    "fingerprint": "92fbfa7473200aae05841b3f9ae62c2d5da0ffcfc2d246e33c69e608f4fbbcfa",
+    "lines": [
+      "Carrier ( KN-1711 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "b853b26e0ea15709dd9a97803b94cc7034c757c92786a7552199a0ef667b1afc"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "92fbfa7473200aae05841b3f9ae62c2d5da0ffcfc2d246e33c69e608f4fbbcfa"
       }
     ]
   },
   "https://support.keenetic.com/carrier/kn-1721/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "47d473796a224a3b85595dedc17d7f82b5a22465036b957ecd1112e9d3fd8731",
+    "kind": "rows",
+    "fingerprint": "fe7deb393058f63ae59421557c7ce90686bfde2d020402b4cf35e9d3245211e9",
+    "lines": [
+      "Carrier ( KN-1721 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "47d473796a224a3b85595dedc17d7f82b5a22465036b957ecd1112e9d3fd8731"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "fe7deb393058f63ae59421557c7ce90686bfde2d020402b4cf35e9d3245211e9"
       }
     ]
   },
   "https://support.keenetic.ua/city/kn-1510/en/24481-keenetic-product-lifecycle-support-policy.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "ae7a90b6c26b32df2e051b9b46a8666892e8e5ec83a2d30d4f44c2c869bb0714",
+    "kind": "rows",
+    "fingerprint": "276fbd3c88179775687342856e2d1f83f1d5a969d69d955fa62974ccae643762",
+    "lines": [
+      "Keenetic City ( KN-1510 ) is past its End of Support date and no longer receives any updates. We recommend purchasing the latest version or a newer, more advanced, Keenetic product.",
+      "Keenetic City ( KN-1510 ) support timeline"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "ae7a90b6c26b32df2e051b9b46a8666892e8e5ec83a2d30d4f44c2c869bb0714"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "276fbd3c88179775687342856e2d1f83f1d5a969d69d955fa62974ccae643762"
       }
     ]
   },
   "https://support.keenetic.com/explorer/kn-1613/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "08b4c7a14dbd3ac826ac19cb8af1692939b4e6920a94408f549bcbcc718eb356",
+    "kind": "rows",
+    "fingerprint": "79c29e09e8e94d01aa9027cc9d1e555326538fd710ef6c6816f741f301b2f91c",
+    "lines": [
+      "Explorer ( KN-1613 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "08b4c7a14dbd3ac826ac19cb8af1692939b4e6920a94408f549bcbcc718eb356"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "79c29e09e8e94d01aa9027cc9d1e555326538fd710ef6c6816f741f301b2f91c"
       }
     ]
   },
   "https://support.keenetic.com/explorer-4g/kn-4910/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "3bcb98cc0ce510c0e200121f51bec30fc2cdfebead7ca40d39b850decc48921f",
+    "kind": "rows",
+    "fingerprint": "4ba02bf912511a4823853f852016c8377358684e640d7f0bec2decd751a9d7d9",
+    "lines": [
+      "Explorer 4G ( KN-4910 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "3bcb98cc0ce510c0e200121f51bec30fc2cdfebead7ca40d39b850decc48921f"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "4ba02bf912511a4823853f852016c8377358684e640d7f0bec2decd751a9d7d9"
       }
     ]
   },
   "https://support.keenetic.com/hero/kn-1011/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "da7e1ce707660c6d039716bb3a3f370e580806825a304162ffb35dd7c89d7c4f",
+    "kind": "rows",
+    "fingerprint": "3404a95d4a4ca5e0753eb75651bcd331fb2f33949d2da085e079403d7fbabeec",
+    "lines": [
+      "Hero ( KN-1011 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "da7e1ce707660c6d039716bb3a3f370e580806825a304162ffb35dd7c89d7c4f"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "3404a95d4a4ca5e0753eb75651bcd331fb2f33949d2da085e079403d7fbabeec"
       }
     ]
   },
   "https://support.keenetic.com/hero/kn-1012/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "94e331b21cc2a9c89937c57459310e195de950d893e3af4c46cbd3fe1e17f971",
+    "kind": "rows",
+    "fingerprint": "407215ecb91b535736af46b0fc83fc5c8a9d141df780ba1209410e2f7a49a585",
+    "lines": [
+      "Hero ( KN-1012 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "94e331b21cc2a9c89937c57459310e195de950d893e3af4c46cbd3fe1e17f971"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "407215ecb91b535736af46b0fc83fc5c8a9d141df780ba1209410e2f7a49a585"
       }
     ]
   },
   "https://support.keenetic.com/hero-4g/kn-2310/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "7714e060bc43db0572cf3c37c52656bf6b2228bd3e7ebd07f54346cbec319ea7",
+    "kind": "rows",
+    "fingerprint": "a68e66522a21ff6e33ff930d41fd66042cf78d344b2b3c571439718f25919d5d",
+    "lines": [
+      "Hero 4G ( KN-2310 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "7714e060bc43db0572cf3c37c52656bf6b2228bd3e7ebd07f54346cbec319ea7"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "a68e66522a21ff6e33ff930d41fd66042cf78d344b2b3c571439718f25919d5d"
       }
     ]
   },
   "https://support.keenetic.com/hero-dsl/kn-2410/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "c8feca9563ac9c0daa2a1a19935ce2bc0061bc9458da8832e162d7b809fa3dfb",
+    "kind": "rows",
+    "fingerprint": "d47066cb2ad0633be599a438472b90cd02554fe41436422300bf59c616fe96a4",
+    "lines": [
+      "Hero DSL ( KN-2410 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "c8feca9563ac9c0daa2a1a19935ce2bc0061bc9458da8832e162d7b809fa3dfb"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "d47066cb2ad0633be599a438472b90cd02554fe41436422300bf59c616fe96a4"
       }
     ]
   },
   "https://support.keenetic.com/hopper/kn-3810/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "4ec8a6d1b4f33cbcff4bcd49190326ed1aff53ecfb1ae1ada43800b155ccb75e",
+    "kind": "rows",
+    "fingerprint": "48dd2ece4ee0f255acf4f815a89a9313489979ebd285ecdd59072166fc23f46f",
+    "lines": [
+      "Hopper ( KN-3810 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "4ec8a6d1b4f33cbcff4bcd49190326ed1aff53ecfb1ae1ada43800b155ccb75e"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "48dd2ece4ee0f255acf4f815a89a9313489979ebd285ecdd59072166fc23f46f"
       }
     ]
   },
   "https://support.keenetic.com/hopper-dsl/kn-3610/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "0b03ec0591576b62ecc8223044b095d14308795bea8778c9e568345a40c9a81d",
+    "kind": "rows",
+    "fingerprint": "7477cad69231fe261023a383b0c756add0cddf1fd587d02de73dd7017e392578",
+    "lines": [
+      "Hopper DSL ( KN-3610 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "0b03ec0591576b62ecc8223044b095d14308795bea8778c9e568345a40c9a81d"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "7477cad69231fe261023a383b0c756add0cddf1fd587d02de73dd7017e392578"
       }
     ]
   },
   "https://support.keenetic.com/hopper-se/kn-3812/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "20ee1293c233cb0d500e3368cbc276e542aff31a6787377994093e798d3a2b75",
+    "kind": "rows",
+    "fingerprint": "9861a1caf97244fb6aa092628c3b97d9ba047c72129d8ea4bf9c83dfc33b8dd2",
+    "lines": [
+      "Hopper SE ( KN-3812 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "20ee1293c233cb0d500e3368cbc276e542aff31a6787377994093e798d3a2b75"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "9861a1caf97244fb6aa092628c3b97d9ba047c72129d8ea4bf9c83dfc33b8dd2"
       }
     ]
   },
   "https://support.keenetic.com/orbiter-pro/kn-2810/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "50672763abf0bbc36ddd07ff235e3a3a1829f72b6423e6f8710b61a9f4df0589",
+    "kind": "rows",
+    "fingerprint": "cb9b59971807e7523075dfd7fa9ceb00e2524f98ee56fd4bfc5459b37d6d31b6",
+    "lines": [
+      "Orbiter Pro ( KN-2810 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "50672763abf0bbc36ddd07ff235e3a3a1829f72b6423e6f8710b61a9f4df0589"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "cb9b59971807e7523075dfd7fa9ceb00e2524f98ee56fd4bfc5459b37d6d31b6"
       }
     ]
   },
   "https://support.keenetic.com/peak/kn-2710/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "7bd3db17c309a3efe879b02e266805d70fdb36ff3c9980b09a9b3bc8eb0b0618",
+    "kind": "rows",
+    "fingerprint": "4d273d071789bee3c8dbe66a5745a59f4709bea181541120d2b8e9fb9dcd5a86",
+    "lines": [
+      "Peak ( KN-2710 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "7bd3db17c309a3efe879b02e266805d70fdb36ff3c9980b09a9b3bc8eb0b0618"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "4d273d071789bee3c8dbe66a5745a59f4709bea181541120d2b8e9fb9dcd5a86"
       }
     ]
   },
   "https://support.keenetic.com/runner-4g/kn-2210/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "7a0454feb23a084eeb3cbcaf5f8ac02213f073d6c6f1895f9f1a1dc2f97ce96a",
+    "kind": "rows",
+    "fingerprint": "1bdb5232ff5ac9696502969d1308bc81dbfdaaf2a413983919b98e70b4b18bd7",
+    "lines": [
+      "Runner 4G ( KN-2210 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "7a0454feb23a084eeb3cbcaf5f8ac02213f073d6c6f1895f9f1a1dc2f97ce96a"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "1bdb5232ff5ac9696502969d1308bc81dbfdaaf2a413983919b98e70b4b18bd7"
       }
     ]
   },
   "https://support.keenetic.com/runner-4g/kn-2211/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "ef5848da7b37f22ed247e1e51bfc14d50ba1c52ba8f58891f5c11550a84bfe56",
+    "kind": "rows",
+    "fingerprint": "2dbcfe897e99421f573e777ffc2363a4c0fbe64d80d8bb41febd324dee7742f1",
+    "lines": [
+      "Runner 4G ( KN-2211 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "ef5848da7b37f22ed247e1e51bfc14d50ba1c52ba8f58891f5c11550a84bfe56"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "2dbcfe897e99421f573e777ffc2363a4c0fbe64d80d8bb41febd324dee7742f1"
       }
     ]
   },
   "https://support.keenetic.com/runner-4g/kn-2212/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "fc074a9e23a3bcbe924dde47238fdf1b84cd2f34aa13871515d6949513c03937",
+    "kind": "rows",
+    "fingerprint": "d9df871636662a486b1bb54c085622acb3aba3d8fe1a1450b135b2f61938e048",
+    "lines": [
+      "Runner 4G ( KN-2212 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "fc074a9e23a3bcbe924dde47238fdf1b84cd2f34aa13871515d6949513c03937"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "d9df871636662a486b1bb54c085622acb3aba3d8fe1a1450b135b2f61938e048"
       }
     ]
   },
   "https://support.keenetic.com/skipper/kn-1910/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "7a12987c2ac2dfecd8dc7e41f642aafaf7ccae34d02ac1ed3c2c581cead1ee64",
+    "kind": "rows",
+    "fingerprint": "56c8b4b643cdeea696d13e6e47738cb0fa3897f33c37a229226a841587d6ab4b",
+    "lines": [
+      "Skipper ( KN-1910 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "7a12987c2ac2dfecd8dc7e41f642aafaf7ccae34d02ac1ed3c2c581cead1ee64"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "56c8b4b643cdeea696d13e6e47738cb0fa3897f33c37a229226a841587d6ab4b"
       }
     ]
   },
   "https://support.keenetic.com/skipper-4g/kn-2910/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "b55dd6cc972730f0d871fed615c69898d5b27268500f4308300bea38ece77e8a",
+    "kind": "rows",
+    "fingerprint": "dff1a02ddc7e12c9bd5df7c0125fd77fbd68cea870ede2b39f7a134215a9ee2e",
+    "lines": [
+      "Skipper 4G ( KN-2910 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "b55dd6cc972730f0d871fed615c69898d5b27268500f4308300bea38ece77e8a"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "dff1a02ddc7e12c9bd5df7c0125fd77fbd68cea870ede2b39f7a134215a9ee2e"
       }
     ]
   },
   "https://support.keenetic.com/skipper-dsl/kn-2112/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "e91ae311cf07dfa5f04b4892604456429f4e28e0ec49b78e21334e3b46220a44",
+    "kind": "rows",
+    "fingerprint": "191877281f2ab463ff0aa5855d9e03f70fdf5a5b6fe983c1846ab0c2583470d9",
+    "lines": [
+      "Skipper DSL ( KN-2112 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "e91ae311cf07dfa5f04b4892604456429f4e28e0ec49b78e21334e3b46220a44"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "191877281f2ab463ff0aa5855d9e03f70fdf5a5b6fe983c1846ab0c2583470d9"
       }
     ]
   },
   "https://support.keenetic.com/speedster/kn-3010/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "ffecd226d0cd45b85517308c91da61303b557d5d44b171f50f52fe94e1f927fa",
+    "kind": "rows",
+    "fingerprint": "e9e4064e42bf6afbaa8054545c218b942b4f42117c7ffb6bbb430d24b98a0a31",
+    "lines": [
+      "Speedster ( KN-3010 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "ffecd226d0cd45b85517308c91da61303b557d5d44b171f50f52fe94e1f927fa"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "e9e4064e42bf6afbaa8054545c218b942b4f42117c7ffb6bbb430d24b98a0a31"
       }
     ]
   },
   "https://support.keenetic.com/speedster/kn-3012/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "d30c926824c769fbfec9f5491acd9fee0f3d5cc641413855b90f8132c8d0baff",
+    "kind": "rows",
+    "fingerprint": "893a49827d96aa7822b25ff831e76460795fd89c543650c059b719aab5cdc8fe",
+    "lines": [
+      "Speedster ( KN-3012 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "d30c926824c769fbfec9f5491acd9fee0f3d5cc641413855b90f8132c8d0baff"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "893a49827d96aa7822b25ff831e76460795fd89c543650c059b719aab5cdc8fe"
       }
     ]
   },
   "https://support.keenetic.com/speedster/kn-3013/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "20aa23c17398754b926c6142fac29f664a6d1c546aad9f5b523c138088149bba",
+    "kind": "rows",
+    "fingerprint": "3ca7ff80a93948173c63983da0d2d5a3da353ecba9deddf9583508c3b9dd2452",
+    "lines": [
+      "Speedster ( KN-3013 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "20aa23c17398754b926c6142fac29f664a6d1c546aad9f5b523c138088149bba"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "3ca7ff80a93948173c63983da0d2d5a3da353ecba9deddf9583508c3b9dd2452"
       }
     ]
   },
   "https://support.keenetic.com/sprinter/kn-3710/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "0a0a30c7dff06f056b1745044dcaf3e15d73af09b22eaddbe904ef737f8d8c58",
+    "kind": "rows",
+    "fingerprint": "f63a8ee1593565e4597d889c70967301d0c09b1d07edc47af2a10e58d32b80e8",
+    "lines": [
+      "Sprinter ( KN-3710 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "0a0a30c7dff06f056b1745044dcaf3e15d73af09b22eaddbe904ef737f8d8c58"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "f63a8ee1593565e4597d889c70967301d0c09b1d07edc47af2a10e58d32b80e8"
       }
     ]
   },
   "https://support.keenetic.com/sprinter-se/kn-3712/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "69aeec1958ec209fa84a3c455581170c94b791156c90e5be418f94c2e2e721e0",
+    "kind": "rows",
+    "fingerprint": "1399adcdcd735240010ca08434c4f5795b7970fb4429b3a70683a6aa9fc0bf44",
+    "lines": [
+      "Sprinter SE ( KN-3712 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "69aeec1958ec209fa84a3c455581170c94b791156c90e5be418f94c2e2e721e0"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "1399adcdcd735240010ca08434c4f5795b7970fb4429b3a70683a6aa9fc0bf44"
       }
     ]
   },
   "https://support.keenetic.com/stellar-6/kap-650/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "741b8f5f1e82ec6b1c696997c7fd69128ac3ff6ba8b29e4d2f22c6455ce1473d",
+    "kind": "rows",
+    "fingerprint": "6b9beac48f1baab93459b8dd5da97ba8e12e78c3036d1aa07c9a0e161e41be40",
+    "lines": [
+      "Stellar 6 ( KAP-650 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "741b8f5f1e82ec6b1c696997c7fd69128ac3ff6ba8b29e4d2f22c6455ce1473d"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "6b9beac48f1baab93459b8dd5da97ba8e12e78c3036d1aa07c9a0e161e41be40"
       }
     ]
   },
   "https://support.keenetic.com/titan/kn-1810/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "1ec6fc8948103309b81febdf0bb5ce3f296b495ebc7d956385c69feaaa5bc1ab",
+    "kind": "rows",
+    "fingerprint": "987bcdfa8f148cc5ba94c427ed88c7e9ceba4fb3457b0b414ff54831f92d841e",
+    "lines": [
+      "Titan ( KN-1810 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "1ec6fc8948103309b81febdf0bb5ce3f296b495ebc7d956385c69feaaa5bc1ab"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "987bcdfa8f148cc5ba94c427ed88c7e9ceba4fb3457b0b414ff54831f92d841e"
       }
     ]
   },
   "https://support.keenetic.com/titan/kn-1811/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "9aa700201f27bfb3e41bdf5430fc251633450fb0fc735bdfbb4aa55ff89e0253",
+    "kind": "rows",
+    "fingerprint": "861b576c83fee78dc9b9722ba71ef3c87018523c0a803f646e99bd095d37670b",
+    "lines": [
+      "Titan ( KN-1811 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "9aa700201f27bfb3e41bdf5430fc251633450fb0fc735bdfbb4aa55ff89e0253"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "861b576c83fee78dc9b9722ba71ef3c87018523c0a803f646e99bd095d37670b"
       }
     ]
   },
   "https://support.keenetic.com/titan/kn-1812/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "3037f12071012b775c62035a73c900b2f3439ee9abf0c0a2e0f5c70cf5b69aaf",
+    "kind": "rows",
+    "fingerprint": "3e98b1938bbbb0a1524deb69f2d8f9c34d0c618a6193e8f265bfb1ffa96ffc8b",
+    "lines": [
+      "Titan ( KN-1812 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "3037f12071012b775c62035a73c900b2f3439ee9abf0c0a2e0f5c70cf5b69aaf"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "3e98b1938bbbb0a1524deb69f2d8f9c34d0c618a6193e8f265bfb1ffa96ffc8b"
       }
     ]
   },
   "https://support.keenetic.com/titan-se/kn-4210/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "aa9fc6958f7eb1e393698fef9a2906dd567f55a20803cb2565da14415f9fa8e2",
+    "kind": "rows",
+    "fingerprint": "d6a3767117c20f09cecbeb05dd14b9e301164d3c87a945e90e238bfc7e683d0f",
+    "lines": [
+      "Titan SE ( KN-4210 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "aa9fc6958f7eb1e393698fef9a2906dd567f55a20803cb2565da14415f9fa8e2"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "d6a3767117c20f09cecbeb05dd14b9e301164d3c87a945e90e238bfc7e683d0f"
       }
     ]
   },
   "https://support.keenetic.com/voyager-pro/kn-3510/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
-    "kind": "text",
-    "fingerprint": "69c08c74dc06c3ef0dad7fbc2ce7c256e043bc837368d509745789ca4eb86ac8",
+    "kind": "rows",
+    "fingerprint": "44bb3dc613f45f4a718966ced431a8eb991139d3e104cfaa9b8d816503106dd8",
+    "lines": [
+      "Voyager Pro ( KN-3510 )"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "69c08c74dc06c3ef0dad7fbc2ce7c256e043bc837368d509745789ca4eb86ac8"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "44bb3dc613f45f4a718966ced431a8eb991139d3e104cfaa9b8d816503106dd8"
       }
     ]
   },
   "https://www.linksys.com/pages/linksys-product-end-of-life": {
     "vendor": "Linksys",
-    "kind": "text",
-    "fingerprint": "fa9512d6767365dc191762acc02ff2683b3572ab5e73cd6f674de1042097477d",
+    "kind": "rows",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": [],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "fa9512d6767365dc191762acc02ff2683b3572ab5e73cd6f674de1042097477d"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "d2daa13de853674e26123c9722e4079189d70d37abf789dee2ff7645b5de4a49"
-    }
+    ]
   },
   "https://support.linksys.com/kb/article/434-en/": {
     "vendor": "Linksys",
-    "kind": "text",
-    "fingerprint": "070b21b463fcfd00becfcbef6848d252c1e393b634384e390017bf8de967f2e7",
+    "kind": "rows",
+    "fingerprint": "f46b671b6b92c70f651427dc3ff66afe5e083c10b907fc39a742b24d77cd095c",
+    "lines": [
+      "April 2027",
+      "August 2027",
+      "December 2030",
+      "E7350-AH",
+      "E8450-AH",
+      "E9450-SG",
+      "FGW3000-AH",
+      "FGW5500 series",
+      "February 2027",
+      "January 2027",
+      "July 2031",
+      "June 2031",
+      "LN1100 v2",
+      "LN1200 v2",
+      "LN1400",
+      "MBE70",
+      "MBE7000",
+      "MR55WH",
+      "MX12600-AH",
+      "MX2001SH-SG",
+      "MX200X-AH",
+      "MX4200 v2",
+      "MX4200-AH",
+      "MX4200SH-SG",
+      "MX5500 series",
+      "MX6200-AH",
+      "MX8400-AH",
+      "March 2027",
+      "March 2028",
+      "September 2027",
+      "WHW030X-AH"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "070b21b463fcfd00becfcbef6848d252c1e393b634384e390017bf8de967f2e7"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "f46b671b6b92c70f651427dc3ff66afe5e083c10b907fc39a742b24d77cd095c"
       }
     ]
   },
   "https://lorextechnology.co.uk/pages/product-use-policy": {
     "vendor": "Lorex",
-    "kind": "text",
-    "fingerprint": "adb05117e19dcd199fc527c32ea919ae1ed4cc071eca75dc40d8d13fc2c47446",
+    "kind": "rows",
+    "fingerprint": "a34071b625d565b347752f49eee613e49f88d731f10a9c2de0fe2c9dba2fafb8",
+    "lines": [
+      "ACCHM2-Z, ACCHM2-EU",
+      "B241AJ-Z, B241AJD-EU",
+      "B451AJ-Z, B451AJDB-EG, B451AJD-EG, B451AJDB-EU, B451AJD-EU",
+      "B463AJ-Z, B463AJD-EU",
+      "B862AJ-Z, B862AJD-EU",
+      "December 31, 2025",
+      "December 31, 2026",
+      "December 31, 2027",
+      "December 31, 2028",
+      "December 31, 2031",
+      "E841CAP-Z, E841CAP-E",
+      "E841CDP-Z, E841CDP-E",
+      "E842CA-Z, E842CAWP",
+      "E842CD-Z, E842CDWP",
+      "E893AB-ZP, E893AB-Z4P, E893AB-Z8P, E893ABP",
+      "E893DD-Z, E893DD-ZP, E893DD-Z4P, E893DD-EP",
+      "E895AB-Z, E895AB-ZP, E895AB-Z4P, E895ABP",
+      "F461AQ-Z, F461AQ-EU",
+      "F861AS-Z, F861AS-EU",
+      "L4248-Z, L42481G",
+      "L8559-Z, L85591G, L85591BG",
+      "N843A8-Z, N843A82G",
+      "N846A6-Z, N846A62P",
+      "N847A6-Z, N847A62P",
+      "N863A6B-Z, N863A6B-ZP, N863A63BG, N863A64BP",
+      "N864A6B-Z, N864A6B-ZP, N864A64BP",
+      "N910A6-Z, N910A61P, N910A62P",
+      "U424AA-Z, U424AAG-E",
+      "U855AA-Z, U855AAG-E, U855AABG-E",
+      "V261LC-Z , V261LCD-EG",
+      "W452AS-Z, W452ASD-EU",
+      "W461AS-Z, W461ASD-EG",
+      "W482CA-Z, W482CAD-EU, W482CADG-E",
+      "W881AA-Z, W881AAD-EU",
+      "W891UA-Z, W891UAD-EU"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "adb05117e19dcd199fc527c32ea919ae1ed4cc071eca75dc40d8d13fc2c47446"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "a34071b625d565b347752f49eee613e49f88d731f10a9c2de0fe2c9dba2fafb8"
       }
     ]
   },
@@ -1749,13 +3315,65 @@
   },
   "https://www.netgear.com/au/about/eos/": {
     "vendor": "Netgear",
-    "kind": "text",
-    "fingerprint": "50cf9e388b56bbadb8547297310328f592b0f7f638a605e6db78d6a172ab18fc",
+    "kind": "rows",
+    "fingerprint": "0a1db35cf6fee1da1b98f3436fa292a2cdf7cff43158001f9743e1d64570953f",
+    "lines": [
+      "11/01/2029",
+      "A6150-10000S",
+      "A7500-100PAS",
+      "A8000-100PAS",
+      "A9000-10000S",
+      "EAX12-100AUS",
+      "EAX15-200AUS",
+      "EAX17-100AUS",
+      "EX3110-100AUS",
+      "EX6110-100AUS",
+      "EX6400-100AUS",
+      "LM1200-100AUS",
+      "LM1200-111AUS",
+      "MH7110-111APS",
+      "MH7110-1TLAUS",
+      "MH7150-100APS",
+      "MR6110",
+      "MR6500",
+      "MR7500-1TLAUS",
+      "NS300-100EUS",
+      "NS310-111EUS",
+      "RAX9-100AUS",
+      "RBE370-100APS",
+      "RBE372-100APS",
+      "RBE373-100APS",
+      "RBE770-100APS",
+      "RBE770-100APSv2",
+      "RBE772-100APS",
+      "RBE772-100APSv2",
+      "RBE773-100APS",
+      "RBE773-100APSv2",
+      "RBE870-100APS",
+      "RBE872-100APS",
+      "RBE873-100APS",
+      "RBE970-100APS",
+      "RBE970B-100APS",
+      "RBE972S-100APS",
+      "RBE973S-100APS",
+      "RBE973SB-100APS",
+      "RS100-100APS",
+      "RS150-100AUS",
+      "RS200-100APS",
+      "RS300-100APS",
+      "RS600-100APS",
+      "RS700S-100APS",
+      "V7610"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "50cf9e388b56bbadb8547297310328f592b0f7f638a605e6db78d6a172ab18fc"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "0a1db35cf6fee1da1b98f3436fa292a2cdf7cff43158001f9743e1d64570953f"
       }
     ]
   },
@@ -1773,13 +3391,18 @@
   },
   "https://www.netgear.com/about/eos/": {
     "vendor": "Netgear",
-    "kind": "text",
-    "fingerprint": "06b889b74c1f2ef44dc3b7c5f54b28e02ebffcaed456d6787a1f6eafac923318",
+    "kind": "rows",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": [],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "06b889b74c1f2ef44dc3b7c5f54b28e02ebffcaed456d6787a1f6eafac923318"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
     ]
   },
@@ -1833,13 +3456,20 @@
   },
   "https://nooie.com/pages/security-updates": {
     "vendor": "Nooie",
-    "kind": "text",
-    "fingerprint": "be229b2e563efb9505db52225f794607335e10ef4563396d54ae49f6b5ff59df",
+    "kind": "rows",
+    "fingerprint": "a8717d9f5e3deca6e48541c14f6ab8bd8e78ad59b645b0f556036cf0e2507d20",
+    "lines": [
+      "IPC200,IPC300,IPC300A,IPC500,NSP01,SA10,NPF01"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "be229b2e563efb9505db52225f794607335e10ef4563396d54ae49f6b5ff59df"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "a8717d9f5e3deca6e48541c14f6ab8bd8e78ad59b645b0f556036cf0e2507d20"
       }
     ]
   },
@@ -2025,13 +3655,24 @@
   },
   "https://www.philips-hue.com/en-gb/support/legal/end-of-support-policy": {
     "vendor": "Philips Hue",
-    "kind": "text",
-    "fingerprint": "1b36174a60668b233531ee1a797a3717541e1b39cc7d8006ecd14fec477f1382",
+    "kind": "rows",
+    "fingerprint": "b6514673b7b5da410f61c607a2a18f51dbdcefd6edf0353747255e14e43714b0",
+    "lines": [
+      "As of 30 April 2020, no software updates are made available for the Philips Hue Bridge v1 and compatibility with our online services has been terminated at that time. The Hue Bridge v1 can be only controlled locally via the dedicated Philips Hue Bridge v1 mobile application.",
+      "Philips Hue bridge V1 | 30 April 2020",
+      "Philips Hue bridge v1 mobile application | 30 April 2022",
+      "Since April 30 2020, no software updates are made available for the Hue Bridge v1 mobile application and compatibility with our online services has been terminated at that time. Subsequently, the dedicated Philips Hue Bridge v1 mobile application will go out of support and be retired on 30 April 202",
+      "V1 Hue Bridge | Until 30 April 2020 | After 29 April 2019 using the 'Philips Hue Bridge v1 app' | Until Q1 2020"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "1b36174a60668b233531ee1a797a3717541e1b39cc7d8006ecd14fec477f1382"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "b6514673b7b5da410f61c607a2a18f51dbdcefd6edf0353747255e14e43714b0"
       }
     ]
   },
@@ -2049,19 +3690,20 @@
   },
   "https://www.qnap.com/en/product/eol.php": {
     "vendor": "QNAP",
-    "kind": "text",
-    "fingerprint": "f23954f11cfc499f181b4e4b25369a76f3ce59a793a32a370df6ed3e5ad66222",
+    "kind": "rows",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": [],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "f23954f11cfc499f181b4e4b25369a76f3ce59a793a32a370df6ed3e5ad66222"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "1dc47ac1761d5734c6c0b2ebf61439cba92e36c4742af60bc49cab50638c29b8"
-    }
+    ]
   },
   "https://download.qnap.com/Storage/PSTI/QNAP%20PSTI%20Statement%20of%20Compliance_TS-264.pdf": {
     "vendor": "QNAP",
@@ -2161,67 +3803,162 @@
   },
   "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates": {
     "vendor": "Ring",
-    "kind": "text",
-    "fingerprint": "eb7fc1418d840fdd6563ce454e289bfa5f98e447286fdc990ff8c2e44fae66da",
+    "kind": "rows",
+    "fingerprint": "569b85e01e8921af4ac83ec6d06647913131997068a200e2680f308e77e990e7",
+    "lines": [
+      "31 December 2024",
+      "31 December 2025",
+      "31 December 2026",
+      "31 December 2027",
+      "31 December 2028",
+      "31 December 2029",
+      "31 December 2030",
+      "31 December 2031",
+      "Chime (1st Gen)",
+      "Chime (2nd Gen)",
+      "Chime Plus",
+      "Chime Pro (1st Gen)",
+      "Ring Alarm Base Station (1st Gen)",
+      "Ring Alarm Base Station (2nd Generation)",
+      "Ring Alarm Range Extender (2nd Generation)",
+      "Ring Battery Doorbell 2K",
+      "Ring Battery Doorbell 2K Plus",
+      "Ring Battery Doorbell 4K Pro",
+      "Ring Battery Video Doorbell",
+      "Ring Battery Video Doorbell Plus",
+      "Ring Battery Video Doorbell Pro",
+      "Ring Chime (3rd Gen)",
+      "Ring Chime Pro (2nd Generation)",
+      "Ring Door View Cam",
+      "Ring Floodlight Cam",
+      "Ring Floodlight Cam 2K",
+      "Ring Floodlight Cam 4K Pro",
+      "Ring Floodlight Cam Wired Plus",
+      "Ring Floodlight Cam Wired Pro",
+      "Ring Indoor Cam (1st Gen)",
+      "Ring Indoor Cam (2nd Gen)",
+      "Ring Indoor Cam 2K",
+      "Ring Intercom Audio",
+      "Ring Intercom Video",
+      "Ring Outdoor Cam",
+      "Ring Outdoor Cam 4K Pro",
+      "Ring Outdoor Cam Plus",
+      "Ring Outdoor Cam Plus PoE",
+      "Ring Outdoor Cam Pro PoE",
+      "Ring Pan-Tilt Indoor Cam",
+      "Ring Pan-Tilt Indoor Cam 2K",
+      "Ring Spotlight Cam",
+      "Ring Spotlight Cam 2K",
+      "Ring Spotlight Cam 4K Plus",
+      "Ring Spotlight Cam 4K Pro",
+      "Ring Spotlight Cam Plus",
+      "Ring Spotlight Cam Pro",
+      "Ring Stick Up Cam Pro",
+      "Ring Video Doorbell (1st Generation)",
+      "Ring Video Doorbell (2nd Generation)",
+      "Ring Video Doorbell 2",
+      "Ring Video Doorbell 3",
+      "Ring Video Doorbell 3 Plus",
+      "Ring Video Doorbell 4 (2021 release)",
+      "Ring Video Doorbell Pro",
+      "Ring Video Doorbell Wired",
+      "Ring Wired Doorbell 2K",
+      "Ring Wired Doorbell 2K Plus",
+      "Ring Wired Doorbell 4K Elite",
+      "Ring Wired Doorbell 4K Pro",
+      "Ring Wired Video Doorbell Pro (formerly Video Doorbell Pro 2) (2021 release)"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "eb7fc1418d840fdd6563ce454e289bfa5f98e447286fdc990ff8c2e44fae66da"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "569b85e01e8921af4ac83ec6d06647913131997068a200e2680f308e77e990e7"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "d84809175028c632d75d014f2ea22b0236cf4b4ac1702b60c30af2fe776f5a7f"
-    }
+    ]
   },
   "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates": {
     "vendor": "Ring",
-    "kind": "text",
-    "fingerprint": "d5452222fc24c8c88854b92601836521503a7c33d262550e8bc5e56fc4b0cffd",
+    "kind": "rows",
+    "fingerprint": "fd2f4f64c7db9f2de269d2a91e4231b21b76f588686fe6ea704677bbfe17083c",
+    "lines": [
+      "31 December 2024",
+      "31 December 2029",
+      "31 December 2030",
+      "31 December 2031",
+      "Alarm Pro Base Station",
+      "Ring Bridge (2nd Gen)",
+      "Ring Elite 4K (140, 180, 270, 360)",
+      "Smart Lighting Bridge",
+      "Spotlight Cam 4K Pro",
+      "Stick Up Cam (2nd Gen), Wired",
+      "Wired Doorbell Plus (formerly Video Doorbell Pro)",
+      "Wired Doorbell Pro (formerly Video Doorbell Pro 2 (2nd Generation))"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "d5452222fc24c8c88854b92601836521503a7c33d262550e8bc5e56fc4b0cffd"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "fd2f4f64c7db9f2de269d2a91e4231b21b76f588686fe6ea704677bbfe17083c"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "be7f531b4a61d9042b406037a03b92dac8f8b054c605686838defe1d079002f2"
-    }
+    ]
   },
   "https://ring.com/support/articles/ri2p1/Information-on-Ring-Devices-Software-Security-Updates": {
     "vendor": "Ring",
-    "kind": "text",
-    "fingerprint": "d5452222fc24c8c88854b92601836521503a7c33d262550e8bc5e56fc4b0cffd",
+    "kind": "rows",
+    "fingerprint": "939962a355537e1657f3fc8eb94de562dd00fb1b013e6a32f315b1ce19a057aa",
+    "lines": [
+      "Chime Pro (1st Gen)",
+      "Floodlight Cam",
+      "Floodlight Cam 2K",
+      "Floodlight Cam 4K Pro",
+      "Floodlight Cam Plus",
+      "Floodlight Cam Pro",
+      "Indoor Cam (1st Gen) - Black, White",
+      "Spotlight Cam (1st Gen), Battery",
+      "Stick Up Cam (2nd Gen), Battery",
+      "Video Doorbell (1st Generation) - Satin Nickel, Venetian Bronze (discontinued)",
+      "Video Doorbell (2nd Generation) - Satin Nickel, Venetian Bronze",
+      "Video Doorbell 2",
+      "Video Doorbell 3",
+      "Video Doorbell 3 Plus (discontinued)",
+      "Video Doorbell 4 (2021 release)"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "d5452222fc24c8c88854b92601836521503a7c33d262550e8bc5e56fc4b0cffd"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "939962a355537e1657f3fc8eb94de562dd00fb1b013e6a32f315b1ce19a057aa"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "be7f531b4a61d9042b406037a03b92dac8f8b054c605686838defe1d079002f2"
-    }
+    ]
   },
   "https://ring.com/support/articles/h4rub/end-of-device-support": {
     "vendor": "Ring",
-    "kind": "text",
-    "fingerprint": "499a09318305b3da809b776889455b8a62a2d8b398e1b44a79d155da073c6356",
+    "kind": "rows",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": [],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "499a09318305b3da809b776889455b8a62a2d8b398e1b44a79d155da073c6356"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "6885c9c8ae45e4751b0bc74d67bfac25b3b4b9e40eb1914a31918641669550f5"
-    }
+    ]
   },
   "https://kb.shelly.cloud/__attachments/a_aef2d6c40f5fe3a3fea22c215e99ab0ed32f716e526bf17649f9f8e5204f6f50/Shelly%201%20Gen3%20UK%20PSTI%20ACT%20statement%20of%20compliance%20268%202026-03-13.pdf?cb=8b42b9fa8af21c89f5a9d7c0e38a31d4": {
     "vendor": "Shelly",
@@ -2429,61 +4166,93 @@
   },
   "https://kb.synology.com/en-global/WP/Software_Life_Cycle_Policy/4": {
     "vendor": "Synology",
-    "kind": "text",
-    "fingerprint": "38e1670e6d1dd78049a4623ef9a5e70682b7745adce220b6523d33907952cebf",
+    "kind": "rows",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": [],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "38e1670e6d1dd78049a4623ef9a5e70682b7745adce220b6523d33907952cebf"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
     ]
   },
   "https://kb.synology.com/en-global/WP/Software_Life_Cycle_Policy/6": {
     "vendor": "Synology",
-    "kind": "text",
-    "fingerprint": "38e1670e6d1dd78049a4623ef9a5e70682b7745adce220b6523d33907952cebf",
+    "kind": "rows",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": [],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "38e1670e6d1dd78049a4623ef9a5e70682b7745adce220b6523d33907952cebf"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
     ]
   },
   "https://www.synology.com/en-global/products/status": {
     "vendor": "Synology",
-    "kind": "text",
-    "fingerprint": "21acbf5a008ad511ece4f280a135f9887e333958406b6b4d604254fb11244ceb",
+    "kind": "rows",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": [],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "21acbf5a008ad511ece4f280a135f9887e333958406b6b4d604254fb11244ceb"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
     ]
   },
   "https://www.synology.com/en-global/products/status/eol-dsm62": {
     "vendor": "Synology",
-    "kind": "text",
-    "fingerprint": "986801746fde89a895e3445bc3586f2c6b0b9c96d8c8c63a44c2363f2012331d",
+    "kind": "rows",
+    "fingerprint": "23bac186c3a452f50493d40dc2240076caf6a4c57c66d15625b30c06c7048347",
+    "lines": [
+      "J Series : DS413j, DS411j, DS411slim, DS213air, DS212j, DS211j, DS112j",
+      "J Series: DS213j, DS414slim, DS414j, DS214se, DS215j, DS115j, DS216se",
+      "Others : NVR216, NVR1218, DDSM",
+      "Plus Series : RS2212+, RS2212RP+, RS2211+, RS2211RP+, RS812+, RS812RP+, DS2411+, DS1812+, DS1512+, DS1511+, DS712+, DS412+, DS411+II, DS411+, DS213+, DS212+, DS211+, DS112+",
+      "Value Series : RS812, RS212, RS411, DS413, DS411, DS213, DS212, DS211, DS112, DS111",
+      "XS Series : RS3412xs, RS3412RPxs, RS3411xs, RS3411RPxs, DS3612xs, DS3611xs"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "986801746fde89a895e3445bc3586f2c6b0b9c96d8c8c63a44c2363f2012331d"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "23bac186c3a452f50493d40dc2240076caf6a4c57c66d15625b30c06c7048347"
       }
     ]
   },
   "https://kb.synology.com/en-global/WP/Software_Life_Cycle_Policy/2": {
     "vendor": "Synology",
-    "kind": "text",
-    "fingerprint": "38e1670e6d1dd78049a4623ef9a5e70682b7745adce220b6523d33907952cebf",
+    "kind": "rows",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": [],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "38e1670e6d1dd78049a4623ef9a5e70682b7745adce220b6523d33907952cebf"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
     ]
   },
@@ -2561,41 +4330,364 @@
   },
   "https://teltonika-networks.com/support/eol-products": {
     "vendor": "Teltonika",
-    "kind": "text",
-    "fingerprint": "6d917646ae4b7d2df88836593c56dd7de1eb2a8ac6f4d3d0f59991620181e74e",
+    "kind": "rows",
+    "fingerprint": "282a2fcf4c71d98de435283dc9e8c498c07f024efb9b6b58a5dd29d2841f581d",
+    "lines": [
+      "01/06/2012",
+      "01/06/2015",
+      "01/06/2016",
+      "01/06/2017",
+      "01/06/2018",
+      "01/06/2019",
+      "03/01/2031",
+      "03/06/2017",
+      "03/08/2032",
+      "11/11/2017",
+      "13/06/2030",
+      "14/07/2018",
+      "15/12/2022",
+      "19/03/2013",
+      "20/11/2013",
+      "31/03/2030",
+      "31/07/2028",
+      "31/12/2022",
+      "GM6223/6225/6235/6238",
+      "RUT104",
+      "RUT105",
+      "RUT110",
+      "RUT230",
+      "RUT240",
+      "RUT300",
+      "RUT360",
+      "RUT425/423/435/438",
+      "RUT500",
+      "RUT523/525/535/538",
+      "RUT523U/525U/535U/538U",
+      "RUT550",
+      "RUT700",
+      "RUT723/725/735/738",
+      "RUT750",
+      "RUT850",
+      "RUT900",
+      "RUT905",
+      "RUT950",
+      "RUT955",
+      "RUTX08",
+      "RUTX09",
+      "RUTX10",
+      "RUTX11",
+      "RUTX12",
+      "RUTX14",
+      "RUTX50",
+      "RUTXR1",
+      "TCR100",
+      "TRB245",
+      "TRB255",
+      "TRB500",
+      "UM6223/6225/6235/6238"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "6d917646ae4b7d2df88836593c56dd7de1eb2a8ac6f4d3d0f59991620181e74e"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "282a2fcf4c71d98de435283dc9e8c498c07f024efb9b6b58a5dd29d2841f581d"
       }
     ]
   },
   "https://www.tendacn.com/product/eol": {
     "vendor": "Tenda",
-    "kind": "text",
-    "fingerprint": "675decc82a932a29bcff1f95af576972325a88d30ab72ea8592c63ae272eaa95",
+    "kind": "rows",
+    "fingerprint": "3fadbbf465152ca84b790ab4fbc750364c00db675d0525b234824dcc484d0e3b",
+    "lines": [
+      "1 EE6 Pro EOL",
+      "1 | EE6 Pro | 2025-12-31 | 2026-05-28 | EOL",
+      "10 K4P-4TR EOL",
+      "10 | K4P-4TR | 2025-12-31 | 2028-12-30 | EOL",
+      "100 TEF1024D EOL",
+      "100 | TEF1024D | 2023-06-30 | 2025-06-30 | EOL",
+      "101 TEF1110P-8-102W EOL",
+      "101 | TEF1110P-8-102W | 2023-05-31 | 2024-06-30 | EOL",
+      "102 TEG1016D v6.0 EOL",
+      "102 | TEG1016D v6.0 | 2023-06-30 | 2025-06-30 | EOL",
+      "103 TEG1024D v7.0 EOL",
+      "103 | TEG1024D v7.0 | 2023-06-30 | 2025-06-30 | EOL",
+      "104 TEF1105P-4-38W EOL",
+      "104 | TEF1105P-4-38W | 2023-08-31 | 2025-08-31 | EOL",
+      "105 TEG1116P-16-150W EOL",
+      "105 | TEG1116P-16-150W | 2023-06-30 | 2025-06-30 | EOL",
+      "106 TEG1124P-24-250W EOL",
+      "106 | TEG1124P-24-250W | 2023-06-30 | 2025-06-30 | EOL",
+      "107 TEF1026F EOL",
+      "107 | TEF1026F | 2022-10-31 | 2024-10-31 | EOL",
+      "108 TEG1109P-8-102W EOL",
+      "108 | TEG1109P-8-102W | 2023-06-30 | 2025-06-30 | EOL",
+      "11 K4P-4CR EOL",
+      "11 | K4P-4CR | 2025-12-31 | 2028-12-30 | EOL",
+      "110 TEF1109TP-8-102W EOL",
+      "110 | TEF1109TP-8-102W | 2023-06-30 | 2025-06-30 | EOL",
+      "111 TEF1109DT EOL",
+      "111 | TEF1109DT | 2022-10-31 | 2024-10-31 | EOL",
+      "112 TEF1118P-16-250W EOL",
+      "112 | TEF1118P-16-250W | 2022-12-31 | 2024-12-31 | EOL",
+      "113 TEG5312F EOL",
+      "113 | TEG5312F | 2024-05-31 | 2026-05-31 | EOL",
+      "114 TEF1126P-24-410W EOL",
+      "114 | TEF1126P-24-410W | 2022-12-31 | 2024-12-31 | EOL",
+      "117 TEG1126P-24-410W EOL",
+      "117 | TEG1126P-24-410W | 2024-06-30 | 2026-06-30 | EOL",
+      "118 TEG1118P-16-250W EOL",
+      "118 | TEG1118P-16-250W | 2024-06-30 | 2026-06-30 | EOL",
+      "12 IT7-PCS EOL",
+      "12 | IT7-PCS | 2025-12-31 | 2028-12-30 | EOL",
+      "121 G103 EOL",
+      "121 | G103 | 2023-10-15 | 2025-10-15 | EOL",
+      "122 TX2 Pro EOL",
+      "122 | TX2 Pro | 2025-10-01 | 2026-01-01 | EOL",
+      "123 RX2 Pro EOL",
+      "123 | RX2 Pro | 2025-08-01 | 2026-02-01 | EOL",
+      "125 N3L-4H V1.0 EOL",
+      "125 | N3L-4H V1.0 | 2023-12-31 | 2026-12-30 | EOL",
+      "126 N3L-8H V1.0 EOL",
+      "126 | N3L-8H V1.0 | 2023-12-31 | 2026-12-30 | EOL",
+      "127 K4W-3TC v1.0 EOL",
+      "127 | K4W-3TC v1.0 | 2023-06-30 | 2026-06-30 | EOL",
+      "128 CH3-WCA V1.0 EOL",
+      "128 | CH3-WCA V1.0 | 2024-12-31 | 2027-12-31 | EOL",
+      "129 CH7-WCA V1.0 EOL",
+      "129 | CH7-WCA V1.0 | 2024-12-31 | 2027-12-31 | EOL",
+      "13 EX12 3-Pack EOL",
+      "13 | EX12 3-Pack | 2025-12-31 | 2026-05-28 | EOL",
+      "130 RH7-WCA V1.0 EOL",
+      "130 | RH7-WCA V1.0 | 2024-12-31 | 2027-12-31 | EOL",
+      "131 4G07 EOL",
+      "131 | 4G07 | 2026-10-30 | 2027-10-30 | EOL",
+      "132 4G03 EOL",
+      "132 | 4G03 | 2026-10-30 | 2027-10-30 | EOL",
+      "133 4G09 EOL",
+      "133 | 4G09 | 2026-10-30 | 2027-10-30 | EOL",
+      "134 ME3 Pro 3-Pack EOL",
+      "134 | ME3 Pro 3-Pack | 2026-08-27 | 2026-08-27 | EOL",
+      "137 SG04 EOL",
+      "137 | SG04 | 2025-12-31 | 2028-12-31 | EOL",
+      "14 EX12 2-Pack EOL",
+      "14 | EX12 2-Pack | 2025-12-31 | 2026-05-28 | EOL",
+      "140 TX9v EOL",
+      "140 | TX9v | 2022-05-18 | 2024-05-18 | EOL",
+      "141 5G06-Outdoor EOL",
+      "141 | 5G06-Outdoor | 2022-05-18 | 2024-05-18 | EOL",
+      "143 FH1202 V2.0 EOL",
+      "143 | FH1202 V2.0 | 2014-02-28 | 2015-02-28 | EOL",
+      "15 EX12 1-Pack EOL",
+      "15 | EX12 1-Pack | 2025-12-31 | 2026-05-28 | EOL",
+      "16 N6P-16H EOL",
+      "16 | N6P-16H | 2024-06-30 | 2027-06-30 | EOL",
+      "18 N6P-8H EOL",
+      "18 | N6P-8H | 2025-12-31 | 2028-12-30 | EOL",
+      "19 IT7-PRS EOL",
+      "19 | IT7-PRS | 2025-12-31 | 2028-12-30 | EOL",
+      "2 R10（White） V1.0 EOL",
+      "2 | R10（White） V1.0 | 2025-11-28 | 2026-05-28 | EOL",
+      "20 N6P-4H EOL",
+      "20 | N6P-4H | 2025-12-31 | 2028-12-30 | EOL",
+      "23 IC7-PRS EOL",
+      "23 | IC7-PRS | 2025-12-31 | 2028-12-30 | EOL",
+      "25 N3L-16H EOL",
+      "25 | N3L-16H | 2025-12-31 | 2028-12-30 | EOL",
+      "26 N3L-8H V2.0 EOL",
+      "26 | N3L-8H V2.0 | 2025-12-31 | 2028-12-30 | EOL",
+      "27 N3L-4H V2.0 EOL",
+      "27 | N3L-4H V2.0 | 2025-12-31 | 2028-12-30 | EOL",
+      "28 K4W-3TC V2.0 EOL",
+      "28 | K4W-3TC V2.0 | 2025-12-31 | 2028-12-30 | EOL",
+      "29 TES7008 v1 EOL",
+      "29 | TES7008 v1 | 2023-06-30 | 2023-06-30 | EOL",
+      "32 PH10 EOL",
+      "32 | PH10 | 2024-03-31 | 2025-03-31 | EOL",
+      "40 RP3 Pro V1.0 EOL",
+      "40 | RP3 Pro V1.0 | 2024-12-31 | 2027-12-31 | EOL",
+      "41 CP3 Pro V1.0 EOL",
+      "41 | CP3 Pro V1.0 | 2024-12-31 | 2027-12-31 | EOL",
+      "42 RX27 Pro EOL",
+      "42 | RX27 Pro | 2025-10-01 | 2025-11-13 | EOL",
+      "43 TX27 Pro EOL",
+      "43 | TX27 Pro | 2025-12-01 | 2026-01-06 | EOL",
+      "44 RX12 Pro v1.0 EOL",
+      "44 | RX12 Pro v1.0 | 2025-08-01 | 2026-02-01 | EOL",
+      "45 TX12 EOL",
+      "45 | TX12 | 2025-12-03 | 2025-12-31 | EOL",
+      "46 TX12 Pro (white) v2.0 EOL",
+      "46 | TX12 Pro (white) v2.0 | 2025-11-01 | 2026-02-01 | EOL",
+      "49 RH3-WCA V1.0 EOL",
+      "49 | RH3-WCA V1.0 | 2024-12-31 | 2027-12-31 | EOL",
+      "5 EE3 Pro 3-Pack EOL",
+      "5 | EE3 Pro 3-Pack | 2025-12-31 | 2026-05-28 | EOL",
+      "52 4G06c EOL",
+      "52 | 4G06c | 2024-02-10 | 2026-02-10 | EOL",
+      "53 V1200 EOL",
+      "53 | V1200 | 2022-08-20 | 2024-08-20 | EOL",
+      "54 D305 EOL",
+      "54 | D305 | 2022-08-20 | 2024-08-20 | EOL",
+      "55 V300 v3.0 EOL",
+      "55 | V300 v3.0 | 2022-08-20 | 2024-08-20 | EOL",
+      "56 D301 v4.0 EOL",
+      "56 | D301 v4.0 | 2022-08-20 | 2024-08-20 | EOL",
+      "57 D151 v2.0 EOL",
+      "57 | D151 v2.0 | 2022-08-20 | 2024-08-20 | EOL",
+      "58 P1002P EOL",
+      "58 | P1002P | 2024-03-31 | 2025-03-30 | EOL",
+      "59 P200KIT EOL",
+      "59 | P200KIT | 2024-03-31 | 2025-03-31 | EOL",
+      "6 TEG2224D EOL",
+      "6 | TEG2224D | 2025-12-31 | 2027-12-31 | EOL",
+      "60 P200 EOL",
+      "60 | P200 | 2023-03-31 | 2024-03-31 | EOL",
+      "62 PW201A+P200 Kit EOL",
+      "62 | PW201A+P200 Kit | 2022-10-31 | 2023-10-31 | EOL",
+      "63 PW201A EOL",
+      "63 | PW201A | 2022-10-31 | 2024-10-31 | EOL",
+      "64 AC23 EOL",
+      "64 | AC23 | 2025-02-01 | 2025-08-01 | EOL",
+      "65 TX12 Pro v1.0 EOL",
+      "65 | TX12 Pro v1.0 | 2025-01-01 | 2025-06-01 | EOL",
+      "67 TX9 Pro EOL",
+      "67 | TX9 Pro | 2022-12-01 | 2023-06-01 | EOL",
+      "68 U18a EOL",
+      "68 | U18a | 2025-07-01 | 2026-01-01 | EOL",
+      "7 K8W-3TC V2.0 EOL",
+      "7 | K8W-3TC V2.0 | 2025-12-31 | 2028-12-30 | EOL",
+      "72 AC10U EOL",
+      "72 | AC10U | 2023-06-30 | 2024-06-30 | EOL",
+      "73 AC10 v4.0 EOL",
+      "73 | AC10 v4.0 | 2025-01-01 | 2026-01-01 | EOL",
+      "74 AC11 EOL",
+      "74 | AC11 | 2022-09-30 | 2023-09-30 | EOL",
+      "8 K8P-4CR EOL",
+      "8 | K8P-4CR | 2025-12-31 | 2028-12-30 | EOL",
+      "80 AC11 V2.0 EOL",
+      "80 | AC11 V2.0 | 2025-02-28 | 2025-12-31 | EOL",
+      "81 FH456 EOL",
+      "81 | FH456 | 2020-08-31 | 2021-08-31 | EOL",
+      "82 TEG1005D v1.0 EOL",
+      "82 | TEG1005D v1.0 | 2022-12-31 | 2023-12-31 | EOL",
+      "83 TEG1024F EOL",
+      "83 | TEG1024F | 2023-06-30 | 2025-06-30 | EOL",
+      "84 A301 v2.0 EOL",
+      "84 | A301 v2.0 | 2020-07-02 | 2021-07-02 | EOL",
+      "85 TEF1109P-8-102W EOL",
+      "85 | TEF1109P-8-102W | 2023-06-30 | 2025-06-30 | EOL",
+      "86 TEG3224P EOL",
+      "86 | TEG3224P | 2021-05-31 | 2023-05-31 | EOL",
+      "87 TEF1226P-24-410W EOL",
+      "87 | TEF1226P-24-410W | 2021-05-31 | 2023-05-31 | EOL",
+      "88 TEF1218P-16-250W EOL",
+      "88 | TEF1218P-16-250W | 2021-05-31 | 2023-05-31 | EOL",
+      "89 TEF1210P-8-150W EOL",
+      "89 | TEF1210P-8-150W | 2020-05-31 | 2021-06-30 | EOL",
+      "9 K8P-4TR EOL",
+      "9 | K8P-4TR | 2025-12-31 | 2028-12-30 | EOL",
+      "90 TEG3210P EOL",
+      "90 | TEG3210P | 2021-05-31 | 2023-05-31 | EOL",
+      "91 TEG5310P-8-150W EOL",
+      "91 | TEG5310P-8-150W | 2024-05-31 | 2026-05-31 | EOL",
+      "93 AC8-C EOL",
+      "93 | AC8-C | 2021-06-30 | 2022-06-30 | EOL",
+      "94 TEM2010F EOL",
+      "94 | TEM2010F | 2023-12-31 | 2025-12-31 | EOL",
+      "96 TEG1110PF-8-102W EOL",
+      "96 | TEG1110PF-8-102W | 2024-07-31 | 2025-12-31 | EOL",
+      "99 TEF1016D EOL",
+      "99 | TEF1016D | 2023-06-30 | 2025-06-30 | EOL",
+      "End of service date 2015-02-28",
+      "End of service date 2021-06-30",
+      "End of service date 2021-07-02",
+      "End of service date 2021-08-31",
+      "End of service date 2021-10-07",
+      "End of service date 2021-10-31",
+      "End of service date 2022-04-01",
+      "End of service date 2022-06-30",
+      "End of service date 2023-05-31",
+      "End of service date 2023-06-01",
+      "End of service date 2023-06-30",
+      "End of service date 2023-09-30",
+      "End of service date 2023-10-31",
+      "End of service date 2023-12-31",
+      "End of service date 2024-03-31",
+      "End of service date 2024-04-29",
+      "End of service date 2024-05-18",
+      "End of service date 2024-06-30",
+      "End of service date 2024-08-20",
+      "End of service date 2024-10-31",
+      "End of service date 2024-12-31",
+      "End of service date 2025-03-30",
+      "End of service date 2025-03-31",
+      "End of service date 2025-06-01",
+      "End of service date 2025-06-30",
+      "End of service date 2025-08-01",
+      "End of service date 2025-08-31",
+      "End of service date 2025-10-15",
+      "End of service date 2025-11-13",
+      "End of service date 2025-12-01",
+      "End of service date 2025-12-04",
+      "End of service date 2025-12-31",
+      "End of service date 2026-01-01",
+      "End of service date 2026-01-06",
+      "End of service date 2026-01-31",
+      "End of service date 2026-02-01",
+      "End of service date 2026-02-10",
+      "End of service date 2026-02-16",
+      "End of service date 2026-03-03",
+      "End of service date 2026-05-27",
+      "End of service date 2026-05-28",
+      "End of service date 2026-05-31",
+      "End of service date 2026-06-30",
+      "End of service date 2026-08-16",
+      "End of service date 2026-08-27",
+      "End of service date 2026-08-31",
+      "End of service date 2026-10-31",
+      "End of service date 2026-12-30",
+      "End of service date 2026-12-31",
+      "End of service date 2027-02-28",
+      "End of service date 2027-06-30",
+      "End of service date 2027-10-30",
+      "End of service date 2027-12-31",
+      "End of service date 2028-12-30",
+      "End of service date 2028-12-31"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "675decc82a932a29bcff1f95af576972325a88d30ab72ea8592c63ae272eaa95"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "3fadbbf465152ca84b790ab4fbc750364c00db675d0525b234824dcc484d0e3b"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "800ef54a8b6792e7f270c9c415c1690d59132790ba5ccf72b87738e12ae949ed"
-    }
+    ]
   },
   "https://www.terra-master.com/blogs/news/technical-support": {
     "vendor": "TerraMaster",
-    "kind": "text",
-    "fingerprint": "d63106d27c726abcff5d720fc8fc056e6fc67c90eb23c4a994b434efca3530ec",
+    "kind": "rows",
+    "fingerprint": "4b8170a2304d1e5422ce895c9e419c5c82f4536d871aa603ce17cbb1eb35b0a4",
+    "lines": [
+      "F2-NAS 2 can be replaced with F2-221",
+      "F4-NAS can be replaced with F5-221For replacement costs and implementation details, please contact TerraMaster's after-sales service team.",
+      "The following products have been on the market for more than 7 years, and it has been 3 years since the products were discontinued. The hardware configuration of these products can no longer meet the latest system requirements. Meanwhile, spare parts are no longer available to provide users with mai",
+      "The product models involved are: F2-NAS, F2-NAS 2, F4-NAS"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "d63106d27c726abcff5d720fc8fc056e6fc67c90eb23c4a994b434efca3530ec"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "4b8170a2304d1e5422ce895c9e419c5c82f4536d871aa603ce17cbb1eb35b0a4"
       }
     ]
   },
@@ -2613,61 +4705,132 @@
   },
   "https://www.westerndigital.com/support/software/product-life-cycle-policy": {
     "vendor": "WD",
-    "kind": "text",
-    "fingerprint": "908517fc7632c2b39fe56142661cbe788f9e11e8cff8eacd2ac2e5c33743e3fa",
+    "kind": "rows",
+    "fingerprint": "7f0bd5d5577d250e265dddb501e1928107cdeec29870678e4e336ddb62d69c00",
+    "lines": [
+      "End of Updates and End of Support . Nine years after a product’s release, we may discontinue all updates, including critical software security updates. Western Digital may also discontinue cloud service support for a product in this phase. If a product feature depends on cloud services to function, ",
+      "My Book Live",
+      "My Book Live | ⏹️ My Book Live | End of Updates and End of Support",
+      "My Book World | ⏹️ My Book World (Blue Rings) | End of Updates and End of Support",
+      "My Cloud Home",
+      "My Cloud Home | ☑️ My Cloud Home | October 2017 - December 2027",
+      "My Cloud | ⏸ My Cloud EX2 Ultra | February 2016 - December 2027",
+      "My Passport Wireless",
+      "My Passport Wireless | ⏹️ My Passport Wireless | August 2014 - August 2022",
+      "WD Arkeia | ⏹️ WD Arkeia DA1300 | End of Updates and End of Support",
+      "WD Cloud | ⏸ WD Cloud (Japan) | April 2015 - December 2027",
+      "WD Live Wire | ⏹️ WD Live Wire | End of Updates and End of Support",
+      "WD Media Center | ⏹️ Dual Option Media Center | End of Updates and End of Support",
+      "WD My Net | ⏹️ My Net N600 | End of Updates and End of Support",
+      "WD NetCenter | ⏹️ WD NetCenter | End of Updates and End of Support",
+      "WD Option | ⏹️ Dual Option Combo | End of Updates and End of Support",
+      "WD Sentinel | ⏹️ WD Sentinel DX4000 | End of Updates and End of Support",
+      "WD Sharespace | ⏹️ WD ShareSpace | End of Updates and End of Support",
+      "⏸ My Cloud (P/N: WDBCTLxxxxxxx-10) | October 2015 - December 2027",
+      "⏸ My Cloud DL2100 | February 2015 - December 2027",
+      "⏸ My Cloud DL4100 | February 2015 - December 2027",
+      "⏸ My Cloud EX2100 | February 2015 - December 2027",
+      "⏸ My Cloud EX4100 | February 2015 - December 2027",
+      "⏸ My Cloud Mirror Gen 2 | September 2015 - December 2027",
+      "⏸ My Cloud PR2100 | June 2016 - December 2027",
+      "⏸ My Cloud PR4100 | June 2016 - December 2027",
+      "⏹️ Dual Option USB | End of Updates and End of Support",
+      "⏹️ My Book Live Duo | End of Updates and End of Support",
+      "⏹️ My Book World (White Light) | End of Updates and End of Support",
+      "⏹️ My Book World II (Blue Rings) | End of Updates and End of Support",
+      "⏹️ My Book World II (White Light) | End of Updates and End of Support",
+      "⏹️ My Net AC Bridge | End of Updates and End of Support",
+      "⏹️ My Net AC1300 | End of Updates and End of Support",
+      "⏹️ My Net N750 | End of Updates and End of Support",
+      "⏹️ My Net N900 Central | End of Updates and End of Support",
+      "⏹️ My Net N900 | End of Updates and End of Support",
+      "⏹️ My Net Switch | End of Updates and End of Support",
+      "⏹️ My Net WiFi Range Extender | End of Updates and End of Support",
+      "⏹️ My Passport Wireless Pro | June 2016 - December 2024",
+      "⏹️ WD Arkeia DA2300 | End of Updates and End of Support",
+      "⏹️ WD Arkeia RA4300 | End of Updates and End of Support",
+      "⏹️ WD Arkeia RA4300T | End of Updates and End of Support",
+      "⏹️ WD Arkeia RA5300 | End of Updates and End of Support",
+      "⏹️ WD Arkeia RA6300 | End of Updates and End of Support",
+      "⏹️ WD Sentinel DS5100 | End of Updates and End of Support",
+      "⏹️ WD Sentinel DS6100 | End of Updates and End of Support",
+      "⏹️ WD Sentinel DX4200 | End of Updates and End of Support",
+      "⏹️ WD Sentinel RX4100 | End of Updates and End of Support",
+      "☑️ = Standard Updates | ⏸ = Limited Updates | ⏹️ = End of Updates and End of Support",
+      "☑️ My Cloud Home Duo | October 2017 - December 2027"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "908517fc7632c2b39fe56142661cbe788f9e11e8cff8eacd2ac2e5c33743e3fa"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "7f0bd5d5577d250e265dddb501e1928107cdeec29870678e4e336ddb62d69c00"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "6c439819a861fa9d21a8dbcff6be02340bfa78c64b1c4859350af0540f7ffd2d"
-    }
+    ]
   },
   "https://www.westerndigital.com/support/software/my-cloud-os/os3/os3-eos": {
     "vendor": "WD",
-    "kind": "text",
-    "fingerprint": "1b07f474f6d17a949e2e76c4e0852fa5256b8a8d993c07a64ff222e3ac987b70",
+    "kind": "rows",
+    "fingerprint": "dbb9ce90907e705cbe42701dcf043185654fd7b3ddae05ab2b016098e2c7df80",
+    "lines": [
+      "1. Offer valid only for the purchase of one of the following qualifying products: My Cloud Home (8TB), My Cloud EX2 Ultra (16TB, 24TB, 28TB) or My Book (12 TB). Sales quantities are limited to a maximum of 1 per customer. Offer is only valid while supplies last. This offer may not be combined, used ",
+      "My Cloud (P/N: WDBCTLxxxxxxx-00)",
+      "My Cloud EX2",
+      "My Cloud EX2 Ultra",
+      "My Cloud EX2100",
+      "My Cloud EX4",
+      "My Cloud EX4100",
+      "My Cloud Mirror",
+      "My Cloud Mirror Gen2"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "1b07f474f6d17a949e2e76c4e0852fa5256b8a8d993c07a64ff222e3ac987b70"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "dbb9ce90907e705cbe42701dcf043185654fd7b3ddae05ab2b016098e2c7df80"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "ded8f36ad73a0ff0fde299535644ecb2e7832c24ba35b9235efaca9ad4daff8b"
-    }
+    ]
   },
   "https://www.wyze.com/pages/response-to-3-29-22-security-report": {
     "vendor": "Wyze",
-    "kind": "text",
-    "fingerprint": "9b5dac93554709cb7dda3c302c61bfe4fb4f39be88b051decc9aa2b94d5bd533",
+    "kind": "rows",
+    "fingerprint": "5e0910e1688f83416aed9381d6223cb77eec021a6c5575fa7ddc4df5253b1570",
+    "lines": [
+      "Unfortunately, despite extensive efforts stretching into 2022, we found Wyze Cam v1 (last sold in March 2018) couldn’t support the necessary security updates. The limited camera memory that prompted us to create Wyze Cam v2 directly prevented patching these issues on that product. We were transparen"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "9b5dac93554709cb7dda3c302c61bfe4fb4f39be88b051decc9aa2b94d5bd533"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "5e0910e1688f83416aed9381d6223cb77eec021a6c5575fa7ddc4df5253b1570"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "a50ff9dab2139471ace73d104d92cd9529518a534e7c6e26a7c7e7c87b4ff864"
-    }
+    ]
   },
   "https://trust.mi.com/misrc/updates/iot": {
     "vendor": "Xiaomi",
-    "kind": "text",
-    "fingerprint": "29734cff4118c0f10f8022006a577570a6d2fee44ba69270007a97ce9d7d5b28",
+    "kind": "rows",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": [],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "29734cff4118c0f10f8022006a577570a6d2fee44ba69270007a97ce9d7d5b28"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
     ]
   },
@@ -2697,31 +4860,263 @@
   },
   "https://www.zyxel.com/service-provider/global/en/end-of-life": {
     "vendor": "Zyxel",
-    "kind": "text",
-    "fingerprint": "fe3f646e73243f6df0f2a1d91dc2ab25cccb16e5338050db6e4653b074cec664",
+    "kind": "rows",
+    "fingerprint": "86536c9ffb2052346544efc0239625ec3e2dfa738298bc9672776eda2e733af4",
+    "lines": [
+      "2016-12-26",
+      "2017-08-29",
+      "2017-10-29",
+      "2018-03-26",
+      "2018-03-31",
+      "2018-05-27",
+      "2018-12-08",
+      "2019-06-28",
+      "2019-09-10",
+      "2019-09-30",
+      "2020-01-01",
+      "2020-03-20",
+      "2020-04-15",
+      "2020-06-30",
+      "2020-07-30",
+      "2020-12-28",
+      "2021-04-30",
+      "2022-04-24",
+      "2022-05-29",
+      "2022-07-01",
+      "2022-09-15",
+      "2022-10-31",
+      "2022-12-30",
+      "2023-02-05",
+      "2023-03-15",
+      "2023-03-31",
+      "2023-04-23",
+      "2023-04-29",
+      "2023-07-29",
+      "2023-11-30",
+      "2023-12-31",
+      "2024-03-31",
+      "2024-04-30",
+      "2024-06-15",
+      "2024-07-05",
+      "2024-08-30",
+      "2024-10-13",
+      "2024-12-30",
+      "2025-05-31",
+      "2025-08-30",
+      "2025-11-03",
+      "2025-12-01",
+      "2025-12-02",
+      "2025-12-30",
+      "2026-03-12",
+      "2026-03-15",
+      "2026-06-30",
+      "2026-07-31",
+      "2027-03-22",
+      "2027-06-21",
+      "2027-08-21",
+      "2027-12-11",
+      "2027-12-31",
+      "2028-06-30",
+      "2028-09-30",
+      "2028-10-14",
+      "2028-10-29",
+      "2028-12-05",
+      "2028-12-31",
+      "2029-01-30",
+      "2029-03-06",
+      "2029-10-07",
+      "2029-10-30",
+      "2030-09-30",
+      "AMG1001-T10A",
+      "AMG1202-T10B",
+      "AMG1302-T10B",
+      "AMG1302-T11C",
+      "AMG1312-T10B",
+      "AX7501-B0",
+      "AX7501-B1",
+      "DM4200-B0",
+      "DX4510-B0",
+      "DX5401-B0",
+      "DX5401-B1",
+      "DX5510-B0",
+      "EE6601-00",
+      "EMG1202-R10A",
+      "EMG1302-R10A",
+      "EMG2306-R10A",
+      "EMG2881-T20A",
+      "EMG2926-Q10A",
+      "EMG3425-Q10A",
+      "EMG3524-T10A",
+      "EMG3525-T50B",
+      "EMG3525-T50C",
+      "EMG5324-D10A",
+      "EMG5523-T50B",
+      "EMG5723-T50K",
+      "EMG6726-B10A",
+      "EMG6765-Q10A",
+      "EMG8726-B10A",
+      "EP240P",
+      "EX3510-B0",
+      "EX3510-B1",
+      "EX5401-B0",
+      "EX5401-B1",
+      "EX5410-B0",
+      "EX5501-B0",
+      "EX5510-B0",
+      "EX7501-B0",
+      "EX7710-B0",
+      "FMG3005-R20A",
+      "FMG3010-R20A",
+      "FMG3024-D10A",
+      "FMG3025-D10A",
+      "GM4100-B0",
+      "GS-108I",
+      "GS1200-5",
+      "GS1200-5v3",
+      "GS1200-8",
+      "GS1200-8v3",
+      "HLA4205",
+      "LTE3202-M430",
+      "LTE3301-PLUS",
+      "LTE3301-Q222",
+      "LTE3311-Q222",
+      "LTE4506-M606",
+      "LTE5388-S905",
+      "LTE6100",
+      "LTE6101",
+      "LTE7410-A214",
+      "LTE7460-M608",
+      "LTE7461-M602",
+      "LTE7480-S905",
+      "LTE7485-S905",
+      "NR2301",
+      "P-660HN-51",
+      "P-660HNU-F1",
+      "P-660HU-T1",
+      "P-791R v3",
+      "P-792H v3",
+      "P-793H v3",
+      "P-873HNU-51B",
+      "PM5100-T0",
+      "PM7010-R0",
+      "PM7320-B0",
+      "PM7510-R0",
+      "PMG1005-T20A",
+      "PMG1005-T20B",
+      "PMG1005-T20C",
+      "PMG1006-B20A",
+      "PMG2005-T20B",
+      "PMG2005-T20E",
+      "PMG2006-T20A",
+      "PMG5317-T20A",
+      "PMG5317-T20B",
+      "PMG5318-B20A",
+      "PMG5318-B20B",
+      "PMG5617-T20B2",
+      "PMG5617GA",
+      "PMG5622GA",
+      "PX5301-T0",
+      "PX7501-B0",
+      "SBG3300-N000",
+      "SBG3300-NB00",
+      "SBG3310-A",
+      "SBG3500-N",
+      "SBG3500-NB",
+      "SBG3600-N000",
+      "SBG5500-A",
+      "SBG5500-B",
+      "VMG1312-B10A",
+      "VMG1312-B10D",
+      "VMG1312-B30A",
+      "VMG1312-T20A",
+      "VMG1312-T20B",
+      "VMG3312-T20A",
+      "VMG3625-T20A",
+      "VMG3625-T50B",
+      "VMG3625-T50C",
+      "VMG3925-B10A",
+      "VMG3925-B10B",
+      "VMG3925-B10C",
+      "VMG3926-B10A",
+      "VMG3927-B50A",
+      "VMG3927-B50B",
+      "VMG3927-T50K",
+      "VMG4005-B50A",
+      "VMG4005-B50B",
+      "VMG4005-B60A",
+      "VMG4325-B10A",
+      "VMG4380-B10A",
+      "VMG4825-B10A",
+      "VMG4927-B50A",
+      "VMG5304-D70A",
+      "VMG5313-B10A",
+      "VMG5313-B10B",
+      "VMG5313-B30A",
+      "VMG5313-B30B",
+      "VMG8324-B10A",
+      "VMG8623-T50A",
+      "VMG8623-T50B",
+      "VMG8823-B10B",
+      "VMG8823-B30B",
+      "VMG8823-B50B",
+      "VMG8823-B60B",
+      "VMG8825-B50B",
+      "VMG8825-B60B",
+      "VMG8825-T50K",
+      "VMG8924-B10A",
+      "VMG8924-B10D",
+      "VMG8924-B30A",
+      "VMG8924-B30D",
+      "VMG9823-B10A",
+      "VMG9827-B50A",
+      "WAH7130",
+      "WAH7601",
+      "WAH7608",
+      "WAH7706",
+      "WAP5605",
+      "WAP5705",
+      "WAP5805",
+      "WAP6804",
+      "WAP6807",
+      "WAP6906",
+      "WAP7205",
+      "WX3310-B0",
+      "WX3401-B0",
+      "WX5512-T0",
+      "WX5610-B0",
+      "XMG3512-B10A",
+      "XMG3927-B50A",
+      "XMG5101-S10A",
+      "XMG5201-B10A"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "fe3f646e73243f6df0f2a1d91dc2ab25cccb16e5338050db6e4653b074cec664"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "86536c9ffb2052346544efc0239625ec3e2dfa738298bc9672776eda2e733af4"
       }
     ]
   },
   "https://www.zyxel.com/global/en/support/end-of-life": {
     "vendor": "Zyxel",
-    "kind": "text",
-    "fingerprint": "1dc0cdf9fe9a395cb589fed1e708e0abd04cdf30950c5064f0d09e361f56dc78",
+    "kind": "rows",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": [],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "1dc0cdf9fe9a395cb589fed1e708e0abd04cdf30950c5064f0d09e361f56dc78"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
-    ],
-    "pending": {
-      "date": "2026-11-09",
-      "fingerprint": "9c9d71aa1ba43670c0c53419669ca1f237584f0db32eab62c656ff79546d768c"
-    }
+    ]
   },
   "https://www.zyxel.com/zyxel-file/eol/ArchivedEOLModel.pdf": {
     "vendor": "Zyxel",
@@ -2737,13 +5132,53 @@
   },
   "https://www.zyxel.com/service-provider/emea/en/uk-psti-act": {
     "vendor": "Zyxel",
-    "kind": "text",
-    "fingerprint": "e026e966f5c0a466241882b15f7fbeaa2d1b8edee141f2fe7fe4ee4b242782b5",
+    "kind": "rows",
+    "fingerprint": "fbc89e88da33683b8ea9b04723594aa1f196e83597e6fdd2bae07435343457a4",
+    "lines": [
+      "AX7501-B1 | October 29, 2028",
+      "DM3101-T0 | December 31, 2028",
+      "DX3301-T0 | June 30, 2028",
+      "EE3301-00 | December 31, 2029",
+      "EE5301-00 | February 28, 2030",
+      "EX3301-T0 | June 30, 2028",
+      "EX3501-T0 | December 31, 2028",
+      "EX5401-B1 | December 31, 2027",
+      "EX5601-T0 | December 31, 2028",
+      "EX5601-T1 | December 31, 2028",
+      "LTE2566-M634 | January 27, 2025",
+      "LTE3301-PLUS | June 30, 2027",
+      "LTE5398-M904 | December 15, 2024",
+      "LTE7490-M904 | April 30, 2025",
+      "NR2101 | December 31, 2024",
+      "NR2301 | June 30, 2027",
+      "NR5103E | July 15, 2027",
+      "NR5103EV2 | October 31, 2028",
+      "NR5103EV3 | December 31, 2029",
+      "NR5313 | March 1st, 2031",
+      "NR7101 | December 31, 2025",
+      "NR7102 | April 15, 2027",
+      "NR7123 | September 19, 2026",
+      "PM5100-T1 | November 28, 2029",
+      "PM7300-T0 | September 30, 2026",
+      "PM7500-00 | April 23, 2029",
+      "PMG1005-T20C | December 31, 2028",
+      "VMG1312-T20B | December 31, 2023",
+      "VMG8623-T50B | December 5, 2028",
+      "VMG8825-T50K | December 30, 2024",
+      "WAH7601 | March 15, 2026",
+      "WE3300-00 | December 31, 2029",
+      "WX3100-T0 | June 30, 2028",
+      "WX5600-T0 | December 31, 2028"
+    ],
     "first_seen": "2026-11-02",
     "history": [
       {
         "date": "2026-11-02",
         "fingerprint": "e026e966f5c0a466241882b15f7fbeaa2d1b8edee141f2fe7fe4ee4b242782b5"
+      },
+      {
+        "date": "2026-11-11",
+        "fingerprint": "fbc89e88da33683b8ea9b04723594aa1f196e83597e6fdd2bae07435343457a4"
       }
     ]
   },
@@ -2993,5 +5428,143 @@
         "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
     ]
+  },
+  "https://www.amazon.co.uk/gp/help/customer/display.html?nodeId=G6SH55LKBSAZ2BAK": {
+    "vendor": "Amazon",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://www.amazon.co.uk/gp/help/customer/display.html?nodeId=GMZQWNQRVENX4GTQ": {
+    "vendor": "Amazon",
+    "kind": "rows",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": [],
+    "first_seen": "2026-11-11",
+    "history": [
+      {
+        "date": "2026-11-11",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "https://legacy.us.dlink.com/": {
+    "vendor": "D-Link",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://legacyfiles.us.dlink.com/COVR-C1203/COVR-C1203_END_OF_SUPPORT_NOTICE.pdf": {
+    "vendor": "D-Link",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://legacyfiles.us.dlink.com/COVR-P2502/REVA/COVR-P2502_END_OF_SUPPORT_NOTICE.pdf": {
+    "vendor": "D-Link",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://legacyfiles.us.dlink.com/DAP-1620/REVA/DAP-1620_REVA_END_OF_SUPPORT_NOTICE.pdf": {
+    "vendor": "D-Link",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://legacyfiles.us.dlink.com/dir-605l/REVA/DIR-605L_END_OF_SERVICE_ANNOUNCEMENT.pdf": {
+    "vendor": "D-Link",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://legacyfiles.us.dlink.com/DIR-640L/REVA/DIR-640L_END_OF_SUPPORT_NOTICE.pdf": {
+    "vendor": "D-Link",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://legacyfiles.us.dlink.com/DIR-810L/DIR-810L_END_OF_SUPPORT_NOTICE.pdf": {
+    "vendor": "D-Link",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://legacyfiles.us.dlink.com/DIR-842/REVC/DIR-842_END_OF_SUPPORT_NOTICE.pdf": {
+    "vendor": "D-Link",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://legacyfiles.us.dlink.com/DIR-1950/DIR-1950-US%20EOS%20NOTICE.pdf": {
+    "vendor": "D-Link",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://www.edimax.com/edimax/post/post/data/edimax/global/eos_announcement": {
+    "vendor": "Edimax",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://www.netatmo.com/document/9f2271c9-5969-49ff-a794-9ab5b543836c.pdf": {
+    "vendor": "Netatmo",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://www.netatmo.com/document/6ad57846-0833-4c8e-8f11-63f86c30d288.pdf": {
+    "vendor": "Netatmo",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://www.netatmo.com/document/654b2895-2915-4e28-874a-a390878a8365.pdf": {
+    "vendor": "Netatmo",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://www.netatmo.com/document/ebc9e6b7-83ab-48f7-90eb-395e60aaeb97.pdf": {
+    "vendor": "Netatmo",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://www.netatmo.com/document/ac9b588e-6adf-4ba3-8497-d302e84e2866.pdf": {
+    "vendor": "Netatmo",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://www.netatmo.com/document/03d91098-2efd-4e40-b63b-fb7e3cf72f87.pdf": {
+    "vendor": "Netatmo",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://www.netatmo.com/document/d3eae1ee-4ec1-4704-a2f6-4a60f5687464.pdf": {
+    "vendor": "Netatmo",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://www.netatmo.com/document/191db7a3-c444-4e54-b9be-d0b765a20306.pdf": {
+    "vendor": "Netatmo",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://www.netatmo.com/document/71dc4e6f-bc05-421b-982b-7cfc2961fe82.pdf": {
+    "vendor": "Netatmo",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://d1kusojqr3t85q.cloudfront.net/jrz4hnnvdyct/1HlksuPJo1aU2EGVXLdYTw/5f0dda5d64b34be742d4c9eacda2d71f/Ring_V3.1_UK_PSTI_Statement_Of_Compliance_081026.pdf": {
+    "vendor": "Ring",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://support.smartthings.com/hc/en-us/articles/360055814272-SmartThings-Hub-2013-and-SmartThings-Link-for-NVIDIA-SHIELD-FAQs": {
+    "vendor": "Samsung SmartThings",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://forum.terra-master.com/en/viewtopic.php?p=56371": {
+    "vendor": "TerraMaster",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://forum.terra-master.com/en/viewtopic.php?p=40183": {
+    "vendor": "TerraMaster",
+    "failures": 1,
+    "failing_since": "2026-11-11"
+  },
+  "https://help.ui.com/hc/articles/1500001268521": {
+    "vendor": "Ubiquiti",
+    "failures": 1,
+    "failing_since": "2026-11-11"
   }
 }
