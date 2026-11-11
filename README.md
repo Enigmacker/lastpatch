@@ -6,11 +6,19 @@ Devices that no longer receive patches stay vulnerable forever, and nothing tell
 
 Every row cites the manufacturer document it comes from. No date is guessed: when a vendor publishes no date, the device is reported as `unknown`.
 
+Browse the data on **[getlastpatch.com](https://getlastpatch.com)** (English, French, German, Spanish, Italian, Portuguese), or download it: [`data/devices.json`](https://raw.githubusercontent.com/Enigmacker/lastpatch/main/data/devices.json) (ODbL).
+
 ## Quick start
 
-```bash
-npm install -g .            # from a clone of this repository (Node.js 20+)
+Node.js 20 or later, no dependencies. Run it straight from GitHub, without installing anything:
 
+```bash
+npx github:Enigmacker/lastpatch check "FRITZ!Box 7490"
+```
+
+or from a clone of this repository, with `node src/cli.js` in place of `lastpatch` (`npm install -g .` also works where global installs are allowed):
+
+```bash
 lastpatch check "FRITZ!Box 7490"
 lastpatch check "Tapo C200 V3"          # add the hardware version from the label when you know it
 lastpatch scan                          # find UPnP devices on your network and check them
@@ -73,61 +81,64 @@ Some devices only give their model after a login, which the scan never attempts.
 
 The installed firmware is read only from files these devices publish without a password; no login is tried, and the serial number they also contain is not kept. Most other brands do not publish their version this way, so the scan shows it for FRITZ!Box and NETGEAR routers, and for devices whose UPnP description includes it.
 
-Devices that announce nothing (phones with random MAC addresses, devices without a web page) are listed with "model not announced": check them with `lastpatch check`.
+Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "model not announced": read the model on the label and check it with `lastpatch check`.
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.4.4, retrieved 2026-11-11: 6,350 rows (5,440 models) from 50 brands.
+`data/devices.json` (schema in `data/schema.json`), version 0.4.4, retrieved 2026-11-11: 6,483 rows (5,564 models) from 53 brands.
 
 | Vendor | Rows | Source |
 |---|---|---|
 | TP-Link | 1,354 | UK PSTI statement of compliance (full document) |
+| Dahua | 1,120 | Dahua product end-of-life policy, milestone list (UK site, updated 27 October 2025): IP and PTZ cameras, recorders, door entry, switches, alarms |
 | D-Link | 473 | US legacy product list; security announcements; US end-of-support notices; UK PSTI statements |
-| Zyxel | 368 | Service-provider end-of-life list; UK PSTI page; archived EOL list; end-of-life page |
-| Linksys | 287 | Linksys product end-of-life page (per market, checked against the full table); end-of-life article |
 | Netgear | 375 | End of Service list (consumer Nighthawk, Orbi, extenders, cable modems; searched model by model); Australian EOS page (minimum dates); NETGEAR for Business EOL list; UK PSTI statements |
+| Zyxel | 368 | Service-provider end-of-life list; UK PSTI page; archived EOL list; end-of-life page |
+| EZVIZ | 311 | EZVIZ EOL product list (Europe, firmware update end dates) |
+| Linksys | 287 | Linksys product end-of-life page (per market, checked against the full table); end-of-life article |
+| QNAP | 224 | QNAP product support status (full table, mirrored); UK PSTI statements |
+| Synology | 152 | Software life cycle policy (DSM, SRM, cameras, BeeStation); DSM 6.2 end-of-life announcement |
 | Tenda | 136 | Tenda EOL Center ("End of service date") |
 | Mercusys | 127 | UK PSTI statement of compliance (full document) |
+| eufy | 113 | Anker UK PSTI table (cameras, doorbells, HomeBase, locks) |
+| Arlo | 102 | Arlo end-of-life page; UK and Australian statements of compliance |
 | ASUS | 85 | UK PSTI support-period list; Singapore lifecycle list |
 | Ring | 85 | Ring device software security updates pages (UK, US); UK PSTI statements |
 | DrayTek | 84 | DrayTek UK product lifecycle and end-of-life pages |
+| Lorex | 76 | Lorex UK PSTI end-of-life table |
 | Amazon (Echo, Fire TV) | 73 | Amazon device software security updates pages (UK, US) |
 | AVM (FRITZ!) | 62 | FRITZ! product support status page |
-| Google (Nest, Google Wifi) | 40 | Google guaranteed software update periods page |
-| Xiaomi | 39 | Xiaomi end-of-life product list (no dates) |
-| Ubiquiti | 29 | Ubiquiti legacy products list (no dates) |
-| EZVIZ | 311 | EZVIZ EOL product list (Europe, firmware update end dates) |
-| Reolink | 22 | UK PSTI statements |
-| Synology | 152 | Software life cycle policy (DSM, SRM, cameras, BeeStation); DSM 6.2 end-of-life announcement |
-| Asustor | 51 | ADM end-of-support notices and product status table |
-| WD (My Cloud) | 46 | WD product life cycle policy; My Cloud OS 3 end-of-support notice |
-| TerraMaster | 11 | TerraMaster end-of-support announcements |
-| Blink | 18 | Blink device software security updates page |
-| eero | 17 | eero software security updates page |
-| devolo | 15 | UK PSTI statements |
-| Arlo | 102 | Arlo end-of-life page; UK and Australian statements of compliance |
-| Lorex | 76 | Lorex UK PSTI end-of-life table |
-| Hive | 48 | Hive UK PSTI statement (October 2026); Hive product news |
 | GL.iNet | 53 | GL.iNet discontinued products page; end-of-life notices; UK PSTI support period page |
 | Teltonika | 52 | Teltonika EOL products page |
+| Asustor | 51 | ADM end-of-support notices and product status table |
+| Grandstream | 109 | Grandstream UK PSTI statement of compliance (April 2026): routers, access points, switches, ATAs, VoIP gateways, IP PBXs, door access systems |
+| Roborock | 49 | Roborock software security support policy (robot vacuums, wet and dry vacuums, lawn mowers; listed by model code) |
+| Hive | 48 | Hive UK PSTI statement (October 2026); Hive product news |
+| WD (My Cloud) | 46 | WD product life cycle policy; My Cloud OS 3 end-of-support notice |
+| Hikvision | 45 | Hikvision security support timeline for the iDS-2CD7x camera series (2 April 2026) |
+| Google (Nest, Google Wifi) | 40 | Google guaranteed software update periods page |
+| Xiaomi | 39 | Xiaomi end-of-life product list (no dates) |
 | Keenetic | 34 | Keenetic warranty and support periods page of each model |
+| Ubiquiti | 29 | Ubiquiti legacy products list (no dates) |
+| Drayton (Wiser, Digistat) | 28 | Drayton security support policy and UK PSTI statements |
+| Belkin (Wemo) | 27 | Belkin "Wemo support ending" page (cloud, app and support end on 31 January 2026) |
+| Worcester Bosch | 21 | Worcester Bosch defined support periods for connectable products (UK PSTI): EasyControl, Connect-Key, boiler controls, gateways |
+| Reolink | 22 | UK PSTI statements |
 | Cisco (RV, Meraki Go) | 21 | Cisco end-of-life notices (End of Vulnerability/Security Support); Meraki EOL table |
+| Aqara | 18 | UK PSTI statements |
+| Blink | 18 | Blink device software security updates page |
+| Bosch Smart Home | 17 | Bosch Smart Home software and security updates page |
+| eero | 17 | eero software security updates page |
+| Shelly | 17 | UK PSTI statements (newer devices only) |
+| Netatmo, Yale, Philips Hue, Wyze | 16 | UK PSTI statements; end-of-support pages |
+| devolo | 15 | UK PSTI statements |
+| Nuki | 15 | UK PSTI statements |
+| TerraMaster | 11 | TerraMaster end-of-support announcements |
 | Edimax | 8 | Edimax end-of-support announcement |
 | Nooie | 7 | Nooie security updates page (no dates) |
-| QNAP | 224 | QNAP product support status (full table, mirrored); UK PSTI statements |
-| Aqara | 18 | UK PSTI statements |
-| Bosch Smart Home | 17 | Bosch Smart Home software and security updates page |
-| Shelly | 17 | UK PSTI statements (newer devices only) |
-| Nuki | 15 | UK PSTI statements |
 | tado° | 6 | UK PSTI statements |
+| geo (Green Energy Options) | 3 | geo UK PSTI statement (smart energy displays) |
 | Samsung SmartThings | 2 | SmartThings hub retirement notice |
-| eufy | 113 | Anker UK PSTI table (cameras, doorbells, HomeBase, locks) |
-| Netatmo, Yale, Philips Hue, Wyze | 16 | UK PSTI statements; end-of-support pages |
-| Roborock | 49 | Roborock software security support policy (robot vacuums, wet and dry vacuums, lawn mowers; listed by model code) |
-| Drayton (Wiser, Digistat) | 28 | Drayton security support policy and UK PSTI statements |
-| Dahua | 1,120 | Dahua product end-of-life policy, milestone list (UK site, updated 27 October 2025): IP and PTZ cameras, recorders, door entry, switches, alarms |
-| Hikvision | 45 | Hikvision security support timeline for the iDS-2CD7x camera series (2 April 2026) |
-| Belkin (Wemo) | 27 | Belkin "Wemo support ending" page (cloud, app and support end on 31 January 2026) |
 
 Each row records the date exactly as written (`support_end_raw`), whether it is a minimum guarantee (`end_is_minimum`, for "or later" / "at least"), the hardware version it applies to, the market (`region`) and the source URL.
 
@@ -136,12 +147,13 @@ Each row records the date exactly as written (`support_end_raw`), whether it is 
 - **Hardware versions matter.** The same model can have different dates per hardware revision (e.g. Tapo C200 V3 vs V5). Check the label under the device.
 - **Sources sometimes contradict themselves.** When one document gives two dates for the same model and hardware version, the earlier date is kept and the build reports the conflict.
 - **Dates differ by market.** ASUS publishes different dates in the UK and Singapore for the same model. Rows are never merged across regions.
-- **Some vendors publish no usable date.** Netgear UK statements only say support ends at "End of Service"; D-Link UK statements say "2 years" without a start date; Hikvision, Swann, Imou, Sonos, Logitech, SimpliSafe, Foscam, Amcrest, IKEA, Somfy, SONOFF, SwitchBot, Cudy and Aruba Instant On publish no per-model dates (some give only rules such as "three years after purchase"). Xiaomi and Ubiquiti only list products that no longer get updates, without dates.
+- **Some vendors publish no usable date.** Netgear UK statements only say support ends at "End of Service"; D-Link UK statements say "2 years" without a start date; Swann, Imou, Sonos, Logitech, SimpliSafe, Foscam, Amcrest, IKEA, Somfy, SONOFF, SwitchBot, Cudy and Aruba Instant On publish no per-model dates (some give only rules such as "three years after purchase"). Hikvision publishes a date for one camera series only, Philips Hue and Danfoss only a period with no start date ("invoice date + 5 years"), and Peplink states that it does not end-of-life its products. Xiaomi and Ubiquiti only list products that no longer get updates, without dates.
 - **Minimum guarantees run out.** Google, Amazon, ASUS and others promise updates "until at least" a date. Once it has passed, the device is shown as no longer supported, with a note that updates may still come.
 - **Keenetic** pages give three dates; the dataset uses the end of "Limited updates", the last phase in which security updates are promised, not the later "support discontinuation" date.
 - **Tenda's "End of service date"** is often a day after its end of sale. Tenda's UK PSTI page promises security support for 3 years after end of life in the UK, without a per-model table, so UK units may be supported longer.
-- **Recent NAS models have no dates yet.** Synology gives dates per DSM version, and models on DSM 7.2 or later have no announced end. QNAP's status page shows one model at a time; only one model has been read twice so far, so QNAP stays thin until more are checked.
-- **ISP boxes are out of scope.** Routers supplied by internet providers (Livebox, Freebox, etc.) are updated by the provider.
+- **Recent NAS models have no dates yet.** Synology gives dates per DSM version, and models on DSM 7.2 or later have no announced end. QNAP and Asustor mark many current models as active, without an end date.
+- **ISP boxes are out of scope.** Routers supplied by internet providers (Livebox, Freebox, Bbox, SFR Box, etc.) are updated and replaced by the provider, which publishes no end-of-support date.
+- **Professional ranges are included when the date is official.** Dahua's list covers its whole catalogue; only network devices (cameras, recorders, door entry, switches, alarms) are kept.
 
 ### Latest firmware
 
@@ -180,9 +192,26 @@ The report stays short on purpose. A source that fails to download is reported t
 
 [getlastpatch.com](https://getlastpatch.com) presents this dataset in English, French, German, Spanish, Italian and Portuguese, with one page per model, brand and device type. It is a service offered by Securissima, Ireland. Its source is kept in a separate repository; it reads `data/` and `src/` from this repository at build time and is rebuilt every day.
 
+## Using the data
+
+`data/devices.json` holds one row per model, hardware version and market. The fields are described in `data/schema.json`; the most useful are:
+
+| Field | Meaning |
+|---|---|
+| `vendor`, `model`, `hw_version` | the device as the manufacturer writes it |
+| `support_end` | last day of security updates (ISO date), or `null` when the vendor gives none |
+| `support_end_raw` | the date or sentence exactly as published |
+| `end_is_minimum` | `true` when the vendor promises "at least" until that date |
+| `region` | the market the document applies to (`global`, `EU`, `UK`, `US`, …) |
+| `source_url`, `source_title` | the manufacturer document |
+
+The data is under the Open Database License: reuse is free, including commercially, as long as you credit LastPatch (with a link to getlastpatch.com or this repository) and share any database you derive from it under the same license.
+
 ## Contributing data
 
-Add rows to a file in `raw/`, then run `npm run build:data`. Research batches are imported with `node scripts/import-research.js <batch.json> raw/<name>.json`, which applies the cleanup rules decided on review (canonical source addresses, one model per Linksys market SKU, ambiguous dates left out). Rows without a source URL or with a malformed date are rejected. Only official manufacturer documents are accepted.
+Found a wrong date or a missing manufacturer document? [Open an issue](https://github.com/Enigmacker/lastpatch/issues) with a link to the official page. Only manufacturer documents are accepted: no forums, retailers or press articles.
+
+To add rows yourself, put them in a file in `raw/` (same fields as above), then run `npm run build:data` and `npm test`. Batches collected from several documents can be imported with `node scripts/import-research.js <batch.json> raw/<name>.json`, which applies the cleanup rules (canonical source addresses, one model per Linksys market SKU, ambiguous dates left out). Rows without a source URL or with a malformed date are rejected.
 
 ## Roadmap
 

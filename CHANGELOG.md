@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.1.0 - 2026-11-11
+
+- Three new brands (133 rows; 6,483 rows, 5,564 models, 53 brands):
+  - Grandstream: 109 routers, access points, switches, ATAs, VoIP gateways, IP PBXs and door access systems from its UK PSTI statement (April 2026). Dates are minimums ("or later"). IP phones and conferencing devices are left out; three video phones whose date reads "2027-11-31" would have been, too.
+  - Worcester Bosch: 21 heating controls, gateways and a VPN router from its defined support periods page (UK PSTI, minimum dates).
+  - geo (Green Energy Options): 3 smart energy displays, until 31 October 2027.
+- Checked and left out, for lack of a dated official source: Peplink (states it does not end-of-life products), ASUS end-of-life list (no dates), Danfoss (relative period), Honeywell Home (cloud cut-off, not a security support date), EnGenius, MikroTik, TRENDnet.
+- README: run the tool with `npx github:Enigmacker/lastpatch` without installing; how to use and credit the data; vendor table sorted by size; how to report a wrong date.
+
 ## 1.0.0 - 2026-11-11
 
 - This repository now holds the dataset and the command-line tool only. The website (getlastpatch.com) moved to a separate repository and reads `data/` and `src/` from this one at build time; its source was removed from this repository's history.
