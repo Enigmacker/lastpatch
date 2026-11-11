@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.0 - 2026-11-11
+
+- This repository now holds the dataset and the command-line tool only. The website (getlastpatch.com) moved to a separate repository and reads `data/` and `src/` from this one at build time; its source was removed from this repository's history.
+- Repository description, website and topics set on GitHub.
+
 ## 0.9.5 - 2026-11-11
 
 - Dahua: 1,120 products from its end-of-life policy milestone list ("End of Service & Support", the last date of firmware and security updates): IP and PTZ cameras, network and digital video recorders, door entry (outdoor stations as doorbells), switches and alarms. Displays, analogue HDCVI cameras, decoders and security inspection equipment are left out. Where the list gives a model twice with two dates, the earlier one is kept. Dahua is now its own brand, no longer an alias of Imou (same maker).

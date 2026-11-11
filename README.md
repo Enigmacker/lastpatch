@@ -178,20 +178,7 @@ The report stays short on purpose. A source that fails to download is reported t
 
 ## Website
 
-`site/` is the public website (a service offered by Securissima, Ireland): an Astro static site in English and French, with one page per model, a page per brand and per device type, the devices whose support ends within a year, and the devices no longer supported. The search runs in the browser; the site sets no cookies.
-
-English pages live at the root and French pages under `/fr/`, with French words in the addresses (`/fr/appareils/…`, `/fr/marques/…`, `/fr/routeurs/…`). Every page links to its counterpart with `hreflang` and a language switch. All wording is in `site/src/i18n/en.ts` and `fr.ts`; pages are shared views in `site/src/views/`, and the route files in `site/src/pages/` only pick the view. Adding a language means adding a dictionary and its route files.
-
-```sh
-cd site
-npm ci
-npm run dev          # http://localhost:4321
-npm run build        # dist/, then: npm run check:site
-```
-
-`scripts/prepare-data.mjs` turns `data/devices.json` and `data/kev.json` into the data the pages use, with the same matching and status rules as the CLI. Statuses depend on the build date, so the site must be rebuilt regularly (at least weekly) to stay right; `BUILD_DATE=YYYY-MM-DD` fixes the date for a reproducible build.
-
-Deployment (Dokploy or any Docker host) uses the `Dockerfile` at the repository root, which builds the site and serves it with `site/server.mjs` (no dependencies, security headers, health check on `/healthz`). Build arguments: `SITE_URL` (default `https://getlastpatch.com`), `NOINDEX=true` for a staging copy, `UMAMI_SCRIPT_URL` and `UMAMI_WEBSITE_ID` for optional cookie-free statistics.
+[getlastpatch.com](https://getlastpatch.com) presents this dataset in English, French, German, Spanish, Italian and Portuguese, with one page per model, brand and device type. It is a service offered by Securissima, Ireland. Its source is kept in a separate repository; it reads `data/` and `src/` from this repository at build time and is rebuilt every day.
 
 ## Contributing data
 
@@ -212,7 +199,7 @@ Add rows to a file in `raw/`, then run `npm run build:data`. Research batches ar
 8. ~~Internet exposure through UPnP port forwards~~ (done in 0.5.0).
 
 **Products**
-9. ~~Website with one page per model~~ (done in 0.6.0), ~~in French too~~ (done in 0.7.0). Next: more languages, alerts by email.
+9. ~~Website with one page per model~~ (done in 0.6.0), ~~in French too~~ (done in 0.7.0), ~~in German, Spanish, Italian and Portuguese~~ (done in 1.0.0). Next: alerts by email.
 10. Desktop apps for macOS, Windows and Linux, with alerts before a device reaches end of support (low-cost subscription including dataset updates).
 11. Browser extension showing the support end date on retailer product pages, before purchase.
 12. Replacement advice: models ranked by remaining support period (any affiliate links disclosed, ranking never based on commission).
