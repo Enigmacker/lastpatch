@@ -123,10 +123,13 @@ Each row records the date exactly as written (`support_end_raw`), whether it is 
 
 A weekly GitHub Action (`.github/workflows/watch-sources.yml`) downloads every official source the dataset cites, plus the index pages that link to new documents (`data/source-indexes.json`), and compares fingerprints with `data/sources-state.json`:
 
-- PDF files: hash of the bytes; web pages: hash of the visible text, so layout changes do not raise alerts;
+- PDF files: hash of the bytes;
+- web pages: hash of the lines that matter, those naming a model or repeating an end date the dataset took from the page. Menus, banners, related articles and other page furniture are ignored, and a change lists the lines added and removed (`now reads` / `no longer reads`);
 - index pages: new or removed document links.
 
 When something changed, it opens (or comments on) an issue labelled `source-watch`. After reviewing and updating the rows, run `node scripts/watch-sources.js --update` to accept the new fingerprints. Each source keeps a history of its fingerprints.
+
+The report stays short on purpose. A source that fails to download is reported the week it starts failing, then listed in a folded "still failing" section. Pages whose rows are filled in by a script (they contain none of the dataset models) are listed in a folded "need a browser" section: they cannot be checked automatically.
 
 ## Website
 

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.8.5 - 2026-11-11
+
+- Source watch: web pages are compared on the lines that name a model or repeat an end date from the dataset, not on the whole page text. In its second weekly run the old method flagged 33 pages, mostly for menus, banners and related articles. Changes now list the lines added and removed.
+- Source watch: a source that keeps failing is reported once, then summarised; pages filled in by a script are listed as needing a browser check instead of passing silently.
+
 ## 0.8.4 - 2026-11-02
 
 - Dataset 0.4.4: 4,871 rows from 45 brands. Netgear consumer End of Service dates (Nighthawk, Orbi kits, extenders, cable modems) and the Australian list as minimum dates (375 Netgear rows); the full eufy UK table (113 rows instead of 5).

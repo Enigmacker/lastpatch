@@ -79,3 +79,58 @@ test('network failure is an error, not a crash', async () => {
   const r = await w.fingerprint({ url: 'https://x' }, async () => { throw new Error('ECONNRESET'); });
   assert.strictEqual(r.error, 'ECONNRESET');
 });
+
+const rowsSource = { vendor: 'eero', url: 'https://e/page', rows: 2, models: new Set(['eero Pro 6', 'eero 6+']), raws: new Set(['March 11, 2030']) };
+
+test('pages: only lines naming a model or a date count', async () => {
+  const v1 = page('<nav>Shop now</nav><table><tr><td>eero Pro 6</td><td>March 11, 2030</td></tr><tr><td>eero 6+</td><td>March 11, 2031</td></tr></table><aside>Related: 5 tips</aside>');
+  const v2 = page('<nav>Black Friday deals!</nav><table><tr><td>eero Pro 6</td><td>March 11, 2030</td></tr><tr><td>eero 6+</td><td>March 11, 2031</td></tr></table><aside>Related: 7 other tips</aside>');
+  const a = await w.fingerprint(rowsSource, async () => v1);
+  const b = await w.fingerprint(rowsSource, async () => v2);
+  assert.strictEqual(a.kind, 'rows');
+  assert.deepStrictEqual(a.lines, ['eero 6+ | March 11, 2031', 'eero Pro 6 | March 11, 2030']);
+  assert.strictEqual(a.fingerprint, b.fingerprint);
+});
+
+test('a changed date is reported with the lines that moved', async () => {
+  const before = await w.fingerprint(rowsSource, async () => page('<p>eero Pro 6: March 11, 2030</p>'));
+  const after = await w.fingerprint(rowsSource, async () => page('<p>eero Pro 6: March 11, 2029</p>'));
+  const first = w.compare([rowsSource], [before], {}, '2026-11-16');
+  const second = w.compare([rowsSource], [after], first.next, '2026-11-23');
+  assert.strictEqual(second.changes.length, 1);
+  assert.deepStrictEqual(second.changes[0].added, ['eero Pro 6: March 11, 2029']);
+  assert.deepStrictEqual(second.changes[0].removed, ['eero Pro 6: March 11, 2030']);
+  const text = w.report(second, '2026-11-23');
+  assert.match(text, /now reads: `eero Pro 6: March 11, 2029`/);
+  assert.match(text, /no longer reads: `eero Pro 6: March 11, 2030`/);
+});
+
+test('a page filled in by a script is listed as needing a browser', async () => {
+  const r = await w.fingerprint(rowsSource, async () => page('<div id="app"></div><script src="app.js"></script>'));
+  assert.strictEqual(r.unreadable, true);
+  const out = w.compare([rowsSource], [r], {}, '2026-11-16');
+  assert.strictEqual(out.unreadable.length, 1);
+  assert.match(w.report(out, '2026-11-16'), /1 page\(s\) need a browser to check/);
+});
+
+test('switching fingerprint method re-records quietly', async () => {
+  const old = { 'https://e/page': { vendor: 'eero', kind: 'text', fingerprint: 'abc', history: [{ date: '2026-11-09', fingerprint: 'abc' }] } };
+  const r = await w.fingerprint(rowsSource, async () => page('<p>eero Pro 6: March 11, 2030</p>'));
+  const out = w.compare([rowsSource], [r], old, '2026-11-16');
+  assert.strictEqual(out.changes.length, 0);
+  assert.strictEqual(out.rebaselined.length, 1);
+  assert.strictEqual(out.next['https://e/page'].kind, 'rows');
+  assert.strictEqual(out.next['https://e/page'].history.length, 2);
+});
+
+test('a source that keeps failing is reported once, then summarised', async () => {
+  const fail = async () => ({ status: 403, type: '', body: Buffer.from('') });
+  const r1 = await w.fingerprint(rowsSource, fail);
+  const first = w.compare([rowsSource], [r1], {}, '2026-11-09');
+  assert.strictEqual(first.errors.length, 1);
+  const second = w.compare([rowsSource], [r1], first.next, '2026-11-16');
+  assert.strictEqual(second.errors.length, 0);
+  assert.strictEqual(second.stillFailing.length, 1);
+  assert.match(w.report(second, '2026-11-16'), /still failing \(already reported\)/);
+  assert.match(w.report(second, '2026-11-16'), /since 2026-11-09/);
+});
