@@ -7,6 +7,7 @@
 - New `data/manual-checks.json`: sources the watch cannot read, checked by hand on 2026-11-11 (1,078 rows compared; no wrong date found, one disagreement between two D-Link documents noted). Netatmo (site in maintenance) and TerraMaster (bot check) are still to be checked.
 - Matching: a row whose raw text says the device is already end-of-life is matched as such.
 - 5,089 rows from 45 brands.
+- Website address: https://getlastpatch.com (default `SITE_URL`).
 
 ## 0.9.0 - 2026-11-11
 

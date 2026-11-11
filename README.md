@@ -184,7 +184,7 @@ npm run build        # dist/, then: npm run check:site
 
 `scripts/prepare-data.mjs` turns `data/devices.json` and `data/kev.json` into the data the pages use, with the same matching and status rules as the CLI. Statuses depend on the build date, so the site must be rebuilt regularly (at least weekly) to stay right; `BUILD_DATE=YYYY-MM-DD` fixes the date for a reproducible build.
 
-Deployment (Dokploy or any Docker host) uses the `Dockerfile` at the repository root, which builds the site and serves it with `site/server.mjs` (no dependencies, security headers, health check on `/healthz`). Build arguments: `SITE_URL` (default `https://lastpatch.org`), `NOINDEX=true` for a staging copy, `UMAMI_SCRIPT_URL` and `UMAMI_WEBSITE_ID` for optional cookie-free statistics.
+Deployment (Dokploy or any Docker host) uses the `Dockerfile` at the repository root, which builds the site and serves it with `site/server.mjs` (no dependencies, security headers, health check on `/healthz`). Build arguments: `SITE_URL` (default `https://getlastpatch.com`), `NOINDEX=true` for a staging copy, `UMAMI_SCRIPT_URL` and `UMAMI_WEBSITE_ID` for optional cookie-free statistics.
 
 ## Contributing data
 
