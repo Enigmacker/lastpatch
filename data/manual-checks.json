@@ -1,0 +1,24 @@
+{
+  "about": "Sources the weekly watch cannot read (pages filled by scripts, or sources that block automated requests), checked by hand in a browser. Each entry gives the rows of the dataset compared with the page and the result.",
+  "checked": "2026-11-11",
+  "checks": [
+    { "source": "Amazon device software security updates (US and UK pages)", "rows": 73, "result": "all confirmed" },
+    { "source": "Asustor product status and end-of-support notices", "rows": 34, "result": "all confirmed; the notices give dates by series (AS-20/30/60: 31 Aug 2022; AS10/50/51/70: 31 Jul 2024), models mapped from the status table" },
+    { "source": "Cisco Meraki end-of-life products", "rows": 12, "result": "all confirmed" },
+    { "source": "Ring end-of-support (Ring Alarm Base Station H4RUB)", "rows": 1, "result": "confirmed on the US page; UK and FR pages have no version" },
+    { "source": "Synology product support policy", "rows": 55, "result": "all confirmed (cameras, BeeStation, DSM 7.1 list)" },
+    { "source": "Synology product support status", "rows": 54, "result": "all listed End of Life; RT1900ac still Limited, so it stays excluded" },
+    { "source": "Xiaomi security update policy", "rows": 39, "result": "all listed" },
+    { "source": "Zyxel end-of-life products", "rows": 57, "result": "all confirmed" },
+    { "source": "D-Link US legacy products list", "rows": 440, "result": "429 identical dates, 8 without a date on the page too, 3 with the hardware revision in the model cell" },
+    { "source": "D-Link end-of-life notices (PDF)", "rows": 8, "result": "all confirmed; for DIR-1950 the notice says 29 March 2024 while the US legacy list says 30 June 2024 (DIR-1950-US): the two D-Link documents disagree, the earlier date is shown" },
+    { "source": "Edimax end-of-life products", "rows": 8, "result": "all confirmed" },
+    { "source": "SmartThings hub end of support", "rows": 2, "result": "confirmed (30 June 2021)" },
+    { "source": "Ubiquiti legacy devices", "rows": 29, "result": "all listed as Legacy" },
+    { "source": "Linksys product end of life", "rows": 266, "result": "all confirmed against the full table the page loads (productTable.js); now mirrored by scripts/update-vendor-lists.js" },
+    { "source": "QNAP product support status", "rows": 219, "result": "replaced by the full table from the page's data feed; now mirrored by scripts/update-vendor-lists.js" },
+    { "source": "AVM download server (latest FRITZ!OS)", "rows": 2, "result": "FRITZ!Box 7590 (8.51) and 7490 (7.62) confirmed" },
+    { "source": "Netatmo end-of-support documents (PDF)", "rows": 0, "result": "not checked: the site was down for maintenance" },
+    { "source": "TerraMaster end-of-support announcement (forum)", "rows": 0, "result": "not checked: behind a bot check, to be opened by hand" }
+  ]
+}

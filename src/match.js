@@ -145,7 +145,7 @@ function hwMatches(rowHw, queryHw) {
 
 function computeStatus(row, today = new Date(), warnDays = 365) {
   if (!row.support_end) {
-    if (/already|no longer|end of (support|life)/i.test(row.support_end_raw || '')) {
+    if (/already|no longer|end of (support|life)|\bEOL\b/i.test(row.support_end_raw || '')) {
       return 'expired';
     }
     return 'unknown';

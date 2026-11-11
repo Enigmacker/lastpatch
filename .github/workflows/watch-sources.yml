@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write
   issues: write
+  pull-requests: write
 
 concurrency:
   group: watch-sources
@@ -41,6 +42,25 @@ jobs:
             git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
             git commit -m "Weekly refresh: source fingerprints, CISA KEV extract and latest firmware"
             git push
+          fi
+
+      - name: Mirror the full vendor lists (QNAP, Linksys) and propose changes
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node scripts/update-vendor-lists.js || true
+          if [ -n "$(git status --porcelain raw/)" ]; then
+            node scripts/build.js
+            branch="vendor-lists/$(date -u +%Y-%m-%d)"
+            git config user.name "github-actions[bot]"
+            git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+            git checkout -b "$branch"
+            git add raw/qnap-status.json raw/linksys-eol.json data/devices.json 2>/dev/null || true
+            git commit -m "Vendor lists: refresh QNAP and Linksys end-of-support tables"
+            git push -u origin "$branch"
+            gh pr create --title "Vendor lists changed (QNAP / Linksys)" \
+              --body "The official QNAP and/or Linksys end-of-support tables changed. Review the date changes in raw/ before merging."
           fi
 
       - name: Open or update the review issue

@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.9.1 - 2026-11-11
+
+- QNAP: 219 models from the full QNAP product support status table (NAS, routers, switches), read from the page's data feed, replace the hand-copied rows. Month-only dates ("2027-12") are read as the last day of that month; models marked "EOL" have no date.
+- New `scripts/update-vendor-lists.js` (`npm run update:vendors`) mirrors the QNAP table and the full Linksys end-of-life table (`productTable.js`). The weekly Action runs it and opens a pull request when a list changed. When a mirrored list exists, hand-copied rows from the same page are dropped at build time.
+- New `data/manual-checks.json`: sources the watch cannot read, checked by hand on 2026-11-11 (1,078 rows compared; no wrong date found, one disagreement between two D-Link documents noted). Netatmo (site in maintenance) and TerraMaster (bot check) are still to be checked.
+- Matching: a row whose raw text says the device is already end-of-life is matched as such.
+- 5,089 rows from 45 brands.
+
 ## 0.9.0 - 2026-11-11
 
 - Installed vs latest firmware. `lastpatch check "<model>" --firmware <version>` compares the version installed on a device with the latest one the manufacturer publishes; `lastpatch scan` reads the installed version where the device publishes it and says whether an update is available. JSON output has a `firmware` block (`installed`, `latest`, `latest_release_date`, `upToDate`, `behind`, `note`). When the latest version is not known, or depends on a hardware version that was not given, `upToDate` is `null`: a device is never reported as up to date without it.

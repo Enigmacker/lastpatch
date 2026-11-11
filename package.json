@@ -1,6 +1,6 @@
 {
   "name": "lastpatch",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Is your router, camera or NAS still getting security updates? Open dataset of official end-of-support dates, plus a LAN scanner.",
   "bin": {
     "lastpatch": "src/cli.js"
@@ -15,7 +15,8 @@
     "build:data": "node scripts/build.js",
     "update:oui": "npm install --no-save oui-data && node scripts/update-oui.js",
     "update:kev": "node scripts/update-kev.js",
-    "update:firmware": "node scripts/update-firmware.js"
+    "update:firmware": "node scripts/update-firmware.js",
+    "update:vendors": "node scripts/update-vendor-lists.js"
   },
   "engines": {
     "node": ">=20"

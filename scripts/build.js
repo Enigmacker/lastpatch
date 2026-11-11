@@ -36,10 +36,19 @@ const rejected = [];
 const conflicts = [];
 const seen = new Map();
 
+// Vendor lists mirrored in full by scripts/update-vendor-lists.js replace
+// rows copied by hand from the same page.
+const FULL_LISTS = ['qnap-status.json', 'linksys-eol.json'].filter((f) => fs.existsSync(path.join(RAW_DIR, f)));
+const mirrored = new Set(
+  FULL_LISTS.flatMap((f) => JSON.parse(fs.readFileSync(path.join(RAW_DIR, f), 'utf8')).map((r) => r.source_url)),
+);
+let superseded = 0;
+
 for (const file of fs.readdirSync(RAW_DIR).filter((f) => f.endsWith('.json')).sort()) {
   const rows = JSON.parse(fs.readFileSync(path.join(RAW_DIR, file), 'utf8'));
   for (const r of rows) {
     if (r.notes !== undefined && !r.model) continue; // notes element
+    if (!FULL_LISTS.includes(file) && mirrored.has(r.source_url)) { superseded++; continue; }
     const why = [];
     if (!r.vendor || !r.model) why.push('missing vendor/model');
     if (!r.source_url || !/^https?:\/\//.test(r.source_url)) why.push('missing source_url');
@@ -91,6 +100,7 @@ fs.writeFileSync(OUT, JSON.stringify({
 }, null, 2) + '\n');
 
 console.log(`${devices.length} rows written to data/devices.json`);
+if (superseded) console.log(`${superseded} hand-copied rows replaced by full vendor lists (${FULL_LISTS.join(', ')})`);
 if (conflicts.length) {
   console.log(`${conflicts.length} conflicting dates in a source (earlier date kept):`);
   for (const c of conflicts) console.log(`  ${c}`);

@@ -1,0 +1,8 @@
+{"success":true,"results":{"modelList":[
+ {"display_name":"TS-253D","name":"ts-253d","product_line_id":1,"eol_detail":{"technical_support_and_security_updates":"2027-12-31"}},
+ {"display_name":"TS-231P","name":"ts-231p","product_line_id":1,"eol_detail":{"technical_support_and_security_updates":"2024-10"}},
+ {"display_name":"TS-128","name":"ts-128","product_line_id":1,"eol_detail":{"technical_support_and_security_updates":"EOL"}},
+ {"display_name":"TS-464","name":"ts-464","product_line_id":1,"eol_detail":{"technical_support_and_security_updates":"Active"}},
+ {"display_name":"QHora-301W","name":"qhora-301w","product_line_id":16,"eol_detail":{"technical_support_and_security_updates":"2030-06"}},
+ {"display_name":"QXG-10G1T","name":"qxg-10g1t","product_line_id":7,"eol_detail":{"technical_support_and_security_updates":"2025-01-01"}}
+]}}

@@ -75,14 +75,14 @@ Devices that announce nothing (phones with random MAC addresses, devices without
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.4.4, retrieved 2026-11-02: 4,871 rows from 45 brands.
+`data/devices.json` (schema in `data/schema.json`), version 0.4.4, retrieved 2026-11-11: 5,089 rows from 45 brands.
 
 | Vendor | Rows | Source |
 |---|---|---|
 | TP-Link | 1,354 | UK PSTI statement of compliance (full document) |
 | D-Link | 473 | US legacy product list; security announcements; US end-of-support notices; UK PSTI statements |
 | Zyxel | 368 | Service-provider end-of-life list; UK PSTI page; archived EOL list; end-of-life page |
-| Linksys | 287 | Linksys product end-of-life page (per market); end-of-life article |
+| Linksys | 287 | Linksys product end-of-life page (per market, checked against the full table); end-of-life article |
 | Netgear | 375 | End of Service list (consumer Nighthawk, Orbi, extenders, cable modems; searched model by model); Australian EOS page (minimum dates); NETGEAR for Business EOL list; UK PSTI statements |
 | Tenda | 136 | Tenda EOL Center ("End of service date") |
 | Mercusys | 127 | UK PSTI statement of compliance (full document) |
@@ -112,7 +112,7 @@ Devices that announce nothing (phones with random MAC addresses, devices without
 | Cisco (RV, Meraki Go) | 21 | Cisco end-of-life notices (End of Vulnerability/Security Support); Meraki EOL table |
 | Edimax | 8 | Edimax end-of-support announcement |
 | Nooie | 7 | Nooie security updates page (no dates) |
-| QNAP | 6 | QNAP support status; UK PSTI statements |
+| QNAP | 224 | QNAP product support status (full table, mirrored); UK PSTI statements |
 | Aqara | 18 | UK PSTI statements |
 | Bosch Smart Home | 17 | Bosch Smart Home software and security updates page |
 | Shelly | 17 | UK PSTI statements (newer devices only) |
@@ -162,6 +162,10 @@ A weekly GitHub Action (`.github/workflows/watch-sources.yml`) downloads every o
 - index pages: new or removed document links.
 
 When something changed, it opens (or comments on) an issue labelled `source-watch`. After reviewing and updating the rows, run `node scripts/watch-sources.js --update` to accept the new fingerprints. Each source keeps a history of its fingerprints.
+
+Two vendors publish their whole list as a machine-readable table: QNAP (the data feed behind its product support status page) and Linksys (the table its end-of-life page loads from `productTable.js`). `scripts/update-vendor-lists.js` (`npm run update:vendors`) mirrors both into `raw/qnap-status.json` and `raw/linksys-eol.json`; when a mirrored list exists, rows copied by hand from the same page are dropped at build time. The weekly Action runs it and opens a pull request when a list changed, so date changes are reviewed before they reach the dataset.
+
+Sources the Action cannot read (pages filled by scripts, sites that block automated requests) are checked by hand in a browser; `data/manual-checks.json` records each check, the rows compared and the result.
 
 The report stays short on purpose. A source that fails to download is reported the week it starts failing, then listed in a folded "still failing" section. Pages whose rows are filled in by a script (they contain none of the dataset models) are listed in a folded "need a browser" section: they cannot be checked automatically.
 
