@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.9.3 - 2026-11-11
+
+- Three new brands (104 rows, 5,193 in total, 48 brands):
+  - Roborock: 49 models from its software security support policy (robot vacuums, wet and dry vacuums, lawn mowers). The page lists model codes (e.g. S80ULT), so look up the code on the label.
+  - Drayton (Wiser, Digistat): 28 products from its security support policy, which links each to its UK PSTI statement. Where a newer statement extends the period (2nd generation hubs: 30 April 2028), the newer date is used.
+  - Belkin Wemo: 27 products whose cloud service, app and technical support ended on 31 January 2026, per Belkin's page. Thread products, which keep working through Apple Home, are not on that list and are not included.
+- Matching: a product name without digits ("Wiser Plug") is matched when the query also names the maker.
+- Checked and left out, for lack of a dated official source: Philips Hue (the UK PSTI statement gives a period in years with no start date), Airthings, Somfy (the attestation gives no support period), Buffalo, TOTOLINK, Meross.
+
 ## 0.9.2 - 2026-11-11
 
 From the first scan of a real network:

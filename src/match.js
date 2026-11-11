@@ -60,6 +60,9 @@ const VENDOR_ALIASES = {
   ikea: ['ikea', 'dirigera', 'tradfri', 'trådfri'],
   hive: ['hive', 'centrica'],
   somfy: ['somfy'],
+  roborock: ['roborock'],
+  drayton: ['drayton', 'wiser', 'digistat', 'schneider electric controls'],
+  belkin: ['belkin', 'wemo'],
   sonoff: ['sonoff', 'itead', 'ewelink'],
   aqara: ['aqara', 'lumi united'],
   switchbot: ['switchbot', 'wonderlabs'],
@@ -195,6 +198,9 @@ function findDevice(devices, query) {
       // "Floodlight Cam E340" beats the shorter "Floodlight Cam".
       if (name && /\d/.test(name) && hasTokenRun(query, name)) score = 50 + normalize(name).length;
       else if (codes.some((c) => hasTokenRun(query, c))) score = 40;
+      // A name without digits ("Wiser Plug") is too generic on its own: only
+      // when the query also names the maker.
+      else if (vendor && name && tokens(name).length >= 2 && hasTokenRun(query, name)) score = 30 + normalize(name).length;
     }
     if (score === 0) continue;
     const hw = hwMatches(row.hw_version, hwVersion);
