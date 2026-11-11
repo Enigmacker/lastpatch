@@ -41,7 +41,7 @@ const VENDOR_ALIASES = {
   swann: ['swann'],
   yale: ['yale'],
   sonos: ['sonos'],
-  'gl.inet': ['gl.inet', 'gl-inet', 'glinet', 'gl inet'],
+  'gl.inet': ['gl.inet', 'gl-inet', 'glinet', 'gl inet', 'gl technologies'],
   cudy: ['cudy'],
   teltonika: ['teltonika'],
   keenetic: ['keenetic'],
