@@ -191,7 +191,9 @@ function findDevice(devices, query) {
         .flatMap((m) => m[1].split(/\s+and\s+|[,/]/))
         .map((c) => c.trim())
         .filter((c) => /\d/.test(c) && c.length >= 4);
-      if (name && /\d/.test(name) && hasTokenRun(query, name)) score = 40 + name.length;
+      // The whole name is in the query: as strong as a plain model name, so
+      // "Floodlight Cam E340" beats the shorter "Floodlight Cam".
+      if (name && /\d/.test(name) && hasTokenRun(query, name)) score = 50 + normalize(name).length;
       else if (codes.some((c) => hasTokenRun(query, c))) score = 40;
     }
     if (score === 0) continue;
@@ -205,7 +207,25 @@ function findDevice(devices, query) {
   // Keep only the best model (several rows may remain: one per hw version).
   const best = scored.length ? normalize(scored[0].row.model) : null;
   const matches = scored.filter((s) => normalize(s.row.model) === best);
-  return { matches, hwVersion, vendor };
+  return { matches, hwVersion, vendor, suggestions: matches.length ? [] : suggest(devices, query, vendor) };
+}
+
+// No exact match: models of the same maker whose name contains every model
+// code of the query ("eufy E340" -> the E340 camera and doorbells). Shown as
+// suggestions only, never as a result: the user picks the right one.
+function suggest(devices, query, vendor) {
+  if (!vendor) return [];
+  const codes = tokens(query).filter((t) => /\d/.test(t) && /[a-z]/.test(t) && t.length >= 3);
+  if (!codes.length) return [];
+  const names = new Set();
+  for (const row of devices) {
+    if (canonicalVendor(row.vendor) !== vendor) continue;
+    const t = tokens(row.model);
+    if (codes.every((c) => t.includes(c))) {
+      names.add(normalize(row.model).startsWith(normalize(row.vendor)) ? row.model : `${row.vendor} ${row.model}`);
+    }
+  }
+  return [...names].sort().slice(0, 10);
 }
 
 module.exports = {

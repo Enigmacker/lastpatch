@@ -6,6 +6,7 @@ From the first scan of a real network:
 
 - The IEEE name of GL.iNet ("GL Technologies (Hong Kong) Limited") is matched to the brand.
 - GL.iNet routers on firmware 4.x publish their model only after login. The scan now recognises them from the first login step (the "challenge", no password sent) and says so, instead of "model not announced".
+- Matching: a full product name now beats a shorter one from another maker ("Floodlight Cam E340" was matched to Ring Floodlight Cam). A model code shared by several products of one maker ("eufy E340": a camera and two doorbells) lists them to choose from instead of "not in the dataset" (`suggestions` in JSON output).
 - Devices with a private (randomised) MAC address, usually phones, tablets and computers, are reported as such instead of "unknown device". JSON output has `random_mac` and `note`.
 
 ## 0.9.1 - 2026-11-11

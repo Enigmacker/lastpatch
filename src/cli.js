@@ -134,7 +134,7 @@ function printFirmware(f) {
 }
 
 function lookup(devices, query, warn, region) {
-  let { matches, hwVersion } = findDevice(devices, query);
+  let { matches, hwVersion, suggestions } = findDevice(devices, query);
   if (region) {
     const local = matches.filter((m) => m.row.region === region.toUpperCase() || m.row.region === 'global');
     if (local.length) matches = local;
@@ -142,6 +142,7 @@ function lookup(devices, query, warn, region) {
   return {
     query,
     found: matches.length > 0,
+    suggestions,
     exploited_unlisted: matches.length ? [] : kev.forQuery(query).map(kevSummary),
     needs_hw_version:
       !hwVersion && matches.length > 1 && new Set(matches.map((m) => m.row.support_end)).size > 1,
@@ -151,6 +152,11 @@ function lookup(devices, query, warn, region) {
 
 function printLookup(res) {
   if (!res.found) {
+    if (res.suggestions && res.suggestions.length) {
+      console.log(`  "${res.query}" matches several models. Which one is it?`);
+      for (const n of res.suggestions) console.log(`    lastpatch check "${n}"`);
+      return;
+    }
     console.log(`  "${res.query}": not in the dataset yet.`);
     if (res.exploited_unlisted && res.exploited_unlisted.length) {
       printExploited(res.exploited_unlisted, 'unknown');

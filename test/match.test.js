@@ -105,3 +105,29 @@ test('brands of one company are accepted against each other\'s MAC vendor', () =
   assert.ok(sameMaker('tp-link', 'mercusys'));
   assert.ok(!sameMaker('netgear', 'tp-link'));
 });
+
+test('a fuller name wins over a shorter one from another maker', () => {
+  const rows = [
+    { vendor: 'Ring', model: 'Floodlight Cam', hw_version: null },
+    { vendor: 'eufy', model: 'Floodlight Cam E340(T8425)', hw_version: null },
+  ];
+  assert.strictEqual(findDevice(rows, 'Floodlight Cam E340').matches[0].row.vendor, 'eufy');
+  assert.strictEqual(findDevice(rows, 'Ring Floodlight Cam').matches[0].row.vendor, 'Ring');
+});
+
+test('a model code shared by several products gives suggestions, not a result', () => {
+  const rows = [
+    { vendor: 'eufy', model: 'Floodlight Cam E340(T8425)', hw_version: null },
+    { vendor: 'eufy', model: 'Video Doorbell E340 with Chime(T8214)', hw_version: null },
+    { vendor: 'eufy', model: 'eufy Video Doorbell E340 with chime(E8214)', hw_version: null },
+    { vendor: 'eufy', model: 'Solo Cam S340(T8170)', hw_version: null },
+  ];
+  const r = findDevice(rows, 'eufy E340');
+  assert.strictEqual(r.matches.length, 0);
+  assert.deepStrictEqual(r.suggestions, [
+    'eufy Floodlight Cam E340(T8425)',
+    'eufy Video Doorbell E340 with Chime(T8214)',
+    'eufy Video Doorbell E340 with chime(E8214)',
+  ]);
+  assert.deepStrictEqual(findDevice(rows, 'E340').suggestions, []); // no maker given
+});
