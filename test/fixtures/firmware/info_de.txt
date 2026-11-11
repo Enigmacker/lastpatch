@@ -1,0 +1,23 @@
+Die Update-Datei "FRITZ.Box_7590-xx.xx.image" enthält das aktuelle FRITZ!OS (Firmware) für die FRITZ!Box 7590.
+
+**Achtung:** Diese Update-Datei ist nur für FRITZ!Box 7590 geeignet!
+
+
+```
+Produkt:        FRITZ!Box 7590
+
+Version:        FRITZ!OS 8.51
+
+Sprache:        Deutsch, Englisch, Französisch, Italienisch, Niederländisch, Polnisch, Spanisch
+
+Release-Datum:  09.11.2026
+```
+**Neue Features:**
+------------------------------------------------------------
+- ab 8.25: (release notes shortened for the test)
+
+```
+Produkt:        FRITZ!Box 7590
+Version:        FRITZ!OS 8.25
+Release-Datum:  26.03.2026
+```

@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "lastpatch latest published firmware",
+  "description": "Latest firmware version each manufacturer publishes for a model, read from official download servers only.",
+  "type": "object",
+  "required": [
+    "version",
+    "generated",
+    "firmware"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "generated": {
+      "type": "string",
+      "format": "date"
+    },
+    "license": {
+      "type": "string"
+    },
+    "firmware": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "vendor",
+          "model",
+          "hw_version",
+          "region",
+          "latest_version",
+          "release_date",
+          "source_url",
+          "retrieved"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "vendor": {
+            "type": "string"
+          },
+          "model": {
+            "type": "string",
+            "description": "Model name as written in data/devices.json, so both files can be joined."
+          },
+          "hw_version": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Hardware version the firmware is for, e.g. 'V2'. Null when the download server does not distinguish, and for the first hardware version when later ones have their own folder."
+          },
+          "region": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^(global|EU|EMEA|APAC|LATAM|[A-Z]{2})$",
+            "description": "Market of the download folder (AVM 'deutschland' = DE). Null for international folders."
+          },
+          "latest_version": {
+            "type": "string",
+            "description": "Latest version as the manufacturer writes it (AVM: the FRITZ!OS version, e.g. '8.51')."
+          },
+          "release_date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "description": "Release date the manufacturer states for this version. Null when the source gives none, or when its release notes describe another version than the file published."
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri",
+            "description": "Official download folder or page the version was read from."
+          },
+          "retrieved": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      }
+    }
+  }
+}

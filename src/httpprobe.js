@@ -81,4 +81,13 @@ async function probeHttp(ip, { timeoutMs = 2000, maxBytes = 128 * 1024 } = {}) {
   return null;
 }
 
-module.exports = { probeHttp, extractTitle, extractRealm };
+// One GET of a small file on a LAN device (plain HTTP, any port), without
+// following redirects. Returns { status, headers, body } or null.
+async function fetchLan(url, { timeoutMs = 2000, maxBytes = 64 * 1024 } = {}) {
+  let u;
+  try { u = new URL(url); } catch { return null; }
+  if (u.protocol !== 'http:' || !isPrivateHost(u.hostname)) return null;
+  return get(u.href, timeoutMs, maxBytes);
+}
+
+module.exports = { probeHttp, fetchLan, extractTitle, extractRealm };

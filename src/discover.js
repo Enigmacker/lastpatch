@@ -7,6 +7,7 @@
 //   UPnP / SSDP                            -> manufacturer and model
 //   mDNS / DNS-SD                          -> device name and model (TXT)
 //   web admin page title and login realm   -> model, on many routers/NAS
+//   firmware info files (FRITZ!Box, NETGEAR) and UPnP -> installed firmware
 // plus the router's UPnP port forwards, to show which devices are reachable
 // from the Internet.
 
@@ -15,6 +16,7 @@ const ssdp = require('./ssdp');
 const mdns = require('./mdns');
 const igd = require('./igd');
 const { probeHttp } = require('./httpprobe');
+const { readFirmware } = require('./fwprobe');
 const { vendorOf } = require('./oui');
 const { isPrivateHost } = require('./lan');
 const { findDevice, canonicalVendor, sameMaker } = require('./match');
@@ -29,7 +31,7 @@ async function collect({ timeoutMs = 3000, sweep = true } = {}) {
 
   const hosts = new Map();
   const host = (ip) => {
-    if (!hosts.has(ip)) hosts.set(ip, { ip, mac: null, macVendor: null, upnp: [], mdns: null, http: null, exposed: [] });
+    if (!hosts.has(ip)) hosts.set(ip, { ip, mac: null, macVendor: null, upnp: [], mdns: null, http: null, firmware: null, exposed: [] });
     return hosts.get(ip);
   };
   for (const [ip, mac] of table) {
@@ -47,6 +49,7 @@ async function collect({ timeoutMs = 3000, sweep = true } = {}) {
 
   await Promise.all([...hosts.values()].map(async (h) => {
     if (web.has(h.ip) || h.upnp.length) h.http = await probeHttp(h.ip);
+    if (h.http || h.upnp.length) h.firmware = await readFirmware(h);
   }));
   return [...hosts.values()].sort((a, b) =>
     a.ip.split('.').map(Number).reduce((x, y) => x * 256 + y) - b.ip.split('.').map(Number).reduce((x, y) => x * 256 + y));
@@ -59,6 +62,9 @@ function candidates(h) {
   for (const u of h.upnp) {
     const q = [u.manufacturer, u.modelName, u.modelNumber].filter(Boolean).join(' ');
     if (q) out.push({ via: 'UPnP', query: q });
+  }
+  if (h.firmware && h.firmware.model) {
+    out.push({ via: `device info file (${h.firmware.source})`, query: `${vendorHint} ${h.firmware.model}`.trim() });
   }
   if (h.mdns && h.mdns.model) out.push({ via: 'mDNS', query: `${vendorHint} ${h.mdns.model}`.trim() });
   if (h.http && h.http.realm) out.push({ via: 'admin login prompt', query: `${vendorHint} ${h.http.realm}`.trim() });

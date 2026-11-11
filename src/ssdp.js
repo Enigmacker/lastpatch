@@ -91,6 +91,9 @@ function parseDescription(xml, location) {
     modelNumber: tag(xml, 'modelNumber'),
     modelDescription: tag(xml, 'modelDescription'),
     friendlyName: tag(xml, 'friendlyName'),
+    // Some vendors publish the installed firmware here; modelNumber is not a version.
+    firmwareVersion: tag(xml, 'firmwareVersion'),
+    softwareVersion: tag(xml, 'softwareVersion'),
     services: parseServices(xml, location),
     location,
   };

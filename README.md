@@ -15,6 +15,7 @@ lastpatch check "FRITZ!Box 7490"
 lastpatch check "Tapo C200 V3"          # add the hardware version from the label when you know it
 lastpatch scan                          # find UPnP devices on your network and check them
 lastpatch list --expiring 180           # models whose support ends within 180 days
+lastpatch check "FRITZ!Box 7590" --firmware 7.57   # is the installed firmware the latest one?
 ```
 
 ```
@@ -37,6 +38,19 @@ Results also list the vulnerabilities of the model that attackers are known to e
       CVE-2019-17621: D-Link DIR-859 router contains a command execution vulnerability ...
 ```
 
+### Is the installed firmware up to date?
+
+A supported device only helps if its updates are installed. `--firmware <version>` compares the version installed on the device (shown in its admin page) with the latest version the manufacturer publishes:
+
+```
+$ lastpatch check "FRITZ!Box 7590" --firmware 7.57
+  ...
+    firmware: latest published by AVM: 8.51 (2026-11-09); installed: 7.57: an update is available
+              https://download.avm.de/fritzbox/fritzbox-7590/deutschland/fritz.os/
+```
+
+Versions are compared as numbers ("154.07.57" on a FRITZ!Box is FRITZ!OS 7.57; "V1.0.4.126_10.1.12" on a NETGEAR router is 1.0.4.126). When the latest version of a model is not in `data/firmware.json`, or depends on a hardware version you did not give, the answer is "latest version not known" (`upToDate: null` in JSON), never "up to date".
+
 Options: `--json` for machine-readable output, `--warn <days>` to change the "ending soon" window (default 365), `--region <cc>` to prefer dates published for a given market. Exit code `2` means at least one device is past its end of support, so the tool can be used in scripts.
 
 ## What the scan does
@@ -51,8 +65,11 @@ Options: `--json` for machine-readable output, `--warn <days>` to change the "en
 | mDNS / DNS-SD (Bonjour) | device name and model on NAS, printers, cameras, smart home |
 | Title and login prompt of the device's web admin page (HTTP, then HTTPS) | the model, on many routers and NAS |
 | Port forwards opened on the router through UPnP (read-only query) | the devices reachable from the Internet |
+| Firmware information files: `jason_boxinfo.xml` and the TR-064 description (FRITZ!Box), `currentsetting.htm` (NETGEAR), `firmwareVersion` / `softwareVersion` in UPnP descriptions | the installed firmware version, compared with the latest published |
 
 A copy of the IEEE MAC registries ships with the tool; `lastpatch update-oui` optionally refreshes it from the IEEE website. Every probe contacts private addresses only, sends no credentials, and nothing leaves your network. Only scan networks you own or administer.
+
+The installed firmware is read only from files these devices publish without a password; no login is tried, and the serial number they also contain is not kept. Most other brands do not publish their version this way, so the scan shows it for FRITZ!Box and NETGEAR routers, and for devices whose UPnP description includes it.
 
 Devices that announce nothing (phones with random MAC addresses, devices without a web page) are listed with "model not announced": check them with `lastpatch check`.
 
@@ -119,6 +136,23 @@ Each row records the date exactly as written (`support_end_raw`), whether it is 
 - **Recent NAS models have no dates yet.** Synology gives dates per DSM version, and models on DSM 7.2 or later have no announced end. QNAP's status page shows one model at a time; only one model has been read twice so far, so QNAP stays thin until more are checked.
 - **ISP boxes are out of scope.** Routers supplied by internet providers (Livebox, Freebox, etc.) are updated by the provider.
 
+### Latest firmware
+
+`data/firmware.json` (schema in `data/firmware-schema.json`) lists the latest firmware version each manufacturer publishes for a model: `vendor`, `model` (as written in `devices.json`), `hw_version`, `region`, `latest_version`, `release_date`, `source_url`, `retrieved`. Only official download servers are used.
+
+| Vendor | Rows | Source |
+|---|---|---|
+| AVM (FRITZ!Box) | 9 | AVM download server (`download.avm.de/fritzbox/<model>/deutschland/fritz.os/`): the version of the image file, the release date from the release notes (`info_de.txt`, `info_en.txt`) when they describe that same version |
+
+`scripts/update-firmware.js` (`npm run update:firmware`) refreshes the AVM rows for every FRITZ!Box in the dataset (54 download folders, including the separate folders of later hardware versions such as 6820 LTE v2 to v4), one request at a time; it runs in the weekly GitHub Action. A model that cannot be read keeps its previous row.
+
+Limits of the firmware check:
+
+- **Vendors covered:** AVM FRITZ!Box only for the latest version. FRITZ!Repeater and Mesh sets are not covered yet. The installed version is read on FRITZ!Box and NETGEAR routers and on devices whose UPnP description includes it; for other brands, give it with `--firmware`.
+- **Release notes can lag behind.** On 2026-11-11 AVM served FRITZ!OS 8.51 for the 7590 AX while its release notes still described 8.25, and the English notes of the 7590 also still described 8.25. The version is then taken from the image file and the release date is left empty.
+- **Markets differ.** Rows come from AVM's German folder (`region: DE`), falling back to the international one. Provider-branded boxes (e.g. 1&1, Vodafone) are updated by the provider on its own schedule; the scan flags them.
+- **Lab (beta) versions** are flagged, and an installed version newer than the recorded one is reported as up to date with a note.
+
 ## Keeping the dataset current
 
 A weekly GitHub Action (`.github/workflows/watch-sources.yml`) downloads every official source the dataset cites, plus the index pages that link to new documents (`data/source-indexes.json`), and compares fingerprints with `data/sources-state.json`:
@@ -162,7 +196,7 @@ Add rows to a file in `raw/`, then run `npm run build:data`. Research batches ar
 
 **Detection and risk**
 5. ~~Better LAN discovery~~ (done in 0.4.0). Next: optional expert mode using a locally installed Nmap (called, never bundled).
-6. Installed vs latest firmware: flag devices that are supported but not updated.
+6. ~~Installed vs latest firmware~~ (done in 0.9.0 for AVM FRITZ!Box; reading the installed version on FRITZ!Box, NETGEAR and UPnP devices). Next: more vendors with official machine-readable firmware listings.
 7. ~~Actively exploited vulnerabilities (CISA KEV)~~ (done in 0.5.0).
 8. ~~Internet exposure through UPnP port forwards~~ (done in 0.5.0).
 
@@ -180,4 +214,4 @@ Add rows to a file in `raw/`, then run `npm run build:data`. Research batches ar
 - Code: MIT (see `LICENSE`).
 - Exploited vulnerabilities extract (`data/kev.json`): CISA KEV catalogue, a U.S. Government work in the public domain.
 - MAC vendor table (`data/oui.tsv`): public IEEE MA-L/MA-M/MA-S registries, as packaged by the `oui-data` npm package (BSD-2-Clause); regenerate with `npm run update:oui`.
-- Dataset (`data/devices.json`): Open Database License (ODbL) 1.0 (see `data/LICENSE`). You may reuse it, including commercially, but you must attribute LastPatch and share any database you derive from it under the same license.
+- Datasets (`data/devices.json`, `data/firmware.json`): Open Database License (ODbL) 1.0 (see `data/LICENSE`). You may reuse it, including commercially, but you must attribute LastPatch and share any database you derive from it under the same license.

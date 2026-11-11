@@ -3,10 +3,11 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
-const { findDevice, computeStatus, daysLeft } = require('./match');
+const { findDevice, computeStatus, daysLeft, extractHwVersion } = require('./match');
 const { collect, identify, label } = require('./discover');
 const { updateOui } = require('./oui');
 const kev = require('./kev');
+const fw = require('./firmware');
 
 const exploitsOf = kev.indexer();
 
@@ -16,6 +17,7 @@ const USAGE = `lastpatch - is your device still getting security updates?
 
 Usage:
   lastpatch check "<vendor> <model> [hw version]"   look up one device
+  lastpatch check "<model>" --firmware <version>     also compare the installed firmware with the latest published
   lastpatch scan [--timeout <ms>] [--no-sweep]       find and check the devices on your LAN
   lastpatch update-oui                               refresh the IEEE MAC vendor registry (optional)
   lastpatch list [--vendor <name>] [--expiring <days>] [--expired]
@@ -117,6 +119,20 @@ function printResult(r) {
   printExploited(r.exploited, r.status);
 }
 
+// Firmware block for a device: the installed version (given or read on the
+// LAN) against the latest version the manufacturer publishes.
+function firmwareBlock(query, installed, region, extra = {}) {
+  const { rows } = fw.latestRows(fw.loadFirmware(), query, { region });
+  return fw.checkFirmware(installed, rows, extra);
+}
+
+function printFirmware(f) {
+  if (!f) return;
+  const from = f.read_from ? ` [read from the device: ${f.read_from}]` : '';
+  console.log(`    firmware: ${fw.describeFirmware(f)}${from}`);
+  if (f.source_url) console.log(`              ${f.source_url}`);
+}
+
 function lookup(devices, query, warn, region) {
   let { matches, hwVersion } = findDevice(devices, query);
   if (region) {
@@ -139,12 +155,28 @@ function printLookup(res) {
     if (res.exploited_unlisted && res.exploited_unlisted.length) {
       printExploited(res.exploited_unlisted, 'unknown');
     }
+    printFirmware(res.firmware);
     return;
   }
   res.results.forEach(printResult);
+  printFirmware(res.firmware);
   if (res.needs_hw_version) {
     console.log('  Several hardware versions have different dates: check the label under the device (e.g. "Ver: 3.0").');
   }
+}
+
+// Installed firmware of a scanned host, compared with the latest published
+// for the identified model (or the model named by the device itself).
+function scanFirmware(r, matches, region) {
+  const f = r.host.firmware;
+  if (!f || !f.version) return null;
+  const row = matches[0] && matches[0].row;
+  const hw = r.hwVersion ? ` ${r.hwVersion}` : '';
+  const query = row ? `${row.vendor} ${row.model}${hw}` : f.model ? `${r.host.macVendor || ''} ${f.model}`.trim() : null;
+  const block = query
+    ? firmwareBlock(query, f.version, region, { lab: f.lab, oem: f.oem })
+    : fw.checkFirmware(f.version, [], { lab: f.lab, oem: f.oem });
+  return { ...block, read_from: f.source };
 }
 
 function scanReport(identified, warn, region) {
@@ -165,6 +197,7 @@ function scanReport(identified, warn, region) {
         new Set(matches.map((m) => m.row.support_end)).size > 1,
       results: matches.map((m) => describe(m.row, warn)),
       exploited_unlisted: matches.length || !r.query ? [] : kev.forQuery(r.query).map(kevSummary),
+      firmware: scanFirmware(r, matches, region),
       exposed: (r.host.exposed || []).map((m) => ({
         external_port: m.externalPort, protocol: m.protocol, internal_port: m.internalPort,
         description: m.description, remote_host: m.remoteHost || null,
@@ -195,11 +228,14 @@ function printScan(report) {
     if (r.results.length) {
       console.log(`  identified via ${r.identified_via}`);
       printLookup({ query: r.query, found: true, needs_hw_version: r.needs_hw_version, results: r.results });
+      printFirmware(r.firmware);
     } else if (r.query) {
       console.log(`  model not found in the dataset (seen as "${r.query}")`);
       if (r.exploited_unlisted.length) printExploited(r.exploited_unlisted, 'unknown');
+      printFirmware(r.firmware);
     } else {
       console.log('  model not announced: check it with "lastpatch check <vendor> <model>"');
+      printFirmware(r.firmware);
     }
     console.log('');
   }
@@ -213,7 +249,16 @@ async function main() {
   let anyExpired = false;
 
   if (cmd === 'check' && args._[1]) {
-    const res = lookup(devices, args._.slice(1).join(' '), warn, args.region);
+    const query = args._.slice(1).join(' ');
+    const res = lookup(devices, query, warn, args.region);
+    if ('firmware' in args) {
+      if (!args.firmware || args.firmware === true) throw new Error('--firmware needs a version, e.g. --firmware 7.57');
+      // Look the latest version up under the dataset's own model name when found.
+      const best = res.results[0];
+      const hw = extractHwVersion(query);
+      const q = best ? `${best.vendor} ${best.model}${hw ? ` ${hw}` : ''}` : query;
+      res.firmware = firmwareBlock(q, args.firmware, args.region);
+    }
     anyExpired = res.results.some((r) => r.status === 'expired');
     if (args.json) console.log(JSON.stringify(res, null, 2));
     else printLookup(res);
@@ -249,4 +294,4 @@ if (require.main === module) main().catch((err) => {
   process.exitCode = 1;
 });
 
-module.exports = { scanReport };
+module.exports = { scanReport, firmwareBlock };

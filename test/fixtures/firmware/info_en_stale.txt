@@ -1,0 +1,8 @@
+The update file "FRITZ.Box_7590-xx.xx.image" on ftp.avm.de contains the latest FRITZ!OS (Firmware) for the FRITZ!Box 7590.
+
+```
+Product:        FRITZ!Box 7590
+Version:        FRITZ!OS 8.25
+Languages:      Dutch, English, French, German, Italian, Polish, Spanish
+Release date:   26/03/2026
+```

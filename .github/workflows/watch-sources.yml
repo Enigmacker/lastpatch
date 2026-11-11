@@ -29,13 +29,17 @@ jobs:
       - name: Refresh the CISA exploited vulnerabilities extract
         run: node scripts/update-kev.js
 
-      - name: Save fingerprints and the vulnerabilities extract
+      - name: Refresh the latest published firmware (AVM download server)
+        continue-on-error: true
+        run: node scripts/update-firmware.js
+
+      - name: Save fingerprints, the vulnerabilities extract and the firmware list
         run: |
-          git add data/sources-state.json data/kev.json
+          git add data/sources-state.json data/kev.json data/firmware.json
           if ! git diff --cached --quiet; then
             git config user.name "github-actions[bot]"
             git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
-            git commit -m "Weekly refresh: source fingerprints and CISA KEV extract"
+            git commit -m "Weekly refresh: source fingerprints, CISA KEV extract and latest firmware"
             git push
           fi
 

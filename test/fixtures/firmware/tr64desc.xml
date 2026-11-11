@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<root xmlns="urn:dslforum-org:device-1-0">
+<specVersion><major>1</major><minor>0</minor></specVersion>
+<systemVersion>
+<HW>FRITZ!Box 6660 Cable</HW>
+<Major>275</Major>
+<Minor>8</Minor>
+<Patch>3</Patch>
+<Buildnumber>113320</Buildnumber>
+<Display>275.08.03</Display>
+</systemVersion>
+<device>
+<deviceType>urn:dslforum-org:device:InternetGatewayDevice:1</deviceType>
+<friendlyName>FRITZ!Box 6660 Cable</friendlyName>
+<manufacturer>AVM</manufacturer>
+<modelDescription>FRITZ!Box 6660 Cable</modelDescription>
+<modelName>FRITZ!Box 6660 Cable</modelName>
+<modelNumber>avm</modelNumber>
+</device>
+</root>

@@ -1,0 +1,97 @@
+{
+  "version": "0.1.0",
+  "generated": "2026-11-11",
+  "license": "ODbL-1.0",
+  "firmware": [
+    {
+      "vendor": "AVM",
+      "model": "FRITZ!Box 4060",
+      "hw_version": null,
+      "region": "DE",
+      "latest_version": "8.25",
+      "release_date": "2026-07-02",
+      "source_url": "https://download.avm.de/fritzbox/fritzbox-4060/deutschland/fritz.os/",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "vendor": "AVM",
+      "model": "FRITZ!Box 5590 Fiber",
+      "hw_version": null,
+      "region": "DE",
+      "latest_version": "8.25",
+      "release_date": "2026-06-25",
+      "source_url": "https://download.avm.de/fritzbox/fritzbox-5590-fiber/deutschland/fritz.os/",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "vendor": "AVM",
+      "model": "FRITZ!Box 6660 Cable",
+      "hw_version": null,
+      "region": "DE",
+      "latest_version": "8.25",
+      "release_date": "2026-03-19",
+      "source_url": "https://download.avm.de/fritzbox/fritzbox-6660-cable/deutschland/fritz.os/",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "vendor": "AVM",
+      "model": "FRITZ!Box 7490",
+      "hw_version": null,
+      "region": "DE",
+      "latest_version": "7.62",
+      "release_date": "2026-01-08",
+      "source_url": "https://download.avm.de/fritzbox/fritzbox-7490/deutschland/fritz.os/",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "vendor": "AVM",
+      "model": "FRITZ!Box 7530",
+      "hw_version": null,
+      "region": "DE",
+      "latest_version": "8.25",
+      "release_date": "2026-04-21",
+      "source_url": "https://download.avm.de/fritzbox/fritzbox-7530/deutschland/fritz.os/",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "vendor": "AVM",
+      "model": "FRITZ!Box 7530 AX",
+      "hw_version": null,
+      "region": "DE",
+      "latest_version": "8.50",
+      "release_date": "2026-10-22",
+      "source_url": "https://download.avm.de/fritzbox/fritzbox-7530-ax/deutschland/fritz.os/",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "vendor": "AVM",
+      "model": "FRITZ!Box 7590",
+      "hw_version": null,
+      "region": "DE",
+      "latest_version": "8.51",
+      "release_date": "2026-11-09",
+      "source_url": "https://download.avm.de/fritzbox/fritzbox-7590/deutschland/fritz.os/",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "vendor": "AVM",
+      "model": "FRITZ!Box 7590 AX",
+      "hw_version": null,
+      "region": "DE",
+      "latest_version": "8.51",
+      "release_date": null,
+      "source_url": "https://download.avm.de/fritzbox/fritzbox-7590-ax/deutschland/fritz.os/",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "vendor": "AVM",
+      "model": "FRITZ!Box 7690",
+      "hw_version": null,
+      "region": "DE",
+      "latest_version": "8.50",
+      "release_date": "2026-09-29",
+      "source_url": "https://download.avm.de/fritzbox/fritzbox-7690/deutschland/fritz.os/",
+      "retrieved": "2026-11-11"
+    }
+  ]
+}

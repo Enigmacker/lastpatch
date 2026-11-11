@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<j:BoxInfo xmlns:j="http://jason.avm.de/updatecheck/">
+<j:Name>FRITZ!Box 7530 AX</j:Name>
+<j:HW>252</j:HW>
+<j:Version>256.08.20-118013</j:Version>
+<j:Revision>118013</j:Revision>
+<j:Serial>000000000000</j:Serial>
+<j:OEM>1und1</j:OEM>
+<j:Lang>de</j:Lang>
+<j:Annex>B</j:Annex>
+<j:Lab>Inhaus</j:Lab>
+<j:Country>049</j:Country>
+</j:BoxInfo>

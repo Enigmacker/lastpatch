@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.9.0 - 2026-11-11
+
+- Installed vs latest firmware. `lastpatch check "<model>" --firmware <version>` compares the version installed on a device with the latest one the manufacturer publishes; `lastpatch scan` reads the installed version where the device publishes it and says whether an update is available. JSON output has a `firmware` block (`installed`, `latest`, `latest_release_date`, `upToDate`, `behind`, `note`). When the latest version is not known, or depends on a hardware version that was not given, `upToDate` is `null`: a device is never reported as up to date without it.
+- Version strings are compared as numbers, including AVM formats ("154.07.57", "07.57", "FRITZ!OS 8.51") and generic ones ("V1.1.0 Build 20230512 rel.123", "1.0.4.126_10.1.12").
+- The scan reads the installed version, read-only and without credentials, from `jason_boxinfo.xml` or the TR-064 description on FRITZ!Box routers, `currentsetting.htm` on NETGEAR routers, and the `firmwareVersion` / `softwareVersion` elements of UPnP descriptions. Lab versions and provider-branded FRITZ!Box firmware are flagged. The serial number in these files is not kept.
+- New data file `data/firmware.json` (schema in `data/firmware-schema.json`): 9 FRITZ!Box models read from AVM's download server on 2026-11-11. `scripts/update-firmware.js` refreshes it from the same server for every FRITZ!Box in the dataset; it runs in the weekly GitHub Action.
+
 ## 0.8.5 - 2026-11-11
 
 - Source watch: web pages are compared on the lines that name a model or repeat an end date from the dataset, not on the whole page text. In its second weekly run the old method flagged 33 pages, mostly for menus, banners and related articles. Changes now list the lines added and removed.
