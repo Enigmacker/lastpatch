@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.9.4 - 2026-11-11
+
+- Website: legal notice page in English (`/legal/`) and French (`/fr/mentions-legales/`), linked from the footer. LastPatch is a service offered by Securissima, Ireland; the publisher also appears in the site's structured data.
+
 ## 0.9.3 - 2026-11-11
 
 - Three new brands (104 rows, 5,193 in total, 48 brands):

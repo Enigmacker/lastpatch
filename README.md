@@ -176,7 +176,7 @@ The report stays short on purpose. A source that fails to download is reported t
 
 ## Website
 
-`site/` is the public website: an Astro static site in English and French, with one page per model, a page per brand and per device type, the devices whose support ends within a year, and the devices no longer supported. The search runs in the browser; the site sets no cookies.
+`site/` is the public website (a service offered by Securissima, Ireland): an Astro static site in English and French, with one page per model, a page per brand and per device type, the devices whose support ends within a year, and the devices no longer supported. The search runs in the browser; the site sets no cookies.
 
 English pages live at the root and French pages under `/fr/`, with French words in the addresses (`/fr/appareils/…`, `/fr/marques/…`, `/fr/routeurs/…`). Every page links to its counterpart with `hreflang` and a language switch. All wording is in `site/src/i18n/en.ts` and `fr.ts`; pages are shared views in `site/src/views/`, and the route files in `site/src/pages/` only pick the view. Adding a language means adding a dictionary and its route files.
 
