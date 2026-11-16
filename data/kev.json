@@ -2,8 +2,8 @@
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
   "fetched_from": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-  "catalogVersion": "2026.11.10",
-  "dateReleased": "2026-11-10T19:03:29.8375Z",
+  "catalogVersion": "2026.11.13",
+  "dateReleased": "2026-11-13T20:24:18.3008Z",
   "license": "Public domain (U.S. Government work); see https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "vulnerabilities": [
     {
@@ -1002,7 +1002,7 @@
       "product": "Chrome",
       "vulnerabilityName": "Google Chrome Use-After-Free Vulnerability",
       "dateAdded": "2021-11-03",
-      "shortDescription": "Google Chrome contains a use-after-free vulnerability that allows a remote attacker, who has compromised the renderer process, to potentially perform a sandbox escape via a crafted HTML page.  ",
+      "shortDescription": "Google Chrome contains a use-after-free vulnerability that allows a remote attacker, who has compromised the renderer process, to potentially perform a sandbox escape via a crafted HTML page.",
       "requiredAction": "Apply updates per vendor instructions.",
       "knownRansomwareCampaignUse": "Unknown"
     },
@@ -1187,6 +1187,16 @@
       "knownRansomwareCampaignUse": "Known"
     },
     {
+      "cveID": "CVE-2020-5722",
+      "vendorProject": "Grandstream",
+      "product": "UCM6200",
+      "vulnerabilityName": "Grandstream Networks UCM6200 Series SQL Injection Vulnerability",
+      "dateAdded": "2022-01-28",
+      "shortDescription": "Grandstream UCM6200 series is vulnerable to an unauthenticated remote SQL injection via crafted HTTP request. Exploitation can allow for code execution as root.",
+      "requiredAction": "Apply updates per vendor instructions.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
       "cveID": "CVE-2020-5735",
       "vendorProject": "Amcrest",
       "product": "Cameras and Network Video Recorder (NVR)",
@@ -1270,9 +1280,9 @@
       "cveID": "CVE-2021-20123",
       "vendorProject": "DrayTek",
       "product": "VigorConnect",
-      "vulnerabilityName": "Draytek VigorConnect Path Traversal Vulnerability ",
+      "vulnerabilityName": "Draytek VigorConnect Path Traversal Vulnerability",
       "dateAdded": "2024-09-03",
-      "shortDescription": "Draytek VigorConnect contains a path traversal vulnerability in the DownloadFileServlet endpoint. An unauthenticated attacker could leverage this vulnerability to download arbitrary files from the underlying operating system with root privileges. ",
+      "shortDescription": "Draytek VigorConnect contains a path traversal vulnerability in the DownloadFileServlet endpoint. An unauthenticated attacker could leverage this vulnerability to download arbitrary files from the underlying operating system with root privileges.",
       "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
       "knownRansomwareCampaignUse": "Unknown"
     },
@@ -1280,7 +1290,7 @@
       "cveID": "CVE-2021-20124",
       "vendorProject": "DrayTek",
       "product": "VigorConnect",
-      "vulnerabilityName": "Draytek VigorConnect Path Traversal Vulnerability ",
+      "vulnerabilityName": "Draytek VigorConnect Path Traversal Vulnerability",
       "dateAdded": "2024-09-03",
       "shortDescription": "Draytek VigorConnect contains a path traversal vulnerability in the file download functionality of the WebServlet endpoint. An unauthenticated attacker could leverage this vulnerability to download arbitrary files from the underlying operating system with root privileges.",
       "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
@@ -1620,7 +1630,7 @@
       "cveID": "CVE-2021-40407",
       "vendorProject": "Reolink",
       "product": "RLC-410W IP Camera",
-      "vulnerabilityName": "Reolink RLC-410W IP Camera OS Command Injection Vulnerability ",
+      "vulnerabilityName": "Reolink RLC-410W IP Camera OS Command Injection Vulnerability",
       "dateAdded": "2024-12-18",
       "shortDescription": "Reolink RLC-410W IP cameras contain an authenticated OS command injection vulnerability in the device network settings functionality.",
       "requiredAction": "The impacted product could be end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue product utilization if a current mitigation is unavailable.",
@@ -1632,7 +1642,7 @@
       "product": "DIR-605 Router",
       "vulnerabilityName": "D-Link DIR-605 Router Information Disclosure Vulnerability",
       "dateAdded": "2024-05-16",
-      "shortDescription": "D-Link DIR-605 routers contain an information disclosure vulnerability that allows attackers to obtain a username and password by forging a post request to the /getcfg.php page. ",
+      "shortDescription": "D-Link DIR-605 routers contain an information disclosure vulnerability that allows attackers to obtain a username and password by forging a post request to the /getcfg.php page.",
       "requiredAction": "This vulnerability affects legacy D-Link products. All associated hardware revisions have reached their end-of-life (EOL) or end-of-service (EOS) life cycle and should be retired and replaced per vendor instructions.",
       "knownRansomwareCampaignUse": "Unknown"
     },
@@ -2140,7 +2150,7 @@
       "cveID": "CVE-2024-0769",
       "vendorProject": "D-Link",
       "product": "DIR-859 Router",
-      "vulnerabilityName": " D-Link DIR-859 Router Path Traversal Vulnerability",
+      "vulnerabilityName": "D-Link DIR-859 Router Path Traversal Vulnerability",
       "dateAdded": "2025-06-25",
       "shortDescription": "D-Link DIR-859 routers contain a path traversal vulnerability in the file /hedwig.cgi of the component HTTP POST Request Handler. Manipulation of the argument service with the input ../../../../htdocs/webinc/getcfg/DHCPS6.BRIDGE-1.xml allows for the leakage of session data potentially enabling privilege escalation and unauthorized control of the device. This vulnerability affects legacy D-Link products. All associated hardware revisions have reached their end-of-life (EOL) or end-of-service (EOS) life cycle and should be retired and replaced per vendor instructions.",
       "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
@@ -2272,7 +2282,7 @@
       "product": "Chromium V8",
       "vulnerabilityName": "Google Chromium V8 Out-of-Bounds Memory Write Vulnerability",
       "dateAdded": "2024-05-16",
-      "shortDescription": "Google Chromium V8 Engine contains an unspecified out-of-bounds memory write vulnerability via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera. ",
+      "shortDescription": "Google Chromium V8 Engine contains an unspecified out-of-bounds memory write vulnerability via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
       "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
       "knownRansomwareCampaignUse": "Unknown"
     },
@@ -2679,7 +2689,7 @@
     {
       "cveID": "CVE-2026-20349",
       "vendorProject": "Cisco",
-      "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) ",
+      "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD)",
       "vulnerabilityName": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability",
       "dateAdded": "2026-08-11",
       "shortDescription": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) contain a heap inspection vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
