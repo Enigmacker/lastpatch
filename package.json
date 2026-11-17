@@ -19,7 +19,7 @@
     "update:vendors": "node scripts/update-vendor-lists.js"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "keywords": [
     "end-of-life",
