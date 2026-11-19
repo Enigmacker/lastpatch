@@ -65,6 +65,7 @@ test('Meraki page: hardware split per model, accessories, Go and undated rows le
     ['Meraki MX64W', 'router', '2027-07-26'],
     ['Meraki Z3C', 'router', '2029-09-04'],
     ['Meraki MV Gen 2 Cameras', 'camera', '2030-12-31'],
+    ['Meraki Z1', 'router', '2025-07-27'],
   ]);
 });
 

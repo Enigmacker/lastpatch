@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.6.0 - 2026-11-19
+
+- First run of the extended weekly mirror: the dataset now uses the full mirrored lists (9,242 rows, 7,536 models, 71 brands; dataset 0.5.3).
+  - Linksys: 1,244 rows, one per model, hardware version and market, from the full end-of-life table (287 hand-copied rows before).
+  - Brother: 654 rows, now including the Australian label and mobile printer list.
+  - WatchGuard: 118 rows (five older Firebox X Peak and XTM models added).
+  - QNAP: 239 rows (table refreshed).
+  - Meraki, SonicWall and Epson: unchanged apart from regional Meraki variants now merged under one name (earlier date kept where they differ).
+- Meraki parser: accessories that name the access points they fit, power supplies and market lists in parentheses are no longer read as models.
+- The weekly Action could not open its pull request: GitHub must allow Actions to create pull requests (repository Settings, Actions, General). Until then the changes are pushed to a `vendor-lists/<date>` branch.
+
 ## 1.5.1 - 2026-11-19
 
 - Weekly mirroring extended from QNAP and Linksys to WatchGuard, Meraki, SonicWall, Brother and Epson: `scripts/update-vendor-lists.js` reads each official list (HTML tables, or PDFs through `pdftotext`) and the weekly Action proposes a pull request when one changes. A list that comes back much shorter than expected is refused rather than written.

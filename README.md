@@ -85,7 +85,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.5.2, retrieved 2026-11-19: 8,230 rows (7,138 models) from 71 brands.
+`data/devices.json` (schema in `data/schema.json`), version 0.5.3, retrieved 2026-11-19: 9,242 rows (7,536 models) from 71 brands.
 
 | Vendor | Rows | Source |
 |---|---|---|
@@ -95,10 +95,10 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Netgear | 375 | End of Service list (consumer Nighthawk, Orbi, extenders, cable modems; searched model by model); Australian EOS page (minimum dates); NETGEAR for Business EOL list; UK PSTI statements |
 | Zyxel | 368 | Service-provider end-of-life list; UK PSTI page; archived EOL list; end-of-life page |
 | EZVIZ | 311 | EZVIZ EOL product list (Europe, firmware update end dates) |
-| Linksys | 287 | Linksys product end-of-life page (per market, checked against the full table); end-of-life article |
-| QNAP | 224 | QNAP product support status (full table, mirrored); UK PSTI statements |
+| Linksys | 1,244 | Linksys product end-of-life page (per market, checked against the full table); end-of-life article |
+| QNAP | 239 | QNAP product support status (full table, mirrored); UK PSTI statements |
 | Synology | 152 | Software life cycle policy (DSM, SRM, cameras, BeeStation); DSM 6.2 end-of-life announcement |
-| Brother | 616 | Brother Software Security Updates Guarantee (January 2026): printers, scanners, label and mobile printers, Europe and Australia; models whose support ended between 2008 and 2025 are dated 31 December 2025 |
+| Brother | 654 | Brother Software Security Updates Guarantee (January 2026, mirrored weekly): printers, scanners, label and mobile printers, Europe and Australia; models whose support ended between 2008 and 2025 are dated 31 December 2025 |
 | Epson | 248 | Epson Australia security support periods (5 March 2026): printers, scanners, label and receipt printers, projectors; minimum dates |
 | Canon | 171 | Canon UK PSTI statements: inkjet and laser printers, cameras, camcorders, PTZ cameras, photo printers |
 | Samsung | 137 | Samsung Australia statements of compliance: 2023 to 2025 TVs, projectors, monitors, soundbars, Galaxy Buds, Watch, Ring and Fit |
@@ -116,7 +116,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | GL.iNet | 53 | GL.iNet discontinued products page; end-of-life notices; UK PSTI support period page |
 | Teltonika | 52 | Teltonika EOL products page |
 | Asustor | 51 | ADM end-of-support notices and product status table |
-| WatchGuard | 113 | WatchGuard end-of-life policy: Firebox, XTM and access points |
+| WatchGuard | 118 | WatchGuard end-of-life policy: Firebox, XTM and access points |
 | Grandstream | 109 | Grandstream UK PSTI statement of compliance (April 2026): routers, access points, switches, ATAs, VoIP gateways, IP PBXs, door access systems |
 | Roborock | 49 | Roborock software security support policy (robot vacuums, wet and dry vacuums, lawn mowers; listed by model code) |
 | Hive | 48 | Hive UK PSTI statement (October 2026); Hive product news |
@@ -135,7 +135,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Belkin (Wemo) | 27 | Belkin "Wemo support ending" page (cloud, app and support end on 31 January 2026) |
 | Worcester Bosch | 21 | Worcester Bosch defined support periods for connectable products (UK PSTI): EasyControl, Connect-Key, boiler controls, gateways |
 | Reolink | 22 | UK PSTI statements |
-| Cisco (RV, WAP, 250/350/350X/CBS350 switches, Meraki, Meraki Go) | 202 | Cisco end-of-life notices (End of Vulnerability/Security Support, or End of SW Maintenance Releases for switches); Meraki end-of-life products and dates (MR access points, MS switches, MX and Z security appliances, MG cellular gateways, MV cameras, MT sensors) |
+| Cisco (RV, WAP, 250/350/350X/CBS350 switches, Meraki, Meraki Go) | 199 | Cisco end-of-life notices (End of Vulnerability/Security Support, or End of SW Maintenance Releases for switches); Meraki end-of-life products and dates (MR access points, MS switches, MX and Z security appliances, MG cellular gateways, MV cameras, MT sensors) |
 | Aqara | 18 | UK PSTI statements |
 | Blink | 18 | Blink device software security updates page |
 | Bosch Smart Home | 17 | Bosch Smart Home software and security updates page |

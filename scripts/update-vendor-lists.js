@@ -235,7 +235,10 @@ function merakiRows(html) {
     if (cells.length < 4) continue;
     const end = anyDate(cells[3]);
     if (!end) continue;
-    const product = cells[0].replace(/\s+/g, ' ').trim();
+    // "Z1-HW (US, UK, EU, AU)": the market list is not part of the name.
+    const product = cells[0].replace(/\s+/g, ' ').replace(/\s*\((?:[A-Z]{2}, )*[A-Z]{2}\)$/, '').trim();
+    // Antennas, mounts, power supplies and other accessories, even when they name the access points they fit.
+    if (/^(MA-|AC-|ANT|GA-|LIC-)|\(For |power supplies|Module/i.test(product)) continue;
     // "MR36, MR36H, MR44, MR46, MR46E and Accessories", "MX64-HW, MX64W-HW", "MS210 Series".
     const names = /Series$|^MV Gen \d Cameras$/.test(product) ? [product.replace(/(\S)Series$/, '$1 Series').replace(/  +/g, ' ')]
       : product.replace(/ and Accessories$/i, '').split(/,\s*/).map((n) => n.trim());
