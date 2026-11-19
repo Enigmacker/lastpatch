@@ -85,6 +85,7 @@ const VENDOR_ALIASES = {
   genexis: ['genexis', 'fibertwist', 'fiberbox'],
   bose: ['bose'],
   marstek: ['marstek'],
+  canon: ['canon', 'pixma', 'maxify', 'i-sensys', 'imageprograf', 'selphy'],
 };
 
 const DAY_MS = 24 * 60 * 60 * 1000;
