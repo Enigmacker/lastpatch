@@ -11,7 +11,8 @@
   "source_url": "https://passport.anker.com/uk/psti-related",
   "source_title": "Software Security Update Support Periods & Statement of Compliance for PSTI UK",
   "source_date": null,
-  "region": "UK"
+  "region": "UK",
+  "retrieved": "2026-11-11"
  },
  {
   "vendor": "eufy",
@@ -25,7 +26,8 @@
   "source_url": "https://passport.anker.com/uk/psti-related",
   "source_title": "Software Security Update Support Periods & Statement of Compliance for PSTI UK",
   "source_date": null,
-  "region": "UK"
+  "region": "UK",
+  "retrieved": "2026-11-11"
  },
  {
   "vendor": "eufy",
@@ -39,7 +41,8 @@
   "source_url": "https://passport.anker.com/uk/psti-related",
   "source_title": "Software Security Update Support Periods & Statement of Compliance for PSTI UK",
   "source_date": null,
-  "region": "UK"
+  "region": "UK",
+  "retrieved": "2026-11-11"
  },
  {
   "vendor": "eufy",
@@ -53,7 +56,8 @@
   "source_url": "https://passport.anker.com/uk/psti-related",
   "source_title": "Software Security Update Support Periods & Statement of Compliance for PSTI UK",
   "source_date": null,
-  "region": "UK"
+  "region": "UK",
+  "retrieved": "2026-11-11"
  },
  {
   "vendor": "eufy",
@@ -67,7 +71,8 @@
   "source_url": "https://passport.anker.com/uk/psti-related",
   "source_title": "Software Security Update Support Periods & Statement of Compliance for PSTI UK",
   "source_date": null,
-  "region": "UK"
+  "region": "UK",
+  "retrieved": "2026-11-11"
  },
  {
   "vendor": "Wyze",
@@ -81,7 +86,8 @@
   "source_url": "https://www.wyze.com/pages/response-to-3-29-22-security-report",
   "source_title": "Response to 3/29/22 Security Report",
   "source_date": null,
-  "region": "global"
+  "region": "global",
+  "retrieved": "2026-11-11"
  },
  {
   "vendor": "Philips Hue",
@@ -95,7 +101,8 @@
   "source_url": "https://www.philips-hue.com/en-gb/support/legal/end-of-support-policy",
   "source_title": "Philips Hue End of Support Policy",
   "source_date": null,
-  "region": "global"
+  "region": "global",
+  "retrieved": "2026-11-11"
  },
  {
   "vendor": "Yale",
@@ -109,7 +116,8 @@
   "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE0001SLK_Linus_L1_1_.pdf",
   "source_title": "PSTI compliance statement YE0001SLK Linus L1",
   "source_date": "2024-03-28",
-  "region": "UK"
+  "region": "UK",
+  "retrieved": "2026-11-11"
  },
  {
   "vendor": "Yale",
@@ -123,6 +131,7 @@
   "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE0006SLK_Smart_Opener_1_.pdf",
   "source_title": "PSTI compliance statement YE0006SLK Smart Opener",
   "source_date": "2024-03-28",
-  "region": "UK"
+  "region": "UK",
+  "retrieved": "2026-11-11"
  }
 ]
