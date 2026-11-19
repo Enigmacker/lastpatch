@@ -167,4 +167,10 @@ test('phones and tablets are found by name or model number', () => {
   assert.strictEqual(findDevice(rows, 'Google Pixel 8 Pro').matches[0].row.model, 'Pixel 8 Pro');
   assert.strictEqual(findDevice(rows, 'Galaxy S24').matches[0].row.model, 'Galaxy S24 (SM-S921B/DS)');
   assert.strictEqual(canonicalVendor('moto g55 5G'), 'motorola');
+  assert.strictEqual(canonicalVendor('Redmi Note 13 Pro'), 'xiaomi');
+  assert.strictEqual(canonicalVendor('POCO F6'), 'xiaomi');
+  assert.strictEqual(canonicalVendor('Nokia G22'), 'hmd');
+  const more = [{ vendor: 'HMD', model: 'Nokia G22', hw_version: null }, { vendor: 'Xiaomi', model: 'Redmi Note 13 Pro', hw_version: null }];
+  assert.strictEqual(findDevice(more, 'Nokia G22').matches[0].row.vendor, 'HMD');
+  assert.strictEqual(findDevice(more, 'Redmi Note 13 Pro').matches[0].row.model, 'Redmi Note 13 Pro');
 });

@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.9.0 - 2026-11-19
+
+- More phones and tablets (10,913 rows, 9,207 models, 92 brands; dataset 0.5.6):
+  - Xiaomi, Redmi and POCO: 210 phones and tablets from the Xiaomi Security Center software support list (security update end date per model).
+  - HMD and Nokia: 84 smartphones, tablets and feature phones from HMD's Security and Maintenance Updates page ("No guaranteed Security Patch updates after", month only, read as the last day of the month). The 15 current models whose row HMD marks "Estimated" are left out until the date is confirmed.
+- Matching: "Redmi" and "POCO" name Xiaomi; "HMD" and "Nokia" name HMD.
+- Checked and left out: Sony Xperia (no dated list found), further Samsung phones (statements are filed per product).
+
 ## 1.8.0 - 2026-11-19
 
 - Smartphones and tablets: two new categories, `phone` and `tablet`, and 198 rows (10,619 rows, 8,913 models, 91 brands; dataset 0.5.5):

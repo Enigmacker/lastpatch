@@ -85,7 +85,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.5.5, retrieved 2026-11-19: 10,619 rows (8,913 models) from 91 brands, now including smartphones and tablets.
+`data/devices.json` (schema in `data/schema.json`), version 0.5.6, retrieved 2026-11-19: 10,913 rows (9,207 models) from 92 brands, now including smartphones and tablets.
 
 | Vendor | Rows | Source |
 |---|---|---|
@@ -125,7 +125,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Genexis | 31 | Genexis UK product support (PSTI): fibre boxes and Wi-Fi |
 | Hikvision | 45 | Hikvision security support timeline for the iDS-2CD7x camera series (2 April 2026) |
 | Google (Nest, Google Wifi, Pixel) | 78 | Google guaranteed software update periods page; Pixel update policy (5 or 7 years from the month the phone first went on sale on the US Google Store, per Google's availability table; Pixel 5a and earlier no longer updated) |
-| Xiaomi | 39 | Xiaomi end-of-life product list (no dates) |
+| Xiaomi (incl. Redmi, POCO) | 249 | Xiaomi end-of-life product list for routers and smart home (no dates); Xiaomi Security Center software support list for phones and tablets (security update end date per model) |
 | Sonos | 29 | Sonos UK PSTI statement of compliance (speakers, soundbars, subwoofers, amplifiers, headphones; minimum dates) |
 | EE | 26 | EE product support document (October 2026): broadband hubs, 4G/5G routers, Wi-Fi discs and extenders, TV boxes; minimum period from the sales start |
 | iRobot (Roomba) | 20 | iRobot UK PSTI statements (one per regulatory model; minimum dates) |
@@ -162,6 +162,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Motorola | 39 | Motorola UK PSTI statements (security update period, month only) |
 | Samsung (Galaxy phones) | 9 | Samsung UK PSTI statements published by Three (end of support date) |
 | Fairphone | 5 | Fairphone software support page |
+| HMD (HMD and Nokia phones) | 84 | HMD Security and Maintenance Updates page ("No guaranteed Security Patch updates after", month only, read as the last day of the month; rows HMD marks "Estimated" are left out) |
 | Vivotek | 297 | Vivotek end-of-life product list (cameras, recorders, switches; no dates, no longer updated) |
 | Ricoh | 76 | Ricoh support periods for MFPs and printers (Cyber Resilience Act page, month only); PSTI pages for projectors and portable monitor |
 | Panasonic | 120 | Panasonic UK PSTI statements for TVs (2021 to 2025 ranges with a dated period) |
