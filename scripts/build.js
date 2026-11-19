@@ -38,7 +38,7 @@ const seen = new Map();
 
 // Vendor lists mirrored in full by scripts/update-vendor-lists.js replace
 // rows copied by hand from the same page.
-const FULL_LISTS = ['qnap-status.json', 'linksys-eol.json'].filter((f) => fs.existsSync(path.join(RAW_DIR, f)));
+const FULL_LISTS = ['qnap-status.json', 'linksys-eol.json', 'watchguard-eol.json', 'meraki-eol.json', 'sonicwall-eol.json', 'brother-eol.json', 'epson-au.json'].filter((f) => fs.existsSync(path.join(RAW_DIR, f)));
 const mirrored = new Set(
   FULL_LISTS.flatMap((f) => JSON.parse(fs.readFileSync(path.join(RAW_DIR, f), 'utf8')).map((r) => r.source_url)),
 );

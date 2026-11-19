@@ -1,0 +1,9 @@
+Epson Australia Security Support Periods
+Last updated: 5 March 2026
+Product Name                     Security update end date
+AM-C10000                        31/03/2033
+ET-811/EAL(Derivative)           31/03/2033
+WF-7845 EAL Derivative           31/03/2033
+EB-1480Fi                        7/04/2027
+TM-m30II                         31/03/2033
+TM-m30II                         31/03/2033

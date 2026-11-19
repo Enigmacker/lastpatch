@@ -44,7 +44,10 @@ jobs:
             git push
           fi
 
-      - name: Mirror the full vendor lists (QNAP, Linksys) and propose changes
+      - name: Install pdftotext (Brother and Epson lists are PDFs)
+        run: sudo apt-get install -y -qq poppler-utils >/dev/null
+
+      - name: Mirror the full vendor lists and propose changes
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
@@ -56,11 +59,12 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
             git checkout -b "$branch"
-            git add raw/qnap-status.json raw/linksys-eol.json data/devices.json 2>/dev/null || true
-            git commit -m "Vendor lists: refresh QNAP and Linksys end-of-support tables"
+            git add raw/qnap-status.json raw/linksys-eol.json raw/watchguard-eol.json raw/meraki-eol.json \
+              raw/sonicwall-eol.json raw/brother-eol.json raw/epson-au.json data/devices.json 2>/dev/null || true
+            git commit -m "Vendor lists: refresh the mirrored end-of-support tables"
             git push -u origin "$branch"
-            gh pr create --title "Vendor lists changed (QNAP / Linksys)" \
-              --body "The official QNAP and/or Linksys end-of-support tables changed. Review the date changes in raw/ before merging."
+            gh pr create --title "Vendor lists changed" \
+              --body "One or more mirrored end-of-support lists (QNAP, Linksys, WatchGuard, Meraki, SonicWall, Brother, Epson) changed. Review the date changes in raw/ before merging."
           fi
 
       - name: Open or update the review issue

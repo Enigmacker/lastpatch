@@ -15,6 +15,31 @@
       "vendor": "ASUS",
       "url": "https://www.asus.com/event/network/security_update_support/",
       "link_pattern": "\\.(pdf|json)"
+    },
+    {
+      "vendor": "Brother",
+      "url": "https://support.brother.com/g/s/security/en/index.html",
+      "link_pattern": "SupportDeviceList.*\\.pdf"
+    },
+    {
+      "vendor": "Canon",
+      "url": "https://www.canon.co.uk/psti/",
+      "link_pattern": "bigcontent\\.io/v1/static/"
+    },
+    {
+      "vendor": "Samsung",
+      "url": "https://www.samsung.com/au/support/cyber-security-statement-of-compliance/",
+      "link_pattern": "cyber-security-smart-devices-statement-of-compliance/.*\\.(pdf|jpg)"
+    },
+    {
+      "vendor": "Genexis",
+      "url": "https://genexis.eu/psti/",
+      "link_pattern": "\\.pdf"
+    },
+    {
+      "vendor": "Three",
+      "url": "https://www.three.co.uk/terms-conditions/product-security-and-telecommunications-infrastructure",
+      "link_pattern": "psti/.*\\.pdf"
     }
   ]
 }

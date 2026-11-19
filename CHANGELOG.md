@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.5.1 - 2026-11-19
+
+- Weekly mirroring extended from QNAP and Linksys to WatchGuard, Meraki, SonicWall, Brother and Epson: `scripts/update-vendor-lists.js` reads each official list (HTML tables, or PDFs through `pdftotext`) and the weekly Action proposes a pull request when one changes. A list that comes back much shorter than expected is refused rather than written.
+- New index pages watched for new documents: Brother, Canon, Samsung Australia, Genexis and Three.
+- Tests for the five new parsers (fixtures in `test/fixtures/vendor-lists/`).
+
 ## 1.5.0 - 2026-11-19
 
 - Cisco small business bulletins (62 rows): 350X and SG350XG stackable switches, Cisco Business 350 switches (worldwide part numbers; bulletins limited to Brazil or India left out), RV110W, RV130, RV130W and RV215W routers, WAP125, WAP150, WAP361, WAP571, WAP571E and WAP581 access points.

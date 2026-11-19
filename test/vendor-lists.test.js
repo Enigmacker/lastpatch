@@ -38,3 +38,58 @@ test('Linksys helpers', () => {
   assert.strictEqual(linksysCategory('Power adapter'), null);
   assert.strictEqual(linksysCategory('DOCSIS 3.0 CABLE MODEM'), 'modem');
 });
+
+test('WatchGuard page: Firebox, XTM and access points with their End of Life date', () => {
+  const { watchguardRows } = require('../scripts/update-vendor-lists');
+  const rows = watchguardRows(fixture('watchguard.html'));
+  assert.deepStrictEqual(rows.map((r) => [r.model, r.category, r.support_end]), [
+    ['Firebox T15', 'router', '2027-03-01'],
+    ['Firebox T80', 'router', '2028-07-01'],
+    ['XTM 850', 'router', '2023-12-31'],
+    ['AP225W', 'other', '2026-12-31'],
+  ]);
+});
+
+test('Meraki page: hardware split per model, accessories, Go and undated rows left out', () => {
+  const { merakiRows } = require('../scripts/update-vendor-lists');
+  const rows = merakiRows(fixture('meraki.html'));
+  assert.deepStrictEqual(rows.map((r) => [r.model, r.category, r.support_end]), [
+    ['Meraki MS120 Series', 'switch', '2030-03-28'],
+    ['Meraki MS220-8', 'switch', '2025-09-21'],
+    ['Meraki MS220-8P', 'switch', '2025-09-21'],
+    ['Meraki MR36', 'other', '2031-12-31'],
+    ['Meraki MR36H', 'other', '2031-12-31'],
+    ['Meraki MR44', 'other', '2031-12-31'],
+    ['Meraki MR46', 'other', '2031-12-31'],
+    ['Meraki MX64', 'router', '2027-07-26'],
+    ['Meraki MX64W', 'router', '2027-07-26'],
+    ['Meraki Z3C', 'router', '2029-09-04'],
+    ['Meraki MV Gen 2 Cameras', 'camera', '2030-12-31'],
+  ]);
+});
+
+test('SonicWall table: End Of Support per model, rows without it skipped', () => {
+  const { sonicwallRows, SONICWALL_PAGES } = require('../scripts/update-vendor-lists');
+  const rows = sonicwallRows(fixture('sonicwall-tz.html'), SONICWALL_PAGES[0]);
+  assert.deepStrictEqual(rows.map((r) => [r.model, r.support_end]), [['TZ 400W', '2026-08-01'], ['TZ SOHO W', '2026-04-16']]);
+  assert.match(rows[0].support_end_raw, /from 2023-08-01/);
+});
+
+test('Brother list: dated blocks and the 2008-2025 block', () => {
+  const { brotherRows } = require('../scripts/update-vendor-lists');
+  const rows = brotherRows(fixture('brother.txt'), { url: 'https://example.test/b.pdf', region: 'EU', title: 'printers' });
+  assert.deepStrictEqual(rows.map((r) => [r.model, r.support_end]), [
+    ['MFC-J6935DW', '2026-01-31'], ['DCP-1610WR', '2026-03-31'], ['MFC-J985DW', '2026-03-31'],
+    ['ADS-1100W', '2025-12-31'], ['HL-1210WR', '2025-12-31'],
+  ]);
+  assert.match(rows[3].support_end_raw, /2008-1-1 ~ 2025-12-31/);
+});
+
+test('Epson list: suffixes dropped from model names, duplicates removed, minimum dates', () => {
+  const { epsonRows } = require('../scripts/update-vendor-lists');
+  const rows = epsonRows(fixture('epson.txt'));
+  assert.deepStrictEqual(rows.map((r) => [r.model, r.support_end]), [
+    ['AM-C10000', '2033-03-31'], ['ET-811', '2033-03-31'], ['WF-7845', '2033-03-31'], ['EB-1480Fi', '2027-04-07'], ['TM-m30II', '2033-03-31'],
+  ]);
+  assert.ok(rows.every((r) => r.end_is_minimum));
+});
