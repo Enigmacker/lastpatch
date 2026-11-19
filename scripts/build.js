@@ -94,7 +94,7 @@ const devices = [...seen.values()].sort((a, b) =>
 );
 
 fs.writeFileSync(OUT, JSON.stringify({
-  version: '0.5.1',
+  version: '0.5.2',
   generated: devices.reduce((d, r) => (r.retrieved > d ? r.retrieved : d), RETRIEVED),
   license: 'ODbL-1.0',
   devices,

@@ -85,7 +85,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.5.1, retrieved 2026-11-19: 8,156 rows (7,064 models) from 70 brands.
+`data/devices.json` (schema in `data/schema.json`), version 0.5.2, retrieved 2026-11-19: 8,230 rows (7,138 models) from 71 brands.
 
 | Vendor | Rows | Source |
 |---|---|---|
@@ -135,7 +135,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Belkin (Wemo) | 27 | Belkin "Wemo support ending" page (cloud, app and support end on 31 January 2026) |
 | Worcester Bosch | 21 | Worcester Bosch defined support periods for connectable products (UK PSTI): EasyControl, Connect-Key, boiler controls, gateways |
 | Reolink | 22 | UK PSTI statements |
-| Cisco (RV, 250/350 switches, Meraki, Meraki Go) | 140 | Cisco end-of-life notices (End of Vulnerability/Security Support, or End of SW Maintenance Releases for switches); Meraki end-of-life products and dates (MR access points, MS switches, MX and Z security appliances, MG cellular gateways, MV cameras, MT sensors) |
+| Cisco (RV, WAP, 250/350/350X/CBS350 switches, Meraki, Meraki Go) | 202 | Cisco end-of-life notices (End of Vulnerability/Security Support, or End of SW Maintenance Releases for switches); Meraki end-of-life products and dates (MR access points, MS switches, MX and Z security appliances, MG cellular gateways, MV cameras, MT sensors) |
 | Aqara | 18 | UK PSTI statements |
 | Blink | 18 | Blink device software security updates page |
 | Bosch Smart Home | 17 | Bosch Smart Home software and security updates page |
@@ -152,6 +152,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Nintendo | 7 | Nintendo UK product security update information (Switch, Switch 2, docks, Alarmo; at least 23 September 2028) |
 | tado° | 6 | UK PSTI statements |
 | TalkTalk | 6 | TalkTalk product cyber security page (routers, Wi-Fi hub, TV boxes) |
+| Integra | 9 | Integra UK PSTI page (AV receivers and amplifiers) |
 | Levoit | 5 | Levoit UK PSTI page (smart air purifiers) |
 | geo (Green Energy Options) | 3 | geo UK PSTI statement (smart energy displays) |
 | NVIDIA | 1 | NVIDIA UK PSTI statement (SHIELD TV) |

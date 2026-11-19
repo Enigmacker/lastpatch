@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.5.0 - 2026-11-19
+
+- Cisco small business bulletins (62 rows): 350X and SG350XG stackable switches, Cisco Business 350 switches (worldwide part numbers; bulletins limited to Brazil or India left out), RV110W, RV130, RV130W and RV215W routers, WAP125, WAP150, WAP361, WAP571, WAP571E and WAP581 access points.
+- Integra: 9 AV receivers and amplifiers (31 December 2026), from its UK PSTI page.
+- Zyxel: the Three UK versions of the NR7123, NR5103E and NR5103EV2, whose dates differ from Zyxel's own UK list.
+- 8,230 rows, 7,138 models, 71 brands; dataset 0.5.2.
+- Checked and left out: RV320 and RV325 (two bulletins with different dates for the same models), ZTE, Huawei, TCL and Greenpacket statements published by Three (no date), Polk and Cambridge Audio (periods counted from an unstated start), Doro and HONOR (no dates), Motorola and Onkyo (pages refuse automated access).
+
 ## 1.4.0 - 2026-11-19
 
 - Two new brands and more SonicWall and Cisco (345 rows; 8,156 rows, 7,064 models, 70 brands; dataset 0.5.1):
