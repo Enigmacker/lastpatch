@@ -75,6 +75,13 @@ const VENDOR_ALIASES = {
   levoit: ['levoit', 'vesync'],
   talktalk: ['talktalk', 'talk talk'],
   ee: ['ee', 'ee limited', '4gee'],
+  brother: ['brother'],
+  epson: ['epson', 'seiko epson'],
+  sonicwall: ['sonicwall', 'sonic wall'],
+  watchguard: ['watchguard', 'watch guard', 'firebox'],
+  sony: ['sony', 'playstation', 'ps5', 'ps4', 'dualsense'],
+  nintendo: ['nintendo'],
+  nvidia: ['nvidia', 'shield tv'],
 };
 
 const DAY_MS = 24 * 60 * 60 * 1000;
