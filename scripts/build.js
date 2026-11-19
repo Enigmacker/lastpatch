@@ -69,7 +69,8 @@ for (const file of fs.readdirSync(RAW_DIR).filter((f) => f.endsWith('.json')).so
       source_title: r.source_title || null,
       source_date: r.source_date || null,
       region: /^(global|EU|EMEA|APAC|LATAM|[A-Z]{2})$/.test(r.region || '') ? r.region : 'global',
-      retrieved: RETRIEVED,
+      // A raw file may record when its rows were collected; otherwise the build date.
+      retrieved: /^\d{4}-\d{2}-\d{2}$/.test(r.retrieved || '') ? r.retrieved : RETRIEVED,
     };
     const key = [row.vendor, row.model, row.hw_version, row.region].join('|').toLowerCase();
     const prev = seen.get(key);
@@ -93,8 +94,8 @@ const devices = [...seen.values()].sort((a, b) =>
 );
 
 fs.writeFileSync(OUT, JSON.stringify({
-  version: '0.4.4',
-  generated: RETRIEVED,
+  version: '0.4.5',
+  generated: devices.reduce((d, r) => (r.retrieved > d ? r.retrieved : d), RETRIEVED),
   license: 'ODbL-1.0',
   devices,
 }, null, 2) + '\n');

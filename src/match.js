@@ -71,6 +71,10 @@ const VENDOR_ALIASES = {
   aqara: ['aqara', 'lumi united'],
   switchbot: ['switchbot', 'wonderlabs'],
   samsung: ['samsung', 'smartthings'],
+  irobot: ['irobot', 'roomba'],
+  levoit: ['levoit', 'vesync'],
+  talktalk: ['talktalk', 'talk talk'],
+  ee: ['ee', 'ee limited', '4gee'],
 };
 
 const DAY_MS = 24 * 60 * 60 * 1000;

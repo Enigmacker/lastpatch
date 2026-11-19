@@ -131,3 +131,15 @@ test('a model code shared by several products gives suggestions, not a result', 
   ]);
   assert.deepStrictEqual(findDevice(rows, 'E340').suggestions, []); // no maker given
 });
+
+test('Roomba and EE hubs are found by product name or label code', () => {
+  const rows = [
+    { vendor: 'iRobot', model: 'Roomba i7 (RVB-Y2)', hw_version: null },
+    { vendor: 'iRobot', model: 'Roomba i8 (RVB-Y2)', hw_version: null },
+    { vendor: 'EE', model: 'Smart Hub 7 Plus (SH35A, ERV46BE247B-H2-SA)', hw_version: null },
+    { vendor: 'EE', model: 'Smart Hub (SH20A, GRV9517UAC34-2-A-SA)', hw_version: null },
+  ];
+  assert.strictEqual(findDevice(rows, 'Roomba i7').matches[0].row.model, 'Roomba i7 (RVB-Y2)');
+  assert.strictEqual(findDevice(rows, 'EE Smart Hub 7 Plus').matches[0].row.model, 'Smart Hub 7 Plus (SH35A, ERV46BE247B-H2-SA)');
+  assert.strictEqual(findDevice(rows, 'EE SH35A').matches[0].row.model, 'Smart Hub 7 Plus (SH35A, ERV46BE247B-H2-SA)');
+});

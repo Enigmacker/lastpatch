@@ -85,7 +85,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.4.4, retrieved 2026-11-11: 6,483 rows (5,564 models) from 53 brands.
+`data/devices.json` (schema in `data/schema.json`), version 0.4.5, retrieved 2026-11-19: 6,569 rows (5,650 models) from 58 brands.
 
 | Vendor | Rows | Source |
 |---|---|---|
@@ -118,6 +118,9 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Hikvision | 45 | Hikvision security support timeline for the iDS-2CD7x camera series (2 April 2026) |
 | Google (Nest, Google Wifi) | 40 | Google guaranteed software update periods page |
 | Xiaomi | 39 | Xiaomi end-of-life product list (no dates) |
+| Sonos | 29 | Sonos UK PSTI statement of compliance (speakers, soundbars, subwoofers, amplifiers, headphones; minimum dates) |
+| EE | 26 | EE product support document (October 2026): broadband hubs, 4G/5G routers, Wi-Fi discs and extenders, TV boxes; minimum period from the sales start |
+| iRobot (Roomba) | 20 | iRobot UK PSTI statements (one per regulatory model; minimum dates) |
 | Keenetic | 34 | Keenetic warranty and support periods page of each model |
 | Ubiquiti | 29 | Ubiquiti legacy products list (no dates) |
 | Drayton (Wiser, Digistat) | 28 | Drayton security support policy and UK PSTI statements |
@@ -137,6 +140,8 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Edimax | 8 | Edimax end-of-support announcement |
 | Nooie | 7 | Nooie security updates page (no dates) |
 | tado° | 6 | UK PSTI statements |
+| TalkTalk | 6 | TalkTalk product cyber security page (routers, Wi-Fi hub, TV boxes) |
+| Levoit | 5 | Levoit UK PSTI page (smart air purifiers) |
 | geo (Green Energy Options) | 3 | geo UK PSTI statement (smart energy displays) |
 | Samsung SmartThings | 2 | SmartThings hub retirement notice |
 
@@ -147,7 +152,7 @@ Each row records the date exactly as written (`support_end_raw`), whether it is 
 - **Hardware versions matter.** The same model can have different dates per hardware revision (e.g. Tapo C200 V3 vs V5). Check the label under the device.
 - **Sources sometimes contradict themselves.** When one document gives two dates for the same model and hardware version, the earlier date is kept and the build reports the conflict.
 - **Dates differ by market.** ASUS publishes different dates in the UK and Singapore for the same model. Rows are never merged across regions.
-- **Some vendors publish no usable date.** Netgear UK statements only say support ends at "End of Service"; D-Link UK statements say "2 years" without a start date; Swann, Imou, Sonos, Logitech, SimpliSafe, Foscam, Amcrest, IKEA, Somfy, SONOFF, SwitchBot, Cudy and Aruba Instant On publish no per-model dates (some give only rules such as "three years after purchase"). Hikvision publishes a date for one camera series only, Philips Hue and Danfoss only a period with no start date ("invoice date + 5 years"), and Peplink states that it does not end-of-life its products. Xiaomi and Ubiquiti only list products that no longer get updates, without dates.
+- **Some vendors publish no usable date.** Netgear UK statements only say support ends at "End of Service"; D-Link UK statements say "2 years" without a start date; Swann, Imou, Logitech, SimpliSafe, Foscam, Amcrest, IKEA, Somfy, SONOFF, SwitchBot, Cudy and Aruba Instant On publish no per-model dates (some give only rules such as "three years after purchase"). Hikvision publishes a date for one camera series only, Philips Hue and Danfoss only a period with no start date ("invoice date + 5 years"), and Peplink states that it does not end-of-life its products. Xiaomi and Ubiquiti only list products that no longer get updates, without dates.
 - **Minimum guarantees run out.** Google, Amazon, ASUS and others promise updates "until at least" a date. Once it has passed, the device is shown as no longer supported, with a note that updates may still come.
 - **Keenetic** pages give three dates; the dataset uses the end of "Limited updates", the last phase in which security updates are promised, not the later "support discontinuation" date.
 - **Tenda's "End of service date"** is often a day after its end of sale. Tenda's UK PSTI page promises security support for 3 years after end of life in the UK, without a per-model table, so UK units may be supported longer.

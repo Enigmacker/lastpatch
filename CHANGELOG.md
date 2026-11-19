@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.2.0 - 2026-11-19
+
+- Five new brands (86 rows; 6,569 rows, 5,650 models, 58 brands; dataset 0.4.5):
+  - Sonos: 29 speakers, soundbars, subwoofers, amplifiers and headphones from its UK PSTI statement. Sonos promises security updates for at least two years from launch; most of these minimum periods ended on 1 May 2026, the Ace Ultra and Amp Multi run to 3 June 2028. Dates are minimums ("or later").
+  - EE: 26 hubs, 4G/5G routers, Wi-Fi discs and extenders, TV boxes and phone adapters from its product support document (October 2026, Issue 11). EE gives a sales start month and a minimum period in years; the end date is that month plus the period (last day of the month), marked as a minimum.
+  - iRobot: 20 Roomba models from its UK PSTI statements (one per regulatory model), "through at least" 31 December 2027 or 2028, or the end of the warranty if later.
+  - TalkTalk: 6 routers, Wi-Fi hub and TV boxes from its product cyber security page (month given; last day of the month used).
+  - Levoit: 5 smart air purifiers from its UK PSTI page (24 June 2026).
+- A raw file may now record when its rows were collected (`retrieved`); older rows keep their own date.
+- Checked and left out, for lack of a dated official source: BT (periods without a sales start), Virgin Media and Vodafone (no dates on their pages), Cudy (support ends two years after an end-of-life date it does not publish), Ecovacs (empty table), Vantiva TG2492LG (Virgin Media Hub 3: "product is unsupported", no date).
+
 ## 1.1.0 - 2026-11-11
 
 - Three new brands (133 rows; 6,483 rows, 5,564 models, 53 brands):
