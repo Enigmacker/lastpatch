@@ -2,8 +2,8 @@
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
   "fetched_from": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-  "catalogVersion": "2026.11.13",
-  "dateReleased": "2026-11-13T20:24:18.3008Z",
+  "catalogVersion": "2026.11.18",
+  "dateReleased": "2026-11-18T19:17:41.0354Z",
   "license": "Public domain (U.S. Government work); see https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "vulnerabilities": [
     {
@@ -937,6 +937,26 @@
       "knownRansomwareCampaignUse": "Known"
     },
     {
+      "cveID": "CVE-2019-7481",
+      "vendorProject": "SonicWall",
+      "product": "SMA100",
+      "vulnerabilityName": "SonicWall SMA100 SQL Injection Vulnerability",
+      "dateAdded": "2021-11-03",
+      "shortDescription": "SonicWall SMA100 contains a SQL injection vulnerability allowing an unauthenticated user to gain read-only access to unauthorized resources.",
+      "requiredAction": "Apply updates per vendor instructions.",
+      "knownRansomwareCampaignUse": "Known"
+    },
+    {
+      "cveID": "CVE-2019-7483",
+      "vendorProject": "SonicWall",
+      "product": "SMA100",
+      "vulnerabilityName": "SonicWall SMA100 Directory Traversal Vulnerability",
+      "dateAdded": "2022-03-28",
+      "shortDescription": "In SonicWall SMA100, an unauthenticated Directory Traversal vulnerability in the handleWAFRedirect CGI allows the user to test for the presence of a file on the server.",
+      "requiredAction": "Apply updates per vendor instructions.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
       "cveID": "CVE-2020-10987",
       "vendorProject": "Tenda",
       "product": "AC1900 Router AC15 Model",
@@ -1187,6 +1207,16 @@
       "knownRansomwareCampaignUse": "Known"
     },
     {
+      "cveID": "CVE-2020-5135",
+      "vendorProject": "SonicWall",
+      "product": "SonicOS",
+      "vulnerabilityName": "SonicWall SonicOS Buffer Overflow Vulnerability",
+      "dateAdded": "2022-03-15",
+      "shortDescription": "A buffer overflow vulnerability in SonicOS allows a remote attacker to cause Denial of Service (DoS) and potentially execute arbitrary code by sending a malicious request to the firewall.",
+      "requiredAction": "Apply updates per vendor instructions.",
+      "knownRansomwareCampaignUse": "Known"
+    },
+    {
       "cveID": "CVE-2020-5722",
       "vendorProject": "Grandstream",
       "product": "UCM6200",
@@ -1275,6 +1305,76 @@
       "shortDescription": "Cisco HyperFlex HX Installer Virtual Machine contains an insufficient input validation vulnerability which could allow an attacker to execute commands on an affected device as the tomcat8 user.",
       "requiredAction": "Apply updates per vendor instructions.",
       "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2021-20016",
+      "vendorProject": "SonicWall",
+      "product": "SSLVPN SMA100",
+      "vulnerabilityName": "SonicWall SSLVPN SMA100 SQL Injection Vulnerability",
+      "dateAdded": "2021-11-03",
+      "shortDescription": "SonicWall SSLVPN SMA100 contains a SQL injection vulnerability that allows remote exploitation for credential access by an unauthenticated attacker.",
+      "requiredAction": "Apply updates per vendor instructions.",
+      "knownRansomwareCampaignUse": "Known"
+    },
+    {
+      "cveID": "CVE-2021-20021",
+      "vendorProject": "SonicWall",
+      "product": "SonicWall Email Security",
+      "vulnerabilityName": "SonicWall Email Security Improper Privilege Management Vulnerability",
+      "dateAdded": "2021-11-03",
+      "shortDescription": "SonicWall Email Security contains an improper privilege management vulnerability that allows an attacker to create an administrative account by sending a crafted HTTP request to the remote host. This vulnerability has known usage in a SonicWall Email Security exploit chain along with CVE-2021-20022 and CVE-2021-20023 to achieve privilege escalation.",
+      "requiredAction": "Apply updates per vendor instructions.",
+      "knownRansomwareCampaignUse": "Known"
+    },
+    {
+      "cveID": "CVE-2021-20022",
+      "vendorProject": "SonicWall",
+      "product": "SonicWall Email Security",
+      "vulnerabilityName": "SonicWall Email Security Unrestricted Upload of File Vulnerability",
+      "dateAdded": "2021-11-03",
+      "shortDescription": "SonicWall Email Security contains an unrestricted upload of file with dangerous type vulnerability that allows a post-authenticated attacker to upload a file to the remote host. This vulnerability has known usage in a SonicWall Email Security exploit chain along with CVE-2021-20021 and CVE-2021-20023 to achieve privilege escalation.",
+      "requiredAction": "Apply updates per vendor instructions.",
+      "knownRansomwareCampaignUse": "Known"
+    },
+    {
+      "cveID": "CVE-2021-20023",
+      "vendorProject": "SonicWall",
+      "product": "SonicWall Email Security",
+      "vulnerabilityName": "SonicWall Email Security Path Traversal Vulnerability",
+      "dateAdded": "2021-11-03",
+      "shortDescription": "SonicWall Email Security contains a path traversal vulnerability that allows a post-authenticated attacker to read files on the remote host. This vulnerability has known usage in a SonicWall Email Security exploit chain along with CVE-2021-20021 and CVE-2021-20022 to achieve privilege escalation.",
+      "requiredAction": "Apply updates per vendor instructions.",
+      "knownRansomwareCampaignUse": "Known"
+    },
+    {
+      "cveID": "CVE-2021-20028",
+      "vendorProject": "SonicWall",
+      "product": "Secure Remote Access (SRA)",
+      "vulnerabilityName": "SonicWall Secure Remote Access (SRA) SQL Injection Vulnerability",
+      "dateAdded": "2022-03-28",
+      "shortDescription": "SonicWall Secure Remote Access (SRA) products contain an improper neutralization of a SQL Command leading to SQL injection.",
+      "requiredAction": "The impacted product is end-of-life and should be disconnected if still in use.",
+      "knownRansomwareCampaignUse": "Known"
+    },
+    {
+      "cveID": "CVE-2021-20035",
+      "vendorProject": "SonicWall",
+      "product": "SMA100 Appliances",
+      "vulnerabilityName": "SonicWall SMA100 Appliances OS Command Injection Vulnerability",
+      "dateAdded": "2025-04-16",
+      "shortDescription": "SonicWall SMA100 appliances contain an OS command injection vulnerability in the management interface that allows a remote authenticated attacker to inject arbitrary commands as a 'nobody' user, which could potentially lead to code execution.",
+      "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2021-20038",
+      "vendorProject": "SonicWall",
+      "product": "SMA 100 Appliances",
+      "vulnerabilityName": "SonicWall SMA 100 Appliances Stack-Based Buffer Overflow Vulnerability",
+      "dateAdded": "2022-01-28",
+      "shortDescription": "SonicWall SMA 100 devies are vulnerable to an unauthenticated stack-based buffer overflow vulnerability where exploitation can result in code execution.",
+      "requiredAction": "Apply updates per vendor instructions.",
+      "knownRansomwareCampaignUse": "Known"
     },
     {
       "cveID": "CVE-2021-20123",
@@ -1777,6 +1877,16 @@
       "knownRansomwareCampaignUse": "Unknown"
     },
     {
+      "cveID": "CVE-2022-23176",
+      "vendorProject": "WatchGuard",
+      "product": "Firebox and XTM",
+      "vulnerabilityName": "WatchGuard Firebox and XTM Privilege Escalation Vulnerability",
+      "dateAdded": "2022-04-11",
+      "shortDescription": "WatchGuard Firebox and XTM appliances allow a remote attacker with unprivileged credentials to access the system with a privileged management session via exposed management access.",
+      "requiredAction": "Apply updates per vendor instructions.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
       "cveID": "CVE-2022-24990",
       "vendorProject": "TerraMaster",
       "product": "TerraMaster OS",
@@ -1794,6 +1904,16 @@
       "dateAdded": "2022-09-08",
       "shortDescription": "D-Link DIR-820L contains an unspecified vulnerability in Device Name parameter in /lan.asp which allows for remote code execution.",
       "requiredAction": "The impacted product is end-of-life and should be disconnected if still in use.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2022-26318",
+      "vendorProject": "WatchGuard",
+      "product": "Firebox and XTM Appliances",
+      "vulnerabilityName": "WatchGuard Firebox and XTM Appliances Arbitrary Code Execution",
+      "dateAdded": "2022-03-25",
+      "shortDescription": "On WatchGuard Firebox and XTM appliances, an unauthenticated user can execute arbitrary code.",
+      "requiredAction": "Apply updates per vendor instructions.",
       "knownRansomwareCampaignUse": "Unknown"
     },
     {
@@ -2067,6 +2187,16 @@
       "knownRansomwareCampaignUse": "Unknown"
     },
     {
+      "cveID": "CVE-2023-44221",
+      "vendorProject": "SonicWall",
+      "product": "SMA100 Appliances",
+      "vulnerabilityName": "SonicWall SMA100 Appliances OS Command Injection Vulnerability",
+      "dateAdded": "2025-05-01",
+      "shortDescription": "SonicWall SMA100 appliances contain an OS command injection vulnerability in the SSL-VPN management interface that allows a remote, authenticated attacker with administrative privilege to inject arbitrary commands as a 'nobody' user.",
+      "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
       "cveID": "CVE-2023-47565",
       "vendorProject": "QNAP",
       "product": "VioStor NVR",
@@ -2154,6 +2284,16 @@
       "dateAdded": "2025-06-25",
       "shortDescription": "D-Link DIR-859 routers contain a path traversal vulnerability in the file /hedwig.cgi of the component HTTP POST Request Handler. Manipulation of the argument service with the input ../../../../htdocs/webinc/getcfg/DHCPS6.BRIDGE-1.xml allows for the leakage of session data potentially enabling privilege escalation and unauthorized control of the device. This vulnerability affects legacy D-Link products. All associated hardware revisions have reached their end-of-life (EOL) or end-of-service (EOS) life cycle and should be retired and replaced per vendor instructions.",
       "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2024-10441",
+      "vendorProject": "Synology",
+      "product": "DiskStation Manager (DSM)",
+      "vulnerabilityName": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+      "dateAdded": "2026-11-18",
+      "shortDescription": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.",
+      "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
       "knownRansomwareCampaignUse": "Unknown"
     },
     {
@@ -2247,6 +2387,16 @@
       "knownRansomwareCampaignUse": "Unknown"
     },
     {
+      "cveID": "CVE-2024-40766",
+      "vendorProject": "SonicWall",
+      "product": "SonicOS",
+      "vulnerabilityName": "SonicWall SonicOS Improper Access Control Vulnerability",
+      "dateAdded": "2024-09-09",
+      "shortDescription": "SonicWall SonicOS contains an improper access control vulnerability that could lead to unauthorized resource access and, under certain conditions, may cause the firewall to crash.",
+      "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
+      "knownRansomwareCampaignUse": "Known"
+    },
+    {
       "cveID": "CVE-2024-40890",
       "vendorProject": "Zyxel",
       "product": "DSL CPE Devices",
@@ -2307,6 +2457,16 @@
       "knownRansomwareCampaignUse": "Unknown"
     },
     {
+      "cveID": "CVE-2024-53704",
+      "vendorProject": "SonicWall",
+      "product": "SonicOS",
+      "vulnerabilityName": "SonicWall SonicOS SSLVPN Improper Authentication Vulnerability",
+      "dateAdded": "2025-02-18",
+      "shortDescription": "SonicWall SonicOS contains an improper authentication vulnerability in the SSLVPN authentication mechanism that allows a remote attacker to bypass authentication.",
+      "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
+      "knownRansomwareCampaignUse": "Known"
+    },
+    {
       "cveID": "CVE-2024-7399",
       "vendorProject": "Samsung",
       "product": "MagicINFO 9 Server",
@@ -2365,6 +2525,16 @@
       "shortDescription": "Google Chromium contains an out of bounds memory access vulnerability in ANGLE that could allow a remote attacker to perform out of bounds memory access via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
       "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
       "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2025-14733",
+      "vendorProject": "WatchGuard",
+      "product": "Firebox",
+      "vulnerabilityName": "WatchGuard Firebox Out of Bounds Write Vulnerability",
+      "dateAdded": "2025-12-19",
+      "shortDescription": "WatchGuard Fireware OS iked process contains an out of bounds write vulnerability in the OS iked process. This vulnerability may allow a remote unauthenticated attacker to execute arbitrary code and affects both the mobile user VPN with IKEv2 and the branch office VPN using IKEv2 when configured with a dynamic gateway peer.",
+      "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "knownRansomwareCampaignUse": "Known"
     },
     {
       "cveID": "CVE-2025-20281",
@@ -2447,6 +2617,16 @@
       "knownRansomwareCampaignUse": "Unknown"
     },
     {
+      "cveID": "CVE-2025-23006",
+      "vendorProject": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "vulnerabilityName": "SonicWall SMA1000 Appliances Deserialization Vulnerability",
+      "dateAdded": "2025-01-24",
+      "shortDescription": "SonicWall SMA1000 Appliance Management Console (AMC) and Central Management Console (CMC) contain a deserialization of untrusted data vulnerability, which can enable a remote, unauthenticated attacker to execute arbitrary OS commands.",
+      "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
+      "knownRansomwareCampaignUse": "Known"
+    },
+    {
       "cveID": "CVE-2025-2783",
       "vendorProject": "Google",
       "product": "Chromium Mojo",
@@ -2464,6 +2644,16 @@
       "dateAdded": "2026-04-24",
       "shortDescription": "D-Link DIR-823X contains a command injection vulnerability that allows an authorized attacker to execute arbitrary commands on remote devices by sending a POST request to /goform/set_prohibiting via the corresponding function. The impacted product could be end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue product utilization.",
       "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2025-40602",
+      "vendorProject": "SonicWall",
+      "product": "SMA1000 appliance",
+      "vulnerabilityName": "SonicWall SMA1000 Missing Authorization Vulnerability",
+      "dateAdded": "2025-12-17",
+      "shortDescription": "SonicWall SMA1000 contains a missing authorization vulnerability that could allow for privilege escalation appliance management console (AMC) of affected devices.",
+      "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable",
       "knownRansomwareCampaignUse": "Unknown"
     },
     {
@@ -2517,6 +2707,16 @@
       "knownRansomwareCampaignUse": "Unknown"
     },
     {
+      "cveID": "CVE-2025-9242",
+      "vendorProject": "WatchGuard",
+      "product": "Firebox",
+      "vulnerabilityName": "WatchGuard Firebox Out-of-Bounds Write Vulnerability",
+      "dateAdded": "2025-11-12",
+      "shortDescription": "WatchGuard Firebox contains an out-of-bounds write vulnerability in the OS iked process that may allow a remote unauthenticated attacker to execute arbitrary code.",
+      "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
       "cveID": "CVE-2025-9377",
       "vendorProject": "TP-Link",
       "product": "Multiple Routers",
@@ -2553,6 +2753,36 @@
       "vulnerabilityName": "Google Chromium Use-After-Free Vulnerability",
       "dateAdded": "2026-11-10",
       "shortDescription": "Google Chromium contains a use-after-free vulnerability in the XML component that could allow a remote attacker to execute arbitrary code inside the sandbox via a specially crafted webpage. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+      "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-15409",
+      "vendorProject": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "vulnerabilityName": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "dateAdded": "2026-07-14",
+      "shortDescription": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location.",
+      "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "knownRansomwareCampaignUse": "Known"
+    },
+    {
+      "cveID": "CVE-2026-15410",
+      "vendorProject": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "vulnerabilityName": "SonicWall SMA1000 Appliances Code Injection Vulnerability",
+      "dateAdded": "2026-07-14",
+      "shortDescription": "SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands.",
+      "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "knownRansomwareCampaignUse": "Known"
+    },
+    {
+      "cveID": "CVE-2026-19868",
+      "vendorProject": "SonicWall",
+      "product": "SonicOS SSLVPN",
+      "vulnerabilityName": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
+      "dateAdded": "2026-11-06",
+      "shortDescription": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).",
       "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
       "knownRansomwareCampaignUse": "Unknown"
     },
@@ -2833,6 +3063,26 @@
       "vulnerabilityName": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
       "dateAdded": "2026-10-14",
       "shortDescription": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
+      "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-83548",
+      "vendorProject": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "vulnerabilityName": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "dateAdded": "2026-09-02",
+      "shortDescription": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform unauthorized operations.",
+      "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "knownRansomwareCampaignUse": "Unknown"
+    },
+    {
+      "cveID": "CVE-2026-83549",
+      "vendorProject": "SonicWall",
+      "product": "SMA1000 Appliances",
+      "vulnerabilityName": "SonicWall SMA1000 Appliances OS Command Injection Vulnerability",
+      "dateAdded": "2026-09-02",
+      "shortDescription": "SonicWall SMA1000 Appliances contains an OS command injection vulnerability that could enable a remote authenticated attacker as administrator to execute arbitrary OS commands, resulting in remote code execution.",
       "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
       "knownRansomwareCampaignUse": "Unknown"
     },

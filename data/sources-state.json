@@ -333,7 +333,22 @@
         "date": "2026-11-11",
         "fingerprint": "9074aecd5fda5ad911709d0e90782d0b3c0758ad83f916eb4f19aab4904cf74b"
       }
-    ]
+    ],
+    "pending": {
+      "date": "2026-11-19",
+      "fingerprint": "5a80eba9a1d9708819b4287fe6c66ce84e6ed5d20610075fb53850d9ae3924dd",
+      "lines": [
+        "Arlo Audio Doorbell (AAD1001)",
+        "Arlo Baby (ABC1000)",
+        "Arlo Pro 2 (VMC4030P)",
+        "Arlo Pro Camera (VMC4030)",
+        "Arlo Q (VMC3040)",
+        "Arlo Q+ (VMC3040S)",
+        "Arlo Security Light System (ALS1101)",
+        "Arlo Wire-Free Camera (VMC3030)",
+        "Note: US customers who first installed an Arlo Wire-Free Camera (VMC3030) or Arlo Pro Camera (VMC4030) before January 1, 2023, are eligible for upgrade offers."
+      ]
+    }
   },
   "https://downloads.arlo.com/files/DoC/UKDOC_AVD1001B.pdf": {
     "vendor": "Arlo",
@@ -1038,9 +1053,7 @@
         "date": "2026-11-11",
         "fingerprint": "d941afe80ea0f79f04368a56f7faa8076ff0bf81e2c0b1a5b3cc960fab31c1eb"
       }
-    ],
-    "failures": 1,
-    "failing_since": "2026-11-16"
+    ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10451": {
     "vendor": "D-Link",
@@ -1063,9 +1076,7 @@
         "date": "2026-11-11",
         "fingerprint": "fa14b8d7e355b9d448ce1696b69e7fea6770f71c5b5149533fc641e390021bfa"
       }
-    ],
-    "failures": 1,
-    "failing_since": "2026-11-16"
+    ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10271": {
     "vendor": "D-Link",
@@ -1087,9 +1098,7 @@
         "date": "2026-11-11",
         "fingerprint": "9c31922939c926701d2976afb248bc73f69621ccfa73011e14b352d8bdcf04ab"
       }
-    ],
-    "failures": 1,
-    "failing_since": "2026-11-16"
+    ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10511": {
     "vendor": "D-Link",
@@ -1110,9 +1119,7 @@
         "date": "2026-11-11",
         "fingerprint": "b8e436f862dbabb8d0c07177933a071f66228e084840653992976ecaf7afa73d"
       }
-    ],
-    "failures": 1,
-    "failing_since": "2026-11-16"
+    ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10393": {
     "vendor": "D-Link",
@@ -1137,9 +1144,7 @@
         "date": "2026-11-11",
         "fingerprint": "7af4f95e79b92a2e9c371856d9f14f1b7e849f2972fa23c09ea320cb4f672656"
       }
-    ],
-    "failures": 1,
-    "failing_since": "2026-11-16"
+    ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10385": {
     "vendor": "D-Link",
@@ -1181,9 +1186,7 @@
         "date": "2026-11-11",
         "fingerprint": "3b6103e06497d26f3784f78dcd8741cc214110f003bd56b2ec6438ba0a3c2ac1"
       }
-    ],
-    "failures": 1,
-    "failing_since": "2026-11-16"
+    ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10410": {
     "vendor": "D-Link",
@@ -1209,9 +1212,7 @@
         "date": "2026-11-11",
         "fingerprint": "893032872b3daceba992093c50c9853dcf2360a1533bec37a8b8ffa0ec53cb54"
       }
-    ],
-    "failures": 1,
-    "failing_since": "2026-11-16"
+    ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10341": {
     "vendor": "D-Link",
@@ -1241,9 +1242,7 @@
         "date": "2026-11-11",
         "fingerprint": "da28199b4e3ad76bef2ca108f1ebaf895bfdb842a9106922ec3b77369d718ab8"
       }
-    ],
-    "failures": 1,
-    "failing_since": "2026-11-16"
+    ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10325": {
     "vendor": "D-Link",
@@ -1266,9 +1265,7 @@
         "date": "2026-11-11",
         "fingerprint": "236f768f616eb564dbd47c4afd8d91f64ce55ef5aa8131759e6b2c63e3bc0218"
       }
-    ],
-    "failures": 1,
-    "failing_since": "2026-11-16"
+    ]
   },
   "https://support.dlink.com/ProductInfo.aspx?m=DIR-878": {
     "vendor": "D-Link",
@@ -1310,9 +1307,7 @@
         "date": "2026-11-11",
         "fingerprint": "a7bc9d4951a6cfb571d387ff4c3b177847cc69197109375abe195bc91e879c05"
       }
-    ],
-    "failures": 1,
-    "failing_since": "2026-11-16"
+    ]
   },
   "https://www.dlink.com/uk/en/products/dir-x1860-ax1800-wifi-6-router": {
     "vendor": "D-Link",
@@ -1356,9 +1351,7 @@
         "date": "2026-11-11",
         "fingerprint": "2fadd9961b946e125f0f3300d08035282740ab437e96b2fa7ee739d8cd3d9cdd"
       }
-    ],
-    "failures": 1,
-    "failing_since": "2026-11-16"
+    ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10413": {
     "vendor": "D-Link",
@@ -1379,9 +1372,7 @@
         "date": "2026-11-11",
         "fingerprint": "f4cac9cf1d74f2b93d0b9c3330cb8511fc842a3334bd06a57bd1b9852013b224"
       }
-    ],
-    "failures": 1,
-    "failing_since": "2026-11-16"
+    ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10519": {
     "vendor": "D-Link",
@@ -1402,9 +1393,7 @@
         "date": "2026-11-11",
         "fingerprint": "26b795c9140d51c84fff2f586296bacac3ffd92a87eae675e8ba12c757b8408f"
       }
-    ],
-    "failures": 1,
-    "failing_since": "2026-11-16"
+    ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10414": {
     "vendor": "D-Link",
@@ -1426,9 +1415,7 @@
         "date": "2026-11-11",
         "fingerprint": "e3365c747a0311e5d4ca85f20476ffa4765e9641032fc9a293efb9076d69206a"
       }
-    ],
-    "failures": 1,
-    "failing_since": "2026-11-16"
+    ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10415": {
     "vendor": "D-Link",
@@ -1448,9 +1435,7 @@
         "date": "2026-11-11",
         "fingerprint": "c4c22c2829e3185337b255d288cf7ea171278aad7578543e9a3843e650cfe771"
       }
-    ],
-    "failures": 1,
-    "failing_since": "2026-11-16"
+    ]
   },
   "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10517": {
     "vendor": "D-Link",
@@ -1471,9 +1456,7 @@
         "date": "2026-11-11",
         "fingerprint": "70bf103bfab0a24d518869dbaee7ee8338e45aa4a264a0ac3d6de65aed6542d1"
       }
-    ],
-    "failures": 1,
-    "failing_since": "2026-11-16"
+    ]
   },
   "https://media.dlink.eu/support/products/m/m15/documentation/M15_A1_PSTI%20DoC_v1.00%28UK%29.pdf": {
     "vendor": "D-Link",
@@ -2699,7 +2682,15 @@
         "date": "2026-11-11",
         "fingerprint": "276fbd3c88179775687342856e2d1f83f1d5a969d69d955fa62974ccae643762"
       }
-    ]
+    ],
+    "pending": {
+      "date": "2026-11-19",
+      "fingerprint": "a8c34c20af22ed848fef383f4f85527bfa46ecd0be1ee510c7e625dd707fc560",
+      "lines": [
+        "Keenetic City ( KN-1510 ) is past its End of Support date and no longer receives any updates. We recommend purchasing the latest version or a newer, more advanced Keenetic product.",
+        "Keenetic City ( KN-1510 ) support timeline"
+      ]
+    }
   },
   "https://support.keenetic.com/explorer/kn-1613/en/36677-warranty-and-support-periods.html": {
     "vendor": "Keenetic",
@@ -5248,7 +5239,7 @@
       }
     ],
     "pending": {
-      "date": "2026-11-16",
+      "date": "2026-11-19",
       "fingerprint": "c41f61623bce77f326e6746f4c4ab4ab28d6b73ed3e9d8b23c900f86e324ded2",
       "links": [
         "https://static.tp-link.com/upload/manual/2026/202611/20261116/Statements%20of%20PSTI%20Compliance_TP-Link_20261116.pdf"
@@ -5489,7 +5480,7 @@
   },
   "https://www.amazon.co.uk/gp/help/customer/display.html?nodeId=G6SH55LKBSAZ2BAK": {
     "vendor": "Amazon",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://www.amazon.co.uk/gp/help/customer/display.html?nodeId=GMZQWNQRVENX4GTQ": {
@@ -5503,126 +5494,128 @@
         "date": "2026-11-11",
         "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       }
-    ]
+    ],
+    "failures": 1,
+    "failing_since": "2026-11-19"
   },
   "https://legacy.us.dlink.com/": {
     "vendor": "D-Link",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://legacyfiles.us.dlink.com/COVR-C1203/COVR-C1203_END_OF_SUPPORT_NOTICE.pdf": {
     "vendor": "D-Link",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://legacyfiles.us.dlink.com/COVR-P2502/REVA/COVR-P2502_END_OF_SUPPORT_NOTICE.pdf": {
     "vendor": "D-Link",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://legacyfiles.us.dlink.com/DAP-1620/REVA/DAP-1620_REVA_END_OF_SUPPORT_NOTICE.pdf": {
     "vendor": "D-Link",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://legacyfiles.us.dlink.com/dir-605l/REVA/DIR-605L_END_OF_SERVICE_ANNOUNCEMENT.pdf": {
     "vendor": "D-Link",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://legacyfiles.us.dlink.com/DIR-640L/REVA/DIR-640L_END_OF_SUPPORT_NOTICE.pdf": {
     "vendor": "D-Link",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://legacyfiles.us.dlink.com/DIR-810L/DIR-810L_END_OF_SUPPORT_NOTICE.pdf": {
     "vendor": "D-Link",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://legacyfiles.us.dlink.com/DIR-842/REVC/DIR-842_END_OF_SUPPORT_NOTICE.pdf": {
     "vendor": "D-Link",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://legacyfiles.us.dlink.com/DIR-1950/DIR-1950-US%20EOS%20NOTICE.pdf": {
     "vendor": "D-Link",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://www.edimax.com/edimax/post/post/data/edimax/global/eos_announcement": {
     "vendor": "Edimax",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://www.netatmo.com/document/9f2271c9-5969-49ff-a794-9ab5b543836c.pdf": {
     "vendor": "Netatmo",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://www.netatmo.com/document/6ad57846-0833-4c8e-8f11-63f86c30d288.pdf": {
     "vendor": "Netatmo",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://www.netatmo.com/document/654b2895-2915-4e28-874a-a390878a8365.pdf": {
     "vendor": "Netatmo",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://www.netatmo.com/document/ebc9e6b7-83ab-48f7-90eb-395e60aaeb97.pdf": {
     "vendor": "Netatmo",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://www.netatmo.com/document/ac9b588e-6adf-4ba3-8497-d302e84e2866.pdf": {
     "vendor": "Netatmo",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://www.netatmo.com/document/03d91098-2efd-4e40-b63b-fb7e3cf72f87.pdf": {
     "vendor": "Netatmo",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://www.netatmo.com/document/d3eae1ee-4ec1-4704-a2f6-4a60f5687464.pdf": {
     "vendor": "Netatmo",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://www.netatmo.com/document/191db7a3-c444-4e54-b9be-d0b765a20306.pdf": {
     "vendor": "Netatmo",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://www.netatmo.com/document/71dc4e6f-bc05-421b-982b-7cfc2961fe82.pdf": {
     "vendor": "Netatmo",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://d1kusojqr3t85q.cloudfront.net/jrz4hnnvdyct/1HlksuPJo1aU2EGVXLdYTw/5f0dda5d64b34be742d4c9eacda2d71f/Ring_V3.1_UK_PSTI_Statement_Of_Compliance_081026.pdf": {
     "vendor": "Ring",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://support.smartthings.com/hc/en-us/articles/360055814272-SmartThings-Hub-2013-and-SmartThings-Link-for-NVIDIA-SHIELD-FAQs": {
     "vendor": "Samsung SmartThings",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://forum.terra-master.com/en/viewtopic.php?p=56371": {
     "vendor": "TerraMaster",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://forum.terra-master.com/en/viewtopic.php?p=40183": {
     "vendor": "TerraMaster",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://help.ui.com/hc/articles/1500001268521": {
     "vendor": "Ubiquiti",
-    "failures": 2,
+    "failures": 3,
     "failing_since": "2026-11-11"
   },
   "https://www.belkin.com/support/wemo": {
@@ -6921,6 +6914,2793 @@
       {
         "date": "2026-11-16",
         "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/bose_global_portal/pdfs/uk_security_statement_and_table_full_list.pdf": {
+    "vendor": "Bose",
+    "failures": 1,
+    "failing_since": "2026-11-19"
+  },
+  "https://support.brother.com/g/s/id/security/SupportDeviceList_PS_Europe.pdf": {
+    "vendor": "Brother",
+    "kind": "bytes",
+    "fingerprint": "66235f054224603d53ebe6b7dee769b14b442b3974a6d41b9152691f47ac69cf",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "66235f054224603d53ebe6b7dee769b14b442b3974a6d41b9152691f47ac69cf"
+      }
+    ]
+  },
+  "https://support.brother.com/g/s/id/security/SupportDeviceList_PS_Australia.pdf": {
+    "vendor": "Brother",
+    "kind": "bytes",
+    "fingerprint": "b8537a14d50696bc17ed3a9008b66bca6f16ebe717aadda8da0d29192731ff5b",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "b8537a14d50696bc17ed3a9008b66bca6f16ebe717aadda8da0d29192731ff5b"
+      }
+    ]
+  },
+  "https://support.brother.com/g/s/es/security/SupportDeviceList_LM_Europe.pdf": {
+    "vendor": "Brother",
+    "kind": "bytes",
+    "fingerprint": "317d7057e3634ac6169ccc4a9bad5078a74eb921bb10ca285494b1fb5bdcc71a",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "317d7057e3634ac6169ccc4a9bad5078a74eb921bb10ca285494b1fb5bdcc71a"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0046-01_bg-r20ep_17dec2025_d5a20d76f75f492692b5f3dea9e395de": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "6c1d3aeabe9351667340c283f3019979de6e315c59745e6b0dafeca28a67440a",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "6c1d3aeabe9351667340c283f3019979de6e315c59745e6b0dafeca28a67440a"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0058-01_c50_17dec2025_4cab3ce227d94c6180c07c60921d4927": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "4547932301454cfe4ec6f982714141825f9449a35571eb517b40f5f8581d145d",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "4547932301454cfe4ec6f982714141825f9449a35571eb517b40f5f8581d145d"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0052-01_c80_17dec2025_f9d6d71c196b470c824ebdcdc437b841": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "38e454f653e9044cafb4458c732ee50dffd15dee1427b482cd44ffc9d3b6577a",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "38e454f653e9044cafb4458c732ee50dffd15dee1427b482cd44ffc9d3b6577a"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0048-01_c400_17dec2025_c54c5091198a42ae8e06d07a9d62b3c1": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "daa6a1ec518257ec4bec7b6b2076222d817760081e4436b7622584d5ed8de62d",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "daa6a1ec518257ec4bec7b6b2076222d817760081e4436b7622584d5ed8de62d"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0042-01_eos-r5-c_17dec2025_7325297ce69846a3a0817901fe0acc8c": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "95ac66ee659c1784116407e5cf5c7f2b9e2c32796a02c7dee4ad7d0d555a27d8",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "95ac66ee659c1784116407e5cf5c7f2b9e2c32796a02c7dee4ad7d0d555a27d8"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0045-01_cf-r20ep_17dec2025_dfd8bef7f2fb4e76b55b177b20489e75": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "6709de35403f3bff8f0ea5381f0d659c2d75044e8368d054e2b035a1d0abb2bb",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "6709de35403f3bff8f0ea5381f0d659c2d75044e8368d054e2b035a1d0abb2bb"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0038-01_cr-n100_17dec2025_19d0bb832ca54304a62b75629d417749": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "75e2c5dbb05bdf58acdaa9e1e4cdbb9f6a983affc54257523379a5a33933f8ee",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "75e2c5dbb05bdf58acdaa9e1e4cdbb9f6a983affc54257523379a5a33933f8ee"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0035-01_cr-n300_17dec2025_e161de2143cb4d499e46690e9c714c0b": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "8554e9c9edc446e6e108cc09e3513b2d343d29f8fb980b268938954626b75638",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "8554e9c9edc446e6e108cc09e3513b2d343d29f8fb980b268938954626b75638"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0060-01_cr-n350_17dec2025_55f7073c282640bcb59d495797246b95": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "d3e383304d17b8e2a12447b1ddde0fff8e559e8b07964fc0564ae7b463d80660",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "d3e383304d17b8e2a12447b1ddde0fff8e559e8b07964fc0564ae7b463d80660"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0059-01_cr-n400_17dec2025_52d1e7f032e04f26a984c113d2a2876d": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "7627d18ef99e5de4023b9917a406d48eee6dcacae42c713c8a1f1a75a62eeb54",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "7627d18ef99e5de4023b9917a406d48eee6dcacae42c713c8a1f1a75a62eeb54"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0034-01_cr-n500_17dec2025_83f7c71d51c54c618bb63622cb6b9b2f": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "8dd7424b259310139ba21a93213da7e12b3796a78f8b226c9b2315b86c87f428",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "8dd7424b259310139ba21a93213da7e12b3796a78f8b226c9b2315b86c87f428"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0037-01_cr-n700_17dec2025_1b848e096af34887a932dbbc8c91a151": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "f34fcc4c4a51d4f48c58de221270a7271739117567c04956293baadc826d4deb",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "f34fcc4c4a51d4f48c58de221270a7271739117567c04956293baadc826d4deb"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0036-01_cr-x300_17dec2025_cb0bf7145c974b49a58c96cf0e41f8ec": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "b7ca030708c8f46723948cfbc411c858602aeab3d5ea6c758dd04d71d81f76f0",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "b7ca030708c8f46723948cfbc411c858602aeab3d5ea6c758dd04d71d81f76f0"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0011-01_eos-5d-mark-iv_17dec2025_93c1a86639994cc8ad8ecf526a99da19": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "099eb4cd7336a8315ef8701bcb2ab0336f4281d45adbedd860e47bbcaaca9eef",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "099eb4cd7336a8315ef8701bcb2ab0336f4281d45adbedd860e47bbcaaca9eef"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0012-01_eos-6d-mark-ii_17dec2025_713e157879434208a6ba0f803bc104a1": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "2c59cce819d84b6a9775ae31c8606444adc2ff34478bc1989489f61a1d65a6da",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "2c59cce819d84b6a9775ae31c8606444adc2ff34478bc1989489f61a1d65a6da"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0015-01_eos-90d_17dec2025_604df506a1044c6ca58e25dfea8f9431": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "e7f4147f41e44ab57519a5b95d99d1f5294d18af9400c20cc770d3beb247648c",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "e7f4147f41e44ab57519a5b95d99d1f5294d18af9400c20cc770d3beb247648c"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0014-01_eos-250d_17dec2025_1fbe2760e0f9451684454f99a94a06a0": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "091e808d7f1f4b1b5f3a73e1cc1f44b6ff6b39dc497824115b681e3f9950985d",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "091e808d7f1f4b1b5f3a73e1cc1f44b6ff6b39dc497824115b681e3f9950985d"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0018-01_eos-850d_17dec2025_83b8a63d66de4219b9885566a714ff96": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "7e4366c943a569c1421b98ed5c3b10ee9325c44ab601845d18c8826834afc5b0",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "7e4366c943a569c1421b98ed5c3b10ee9325c44ab601845d18c8826834afc5b0"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0013-01_eos-2000d_17dec2025_39a1d9dab2b8417da43beed7bf35ff95": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "5cb40be3bf6a485e1081821750e8a1758ce3d0dcef8cfc0af2963470bf57c423",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "5cb40be3bf6a485e1081821750e8a1758ce3d0dcef8cfc0af2963470bf57c423"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0051-01_eos-4000d_17dec2025_b300f278fe4f4ff29aef572baf98b515": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "f9124fb6743e1252e73a9e51765684be05a0344706c7e6ed198cd294de385ede",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "f9124fb6743e1252e73a9e51765684be05a0344706c7e6ed198cd294de385ede"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0024-01_eos-m50-mark-ii_17dec2025_d52b4959c93d4a6e9977108ddf4d2341": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "9a51427eb4fcd60251f86ffd6b75105de61fcf7f6024be43dd30df1487024ae0",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "9a51427eb4fcd60251f86ffd6b75105de61fcf7f6024be43dd30df1487024ae0"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0019-01_eos-r_17dec2025_9dd3f894b1424b7496cd331d811b09f2": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "3e66d63fac80404801afb2d3f1d7cfbad5ce39fb46dfd1365845ae68b103ca59",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "3e66d63fac80404801afb2d3f1d7cfbad5ce39fb46dfd1365845ae68b103ca59"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0049-01_eos-r1_17dec2025_18b81c6886a849fea97899b3da43d824": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "43c049ddfa5e31c46505aed50838e1d95f44bbf59a4c2424dec312dd900e10ed",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "43c049ddfa5e31c46505aed50838e1d95f44bbf59a4c2424dec312dd900e10ed"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0025-01_eos-r3_17dec2025_e180a68677fc46aab126b0933f47386b": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "2821781c2c0d074cf22eafd6860da92a99e68823a264449f525a4c1c35ef2032",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "2821781c2c0d074cf22eafd6860da92a99e68823a264449f525a4c1c35ef2032"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0022-01_eos-r5_17dec2025_896232eaeaed4602aaef3ea3c90cc760": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "8192464cd605accdb0a54af602f81268677333b902b0ce986b9dddf4a443b7b6",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "8192464cd605accdb0a54af602f81268677333b902b0ce986b9dddf4a443b7b6"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0047-01_eos-r5-mark-ii_17dec2025_74f1e5be8b0142ebbffa0f8879336688": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "a564902b3ac5f63b96ac1914e574c01a4ef56854c02edb139aeac6686260aabe",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "a564902b3ac5f63b96ac1914e574c01a4ef56854c02edb139aeac6686260aabe"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0021-01_eos-r6_17dec2025_8b157b4ee6af4ad88a915b5db79b04c7": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "1c40783a540a90c1a1533e280bba767c1774cd60e451dd123f8896d234718f7a",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "1c40783a540a90c1a1533e280bba767c1774cd60e451dd123f8896d234718f7a"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0028-01_eos-r6-mark-ii_17dec2025_cfe187febfde4b48a07b35ceb123e5cd": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "3e3048bd033e7debd178e8d3e7be9d9473331a4b873362da7cce8a04f012004c",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "3e3048bd033e7debd178e8d3e7be9d9473331a4b873362da7cce8a04f012004c"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0057-01_eos-r6-mark-iii_17dec2025_4d42ad5a2ffc4f6ca71ce0da3237a488": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "fe8dca212e270b35d95014fa9ab047d7a450a66ee9c0782d4c25e3c4c4bb4168",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "fe8dca212e270b35d95014fa9ab047d7a450a66ee9c0782d4c25e3c4c4bb4168"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2026-uka-0061-00_eos-r6-v_18mar2026_d6d81029e53e45cdbf6f12ffafa21024": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "5563ddae74e68c61c80913280cf310960cf16d3216a765fe6c004f3cc20dd674",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "5563ddae74e68c61c80913280cf310960cf16d3216a765fe6c004f3cc20dd674"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0026-01_eos-r7_17dec2025_375bbd89162a4e9eacb418e9a2591e62": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "efe9a354ea03f054273a79dbf1a35204548b1094df5ce3e5f44fcf1f840626df",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "efe9a354ea03f054273a79dbf1a35204548b1094df5ce3e5f44fcf1f840626df"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0029-01_eos-r8_17dec2025_4d675383be9b478c9def828b6de05b5e": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "2fd158cebcf589516d8ae67de41b1606bfcf8625c38d527e896fd393ad2e2aa2",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "2fd158cebcf589516d8ae67de41b1606bfcf8625c38d527e896fd393ad2e2aa2"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2026-uka-0062-00_eos-r8-mark-ii_14july2026_3b68d3021d9b47909246b879a269c733": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "8e82fb3315488bd56301b1175e8e0be383fdd3495a5f4480048f0737ba9196cb",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "8e82fb3315488bd56301b1175e8e0be383fdd3495a5f4480048f0737ba9196cb"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0027-01_eos-r10_17dec2025_afe6fabb1d064fe1852d897811868435": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "25a92f4bc5284c2f2a2e68afa4fc7cadbb406dfd07b1966372dc98bbd94fc7f7",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "25a92f4bc5284c2f2a2e68afa4fc7cadbb406dfd07b1966372dc98bbd94fc7f7"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0030-01_eos-r50_17dec2025_58248e7639a24e5f94f65c7f302abe43": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "184200a7aa142482fa6d75c57ff8e34554282a6d307840185116311712edb44a",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "184200a7aa142482fa6d75c57ff8e34554282a6d307840185116311712edb44a"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0055-01_eos-r50-v_17dec2025_19baceefdf4a45a487d12dd69b32f0ef": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "c0bf86d38033598acdaee2c4ef3bee36a2d2c48f8b801e78fe39a95d262a4d4e",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "c0bf86d38033598acdaee2c4ef3bee36a2d2c48f8b801e78fe39a95d262a4d4e"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0031-01_eos-r100_17dec2025_183cc7b8a8d94b27884e38e0425aac8f": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "92ccdafa84150442d81445563eb4e4be25c3c7dd3a257d2617adbc2b71733210",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "92ccdafa84150442d81445563eb4e4be25c3c7dd3a257d2617adbc2b71733210"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0020-01_eos-rp_17dec2025_143e3b017c9d43649b25607aeb1f4af8": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "1bddd32245cfabbc53c60869922964debf49e97654bac3588d8b4d78ef61cdad",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "1bddd32245cfabbc53c60869922964debf49e97654bac3588d8b4d78ef61cdad"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0016-01_eos-1d-x-mark-iii_17dec2025_fca4a2b7b0e84aeb9c025b049d8695b1": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "39e0d625680f332a933c55925e1ff55b8e47778ca2ee5c504785facd2dfdde62",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "39e0d625680f332a933c55925e1ff55b8e47778ca2ee5c504785facd2dfdde62"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0039-01_eu-v1_17dec2025_48ae3caa395d41d99c857fa15393cf89": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "4dfd2624ab03fa6bd0da0cce5f90aa2675fb26bba124ba3bfbe37e4fcd51b633",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "4dfd2624ab03fa6bd0da0cce5f90aa2675fb26bba124ba3bfbe37e4fcd51b633"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0040-01_eu-v2_17dec2025_8540239885a44979ac5bd9c2be294234": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "8fdbb788488db8411b977475535eeebc958480b04fefad52b539ff7be1f4c1ed",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "8fdbb788488db8411b977475535eeebc958480b04fefad52b539ff7be1f4c1ed"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0043-01_eu-v3_17dec2025_155dd248ebdf4b1b87b90376e80d597f": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "3bcee8728e7c9543f6df57de5b0e3241ba069c11af45b24b9a5c85572746527d",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "3bcee8728e7c9543f6df57de5b0e3241ba069c11af45b24b9a5c85572746527d"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/ukpsti_statement-of-compliance-for-mif_web_58e58a800e0c44499986f66aa63c8ecb": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "83d0d088797777d1d1a349d532126c3ce0b6c5e82952446a7306265f191db43a",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "83d0d088797777d1d1a349d532126c3ce0b6c5e82952446a7306265f191db43a"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/ukpsti_statement-of-compliance-for-lbp246dw-ii_lbp243dw-ii_a5_web_ecd524dead394d37a9378b5c56e67eb1": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "30efbaf30987117d45881585561e55000afa64793af6b8c1b0835a8ac1130210",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "30efbaf30987117d45881585561e55000afa64793af6b8c1b0835a8ac1130210"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/ukpsti_statement-of-compliance_lbp647cdw_lbp646dw_a5_web_73b107ab3c26423fb81c44c1b3ca640e": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "d2eff0e6afa8e77c9d31c6517353a3919ac8e9f8fd3efe0a8e879f7ec161fea6",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "d2eff0e6afa8e77c9d31c6517353a3919ac8e9f8fd3efe0a8e879f7ec161fea6"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/ukpsti_statement-of-compliance-for-lbp673cdw-ii_a5_web_c2d869494bb04c449b48124d3ec922b9": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "300f2a02d78d8fdbbcb402f0db2d91e29ca93e7dd859419e0cff5ef70a5dc46b",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "300f2a02d78d8fdbbcb402f0db2d91e29ca93e7dd859419e0cff5ef70a5dc46b"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/ukpsti_statement-of-compliance-for-mf465dw-ii_mf463dw-ii_mf461dw-ii_a5_web_8189dd9dd8a844fbbb2480a1871ee861": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "fad040c8a27642e7dca5b72b1182acbc1922fc4cbc260d7879c3b268ea724081",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "fad040c8a27642e7dca5b72b1182acbc1922fc4cbc260d7879c3b268ea724081"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/ukpsti_statement-of-compliance_mf667cdw_mf664cdw_a5_web_a515ccd940994f49bf1fbc120ab71d74": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "3540e85eeb7b9d71346d970e7794048da8527ac38c47f2bd8b2a789640861d80",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "3540e85eeb7b9d71346d970e7794048da8527ac38c47f2bd8b2a789640861d80"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/ukpsti_statement-of-compliance-for-mf754cdw-ii_mf752cdw-ii_a5_web_be7475a520b0411595411df5088c679f": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "af94ac246faa4410f9ad9a9c345290790a32fdbef1f17ae1488c4f40d93dd3e0",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "af94ac246faa4410f9ad9a9c345290790a32fdbef1f17ae1488c4f40d93dd3e0"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/uk-psti-soc-opp_ij24-001-01_ce04af911e4c4a47984c6016f2c61006": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "acddb6f2400a401e902d17581e22d93b0c821875ac9eab17e47fe086e34ee885",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "acddb6f2400a401e902d17581e22d93b0c821875ac9eab17e47fe086e34ee885"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/uk-psti-statement-of-compliance-_ij(ij24-004-03)-pro-310_93d28ce835984aeab50e6e7a8ffe40c4": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "f3c2f8815cb1a58cb7533c0d9a3665c4ec767e8a45faca84df41d4cfffb4db97",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "f3c2f8815cb1a58cb7533c0d9a3665c4ec767e8a45faca84df41d4cfffb4db97"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0002-01_ixus-285-hs_17dec2025_4f5ddeb6cd4c49139937926b9d1391f8": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "72b3d2763e64608e38fbf9324602880975135d7533ab39f7fa04798b9f1a955b",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "72b3d2763e64608e38fbf9324602880975135d7533ab39f7fa04798b9f1a955b"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0056-01_ixus-285-hs-a_17dec2025_24e0c4c396204d1eb83ad45b91e8c5a0": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "74eb637b54f2b00c69f3ff839bfcb88b72236c67d86f8e921d125e4412304176",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "74eb637b54f2b00c69f3ff839bfcb88b72236c67d86f8e921d125e4412304176"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/uk-psti-statement-of-compliance-_ij(ij24-008-03)-bx110-wb_ddcbd3c1be15456784627178e80e65cc": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "9eb447315f29ab4a53a71c086a27c4b044ce366ca22d686af8282686156f3928",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "9eb447315f29ab4a53a71c086a27c4b044ce366ca22d686af8282686156f3928"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/uk-psti-statement-of-compliance-_ij(ij25-006-03)-gx1051_cb772d6f4b8b439cab6e82c02989a30c": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "ba341e88913aaf6a563276374f2734b26d2460bb6970e385392feef6fcfd723e",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "ba341e88913aaf6a563276374f2734b26d2460bb6970e385392feef6fcfd723e"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/uk-psti-statement-of-compliance-_ij(ij25-007-03)-gx2051_f37b37966a4647a5af5efb4f6dd48259": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "dbefc306172d507d68bc90a761104b28ffd66644d24211104d8b82a415235749",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "dbefc306172d507d68bc90a761104b28ffd66644d24211104d8b82a415235749"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/uk-psti-statement-of-compliance-_ij(ij24-007-03)-gx5150_bda963d963bd42ea9578dcc76bdc30a3": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "ef6049914afd90b334ce60b81b91b2b82964d19b20e342e7e52fd74a210242f4",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "ef6049914afd90b334ce60b81b91b2b82964d19b20e342e7e52fd74a210242f4"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/uk-psti-statement-of-compliance-_ij(ij24-006-03)-gx6150_59320f90210646518eaae7d6a7ccdfde": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "8db2d041a8bd84bf45222d745a4076455af3e4245f10c4c3e785006c012d2976",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "8db2d041a8bd84bf45222d745a4076455af3e4245f10c4c3e785006c012d2976"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/uk-psti-statement-of-compliance-_ij(ij24-005-03)-gx7150_ebc22153a98646089ed7cfdc08b003ba": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "cea0e25376669aa4f5b44790fc246439cd2b013459987269c8a80537acafac3f",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "cea0e25376669aa4f5b44790fc246439cd2b013459987269c8a80537acafac3f"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/uk-psti-statement-of-compliance-_ij(ij24-002-04)_c3cfd412bb2842a0aff937a6c4b7c592": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "47b6a663fce5e14cf3ed226b3aa6a7cf5714b8f6503c84db3309ceeed46131bd",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "47b6a663fce5e14cf3ed226b3aa6a7cf5714b8f6503c84db3309ceeed46131bd"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/uk-psti-statement-of-compliance-_ij(ij24-003-03)-pro-200s_9f501b066f9e4aacb6017db57916a062": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "e6a02b591f8b9fd4017f08d3e6e0d14e54352f1574e9e2c4f13f041815c8150d",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "e6a02b591f8b9fd4017f08d3e6e0d14e54352f1574e9e2c4f13f041815c8150d"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/uk-psti-statement-of-compliance-_ij(ij25-005-03)_1d3b1ddd238d4199a4bce54253a6a500": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "75f88540a63e352cc47491a7b3c4691fdd48d0d059cfe84eafee709cd43907f3",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "75f88540a63e352cc47491a7b3c4691fdd48d0d059cfe84eafee709cd43907f3"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/uk-psti-statement-of-compliance-_ij(ij25-004-03)-ts6550i_382402c3eeb5457a8d2f1974476163d5": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "6ccc4d267fc624b135b9bcd6b0081e22357eb2d1b7d917e8f6797dad49190dcc",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "6ccc4d267fc624b135b9bcd6b0081e22357eb2d1b7d917e8f6797dad49190dcc"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/uk-psti-statement-of-compliance-_ij(ij25-003-03)-gx7550i_f47c2866b86c4b4ca7d680667494c604": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "52804caa0977d3204633e77434dc25d6a737ef0aa8933bd30fa3d27379ecd9a8",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "52804caa0977d3204633e77434dc25d6a737ef0aa8933bd30fa3d27379ecd9a8"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0003-01_powershot-g1-x-mark-iii_17dec2025_a24cf19a76824e768c4d17d403efd26e": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "17609095bf551492accfd79a1f901976a596ed47e91e2ec1d229a2f113d56fb4",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "17609095bf551492accfd79a1f901976a596ed47e91e2ec1d229a2f113d56fb4"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0005-01_powershot-g5-x-mark-ii_17dec2025_67ce357a022e489387569cd8a17e9f05": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "1887884eea8fd91c589a651977675aabe9c16cfab86b58fbb6288f70aa05afca",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "1887884eea8fd91c589a651977675aabe9c16cfab86b58fbb6288f70aa05afca"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0001-01_powershot-g7-x-mark-ii_17dec2025_caa4f68e1dd44054bae635e4069befa2": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "34d80f1ac1443aa569151792cd706f7ea5c5ddd29ffc66ef55a45d6aff0612cd",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "34d80f1ac1443aa569151792cd706f7ea5c5ddd29ffc66ef55a45d6aff0612cd"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0007-01_powershot-g7-x-mark-iii_17dec2025_063a9398fb4341098540efda1daf6a44": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "47fda35e50f5c54d3d54223aff4a9e7b03311869bdf9b79cc56598c59d244e26",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "47fda35e50f5c54d3d54223aff4a9e7b03311869bdf9b79cc56598c59d244e26"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0009-01_powershot-px_17dec2025_ca3ef97789c14223bf867b8b27d58592": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "c01eaf4822766bdc02042191da990294281746b1fa284d7ba52282b39bafc959",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "c01eaf4822766bdc02042191da990294281746b1fa284d7ba52282b39bafc959"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0006-01_powershot-sx70-hs_17dec2025_071c207bd617469d8ec05dca379ada38": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "a1a6e0f2f981226fd4415558687001347868baea870a63ebf8cbbb62d35e5783",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "a1a6e0f2f981226fd4415558687001347868baea870a63ebf8cbbb62d35e5783"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0004-01_powershot-sx740-hs_17dec2025_c5f6ff7fb1df4841aaf4c22dccdcd46e": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "95da6eddb17cdb117d703fbfe0611ba5961bfd96b4269249d422ad78a2b72ee6",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "95da6eddb17cdb117d703fbfe0611ba5961bfd96b4269249d422ad78a2b72ee6"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0053-01_powershot-sx740-hs-lite-edition_17dec2025_b65ddc72f0fb40b79d8855b1c3f51d39": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "2c191ead78b920d8588f2981b1c0fa8d4d83facb639e557cb9af0c71c0cd6386",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "2c191ead78b920d8588f2981b1c0fa8d4d83facb639e557cb9af0c71c0cd6386"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0054-01_powershot-v1_17dec2025_fc656a93e4ca45aab29141d7a09a62d4": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "44f5079cda0d6cbfa1076d482d54d9e9c53da8e0d11a12c498675fdcbc8702f5",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "44f5079cda0d6cbfa1076d482d54d9e9c53da8e0d11a12c498675fdcbc8702f5"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0010-02_powershot-v10_17dec2025_8c776574bd7c44ee82233b5c6ff727fb": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "90c0e8beb12400d5fe8c745807f852b6154822240011ee165fee76fdfe8b1a73",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "90c0e8beb12400d5fe8c745807f852b6154822240011ee165fee76fdfe8b1a73"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0008-01_powershot-zoom_17dec2025_d3ea0e403bfb4572905dfb532020abb9": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "f2e072e008da7aa11b8dfaf8bb6a73e3e1754754fc4ed0b462c7bfd382ebcd4f",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "f2e072e008da7aa11b8dfaf8bb6a73e3e1754754fc4ed0b462c7bfd382ebcd4f"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0033-01_selphy-cp1500_17dec2025_af5f6dc442784e08a0dc547e2c06eade": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "80efa5845cf4cc5d8c21ebc0183461f0d4ea9eb8d4f7be90aff0006be1e3f862",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "80efa5845cf4cc5d8c21ebc0183461f0d4ea9eb8d4f7be90aff0006be1e3f862"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0050-01_selphy-qx20_17dec2025_f214394011be495fa0b77af9cd1fb06b": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "bd3bfe128cf9dbcf453afe7dca3446700e199a8b8d362a84ac08d5a0e28a8b22",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "bd3bfe128cf9dbcf453afe7dca3446700e199a8b8d362a84ac08d5a0e28a8b22"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0032-01_selphy-square-qx10_17dec2025_e0a14a217d294e8facc85116fb7ee02f": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "67cd3e20e1dab890e0e29a8bf11a70277c6b60e73c22a89ca9e44307eb29950d",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "67cd3e20e1dab890e0e29a8bf11a70277c6b60e73c22a89ca9e44307eb29950d"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0017-01_wft-e9b_17dec2025_ffd01f73c1654ef893e1523ae7dc8465": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "7cdffdb50df4217e0c82fa10f2215defbc6da3ae6999e96ba0995fd8452e210c",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "7cdffdb50df4217e0c82fa10f2215defbc6da3ae6999e96ba0995fd8452e210c"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0023-01_wft-r10b_17dec2025_f12f7b491c804512b0340e04c6f0f19f": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "b9533b5492134533e52ff9d0d3e8f6009f9444ab20fe9a2f3c9b8e0b3cc00cc2",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "b9533b5492134533e52ff9d0d3e8f6009f9444ab20fe9a2f3c9b8e0b3cc00cc2"
+      }
+    ]
+  },
+  "https://canon.a.bigcontent.io/v1/static/img-2025-uka-0041-01_xf605_17dec2025_bf4e23799ff243dfaceea2999aeca209": {
+    "vendor": "Canon",
+    "kind": "bytes",
+    "fingerprint": "fcba476b08961640d95f789d3be98a3c80e6cedfd65bbf55601bb7509e05b40d",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "fcba476b08961640d95f789d3be98a3c80e6cedfd65bbf55601bb7509e05b40d"
+      }
+    ]
+  },
+  "https://www.cisco.com/c/en/us/products/collateral/switches/business-350-series-managed-switches/business-350-series-switches-mod-eol.html": {
+    "vendor": "Cisco",
+    "kind": "rows",
+    "fingerprint": "d2c6638d1170eb963284202cfd9296e9c4904a93b7803df197a81039fac89d71",
+    "lines": [
+      "CBS350-16FP-2G-AR",
+      "CBS350-16FP-2G-AU",
+      "CBS350-16FP-2G-EU",
+      "CBS350-16FP-2G-JP",
+      "CBS350-16FP-2G-NA",
+      "CBS350-16FP-2G-SP",
+      "CBS350-16FP-2G-UK",
+      "CBS350-16P-2G-AR",
+      "CBS350-16P-2G-AU",
+      "CBS350-16P-2G-EU",
+      "CBS350-16P-2G-JP",
+      "CBS350-16P-2G-NA",
+      "CBS350-16P-2G-SP",
+      "CBS350-16P-2G-UK",
+      "CBS350-16P-E-2G-AR",
+      "CBS350-16P-E-2G-AU",
+      "CBS350-16P-E-2G-EU",
+      "CBS350-16P-E-2G-JP",
+      "CBS350-16P-E-2G-NA",
+      "CBS350-16P-E-2G-SP",
+      "CBS350-16P-E-2G-UK",
+      "CBS350-16T-2G-AR",
+      "CBS350-16T-2G-AU",
+      "CBS350-16T-2G-EU",
+      "CBS350-16T-2G-JP",
+      "CBS350-16T-2G-NA",
+      "CBS350-16T-2G-SP",
+      "CBS350-16T-2G-UK",
+      "CBS350-16T-E-2G-AR",
+      "CBS350-16T-E-2G-AU",
+      "CBS350-16T-E-2G-EU",
+      "CBS350-16T-E-2G-JP",
+      "CBS350-16T-E-2G-NA",
+      "CBS350-16T-E-2G-SP",
+      "CBS350-16T-E-2G-UK",
+      "CBS350-16XTS-AR",
+      "CBS350-16XTS-AU",
+      "CBS350-16XTS-CN",
+      "CBS350-16XTS-EU",
+      "CBS350-16XTS-JP",
+      "CBS350-16XTS-NA",
+      "CBS350-16XTS-SP",
+      "CBS350-16XTS-TW",
+      "CBS350-16XTS-UK",
+      "CBS350-24FP-4G-AR",
+      "CBS350-24FP-4G-AU",
+      "CBS350-24FP-4G-CN",
+      "CBS350-24FP-4G-EU",
+      "CBS350-24FP-4G-JP",
+      "CBS350-24FP-4G-NA",
+      "CBS350-24FP-4G-SP",
+      "CBS350-24FP-4G-TW",
+      "CBS350-24FP-4G-UK",
+      "CBS350-24FP-4X-AR",
+      "CBS350-24FP-4X-AU",
+      "CBS350-24FP-4X-CN",
+      "CBS350-24FP-4X-EU",
+      "CBS350-24FP-4X-JP",
+      "CBS350-24FP-4X-NA",
+      "CBS350-24FP-4X-SP",
+      "CBS350-24FP-4X-TW",
+      "CBS350-24FP-4X-UK",
+      "CBS350-24MGP-4X-AR",
+      "CBS350-24MGP-4X-AU",
+      "CBS350-24MGP-4X-EU",
+      "CBS350-24MGP-4X-JP",
+      "CBS350-24MGP-4X-NA",
+      "CBS350-24MGP-4X-SP",
+      "CBS350-24MGP-4X-UK",
+      "CBS350-24NGP-4X-AR",
+      "CBS350-24NGP-4X-AU",
+      "CBS350-24NGP-4X-EU",
+      "CBS350-24NGP-4X-JP",
+      "CBS350-24NGP-4X-NA",
+      "CBS350-24NGP-4X-SP",
+      "CBS350-24NGP-4X-UK",
+      "CBS350-24P-4G-AR",
+      "CBS350-24P-4G-AU",
+      "CBS350-24P-4G-CN",
+      "CBS350-24P-4G-EU",
+      "CBS350-24P-4G-JP",
+      "CBS350-24P-4G-NA",
+      "CBS350-24P-4G-SP",
+      "CBS350-24P-4G-TW",
+      "CBS350-24P-4G-UK",
+      "CBS350-24P-4X-AR",
+      "CBS350-24P-4X-AU",
+      "CBS350-24P-4X-CN",
+      "CBS350-24P-4X-EU",
+      "CBS350-24P-4X-JP",
+      "CBS350-24P-4X-NA",
+      "CBS350-24P-4X-SP",
+      "CBS350-24P-4X-TW",
+      "CBS350-24P-4X-UK",
+      "CBS350-24T-4G-AR",
+      "CBS350-24T-4G-AU",
+      "CBS350-24T-4G-CN",
+      "CBS350-24T-4G-EU",
+      "CBS350-24T-4G-JP",
+      "CBS350-24T-4G-NA",
+      "CBS350-24T-4G-SP",
+      "CBS350-24T-4G-TW",
+      "CBS350-24T-4G-UK",
+      "CBS350-24T-4X-AR",
+      "CBS350-24T-4X-AU",
+      "CBS350-24T-4X-CN",
+      "CBS350-24T-4X-EU",
+      "CBS350-24T-4X-JP",
+      "CBS350-24T-4X-NA",
+      "CBS350-24T-4X-SP",
+      "CBS350-24T-4X-TW",
+      "CBS350-24T-4X-UK",
+      "CBS350-24XT-AR",
+      "CBS350-24XT-AU",
+      "CBS350-24XT-EU",
+      "CBS350-24XT-JP",
+      "CBS350-24XT-NA",
+      "CBS350-24XT-SP",
+      "CBS350-24XT-TW",
+      "CBS350-24XT-UK",
+      "CBS350-48FP-4G-AR",
+      "CBS350-48FP-4G-AU",
+      "CBS350-48FP-4G-CN",
+      "CBS350-48FP-4G-EU",
+      "CBS350-48FP-4G-JP",
+      "CBS350-48FP-4G-NA",
+      "CBS350-48FP-4G-SP",
+      "CBS350-48FP-4G-TW",
+      "CBS350-48FP-4G-UK",
+      "CBS350-48FP-4X-AR",
+      "CBS350-48FP-4X-AU",
+      "CBS350-48FP-4X-CN",
+      "CBS350-48FP-4X-EU",
+      "CBS350-48FP-4X-JP",
+      "CBS350-48FP-4X-NA",
+      "CBS350-48FP-4X-SP",
+      "CBS350-48FP-4X-TW",
+      "CBS350-48FP-4X-UK",
+      "CBS350-48P-4G-AR",
+      "CBS350-48P-4G-AU",
+      "CBS350-48P-4G-CN",
+      "CBS350-48P-4G-EU",
+      "CBS350-48P-4G-JP",
+      "CBS350-48P-4G-NA",
+      "CBS350-48P-4G-SP",
+      "CBS350-48P-4G-TW",
+      "CBS350-48P-4G-UK",
+      "CBS350-48P-4X-AR",
+      "CBS350-48P-4X-AU",
+      "CBS350-48P-4X-CN",
+      "CBS350-48P-4X-EU",
+      "CBS350-48P-4X-JP",
+      "CBS350-48P-4X-NA",
+      "CBS350-48P-4X-SP",
+      "CBS350-48P-4X-TW",
+      "CBS350-48P-4X-UK",
+      "CBS350-48T-4G-AR",
+      "CBS350-48T-4G-AU",
+      "CBS350-48T-4G-CN",
+      "CBS350-48T-4G-EU",
+      "CBS350-48T-4G-JP",
+      "CBS350-48T-4G-NA",
+      "CBS350-48T-4G-SP",
+      "CBS350-48T-4G-TW",
+      "CBS350-48T-4G-UK",
+      "CBS350-48T-4X-AR",
+      "CBS350-48T-4X-AU",
+      "CBS350-48T-4X-CN",
+      "CBS350-48T-4X-EU",
+      "CBS350-48T-4X-JP",
+      "CBS350-48T-4X-NA",
+      "CBS350-48T-4X-SP",
+      "CBS350-48T-4X-TW",
+      "CBS350-48T-4X-UK",
+      "CBS350-48XT-4X-EU",
+      "CBS350-48XT-4X-NA",
+      "CBS350-48XT-4X-SP",
+      "CBS350-48XT-4X-UK",
+      "CBS350-8FP-2G-AR",
+      "CBS350-8FP-2G-AU",
+      "CBS350-8FP-2G-EU",
+      "CBS350-8FP-2G-JP",
+      "CBS350-8FP-2G-NA",
+      "CBS350-8FP-2G-SP",
+      "CBS350-8FP-2G-UK",
+      "CBS350-8FP-E-2G-AR",
+      "CBS350-8FP-E-2G-AU",
+      "CBS350-8FP-E-2G-CN",
+      "CBS350-8FP-E-2G-EU",
+      "CBS350-8FP-E-2G-JP",
+      "CBS350-8FP-E-2G-NA",
+      "CBS350-8FP-E-2G-SP",
+      "CBS350-8FP-E-2G-UK",
+      "CBS350-8MGP-2X-AR",
+      "CBS350-8MGP-2X-AU",
+      "CBS350-8MGP-2X-EU",
+      "CBS350-8MGP-2X-JP",
+      "CBS350-8MGP-2X-NA",
+      "CBS350-8MGP-2X-SP",
+      "CBS350-8MGP-2X-UK",
+      "CBS350-8MP-2X-AR",
+      "CBS350-8MP-2X-AU",
+      "CBS350-8MP-2X-EU",
+      "CBS350-8MP-2X-JP",
+      "CBS350-8MP-2X-NA",
+      "CBS350-8MP-2X-SP",
+      "CBS350-8MP-2X-UK",
+      "CBS350-8P-2G-AR",
+      "CBS350-8P-2G-AU",
+      "CBS350-8P-2G-EU",
+      "CBS350-8P-2G-JP",
+      "CBS350-8P-2G-NA",
+      "CBS350-8P-2G-SP",
+      "CBS350-8P-2G-UK",
+      "CBS350-8P-E-2G-AR",
+      "CBS350-8P-E-2G-AU",
+      "CBS350-8P-E-2G-CN",
+      "CBS350-8P-E-2G-EU",
+      "CBS350-8P-E-2G-JP",
+      "CBS350-8P-E-2G-NA",
+      "CBS350-8P-E-2G-SP",
+      "CBS350-8P-E-2G-UK",
+      "CBS350-8T-E-2G-AR",
+      "CBS350-8T-E-2G-AU",
+      "CBS350-8T-E-2G-CN",
+      "CBS350-8T-E-2G-EU",
+      "CBS350-8T-E-2G-JP",
+      "CBS350-8T-E-2G-NA",
+      "CBS350-8T-E-2G-SP",
+      "CBS350-8T-E-2G-UK",
+      "CBS350-8XT-AU",
+      "CBS350-8XT-EU",
+      "CBS350-8XT-JP",
+      "CBS350-8XT-NA",
+      "CBS350-8XT-SP",
+      "CBS350-8XT-TW",
+      "CBS350-8XT-UK"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "d2c6638d1170eb963284202cfd9296e9c4904a93b7803df197a81039fac89d71"
+      }
+    ]
+  },
+  "https://www.cisco.com/c/en/us/products/collateral/switches/business-350-series-managed-switches/business-cbs350-series-managed-switch-mod-eol.html": {
+    "vendor": "Cisco",
+    "kind": "rows",
+    "fingerprint": "dc72695744e3cb36e2ea6ed79969ebfaaa42d7dde291f31c3f0a23c1909796ff",
+    "lines": [
+      "CBS350-12NP-4X-AR",
+      "CBS350-12NP-4X-AU",
+      "CBS350-12NP-4X-BR",
+      "CBS350-12NP-4X-EU",
+      "CBS350-12NP-4X-IN",
+      "CBS350-12NP-4X-JP",
+      "CBS350-12NP-4X-NA",
+      "CBS350-12NP-4X-SP",
+      "CBS350-12NP-4X-UK",
+      "CBS350-12XS-EU",
+      "CBS350-12XS-NA",
+      "CBS350-12XS-SP",
+      "CBS350-12XS-TW",
+      "CBS350-12XS-UK",
+      "CBS350-12XT-AR",
+      "CBS350-12XT-AU",
+      "CBS350-12XT-BR",
+      "CBS350-12XT-EU",
+      "CBS350-12XT-IN",
+      "CBS350-12XT-JP",
+      "CBS350-12XT-NA",
+      "CBS350-12XT-SP",
+      "CBS350-12XT-TW",
+      "CBS350-12XT-UK",
+      "CBS350-24S-4G-AU",
+      "CBS350-24S-4G-EU",
+      "CBS350-24S-4G-IN",
+      "CBS350-24S-4G-JP",
+      "CBS350-24S-4G-NA",
+      "CBS350-24S-4G-SP",
+      "CBS350-24S-4G-UK",
+      "CBS350-24XS-AR",
+      "CBS350-24XS-AU",
+      "CBS350-24XS-BR",
+      "CBS350-24XS-CN",
+      "CBS350-24XS-EU",
+      "CBS350-24XS-IN",
+      "CBS350-24XS-JP",
+      "CBS350-24XS-NA",
+      "CBS350-24XS-SP",
+      "CBS350-24XS-TW",
+      "CBS350-24XS-UK",
+      "CBS350-24XTS-AU",
+      "CBS350-24XTS-EU",
+      "CBS350-24XTS-JP",
+      "CBS350-24XTS-NA",
+      "CBS350-24XTS-SP",
+      "CBS350-24XTS-TW",
+      "CBS350-24XTS-UK",
+      "CBS350-48NGP-4X-AR",
+      "CBS350-48NGP-4X-AU",
+      "CBS350-48NGP-4X-BR",
+      "CBS350-48NGP-4X-EU",
+      "CBS350-48NGP-4X-IN",
+      "CBS350-48NGP-4X-JP",
+      "CBS350-48NGP-4X-NA",
+      "CBS350-48NGP-4X-SP",
+      "CBS350-48NGP-4X-UK",
+      "CBS350-8S-E-2G-AU",
+      "CBS350-8S-E-2G-EU",
+      "CBS350-8S-E-2G-IN",
+      "CBS350-8S-E-2G-NA",
+      "CBS350-8S-E-2G-SP",
+      "CBS350-8S-E-2G-UK"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "dc72695744e3cb36e2ea6ed79969ebfaaa42d7dde291f31c3f0a23c1909796ff"
+      }
+    ]
+  },
+  "https://documentation.meraki.com/Platform_Management/Product_Information/End-of-Life_Notices/Meraki_End-of-Life_(EOL)_Products_and_Dates": {
+    "vendor": "Cisco",
+    "kind": "rows",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": [],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "https://www.cisco.com/c/en/us/products/collateral/routers/small-business-rv-series-routers/eos-eol-notice-c51-742771.html": {
+    "vendor": "Cisco",
+    "kind": "rows",
+    "fingerprint": "470b8606521f368df0cf3225306b0b10012118d8d32a46c58cf95c5282748595",
+    "lines": [
+      "Cisco RV110W Wireless N VPN Firewall",
+      "Cisco RV130 Multifunction Wireless-N VPN Router",
+      "Cisco RV130 VPN Router",
+      "Cisco RV130W Multifunction Wireless-N VPN Router",
+      "Cisco RV215W Wireless N VPN Firewall",
+      "RV110W-A-CA-K9",
+      "RV110W-A-NA-K9",
+      "RV110W-E-CN-K9",
+      "RV110W-E-G5-K9",
+      "RV130 VPN Router with Web Filtering",
+      "RV130-K8-RU",
+      "RV130-K9-AU",
+      "RV130-K9-CN",
+      "RV130-K9-G5",
+      "RV130-K9-IN",
+      "RV130-K9-NA",
+      "RV130-WB-K8-RU",
+      "RV130-WB-K9-G5",
+      "RV130-WB-K9-NA",
+      "RV130W Wireless-N VPN Router with Web Filtering",
+      "RV130W-A-K9-AU",
+      "RV130W-A-K9-NA",
+      "RV130W-E-K8-RU",
+      "RV130W-E-K9-CN",
+      "RV130W-E-K9-G5",
+      "RV130W-E-K9-IN",
+      "RV130W-WB-A-K9-NA",
+      "RV130W-WB-E-K8-RU",
+      "RV130W-WB-E-K9-G5",
+      "RV215W-A-K9-AU",
+      "RV215W-A-K9-NA",
+      "RV215W-E-K9-G5"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "470b8606521f368df0cf3225306b0b10012118d8d32a46c58cf95c5282748595"
+      }
+    ]
+  },
+  "https://www.cisco.com/c/en/us/products/collateral/switches/250-series-smart-switches/250-series-smart-switches-eol.html": {
+    "vendor": "Cisco",
+    "kind": "rows",
+    "fingerprint": "b0883822824a3929438f319897059da5311cf18b8ad459bfa10a52a70f0eda14",
+    "lines": [
+      "Cisco SF250-24 24-Port 10/100 Smart Switch",
+      "Cisco SF250-24P 24-Port 10/100 PoE Smart Switch",
+      "Cisco SF250-48 48-port 10/100 Switch",
+      "Cisco SF250-48HP 48-port 10/100 PoE Switch",
+      "Cisco SG250-08 8-Port Gigabit Smart Switch",
+      "Cisco SG250-08HP 8-Port Gigabit PoE Smart Switch",
+      "SF250-24-K9-EU",
+      "SF250-24-K9-NA",
+      "SF250-24-K9-UK",
+      "SF250-24P-K9-EU",
+      "SF250-24P-K9-NA",
+      "SF250-24P-K9-UK",
+      "SF250-48-K9-EU",
+      "SF250-48-K9-NA",
+      "SF250-48-K9-UK",
+      "SF250-48HP-K9-EU",
+      "SF250-48HP-K9-NA",
+      "SF250-48HP-K9-UK",
+      "SG250-08-K9-AU",
+      "SG250-08-K9-BR",
+      "SG250-08-K9-CN",
+      "SG250-08-K9-EU",
+      "SG250-08-K9-IN",
+      "SG250-08-K9-JP",
+      "SG250-08-K9-KR",
+      "SG250-08-K9-NA",
+      "SG250-08-K9-UK",
+      "SG250-08HP-K9-AU",
+      "SG250-08HP-K9-EU",
+      "SG250-08HP-K9-NA",
+      "SG250-08HP-K9-UK"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "b0883822824a3929438f319897059da5311cf18b8ad459bfa10a52a70f0eda14"
+      }
+    ]
+  },
+  "https://www.cisco.com/c/en/us/products/collateral/switches/350-series-managed-switches/350-series-managed-switches-eol.html": {
+    "vendor": "Cisco",
+    "kind": "rows",
+    "fingerprint": "68bc8ecc496f2264ed784552cb797310c52d2040fab3cb2734dd8fb10708384b",
+    "lines": [
+      "Cisco SF350-24 24-port 10/100 Managed Switch",
+      "Cisco SF350-24MP 24-port 10/100 Max PoE Managed Switch",
+      "Cisco SF350-24P 24-port 10/100 POE Managed Switch",
+      "Cisco SF350-48P 48-port 10/100 POE Managed Switch",
+      "Cisco SF352-08P 8-port 10/100 POE Managed Switch",
+      "SF350-24-K9-AU",
+      "SF350-24-K9-CN",
+      "SF350-24-K9-EU",
+      "SF350-24-K9-NA",
+      "SF350-24-K9-UK",
+      "SF350-24MP-K9-EU",
+      "SF350-24MP-K9-NA",
+      "SF350-24MP-K9-UK",
+      "SF350-24P-K9-AU",
+      "SF350-24P-K9-CN",
+      "SF350-24P-K9-EU",
+      "SF350-24P-K9-NA",
+      "SF350-24P-K9-UK",
+      "SF350-48P-K9-AU",
+      "SF350-48P-K9-EU",
+      "SF350-48P-K9-NA",
+      "SF350-48P-K9-UK",
+      "SF352-08P-K9-AU",
+      "SF352-08P-K9-EU",
+      "SF352-08P-K9-KR",
+      "SF352-08P-K9-NA",
+      "SF352-08P-K9-UK"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "68bc8ecc496f2264ed784552cb797310c52d2040fab3cb2734dd8fb10708384b"
+      }
+    ]
+  },
+  "https://www.cisco.com/c/en/us/products/collateral/switches/350-series-managed-switches/350-series-managed-switches-select-models-eol.html": {
+    "vendor": "Cisco",
+    "kind": "rows",
+    "fingerprint": "bcb997e8854f39a66439d4d62ad5178cc2e2a74baf9e70cd6481fa77c9b999b1",
+    "lines": [
+      "Cisco SF350-48 48-port 10/100 Managed Switch",
+      "Cisco SF350-48MP 48-port 10/100 POE Managed Switch",
+      "Cisco SF352-08 8-port 10/100 Managed Switch",
+      "Cisco SF352-08MP 8-port 10/100 Max-POE Managed Switch",
+      "Cisco SG350-10SFP 10-port Gigabit Managed SFP Switch",
+      "Cisco SG350-28SFP 28-port Gigabit Managed SFP Switch",
+      "Cisco SG350-8PD 8-Port 2.5G PoE Managed Switch",
+      "SF350-48-K9-EU",
+      "SF350-48-K9-NA",
+      "SF350-48-K9-UK",
+      "SF350-48MP-K9-EU",
+      "SF350-48MP-K9-NA",
+      "SF350-48MP-K9-UK",
+      "SF352-08-K9-EU",
+      "SF352-08-K9-NA",
+      "SF352-08-K9-UK",
+      "SF352-08MP-K9-EU",
+      "SF352-08MP-K9-NA",
+      "SF352-08MP-K9-UK",
+      "SG350-10SFP-K9-AU",
+      "SG350-10SFP-K9-EU",
+      "SG350-10SFP-K9-IN",
+      "SG350-10SFP-K9-NA",
+      "SG350-10SFP-K9-UK",
+      "SG350-28SFP-K9-AU",
+      "SG350-28SFP-K9-EU",
+      "SG350-28SFP-K9-IN",
+      "SG350-28SFP-K9-JP",
+      "SG350-28SFP-K9-NA",
+      "SG350-28SFP-K9-UK",
+      "SG350-8PD-K9-AR",
+      "SG350-8PD-K9-AU",
+      "SG350-8PD-K9-BR",
+      "SG350-8PD-K9-EU",
+      "SG350-8PD-K9-JP",
+      "SG350-8PD-K9-NA",
+      "SG350-8PD-K9-UK"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "bcb997e8854f39a66439d4d62ad5178cc2e2a74baf9e70cd6481fa77c9b999b1"
+      }
+    ]
+  },
+  "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/350x-series-stack-managed-switches-eol.html": {
+    "vendor": "Cisco",
+    "kind": "rows",
+    "fingerprint": "d40f2c49c9cda1ce324ba763e19b355973c3898cc44efab87e01885740b91feb",
+    "lines": [
+      "Cisco SG350X-24PD 24-Port 2.5G PoE Stackable Managed Switch",
+      "SG350X-12PMV-K9-AR",
+      "SG350X-12PMV-K9-AU",
+      "SG350X-12PMV-K9-BR",
+      "SG350X-12PMV-K9-EU",
+      "SG350X-12PMV-K9-IN",
+      "SG350X-12PMV-K9-JP",
+      "SG350X-12PMV-K9-NA",
+      "SG350X-12PMV-K9-UK",
+      "SG350X-24PD-K9-AR",
+      "SG350X-24PD-K9-AU",
+      "SG350X-24PD-K9-BR",
+      "SG350X-24PD-K9-EU",
+      "SG350X-24PD-K9-JP",
+      "SG350X-24PD-K9-NA",
+      "SG350X-24PD-K9-UK",
+      "SG350X-24PV-K9-AR",
+      "SG350X-24PV-K9-AU",
+      "SG350X-24PV-K9-BR",
+      "SG350X-24PV-K9-EU",
+      "SG350X-24PV-K9-IN",
+      "SG350X-24PV-K9-JP",
+      "SG350X-24PV-K9-NA",
+      "SG350X-24PV-K9-UK",
+      "SG350X-48PV-K9-AR",
+      "SG350X-48PV-K9-AU",
+      "SG350X-48PV-K9-BR",
+      "SG350X-48PV-K9-EU",
+      "SG350X-48PV-K9-IN",
+      "SG350X-48PV-K9-JP",
+      "SG350X-48PV-K9-NA",
+      "SG350X-48PV-K9-UK",
+      "SG350X-8PMD-K9-AR",
+      "SG350X-8PMD-K9-AU",
+      "SG350X-8PMD-K9-BR",
+      "SG350X-8PMD-K9-EU",
+      "SG350X-8PMD-K9-JP",
+      "SG350X-8PMD-K9-NA",
+      "SG350X-8PMD-K9-UK",
+      "SX350X-08-K9-AU",
+      "SX350X-08-K9-EU",
+      "SX350X-08-K9-JP",
+      "SX350X-08-K9-NA",
+      "SX350X-08-K9-UK",
+      "SX350X-12-K9-AU",
+      "SX350X-12-K9-BR",
+      "SX350X-12-K9-EU",
+      "SX350X-12-K9-IN",
+      "SX350X-12-K9-JP",
+      "SX350X-12-K9-NA",
+      "SX350X-12-K9-UK",
+      "SX350X-24-K9-AU",
+      "SX350X-24-K9-BR",
+      "SX350X-24-K9-EU",
+      "SX350X-24-K9-IN",
+      "SX350X-24-K9-JP",
+      "SX350X-24-K9-NA",
+      "SX350X-24-K9-UK",
+      "SX350X-24F-K9-EU",
+      "SX350X-24F-K9-IN",
+      "SX350X-24F-K9-NA",
+      "SX350X-24F-K9-UK",
+      "SX350X-52-K9-EU",
+      "SX350X-52-K9-NA",
+      "SX350X-52-K9-UK"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "d40f2c49c9cda1ce324ba763e19b355973c3898cc44efab87e01885740b91feb"
+      }
+    ]
+  },
+  "https://www.cisco.com/c/en/us/products/collateral/switches/350x-series-stackable-managed-switches/eos-eol-notice-c51-743290.html": {
+    "vendor": "Cisco",
+    "kind": "rows",
+    "fingerprint": "4c614b31764211315769dfba82afef6c2c80f911ece6a06f1e82abe404d63290",
+    "lines": [
+      "Cisco SG350XG-24F 24-port Ten Gigabit (SFP+) Switch",
+      "Cisco SG350XG-24T 24-port 10GBase-T Stackable Switch",
+      "Cisco SG350XG-2F10 12-port 10GBase-T Stackable Switch",
+      "Cisco SG350XG-48T 48-port 10GBase-T Stackable Switch",
+      "SG350XG-24F-K9-AR",
+      "SG350XG-24F-K9-AU",
+      "SG350XG-24F-K9-BR",
+      "SG350XG-24F-K9-EU",
+      "SG350XG-24F-K9-JP",
+      "SG350XG-24F-K9-NA",
+      "SG350XG-24F-K9-UK",
+      "SG350XG-24T-K9-AR",
+      "SG350XG-24T-K9-AU",
+      "SG350XG-24T-K9-CN",
+      "SG350XG-24T-K9-EU",
+      "SG350XG-24T-K9-JP",
+      "SG350XG-24T-K9-NA",
+      "SG350XG-24T-K9-UK",
+      "SG350XG-2F10-K9-AR",
+      "SG350XG-2F10-K9-AU",
+      "SG350XG-2F10-K9-BR",
+      "SG350XG-2F10-K9-CN",
+      "SG350XG-2F10-K9-EU",
+      "SG350XG-2F10-K9-JP",
+      "SG350XG-2F10-K9-NA",
+      "SG350XG-2F10-K9-UK",
+      "SG350XG-48T-K9-AR",
+      "SG350XG-48T-K9-AU",
+      "SG350XG-48T-K9-CN",
+      "SG350XG-48T-K9-EU",
+      "SG350XG-48T-K9-JP",
+      "SG350XG-48T-K9-NA",
+      "SG350XG-48T-K9-UK"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "4c614b31764211315769dfba82afef6c2c80f911ece6a06f1e82abe404d63290"
+      }
+    ]
+  },
+  "https://cisco.com/c/en/us/products/collateral/wireless/small-business-wireless-access-points/eos-eol-notice-c51-744838.html": {
+    "vendor": "Cisco",
+    "failures": 1,
+    "failing_since": "2026-11-19"
+  },
+  "https://ee.co.uk/content/dam/help/terms-and-conditions/general/software-support/ee-product-support-october-2026-issue-11.pdf": {
+    "vendor": "EE",
+    "kind": "bytes",
+    "fingerprint": "bdc5a56024b47c62239061c588f84007e4cc368fb8f233ab5b78d24c50885eef",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "bdc5a56024b47c62239061c588f84007e4cc368fb8f233ab5b78d24c50885eef"
+      }
+    ]
+  },
+  "https://www.epson.com.au/company/Epson-Support-Periods.pdf": {
+    "vendor": "Epson",
+    "kind": "bytes",
+    "fingerprint": "fa290005c6adb9f770a6621c9df8867d56a8ed73feff78ef0bcecdbabf2316cc",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "fa290005c6adb9f770a6621c9df8867d56a8ed73feff78ef0bcecdbabf2316cc"
+      }
+    ]
+  },
+  "https://genexis.eu/wp-content/uploads/2026/05/UK-Product-Support-PSTI.pdf": {
+    "vendor": "Genexis",
+    "kind": "bytes",
+    "fingerprint": "c90a20cd1a2b1550589fe02f84260a2522e986d66e56f59ec3da6444ce37d75a",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "c90a20cd1a2b1550589fe02f84260a2522e986d66e56f59ec3da6444ce37d75a"
+      }
+    ]
+  },
+  "https://integrahometheater.com/vulnerability": {
+    "vendor": "Integra",
+    "kind": "rows",
+    "fingerprint": "93d5165af0a4f55a5d5946de10814229b9c48036f16be1f67ff5b79cc9f50e4e",
+    "lines": [
+      "31st December 2026",
+      "4125DSP",
+      "4125DSP 4-Channel 125W DSP Amplifier",
+      "4500DSP",
+      "4500DSP 4-Channel 400W DSP Amplifier",
+      "8125DSP",
+      "8125DSP 8-Channel 125W DSP Amplifier",
+      "8125DSP | 31st December 2026",
+      "8500DSP",
+      "8500DSP 8-Channel 500W DSP Amplifier",
+      "8500DSP | 31st December 2026",
+      "DRX 2.4 7.2-Channel Network AVR",
+      "DRX 3.4 9.2-Channel Network AVR",
+      "DRX 5.4 9.2-Channel Network AVR",
+      "DRX 8.4 11.4-Channel Network AVR",
+      "DRX-2.4",
+      "DRX-3.4",
+      "DRX-5.4",
+      "DRX-8.4",
+      "DTM 7.4 Hi-Fi Network Stereo Receiver",
+      "DTM-7.4"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "93d5165af0a4f55a5d5946de10814229b9c48036f16be1f67ff5b79cc9f50e4e"
+      }
+    ]
+  },
+  "https://global.irobot.com/sfsites/c/cms/delivery/media/MCWTL32NW5BJDKNHYBXUK3XMMOPY": {
+    "vendor": "iRobot",
+    "kind": "bytes",
+    "fingerprint": "0b75189b8f8e5d095d14f335aaae97eb868bb6f87677048732802573b8f38781",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "0b75189b8f8e5d095d14f335aaae97eb868bb6f87677048732802573b8f38781"
+      }
+    ]
+  },
+  "https://global.irobot.com/sl/sfsites/c/cms/delivery/media/MCC4JCWU4B2ZD3FLMHZPHDL4X5RI": {
+    "vendor": "iRobot",
+    "kind": "bytes",
+    "fingerprint": "a24986ddd160e24cca2d8684868fdccbda3130a2214786ef14571c15a9679168",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "a24986ddd160e24cca2d8684868fdccbda3130a2214786ef14571c15a9679168"
+      }
+    ]
+  },
+  "https://global.irobot.com/sfsites/c/cms/delivery/media/MCEQU552SUYBCWRF3ZBO2DBXEAYI": {
+    "vendor": "iRobot",
+    "kind": "bytes",
+    "fingerprint": "dd99aae1853708a83c29dec4d2ed9dafbd23262b9193b76d822b7a2dcc854409",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "dd99aae1853708a83c29dec4d2ed9dafbd23262b9193b76d822b7a2dcc854409"
+      }
+    ]
+  },
+  "https://global.irobot.com/sfsites/c/cms/delivery/media/MCQZCDE2Z5OVF6BGKETOMHVKXYMU": {
+    "vendor": "iRobot",
+    "kind": "bytes",
+    "fingerprint": "6d3ca44ad33e03c9dcbc7b9aa636038304dc7e3ee76e884bb258dbac5bdd809d",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "6d3ca44ad33e03c9dcbc7b9aa636038304dc7e3ee76e884bb258dbac5bdd809d"
+      }
+    ]
+  },
+  "https://global.irobot.com/en-GB/sfsites/c/cms/delivery/media/MC7L6J4GDKWJHDFNFO6WUXHWT3PM": {
+    "vendor": "iRobot",
+    "kind": "bytes",
+    "fingerprint": "b2b92c6dc07bdb32cd685d01768d5d80ed836f4e6a01e4b7147d772f42d08478",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "b2b92c6dc07bdb32cd685d01768d5d80ed836f4e6a01e4b7147d772f42d08478"
+      }
+    ]
+  },
+  "https://global.irobot.com/sfsites/c/cms/delivery/media/MCHFKBCANE5NDJTBMDNVAEO32FLM": {
+    "vendor": "iRobot",
+    "kind": "bytes",
+    "fingerprint": "7c578781e1376729ae2217b5c325e7b0247599fbef39f0ad4319cf2c2cb0484b",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "7c578781e1376729ae2217b5c325e7b0247599fbef39f0ad4319cf2c2cb0484b"
+      }
+    ]
+  },
+  "https://global.irobot.com/sfsites/c/cms/delivery/media/MCMKRQSLFIP5EIPCS3LUPVBY7O4I": {
+    "vendor": "iRobot",
+    "kind": "bytes",
+    "fingerprint": "9fa61f1fbb546e1da9865af2eff895aec40c843c7e4d4e1cefc766d5356fd953",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "9fa61f1fbb546e1da9865af2eff895aec40c843c7e4d4e1cefc766d5356fd953"
+      }
+    ]
+  },
+  "https://global.irobot.com/en-GB/sfsites/c/cms/delivery/media/MCAUQG5UMBHNBAPP2TJ7BPTMOQUA": {
+    "vendor": "iRobot",
+    "kind": "bytes",
+    "fingerprint": "fd03bbfee56592ea4b952333a8f0fcaad0ae58c13b4d179267354b621bb949db",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "fd03bbfee56592ea4b952333a8f0fcaad0ae58c13b4d179267354b621bb949db"
+      }
+    ]
+  },
+  "https://global.irobot.com/en-GB/sfsites/c/cms/delivery/media/MCFXZWLXCJMJAOFE7RKS6JVQ5PQU": {
+    "vendor": "iRobot",
+    "kind": "bytes",
+    "fingerprint": "a2a1bef806dd7da4365e469da9aff0f71b9f73866fc4950d4f6ede3bc1ce1eea",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "a2a1bef806dd7da4365e469da9aff0f71b9f73866fc4950d4f6ede3bc1ce1eea"
+      }
+    ]
+  },
+  "https://levoit.com/pages/uk-psti": {
+    "vendor": "Levoit",
+    "failures": 1,
+    "failing_since": "2026-11-19"
+  },
+  "https://static-eu.marstekenergy.com/shopify/psti.html": {
+    "vendor": "Marstek",
+    "kind": "rows",
+    "fingerprint": "f41d3c93badddbe8ca23f0f05543838ea9d2fb2718053c9ff69f6f26071cd618",
+    "lines": [
+      "Hybrid Inverter MST-10KTH-M0",
+      "Hybrid Inverter MST-12KTH-M0",
+      "Hybrid Inverter MST-15KTH-M0",
+      "Hybrid Inverter MST-3.6KSH-M0",
+      "Hybrid Inverter MST-4.6KSH-M0",
+      "Hybrid Inverter MST-5KSH-M0",
+      "Hybrid Inverter MST-6KSH-M0",
+      "Hybrid Inverter MST-8KTH-M0",
+      "Hybrid Inverter MST-MARS II-10KTP",
+      "Hybrid Inverter MST-MARS II-12KTP",
+      "Hybrid Inverter MST-MARS II-15KTP",
+      "Hybrid Inverter MST-MARS II-8KTP",
+      "Power Station M5000-N"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "f41d3c93badddbe8ca23f0f05543838ea9d2fb2718053c9ff69f6f26071cd618"
+      }
+    ]
+  },
+  "https://www.nintendo.com/en-gb/Legal-information/Product-Security-Update-information-2474043.html": {
+    "vendor": "Nintendo",
+    "kind": "rows",
+    "fingerprint": "794398ddea08c34cbb8102fd723ce665e5a1b2b62236e274413cf90631153b59",
+    "lines": [
+      "Joy-Con (R) (HAC-016 / HAC-016(-01)) | Until (at least) 23 September 2028**",
+      "Joy-Con 2 (R) (BEE-014 / BEE-014(-01)) | Until (at least) 23 September 2028**",
+      "NES Controller (R) (HAC-033) | Until (at least) 23 September 2028**",
+      "Nintendo 64 controller (HAC-043 / HAC-043(-01)) | Until (at least) 23 September 2028**",
+      "Nintendo GameCube controller (BEE-021 / BEE-021(-01)) | Until (at least) 23 September 2028**",
+      "Nintendo Sound Clock: Alarmo (CLO-001) | Until (at least) 23 September 2028**",
+      "Nintendo Sound Clock: Alarmo: CLO-001 | Until (at least) 23 September 2028**",
+      "Nintendo Switch 2 (BEE-001 / BEE-001(-01)) | Until (at least) 23 September 2028**",
+      "Nintendo Switch 2 Camera (BEE-019) | Until (at least) 23 September 2028**",
+      "Nintendo Switch 2 Dock (BEE-005) | Until (at least) 23 September 2028**",
+      "Nintendo Switch 2 Pro Controller (BEE-008 / BEE-008(-01)) | Until (at least) 23 September 2028**",
+      "Nintendo Switch 2 dock: BEE-005 | Until (at least) 23 September 2028**",
+      "Nintendo Switch 2: BEE-001 / BEE-001(-01) | Until (at least) 23 September 2028**",
+      "Nintendo Switch Dock (HEG-007) | Until (at least) 23 September 2028**",
+      "Nintendo Switch Lite: HDH-001 | Until (at least) 23 September 2028**",
+      "Nintendo Switch Pro Controller (HAC-013) | Until (at least) 23 September 2028**",
+      "Nintendo Switch dock with LAN port: HEG-007 | Until (at least) 23 September 2028**",
+      "SEGA Mega Drive Control Pad (HAC-045) | Until (at least) 23 September 2028**",
+      "SNES Controller (HAC-042) | Until (at least) 23 September 2028**",
+      "Software for Nintendo Switch 2 consoles that is developed and published by Nintendo and made available for sale in the EU. | Until (at least) 23 September 2028**",
+      "Software for Nintendo Switch 2 consoles that is developed by Nintendo and made available for sale in the United Kingdom | Until (at least) 23 September 2028**",
+      "Software for Nintendo Switch consoles that is developed and published by Nintendo and made available for sale in the EU. | Until (at least) 23 September 2028**",
+      "Software for Nintendo Switch consoles that is developed by Nintendo and made available for sale in the United Kingdom | Until (at least) 23 September 2028**"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "794398ddea08c34cbb8102fd723ce665e5a1b2b62236e274413cf90631153b59"
+      }
+    ]
+  },
+  "https://nvidia.com/content/dam/en-zz/Solutions/support/UK-PSTI-Statement-of-Compliance_V1.0a.pdf": {
+    "vendor": "NVIDIA",
+    "kind": "bytes",
+    "fingerprint": "1fded3dff50117229adca4e1fd3714bb85bb32301b303e398b5b350196de4f8b",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "1fded3dff50117229adca4e1fd3714bb85bb32301b303e398b5b350196de4f8b"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/buds/AUSOCBuds3.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "df97218fb435821c552c97d8e80933cf63a05d59be3a914f0a5dfdac36879da7",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "df97218fb435821c552c97d8e80933cf63a05d59be3a914f0a5dfdac36879da7"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/buds/AUSOCBuds4.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "b39309c94f5e694e867b2ab72dd8748f825a7f25578ff60d6db47ee52432aab5",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "b39309c94f5e694e867b2ab72dd8748f825a7f25578ff60d6db47ee52432aab5"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/fit/AUSOCFit.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "ff4968bb26c2d2a1b82ebab4efeed89f49e7ad5dd97002d56de98ac9bde04c4e",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "ff4968bb26c2d2a1b82ebab4efeed89f49e7ad5dd97002d56de98ac9bde04c4e"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/ring/AUSOCRing.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "59634d74db7faa6a708053a4c328ced75e8bd86ed9a9ea71ca5af97ce65edfdb",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "59634d74db7faa6a708053a4c328ced75e8bd86ed9a9ea71ca5af97ce65edfdb"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/ring/AUSOCRing2025.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "218440272b37051b599ba2b04d835c172f069d51ade4db07fd80f9f3d26ba431",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "218440272b37051b599ba2b04d835c172f069d51ade4db07fd80f9f3d26ba431"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/watch/AUSOCWatchUltra.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "e40ac86374f3892448f9af4f3e903090a09caa0f06e1619ce553541acbe40494",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "e40ac86374f3892448f9af4f3e903090a09caa0f06e1619ce553541acbe40494"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/watch/AUSOCWatch8.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "d031bf39ec3bb6dfeb819d0299cda24d8a0a7ba4c0c5cee99ac03d36865236ee",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "d031bf39ec3bb6dfeb819d0299cda24d8a0a7ba4c0c5cee99ac03d36865236ee"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/watch/AUSOCL345FL340FL355FL350L715F.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "27f44611af387be17a77d5401706394ca35938d87d2afbc5555218c70041d51e",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "27f44611af387be17a77d5401706394ca35938d87d2afbc5555218c70041d51e"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/audio/NSPBS00108A_00_PSTI_HW-B650F_B750F_XY_ENG_251124.0.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "516fa363154c3795b9bdc35289e1a5043bd129028e7da4ba3a5087b7f053c1c0",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "516fa363154c3795b9bdc35289e1a5043bd129028e7da4ba3a5087b7f053c1c0"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/audio/AH85-01394A-00_PSTI_Sound-System-Y24_XY_ENG_251120.0.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "c8b04c74f6a49706acc75d7e9e06d9efef855b5c0b29159abf7735b7db1b8445",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "c8b04c74f6a49706acc75d7e9e06d9efef855b5c0b29159abf7735b7db1b8445"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/audio/720303-020230_HW-Q600F_D00_PSTI_SD-Y25_XY_ENG_251119.0.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "e7cd40896e447b472f925c18c256376cfd08a87bf415cdb80395603c16b60e33",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "e7cd40896e447b472f925c18c256376cfd08a87bf415cdb80395603c16b60e33"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/audio/AH85-01393A-00_PSTI_Sound-System-Y25_XY_ENG_251120.1.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "49f73fdae485a06c89f1f2e273fb5d1a2aac930cab982ca79867d4223a4ffa24",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "49f73fdae485a06c89f1f2e273fb5d1a2aac930cab982ca79867d4223a4ffa24"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/monitor/BN68-25586A-00_PSTI_MonitorY25_XY_ENG_251120.1.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "bd97b9dcfc10abf20e8dfd0abbd78177b260ac3a0f4e628f3e1865c7a0dcc277",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "bd97b9dcfc10abf20e8dfd0abbd78177b260ac3a0f4e628f3e1865c7a0dcc277"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/monitor/BN68-25583A-00_PSTI_MonitorY22_XY_ENG_251120.0.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "07bf76ef434add946c85fc793e48da8fbbb147edcc80df15c9a5516e4cff9156",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "07bf76ef434add946c85fc793e48da8fbbb147edcc80df15c9a5516e4cff9156"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/monitor/BN68-25585A-00_PSTI_MonitorY24_XY_ENG_251120.0.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "5ec05f4af1e502aa2930f1d9fa0b45841326684657dc4ef9906d6ce137e16ba2",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "5ec05f4af1e502aa2930f1d9fa0b45841326684657dc4ef9906d6ce137e16ba2"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/23-24-25/BN68-25582A-00_PSTI_TVY25_XY_ENG_251120.0.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "c3e9a9e6a2b108945d59052a13c1a27d05adff90b21a8f5e52f242d5b2773307",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "c3e9a9e6a2b108945d59052a13c1a27d05adff90b21a8f5e52f242d5b2773307"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/audio/720303-020259_MX-ST40F_D00_PSTI_XY_ENG_260112.0.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "6868949595abb709fd9829815dc0b6841f9cae5c50c40b5abd07f75d310cdf8e",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "6868949595abb709fd9829815dc0b6841f9cae5c50c40b5abd07f75d310cdf8e"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/audio/720303-020258_MX-ST50F_D00_PSTI_XY_ENG_260112.0.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "ca1cb974f529ed2444789d6d3b91196fe94295986035691dbc1e79284d9e3d27",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "ca1cb974f529ed2444789d6d3b91196fe94295986035691dbc1e79284d9e3d27"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/23-24-25/BN68-25580A-00_PSTI_TVY23_XY_ENG_251120.0.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "c621bb3309b000e50e65093b9aba418b978e9416367e046c6f45a03308191a6a",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "c621bb3309b000e50e65093b9aba418b978e9416367e046c6f45a03308191a6a"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/23-24-25/BN68-26165A-00_PSTI_TVY24_XY_ENG_251223.0.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "0614dd781d750bce17939916685f833622a204afcc79e8e194523fda6b15f778",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "0614dd781d750bce17939916685f833622a204afcc79e8e194523fda6b15f778"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/projector/BP81-01134A-00_PSTISoC_SPLFF3HLAXXXY_ENG_251120.0.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "b285e813b9f513a4fce1d771e1f4a8e10e1a7790f80dc04c9e613d9c7e3bc0d1",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "b285e813b9f513a4fce1d771e1f4a8e10e1a7790f80dc04c9e613d9c7e3bc0d1"
+      }
+    ]
+  },
+  "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/23-24-25/BN68-25581A-00_PSTI_TVY24_XY_ENG_251120.0.pdf": {
+    "vendor": "Samsung",
+    "kind": "bytes",
+    "fingerprint": "7f6f9ce06a6c95c33a11d97bd983271c9e0193216494e94439a5ebc056a691b9",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "7f6f9ce06a6c95c33a11d97bd983271c9e0193216494e94439a5ebc056a691b9"
+      }
+    ]
+  },
+  "https://www.sonicwall.com/support/product-lifecycle-tables/nsa-series/hardware": {
+    "vendor": "SonicWall",
+    "kind": "rows",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": [],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "https://www.sonicwall.com/support/product-lifecycle-tables/nssp-series/hardware": {
+    "vendor": "SonicWall",
+    "kind": "rows",
+    "fingerprint": "125da0d13951abfe6961d6a70d98abea3945bc7e8533ce2ab988d6673b212515",
+    "lines": [
+      "NSsp 12400 +",
+      "NSsp 12400 | 2022-02-19 | 2022-02-20 | 2023-02-20 | 2025-02-20 | 2026-02-20",
+      "NSsp 12800 +",
+      "NSsp 12800 | 2022-02-19 | 2022-02-20 | 2023-02-20 | 2025-02-20 | 2026-02-20"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "125da0d13951abfe6961d6a70d98abea3945bc7e8533ce2ab988d6673b212515"
+      }
+    ]
+  },
+  "https://www.sonicwall.com/support/product-lifecycle-tables/secure-mobile-access-100-series/hardware": {
+    "vendor": "SonicWall",
+    "kind": "rows",
+    "fingerprint": "224c757928c4b22d7aa0b77fda5285507962beb9264cf1ce2709f0975dc53225",
+    "lines": [
+      "SMA 200 +",
+      "SMA 200 | 2019-06-17 | 2019-06-18 | 2021-06-18 | 2024-06-17 | 2025-06-18",
+      "SMA 210 +",
+      "SMA 210 | 2024-09-30 | 2024-10-01 | | | 2025-11-01",
+      "SMA 400 +",
+      "SMA 400 | 2019-06-17 | 2019-06-18 | 2021-06-18 | 2024-06-17 | 2025-06-18",
+      "SMA 410 +",
+      "SMA 410 | 2024-09-30 | 2024-10-01 | | | 2025-11-01",
+      "SMA 500v +",
+      "SMA 500v | 2024-09-30 | 2024-10-01 | | | 2025-11-01",
+      "SRA 1200 +",
+      "SRA 1200 | 2013-03-31 | 2013-04-01 | 2015-04-01 | 2015-03-31 | 2016-04-01",
+      "SRA 1600 +",
+      "SRA 1600 | 2016-10-31 | 2016-11-01 | 2018-11-01 | 2018-10-31 | 2019-11-01",
+      "SRA 4200 +",
+      "SRA 4200 | 2012-12-10 | 2012-12-11 | 2014-12-11 | 2015-03-31 | 2016-04-01",
+      "SRA 4600 +",
+      "SRA 4600 | 2016-10-31 | 2016-11-01 | 2018-11-01 | 2018-10-31 | 2019-11-01",
+      "SSL-VPN 200 +",
+      "SSL-VPN 200 | 2011-02-28 | 2011-03-01 | 2011-11-08 | 2011-11-07 | 2014-03-01",
+      "SSL-VPN 2000 +",
+      "SSL-VPN 2000 | 2010-02-28 | 2010-03-01 | 2012-03-01 | 2012-02-28 | 2013-03-01",
+      "SSL-VPN 4000 +",
+      "SSL-VPN 4000 | 2010-05-31 | 2010-06-01 | 2012-06-01 | 2012-05-31 | 2013-06-01",
+      "SonicWall suspended sales of SMA 210 & 410 hardware to India as of July 2022. Learn more here ."
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "224c757928c4b22d7aa0b77fda5285507962beb9264cf1ce2709f0975dc53225"
+      }
+    ]
+  },
+  "https://www.sonicwall.com/support/product-lifecycle-tables/sonicwave-series/hardware": {
+    "vendor": "SonicWall",
+    "kind": "rows",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": [],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "https://www.sonicwall.com/support/product-lifecycle-tables/tz-series/hardware": {
+    "vendor": "SonicWall",
+    "kind": "rows",
+    "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": [],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "https://sonos.com/en-gb/legal/product-security-compliance": {
+    "vendor": "Sonos",
+    "kind": "rows",
+    "fingerprint": "2ef427bdb388b205a90a88d9b64ec0b6f96be25d1d9b53350e15afb9dde8cb41",
+    "lines": [
+      "Amp Multi Statement of Compliance",
+      "Arc SL Statement of Compliance",
+      "Arc Ultra",
+      "Arc Ultra Statement of Compliance",
+      "Beam (Gen 2)",
+      "Beam Gen2 Statement of Compliance",
+      "Developer Portal",
+      "Era 100",
+      "Era 100 SL",
+      "Era 100 Statement of Compliance",
+      "Era 300",
+      "Era 300 Statement of Compliance",
+      "Five",
+      "Five Statement of Compliance",
+      "In-ceiling speakers by Sonos and Sonance Statement of Compliance",
+      "In-wall speakers by Sonos and Sonance Statement of Compliance",
+      "Move 2",
+      "Move 2 Statement of Compliance",
+      "Move Statement of Compliance",
+      "Outdoor speakers by Sonos and Sonance Statement of Compliance",
+      "Port",
+      "Port Statement of Compliance",
+      "Portable Speakers",
+      "Roam 2",
+      "Roam 2 Statement of Compliance",
+      "Roam SL Statement of Compliance",
+      "Roam Statement of Compliance",
+      "Sonos Ace Ultra",
+      "Sonos Ace Ultra Statement of Compliance",
+      "Sub 4",
+      "Sub 4 Statement of Compliance",
+      "Sub Gen3 Statement of Compliance",
+      "Sub Mini",
+      "Sub Mini Statement of Compliance",
+      "Support",
+      "Symfonisk Bookshelf Gen1 Statement of Compliance",
+      "Symfonisk Bookshelf Gen2 Statement of Compliance",
+      "Symfonisk Picture Frame Statement of Compliance",
+      "Symfonisk Speaker lamp base Statement of Compliance",
+      "Symfonisk Table lamp Statement of Compliance"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "2ef427bdb388b205a90a88d9b64ec0b6f96be25d1d9b53350e15afb9dde8cb41"
+      }
+    ]
+  },
+  "https://www.playstation.com/en-gb/legal/compliance/ukpstiregulations/": {
+    "vendor": "Sony",
+    "kind": "rows",
+    "fingerprint": "4206243c5f2486fe91d4e44f80d0c4e3694699231ed3c9aa0aec3f97c6b4db22",
+    "lines": [
+      "DualSense (CFI-ZCT2W, CFI-ZCT1W)",
+      "DualSense Edge (CFI-ZCP1) | April 2027",
+      "PlayStation 4 (CUH-2216A, CUH-2216B)",
+      "PlayStation 5 (CFI-7121, CFI-2116, CFI-7021, CFI-2016, CFI-1216A, CFI-1216B, CFI-1116A, CFI-1116B, CFI-1016A, CFI-1016B)",
+      "PlayStation Portal Remote Player (CFI-Y1016)",
+      "Pulse Elite Wireless Headset (CFI-ZWH2)",
+      "Pulse Explore Wireless Earbuds (CFI-ZWE1)"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "4206243c5f2486fe91d4e44f80d0c4e3694699231ed3c9aa0aec3f97c6b4db22"
+      }
+    ]
+  },
+  "https://help-centre.talktalk.co.uk/Broadband/Security/Product_Cyber_Security": {
+    "vendor": "TalkTalk",
+    "kind": "rows",
+    "fingerprint": "ec56144f4e527c73defa49e06f31a31759fc7608deb6494a77417d666f88b4ca",
+    "lines": [
+      "December 2030",
+      "F4370",
+      "FAST 266 UK",
+      "FAST 5364",
+      "FAST 5464",
+      "January 2027",
+      "March 2026",
+      "November 2025",
+      "November 2027",
+      "Talk Talk TV 4K",
+      "Talk Talk TV Hub",
+      "TalkTalk TV 4K",
+      "TalkTalk TV Hub"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "ec56144f4e527c73defa49e06f31a31759fc7608deb6494a77417d666f88b4ca"
+      }
+    ]
+  },
+  "https://www.watchguard.com/wgrd-trust-center/end-of-life-policy": {
+    "vendor": "WatchGuard",
+    "kind": "rows",
+    "fingerprint": "fc2da97953045641f925c5951ca0029997d777ad1f25ae721dcb557e749b795d",
+    "lines": [
+      "Firebox M200",
+      "Firebox M270",
+      "Firebox M290",
+      "Firebox M300",
+      "Firebox M370",
+      "Firebox M400",
+      "Firebox M440",
+      "Firebox M4600",
+      "Firebox M470",
+      "Firebox M500",
+      "Firebox M5600",
+      "Firebox M570",
+      "Firebox M590",
+      "Firebox M670",
+      "Firebox M690",
+      "Firebox SOHO 6",
+      "Firebox SOHO 6 Wireless",
+      "Firebox T10",
+      "Firebox T10-D",
+      "Firebox T10-W",
+      "Firebox T15",
+      "Firebox T15-W",
+      "Firebox T20",
+      "Firebox T20-W",
+      "Firebox T25",
+      "Firebox T25-W",
+      "Firebox T30",
+      "Firebox T30-W",
+      "Firebox T35",
+      "Firebox T35-DW",
+      "Firebox T35-R",
+      "Firebox T35-W",
+      "Firebox T40",
+      "Firebox T40-W",
+      "Firebox T45",
+      "Firebox T45-POE",
+      "Firebox T45-PoE",
+      "Firebox T45-W-PoE",
+      "Firebox T50",
+      "Firebox T50-W",
+      "Firebox T55",
+      "Firebox T55-W",
+      "Firebox T70",
+      "Firebox T80",
+      "Firebox T85-POE",
+      "Firebox T85-PoE",
+      "Firebox X Core X1000",
+      "Firebox X Core X1250e",
+      "Firebox X Core X2500",
+      "Firebox X Core X500",
+      "Firebox X Core X550e",
+      "Firebox X Core X700",
+      "Firebox X Core X750e",
+      "Firebox X Edge X10e",
+      "Firebox X Edge X10e-W",
+      "Firebox X Edge X15",
+      "Firebox X Edge X15W",
+      "Firebox X Edge X20e",
+      "Firebox X Edge X20e-W",
+      "Firebox X Edge X5",
+      "Firebox X Edge X50",
+      "Firebox X Edge X50W",
+      "Firebox X Edge X55e",
+      "Firebox X Edge X55e-W",
+      "Firebox X Edge X5W",
+      "Firebox X Peak X5500e",
+      "Firebox X Peak X6500e",
+      "Firebox X Peak X8500e",
+      "Firebox X Peak X8500e-F",
+      "WatchGuard AP100",
+      "WatchGuard AP102",
+      "WatchGuard AP120",
+      "WatchGuard AP125",
+      "WatchGuard AP200",
+      "WatchGuard AP225W",
+      "WatchGuard AP300",
+      "WatchGuard AP320",
+      "WatchGuard AP322",
+      "WatchGuard AP325",
+      "WatchGuard AP327X",
+      "WatchGuard AP420",
+      "XTM 1050",
+      "XTM 1520",
+      "XTM 1520-RP",
+      "XTM 1525-RP",
+      "XTM 2050",
+      "XTM 21",
+      "XTM 21-W",
+      "XTM 22",
+      "XTM 22-W",
+      "XTM 23",
+      "XTM 23-W",
+      "XTM 25",
+      "XTM 25-W",
+      "XTM 2520",
+      "XTM 26",
+      "XTM 26-W",
+      "XTM 33",
+      "XTM 33-W",
+      "XTM 330",
+      "XTM 505",
+      "XTM 510",
+      "XTM 515",
+      "XTM 520",
+      "XTM 525",
+      "XTM 530",
+      "XTM 535",
+      "XTM 545",
+      "XTM 810",
+      "XTM 820",
+      "XTM 830",
+      "XTM 830-F",
+      "XTM 850",
+      "XTM 860",
+      "XTM 870",
+      "XTM 870-F"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "fc2da97953045641f925c5951ca0029997d777ad1f25ae721dcb557e749b795d"
+      }
+    ]
+  },
+  "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/zyxel/uk_psti_statements_of_compliance_nr5103e.pdf": {
+    "vendor": "Zyxel",
+    "kind": "bytes",
+    "fingerprint": "09ae2d37afd8ebdc411d52fd2a2e044f953f5004e11d069e22975330a0d0dd91",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "09ae2d37afd8ebdc411d52fd2a2e044f953f5004e11d069e22975330a0d0dd91"
+      }
+    ]
+  },
+  "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/zyxel/uk_psti_statements_of_compliance_nr5103ev2.pdf": {
+    "vendor": "Zyxel",
+    "kind": "bytes",
+    "fingerprint": "43283406410bc70a4974a0a3cbeda9bf2f1facf6b5829fff2f08d135c9261a58",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "43283406410bc70a4974a0a3cbeda9bf2f1facf6b5829fff2f08d135c9261a58"
+      }
+    ]
+  },
+  "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/zyxel/uk_psti_statements_of_compliance_nr7123.pdf": {
+    "vendor": "Zyxel",
+    "kind": "bytes",
+    "fingerprint": "8fbd64370f2ea6bcf717f34d37e46a28873d3a6c0cf4fb261016b2488036aef0",
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "8fbd64370f2ea6bcf717f34d37e46a28873d3a6c0cf4fb261016b2488036aef0"
+      }
+    ]
+  },
+  "https://support.brother.com/g/s/security/en/index.html": {
+    "vendor": "Brother",
+    "kind": "links",
+    "fingerprint": "c9a04cf7425a2b33dcfc7017dfacf8cf5e5790d980d8c2b54f71ef9f93b0e806",
+    "links": [
+      "https://support.brother.com/g/s/es/security/SupportDeviceList_LM_Australia.pdf",
+      "https://support.brother.com/g/s/es/security/SupportDeviceList_LM_Europe.pdf",
+      "https://support.brother.com/g/s/es/security/SupportDeviceList_PH_Australia.pdf",
+      "https://support.brother.com/g/s/es/security/SupportDeviceList_PH_Europe.pdf",
+      "https://support.brother.com/g/s/id/security/SupportDeviceList_PS_Australia.pdf",
+      "https://support.brother.com/g/s/id/security/SupportDeviceList_PS_Europe.pdf"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "c9a04cf7425a2b33dcfc7017dfacf8cf5e5790d980d8c2b54f71ef9f93b0e806"
+      }
+    ]
+  },
+  "https://www.canon.co.uk/psti/": {
+    "vendor": "Canon",
+    "failures": 1,
+    "failing_since": "2026-11-19"
+  },
+  "https://www.samsung.com/au/support/cyber-security-statement-of-compliance/": {
+    "vendor": "Samsung",
+    "kind": "links",
+    "fingerprint": "4fd7217fa468c08847711b448cc4cbc53bbf70fc64f86fdbc38c6aa6d8258fc6",
+    "links": [
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/air-conditioner/AU_SOC_AirConditionerPanel_2026_260127.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/air-conditioner/AU_SOC_AirConditionerWiFiKit_2024_260127.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/air-conditioner/AU_SOC_AirPurifier_2023_260123.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/air-conditioner/AU_SOC_MultiSplitAirConditioner_2026_260127.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/air-conditioner/AU_SOC_RAC_2024_260123.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/air-conditioner/AU_SOC_RAC_ODM_2026_260410.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/air-conditioner/AU_SOC_SingleSpilitAirConditioner_2024_260127.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/air-conditioner/AU_SOC_SingleSpilitAirConditioner_2026_260127.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/audio/720303-020230_HW-Q600F_D00_PSTI_SD-Y25_XY_ENG_251119.0.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/audio/720303-020258_MX-ST50F_D00_PSTI_XY_ENG_260112.0.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/audio/720303-020259_MX-ST40F_D00_PSTI_XY_ENG_260112.0.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/audio/AH85-01393A-00_PSTI_Sound-System-Y25_XY_ENG_251120.1.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/audio/AH85-01394A-00_PSTI_Sound-System-Y24_XY_ENG_251120.0.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/audio/NSPBS00108A_00_PSTI_HW-B650F_B750F_XY_ENG_251124.0.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/audio/PSTI-00031A_PSTISoC_HW-QS90H-XY_XY_ENG_20260828.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/buds/AUSOCBuds3.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/buds/AUSOCBuds4.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/fit/AUSOCFit.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_DV_2020_260123.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_DV_2023_260123.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_DV_2024_260123.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_WD_2021_260123.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_WD_2022_260123.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_WD_2024_260123.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_WD_2026_260123.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_WW_2022_260123.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_WW_2025_260123.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_WW_2026_260127.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/monitor/BN68-25583A-00_PSTI_MonitorY22_XY_ENG_251120.0.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/monitor/BN68-25585A-00_PSTI_MonitorY24_XY_ENG_251120.0.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/monitor/BN68-25586A-00_PSTI_MonitorY25_XY_ENG_251120.1.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/oven%2c-dishwasher%2c-hood%2c-cooktop/AU_SOC_DW_2026_2601231.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/oven,-dishwasher,-hood,-cooktop/AU_SOC_Cooktop_2023_260123.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/oven,-dishwasher,-hood,-cooktop/AU_SOC_DW_2023_260127.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/oven,-dishwasher,-hood,-cooktop/AU_SOC_DW_2025_260127.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/oven,-dishwasher,-hood,-cooktop/AU_SOC_Hood_2023_260123.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/oven,-dishwasher,-hood,-cooktop/AU_SOC_Oven_2022_260123.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/oven,-dishwasher,-hood,-cooktop/AU_SOC_Oven_2023_260123.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/oven,-dishwasher,-hood,-cooktop/AU_SOC_Oven_2025_260123.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/refrigerator/AU_SOC_REF_2021_260123.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/refrigerator/AU_SOC_REF_2023_260128.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/refrigerator/AU_SOC_REF_2024_260128.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/refrigerator/AU_SOC_REF_2026_260128.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/ring/AUSOCRing.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/ring/AUSOCRing2025.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/projector/BP81-01134A-00_PSTISoC_SPLFF3HLAXXXY_ENG_251120.0.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/23-24-25/BN68-25580A-00_PSTI_TVY23_XY_ENG_251120.0.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/23-24-25/BN68-25582A-00_PSTI_TVY25_XY_ENG_251120.0.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/23-24-25/BN68-26165A-00_PSTI_TVY24_XY_ENG_251223.0.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/vacuum/AU_SOC_RVC_2026_260123.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/vacuum/AU_SOC_Stick_VC_2025_260123.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/watch/AUSOCL345FL340FL355FL350L715F.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/watch/AUSOCWatch8.pdf",
+      "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/watch/AUSOCWatchUltra.pdf",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/audio/AH68-03075B-00_PSTISoC_HW-Q990H_XY_XY_ENG_20260106.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/audio/AH68-03076B-00_PSTISoC_HW-Q930H_XY_XY_ENG_20260106.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/audio/AH68-03077B-00_PSTISoC_HW-Q800H_XY_XY_ENG_20260106.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/audio/AH68-03081B-00_PSTISoC_HW-LS71H_XY_XY_ENG_20260108.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/audio/AH68-03081C-00_PSTISoC_HW-LS50H_XY_XY_ENG_20260106.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25406A-00_PSTISoC_UA43U8000HWXXY_XY_ENG_20251203.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25406B-00_PSTISoC_UA43U8500HWXXY_XY_ENG_20260101.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25406C-00_PSTISoC_UA50U8000HWXXY_XY_ENG_20251203.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25406D-00_PSTISoC_UA50U8500HWXXY_XY_ENG_20260101.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25406E-00_PSTISoC_UA55U8000HWXXY_XY_ENG_20251203.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25406F-00_PSTISoC_UA55U8500HWXXY_XY_ENG_20260101.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25406G-00_PSTISoC_UA65U8000HWXXY_XY_ENG_20251203.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25406H-00_PSTISoC_UA65U8500HWXXY_XY_ENG_20260101.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25406J-00_PSTISoC_UA75U8000HWXXY_XY_ENG_20251203.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25406K-00_PSTISoC_UA75U8500HWXXY_XY_ENG_20260109.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25406L-00_PSTISoC_UA85U8000HWXXY_XY_ENG_20251213.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25406M-00_PSTISoC_UA85U8500HWXXY_XY_ENG_20260109.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25415A-00_PSTISoC_UA55M80HAWXXY_XY_ENG_20251210.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25415B-00_PSTISoC_UA65M80HAWXXY_XY_ENG_20251212.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25415C-00_PSTISoC_UA75M80HAWXXY_XY_ENG_20251212.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25415D-00_PSTISoC_UA85M80HAWXXY_XY_ENG_20251212.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25417A-00_PSTISoC_UA43M70HAWXXY_XY_ENG_20251203.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25417C-00_PSTISoC_UA55M70HAWXXY_XY_ENG_20251203.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25417D-00_PSTISoC_UA65M70HAWXXY_XY_ENG_20251203.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25417E-00_PSTISoC_UA75M70HAWXXY_XY_ENG_20251206.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25417F-00_PSTISoC_UA85M70HAWXXY_XY_ENG_20251206.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25908A-00_PSTISoC_UA98U9000HWXXY_XY_ENG_20260130.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25909A-00_PSTISoC_UA27LSM7FAXXXY_XY_ENG_20251220.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-25956A-00_PSTISoC_UA100M90HWXXY_XY_ENG_20260127.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-26144A-00_PSTISoC_UA55M1EHAWXXY_XY_ENG_20251227.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-26145A-00_PSTISoC_UA65M1EHAWXXY_XY_ENG_20251227.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/BN68-26147A-00_PSTISoC_UA85M1EHAWXXY_XY_ENG_20260101.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/PSTI-00005A_PSTISoC_UA50M60HAWXXY_XY_ENG_202604081.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/led-tv/PSTI-00009A_PSTISoC_UA43M60HAWXXY_XY_ENG_20260423.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/micro-led/BN68-25413A-00_PSTISoC_MRA65R95HAWXXY_XY_ENG_20251203.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/micro-led/BN68-25413B-00_PSTISoC_MRA75R95HAWXXY_XY_ENG_20251204.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/micro-led/BN68-25413C-00_PSTISoC_MRA85R95HAWXXY_XY_ENG_20251203.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/micro-led/BN68-25595A-00_PSTISoC_MRA65R85HAWXXY_XY_ENG_20251219.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/micro-led/BN68-25596A-00_PSTISoC_MRA75R85HAWXXY_XY_ENG_20251219.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/micro-led/PSTI-00007A_PSTISoC_MRA130R99HWXXY_XY_ENG_20260423.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/micro-led/PSTI-00008A_PSTISoC_MRA130R95HWXXY_XY_ENG_20260423.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25407B-00_PSTISoC_QA55S95HAWXXY_XY_ENG_20251204.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25407D-00_PSTISoC_QA65S95HAWXXY_XY_ENG_20251223.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25407E-00_PSTISoC_QA77S95HAEXXY_XY_ENG_20251203.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25407F-00_PSTISoC_QA83S95HAEXXY_XY_ENG_20251222.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25408A-00_PSTISoC_QA42S90HAEXXY_XY_ENG_20251223.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25408B-00_PSTISoC_QA48S90HAEXXY_XY_ENG_20251219.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25408C-00_PSTISoC_QA55S90HAWXXY_XY_ENG_20251212.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25408D-00_PSTISoC_QA65S90HAWXXY_XY_ENG_20251219.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25408E-00_PSTISoC_QA77S90HAWXXY_XY_ENG_20251204.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25408F-00_PSTISoC_QA83S90HAEXXY_XY_ENG_20251223.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25409A-00_PSTISoC_QA48S85HAEXXY_XY_ENG_20251219.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25409B-00_PSTISoC_QA55S85HAEXXY_XY_ENG_20251212.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25409C-00_PSTISoC_QA65S85HAEXXY_XY_ENG_20251203.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25409D-00_PSTISoC_QA77S85HAEXXY_XY_ENG_20251219.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25409E-00_PSTISoC_QA83S85HAEXXY_XY_ENG_20251219.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25410A-00_PSTISoC_QA50QN80HAWXXY_XY_ENG_20251206.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25410B-00_PSTISoC_QA55QN80HAWXXY_XY_ENG_20251203.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25410C-00_PSTISoC_QA65QN80HAWXXY_XY_ENG_20251203.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25410D-00_PSTISoC_QA75QN80HAWXXY_XY_ENG_20251203.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25410E-00_PSTISoC_QA85QN80HAWXXY_XY_ENG_20251203.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25410F-00_PSTISoC_QA100QN80HWXXY_XY_ENG_20251209.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25411A-00_PSTISoC_QA43QN70HAWXXY_XY_ENG_20251213.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25411B-00_PSTISoC_QA50QN70HAWXXY_XY_ENG_20251220.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25411C-00_PSTISoC_QA55QN70HAWXXY_XY_ENG_20251216.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25411D-00_PSTISoC_QA65QN70HAWXXY_XY_ENG_20251231.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25411E-00_PSTISoC_QA75QN70HAWXXY_XY_ENG_20251231.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25411F-00_PSTISoC_QA85QN70HAWXXY_XY_ENG_20251231.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25412A-00_PSTISoC_QA55LS03HWWXXY_XY_ENG_20251231.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25412B-00_PSTISoC_QA65LS03HWWXXY_XY_ENG_20251231.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25412C-00_PSTISoC_QA75LS03HWWXXY_XY_ENG_20251217.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25412D-00_PSTISoC_QA85LS03HWWXXY_XY_ENG_20251220.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25414A-00_PSTISoC_QA43LS03HEWXXY_XY_ENG_20260115.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25414B-00_PSTISoC_QA55LS03HEWXXY_XY_ENG_20260115.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25414C-00_PSTISoC_QA65LS03HEWXXY_XY_ENG_20260115.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25414D-00_PSTISoC_QA75LS03HEWXXY_XY_ENG_20260115.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25414E-00_PSTISoC_QA85LS03HEWXXY_XY_ENG_20260115.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-25414F-00_PSTISoC_QA98LS03HEWXXY_XY_ENG_20260106.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-26026A-00_PSTISoC_QA55QN1EHAWXXY_XY_ENG_20260117.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-26028A-00_PSTISoC_QA75QN1EHAWXXY_XY_ENG_20260121.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-26029A-00_PSTISoC_QA85QN1EHAWXXY_XY_ENG_20260121.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-26282A-00_PSTISoC_QA85QN990HWXXY_XY_ENG_20260124.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-26320A-00_PSTISoC_QA40Q5FAAWXXY_XY_ENG_20260203.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-26321A-00_PSTISoC_QA43Q5FAAWXXY_XY_ENG_20260203.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/23-24-25/PSTI-00002A_PSTISoC_QA65Q6F5AWXXY_XY_ENG_20260408.jpg?$ORIGIN_JPG$",
+      "https://images.samsung.com/is/image/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/23-24-25/PSTI-00004A_PSTISoC_QA55Q6F5AWXXY_XY_ENG_20260408.jpg?$ORIGIN_JPG$",
+      "https://p6spp-ap-author.samsung.com/assetdetails.html//images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/23-24-25/BN68-25581A-00_PSTI_TVY24_XY_ENG_251120.0.pdf",
+      "https://www.samsung.com/au/support/cyber-security-statement-of-compliance/content/dam/samsung/au/cyber-security-smart-devices-statement-of-compliance/tv/2026-tv/qled-tv/BN68-26027A-00_PSTISoC_QA65QN1EHAWXXY_XY_ENG_20260121.jpg",
+      "https://www.samsung.com/ccontent/dam/samsung/au/cyber-security-smart-devices-statement-of-compliance/air-conditioner/AU_SOC_RAC_2026_260123.pdf"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "4fd7217fa468c08847711b448cc4cbc53bbf70fc64f86fdbc38c6aa6d8258fc6"
+      }
+    ]
+  },
+  "https://genexis.eu/psti/": {
+    "vendor": "Genexis",
+    "kind": "links",
+    "fingerprint": "074b219f6cde350b49b9ad2833f138dbdfb89b25333e7c43751cf433d1c23b9f",
+    "links": [
+      "https://genexis.eu/wp-content/uploads/2026/05/UK-Product-Support-PSTI.pdf"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "074b219f6cde350b49b9ad2833f138dbdfb89b25333e7c43751cf433d1c23b9f"
+      }
+    ]
+  },
+  "https://www.three.co.uk/terms-conditions/product-security-and-telecommunications-infrastructure": {
+    "vendor": "Three",
+    "kind": "links",
+    "fingerprint": "31ef9feee095a3250d1608146bcdfb08778a9aa7b06abf169c0745b8174957f8",
+    "links": [
+      "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/fonua/statements_of_psti_compliance_tp_link(tapo_c200).pdf",
+      "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/fonua/statements_of_psti_compliance_tp_link(tapo_l530b).pdf",
+      "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/fonua/statements_of_psti_compliance_tp_link(tapo_p100(1-pack)).pdf",
+      "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/fonua/statements_of_psti_compliance_tp_link(tapo_p100(2-pack)).pdf",
+      "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/greenpacket/multipurpose-5g/srtc2024-9004-d-20240628-psti-declaration.pdf",
+      "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/greenpacket/multipurpose-5g/srtc2024-9004-d-20240628-psti-test-report.pdf",
+      "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/huawei/huawei-31500jul-(01multi).pdf",
+      "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/tcl/tcl_wifi63_mw63_um_en_3uk_v1.1_20240329.pdf",
+      "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/tcl/wifi63_mw63v3_qsg_psi_en_cjb74v0hwaac_20240329.pdf",
+      "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/zte/p0229-19zte0256-24zte0098-mf286d-psti-soc.pdf",
+      "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/zte/p0338-24zte0094-mc888-psti-soc-v2-1.pdf",
+      "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/zte/psti-soc-v2-1-mc7010.pdf",
+      "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/zte/psti-soc-v2-1-mc801a.pdf",
+      "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/zte/psti-soc-v2-1-t3000.pdf",
+      "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/zte/psti-soc-v2-1-u50-h3g-2.pdf",
+      "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/zte/psti-soc-v2-1-u50-h3g.pdf",
+      "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/zyxel/uk_psti_statements_of_compliance_nr5103e.pdf",
+      "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/zyxel/uk_psti_statements_of_compliance_nr5103ev2.pdf",
+      "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/zyxel/uk_psti_statements_of_compliance_nr7123.pdf"
+    ],
+    "first_seen": "2026-11-19",
+    "history": [
+      {
+        "date": "2026-11-19",
+        "fingerprint": "31ef9feee095a3250d1608146bcdfb08778a9aa7b06abf169c0745b8174957f8"
       }
     ]
   }

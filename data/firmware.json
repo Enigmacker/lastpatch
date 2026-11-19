@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "generated": "2026-11-16",
+  "generated": "2026-11-19",
   "license": "ODbL-1.0",
   "firmware": [
     {
@@ -11,7 +11,7 @@
       "latest_version": "7.04",
       "release_date": "2024-08-19",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-4020/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -21,7 +21,7 @@
       "latest_version": "8.03",
       "release_date": null,
       "source_url": "https://download.avm.de/fritzbox/fritzbox-4040/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -31,7 +31,7 @@
       "latest_version": "8.51",
       "release_date": "2026-11-05",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-4050/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -41,7 +41,7 @@
       "latest_version": "8.25",
       "release_date": "2026-07-02",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-4060/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -51,7 +51,7 @@
       "latest_version": "8.51",
       "release_date": "2026-11-05",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-4630/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -61,7 +61,7 @@
       "latest_version": "8.51",
       "release_date": "2026-11-05",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-4690/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -71,7 +71,7 @@
       "latest_version": "7.31",
       "release_date": "2023-09-04",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-5490/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -81,7 +81,7 @@
       "latest_version": "7.31",
       "release_date": "2023-09-04",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-5491/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -91,17 +91,17 @@
       "latest_version": "8.25",
       "release_date": "2026-06-18",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-5530-fiber/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
       "model": "FRITZ!Box 5590 Fiber",
       "hw_version": null,
       "region": "DE",
-      "latest_version": "8.25",
-      "release_date": "2026-06-25",
+      "latest_version": "8.51",
+      "release_date": "2026-11-17",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-5590-fiber/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -111,7 +111,7 @@
       "latest_version": "8.50",
       "release_date": "2026-10-08",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-5630/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -121,7 +121,7 @@
       "latest_version": "8.51",
       "release_date": "2026-11-12",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-5690/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -131,7 +131,7 @@
       "latest_version": "8.51",
       "release_date": "2026-11-10",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-5690-pro/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -141,7 +141,7 @@
       "latest_version": "8.51",
       "release_date": "2026-11-03",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-5690-xgs/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -151,7 +151,7 @@
       "latest_version": "7.30",
       "release_date": "2023-09-04",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6430-cable/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -161,7 +161,7 @@
       "latest_version": "7.57",
       "release_date": "2023-09-04",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6490-cable/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -171,7 +171,7 @@
       "latest_version": "7.57",
       "release_date": "2023-09-04",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6590-cable/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -181,7 +181,7 @@
       "latest_version": "8.25",
       "release_date": "2026-03-19",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6591-cable/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -191,7 +191,7 @@
       "latest_version": "8.51",
       "release_date": "2026-11-12",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6660-cable/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -201,7 +201,7 @@
       "latest_version": "8.51",
       "release_date": "2026-11-05",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6670-cable/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -211,7 +211,7 @@
       "latest_version": "8.51",
       "release_date": "2026-11-05",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6690-cable/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -221,7 +221,7 @@
       "latest_version": "8.51",
       "release_date": "2026-11-12",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6690-pro/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -231,7 +231,7 @@
       "latest_version": "7.30",
       "release_date": "2023-09-04",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6820-lte/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -241,7 +241,7 @@
       "latest_version": "7.59",
       "release_date": "2024-11-28",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6820-lte-v2/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -251,7 +251,7 @@
       "latest_version": "7.59",
       "release_date": "2024-11-28",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6820-lte-v3/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -261,7 +261,7 @@
       "latest_version": "7.59",
       "release_date": "2024-11-28",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6820-lte-v4/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -271,7 +271,7 @@
       "latest_version": "8.25",
       "release_date": "2026-07-02",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6825-4g/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -281,7 +281,7 @@
       "latest_version": "8.25",
       "release_date": "2026-07-02",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6850-4g/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -291,7 +291,7 @@
       "latest_version": "8.25",
       "release_date": "2026-09-07",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6850-5g/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -301,7 +301,7 @@
       "latest_version": "8.25",
       "release_date": "2026-07-23",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6850-5g-v2/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -311,7 +311,7 @@
       "latest_version": "8.25",
       "release_date": "2026-07-02",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6850-lte/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -321,7 +321,7 @@
       "latest_version": "8.25",
       "release_date": "2026-07-09",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6860-5g/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -331,7 +331,7 @@
       "latest_version": "8.25",
       "release_date": "2026-08-04",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6860-5g-v2/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -341,7 +341,7 @@
       "latest_version": "7.57",
       "release_date": "2023-09-04",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-6890-lte/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -351,17 +351,17 @@
       "latest_version": "7.62",
       "release_date": "2026-01-08",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-7490/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
       "model": "FRITZ!Box 7510",
       "hw_version": null,
       "region": "DE",
-      "latest_version": "8.26",
-      "release_date": "2026-07-21",
+      "latest_version": "8.51",
+      "release_date": "2026-11-19",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-7510/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -371,7 +371,7 @@
       "latest_version": "8.25",
       "release_date": "2026-05-21",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-7520/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -381,7 +381,7 @@
       "latest_version": "8.25",
       "release_date": "2026-05-21",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-7520-B/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -391,7 +391,7 @@
       "latest_version": "8.25",
       "release_date": "2026-04-21",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-7530/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -401,7 +401,7 @@
       "latest_version": "8.50",
       "release_date": "2026-10-22",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-7530-ax/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -411,7 +411,7 @@
       "latest_version": "7.30",
       "release_date": "2023-09-04",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-7560/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -421,7 +421,7 @@
       "latest_version": "7.30",
       "release_date": "2023-09-04",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-7580/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -431,7 +431,7 @@
       "latest_version": "7.18",
       "release_date": "2024-08-19",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-7582/other/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -441,7 +441,7 @@
       "latest_version": "8.26",
       "release_date": "2026-07-01",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-7583/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -451,7 +451,7 @@
       "latest_version": "8.26",
       "release_date": "2026-05-21",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-7583-vdsl/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -461,7 +461,7 @@
       "latest_version": "8.51",
       "release_date": "2026-11-09",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-7590/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -471,7 +471,7 @@
       "latest_version": "8.51",
       "release_date": "2026-11-09",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-7590-ax/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -481,7 +481,7 @@
       "latest_version": "8.26",
       "release_date": "2026-07-30",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-7620/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -491,7 +491,7 @@
       "latest_version": "8.51",
       "release_date": "2026-11-05",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-7630/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -501,7 +501,7 @@
       "latest_version": "8.51",
       "release_date": "2026-11-05",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-7630-b/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -511,7 +511,7 @@
       "latest_version": "8.51",
       "release_date": "2026-11-04",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-7632/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -521,7 +521,7 @@
       "latest_version": "8.51",
       "release_date": "2026-11-12",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-7682/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -531,7 +531,7 @@
       "latest_version": "8.51",
       "release_date": "2026-11-12",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-7690/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     },
     {
       "vendor": "AVM",
@@ -541,7 +541,7 @@
       "latest_version": "8.51",
       "release_date": "2026-11-05",
       "source_url": "https://download.avm.de/fritzbox/fritzbox-dsl-fiber-7-90/deutschland/fritz.os/",
-      "retrieved": "2026-11-16"
+      "retrieved": "2026-11-19"
     }
   ]
 }
