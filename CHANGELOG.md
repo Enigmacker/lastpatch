@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.10.0 - 2026-11-19
+
+- 587 rows from five more sources (11,500 rows, 9,794 models, 95 brands; dataset 0.5.7):
+  - OnePlus: 44 UK PSTI statements (phones, tablets, watches and earbuds).
+  - realme: 14 phones from its UK product security update period table.
+  - Sony: 454 products from Sony UK's security update periods page, including Xperia phones, TVs, projectors, sound bars, headphones, speakers and cameras. Models Sony marks "No security update" are listed as not updated.
+  - ASUS: 15 ROG Phone and Zenfone models from the ASUS phone support list (a year only, read as 31 December).
+  - Microsoft Surface: 60 devices from the Surface driver and firmware lifecycle page.
+- Matching: "Xperia", "Bravia", "Zenfone", "ROG Phone", "OnePlus", "realme" and "Surface Pro/Laptop/Go/Book/Studio" name their brand.
+- Checked and left out: Amazon Fire tablets (the help page is closed to automated readers), Honor, Doro, Nothing, Huawei and TCL (no dated list; per-model search forms or policy only), more Samsung phones (one statement per product).
+
 ## 1.9.0 - 2026-11-19
 
 - More phones and tablets (10,913 rows, 9,207 models, 92 brands; dataset 0.5.6):

@@ -85,7 +85,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.5.6, retrieved 2026-11-19: 10,913 rows (9,207 models) from 92 brands, now including smartphones and tablets.
+`data/devices.json` (schema in `data/schema.json`), version 0.5.7, retrieved 2026-11-19: 11,500 rows (9,794 models) from 95 brands, now including smartphones and tablets.
 
 | Vendor | Rows | Source |
 |---|---|---|
@@ -106,7 +106,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Mercusys | 127 | UK PSTI statement of compliance (full document) |
 | eufy | 113 | Anker UK PSTI table (cameras, doorbells, HomeBase, locks) |
 | Arlo | 102 | Arlo end-of-life page; UK and Australian statements of compliance |
-| ASUS | 85 | UK PSTI support-period list; Singapore lifecycle list |
+| ASUS | 100 | UK PSTI support-period list; Singapore lifecycle list; phone product support list (ROG Phone, Zenfone: "security updates through" a year, read as 31 December of that year) |
 | Ring | 85 | Ring device software security updates pages (UK, US); UK PSTI statements |
 | DrayTek | 84 | DrayTek UK product lifecycle and end-of-life pages |
 | Lorex | 76 | Lorex UK PSTI end-of-life table |
@@ -147,7 +147,6 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | TerraMaster | 11 | TerraMaster end-of-support announcements |
 | Edimax | 8 | Edimax end-of-support announcement |
 | Nooie | 7 | Nooie security updates page (no dates) |
-| Sony (PlayStation) | 18 | PlayStation UK PSTI page: PS5, PS4, controllers, Portal, headsets (minimum, April 2027) |
 | Marstek | 13 | Marstek UK PSTI page (home batteries and inverters) |
 | Nintendo | 7 | Nintendo UK product security update information (Switch, Switch 2, docks, Alarmo; at least 23 September 2028) |
 | tado° | 6 | UK PSTI statements |
@@ -163,6 +162,10 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Samsung (Galaxy phones) | 9 | Samsung UK PSTI statements published by Three (end of support date) |
 | Fairphone | 5 | Fairphone software support page |
 | HMD (HMD and Nokia phones) | 84 | HMD Security and Maintenance Updates page ("No guaranteed Security Patch updates after", month only, read as the last day of the month; rows HMD marks "Estimated" are left out) |
+| OnePlus | 44 | OnePlus UK PSTI statements (phones, tablets, watches and earbuds; defined support period end date) |
+| realme | 14 | realme UK product security update period table (end date of period) |
+| Sony (PlayStation, TV, audio, cameras, Xperia) | 472 | PlayStation UK PSTI page (PS5, PS4, controllers, Portal, headsets; minimum, April 2027); Sony UK "How long will my Sony product receive security updates?" (TVs, projectors, players, sound bars, headphones, speakers, Walkman, car audio, cameras and Xperia phones; "No security update" models listed as not updated) |
+| Microsoft Surface | 60 | Microsoft Learn, Surface driver and firmware lifecycle (end-of-servicing date) |
 | Vivotek | 297 | Vivotek end-of-life product list (cameras, recorders, switches; no dates, no longer updated) |
 | Ricoh | 76 | Ricoh support periods for MFPs and printers (Cyber Resilience Act page, month only); PSTI pages for projectors and portable monitor |
 | Panasonic | 120 | Panasonic UK PSTI statements for TVs (2021 to 2025 ranges with a dated period) |
