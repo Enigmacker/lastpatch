@@ -58,6 +58,8 @@
               "nas",
               "switch",
               "iot",
+              "phone",
+              "tablet",
               "other"
             ]
           },

@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.8.0 - 2026-11-19
+
+- Smartphones and tablets: two new categories, `phone` and `tablet`, and 198 rows (10,619 rows, 8,913 models, 91 brands; dataset 0.5.5):
+  - Apple: 34 iPhone and 30 iPad rows from Apple's UK PSTI statements (minimum 5 years from the first supply date stated in each one).
+  - Google Pixel: 38 rows. Pixel 8 and later get 7 years and Pixel 6, 7 and Fold 5 years, counted from the month the phone first went on sale on the US Google Store; the end of that month is used. Pixel 5a and earlier are listed as no longer updated.
+  - OPPO: 43 phones and tablets from its UK PSTI statements. Left out: files that hold another model's statement (Reno13 range, Reno12, Reno12 F and FS, A40, A60 5G, A80 5G, Pad 5 Pro, Pad 5 5G and Pad SE OPD2420).
+  - Motorola: 39 phones from its UK PSTI statements (month only, read as the last day of the month). Statements whose period could not be read, and accessories, are left for later.
+  - Samsung: 9 Galaxy phones from Samsung statements published by Three. Samsung's own statements are filed per product on its download pages.
+  - Fairphone: Fairphone (Gen. 6), 4, 3, 3+ and 2.
+- Matching: "iPhone", "iPad", "Pixel", "Galaxy", "moto" and "razr" name their brand.
+
 ## 1.7.0 - 2026-11-19
 
 - 16 new brands and 1,179 rows (10,421 rows, 8,715 models, 87 brands; dataset 0.5.4):

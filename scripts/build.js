@@ -13,7 +13,7 @@ const RAW_DIR = path.join(ROOT, 'raw');
 const OUT = path.join(ROOT, 'data', 'devices.json');
 const RETRIEVED = process.argv[2] || new Date().toISOString().slice(0, 10);
 
-const CATEGORIES = new Set(['router', 'mesh', 'repeater', 'modem', 'camera', 'doorbell', 'nas', 'switch', 'iot', 'other']);
+const CATEGORIES = new Set(['router', 'mesh', 'repeater', 'modem', 'camera', 'doorbell', 'nas', 'switch', 'iot', 'phone', 'tablet', 'other']);
 const SOURCES = new Set(['psti', 'vendor_eol_page', 'vendor_lifecycle_page']);
 
 function validDate(s) {
@@ -94,7 +94,7 @@ const devices = [...seen.values()].sort((a, b) =>
 );
 
 fs.writeFileSync(OUT, JSON.stringify({
-  version: '0.5.4',
+  version: '0.5.5',
   generated: devices.reduce((d, r) => (r.retrieved > d ? r.retrieved : d), RETRIEVED),
   license: 'ODbL-1.0',
   devices,

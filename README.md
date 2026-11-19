@@ -85,7 +85,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.5.4, retrieved 2026-11-19: 10,421 rows (8,715 models) from 87 brands.
+`data/devices.json` (schema in `data/schema.json`), version 0.5.5, retrieved 2026-11-19: 10,619 rows (8,913 models) from 91 brands, now including smartphones and tablets.
 
 | Vendor | Rows | Source |
 |---|---|---|
@@ -124,7 +124,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Bose | 37 | Bose UK security statement and table (minimum support dates) |
 | Genexis | 31 | Genexis UK product support (PSTI): fibre boxes and Wi-Fi |
 | Hikvision | 45 | Hikvision security support timeline for the iDS-2CD7x camera series (2 April 2026) |
-| Google (Nest, Google Wifi) | 40 | Google guaranteed software update periods page |
+| Google (Nest, Google Wifi, Pixel) | 78 | Google guaranteed software update periods page; Pixel update policy (5 or 7 years from the month the phone first went on sale on the US Google Store, per Google's availability table; Pixel 5a and earlier no longer updated) |
 | Xiaomi | 39 | Xiaomi end-of-life product list (no dates) |
 | Sonos | 29 | Sonos UK PSTI statement of compliance (speakers, soundbars, subwoofers, amplifiers, headphones; minimum dates) |
 | EE | 26 | EE product support document (October 2026): broadband hubs, 4G/5G routers, Wi-Fi discs and extenders, TV boxes; minimum period from the sales start |
@@ -157,6 +157,11 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | geo (Green Energy Options) | 3 | geo UK PSTI statement (smart energy displays) |
 | NVIDIA | 1 | NVIDIA UK PSTI statement (SHIELD TV) |
 | Samsung SmartThings | 2 | SmartThings hub retirement notice |
+| Apple (iPhone, iPad) | 64 | Apple UK PSTI statements of compliance (minimum 5 years from the first supply date given in each statement; product names from Apple's model identification pages) |
+| OPPO | 43 | OPPO UK PSTI statements (phones and tablets; statements whose file holds another model's statement are left out) |
+| Motorola | 39 | Motorola UK PSTI statements (security update period, month only) |
+| Samsung (Galaxy phones) | 9 | Samsung UK PSTI statements published by Three (end of support date) |
+| Fairphone | 5 | Fairphone software support page |
 | Vivotek | 297 | Vivotek end-of-life product list (cameras, recorders, switches; no dates, no longer updated) |
 | Ricoh | 76 | Ricoh support periods for MFPs and printers (Cyber Resilience Act page, month only); PSTI pages for projectors and portable monitor |
 | Panasonic | 120 | Panasonic UK PSTI statements for TVs (2021 to 2025 ranges with a dated period) |

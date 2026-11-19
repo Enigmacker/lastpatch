@@ -22,7 +22,7 @@ const VENDOR_ALIASES = {
   eero: ['eero'],
   blink: ['blink', 'immedia'],
   amazon: ['amazon', 'echo', 'fire tv'],
-  google: ['google', 'nest', 'chromecast'],
+  google: ['google', 'nest', 'chromecast', 'pixel'],
   mercusys: ['mercusys'],
   tenda: ['tenda'],
   zyxel: ['zyxel'],
@@ -70,7 +70,7 @@ const VENDOR_ALIASES = {
   sonoff: ['sonoff', 'itead', 'ewelink'],
   aqara: ['aqara', 'lumi united'],
   switchbot: ['switchbot', 'wonderlabs'],
-  samsung: ['samsung', 'smartthings'],
+  samsung: ['samsung', 'smartthings', 'galaxy'],
   irobot: ['irobot', 'roomba'],
   levoit: ['levoit', 'vesync'],
   talktalk: ['talktalk', 'talk talk'],
@@ -104,6 +104,10 @@ const VENDOR_ALIASES = {
   dyson: ['dyson'],
   shark: ['shark', 'sharkninja', 'sharkclean'],
   ninja: ['ninja'],
+  apple: ['apple', 'iphone', 'ipad'],
+  fairphone: ['fairphone'],
+  oppo: ['oppo'],
+  motorola: ['motorola', 'moto', 'razr', 'thinkphone'],
 };
 
 const DAY_MS = 24 * 60 * 60 * 1000;

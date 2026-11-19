@@ -153,3 +153,18 @@ test('brand words pick the right maker: Sharp Roku TV, BT hub, Kyocera ECOSYS', 
   const rows = [{ vendor: 'BT', model: 'Smart Hub 2 (GRV9517UAC34-A-SA)', hw_version: null }, { vendor: 'EE', model: 'Smart Hub 2 (X)', hw_version: null }];
   assert.strictEqual(findDevice(rows, 'BT Smart Hub 2').matches[0].row.vendor, 'BT');
 });
+
+test('phones and tablets are found by name or model number', () => {
+  const rows = [
+    { vendor: 'Apple', model: 'iPhone 16 (A3287)', hw_version: null },
+    { vendor: 'Apple', model: 'iPhone 16 Pro (A3293)', hw_version: null },
+    { vendor: 'Google', model: 'Pixel 8', hw_version: null },
+    { vendor: 'Google', model: 'Pixel 8 Pro', hw_version: null },
+    { vendor: 'Samsung', model: 'Galaxy S24 (SM-S921B/DS)', hw_version: null },
+  ];
+  assert.strictEqual(findDevice(rows, 'iPhone 16 Pro').matches[0].row.model, 'iPhone 16 Pro (A3293)');
+  assert.strictEqual(findDevice(rows, 'Apple A3287').matches[0].row.model, 'iPhone 16 (A3287)');
+  assert.strictEqual(findDevice(rows, 'Google Pixel 8 Pro').matches[0].row.model, 'Pixel 8 Pro');
+  assert.strictEqual(findDevice(rows, 'Galaxy S24').matches[0].row.model, 'Galaxy S24 (SM-S921B/DS)');
+  assert.strictEqual(canonicalVendor('moto g55 5G'), 'motorola');
+});
