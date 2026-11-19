@@ -82,6 +82,9 @@ const VENDOR_ALIASES = {
   sony: ['sony', 'playstation', 'ps5', 'ps4', 'dualsense'],
   nintendo: ['nintendo'],
   nvidia: ['nvidia', 'shield tv'],
+  genexis: ['genexis', 'fibertwist', 'fiberbox'],
+  bose: ['bose'],
+  marstek: ['marstek'],
 };
 
 const DAY_MS = 24 * 60 * 60 * 1000;

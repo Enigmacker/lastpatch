@@ -85,7 +85,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.4.5, retrieved 2026-11-19: 6,569 rows (5,650 models) from 58 brands.
+`data/devices.json` (schema in `data/schema.json`), version 0.5.0, retrieved 2026-11-19: 7,811 rows (6,719 models) from 68 brands.
 
 | Vendor | Rows | Source |
 |---|---|---|
@@ -98,6 +98,8 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Linksys | 287 | Linksys product end-of-life page (per market, checked against the full table); end-of-life article |
 | QNAP | 224 | QNAP product support status (full table, mirrored); UK PSTI statements |
 | Synology | 152 | Software life cycle policy (DSM, SRM, cameras, BeeStation); DSM 6.2 end-of-life announcement |
+| Brother | 616 | Brother Software Security Updates Guarantee (January 2026): printers, scanners, label and mobile printers, Europe and Australia; models whose support ended between 2008 and 2025 are dated 31 December 2025 |
+| Epson | 248 | Epson Australia security support periods (5 March 2026): printers, scanners, label and receipt printers, projectors; minimum dates |
 | Tenda | 136 | Tenda EOL Center ("End of service date") |
 | Mercusys | 127 | UK PSTI statement of compliance (full document) |
 | eufy | 113 | Anker UK PSTI table (cameras, doorbells, HomeBase, locks) |
@@ -108,13 +110,17 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Lorex | 76 | Lorex UK PSTI end-of-life table |
 | Amazon (Echo, Fire TV) | 73 | Amazon device software security updates pages (UK, US) |
 | AVM (FRITZ!) | 62 | FRITZ! product support status page |
+| SonicWall | 57 | SonicWall product life cycle tables: TZ and NSA firewalls (End Of Support) |
 | GL.iNet | 53 | GL.iNet discontinued products page; end-of-life notices; UK PSTI support period page |
 | Teltonika | 52 | Teltonika EOL products page |
 | Asustor | 51 | ADM end-of-support notices and product status table |
+| WatchGuard | 113 | WatchGuard end-of-life policy: Firebox, XTM and access points |
 | Grandstream | 109 | Grandstream UK PSTI statement of compliance (April 2026): routers, access points, switches, ATAs, VoIP gateways, IP PBXs, door access systems |
 | Roborock | 49 | Roborock software security support policy (robot vacuums, wet and dry vacuums, lawn mowers; listed by model code) |
 | Hive | 48 | Hive UK PSTI statement (October 2026); Hive product news |
 | WD (My Cloud) | 46 | WD product life cycle policy; My Cloud OS 3 end-of-support notice |
+| Bose | 37 | Bose UK security statement and table (minimum support dates) |
+| Genexis | 31 | Genexis UK product support (PSTI): fibre boxes and Wi-Fi |
 | Hikvision | 45 | Hikvision security support timeline for the iDS-2CD7x camera series (2 April 2026) |
 | Google (Nest, Google Wifi) | 40 | Google guaranteed software update periods page |
 | Xiaomi | 39 | Xiaomi end-of-life product list (no dates) |
@@ -127,7 +133,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Belkin (Wemo) | 27 | Belkin "Wemo support ending" page (cloud, app and support end on 31 January 2026) |
 | Worcester Bosch | 21 | Worcester Bosch defined support periods for connectable products (UK PSTI): EasyControl, Connect-Key, boiler controls, gateways |
 | Reolink | 22 | UK PSTI statements |
-| Cisco (RV, Meraki Go) | 21 | Cisco end-of-life notices (End of Vulnerability/Security Support); Meraki EOL table |
+| Cisco (RV, Meraki, Meraki Go) | 122 | Cisco end-of-life notices (End of Vulnerability/Security Support); Meraki end-of-life products and dates (MR access points, MS switches, MX and Z security appliances, MG cellular gateways, MV cameras, MT sensors) |
 | Aqara | 18 | UK PSTI statements |
 | Blink | 18 | Blink device software security updates page |
 | Bosch Smart Home | 17 | Bosch Smart Home software and security updates page |
@@ -139,10 +145,14 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | TerraMaster | 11 | TerraMaster end-of-support announcements |
 | Edimax | 8 | Edimax end-of-support announcement |
 | Nooie | 7 | Nooie security updates page (no dates) |
+| Sony (PlayStation) | 18 | PlayStation UK PSTI page: PS5, PS4, controllers, Portal, headsets (minimum, April 2027) |
+| Marstek | 13 | Marstek UK PSTI page (home batteries and inverters) |
+| Nintendo | 7 | Nintendo UK product security update information (Switch, Switch 2, docks, Alarmo; at least 23 September 2028) |
 | tado° | 6 | UK PSTI statements |
 | TalkTalk | 6 | TalkTalk product cyber security page (routers, Wi-Fi hub, TV boxes) |
 | Levoit | 5 | Levoit UK PSTI page (smart air purifiers) |
 | geo (Green Energy Options) | 3 | geo UK PSTI statement (smart energy displays) |
+| NVIDIA | 1 | NVIDIA UK PSTI statement (SHIELD TV) |
 | Samsung SmartThings | 2 | SmartThings hub retirement notice |
 
 Each row records the date exactly as written (`support_end_raw`), whether it is a minimum guarantee (`end_is_minimum`, for "or later" / "at least"), the hardware version it applies to, the market (`region`) and the source URL.

@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.3.0 - 2026-11-19
+
+- Ten new brands and the full Meraki list (1,242 rows; 7,811 rows, 6,719 models, 68 brands; dataset 0.5.0):
+  - Brother: 616 rows (443 models) from its Software Security Updates Guarantee, Europe and Australia (printers, scanners, label and mobile printers). Models whose support ended between 2008 and 2025 are listed in one block by Brother; they are dated 31 December 2025, the latest possible end.
+  - Epson: 248 printers, scanners, label and receipt printers and projectors from Epson Australia's security support periods (minimum dates).
+  - WatchGuard: 113 Firebox, XTM and access points from its end-of-life policy.
+  - Cisco Meraki: 101 more rows (MR, MS, MX, Z, MG, MV, MT) from the Meraki end-of-life products and dates page.
+  - SonicWall: 57 TZ and NSA firewalls from its product life cycle tables (End Of Support date).
+  - Bose: 37 speakers, soundbars, headphones and PA systems from its UK security table (minimum support dates).
+  - Genexis: 31 fibre boxes and Wi-Fi units from its UK product support list.
+  - Sony PlayStation: 18 consoles and accessories (PS5, PS4, DualSense, Portal, Pulse), at least until April 2027.
+  - Marstek: 13 home batteries and inverters.
+  - Nintendo: Switch, Switch OLED, Switch Lite, Switch 2, docks and Alarmo, at least until 23 September 2028.
+  - NVIDIA: SHIELD TV, until 31 December 2026.
+- Checked and left out, for lack of a dated official source per model: Panasonic TVs and Google (periods relative to launch), Yealink and Logitech (general rule only), Hanwha Vision (policy without dates), Xiaomi (no dates), Ruckus (software only), Govee and Ecovacs (empty tables), Canon and Samsung (one statement per product; to do).
+
 ## 1.2.0 - 2026-11-19
 
 - Five new brands (86 rows; 6,569 rows, 5,650 models, 58 brands; dataset 0.4.5):
