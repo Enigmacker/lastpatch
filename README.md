@@ -85,7 +85,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.5.0, retrieved 2026-11-19: 7,811 rows (6,719 models) from 68 brands.
+`data/devices.json` (schema in `data/schema.json`), version 0.5.1, retrieved 2026-11-19: 8,156 rows (7,064 models) from 70 brands.
 
 | Vendor | Rows | Source |
 |---|---|---|
@@ -100,6 +100,8 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Synology | 152 | Software life cycle policy (DSM, SRM, cameras, BeeStation); DSM 6.2 end-of-life announcement |
 | Brother | 616 | Brother Software Security Updates Guarantee (January 2026): printers, scanners, label and mobile printers, Europe and Australia; models whose support ended between 2008 and 2025 are dated 31 December 2025 |
 | Epson | 248 | Epson Australia security support periods (5 March 2026): printers, scanners, label and receipt printers, projectors; minimum dates |
+| Canon | 171 | Canon UK PSTI statements: inkjet and laser printers, cameras, camcorders, PTZ cameras, photo printers |
+| Samsung | 137 | Samsung Australia statements of compliance: 2023 to 2025 TVs, projectors, monitors, soundbars, Galaxy Buds, Watch, Ring and Fit |
 | Tenda | 136 | Tenda EOL Center ("End of service date") |
 | Mercusys | 127 | UK PSTI statement of compliance (full document) |
 | eufy | 113 | Anker UK PSTI table (cameras, doorbells, HomeBase, locks) |
@@ -110,7 +112,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Lorex | 76 | Lorex UK PSTI end-of-life table |
 | Amazon (Echo, Fire TV) | 73 | Amazon device software security updates pages (UK, US) |
 | AVM (FRITZ!) | 62 | FRITZ! product support status page |
-| SonicWall | 57 | SonicWall product life cycle tables: TZ and NSA firewalls (End Of Support) |
+| SonicWall | 76 | SonicWall product life cycle tables: TZ, NSA and NSsp firewalls, SMA remote access, SonicWave access points (End Of Support) |
 | GL.iNet | 53 | GL.iNet discontinued products page; end-of-life notices; UK PSTI support period page |
 | Teltonika | 52 | Teltonika EOL products page |
 | Asustor | 51 | ADM end-of-support notices and product status table |
@@ -133,7 +135,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Belkin (Wemo) | 27 | Belkin "Wemo support ending" page (cloud, app and support end on 31 January 2026) |
 | Worcester Bosch | 21 | Worcester Bosch defined support periods for connectable products (UK PSTI): EasyControl, Connect-Key, boiler controls, gateways |
 | Reolink | 22 | UK PSTI statements |
-| Cisco (RV, Meraki, Meraki Go) | 122 | Cisco end-of-life notices (End of Vulnerability/Security Support); Meraki end-of-life products and dates (MR access points, MS switches, MX and Z security appliances, MG cellular gateways, MV cameras, MT sensors) |
+| Cisco (RV, 250/350 switches, Meraki, Meraki Go) | 140 | Cisco end-of-life notices (End of Vulnerability/Security Support, or End of SW Maintenance Releases for switches); Meraki end-of-life products and dates (MR access points, MS switches, MX and Z security appliances, MG cellular gateways, MV cameras, MT sensors) |
 | Aqara | 18 | UK PSTI statements |
 | Blink | 18 | Blink device software security updates page |
 | Bosch Smart Home | 17 | Bosch Smart Home software and security updates page |

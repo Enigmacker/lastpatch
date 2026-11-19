@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.4.0 - 2026-11-19
+
+- Two new brands and more SonicWall and Cisco (345 rows; 8,156 rows, 7,064 models, 70 brands; dataset 0.5.1):
+  - Canon: 171 rows from its UK PSTI statements (one per product or group): PIXMA, MAXIFY and imagePROGRAF inkjet printers, i-SENSYS laser printers, SELPHY photo printers, EOS and PowerShot cameras, Cinema EOS, camcorders, CR remote PTZ cameras and accessories.
+  - Samsung: 137 rows from its Australian statements of compliance: 2023 to 2025 TVs and projectors, monitors, soundbars and Sound Towers, Galaxy Buds, Watch, Ring and Fit. The 2026 TVs are published as images only and are left out.
+  - SonicWall: SMA and SRA remote access, SonicWave access points and NSsp firewalls (19 rows).
+  - Cisco: 250 and 350 Series switches from their end-of-life bulletins (18 rows; end of software maintenance releases).
+- Checked and left out: Fortinet (life cycle list behind a login), Sylvania and Yealink (no per-model date), Polk (statements per product, small).
+
 ## 1.3.0 - 2026-11-19
 
 - Ten new brands and the full Meraki list (1,242 rows; 7,811 rows, 6,719 models, 68 brands; dataset 0.5.0):
