@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.7.0 - 2026-11-19
+
+- 16 new brands and 1,179 rows (10,421 rows, 8,715 models, 87 brands; dataset 0.5.4):
+  - Printers: Lexmark (UK PSTI firmware support statement; only the rows whose date column could be read from the rendered table), Xerox (security bulletin XRX24-009), Kyocera ECOSYS (UK PSTI page), Konica Minolta bizhub (UK statement PSTI-2025-10008), Ricoh MFPs and printers (Cyber Resilience Act support periods, month only, read as the last day of the month), Ricoh projectors and portable monitor (PSTI pages).
+  - TV and streaming: Roku players (security update periods), Panasonic TVs (UK statements per range; ranges with a period counted from an unstated start left out), Sharp TV series (UK statements; two files that hold another series' statement left out).
+  - UK broadband: BT hubs, discs, TV boxes and extenders (BT Product Support, issue 7: end of the sales-start month plus the stated years, as for EE), Virgin Media Hub 5, Hub 5x and WiFi Pod, and the YouFibre YouMesh Pro (Sagemcom statements).
+  - Cameras: Vivotek end-of-life list (cameras, recorders and switches; no date, marked as no longer updated), and the full set of Reolink UK statements (NVRs, hubs, kits, 4G, battery and Wi-Fi cameras, doorbells and PoE switches).
+  - Palo Alto Networks firewalls and appliances (hardware end-of-life dates).
+  - Dyson (Australian statements) and SharkNinja (Ninja and Shark, UK security update support list).
+- Matching: aliases for the new brands; "Sharp Roku TV" is read as Sharp.
+- Checked and left out: HP and Apple (no list with dates), LG, Hisense and TCL TVs (periods counted from launch, or no list), Hanwha and Axis (policy only, or one notice per product), HPE Aruba and Peplink (no per-product dates), Vantiva Hub 3 (no date).
+
 ## 1.6.0 - 2026-11-19
 
 - First run of the extended weekly mirror: the dataset now uses the full mirrored lists (9,242 rows, 7,536 models, 71 brands; dataset 0.5.3).

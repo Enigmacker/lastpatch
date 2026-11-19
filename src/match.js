@@ -87,6 +87,23 @@ const VENDOR_ALIASES = {
   marstek: ['marstek'],
   canon: ['canon', 'pixma', 'maxify', 'i-sensys', 'imageprograf', 'selphy'],
   integra: ['integra'],
+  lexmark: ['lexmark'],
+  xerox: ['xerox'],
+  kyocera: ['kyocera', 'ecosys'],
+  'konica minolta': ['konica minolta', 'konica', 'bizhub'],
+  ricoh: ['ricoh'],
+  // Sharp before Roku: "Sharp Roku TV" is a Sharp set.
+  sharp: ['sharp', 'aquos'],
+  roku: ['roku'],
+  panasonic: ['panasonic', 'viera'],
+  bt: ['bt', 'british telecom'],
+  'virgin media': ['virgin media', 'virgin hub'],
+  youfibre: ['youfibre', 'youmesh'],
+  vivotek: ['vivotek'],
+  'palo alto networks': ['palo alto networks', 'palo alto', 'paloalto'],
+  dyson: ['dyson'],
+  shark: ['shark', 'sharkninja', 'sharkclean'],
+  ninja: ['ninja'],
 };
 
 const DAY_MS = 24 * 60 * 60 * 1000;

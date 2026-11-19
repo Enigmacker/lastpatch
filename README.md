@@ -85,7 +85,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.5.3, retrieved 2026-11-19: 9,242 rows (7,536 models) from 71 brands.
+`data/devices.json` (schema in `data/schema.json`), version 0.5.4, retrieved 2026-11-19: 10,421 rows (8,715 models) from 87 brands.
 
 | Vendor | Rows | Source |
 |---|---|---|
@@ -134,7 +134,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Drayton (Wiser, Digistat) | 28 | Drayton security support policy and UK PSTI statements |
 | Belkin (Wemo) | 27 | Belkin "Wemo support ending" page (cloud, app and support end on 31 January 2026) |
 | Worcester Bosch | 21 | Worcester Bosch defined support periods for connectable products (UK PSTI): EasyControl, Connect-Key, boiler controls, gateways |
-| Reolink | 22 | UK PSTI statements |
+| Reolink | 406 | UK PSTI statements (all eleven product groups: cameras, kits, recorders and hubs, doorbells, PoE switches) |
 | Cisco (RV, WAP, 250/350/350X/CBS350 switches, Meraki, Meraki Go) | 199 | Cisco end-of-life notices (End of Vulnerability/Security Support, or End of SW Maintenance Releases for switches); Meraki end-of-life products and dates (MR access points, MS switches, MX and Z security appliances, MG cellular gateways, MV cameras, MT sensors) |
 | Aqara | 18 | UK PSTI statements |
 | Blink | 18 | Blink device software security updates page |
@@ -157,6 +157,20 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | geo (Green Energy Options) | 3 | geo UK PSTI statement (smart energy displays) |
 | NVIDIA | 1 | NVIDIA UK PSTI statement (SHIELD TV) |
 | Samsung SmartThings | 2 | SmartThings hub retirement notice |
+| Vivotek | 297 | Vivotek end-of-life product list (cameras, recorders, switches; no dates, no longer updated) |
+| Ricoh | 76 | Ricoh support periods for MFPs and printers (Cyber Resilience Act page, month only); PSTI pages for projectors and portable monitor |
+| Panasonic | 120 | Panasonic UK PSTI statements for TVs (2021 to 2025 ranges with a dated period) |
+| Konica Minolta | 57 | Konica Minolta UK PSTI statement (bizhub, until 31 August 2030) |
+| Lexmark | 48 | Lexmark UK PSTI firmware support statement (series) |
+| Palo Alto Networks | 47 | Palo Alto Networks hardware end-of-life dates (firewalls, Panorama, ION) |
+| Kyocera | 41 | Kyocera UK PSTI page (ECOSYS printers and MFPs) |
+| Sharp | 32 | Sharp UK PSTI statements (one per TV series) |
+| Xerox | 30 | Xerox security bulletin XRX24-009 (UK PSTI support periods) |
+| BT | 21 | BT Product Support document (April 2026): hubs, Wi-Fi discs, TV boxes, extenders; minimum period from the sales start |
+| Roku | 9 | Roku product security page (security update periods) |
+| Dyson | 7 | Dyson statements of compliance (Australia) |
+| Ninja, Shark | 6 | SharkNinja UK product security update support list |
+| Virgin Media, YouFibre | 4 | Sagemcom UK PSTI statements (Hub 5, Hub 5x, WiFi Pod, YouMesh Pro) |
 
 Each row records the date exactly as written (`support_end_raw`), whether it is a minimum guarantee (`end_is_minimum`, for "or later" / "at least"), the hardware version it applies to, the market (`region`) and the source URL.
 

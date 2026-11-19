@@ -143,3 +143,13 @@ test('Roomba and EE hubs are found by product name or label code', () => {
   assert.strictEqual(findDevice(rows, 'EE Smart Hub 7 Plus').matches[0].row.model, 'Smart Hub 7 Plus (SH35A, ERV46BE247B-H2-SA)');
   assert.strictEqual(findDevice(rows, 'EE SH35A').matches[0].row.model, 'Smart Hub 7 Plus (SH35A, ERV46BE247B-H2-SA)');
 });
+
+test('brand words pick the right maker: Sharp Roku TV, BT hub, Kyocera ECOSYS', () => {
+  assert.strictEqual(canonicalVendor('Sharp Roku TV 4K'), 'sharp');
+  assert.strictEqual(canonicalVendor('Roku Express 4K'), 'roku');
+  assert.strictEqual(canonicalVendor('BT Smart Hub 2'), 'bt');
+  assert.strictEqual(canonicalVendor('ECOSYS P2235dn'), 'kyocera');
+  assert.strictEqual(canonicalVendor('Virgin Media Hub 5'), 'virgin media');
+  const rows = [{ vendor: 'BT', model: 'Smart Hub 2 (GRV9517UAC34-A-SA)', hw_version: null }, { vendor: 'EE', model: 'Smart Hub 2 (X)', hw_version: null }];
+  assert.strictEqual(findDevice(rows, 'BT Smart Hub 2').matches[0].row.vendor, 'BT');
+});
