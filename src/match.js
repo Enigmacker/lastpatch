@@ -4,7 +4,7 @@
 // against the dataset, and computing its support status.
 
 const VENDOR_ALIASES = {
-  'tp-link': ['tp-link', 'tplink', 'tp link', 'tapo', 'deco'],
+  'tp-link': ['tp-link', 'tplink', 'tp link', 'tapo', 'deco', 'kasa'],
   netgear: ['netgear', 'nighthawk', 'orbi'],
   'd-link': ['d-link', 'dlink', 'd link'],
   avm: ['avm', 'fritz', 'fritz!box', 'fritzbox', 'fritz!'],

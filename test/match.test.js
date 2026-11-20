@@ -196,3 +196,8 @@ test('phones and tablets are found by name or model number', () => {
   assert.strictEqual(findDevice(more, 'Nokia G22').matches[0].row.vendor, 'HMD');
   assert.strictEqual(findDevice(more, 'Redmi Note 13 Pro').matches[0].row.model, 'Redmi Note 13 Pro');
 });
+
+test('Kasa smart plugs and cameras are read as TP-Link', () => {
+  assert.strictEqual(canonicalVendor('Kasa Smart Plug KP115'), 'tp-link');
+  assert.strictEqual(canonicalVendor('Kasa Spot KC100'), 'tp-link');
+});
