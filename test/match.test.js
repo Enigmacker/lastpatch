@@ -201,3 +201,15 @@ test('Kasa smart plugs and cameras are read as TP-Link', () => {
   assert.strictEqual(canonicalVendor('Kasa Smart Plug KP115'), 'tp-link');
   assert.strictEqual(canonicalVendor('Kasa Spot KC100'), 'tp-link');
 });
+
+test('network security and camera brands are recognised', () => {
+  assert.strictEqual(canonicalVendor('Check Point 1600 Appliance'), 'check point');
+  assert.strictEqual(canonicalVendor('Sophos XG 125'), 'sophos');
+  assert.strictEqual(canonicalVendor('AXIS M3045-V Network Camera'), 'axis');
+  assert.strictEqual(canonicalVendor('BUFFALO AirStation WSR-1166DHP'), 'buffalo');
+  assert.strictEqual(canonicalVendor('LinkStation LS210D'), 'buffalo');
+  assert.strictEqual(canonicalVendor('Cambium Networks cnPilot R201'), 'cambium');
+  const rows = [{ vendor: 'Axis', model: 'AXIS M3045-V', hw_version: null }, { vendor: 'Check Point', model: '1600 Appliance', hw_version: null }];
+  assert.strictEqual(findDevice(rows, 'AXIS M3045-V').matches[0].row.vendor, 'Axis');
+  assert.strictEqual(findDevice(rows, 'Check Point 1600 Appliance').matches[0].row.model, '1600 Appliance');
+});
