@@ -4,6 +4,198 @@
   "license": "ODbL-1.0",
   "rows": [
     {
+      "vendor": "Actiontec",
+      "model": "1520",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"Retired modems (no longer supported)\": \"you cannot get technical support from Brightspeed if you have an issue\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.brightspeed.com/help/internet/modems-and-routers/retired-brightspeed-modems/"
+        }
+      ]
+    },
+    {
+      "vendor": "Actiontec",
+      "model": "1524",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"Retired modems (no longer supported)\": \"you cannot get technical support from Brightspeed if you have an issue\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.brightspeed.com/help/internet/modems-and-routers/retired-brightspeed-modems/"
+        }
+      ]
+    },
+    {
+      "vendor": "Actiontec",
+      "model": "GT701 series",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"Retired modems (no longer supported)\": \"you cannot get technical support from Brightspeed if you have an issue\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.brightspeed.com/help/internet/modems-and-routers/retired-brightspeed-modems/"
+        }
+      ]
+    },
+    {
+      "vendor": "Actiontec",
+      "model": "GT701C",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"High Speed Internet Legacy routers\": \"Some customers use routers that we no longer support.\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/residential/internet/equipment/routers/other-equipment"
+        }
+      ]
+    },
+    {
+      "vendor": "Actiontec",
+      "model": "GT704WG",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"High Speed Internet Legacy routers\": \"Some customers use routers that we no longer support.\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/residential/internet/equipment/routers/other-equipment"
+        }
+      ]
+    },
+    {
+      "vendor": "Actiontec",
+      "model": "M1000",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"Retired modems (no longer supported)\": \"you cannot get technical support from Brightspeed if you have an issue\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.brightspeed.com/help/internet/modems-and-routers/retired-brightspeed-modems/"
+        }
+      ]
+    },
+    {
+      "vendor": "Actiontec",
+      "model": "PK5000",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"Retired modems (no longer supported)\": \"you cannot get technical support from Brightspeed if you have an issue\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.brightspeed.com/help/internet/modems-and-routers/retired-brightspeed-modems/"
+        }
+      ]
+    },
+    {
+      "vendor": "Actiontec",
+      "model": "Q1000",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"Retired modems (no longer supported)\": \"you cannot get technical support from Brightspeed if you have an issue\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.brightspeed.com/help/internet/modems-and-routers/retired-brightspeed-modems/"
+        }
+      ]
+    },
+    {
+      "vendor": "Actiontec",
+      "model": "Q2000",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"Retired modems (no longer supported)\": \"you cannot get technical support from Brightspeed if you have an issue\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.brightspeed.com/help/internet/modems-and-routers/retired-brightspeed-modems/"
+        }
+      ]
+    },
+    {
+      "vendor": "Actiontec",
+      "model": "RI408",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"Fios Legacy routers\": \"Some customers use routers that we no longer support.\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/residential/internet/equipment/routers/other-equipment"
+        }
+      ]
+    },
+    {
+      "vendor": "AirTies",
+      "model": "4920",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2025-04-19",
+          "support_end_raw": "Starting April 20, 2025, BGW320 Wi-Fi gateways will no longer support AirTies 4920 and 4921 Wi-Fi extenders. ... This means those models will stop getting updates and no longer work. (With a BGW210 gateway the extenders continue to work.)",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.att.com/support/article/internet/000106712/"
+        }
+      ]
+    },
+    {
+      "vendor": "AirTies",
+      "model": "4921",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2025-04-19",
+          "support_end_raw": "Starting April 20, 2025, BGW320 Wi-Fi gateways will no longer support AirTies 4920 and 4921 Wi-Fi extenders. ... This means those models will stop getting updates and no longer work. (With a BGW210 gateway the extenders continue to work.)",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.att.com/support/article/internet/000106712/"
+        }
+      ]
+    },
+    {
       "vendor": "Amazon",
       "model": "Alexa Photo Frame",
       "hw_version": null,
@@ -7973,6 +8165,22 @@
     },
     {
       "vendor": "Blink",
+      "model": "Blink Indoor (3rd Gen) (2020 Release)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software Security Updates at Least Through December 31, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://support.blinkforhome.com/en_US/blink-device-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Blink",
       "model": "Blink Outdoor (3rd Gen) (2020 Release)",
       "hw_version": null,
       "region": "UK",
@@ -7984,6 +8192,22 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://support.blinkforhome.com/en_GB/blink-device-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Blink",
+      "model": "Blink Outdoor (3rd Gen) (2020 Release)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software Security Updates at Least Through December 31, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://support.blinkforhome.com/en_US/blink-device-software-security-updates"
         }
       ]
     },
@@ -8005,6 +8229,22 @@
     },
     {
       "vendor": "Blink",
+      "model": "Indoor (2016 Release)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Software security updates no longer guaranteed",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://support.blinkforhome.com/en_US/blink-device-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Blink",
       "model": "Mini (2020 Release)",
       "hw_version": null,
       "region": "UK",
@@ -8016,6 +8256,22 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://support.blinkforhome.com/en_GB/blink-device-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Blink",
+      "model": "Mini (2020 Release)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software Security Updates at Least Through December 31, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://support.blinkforhome.com/en_US/blink-device-software-security-updates"
         }
       ]
     },
@@ -8037,6 +8293,22 @@
     },
     {
       "vendor": "Blink",
+      "model": "Mini (2022 Release)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software Security Updates at Least Through December 31, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://support.blinkforhome.com/en_US/blink-device-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Blink",
       "model": "Mini 2 Camera (2024 Release)",
       "hw_version": null,
       "region": "UK",
@@ -8048,6 +8320,22 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://support.blinkforhome.com/en_GB/blink-device-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Blink",
+      "model": "Mini 2 Camera (2024 Release)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software Security Updates at Least Through December 31, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://support.blinkforhome.com/en_US/blink-device-software-security-updates"
         }
       ]
     },
@@ -8069,6 +8357,22 @@
     },
     {
       "vendor": "Blink",
+      "model": "Mini 2K+ (2025 Release)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software Security Updates at Least Through December 31, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://support.blinkforhome.com/en_US/blink-device-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Blink",
       "model": "Outdoor 2K+ (2025 Release)",
       "hw_version": null,
       "region": "UK",
@@ -8080,6 +8384,22 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://support.blinkforhome.com/en_GB/blink-device-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Blink",
+      "model": "Outdoor 2K+ (2025 Release)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software Security Updates at Least Through December 31, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://support.blinkforhome.com/en_US/blink-device-software-security-updates"
         }
       ]
     },
@@ -8101,6 +8421,38 @@
     },
     {
       "vendor": "Blink",
+      "model": "Outdoor 4 Camera (2023 Release)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software Security Updates at Least Through December 31, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://support.blinkforhome.com/en_US/blink-device-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Blink",
+      "model": "Pan-Tilt Mount (2022 Release)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software Security Updates at Least Through December 31, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://support.blinkforhome.com/en_US/blink-device-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Blink",
       "model": "Sync Module (2016 Release)",
       "hw_version": null,
       "region": "UK",
@@ -8112,6 +8464,22 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://support.blinkforhome.com/en_GB/blink-device-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Blink",
+      "model": "Sync Module (2016 Release)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Software security updates no longer guaranteed",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://support.blinkforhome.com/en_US/blink-device-software-security-updates"
         }
       ]
     },
@@ -8133,6 +8501,22 @@
     },
     {
       "vendor": "Blink",
+      "model": "Sync Module 2 (2020 Release)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software Security Updates at Least Through December 31, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://support.blinkforhome.com/en_US/blink-device-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Blink",
       "model": "Sync Module Core (2025 Release)",
       "hw_version": null,
       "region": "UK",
@@ -8144,6 +8528,22 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://support.blinkforhome.com/en_GB/blink-device-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Blink",
+      "model": "Sync Module Core (2025 Release)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software Security Updates at Least Through December 31, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://support.blinkforhome.com/en_US/blink-device-software-security-updates"
         }
       ]
     },
@@ -8165,6 +8565,22 @@
     },
     {
       "vendor": "Blink",
+      "model": "Sync Module XR (2025 Release)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software Security Updates at Least Through December 31, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://support.blinkforhome.com/en_US/blink-device-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Blink",
       "model": "Video Doorbell (2nd Gen) (2025 Release)",
       "hw_version": null,
       "region": "UK",
@@ -8176,6 +8592,22 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://support.blinkforhome.com/en_GB/blink-device-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Blink",
+      "model": "Video Doorbell (2nd Gen) (2025 Release)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software Security Updates at Least Through December 31, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://support.blinkforhome.com/en_US/blink-device-software-security-updates"
         }
       ]
     },
@@ -8197,6 +8629,22 @@
     },
     {
       "vendor": "Blink",
+      "model": "Video Doorbell (2021 Release)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software Security Updates at Least Through December 31, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://support.blinkforhome.com/en_US/blink-device-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Blink",
       "model": "Wired Floodlight Camera (2023 Release)",
       "hw_version": null,
       "region": "UK",
@@ -8208,6 +8656,22 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://support.blinkforhome.com/en_GB/blink-device-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Blink",
+      "model": "Wired Floodlight Camera (2023 Release)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software Security Updates at Least Through December 31, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://support.blinkforhome.com/en_US/blink-device-software-security-updates"
         }
       ]
     },
@@ -8229,6 +8693,22 @@
     },
     {
       "vendor": "Blink",
+      "model": "XT (2017 Release)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Software security updates no longer guaranteed",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://support.blinkforhome.com/en_US/blink-device-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Blink",
       "model": "XT2 (2018 Release)",
       "hw_version": null,
       "region": "UK",
@@ -8240,6 +8720,22 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://support.blinkforhome.com/en_GB/blink-device-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Blink",
+      "model": "XT2 (2018 Release)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Software security updates no longer guaranteed",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://support.blinkforhome.com/en_US/blink-device-software-security-updates"
         }
       ]
     },
@@ -25924,6 +26420,22 @@
       ]
     },
     {
+      "vendor": "Comtrend",
+      "model": "CT-5361T",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"Retired modems (no longer supported)\": \"you cannot get technical support from Brightspeed if you have an issue\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.brightspeed.com/help/internet/modems-and-routers/retired-brightspeed-modems/"
+        }
+      ]
+    },
+    {
       "vendor": "D-Link",
       "model": "COVR-2202-US",
       "hw_version": null,
@@ -33456,6 +33968,38 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://legacy.us.dlink.com/"
+        }
+      ]
+    },
+    {
+      "vendor": "D-Link",
+      "model": "VDI-604",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"Fios Legacy routers\": \"Some customers use routers that we no longer support.\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/residential/internet/equipment/routers/other-equipment"
+        }
+      ]
+    },
+    {
+      "vendor": "D-Link",
+      "model": "VDI-624",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"Fios Legacy routers\": \"Some customers use routers that we no longer support.\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/residential/internet/equipment/routers/other-equipment"
         }
       ]
     },
@@ -127164,6 +127708,38 @@
     },
     {
       "vendor": "Ring",
+      "model": "A19 Smart LED Bulb",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Air Quality Monitor",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
       "model": "Alarm Base Station (1st Gen)",
       "hw_version": null,
       "region": "UK",
@@ -127175,6 +127751,38 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Alarm Base Station (1st Gen)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Alarm Base Station (2nd Gen)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -127212,6 +127820,38 @@
     },
     {
       "vendor": "Ring",
+      "model": "Alarm Keypad",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Alarm Motion Detector",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
       "model": "Alarm Pro Base Station",
       "hw_version": null,
       "region": "US",
@@ -127221,6 +127861,22 @@
           "support_end": "2030-12-31",
           "support_end_raw": "31 December 2030",
           "first_seen": "2026-11-01",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Alarm Range Extender (2nd Gen)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
           "last_seen": null,
           "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
         }
@@ -127244,6 +127900,54 @@
     },
     {
       "vendor": "Ring",
+      "model": "Alarm Window and Door Contact Sensor",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Battery Doorbell",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Battery Doorbell 2K",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
       "model": "Battery Doorbell 2K",
       "hw_version": null,
       "region": "UK",
@@ -127255,6 +127959,38 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Battery Doorbell 2K",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Battery Doorbell 2K Plus",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -127276,6 +128012,38 @@
     },
     {
       "vendor": "Ring",
+      "model": "Battery Doorbell 2K Plus",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Battery Doorbell 4K Pro",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
       "model": "Battery Doorbell 4K Pro",
       "hw_version": null,
       "region": "UK",
@@ -127287,6 +128055,70 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Battery Doorbell 4K Pro",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Battery Doorbell Plus",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Battery Doorbell Pro",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Battery Video Doorbell",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -127326,6 +128158,22 @@
       "vendor": "Ring",
       "model": "Battery Video Doorbell Plus",
       "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Battery Video Doorbell Plus",
+      "hw_version": null,
       "region": "UK",
       "shortened": false,
       "dates": [
@@ -127358,6 +128206,22 @@
       "vendor": "Ring",
       "model": "Battery Video Doorbell Pro",
       "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Battery Video Doorbell Pro",
+      "hw_version": null,
       "region": "UK",
       "shortened": false,
       "dates": [
@@ -127372,6 +128236,22 @@
     },
     {
       "vendor": "Ring",
+      "model": "Beacon",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
       "model": "Bridge (2nd Gen)",
       "hw_version": null,
       "region": "US",
@@ -127381,6 +128261,38 @@
           "support_end": "2030-12-31",
           "support_end_raw": "31 December 2030",
           "first_seen": "2026-11-01",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Car Cam",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2027",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Car Tracker and Alarm",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
           "last_seen": null,
           "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
         }
@@ -127404,6 +128316,38 @@
     },
     {
       "vendor": "Ring",
+      "model": "Chime (1st Gen)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2024-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Chime (1st Generation)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2024-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
       "model": "Chime (2nd Gen)",
       "hw_version": null,
       "region": "UK",
@@ -127420,6 +128364,54 @@
     },
     {
       "vendor": "Ring",
+      "model": "Chime (2nd Gen)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2029-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2029",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Chime (2nd Generation)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2029-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2029",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Chime (3rd Gen)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
       "model": "Chime (3rd Gen)",
       "hw_version": null,
       "region": "UK",
@@ -127431,6 +128423,22 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Chime (3rd Gen)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -127484,6 +128492,54 @@
     },
     {
       "vendor": "Ring",
+      "model": "Chime Pro (1st Generation)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2024-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Chime Pro (2nd Gen)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Chime Pro (2nd Generation)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
       "model": "Chime Pro (2nd Generation)",
       "hw_version": null,
       "region": "UK",
@@ -127495,6 +128551,38 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Dome Cam 4K",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Door View Cam",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -127527,6 +128615,38 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Flood & Freeze Sensor",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Floodlight Cam",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2025-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2025",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -127566,6 +128686,22 @@
       "vendor": "Ring",
       "model": "Floodlight Cam 2K",
       "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Floodlight Cam 2K",
+      "hw_version": null,
       "region": "UK",
       "shortened": false,
       "dates": [
@@ -127575,6 +128711,38 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Floodlight Cam 2K",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Floodlight Cam 4K Pro",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -127591,6 +128759,70 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Floodlight Cam 4K Pro",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Floodlight Cam Plus",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Floodlight Cam Pro",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Floodlight Cam Wired Plus",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -127630,6 +128862,22 @@
       "vendor": "Ring",
       "model": "Floodlight Cam Wired Pro",
       "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Floodlight Cam Wired Pro",
+      "hw_version": null,
       "region": "UK",
       "shortened": false,
       "dates": [
@@ -127639,6 +128887,54 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Floodlight Wired",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Glass Break Sensor",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Indoor Cam (1st Gen)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2027",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -127678,6 +128974,22 @@
       "vendor": "Ring",
       "model": "Indoor Cam (2nd Gen)",
       "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Indoor Cam (2nd Gen)",
+      "hw_version": null,
       "region": "UK",
       "shortened": false,
       "dates": [
@@ -127687,6 +128999,38 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Indoor Cam (2nd Gen)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Indoor Cam 2K",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -127703,6 +129047,22 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Indoor Cam 2K",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -127726,6 +129086,22 @@
       "vendor": "Ring",
       "model": "Intercom Audio",
       "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Intercom Audio",
+      "hw_version": null,
       "region": "UK",
       "shortened": false,
       "dates": [
@@ -127742,6 +129118,22 @@
       "vendor": "Ring",
       "model": "Intercom Video",
       "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Intercom Video",
+      "hw_version": null,
       "region": "UK",
       "shortened": false,
       "dates": [
@@ -127751,6 +129143,70 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Mailbox Sensor",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Motion Detector",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Motion Sensor",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Outdoor Cam",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -127774,6 +129230,22 @@
       "vendor": "Ring",
       "model": "Outdoor Cam 4K Pro",
       "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Outdoor Cam 4K Pro",
+      "hw_version": null,
       "region": "UK",
       "shortened": false,
       "dates": [
@@ -127783,6 +129255,38 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Outdoor Cam 4K Pro",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Outdoor Cam Plus",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -127804,6 +129308,38 @@
     },
     {
       "vendor": "Ring",
+      "model": "Outdoor Cam Plus",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Outdoor Cam Plus PoE",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
       "model": "Outdoor Cam Plus PoE",
       "hw_version": null,
       "region": "UK",
@@ -127815,6 +129351,38 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Outdoor Cam Plus PoE",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Outdoor Cam Pro PoE",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -127836,6 +129404,70 @@
     },
     {
       "vendor": "Ring",
+      "model": "Outdoor Cam Pro PoE",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Outdoor Cam, Battery",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Outdoor Cam, Plug-In",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Outdoor Cam, Solar",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
       "model": "Outdoor Camera Battery 5UM7E5",
       "hw_version": null,
       "region": "UK",
@@ -127847,6 +129479,22 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://d1kusojqr3t85q.cloudfront.net/jrz4hnnvdyct/1HlksuPJo1aU2EGVXLdYTw/5f0dda5d64b34be742d4c9eacda2d71f/Ring_V3.1_UK_PSTI_Statement_Of_Compliance_081026.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Outside Door Sensor",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -127870,6 +129518,22 @@
       "vendor": "Ring",
       "model": "Pan-Tilt Indoor Cam",
       "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Pan-Tilt Indoor Cam",
+      "hw_version": null,
       "region": "UK",
       "shortened": false,
       "dates": [
@@ -127879,6 +129543,38 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Pan-Tilt Indoor Cam",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Pan-Tilt Indoor Cam 2K",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -127895,6 +129591,70 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Pan-Tilt Indoor Cam 2K",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Panic Button",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Pathlight Battery",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Peephole Cam (also called Door View Cam)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -127932,6 +129692,54 @@
     },
     {
       "vendor": "Ring",
+      "model": "Smart Fan Control",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Smart Light Remote",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Smart Light Switch",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
       "model": "Smart Lighting Bridge",
       "hw_version": null,
       "region": "US",
@@ -127943,6 +129751,102 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Smart Plug",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Smoke & CO Listener",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Solar Pathlight",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Solar Steplight",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Spotlight Battery",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Spotlight Cam",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2026-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2026",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -127980,7 +129884,119 @@
     },
     {
       "vendor": "Ring",
+      "model": "Spotlight Cam (1st Gen), Mount",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2026-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2026",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Spotlight Cam (1st Gen), Solar",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2026-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2026",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Spotlight Cam (1st Gen), Wired",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2026-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2026",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
       "model": "Spotlight Cam 2K",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Spotlight Cam 2K",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "31 December 2031",
+          "first_seen": "2026-11-01",
+          "last_seen": null,
+          "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Spotlight Cam 2K",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Spotlight Cam 4K Plus",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Spotlight Cam 4K Plus",
       "hw_version": null,
       "region": "UK",
       "shortened": false,
@@ -127998,15 +130014,31 @@
       "vendor": "Ring",
       "model": "Spotlight Cam 4K Plus",
       "hw_version": null,
-      "region": "UK",
+      "region": "US",
       "shortened": false,
       "dates": [
         {
           "support_end": "2031-12-31",
-          "support_end_raw": "31 December 2031",
-          "first_seen": "2026-11-01",
+          "support_end_raw": "Software security updates until at least 31 December 2031",
+          "first_seen": "2026-11-20",
           "last_seen": null,
-          "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Spotlight Cam 4K Pro",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -128046,6 +130078,22 @@
       "vendor": "Ring",
       "model": "Spotlight Cam Plus",
       "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Spotlight Cam Plus",
+      "hw_version": null,
       "region": "UK",
       "shortened": false,
       "dates": [
@@ -128071,6 +130119,22 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://d1kusojqr3t85q.cloudfront.net/jrz4hnnvdyct/1HlksuPJo1aU2EGVXLdYTw/5f0dda5d64b34be742d4c9eacda2d71f/Ring_V3.1_UK_PSTI_Statement_Of_Compliance_081026.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Spotlight Cam Plus Solar, Spotlight Cam Plus Wired, Spotlight Cam Plus Plug-In, Spotlight Cam Plus Battery",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -128103,6 +130167,22 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://d1kusojqr3t85q.cloudfront.net/jrz4hnnvdyct/1HlksuPJo1aU2EGVXLdYTw/5f0dda5d64b34be742d4c9eacda2d71f/Ring_V3.1_UK_PSTI_Statement_Of_Compliance_081026.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Spotlight Cam Pro Battery, Spotlight Cam Pro Wired, Spotlight Cam Pro Plug-in, Spotlight Cam Pro Solar",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -128156,6 +130236,38 @@
     },
     {
       "vendor": "Ring",
+      "model": "Stick Up Cam Elite (2nd Gen)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2029-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2029",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Stick Up Cam Elite (2nd Generation)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2029-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2029",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
       "model": "Stick Up Cam Elite (2nd Generation)",
       "hw_version": null,
       "region": "UK",
@@ -128174,6 +130286,22 @@
       "vendor": "Ring",
       "model": "Stick Up Cam Pro",
       "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2029-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2029",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Stick Up Cam Pro",
+      "hw_version": null,
       "region": "UK",
       "shortened": false,
       "dates": [
@@ -128183,6 +130311,86 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Stick Up Cam Pro, Battery, Plug-In or Solar",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2029-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2029",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Sump Pump Monitor",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Temperature and Humidity Sensor",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Transformer",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Video Doorbell",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2024-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -128222,6 +130430,22 @@
       "vendor": "Ring",
       "model": "Video Doorbell (2nd Generation)",
       "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2028-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2028",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Video Doorbell (2nd Generation)",
+      "hw_version": null,
       "region": "UK",
       "shortened": false,
       "dates": [
@@ -128231,6 +130455,22 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Video Doorbell (2nd Generation)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2028-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2028",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -128247,6 +130487,22 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://d1kusojqr3t85q.cloudfront.net/jrz4hnnvdyct/1HlksuPJo1aU2EGVXLdYTw/5f0dda5d64b34be742d4c9eacda2d71f/Ring_V3.1_UK_PSTI_Statement_Of_Compliance_081026.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Video Doorbell 2",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2025-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2025",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -128286,6 +130542,22 @@
       "vendor": "Ring",
       "model": "Video Doorbell 3",
       "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2027",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Video Doorbell 3",
+      "hw_version": null,
       "region": "UK",
       "shortened": false,
       "dates": [
@@ -128318,6 +130590,22 @@
       "vendor": "Ring",
       "model": "Video Doorbell 3 Plus",
       "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2027",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Video Doorbell 3 Plus",
+      "hw_version": null,
       "region": "UK",
       "shortened": false,
       "dates": [
@@ -128327,6 +130615,38 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Video Doorbell 3 Plus",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2027",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Video Doorbell 4 (2021 release)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2027",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -128366,6 +130686,22 @@
       "vendor": "Ring",
       "model": "Video Doorbell Elite",
       "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2029-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2029",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Video Doorbell Elite",
+      "hw_version": null,
       "region": "UK",
       "shortened": false,
       "dates": [
@@ -128375,6 +130711,38 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://d1kusojqr3t85q.cloudfront.net/jrz4hnnvdyct/1HlksuPJo1aU2EGVXLdYTw/5f0dda5d64b34be742d4c9eacda2d71f/Ring_V3.1_UK_PSTI_Statement_Of_Compliance_081026.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Video Doorbell Elite",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2029-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2029",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Video Doorbell Pro",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2029-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2029",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -128398,6 +130766,22 @@
       "vendor": "Ring",
       "model": "Video Doorbell Wired",
       "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Video Doorbell Wired",
+      "hw_version": null,
       "region": "UK",
       "shortened": false,
       "dates": [
@@ -128407,6 +130791,22 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Video Doorbell Wired",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -128428,6 +130828,54 @@
     },
     {
       "vendor": "Ring",
+      "model": "Wall Light Solar",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Window & Door Sensor",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Wired Doorbell 2K",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
       "model": "Wired Doorbell 2K",
       "hw_version": null,
       "region": "UK",
@@ -128439,6 +130887,38 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Wired Doorbell 2K",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Wired Doorbell 2K Plus",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -128460,7 +130940,87 @@
     },
     {
       "vendor": "Ring",
+      "model": "Wired Doorbell 2K Plus",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
       "model": "Wired Doorbell 4K Elite",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Wired Doorbell 4K Elite",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "31 December 2030",
+          "first_seen": "2026-11-01",
+          "last_seen": null,
+          "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Wired Doorbell 4K Elite",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Wired Doorbell 4K Pro",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Software security updates at least until 31 December 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://ring.com/au/en/support/articles/ri2p1/ring-devices-software-security-updates"
+        }
+      ]
+    },
+    {
+      "vendor": "Ring",
+      "model": "Wired Doorbell 4K Pro",
       "hw_version": null,
       "region": "UK",
       "shortened": false,
@@ -128478,15 +131038,15 @@
       "vendor": "Ring",
       "model": "Wired Doorbell 4K Pro",
       "hw_version": null,
-      "region": "UK",
+      "region": "US",
       "shortened": false,
       "dates": [
         {
           "support_end": "2030-12-31",
-          "support_end_raw": "31 December 2030",
-          "first_seen": "2026-11-01",
+          "support_end_raw": "Software security updates until at least 31 December 2030",
+          "first_seen": "2026-11-20",
           "last_seen": null,
-          "source_url": "https://ring.com/gb/en/support/articles/ri2p1/ring-devices-software-security-updates"
+          "source_url": "https://ring.com/support/articles/ri2p1/ring-devices-software-security-updates"
         }
       ]
     },
@@ -129308,6 +131868,54 @@
     },
     {
       "vendor": "Roku",
+      "model": "2 HD (3000X)",
+      "hw_version": null,
+      "region": "global",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Roku: \"The devices listed below no longer receive device firmware updates.\" (devices sunset at the end of 2019)",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://partnersuccess.roku.com/hc/en-us/articles/360037142034-What-Roku-devices-are-being-sunset-or-no-longer-supported-at-the-end-of-2019"
+        }
+      ]
+    },
+    {
+      "vendor": "Roku",
+      "model": "2 XD (3050X)",
+      "hw_version": null,
+      "region": "global",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Roku: \"The devices listed below no longer receive device firmware updates.\" (devices sunset at the end of 2019)",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://partnersuccess.roku.com/hc/en-us/articles/360037142034-What-Roku-devices-are-being-sunset-or-no-longer-supported-at-the-end-of-2019"
+        }
+      ]
+    },
+    {
+      "vendor": "Roku",
+      "model": "2 XS (3100X)",
+      "hw_version": null,
+      "region": "global",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Roku: \"The devices listed below no longer receive device firmware updates.\" (devices sunset at the end of 2019)",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://partnersuccess.roku.com/hc/en-us/articles/360037142034-What-Roku-devices-are-being-sunset-or-no-longer-supported-at-the-end-of-2019"
+        }
+      ]
+    },
+    {
+      "vendor": "Roku",
       "model": "Express (3960X)",
       "hw_version": null,
       "region": "UK",
@@ -129340,6 +131948,54 @@
     },
     {
       "vendor": "Roku",
+      "model": "HD (2500X)",
+      "hw_version": null,
+      "region": "global",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Roku: \"The devices listed below no longer receive device firmware updates.\" (devices sunset at the end of 2019)",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://partnersuccess.roku.com/hc/en-us/articles/360037142034-What-Roku-devices-are-being-sunset-or-no-longer-supported-at-the-end-of-2019"
+        }
+      ]
+    },
+    {
+      "vendor": "Roku",
+      "model": "LT (2400X)",
+      "hw_version": null,
+      "region": "global",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Roku: \"The devices listed below no longer receive device firmware updates.\" (devices sunset at the end of 2019)",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://partnersuccess.roku.com/hc/en-us/articles/360037142034-What-Roku-devices-are-being-sunset-or-no-longer-supported-at-the-end-of-2019"
+        }
+      ]
+    },
+    {
+      "vendor": "Roku",
+      "model": "LT (2450X)",
+      "hw_version": null,
+      "region": "global",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Roku: \"The devices listed below no longer receive device firmware updates.\" (devices sunset at the end of 2019)",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://partnersuccess.roku.com/hc/en-us/articles/360037142034-What-Roku-devices-are-being-sunset-or-no-longer-supported-at-the-end-of-2019"
+        }
+      ]
+    },
+    {
+      "vendor": "Roku",
       "model": "Premiere (3920X)",
       "hw_version": null,
       "region": "UK",
@@ -129367,6 +132023,22 @@
           "first_seen": "2026-11-19",
           "last_seen": null,
           "source_url": "https://www.roku.com/en-gb/about/security"
+        }
+      ]
+    },
+    {
+      "vendor": "Roku",
+      "model": "Streaming Stick (3400X)",
+      "hw_version": null,
+      "region": "global",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Roku: \"The devices listed below no longer receive device firmware updates.\" (devices sunset at the end of 2019)",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://partnersuccess.roku.com/hc/en-us/articles/360037142034-What-Roku-devices-are-being-sunset-or-no-longer-supported-at-the-end-of-2019"
         }
       ]
     },
@@ -129447,6 +132119,198 @@
           "first_seen": "2026-11-19",
           "last_seen": null,
           "source_url": "https://www.roku.com/en-gb/about/security"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Air Conditioner (AR40H09C1AMNSA, AR40H12C1AMNSA, AR40H18C1AMNSA, AR40H24C1AMNSA)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2026. Defined End of Support Period: December 31, 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/air-conditioner/AU_SOC_RAC_ODM_2026_260410.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Air Conditioner Panel (PC4NUFMANW, PC1NWFMANW, PC1YNWMANW; variants PC4NBFMANW, PC4NUCMANW, PC4NUXMANW, PC6NUSMANW, PC6NBSMANW, PC6EUSMANW, PC6EBSMANW, PC6EUCMANW, PC6EUXMANW, PC1BWFMANW, PC1ZNWMANW)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2026. Defined End of Support Period: December 31, 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/air-conditioner/AU_SOC_AirConditionerPanel_2026_260127.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Air Conditioner WiFi Kit (MIM-H04AN)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2029-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2024. Defined End of Support Period: December 31, 2029",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/air-conditioner/AU_SOC_AirConditionerWiFiKit_2024_260127.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Air Purifier (AX46BG5000GSSA)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2028-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2023. Defined End of Support Period: December 31, 2028",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/air-conditioner/AU_SOC_AirPurifier_2023_260123.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Cooktop (NZ85C6058KK, NZ64B5067YY, NZ64B6058KK, NZ63B5046FK)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2028-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2023. Defined End of Support Period: December 31, 2028",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/oven,-dishwasher,-hood,-cooktop/AU_SOC_Cooktop_2023_260123.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Cordless Stick Vacuum Cleaner (VS90F40DBG, VS80F28D**)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2025. Defined End of Support Period: December 31, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/vacuum/AU_SOC_Stick_VC_2025_260123.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Dishwasher (DW60BG750FSL; variants DW60CB750FAP, DW60CB750UAP)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2028-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2023. Defined End of Support Period: December 31, 2028",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/oven,-dishwasher,-hood,-cooktop/AU_SOC_DW_2023_260127.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Dishwasher (DW60DG750FB1)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2025. Defined End of Support Period: December 31, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/oven,-dishwasher,-hood,-cooktop/AU_SOC_DW_2025_260127.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Dishwasher (DW80H73YBUF, DW70H75YCFR, DW70H75YCFE; variants DW80H73YBFF, DW80H73LBFF)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2026. Defined End of Support Period: December 31, 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/oven%2c-dishwasher%2c-hood%2c-cooktop/AU_SOC_DW_2026_2601231.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Dryer (DV80T5420AW)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2025-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2020. Defined End of Support Period: December 31, 2025",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_DV_2020_260123.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Dryer (DV90BB9440G*)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2028-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2023. Defined End of Support Period: December 31, 2028",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_DV_2023_260123.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Dryer (DV91T6440LE, DV90T6440LB, DV90DGC4A0AE)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2029-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2024. Defined End of Support Period: December 31, 2029",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_DV_2024_260123.pdf"
         }
       ]
     },
@@ -129719,6 +132583,22 @@
           "first_seen": "2026-11-19",
           "last_seen": null,
           "source_url": "https://www.three.co.uk/content/dam/threedigital/terms-and-conditions/psti/samsung/psti-soc-sm-f956b-ds-002.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Hood (NK36CB665W**)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2028-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2023. Defined End of Support Period: December 31, 2028",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/oven,-dishwasher,-hood,-cooktop/AU_SOC_Hood_2023_260123.pdf"
         }
       ]
     },
@@ -130156,6 +133036,22 @@
     },
     {
       "vendor": "Samsung",
+      "model": "Multi Split Air Conditioner (AJ***FEAPKF/EA, AJ***HEALKG/EA, AJ***HELPKG/EA)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2026. Defined End of Support Period: December 31, 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/air-conditioner/AU_SOC_MultiSplitAirConditioner_2026_260127.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
       "model": "MX-ST40F",
       "hw_version": null,
       "region": "AU",
@@ -130183,6 +133079,54 @@
           "first_seen": "2026-11-19",
           "last_seen": null,
           "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/audio/720303-020258_MX-ST50F_D00_PSTI_XY_ENG_260112.0.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Oven (NV7B5775WAK, NV7B4550UAK, NV7B4430ZA*)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2025. Defined End of Support Period: December 31, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/oven,-dishwasher,-hood,-cooktop/AU_SOC_Oven_2025_260123.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Oven (NV7B6675CA*, NV7B6799AAK, NV7B5755SA*)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2028-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2023. Defined End of Support Period: December 31, 2028",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/oven,-dishwasher,-hood,-cooktop/AU_SOC_Oven_2023_260123.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Oven (NV7B41201AS)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2022. Defined End of Support Period: December 31, 2027",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/oven,-dishwasher,-hood,-cooktop/AU_SOC_Oven_2022_260123.pdf"
         }
       ]
     },
@@ -131484,6 +134428,118 @@
     },
     {
       "vendor": "Samsung",
+      "model": "Refrigerator (SRF7400BB, SRFX7600W)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2028-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2023. Defined End of Support Period: December 31, 2028",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/refrigerator/AU_SOC_REF_2023_260128.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Refrigerator (SRF7900BFH)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2026-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2021. Defined End of Support Period: December 31, 2026",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/refrigerator/AU_SOC_REF_2021_260123.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Refrigerator (SRL4600BD, SRL4600S, SRF9400BFH, SRF9800BFH, SRFX9400BG, SRL4200*)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2029-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2024. Defined End of Support Period: December 31, 2029",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/refrigerator/AU_SOC_REF_2024_260128.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Refrigerator (SRT5200S)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2026. Defined End of Support Period: December 31, 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/refrigerator/AU_SOC_REF_2026_260128.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Robot Vacuum Cleaner (VR90F01ABG, VR70F00AHH)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2026. Defined End of Support Period: December 31, 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/vacuum/AU_SOC_RVC_2026_260123.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Single Split Air Conditioner (AR**DXEANWKNSA, AR**DXFZCWKNSA)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2029-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2024. Defined End of Support Period: December 31, 2029",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/air-conditioner/AU_SOC_SingleSpilitAirConditioner_2024_260127.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Single Split Air Conditioner (AR70H**CADWNSA, AR40H**C1AMNSA, AC***HEHDKG/SA, AC***HEHPKG/SA, AC***HEHFKG/SA)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2026. Defined End of Support Period: December 31, 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/air-conditioner/AU_SOC_SingleSpilitAirConditioner_2026_260127.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
       "model": "SP-LFF3CLAXXXY",
       "hw_version": null,
       "region": "AU",
@@ -131783,6 +134839,118 @@
           "first_seen": "2026-11-19",
           "last_seen": null,
           "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/tv/23-24-25/BN68-25581A-00_PSTI_TVY24_XY_ENG_251120.0.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Washer Dryer (WD18DB8995BZ)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2029-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2024. Defined End of Support Period: December 31, 2029",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_WD_2024_260123.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Washer Dryer (WD85T504DBE)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2022. Defined End of Support Period: December 31, 2027",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_WD_2022_260123.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Washer Dryer (WD85T4046CE)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2026-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2021. Defined End of Support Period: December 31, 2026",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_WD_2021_260123.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Washer Dryer (WD90HG6U94BE, WD90HG5U34BE, WD90H19AHS)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2026. Defined End of Support Period: December 31, 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_WD_2026_260123.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Washing Machine (WA14A8377GV)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2022. Defined End of Support Period: December 31, 2027",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_WW_2022_260123.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Washing Machine (WF90F19ADSSA)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2025. Defined End of Support Period: December 31, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_WW_2025_260123.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Samsung",
+      "model": "Washing Machine (WW11CG60AD**, WW90DG6U3AL*, WW12BB94ADG*, WW90DG5U3AAE, WW11CGC0ADAE, WW90DB8U9AGB)",
+      "hw_version": null,
+      "region": "AU",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2031-12-31",
+          "support_end_raw": "Defined Support Period: 5 years from the date of initial supply, 2026. Defined End of Support Period: December 31, 2031",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://images.samsung.com/is/content/samsung/assets/au/cyber-security-smart-devices-statement-of-compliance/laundry/AU_SOC_WW_2026_260127.pdf"
         }
       ]
     },
@@ -169803,6 +172971,502 @@
       ]
     },
     {
+      "vendor": "Verizon",
+      "model": "4G LTE USB Modem (551L)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "4G LTE USB Modem (UML295)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "5G Home Internet (LVSKODU)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "5G MiFi (M1000)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "7501 Router",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "9100EM",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"Fios Legacy routers\": \"Some customers use routers that we no longer support.\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/residential/internet/equipment/routers/other-equipment"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "9100VM",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"Fios Legacy routers\": \"Some customers use routers that we no longer support.\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/residential/internet/equipment/routers/other-equipment"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "AirCard 595",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "AirCard 595U USB Modem",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "Ellipsis Jetpack (MHS700L)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "Fivespot Global Ready 3G Mobile Hotspot",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "Global Modem (USB730L)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "Global USB Modem (AD3700)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "Global USB Modem (UMW190)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "Jetpack 4G LTE Mobile Hotspot (890L)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "Jetpack 4G LTE Mobile Hotspot (MHS291L)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "Jetpack 4G LTE Mobile Hotspot (MiFi 4510L)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "Jetpack 4G LTE Mobile Hotspot (MiFi 4620L)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "Jetpack 4G LTE Mobile Hotspot (MiFi 4620LE)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "Jetpack 4G LTE Mobile Hotspot (MiFi 5510L)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "LTE Home Internet router (1st gen)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "MiFi 4G LTE Global USB Modem (U620L)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "MiFi 2200 Intelligent Mobile Hotspot",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "SmartHub with Voice",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "USB Modem (UM150)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "USB Modem (UM175)",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "USB720 Modem",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "USB727 Modem",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "USB760 Modem",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "USB1000 Global USB Modem",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"These devices are no longer supported\" (\"Verizon no longer supports your device\")",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/no-longer-supported-verizon-devices/"
+        }
+      ]
+    },
+    {
+      "vendor": "Verizon",
+      "model": "Verizon One",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"High Speed Internet Legacy routers\": \"Some customers use routers that we no longer support.\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/residential/internet/equipment/routers/other-equipment"
+        }
+      ]
+    },
+    {
       "vendor": "Virgin Media",
       "model": "Hub 5 (F3896LG-VMB)",
       "hw_version": null,
@@ -177227,6 +180891,38 @@
       ]
     },
     {
+      "vendor": "Westell",
+      "model": "VersaLink 327W",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"High Speed Internet Legacy routers\": \"Some customers use routers that we no longer support.\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/residential/internet/equipment/routers/other-equipment"
+        }
+      ]
+    },
+    {
+      "vendor": "Westell",
+      "model": "VersaLink 7500",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"High Speed Internet Legacy routers\": \"Some customers use routers that we no longer support.\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.verizon.com/support/residential/internet/equipment/routers/other-equipment"
+        }
+      ]
+    },
+    {
       "vendor": "Worcester Bosch",
       "model": "BACnet Gateway Export (7736606972)",
       "hw_version": null,
@@ -177575,6 +181271,70 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://www.wyze.com/pages/response-to-3-29-22-security-report"
+        }
+      ]
+    },
+    {
+      "vendor": "Wyze",
+      "model": "Wyze Cam V4",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Minimum Security Support Date: December 31st, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.wyze.com/en-uk/pages/psti"
+        }
+      ]
+    },
+    {
+      "vendor": "Wyze",
+      "model": "Wyze Duo Cam Doorbell",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Minimum Security Support Date: December 31st, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.wyze.com/en-uk/pages/psti"
+        }
+      ]
+    },
+    {
+      "vendor": "Wyze",
+      "model": "Wyze Scale Ultra",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Minimum Security Support Date: December 31st, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.wyze.com/en-uk/pages/psti"
+        }
+      ]
+    },
+    {
+      "vendor": "Wyze",
+      "model": "Wyze Solar Cam Pan",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2030-12-31",
+          "support_end_raw": "Minimum Security Support Date: December 31st, 2030",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.wyze.com/en-uk/pages/psti"
         }
       ]
     },
@@ -182044,6 +185804,118 @@
     },
     {
       "vendor": "Yale",
+      "model": "Yale CCTV Camera (SV-DAFX-B/W)",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "4 years from January 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE00024SUR_Yale_AIO_Camera_SV-DAFX-BW.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Yale",
+      "model": "Yale Connect Bridge (AC-R1, AC-R2)",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "4 Years from 1st January 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE00010SLK_Connect_Bridge_1_.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Yale",
+      "model": "Yale Connect X",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "4 Years from 1st January 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE00013SLK_Connect_X_1_.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Yale",
+      "model": "Yale Floodlight Camera (YFL01-BLK)",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "4 Years from January 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE00019SUR_Yale_Floodlight_Camera.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Yale",
+      "model": "Yale HSA Alarm (B-HSA6610, B-HSA6600, HSA-HUB)",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "4 years from January 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE00024ALM_Yale_HSA_Alarm.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Yale",
+      "model": "Yale Indoor Wi-Fi Camera Full HD (SV-DFFX-B)",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "4 Years from January 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE00017SUR_Yale_Indoor_WiFi_Camera_Full_HD.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Yale",
+      "model": "Yale Indoor Wi-Fi Camera Pan & Tilt (SV-DPFX-B)",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "4 Years from January 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE00018SUR_Yale_Indoor_WiFi_Camera_Pan_Tilt.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Yale",
       "model": "Yale Linus L1 (ASL-06)",
       "hw_version": null,
       "region": "UK",
@@ -182060,6 +185932,118 @@
     },
     {
       "vendor": "Yale",
+      "model": "Yale Smart Alarm Hub (AL-HUB-1A-W)",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "4 years from January 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE00011ALM_Yale_Smart_Alarm.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Yale",
+      "model": "Yale Smart Cabinet Lock (SCL01-1)",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "4 Years from 1st January 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE0004SLK_Smart_Cabinet_Lock_1_.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Yale",
+      "model": "Yale Smart Home CCTV 2 camera/4 channel DVR (SV-4C-2ABFX-2)",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "4 Years from January 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE00022SUR_Yale_Smart_Home_Essentials_CCTV_4_2.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Yale",
+      "model": "Yale Smart Home CCTV 4 camera/4 channel DVR (SV-4C-4ABFX-2)",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "4 Years from January 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE00023SUR_Yale_Smart_Home_Essentials_CCTV_4_4.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Yale",
+      "model": "Yale Smart Indoor Camera (SV-IC-1A-V1)",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "4 Years from January 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE00014SUR_Yale_Smart_Indoor_Camera.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Yale",
+      "model": "Yale Smart Motion CCTV kit 2 camera/4 channel DVR (YSV-2CSMD-4CK)",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "4 Years from January 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE00020SUR_Yale_Smart_Motion_CCTV_kit_2_4.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Yale",
+      "model": "Yale Smart Motion CCTV kit 4 camera/8 channel DVR (YSV-4CSMD-8CK)",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "4 Years from January 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE00021SUR_Yale_Smart_Motion_CCTV_kit_4_8.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Yale",
       "model": "Yale Smart opener (YRDC-2)",
       "hw_version": null,
       "region": "UK",
@@ -182071,6 +186055,86 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE0006SLK_Smart_Opener_1_.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Yale",
+      "model": "Yale Smart Outdoor Camera (SV-OC-1A-V1)",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "4 Years from January 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE00015SUR_Yale_Smart_Outdoor_Camera.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Yale",
+      "model": "Yale Smart Video Doorbell (SV-VDB-1A-V1)",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "4 Years from January 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE00016SUR_Yale_Smart_Video_Doorbell.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Yale",
+      "model": "Yale SR/EF Alarm Hub range (SR-HUB, SR-HUL, SR-HUG, SR-HSL)",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "4 years from January 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE00013ALM_Yale_SR_EF_Alarm.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Yale",
+      "model": "Yale Sync Alarm Hub (IA-HUB)",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "4 years from January 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://yalehome.co.uk/media/wysiwyg/Technical_documents/PSTI_compliance_statement_YE00012ALM_Yale_Sync_Alarm.pdf"
+        }
+      ]
+    },
+    {
+      "vendor": "Yale",
+      "model": "Yale Sync Smart Plug (AC-PS)",
+      "hw_version": null,
+      "region": "UK",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": "2027-12-31",
+          "support_end_raw": "4 years from January 2024",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://yalehome.co.uk/media/wysiwyg/DOCs/PSTI_compliance_statement_YE00028ALM_Yale_Sync_Smart_Plug.pdf"
         }
       ]
     },
@@ -182439,6 +186503,22 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://www.zyxel.com/service-provider/emea/en/uk-psti-act"
+        }
+      ]
+    },
+    {
+      "vendor": "Zyxel",
+      "model": "C2100Z",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"Retired modems (no longer supported)\": \"you cannot get technical support from Brightspeed if you have an issue\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.brightspeed.com/help/internet/modems-and-routers/retired-brightspeed-modems/"
         }
       ]
     },
@@ -183207,6 +187287,22 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://www.zyxel.com/service-provider/global/en/end-of-life"
+        }
+      ]
+    },
+    {
+      "vendor": "Zyxel",
+      "model": "FR1000Z",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"Retired modems (no longer supported)\": \"you cannot get technical support from Brightspeed if you have an issue\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.brightspeed.com/help/internet/modems-and-routers/retired-brightspeed-modems/"
         }
       ]
     },
@@ -185180,6 +189276,38 @@
     },
     {
       "vendor": "Zyxel",
+      "model": "P870HN",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"Retired modems (no longer supported)\": \"you cannot get technical support from Brightspeed if you have an issue\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.brightspeed.com/help/internet/modems-and-routers/retired-brightspeed-modems/"
+        }
+      ]
+    },
+    {
+      "vendor": "Zyxel",
+      "model": "PK5000Z",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"Retired modems (no longer supported)\": \"you cannot get technical support from Brightspeed if you have an issue\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.brightspeed.com/help/internet/modems-and-routers/retired-brightspeed-modems/"
+        }
+      ]
+    },
+    {
+      "vendor": "Zyxel",
       "model": "PLA4111",
       "hw_version": null,
       "region": "global",
@@ -185863,6 +189991,38 @@
           "first_seen": "2026-11-01",
           "last_seen": null,
           "source_url": "https://www.zyxel.com/service-provider/global/en/end-of-life"
+        }
+      ]
+    },
+    {
+      "vendor": "Zyxel",
+      "model": "Q100",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"Retired modems (no longer supported)\": \"you cannot get technical support from Brightspeed if you have an issue\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.brightspeed.com/help/internet/modems-and-routers/retired-brightspeed-modems/"
+        }
+      ]
+    },
+    {
+      "vendor": "Zyxel",
+      "model": "Q1000Z",
+      "hw_version": null,
+      "region": "US",
+      "shortened": false,
+      "dates": [
+        {
+          "support_end": null,
+          "support_end_raw": "Listed under \"Retired modems (no longer supported)\": \"you cannot get technical support from Brightspeed if you have an issue\"",
+          "first_seen": "2026-11-20",
+          "last_seen": null,
+          "source_url": "https://www.brightspeed.com/help/internet/modems-and-routers/retired-brightspeed-modems/"
         }
       ]
     },

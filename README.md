@@ -85,15 +85,15 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.6.0, retrieved 2026-11-19: 11,500 rows (9,794 models) from 95 brands, now including smartphones and tablets.
+`data/devices.json` (schema in `data/schema.json`), version 0.6.1, retrieved 2026-11-20: 11,760 rows (9,964 models) from 100 brands, now including smartphones and tablets.
 
 | Vendor | Rows | Source |
 |---|---|---|
 | TP-Link | 1,354 | UK PSTI statement of compliance (full document) |
 | Dahua | 1,120 | Dahua product end-of-life policy, milestone list (UK site, updated 27 October 2025): IP and PTZ cameras, recorders, door entry, switches, alarms |
-| D-Link | 473 | US legacy product list; security announcements; US end-of-support notices; UK PSTI statements |
+| D-Link | 475 | US legacy product list; security announcements; US end-of-support notices; UK PSTI statements; Verizon legacy router list |
 | Netgear | 375 | End of Service list (consumer Nighthawk, Orbi, extenders, cable modems; searched model by model); Australian EOS page (minimum dates); NETGEAR for Business EOL list; UK PSTI statements |
-| Zyxel | 368 | Service-provider end-of-life list; UK PSTI page; archived EOL list; end-of-life page |
+| Zyxel | 377 | Service-provider end-of-life list; UK PSTI page; archived EOL list; end-of-life page; Brightspeed retired modem list |
 | EZVIZ | 311 | EZVIZ EOL product list (Europe, firmware update end dates) |
 | Linksys | 1,244 | Linksys product end-of-life page (per market, checked against the full table); end-of-life article |
 | QNAP | 239 | QNAP product support status (full table, mirrored); UK PSTI statements |
@@ -101,13 +101,13 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Brother | 654 | Brother Software Security Updates Guarantee (January 2026, mirrored weekly): printers, scanners, label and mobile printers, Europe and Australia; models whose support ended between 2008 and 2025 are dated 31 December 2025 |
 | Epson | 248 | Epson Australia security support periods (5 March 2026): printers, scanners, label and receipt printers, projectors; minimum dates |
 | Canon | 171 | Canon UK PSTI statements: inkjet and laser printers, cameras, camcorders, PTZ cameras, photo printers |
-| Samsung | 137 | Samsung Australia statements of compliance: 2023 to 2025 TVs, projectors, monitors, soundbars, Galaxy Buds, Watch, Ring and Fit |
+| Samsung | 168 | Samsung Australia statements of compliance: 2023 to 2025 TVs, projectors, monitors, soundbars, Galaxy Buds, Watch, Ring and Fit, and connected appliances (air conditioners, laundry, ovens, fridges, vacuums) |
 | Tenda | 136 | Tenda EOL Center ("End of service date") |
 | Mercusys | 127 | UK PSTI statement of compliance (full document) |
 | eufy | 113 | Anker UK PSTI table (cameras, doorbells, HomeBase, locks) |
 | Arlo | 102 | Arlo end-of-life page; UK and Australian statements of compliance |
 | ASUS | 100 | UK PSTI support-period list; Singapore lifecycle list; phone product support list (ROG Phone, Zenfone: "security updates through" a year, read as 31 December of that year) |
-| Ring | 85 | Ring device software security updates pages (UK, US); UK PSTI statements |
+| Ring | 211 | Ring device software security updates pages (UK, US, Australia); UK PSTI statements |
 | DrayTek | 84 | DrayTek UK product lifecycle and end-of-life pages |
 | Lorex | 76 | Lorex UK PSTI end-of-life table |
 | Amazon (Echo, Fire TV) | 73 | Amazon device software security updates pages (UK, US) |
@@ -137,7 +137,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Reolink | 406 | UK PSTI statements (all eleven product groups: cameras, kits, recorders and hubs, doorbells, PoE switches) |
 | Cisco (RV, WAP, 250/350/350X/CBS350 switches, Meraki, Meraki Go) | 199 | Cisco end-of-life notices (End of Vulnerability/Security Support, or End of SW Maintenance Releases for switches); Meraki end-of-life products and dates (MR access points, MS switches, MX and Z security appliances, MG cellular gateways, MV cameras, MT sensors) |
 | Aqara | 18 | UK PSTI statements |
-| Blink | 18 | Blink device software security updates page |
+| Blink | 37 | Blink device software security updates pages (UK, US) |
 | Bosch Smart Home | 17 | Bosch Smart Home software and security updates page |
 | eero | 17 | eero software security updates page |
 | Shelly | 17 | UK PSTI statements (newer devices only) |
@@ -176,7 +176,12 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 | Sharp | 32 | Sharp UK PSTI statements (one per TV series) |
 | Xerox | 30 | Xerox security bulletin XRX24-009 (UK PSTI support periods) |
 | BT | 21 | BT Product Support document (April 2026): hubs, Wi-Fi discs, TV boxes, extenders; minimum period from the sales start |
-| Roku | 9 | Roku product security page (security update periods) |
+| Roku | 16 | Roku product security page (security update periods); Roku Partner Success list of devices that no longer receive firmware updates |
+| Verizon, Actiontec, Westell | 43 | Verizon lists of devices and legacy routers it no longer supports (US, no date) |
+| Brightspeed retired modems (Actiontec, Comtrend, Zyxel) | 14 | Brightspeed retired modems list (US, no date; end of support by the provider) |
+| AirTies (AT&T extenders) | 2 | AT&T notice: the 4920 and 4921 stop getting updates from 20 April 2025 on BGW320 gateways (last day recorded: 19 April 2025) |
+| Yale | 21 | Yale UK PSTI statements (cameras, doorbell, alarms, bridges, smart plug) |
+| Wyze | 5 | Wyze UK PSTI page |
 | Dyson | 7 | Dyson statements of compliance (Australia) |
 | Ninja, Shark | 6 | SharkNinja UK product security update support list |
 | Virgin Media, YouFibre | 4 | Sagemcom UK PSTI statements (Hub 5, Hub 5x, WiFi Pod, YouMesh Pro) |

@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.12.0 - 2026-11-20
+
+- 260 more rows, mostly for the U.S. market (11,760 rows, 9,964 models, 100 brands; dataset 0.6.1):
+  - Ring: 126 rows from its U.S. and Australian software security updates pages; Blink: 19 U.S. rows.
+  - Samsung: 31 connected appliances from Samsung Australia statements of compliance.
+  - Yale: 19 UK PSTI statements; Wyze: 4 UK PSTI rows.
+  - Verizon: 38 devices and legacy routers it no longer supports (Verizon, Actiontec, D-Link, Westell); Brightspeed: 14 retired modems (Actiontec, Comtrend, Zyxel). No date given by either.
+  - AT&T: AirTies 4920 and 4921 extenders, updates stopped from 20 April 2025 on BGW320 gateways.
+  - Roku: 7 devices that no longer receive firmware updates.
+- Matching: "Kasa" names TP-Link; Verizon (Fios), Actiontec, Westell (VersaLink), AirTies and Comtrend are recognised.
+- Checked and left out: Xfinity, Spectrum, Cox and T-Mobile (no per-model end-of-support list), ecobee (pages need a browser), Amazon Echo and Fire TV U.S. page (blocked to automated readers), TP-Link U.S. smart home list (end of sale, not end of updates).
+
 ## 1.11.0 - 2026-11-20
 
 - History of published end dates: `data/history.json` (schema in `data/history-schema.json`) lists, for every row key (vendor, model, hardware version, region), each end date the dataset has published, with the source text, the source URL and the dataset dates on which it was first and last seen (dataset 0.6.0).

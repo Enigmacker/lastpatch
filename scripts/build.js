@@ -97,7 +97,7 @@ const devices = [...seen.values()].sort((a, b) =>
 
 const generated = devices.reduce((d, r) => (r.retrieved > d ? r.retrieved : d), RETRIEVED);
 fs.writeFileSync(OUT, JSON.stringify({
-  version: '0.6.0',
+  version: '0.6.1',
   generated,
   license: 'ODbL-1.0',
   devices,
