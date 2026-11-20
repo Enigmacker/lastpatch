@@ -115,14 +115,18 @@ test('bundled firmware data is well formed', () => {
   const data = JSON.parse(fs.readFileSync(fw.DATA_FILE, 'utf8'));
   const devices = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'devices.json'), 'utf8')).devices;
   const models = new Set(devices.map((d) => `${d.vendor}|${d.model}`));
-  const allowed = ['vendor', 'model', 'hw_version', 'region', 'latest_version', 'release_date', 'source_url', 'retrieved'];
+  const required = ['vendor', 'model', 'hw_version', 'region', 'latest_version', 'release_date', 'source_url', 'retrieved'];
+  const optional = ['os'];
   assert.ok(data.firmware.length >= 5);
   for (const r of data.firmware) {
-    assert.deepStrictEqual(Object.keys(r).sort(), [...allowed].sort());
+    assert.deepStrictEqual(Object.keys(r).filter((k) => !optional.includes(k)).sort(), [...required].sort());
+    for (const k of Object.keys(r)) assert.ok(required.includes(k) || optional.includes(k), k);
     assert.ok(models.has(`${r.vendor}|${r.model}`), `${r.model} is not a dataset model`);
     assert.ok(fw.parseVersion(r.latest_version, r.vendor), r.latest_version);
     assert.ok(r.release_date === null || /^\d{4}-\d{2}-\d{2}$/.test(r.release_date));
-    assert.match(r.source_url, /^https:\/\/download\.avm\.de\//); // official sources only
+    // Official sources only: AVM's download server, QNAP's update server.
+    assert.match(r.source_url, /^https:\/\/(download\.avm\.de|update\.qnap\.com)\//);
+    if (r.vendor === 'QNAP') assert.ok(['QTS', 'QuTS hero'].includes(r.os), `${r.model}: os`);
   }
 });
 
@@ -248,4 +252,108 @@ test('GL.iNet 4.x: the login challenge identifies the firmware without a passwor
   assert.strictEqual(await probe.probeNote({ ...host, macVendor: 'Apple, Inc.' }, { fetch }), null);
   assert.strictEqual(seen.length, 1);
   assert.strictEqual(probe.isGlinetChallenge('403 Forbidden'), false);
+});
+
+// QNAP and Synology
+
+const qnapRows = [
+  { vendor: 'QNAP', model: 'TS-464', hw_version: null, region: null, os: 'QTS', latest_version: '5.2.11.3661 build 20261023', release_date: '2026-10-23', source_url: 'https://update.qnap.com/QTS_FW_5.2.0.xml', retrieved: '2026-11-20' },
+];
+
+test('version parsing and comparison: QNAP', () => {
+  const q = fw.parseVersion('5.2.11.3661 build 20261023', 'QNAP');
+  assert.deepStrictEqual([q.parts, q.extra, q.incomplete], [[5, 2, 11, 3661], [20261023], false]);
+  assert.strictEqual(fw.parseVersion('5.2.11', 'QNAP').incomplete, true);
+  assert.strictEqual(fw.parseVersion('5.2.11', 'NETGEAR').incomplete, false);
+  assert.strictEqual(fw.compareVersions('5.2.10.3577 build 20260731', '5.2.11.3661 build 20261023', 'QNAP'), -1);
+  assert.strictEqual(fw.compareVersions('QTS 5.2.11.3661', '5.2.11.3661 build 20261023', 'QNAP'), 0);
+  // 5.2.11 exists as build 3574 and 3661: without the build number, no answer.
+  assert.strictEqual(fw.compareVersions('5.2.11', '5.2.11.3661 build 20261023', 'QNAP'), null);
+  assert.strictEqual(fw.compareVersions('5.1.0', '5.2.11.3661 build 20261023', 'QNAP'), -1);
+  assert.strictEqual(fw.firmwareOs('QNAP', 'h5.2.1.3044'), 'QuTS hero');
+  assert.strictEqual(fw.firmwareOs('QNAP', 'QuTS hero h5.2.1'), 'QuTS hero');
+  assert.strictEqual(fw.firmwareOs('QNAP', '5.2.11.3661'), 'QTS');
+  assert.strictEqual(fw.firmwareOs('AVM', '8.51'), null);
+});
+
+test('check: QNAP update available, incomplete version, QuTS hero', () => {
+  const rows = fw.latestRows(qnapRows, 'QNAP TS-464').rows;
+  assert.strictEqual(rows.length, 1);
+  const old = fw.checkFirmware('5.2.10.3577 build 20260731', rows);
+  assert.strictEqual(old.upToDate, false);
+  assert.match(fw.describeFirmware(old), /latest published by QNAP: 5\.2\.11\.3661 build 20261023 \(2026-10-23\); installed: 5\.2\.10\.3577 build 20260731: an update is available/);
+  assert.strictEqual(fw.checkFirmware('5.2.11.3661 build 20261023', rows).upToDate, true);
+
+  const short = fw.checkFirmware('5.2.11', rows);
+  assert.strictEqual(short.upToDate, null);
+  assert.match(short.behind, /no build number/);
+
+  const hero = fw.checkFirmware('h5.2.1.3044 build 20250401', rows);
+  assert.strictEqual(hero.upToDate, null);
+  assert.strictEqual(hero.latest, null);
+  assert.match(hero.behind, /latest QTS version of this model, and QuTS hero is installed/);
+});
+
+test('QNAP authLogin.cgi (no login): model and full version', () => {
+  assert.deepStrictEqual(probe.parseQnapAuthLogin(fixture('qnap_authlogin.xml')),
+    { model: 'TS-464', version: '5.2.10.3577 build 20260731', lab: false, oem: null });
+  const hero = probe.parseQnapAuthLogin(fixture('qnap_authlogin_hero.xml'));
+  assert.strictEqual(hero.version, 'h5.2.1.3044 build 20250401');
+  assert.strictEqual(fw.firmwareOs('QNAP', hero.version), 'QuTS hero');
+  // Older QTS answers without CDATA, or with the version only.
+  const plain = probe.parseQnapAuthLogin('<QDocRoot version="1.0"><model><displayModelName>TS-251+</displayModelName></model><firmware><version>4.3.6</version></firmware></QDocRoot>');
+  assert.deepStrictEqual([plain.model, plain.version], ['TS-251+', '4.3.6']);
+  assert.strictEqual(probe.parseQnapAuthLogin('<html>login</html>'), null);
+  assert.strictEqual(probe.parseQnapAuthLogin('<QDocRoot><authPassed>0</authPassed></QDocRoot>'), null);
+});
+
+test('Synology UPnP description: DSM version from modelNumber', () => {
+  const d = parseDescription(fixture('synology_desc.xml'), 'http://192.168.1.20:5000/ssdp/desc-DSM-eth0.xml');
+  assert.deepStrictEqual(probe.fromUpnp([d]), { version: '7.2-72806', source: 'UPnP modelNumber', model: 'DS920+' });
+  // Other makers' modelNumber is never read as a version.
+  assert.strictEqual(probe.synologyFromUpnp({ manufacturer: 'Example', modelName: 'X', modelNumber: 'X 7.2-1' }), null);
+  assert.strictEqual(probe.synologyFromUpnp({ manufacturer: 'Synology', modelName: 'DS920+', modelNumber: 'DS920+' }), null);
+});
+
+test('readFirmware: QNAP asks authLogin.cgi on 8080, then 80, and sends nothing else', async () => {
+  const host = { ip: '192.168.1.40', macVendor: 'QNAP Systems, Inc.', upnp: [], http: { title: 'TS-464' } };
+  const f1 = fakeFetch({ 'http://192.168.1.40:8080/cgi-bin/authLogin.cgi': fixture('qnap_authlogin.xml') });
+  const a = await probe.readFirmware(host, { fetch: f1 });
+  assert.deepStrictEqual(a, { model: 'TS-464', version: '5.2.10.3577 build 20260731', lab: false, oem: null, source: 'authLogin.cgi, no login' });
+  assert.deepStrictEqual(f1.asked, ['http://192.168.1.40:8080/cgi-bin/authLogin.cgi']);
+
+  const f2 = fakeFetch({ 'http://192.168.1.40/cgi-bin/authLogin.cgi': fixture('qnap_authlogin.xml') });
+  assert.strictEqual((await probe.readFirmware(host, { fetch: f2 })).version, '5.2.10.3577 build 20260731');
+  assert.deepStrictEqual(f2.asked, ['http://192.168.1.40:8080/cgi-bin/authLogin.cgi', 'http://192.168.1.40/cgi-bin/authLogin.cgi']);
+  assert.ok(f2.asked.every((u) => !u.includes('?')));
+
+  const syno = { ip: '192.168.1.20', macVendor: 'Synology Incorporated', http: null,
+    upnp: [parseDescription(fixture('synology_desc.xml'), 'http://192.168.1.20:5000/ssdp/desc-DSM-eth0.xml')] };
+  const f3 = fakeFetch({});
+  const s = await probe.readFirmware(syno, { fetch: f3 });
+  assert.deepStrictEqual([s.version, s.model, s.source], ['7.2-72806', 'DS920+', 'UPnP modelNumber']);
+  assert.deepStrictEqual(f3.asked, []); // read from the UPnP description already fetched
+});
+
+test('scan report: QNAP update available', () => {
+  const { scanReport } = require('../src/cli');
+  const { identify } = require('../src/discover');
+  const devices = [{ vendor: 'QNAP', model: 'TS-464', hw_version: null, support_end: null, support_end_raw: 'active', end_is_minimum: false, region: 'global' }];
+  const host = {
+    ip: '192.168.1.40', mac: null, macVendor: 'QNAP Systems, Inc.', upnp: [], mdns: null,
+    http: { title: 'QTS', realm: null, server: null }, exposed: [],
+    firmware: { version: '5.2.10.3577 build 20260731', source: 'authLogin.cgi, no login', model: 'TS-464', lab: false, oem: null },
+  };
+  const saved = fw.loadFirmware;
+  fw.loadFirmware = () => qnapRows;
+  try {
+    const [r] = scanReport(identify([host], devices), 365);
+    assert.strictEqual(r.identified_via, 'device info file (authLogin.cgi, no login)');
+    assert.strictEqual(r.firmware.upToDate, false);
+    assert.strictEqual(r.firmware.latest, '5.2.11.3661 build 20261023');
+    assert.strictEqual(r.firmware.read_from, 'authLogin.cgi, no login');
+    assert.strictEqual(r.firmware.source_url, 'https://update.qnap.com/QTS_FW_5.2.0.xml');
+  } finally {
+    fw.loadFirmware = saved;
+  }
 });

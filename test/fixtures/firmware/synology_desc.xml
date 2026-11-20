@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+<specVersion><major>1</major><minor>0</minor></specVersion>
+<device>
+<deviceType>urn:schemas-upnp-org:device:Basic:1</deviceType>
+<friendlyName>HomeNAS (DS920+)</friendlyName>
+<manufacturer>Synology</manufacturer>
+<manufacturerURL>http://www.synology.com</manufacturerURL>
+<modelDescription>Synology NAS</modelDescription>
+<modelName>DS920+</modelName>
+<modelNumber>DS920+ 7.2-72806</modelNumber>
+<modelURL>http://www.synology.com</modelURL>
+<serialNumber>0011320000AA</serialNumber>
+<UDN>uuid:73796E6F-6473-6D00-0000-0011320000aa</UDN>
+<presentationURL>http://192.168.1.20:5000/</presentationURL>
+</device>
+</root>

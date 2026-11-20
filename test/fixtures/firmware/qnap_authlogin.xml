@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<QDocRoot version="1.0">
+<doQuick><![CDATA[]]></doQuick>
+<is_booting><![CDATA[0]]></is_booting>
+<mediaReady><![CDATA[1]]></mediaReady>
+<cuid><![CDATA[]]></cuid>
+<model>
+<modelName><![CDATA[TS-X64]]></modelName>
+<internalModelName><![CDATA[TS-X64]]></internalModelName>
+<platform><![CDATA[TS-NASX86]]></platform>
+<platform_ex><![CDATA[X86_ELKHARTLAKE]]></platform_ex>
+<customModelName><![CDATA[]]></customModelName>
+<displayModelName><![CDATA[TS-464]]></displayModelName>
+</model>
+<firmware>
+<version><![CDATA[5.2.10]]></version>
+<number><![CDATA[3577]]></number>
+<build><![CDATA[20260731]]></build>
+<patch><![CDATA[0]]></patch>
+<buildTime><![CDATA[2026/07/31]]></buildTime>
+</firmware>
+<hostname><![CDATA[NAS-HOME]]></hostname>
+</QDocRoot>

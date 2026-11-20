@@ -55,11 +55,23 @@
               "null"
             ],
             "pattern": "^(global|EU|EMEA|APAC|LATAM|[A-Z]{2})$",
-            "description": "Market of the download folder (AVM 'deutschland' = DE). Null for international folders."
+            "description": "Market of the download folder (AVM 'deutschland' = DE). Null for international folders and worldwide listings."
+          },
+          "os": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "QTS",
+              "QuTS hero",
+              null
+            ],
+            "description": "Optional. Operating system the version belongs to, for models that can run more than one (QNAP: QTS or QuTS hero). An installed version of another operating system is not compared with this row."
           },
           "latest_version": {
             "type": "string",
-            "description": "Latest version as the manufacturer writes it (AVM: the FRITZ!OS version, e.g. '8.51')."
+            "description": "Latest version as the manufacturer writes it (AVM: the FRITZ!OS version, e.g. '8.51'; QNAP: version, build number and build date, e.g. '5.2.11.3661 build 20261023')."
           },
           "release_date": {
             "type": [
@@ -72,7 +84,7 @@
           "source_url": {
             "type": "string",
             "format": "uri",
-            "description": "Official download folder or page the version was read from."
+            "description": "Official download folder, page or update listing the version was read from."
           },
           "retrieved": {
             "type": "string",

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<QDocRoot version="1.0">
+<model>
+<modelName><![CDATA[TS-X64]]></modelName>
+<internalModelName><![CDATA[TS-X64]]></internalModelName>
+<displayModelName><![CDATA[TS-464]]></displayModelName>
+</model>
+<firmware>
+<version><![CDATA[h5.2.1]]></version>
+<number><![CDATA[3044]]></number>
+<build><![CDATA[20250401]]></build>
+<patch><![CDATA[0]]></patch>
+</firmware>
+</QDocRoot>

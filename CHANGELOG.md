@@ -1,5 +1,15 @@
 # Changelog
 
+## Unreleased
+
+- Installed vs latest firmware for QNAP:
+  - The latest QTS version of each model is read from QNAP's live update listing for QTS 5.2 (`update.qnap.com/QTS_FW_5.2.0.xml`), the file QNAP NAS read to offer updates; rows are added to `data/firmware.json` by the weekly refresh.
+  - `lastpatch scan` reads the installed model and QTS or QuTS hero version of a QNAP NAS from its login service asked with no parameter (`/cgi-bin/authLogin.cgi`, port 8080 then 80). No user name or password is sent.
+  - QNAP versions are compared with their build number ("5.2.11.3661 build 20261023"); a version without it ("5.2.11") gets no answer, since QNAP ships several builds under one version number.
+- `data/firmware.json` rows may carry an optional `os` field (`QTS` or `QuTS hero`, schema updated). An installed QuTS hero version is not compared with the latest QTS version.
+- Synology: the scan shows the installed DSM or SRM version, read from the `modelNumber` of the UPnP description. The latest version is not collected (see below).
+- Checked and left out for the latest version: Synology, NETGEAR, ASUS and TP-Link (their website terms forbid robots, scripts or crawlers), Ubiquiti (the firmware feed names hardware platforms, not models).
+
 ## 1.12.0 - 2026-11-20
 
 - 260 more rows, mostly for the U.S. market (11,760 rows, 9,964 models, 100 brands; dataset 0.6.1):
