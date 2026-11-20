@@ -58,7 +58,7 @@ $ lastpatch check "FRITZ!Box 7590" --firmware 7.57
               https://download.avm.de/fritzbox/fritzbox-7590/deutschland/fritz.os/
 ```
 
-Versions are compared as numbers ("154.07.57" on a FRITZ!Box is FRITZ!OS 7.57; "V1.0.4.126_10.1.12" on a NETGEAR router is 1.0.4.126). When the latest version of a model is not in `data/firmware.json`, or depends on a hardware version you did not give, the answer is "latest version not known" (`upToDate: null` in JSON), never "up to date".
+Versions are compared as numbers ("154.07.57" on a FRITZ!Box is FRITZ!OS 7.57; "V1.0.4.126_10.1.12" on a NETGEAR router is 1.0.4.126; "5.2.11.3661 build 20261023" on a QNAP NAS is QTS 5.2.11 build 3661). Give a QNAP version with its build number, as the admin page shows it: QNAP publishes several builds under one version number, so "5.2.11" alone gets no answer. A QuTS hero version (starting with "h") is not compared with the latest QTS version. When the latest version of a model is not in `data/firmware.json`, or depends on a hardware version you did not give, the answer is "latest version not known" (`upToDate: null` in JSON), never "up to date".
 
 Options: `--json` for machine-readable output, `--warn <days>` to change the "ending soon" window (default 365), `--region <cc>` to prefer dates published for a given market. Exit code `2` means at least one device is past its end of support, so the tool can be used in scripts.
 
@@ -74,13 +74,13 @@ Options: `--json` for machine-readable output, `--warn <days>` to change the "en
 | mDNS / DNS-SD (Bonjour) | device name and model on NAS, printers, cameras, smart home |
 | Title and login prompt of the device's web admin page (HTTP, then HTTPS) | the model, on many routers and NAS |
 | Port forwards opened on the router through UPnP (read-only query) | the devices reachable from the Internet |
-| Firmware information files: `jason_boxinfo.xml` and the TR-064 description (FRITZ!Box), `currentsetting.htm` (NETGEAR), `firmwareVersion` / `softwareVersion` in UPnP descriptions | the installed firmware version, compared with the latest published |
+| Firmware information files: `jason_boxinfo.xml` and the TR-064 description (FRITZ!Box), `currentsetting.htm` (NETGEAR), the answer of `/cgi-bin/authLogin.cgi` asked without any parameter (QNAP), `modelNumber` in the UPnP description (Synology), `firmwareVersion` / `softwareVersion` in other UPnP descriptions | the installed firmware version, compared with the latest published |
 
 A copy of the IEEE MAC registries ships with the tool; `lastpatch update-oui` optionally refreshes it from the IEEE website. Every probe contacts private addresses only, sends no credentials, and nothing leaves your network. Only scan networks you own or administer.
 
 Some devices only give their model after a login, which the scan never attempts. For GL.iNet routers on firmware 4.x, the scan asks for the first step of the login (the "challenge", which involves no password) to confirm it is one, and says so; read the model on the label and run `lastpatch check`. Phones, tablets and computers usually join Wi-Fi with a private, randomised MAC address: the scan reports them as such, since the maker cannot be read from that address.
 
-The installed firmware is read only from files these devices publish without a password; no login is tried, and the serial number they also contain is not kept. Most other brands do not publish their version this way, so the scan shows it for FRITZ!Box and NETGEAR routers, and for devices whose UPnP description includes it.
+The installed firmware is read only from files these devices publish without a password; no login is tried, and the serial number they also contain is not kept. A QNAP NAS gives its model and QTS or QuTS hero version when its login service is asked with no parameter (port 8080, then 80): no user name or password is sent. A Synology NAS or router writes its DSM or SRM version in the `modelNumber` of its UPnP description ("DS920+ 7.2-72806"), which the scan already reads. Most other brands do not publish their version this way, so the scan shows it for FRITZ!Box, NETGEAR, QNAP and Synology devices, and for devices whose UPnP description includes it.
 
 Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "model not announced": read the model on the label and check it with `lastpatch check`.
 
@@ -234,17 +234,20 @@ Each row records the date exactly as written (`support_end_raw`), whether it is 
 
 ### Latest firmware
 
-`data/firmware.json` (schema in `data/firmware-schema.json`) lists the latest firmware version each manufacturer publishes for a model: `vendor`, `model` (as written in `devices.json`), `hw_version`, `region`, `latest_version`, `release_date`, `source_url`, `retrieved`. Only official download servers are used.
+`data/firmware.json` (schema in `data/firmware-schema.json`) lists the latest firmware version each manufacturer publishes for a model: `vendor`, `model` (as written in `devices.json`), `hw_version`, `region`, `latest_version`, `release_date`, `source_url`, `retrieved`, and optionally `os`. Only official download and update servers are used.
 
 | Vendor | Rows | Source |
 |---|---|---|
-| AVM (FRITZ!Box) | 9 | AVM download server (`download.avm.de/fritzbox/<model>/deutschland/fritz.os/`): the version of the image file, the release date from the release notes (`info_de.txt`, `info_en.txt`) when they describe that same version |
+| AVM (FRITZ!Box) | 54 | AVM download server (`download.avm.de/fritzbox/<model>/deutschland/fritz.os/`): the version of the image file, the release date from the release notes (`info_de.txt`, `info_en.txt`) when they describe that same version |
+| QNAP (QTS) | added by the next weekly refresh | QNAP live update listing for QTS 5.2 (`https://update.qnap.com/QTS_FW_5.2.0.xml`), the file QNAP NAS read to offer firmware updates: version, build number, build date and publication date for each hardware family, mapped to the models it names. `os` is `QTS` |
 
-The AVM rows are refreshed every week from AVM's download server.
+The rows are refreshed every week from these servers. Rows may carry an `os` field (`QTS` or `QuTS hero`) when a model can run more than one operating system; an installed version of another one is not compared with the row.
 
 Limits of the firmware check:
 
-- **Vendors covered:** AVM FRITZ!Box only for the latest version. FRITZ!Repeater and Mesh sets are not covered yet. The installed version is read on FRITZ!Box and NETGEAR routers and on devices whose UPnP description includes it; for other brands, give it with `--firmware`.
+- **Vendors covered:** AVM FRITZ!Box and QNAP NAS on QTS 5.2 for the latest version. FRITZ!Repeater and Mesh sets are not covered yet. The installed version is read on FRITZ!Box, NETGEAR, QNAP and Synology devices and on devices whose UPnP description includes it; for other brands, give it with `--firmware`.
+- **QNAP:** only models listed in the QTS 5.2 update listing are covered. QuTS hero models and models that stopped at QTS 4.x get "latest version not known".
+- **Not covered for the latest version:** Synology, NETGEAR, ASUS and TP-Link, whose website terms forbid automated collection (robots, scripts or crawlers), and Ubiquiti, whose firmware feed names hardware platforms (e.g. "U7PG2") rather than the models in the dataset. On a Synology device the scan shows the installed version and "latest version not known"; compare it with Synology's release notes by hand.
 - **Release notes can lag behind.** On 2026-11-11 AVM served FRITZ!OS 8.51 for the 7590 AX while its release notes still described 8.25, and the English notes of the 7590 also still described 8.25. The version is then taken from the image file and the release date is left empty.
 - **Markets differ.** Rows come from AVM's German folder (`region: DE`), falling back to the international one. Provider-branded boxes (e.g. 1&1, Vodafone) are updated by the provider on its own schedule; the scan flags them.
 - **Lab (beta) versions** are flagged, and an installed version newer than the recorded one is reported as up to date with a note.
@@ -297,7 +300,7 @@ To add rows yourself, put them in a file in `raw/` (same fields as above), then 
 ## Roadmap
 
 - More vendors, device types and markets, from official sources only.
-- Installed vs latest firmware for more vendors.
+- Installed vs latest firmware for more vendors, where an official source allows automated reading.
 - Desktop apps and a browser extension.
 
 ## License

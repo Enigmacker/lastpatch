@@ -6,6 +6,10 @@
 //   AVM FRITZ!Box  http://<ip>/jason_boxinfo.xml, else the TR-064 description
 //                  http://<ip>:49000/tr64desc.xml
 //   NETGEAR        http://<ip>/currentsetting.htm
+//   QNAP           http://<ip>:8080/cgi-bin/authLogin.cgi, else port 80: asked
+//                  with no parameter, the login service answers with the
+//                  model and the QTS / QuTS hero version, before any login
+//   Synology       <modelNumber> of its UPnP description ("DS920+ 7.2-64570")
 //   any device     <firmwareVersion> / <softwareVersion> in its UPnP description
 // Private addresses only, GET only, short timeouts. The serial number and
 // other identifiers in these files are not kept.
@@ -69,12 +73,55 @@ function parseCurrentSetting(text) {
   return { model: out.Model || null, version: out.Firmware, lab: false, oem: null };
 }
 
+// Element text, plain or wrapped in CDATA (QNAP writes <version><![CDATA[5.2.11]]></version>).
+function cdataTag(xml, name) {
+  const re = new RegExp(`<${name}(?:\\s[^>]*)?>\\s*(?:<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>|([^<]*))\\s*</${name}>`, 'i');
+  const m = String(xml || '').match(re);
+  if (!m) return null;
+  const v = (m[1] != null ? m[1] : m[2]).trim();
+  return v || null;
+}
+
+// QNAP /cgi-bin/authLogin.cgi asked without parameters:
+//   <QDocRoot><model><displayModelName>TS-464</displayModelName>...</model>
+//   <firmware><version>5.2.11</version><number>3661</number><build>20261023</build>...</firmware>
+// Returns the version as QNAP writes it in its update listing,
+// "5.2.11.3661 build 20261023" (QuTS hero: "h5.2.1.3044 build ...").
+function parseQnapAuthLogin(xml) {
+  const text = String(xml || '');
+  if (!/<QDocRoot\b/i.test(text)) return null;
+  const fwBlock = (text.match(/<firmware>([\s\S]*?)<\/firmware>/i) || [])[1];
+  const modelBlock = (text.match(/<model>([\s\S]*?)<\/model>/i) || [])[1];
+  if (!fwBlock) return null;
+  const version = cdataTag(fwBlock, 'version');
+  if (!version || !/\d/.test(version)) return null;
+  const number = cdataTag(fwBlock, 'number');
+  const build = cdataTag(fwBlock, 'build');
+  let full = version;
+  if (number && /^\d+$/.test(number)) full += `.${number}`;
+  if (build && /^\d{8}$/.test(build)) full += ` build ${build}`;
+  const model = modelBlock ? (cdataTag(modelBlock, 'displayModelName') || cdataTag(modelBlock, 'modelName')) : null;
+  return { model, version: full, lab: false, oem: null };
+}
+
+// Synology DSM / SRM UPnP description: <modelName>DS920+</modelName> and
+// <modelNumber>DS920+ 7.2-64570</modelNumber> (model, then version-build).
+function synologyFromUpnp(u) {
+  if (!u || !/synology/i.test(u.manufacturer || '') || !u.modelNumber) return null;
+  const m = String(u.modelNumber).trim().match(/^(.*?)\s*\b(\d+\.\d+(?:\.\d+)?-\d+)$/);
+  if (!m) return null;
+  return { version: m[2], source: 'UPnP modelNumber', model: u.modelName || m[1] || null };
+}
+
 // <firmwareVersion> or <softwareVersion> of a UPnP description (never
-// modelNumber, which is a model code on most devices).
+// modelNumber, which is a model code on most devices; Synology alone writes
+// its DSM version there).
 function fromUpnp(upnp) {
   for (const u of upnp || []) {
     if (u.firmwareVersion) return { version: u.firmwareVersion, source: 'UPnP firmwareVersion' };
     if (u.softwareVersion) return { version: u.softwareVersion, source: 'UPnP softwareVersion' };
+    const syno = synologyFromUpnp(u);
+    if (syno) return syno;
   }
   return null;
 }
@@ -130,9 +177,15 @@ async function readFirmware(h, { fetch = fetchLan, timeoutMs = 2000 } = {}) {
     const ng = parseCurrentSetting(await get(`http://${h.ip}/currentsetting.htm`));
     if (ng) return { ...ng, source: 'currentsetting.htm' };
   }
+  if (vendors.has('qnap')) {
+    for (const base of [`http://${h.ip}:8080`, `http://${h.ip}`]) {
+      const q = parseQnapAuthLogin(await get(`${base}/cgi-bin/authLogin.cgi`));
+      if (q) return { ...q, source: 'authLogin.cgi, no login' };
+    }
+  }
   const u = fromUpnp(h.upnp);
-  if (u) return { ...u, model: null, lab: false, oem: null };
+  if (u) return { model: null, ...u, lab: false, oem: null };
   return null;
 }
 
-module.exports = { readFirmware, probeNote, isGlinetChallenge, parseJasonBoxinfo, parseTr64Desc, parseCurrentSetting, fromUpnp };
+module.exports = { readFirmware, probeNote, isGlinetChallenge, parseJasonBoxinfo, parseTr64Desc, parseCurrentSetting, parseQnapAuthLogin, synologyFromUpnp, fromUpnp };

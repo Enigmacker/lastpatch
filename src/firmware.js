@@ -26,9 +26,13 @@ function loadFirmware(file = DATA_FILE) {
 
 // Parse a version string into numbers that can be compared.
 //   AVM:     "154.07.57" (hardware prefix + FRITZ!OS 7.57), "07.57", "7.57", "FRITZ!OS 8.03"
+//   QNAP:    "5.2.11.3661 build 20261023" (QTS version, build number, build
+//            date) -> [5,2,11,3661] + extra [20261023]; "h5.2.1.3044" is
+//            QuTS hero. Without its build number ("5.2.11") the version is
+//            incomplete: QNAP ships several builds under one version.
 //   generic: "V1.1.0 Build 20230512 rel.123" -> [1,1,0] + extra [20230512, 123]
 //            "1.0.4.126_10.1.12"             -> [1,0,4,126] + extra [10,1,12]
-// Returns { raw, parts, extra } or null when no number is found.
+// Returns { raw, parts, extra, incomplete } or null when no number is found.
 function parseVersion(raw, vendor) {
   if (raw == null) return null;
   const text = String(raw).trim();
@@ -46,7 +50,18 @@ function parseVersion(raw, vendor) {
   if (avm && /^\d{3}\.\d{2}\.\d{2}$/.test(m[1])) {
     parts = parts.slice(1);
   }
-  return { raw: text, parts, extra };
+  const incomplete = canonicalVendor(vendor) === 'qnap' && parts.length < 4;
+  return { raw: text, parts, extra, incomplete };
+}
+
+// Operating system a version belongs to, for vendors whose models can run
+// more than one (QNAP: QTS or QuTS hero, whose versions start with "h").
+// Null for other vendors.
+function firmwareOs(vendor, version) {
+  if (canonicalVendor(vendor) !== 'qnap') return null;
+  const text = String(version || '').trim();
+  if (!text) return null;
+  return /^(?:quts\s*hero\s*)?h\d/i.test(text) ? 'QuTS hero' : 'QTS';
 }
 
 function cmpArrays(a, b) {
@@ -61,11 +76,19 @@ function cmpArrays(a, b) {
 
 // -1 when a is older than b, 0 when equal, 1 when newer, null when either
 // cannot be parsed. Build numbers and suffixes only count when both
-// versions have them.
+// versions have them. An incomplete version (a QNAP version without its
+// build number) is only compared on the numbers it has: null when those
+// are equal.
 function compareVersions(a, b, vendor) {
   const pa = typeof a === 'object' && a ? a : parseVersion(a, vendor);
   const pb = typeof b === 'object' && b ? b : parseVersion(b, vendor);
   if (!pa || !pb) return null;
+  if (pa.incomplete || pb.incomplete) {
+    const n = Math.min(pa.parts.length, pb.parts.length);
+    const head = cmpArrays(pa.parts.slice(0, n), pb.parts.slice(0, n));
+    if (head !== 0) return head;
+    if (pa.parts.length !== pb.parts.length) return null;
+  }
   const main = cmpArrays(pa.parts, pb.parts);
   if (main !== 0) return main;
   if (pa.extra.length && pb.extra.length) return cmpArrays(pa.extra, pb.extra);
@@ -96,7 +119,16 @@ function latestRows(rows, query, { region } = {}) {
 // upToDate is true or false only when the latest version is known without
 // ambiguity and both versions can be read; otherwise null.
 function checkFirmware(installed, latest, { lab = false, oem = null } = {}) {
-  const rows = (latest || []).filter(Boolean);
+  let rows = (latest || []).filter(Boolean);
+  // Rows recorded for another operating system of the same model (QNAP
+  // QuTS hero against QTS) say nothing about the installed version.
+  const os = rows[0] ? firmwareOs(rows[0].vendor, installed) : null;
+  let otherOs = null;
+  if (os) {
+    const same = rows.filter((r) => !r.os || r.os === os);
+    if (same.length < rows.length && !same.length) otherOs = rows[0].os;
+    rows = same;
+  }
   const out = {
     installed: installed == null || installed === '' ? null : String(installed),
     latest: null,
@@ -114,7 +146,9 @@ function checkFirmware(installed, latest, { lab = false, oem = null } = {}) {
   }
 
   if (!rows.length) {
-    out.behind = 'latest version not known: the manufacturer\'s latest firmware for this model is not in the dataset';
+    out.behind = otherOs
+      ? `latest version not known: the dataset has the latest ${otherOs} version of this model, and ${os} is installed`
+      : 'latest version not known: the manufacturer\'s latest firmware for this model is not in the dataset';
     out.note = notes.join('; ') || null;
     return out;
   }
@@ -136,7 +170,10 @@ function checkFirmware(installed, latest, { lab = false, oem = null } = {}) {
     out.behind = 'installed version not known';
   } else {
     const c = compareVersions(out.installed, row.latest_version, row.vendor);
-    if (c === null) {
+    const inst = parseVersion(out.installed, row.vendor);
+    if (c === null && inst && inst.incomplete) {
+      out.behind = `installed version "${out.installed}" has no build number, and several builds share that version: give the full version shown in the admin page (e.g. "${row.latest_version.split(/\s/)[0]}")`;
+    } else if (c === null) {
       out.behind = `installed version "${out.installed}" could not be compared`;
     } else if (c < 0) {
       out.upToDate = false;
@@ -171,6 +208,7 @@ module.exports = {
   DATA_FILE,
   loadFirmware,
   parseVersion,
+  firmwareOs,
   compareVersions,
   latestRows,
   checkFirmware,

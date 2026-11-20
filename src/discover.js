@@ -7,7 +7,7 @@
 //   UPnP / SSDP                            -> manufacturer and model
 //   mDNS / DNS-SD                          -> device name and model (TXT)
 //   web admin page title and login realm   -> model, on many routers/NAS
-//   firmware info files (FRITZ!Box, NETGEAR) and UPnP -> installed firmware
+//   firmware info files (FRITZ!Box, NETGEAR, QNAP) and UPnP -> installed firmware
 // plus the router's UPnP port forwards, to show which devices are reachable
 // from the Internet.
 
