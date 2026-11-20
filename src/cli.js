@@ -8,6 +8,7 @@ const { collect, identify, label } = require('./discover');
 const { updateOui } = require('./oui');
 const kev = require('./kev');
 const fw = require('./firmware');
+const nmap = require('./nmap');
 
 const exploitsOf = kev.indexer();
 
@@ -19,6 +20,8 @@ Usage:
   lastpatch check "<vendor> <model> [hw version]"   look up one device
   lastpatch check "<model>" --firmware <version>     also compare the installed firmware with the latest published
   lastpatch scan [--timeout <ms>] [--no-sweep]       find and check the devices on your LAN
+  lastpatch scan --nmap [--nmap-path <file>] [--nmap-timeout <s>]
+                                                     expert mode: also use a locally installed Nmap (opt-in)
   lastpatch update-oui                               refresh the IEEE MAC vendor registry (optional)
   lastpatch list [--vendor <name>] [--expiring <days>] [--expired]
 Options:
@@ -44,7 +47,7 @@ function parseArgs(argv) {
   const args = { _: [] };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
-    if (a === '--json' || a === '--expired' || a === '--no-sweep') args[a.slice(2)] = true;
+    if (a === '--json' || a === '--expired' || a === '--no-sweep' || a === '--nmap') args[a.slice(2)] = true;
     else if (a.startsWith('--')) args[a.slice(2)] = argv[++i];
     else args._.push(a);
   }
@@ -210,6 +213,7 @@ function scanReport(identified, warn, region) {
         external_port: m.externalPort, protocol: m.protocol, internal_port: m.internalPort,
         description: m.description, remote_host: m.remoteHost || null,
       })),
+      ...nmap.reportFields(r),
     };
   });
 }
@@ -234,6 +238,7 @@ function printScan(report) {
       (r.random_mac ? 'device with a private MAC address' : 'unknown device');
     console.log(`${r.ip}  ${who}`);
     printExposure(r.exposed);
+    nmap.printNmap(r);
     if (r.results.length) {
       console.log(`  identified via ${r.identified_via}`);
       printLookup({ query: r.query, found: true, needs_hw_version: r.needs_hw_version, results: r.results });
@@ -277,8 +282,19 @@ async function main() {
     if (args.json) console.log(JSON.stringify(res, null, 2));
     else printLookup(res);
   } else if (cmd === 'scan') {
-    const hosts = await collect({ timeoutMs: Number(args.timeout) || 3000, sweep: !args['no-sweep'] });
-    const report = scanReport(identify(hosts, devices), warn, args.region);
+    let hosts = await collect({ timeoutMs: Number(args.timeout) || 3000, sweep: !args['no-sweep'] });
+    let expert = null;
+    if (args.nmap || args['nmap-path']) {
+      expert = await nmap.runNmap({
+        nmapPath: typeof args['nmap-path'] === 'string' ? args['nmap-path'] : 'nmap',
+        timeoutMs: (Number(args['nmap-timeout']) || 600) * 1000,
+      });
+      for (const n of expert.notes) console.error(n);
+      if (expert.ran) hosts = nmap.mergeHosts(hosts, expert.hosts);
+    }
+    const identified = identify(hosts, devices);
+    if (expert && expert.ran) nmap.applyNmap(identified, devices);
+    const report = scanReport(identified, warn, args.region);
     anyExpired = report.some((r) => r.results.some((x) => x.status === 'expired'));
     if (args.json) console.log(JSON.stringify(report, null, 2));
     else printScan(report);
