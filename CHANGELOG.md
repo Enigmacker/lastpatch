@@ -1,6 +1,12 @@
 # Changelog
 
-## Unreleased
+## 1.13.0 - 2026-11-20
+
+- 2,346 more rows from 14 more brands (14,106 rows, 12,302 models, 114 brands; dataset 0.7.0):
+  - Network and security: Buffalo (1,396, Japan), Axis (175), Check Point (128), Cambium Networks (79), Sophos (19), Huawei solar (41, UK PSTI).
+  - Consumer: Philips TVs (222), HP printers and scanners (139), Amazfit and Zepp (73), Polar (21), Garmin (20), Withings (18), Nothing and CMF (15).
+- Matching: aliases for the new brands and product lines (AirStation, LinkStation, TeraStation, cnPilot, ePMP…); short groups in parentheses are kept as part of a name, so "Nothing Phone (3)" finds "Phone (3) (A024)".
+- Checked and left out: Fortinet and Ruckus (login required), Juniper and LG security pages (need a browser), Aruba (page unavailable), MikroTik, Hikvision, Hanwha, Swann, TCL, Fitbit and Zepp policies (no per-model dates).
 
 - Optional expert mode for the LAN scan: `lastpatch scan --nmap` (with `--nmap-path <file>` and `--nmap-timeout <s>`) also runs a locally installed Nmap, which is never bundled or downloaded. Without Nmap, the tool says how to install it and runs the normal scan.
   - Nmap only scans the local subnet(s) the normal scan covers: non-private ranges and ranges larger than a /22 are refused, public addresses in its report are dropped, and reverse DNS is off (`-n`).

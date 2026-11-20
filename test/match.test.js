@@ -213,3 +213,18 @@ test('network security and camera brands are recognised', () => {
   assert.strictEqual(findDevice(rows, 'AXIS M3045-V').matches[0].row.vendor, 'Axis');
   assert.strictEqual(findDevice(rows, 'Check Point 1600 Appliance').matches[0].row.model, '1600 Appliance');
 });
+
+test('consumer brand aliases', () => {
+  assert.strictEqual(canonicalVendor('HP LaserJet Pro 4002dw'), 'hp');
+  assert.strictEqual(canonicalVendor('OfficeJet Pro 9125e'), 'hp');
+  assert.strictEqual(canonicalVendor('Philips 55OLED808/12'), 'philips');
+  assert.strictEqual(canonicalVendor('Philips Hue Bridge'), 'philips hue');
+  assert.strictEqual(canonicalVendor('Garmin Forerunner 970'), 'garmin');
+  assert.strictEqual(canonicalVendor('Polar Vantage V3'), 'polar');
+  assert.strictEqual(canonicalVendor('Amazfit Balance 2'), 'amazfit');
+  assert.strictEqual(canonicalVendor('Nothing Phone (3)'), 'nothing');
+  const nothing = [{ vendor: 'Nothing', model: 'Phone (3) (A024)', hw_version: null }, { vendor: 'Nothing', model: 'Phone (3a) Lite (A001T)', hw_version: null }];
+  assert.strictEqual(findDevice(nothing, 'Nothing Phone (3)').matches[0].row.model, 'Phone (3) (A024)');
+  assert.strictEqual(findDevice(nothing, 'Nothing Phone 3a Lite').matches[0].row.model, 'Phone (3a) Lite (A001T)');
+  assert.strictEqual(canonicalVendor('Withings Body Smart'), 'withings');
+});

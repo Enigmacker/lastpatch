@@ -122,6 +122,16 @@ const VENDOR_ALIASES = {
   westell: ['westell', 'versalink'],
   airties: ['airties', 'air ties'],
   comtrend: ['comtrend'],
+  hp: ['hp', 'hewlett-packard', 'hewlett packard', 'deskjet', 'officejet', 'laserjet'],
+  // After Philips Hue, so "Philips Hue Bridge" stays a Hue device.
+  philips: ['philips', 'tp vision'],
+  garmin: ['garmin'],
+  polar: ['polar', 'polar electro'],
+  withings: ['withings'],
+  amazfit: ['amazfit', 'huami'],
+  zepp: ['zepp', 'zepp health'],
+  // Last: "nothing" is also an ordinary word.
+  nothing: ['nothing', 'cmf by nothing'],
 };
 
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -251,7 +261,10 @@ function findDevice(devices, query) {
         .filter((c) => /\d/.test(c) && c.length >= 4);
       // The whole name is in the query: as strong as a plain model name, so
       // "Floodlight Cam E340" beats the shorter "Floodlight Cam".
+      // Short groups are part of the name ("Nothing Phone (3) (A024)"): keep them.
+      const named = row.model.replace(/\s*\(([^)]*)\)/g, (m, g) => (/\d/.test(g) && g.trim().length >= 4 ? '' : m)).trim();
       if (name && /\d/.test(name) && hasTokenRun(query, name)) score = 50 + normalize(name).length;
+      else if (named !== name && /\d/.test(named) && hasTokenRun(query, named)) score = 50 + normalize(named).length;
       else if (codes.some((c) => hasTokenRun(query, c))) score = 40;
       // A name without digits ("Wiser Plug") is too generic on its own: only
       // when the query also names the maker.

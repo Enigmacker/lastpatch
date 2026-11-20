@@ -116,7 +116,7 @@ Nmap results are merged with the normal scan by IP address, then MAC address. Wh
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.6.1, retrieved 2026-11-20: 11,760 rows (9,964 models) from 100 brands, now including smartphones and tablets.
+`data/devices.json` (schema in `data/schema.json`), version 0.7.0, retrieved 2026-11-20: 14,106 rows (12,302 models) from 114 brands, now including smartphones and tablets.
 
 | Vendor | Rows | Source |
 |---|---|---|
@@ -213,6 +213,19 @@ Nmap results are merged with the normal scan by IP address, then MAC address. Wh
 | AirTies (AT&T extenders) | 2 | AT&T notice: the 4920 and 4921 stop getting updates from 20 April 2025 on BGW320 gateways (last day recorded: 19 April 2025) |
 | Yale | 21 | Yale UK PSTI statements (cameras, doorbell, alarms, bridges, smart plug) |
 | Wyze | 5 | Wyze UK PSTI page |
+| Buffalo | 1,396 | Buffalo Japan product support status list (end of support: no fixed software after it, even for vulnerabilities; region JP) |
+| Philips (TVs by TP Vision) | 222 | UK PSTI statements, one per TV platform |
+| Axis | 175 | Axis product support pages (AXIS OS support end: last security and bug fixes) |
+| HP | 139 | HP UK PSTI support period list (printers, scanners, docks) |
+| Check Point | 128 | Check Point support life cycle policy (end of support) |
+| Cambium Networks | 79 | Cambium product lifecycle page (end of support; Xirrus: end of software development) |
+| Amazfit and Zepp | 73 | Zepp security response center: security updates list and end-of-life models |
+| Huawei (solar) | 41 | Huawei UK PSTI statements for inverters, dongles, meters and batteries |
+| Polar | 21 | Polar regulatory information per model (UK and Australia, minimum) |
+| Garmin | 20 | Garmin UK declarations of conformity (defined support period) |
+| Sophos | 19 | Sophos XG Series hardware end-of-life notice (product team, Sophos community) |
+| Withings | 18 | Withings EU end-of-support policy (no date) |
+| Nothing and CMF | 15 | Nothing UK PSTI statements |
 | Dyson | 7 | Dyson statements of compliance (Australia) |
 | Ninja, Shark | 6 | SharkNinja UK product security update support list |
 | Virgin Media, YouFibre | 4 | Sagemcom UK PSTI statements (Hub 5, Hub 5x, WiFi Pod, YouMesh Pro) |
