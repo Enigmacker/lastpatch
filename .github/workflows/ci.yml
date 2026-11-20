@@ -33,5 +33,5 @@ jobs:
       - name: Rebuilding raw data reproduces the dataset
         run: |
           node scripts/build.js "$(node -p 'require("./data/devices.json").generated')"
-          git diff --exit-code data/devices.json
+          git diff --exit-code data/devices.json data/history.json
 

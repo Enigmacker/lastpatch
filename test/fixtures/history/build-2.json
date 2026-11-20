@@ -1,0 +1,9 @@
+{
+  "version": "0.1.1",
+  "generated": "2026-02-14",
+  "devices": [
+    { "vendor": "Acme", "model": "R100", "hw_version": "V1", "region": "UK", "support_end": "2029-12-31", "support_end_raw": "31 December 2029", "source_url": "https://example.com/psti-v2" },
+    { "vendor": "Acme", "model": "R100", "hw_version": "V2", "region": "UK", "support_end": "2032-06-30", "support_end_raw": "30 June 2032", "source_url": "https://example.com/psti-v2" },
+    { "vendor": "Acme", "model": "N5", "hw_version": null, "region": "EU", "support_end": "2028-01-31", "support_end_raw": "January 2028", "source_url": "https://example.com/nas" }
+  ]
+}
