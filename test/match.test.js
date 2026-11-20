@@ -22,6 +22,24 @@ test('vendor aliases', () => {
   assert.strictEqual(canonicalVendor('unknown brand'), null);
 });
 
+test('US internet provider and gateway maker aliases', () => {
+  assert.strictEqual(canonicalVendor('Verizon Fios Router'), 'verizon');
+  assert.strictEqual(canonicalVendor('Actiontec GT704WG'), 'actiontec');
+  assert.strictEqual(canonicalVendor('Westell VersaLink 327W'), 'westell');
+  assert.strictEqual(canonicalVendor('AirTies 4920'), 'airties');
+  assert.strictEqual(canonicalVendor('Comtrend CT-5361T'), 'comtrend');
+  const rows = [
+    { vendor: 'AirTies', model: '4920', hw_version: null, support_end: '2025-04-20', support_end_raw: '' },
+    { vendor: 'Verizon', model: 'Jetpack 4G LTE Mobile Hotspot (MiFi 4620L)', hw_version: null, support_end: null, support_end_raw: 'no longer supported' },
+    { vendor: 'Verizon', model: 'Jetpack 4G LTE Mobile Hotspot (MiFi 4620LE)', hw_version: null, support_end: null, support_end_raw: 'no longer supported' },
+  ];
+  assert.strictEqual(findDevice(rows, 'AirTies 4920').matches.length, 1);
+  const le = findDevice(rows, 'Verizon MiFi 4620LE').matches;
+  assert.strictEqual(le.length, 1);
+  assert.strictEqual(le[0].row.model, 'Jetpack 4G LTE Mobile Hotspot (MiFi 4620LE)');
+  assert.strictEqual(computeStatus(rows[1], today), 'expired');
+});
+
 test('hardware version extraction', () => {
   assert.strictEqual(extractHwVersion('Tapo C200 v3'), 'V3');
   assert.strictEqual(extractHwVersion('Archer AX55 Ver: 1.0'), 'V1.0');
