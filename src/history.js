@@ -52,14 +52,23 @@ function flagShortened(h) {
 /**
  * Records the rows of one dataset build, seen on `seenOn` (the dataset's
  * `generated` date). Returns the same history object, updated.
- * - same end date as the latest entry: extends its `last_seen`;
- * - a different end date (or a new key): appends an entry;
+ * - same end date as the latest entry: nothing changes (the latest entry of a
+ *   key still in the dataset has `last_seen: null`, meaning "still current"),
+ *   so the file only changes when a date does;
+ * - a different end date (or a new key): appends an entry, and the previous
+ *   one gets the date of the previous build as `last_seen`;
+ * - a key no longer in the dataset: its latest entry gets the date of the
+ *   previous build as `last_seen`;
  * - an appended date earlier than any date published before it is flagged
  *   `shortened`, and so is the key (see flagShortened).
  * Fields added by hand to an entry (`correction`, `note`) are kept.
  */
 function recordBuild(history, devices, seenOn) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(seenOn || '')) throw new Error(`bad dataset date ${seenOn}`);
+  if (history.generated && seenOn < history.generated) {
+    throw new Error(`build of ${seenOn} is older than the history (${history.generated})`);
+  }
+  const previous = history.generated || seenOn;
   const byKey = new Map(history.rows.map((h) => [rowKey(h), h]));
   const done = new Set();
   for (const r of devices) {
@@ -80,19 +89,21 @@ function recordBuild(history, devices, seenOn) {
     }
     const last = h.dates[h.dates.length - 1];
     if (last && last.support_end === r.support_end) {
-      if (seenOn > last.last_seen) last.last_seen = seenOn;
+      if (last.last_seen) last.last_seen = null; // back in the dataset
       continue;
     }
-    if (last && seenOn < last.last_seen) {
-      throw new Error(`${key}: build of ${seenOn} is older than the history (${last.last_seen})`);
-    }
+    if (last && !last.last_seen) last.last_seen = previous > last.first_seen ? previous : last.first_seen;
     h.dates.push({
       support_end: r.support_end,
       support_end_raw: r.support_end_raw,
       first_seen: seenOn,
-      last_seen: seenOn,
+      last_seen: null,
       source_url: r.source_url,
     });
+  }
+  for (const h of history.rows) {
+    const last = h.dates[h.dates.length - 1];
+    if (!done.has(rowKey(h)) && last && !last.last_seen) last.last_seen = previous > last.first_seen ? previous : last.first_seen;
   }
   for (const h of history.rows) flagShortened(h);
   if (!history.generated || seenOn > history.generated) history.generated = seenOn;

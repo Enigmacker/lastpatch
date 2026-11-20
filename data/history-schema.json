@@ -89,9 +89,9 @@
                   "description": "`generated` date of the first dataset build with this date. Not the date the manufacturer published it."
                 },
                 "last_seen": {
-                  "type": "string",
+                  "type": ["string", "null"],
                   "format": "date",
-                  "description": "`generated` date of the latest dataset build with this date."
+                  "description": "`generated` date of the latest dataset build with this date; null while it is still the current date of a row in the dataset."
                 },
                 "source_url": {
                   "type": "string",

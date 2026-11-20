@@ -241,7 +241,7 @@ Every official source the dataset cites is checked again every week, and the cha
 | Field | Meaning |
 |---|---|
 | `support_end`, `support_end_raw` | the end date and the source text when it was first seen |
-| `first_seen`, `last_seen` | the dataset `generated` dates of the first and latest builds that had this date (not the date the manufacturer published it) |
+| `first_seen`, `last_seen` | the dataset `generated` dates of the first and latest builds that had this date (not the date the manufacturer published it); `last_seen` is `null` while the date is still current, so the file only changes when a date does |
 | `source_url` | the source cited when it was first seen |
 | `shortened` | `true` when this date is earlier than one published before it for the same key; the key itself has `shortened: true` when any of its dates is |
 | `correction`, `note` | set by hand when a change comes from how the dataset reads the source, not from the manufacturer; a correction is never flagged as shortened |

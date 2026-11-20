@@ -21,17 +21,17 @@ test('history: one entry per key on the first build', () => {
   for (const r of h.rows) {
     assert.strictEqual(r.dates.length, 1);
     assert.strictEqual(r.shortened, false);
-    assert.deepStrictEqual([r.dates[0].first_seen, r.dates[0].last_seen], ['2026-01-10', '2026-01-10']);
+    assert.deepStrictEqual([r.dates[0].first_seen, r.dates[0].last_seen], ['2026-01-10', null]); // still current
   }
   assert.strictEqual(find(h, 'C20', null).dates[0].support_end, null);
 });
 
-test('history: a changed date is appended, an unchanged one extended', () => {
+test('history: a changed date is appended and closes the previous one; an unchanged one stays current', () => {
   const h = seeded();
   const v1 = find(h, 'R100', 'V1');
   assert.deepStrictEqual(v1.dates.map((d) => [d.support_end, d.first_seen, d.last_seen]), [
     ['2030-12-31', '2026-01-10', '2026-01-10'],
-    ['2029-12-31', '2026-02-14', '2026-03-01'],
+    ['2029-12-31', '2026-02-14', null],
   ]);
   // The source text and URL are those recorded when the date was first seen.
   assert.strictEqual(v1.dates[1].support_end_raw, '31 December 2029');
@@ -112,7 +112,12 @@ test('history: data/history.json covers every row of data/devices.json', () => {
     assert.strictEqual(r.dates[r.dates.length - 1].support_end, d.support_end, rowKey(d));
   }
   for (const r of history.rows) {
-    for (const d of r.dates) assert.ok(d.first_seen <= d.last_seen && d.last_seen <= history.generated);
+    r.dates.forEach((d, i) => {
+      const current = i === r.dates.length - 1 && byKey.get(rowKey(r)) && dataset.devices.some((x) => rowKey(x) === rowKey(r));
+      if (d.last_seen === null) assert.ok(i === r.dates.length - 1, `${rowKey(r)}: only the latest date can be current`);
+      else assert.ok(d.first_seen <= d.last_seen && d.last_seen <= history.generated);
+      if (current) assert.strictEqual(d.last_seen, null, `${rowKey(r)}: current date should have last_seen null`);
+    });
     assert.strictEqual(r.shortened, r.dates.some((d) => d.shortened === true));
   }
 });
