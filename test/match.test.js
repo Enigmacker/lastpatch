@@ -201,3 +201,15 @@ test('Kasa smart plugs and cameras are read as TP-Link', () => {
   assert.strictEqual(canonicalVendor('Kasa Smart Plug KP115'), 'tp-link');
   assert.strictEqual(canonicalVendor('Kasa Spot KC100'), 'tp-link');
 });
+
+test('consumer brand aliases', () => {
+  assert.strictEqual(canonicalVendor('HP LaserJet Pro 4002dw'), 'hp');
+  assert.strictEqual(canonicalVendor('OfficeJet Pro 9125e'), 'hp');
+  assert.strictEqual(canonicalVendor('Philips 55OLED808/12'), 'philips');
+  assert.strictEqual(canonicalVendor('Philips Hue Bridge'), 'philips hue');
+  assert.strictEqual(canonicalVendor('Garmin Forerunner 970'), 'garmin');
+  assert.strictEqual(canonicalVendor('Polar Vantage V3'), 'polar');
+  assert.strictEqual(canonicalVendor('Amazfit Balance 2'), 'amazfit');
+  assert.strictEqual(canonicalVendor('Nothing Phone (3)'), 'nothing');
+  assert.strictEqual(canonicalVendor('Withings Body Smart'), 'withings');
+});

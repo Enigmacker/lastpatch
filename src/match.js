@@ -117,6 +117,16 @@ const VENDOR_ALIASES = {
   westell: ['westell', 'versalink'],
   airties: ['airties', 'air ties'],
   comtrend: ['comtrend'],
+  hp: ['hp', 'hewlett-packard', 'hewlett packard', 'deskjet', 'officejet', 'laserjet'],
+  // After Philips Hue, so "Philips Hue Bridge" stays a Hue device.
+  philips: ['philips', 'tp vision'],
+  garmin: ['garmin'],
+  polar: ['polar', 'polar electro'],
+  withings: ['withings'],
+  amazfit: ['amazfit', 'huami'],
+  zepp: ['zepp', 'zepp health'],
+  // Last: "nothing" is also an ordinary word.
+  nothing: ['nothing', 'cmf by nothing'],
 };
 
 const DAY_MS = 24 * 60 * 60 * 1000;
