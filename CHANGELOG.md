@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.11.0 - 2026-11-20
+
+- History of published end dates: `data/history.json` (schema in `data/history-schema.json`) lists, for every row key (vendor, model, hardware version, region), each end date the dataset has published, with the source text, the source URL and the dataset dates on which it was first and last seen (dataset 0.6.0).
+  - Seeded from the git history of `data/devices.json` (25 builds, 1 to 19 November 2026): 11,734 keys, 234 of them no longer in the dataset, 31 with a changed end date.
+  - `scripts/build.js` now updates it on every build: a changed date is appended, an unchanged one extended; nothing is ever deleted, and rows that leave the dataset keep their history. The build lists the dates that changed.
+  - A date earlier than one published before it for the same key is flagged `shortened` (under the UK PSTI regime a published defined support period may not be shortened: Product Security Regulations 2023, Schedule 1, paragraph 3(6)). A change that comes from how the dataset reads a source, not from the manufacturer, is marked `correction` after review and is not flagged.
+  - The 31 changes found are all Linksys rows from 19 November 2026, when each row started giving the earliest date among all the model's SKUs in a market instead of one SKU's date. They are marked as corrections: no shortened support period has been recorded so far.
+- CI: rebuilding the raw data must also reproduce `data/history.json`.
+
 ## 1.10.1 - 2026-11-20
 
 - The scripts that collect and watch the official sources, their state files and the weekly workflow are no longer part of this repository. The dataset, its format, the build script and the command-line tool stay here, and the sources are still checked every week.

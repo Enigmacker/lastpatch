@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "lastpatch history of published end dates",
+  "description": "Every end date data/devices.json has published for each row key (vendor, model, hardware version, region), in order. Updated by scripts/build.js on every build; entries are only appended or extended, never deleted, and keys that leave devices.json keep their history.",
+  "type": "object",
+  "required": [
+    "format",
+    "generated",
+    "rows"
+  ],
+  "properties": {
+    "format": {
+      "const": 1,
+      "description": "Version of this file's layout."
+    },
+    "generated": {
+      "type": "string",
+      "format": "date",
+      "description": "The `generated` date of the latest dataset build recorded."
+    },
+    "license": {
+      "type": "string"
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "vendor",
+          "model",
+          "hw_version",
+          "region",
+          "shortened",
+          "dates"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "vendor": {
+            "type": "string",
+            "description": "As written in the latest build that had this key."
+          },
+          "model": {
+            "type": "string"
+          },
+          "hw_version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "region": {
+            "type": "string",
+            "pattern": "^(global|EU|EMEA|APAC|LATAM|[A-Z]{2})$"
+          },
+          "shortened": {
+            "type": "boolean",
+            "description": "True when at least one entry of `dates` is flagged `shortened`."
+          },
+          "dates": {
+            "type": "array",
+            "minItems": 1,
+            "description": "One entry per run of the same end date, oldest first. A date that comes back after a change gets a new entry.",
+            "items": {
+              "type": "object",
+              "required": [
+                "support_end",
+                "support_end_raw",
+                "first_seen",
+                "last_seen",
+                "source_url"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "support_end": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+                  "description": "The end date as published in devices.json (null when the source gave no date)."
+                },
+                "support_end_raw": {
+                  "type": "string",
+                  "description": "The source text recorded when this date was first seen."
+                },
+                "first_seen": {
+                  "type": "string",
+                  "format": "date",
+                  "description": "`generated` date of the first dataset build with this date. Not the date the manufacturer published it."
+                },
+                "last_seen": {
+                  "type": "string",
+                  "format": "date",
+                  "description": "`generated` date of the latest dataset build with this date."
+                },
+                "source_url": {
+                  "type": "string",
+                  "format": "uri",
+                  "description": "The source cited when this date was first seen."
+                },
+                "shortened": {
+                  "const": true,
+                  "description": "Present when this end date is earlier than an end date published before it for the same key (since the last correction)."
+                },
+                "correction": {
+                  "const": true,
+                  "description": "Present when the change comes from how the dataset reads the source, not from a new date published by the manufacturer. Set by hand after review; a correction is never flagged as shortened, and the dates before it are not compared with the ones after it."
+                },
+                "note": {
+                  "type": "string",
+                  "description": "Why the date changed, when known."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

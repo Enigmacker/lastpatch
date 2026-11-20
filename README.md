@@ -85,7 +85,7 @@ Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "mo
 
 ## The dataset
 
-`data/devices.json` (schema in `data/schema.json`), version 0.5.7, retrieved 2026-11-19: 11,500 rows (9,794 models) from 95 brands, now including smartphones and tablets.
+`data/devices.json` (schema in `data/schema.json`), version 0.6.0, retrieved 2026-11-19: 11,500 rows (9,794 models) from 95 brands, now including smartphones and tablets.
 
 | Vendor | Rows | Source |
 |---|---|---|
@@ -234,6 +234,22 @@ Every official source the dataset cites is checked again every week, and the cha
 | `region` | the market the document applies to (`global`, `EU`, `UK`, `US`, …) |
 | `source_url`, `source_title` | the manufacturer document |
 
+### History of published dates
+
+`data/history.json` (schema in `data/history-schema.json`) keeps every end date the dataset has published, so you can see when a manufacturer changed a support period. There is one entry per row key (`vendor`, `model`, `hw_version`, `region`, matched without regard to case), with its `dates` in order:
+
+| Field | Meaning |
+|---|---|
+| `support_end`, `support_end_raw` | the end date and the source text when it was first seen |
+| `first_seen`, `last_seen` | the dataset `generated` dates of the first and latest builds that had this date (not the date the manufacturer published it) |
+| `source_url` | the source cited when it was first seen |
+| `shortened` | `true` when this date is earlier than one published before it for the same key; the key itself has `shortened: true` when any of its dates is |
+| `correction`, `note` | set by hand when a change comes from how the dataset reads the source, not from the manufacturer; a correction is never flagged as shortened |
+
+`npm run build:data` updates the file: a changed date is appended and an unchanged one extended. Nothing is deleted, and rows that leave `devices.json` keep their history. The history starts with the first published dataset (1 November 2026); dates a manufacturer changed before a row was collected are not known.
+
+Under the UK PSTI regime, a manufacturer may extend the published support period of a product but not shorten it (Product Security and Telecommunications Infrastructure (Security Requirements for Relevant Connectable Products) Regulations 2023, Schedule 1, paragraph 3(6)). The rule covers products sold in the UK; the flag is computed for every region. A `shortened` flag is a pointer to check against the manufacturer's document, not a finding: the dataset may have been wrong before.
+
 The data is under the Open Database License: reuse is free, including commercially, as long as you credit LastPatch (with a link to getlastpatch.com or this repository) and share any database you derive from it under the same license.
 
 ## Contributing data
@@ -245,7 +261,6 @@ To add rows yourself, put them in a file in `raw/` (same fields as above), then 
 ## Roadmap
 
 - More vendors, device types and markets, from official sources only.
-- History of published dates, to spot a support period being shortened.
 - Installed vs latest firmware for more vendors.
 - Desktop apps and a browser extension.
 
@@ -254,4 +269,4 @@ To add rows yourself, put them in a file in `raw/` (same fields as above), then 
 - Code: MIT (see `LICENSE`).
 - Exploited vulnerabilities extract (`data/kev.json`): CISA KEV catalogue, a U.S. Government work in the public domain.
 - MAC vendor table (`data/oui.tsv`): public IEEE MA-L/MA-M/MA-S registries, as packaged by the `oui-data` npm package (BSD-2-Clause); regenerate with `npm run update:oui`.
-- Datasets (`data/devices.json`, `data/firmware.json`): Open Database License (ODbL) 1.0 (see `data/LICENSE`). You may reuse it, including commercially, but you must attribute LastPatch and share any database you derive from it under the same license.
+- Datasets (`data/devices.json`, `data/history.json`, `data/firmware.json`): Open Database License (ODbL) 1.0 (see `data/LICENSE`). You may reuse it, including commercially, but you must attribute LastPatch and share any database you derive from it under the same license.

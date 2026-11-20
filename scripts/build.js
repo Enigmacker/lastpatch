@@ -7,10 +7,12 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
+const { emptyHistory, recordBuild } = require('../src/history');
 
 const ROOT = path.join(__dirname, '..');
 const RAW_DIR = path.join(ROOT, 'raw');
 const OUT = path.join(ROOT, 'data', 'devices.json');
+const HISTORY = path.join(ROOT, 'data', 'history.json');
 const RETRIEVED = process.argv[2] || new Date().toISOString().slice(0, 10);
 
 const CATEGORIES = new Set(['router', 'mesh', 'repeater', 'modem', 'camera', 'doorbell', 'nas', 'switch', 'iot', 'phone', 'tablet', 'other']);
@@ -93,14 +95,30 @@ const devices = [...seen.values()].sort((a, b) =>
   String(a.hw_version).localeCompare(String(b.hw_version))
 );
 
+const generated = devices.reduce((d, r) => (r.retrieved > d ? r.retrieved : d), RETRIEVED);
 fs.writeFileSync(OUT, JSON.stringify({
-  version: '0.5.7',
-  generated: devices.reduce((d, r) => (r.retrieved > d ? r.retrieved : d), RETRIEVED),
+  version: '0.6.0',
+  generated,
   license: 'ODbL-1.0',
   devices,
 }, null, 2) + '\n');
 
 console.log(`${devices.length} rows written to data/devices.json`);
+
+// History of published end dates: append the dates that changed, never delete.
+const history = fs.existsSync(HISTORY) ? JSON.parse(fs.readFileSync(HISTORY, 'utf8')) : emptyHistory();
+const before = new Map(history.rows.map((h) => [h, h.dates.length]));
+recordBuild(history, devices, generated);
+fs.writeFileSync(HISTORY, JSON.stringify(history, null, 2) + '\n');
+const moved = history.rows.filter((h) => before.has(h) && h.dates.length > before.get(h));
+console.log(`data/history.json: ${history.rows.length} keys, ${history.rows.filter((h) => h.dates.length > 1).length} with a changed end date, ${history.rows.filter((h) => h.shortened).length} shortened`);
+if (moved.length) {
+  console.log(`${moved.length} end dates changed in this build:`);
+  for (const h of moved) {
+    const [a, b] = h.dates.slice(-2);
+    console.log(`  ${h.vendor} ${h.model} ${h.hw_version || ''} (${h.region}): ${a.support_end} -> ${b.support_end}${b.shortened ? ' SHORTENED' : ''}`);
+  }
+}
 if (superseded) console.log(`${superseded} hand-copied rows replaced by full vendor lists (${FULL_LISTS.join(', ')})`);
 if (conflicts.length) {
   console.log(`${conflicts.length} conflicting dates in a source (earlier date kept):`);
