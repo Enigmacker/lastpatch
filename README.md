@@ -256,26 +256,10 @@ To add rows yourself, put them in a file in `raw/` (same fields as above), then 
 
 ## Roadmap
 
-**Dataset**
-1. ~~Automatic source monitoring~~ (done in 0.4.0).
-2. Date history: keep every published version of a date, to spot a vendor shortening a support period (the UK PSTI regime forbids it).
-3. ~~Confidence level per date~~ (done in 0.5.0). Next: estimate from the last firmware release when no date is published.
-4. More vendors and markets, prioritised by exposure to attacks and availability of official data; last firmware release date as a fallback signal for vendors that publish no end-of-support date.
-
-**Detection and risk**
-5. ~~Better LAN discovery~~ (done in 0.4.0). Next: optional expert mode using a locally installed Nmap (called, never bundled).
-6. ~~Installed vs latest firmware~~ (done in 0.9.0 for AVM FRITZ!Box; reading the installed version on FRITZ!Box, NETGEAR and UPnP devices). Next: more vendors with official machine-readable firmware listings.
-7. ~~Actively exploited vulnerabilities (CISA KEV)~~ (done in 0.5.0).
-8. ~~Internet exposure through UPnP port forwards~~ (done in 0.5.0).
-
-**Products**
-9. ~~Website with one page per model~~ (done in 0.6.0), ~~in French too~~ (done in 0.7.0), ~~in German, Spanish, Italian and Portuguese~~ (done in 1.0.0). Next: alerts by email.
-10. Desktop apps for macOS, Windows and Linux, with alerts before a device reaches end of support (low-cost subscription including dataset updates).
-11. Browser extension showing the support end date on retailer product pages, before purchase.
-12. Replacement advice: models ranked by remaining support period (any affiliate links disclosed, ranking never based on commission).
-13. Paid API for retailers and marketplaces that must disclose support periods under the EU Cyber Resilience Act (from December 2027).
-14. PDF report for small businesses (device inventory, devices to replace).
-15. Localisation and outreach to consumer associations, national cybersecurity agencies and the press (yearly report).
+- More vendors, device types and markets, from official sources only.
+- History of published dates, to spot a support period being shortened.
+- Installed vs latest firmware for more vendors.
+- Desktop apps and a browser extension.
 
 ## License
 
