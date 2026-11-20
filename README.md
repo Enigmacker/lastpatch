@@ -22,6 +22,7 @@ or from a clone of this repository, with `node src/cli.js` in place of `lastpatc
 lastpatch check "FRITZ!Box 7490"
 lastpatch check "Tapo C200 V3"          # add the hardware version from the label when you know it
 lastpatch scan                          # find UPnP devices on your network and check them
+lastpatch scan --nmap                   # optional expert mode with a locally installed Nmap
 lastpatch list --expiring 180           # models whose support ends within 180 days
 lastpatch check "FRITZ!Box 7590" --firmware 7.57   # is the installed firmware the latest one?
 ```
@@ -63,7 +64,7 @@ Options: `--json` for machine-readable output, `--warn <days>` to change the "en
 
 ## What the scan does
 
-`lastpatch scan` combines five read-only techniques, needs no admin rights and installs nothing:
+`lastpatch scan` combines five read-only techniques, needs no admin rights and installs nothing (the optional Nmap expert mode is described below):
 
 | Step | What it finds |
 |---|---|
@@ -82,6 +83,36 @@ Some devices only give their model after a login, which the scan never attempts.
 The installed firmware is read only from files these devices publish without a password; no login is tried, and the serial number they also contain is not kept. Most other brands do not publish their version this way, so the scan shows it for FRITZ!Box and NETGEAR routers, and for devices whose UPnP description includes it.
 
 Devices that announce nothing (no UPnP, Bonjour or web page) are listed with "model not announced": read the model on the label and check it with `lastpatch check`.
+
+### Expert mode with Nmap (optional)
+
+`lastpatch scan --nmap` adds a pass with [Nmap](https://nmap.org), for devices the normal scan cannot name. It is opt-in and only used when you ask for it. Nmap is not shipped or downloaded by LastPatch: install it yourself (`sudo apt install nmap`, `brew install nmap`, or the installer from nmap.org). If it is not found, the tool says how to install it and runs the normal scan.
+
+```bash
+lastpatch scan --nmap                          # Nmap from the PATH
+lastpatch scan --nmap-path /opt/nmap/bin/nmap  # another location
+sudo lastpatch scan --nmap                     # with OS detection and MAC addresses (needs root)
+lastpatch scan --nmap --nmap-timeout 300       # stop Nmap after 300 seconds (default 600)
+```
+
+What it runs:
+
+- Only against the local subnet(s) the normal scan already covers. Every target is checked first: a range outside the private blocks (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16, 169.254.0.0/16) or larger than a /22 is refused, and any public address in Nmap's report is dropped. Your own address is excluded.
+- Conservative options: host discovery, then light service detection on the 100 most common ports and, with root rights, OS detection on promising hosts only (`-sV --version-light -O --osscan-limit -T3 --top-ports 100 --max-retries 2 --host-timeout 120s -n`). No scripts, no brute force, no intrusive checks. `-n` turns off reverse DNS lookups, so nothing is asked of resolvers outside your network.
+- Nmap is started directly, without a shell, with a time limit and a 32 MB limit on its XML report (`-oX -`), which is read without expanding any entity. When the limit is reached, the hosts Nmap had finished are still used.
+- OS detection (`-O`) needs root or administrator rights. Without them, the tool says so and runs service detection (`-sV`) only; Nmap then also cannot report MAC addresses.
+
+How its findings are used:
+
+| Nmap finding | Use |
+|---|---|
+| MAC address and vendor (root only) | fills in hosts the neighbour table missed |
+| Hardware CPE (`cpe:/h:`) or product string of a service Nmap actually probed (confidence 8 or more) | identifies the model, when the maker is named and agrees with the MAC vendor |
+| Service matched from the port table only, OS fingerprint (`osmatch`, `cpe:/o:`, `cpe:/h:` in an OS class), device type | shown as a "possible match, NOT confirmed" at most, never as a result and never counted for the exit code |
+
+Nmap results are merged with the normal scan by IP address, then MAC address. What the normal scan identifies (UPnP, mDNS, web page, device info files) is kept; Nmap only identifies devices nothing else did. Each device says how it was identified (`identified via Nmap service detection (80/tcp, hardware CPE)`), and in `--json` output `discovered_by` lists the methods that saw it (`lan scan`, `nmap`) and `nmap` holds the open ports, the OS guess and the possible matches. A version word in a banner is never taken as the hardware version: check the label under the device.
+
+**Legal note:** port and service scanning is only for networks you own or are explicitly authorised to scan. Scanning other networks can be unlawful and may breach your provider's terms. Expert mode refuses public ranges, but you are responsible for where you run it, for example on a shared office or campus network.
 
 ## The dataset
 

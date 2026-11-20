@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<!-- Nmap 7.94 scan initiated as: nmap -sV --version-light -O --osscan-limit -T3 --top-ports 100 --max-retries 2 --host-timeout 120s -n -oX - --no-stylesheet --exclude 192.168.1.10 192.168.1.0/24 -->
+<nmaprun scanner="nmap" args="nmap -sV --version-light -O --osscan-limit -T3 --top-ports 100 --max-retries 2 --host-timeout 120s -n -oX - --no-stylesheet --exclude 192.168.1.10 192.168.1.0/24" start="1763650000" startstr="Thu Nov 20 14:46:40 2026" version="7.94" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1763650001" endtime="1763650042"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.1" addrtype="ipv4"/>
+<address addr="50:C7:BF:AA:BB:CC" addrtype="mac" vendor="TP-Link Technologies"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="96">
+<extrareasons reason="reset" count="96" proto="tcp" ports="7,9,13,21,25-26,37,79,81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,444-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="Dropbear sshd" version="2019.78" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:matt_johnston:dropbear_ssh_server:2019.78</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="domain" product="dnsmasq" version="2.80" method="probed" conf="10"><cpe>cpe:/a:thekelleys:dnsmasq:2.80</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="TP-LINK Archer AX55 WAP http config" devicetype="WAP" method="probed" conf="10"><cpe>cpe:/h:tp-link:archer_ax55</cpe></service></port>
+<port protocol="tcp" portid="8080"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="7"/>
+<osmatch name="Linux 4.15 - 5.8" accuracy="96" line="67542">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="864012" lastboot="Mon Nov 10 14:46:30 2026"/>
+<distance value="1"/>
+<times srtt="1501" rttvar="361" to="100000"/>
+</host>
+<host starttime="1763650001" endtime="1763650060"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.23" addrtype="ipv4"/>
+<address addr="00:11:32:01:02:03" addrtype="mac" vendor="Synology Incorporated"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="95"/>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" product="Samba smbd" version="4.6.2" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" product="Samba smbd" version="4.6.2" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="5000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="5001"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssl" product="Synology DiskStation Manager" extrainfo="model: DS920+" method="probed" conf="8"><cpe>cpe:/o:synology:diskstation_manager</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="139"/>
+<osmatch name="Synology DiskStation Manager 7.1 (Linux 4.4)" accuracy="91" line="99876">
+<osclass type="storage-misc" vendor="Synology" osfamily="DiskStation Manager" osgen="7.X" accuracy="91"><cpe>cpe:/a:synology:diskstation_manager:7</cpe></osclass>
+</osmatch>
+</os>
+</host>
+<host starttime="1763650001" endtime="1763650075"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.60" addrtype="ipv4"/>
+<address addr="9C:8E:CD:44:55:66" addrtype="mac" vendor="Amcrest Technologies"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="97"/>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="lighttpd" method="probed" conf="10"><cpe>cpe:/a:lighttpd:lighttpd</cpe></service></port>
+<port protocol="tcp" portid="554"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rtsp" method="table" conf="3"/></port>
+</ports>
+<os>
+<osmatch name="Hikvision DS-2CD2032-I IP camera" accuracy="88" line="35222">
+<osclass type="webcam" vendor="Hikvision" osfamily="embedded" accuracy="88"><cpe>cpe:/h:hikvision:ds-2cd2032-i</cpe></osclass>
+</osmatch>
+<osmatch name="Amcrest IP2M-841 IP camera" accuracy="87" line="35102">
+<osclass type="webcam" vendor="Amcrest" osfamily="embedded" accuracy="87"><cpe>cpe:/h:amcrest:ip2m-841</cpe></osclass>
+</osmatch>
+</os>
+</host>
+<host starttime="1763650001" endtime="1763650020"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.77" addrtype="ipv4"/>
+<address addr="DA:A1:19:00:00:01" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="100"/>
+</ports>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="192.168.1.99" addrtype="ipv4"/>
+</host>
+<runstats><finished time="1763650080" timestr="Thu Nov 20 14:48:00 2026" summary="Nmap done at Thu Nov 20 14:48:00 2026; 256 IP addresses (4 hosts up) scanned in 80.12 seconds" elapsed="80.12" exit="success"/><hosts up="4" down="251" total="255"/>
+</runstats>
+</nmaprun>

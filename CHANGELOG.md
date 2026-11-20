@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+- Optional expert mode for the LAN scan: `lastpatch scan --nmap` (with `--nmap-path <file>` and `--nmap-timeout <s>`) also runs a locally installed Nmap, which is never bundled or downloaded. Without Nmap, the tool says how to install it and runs the normal scan.
+  - Nmap only scans the local subnet(s) the normal scan covers: non-private ranges and ranges larger than a /22 are refused, public addresses in its report are dropped, and reverse DNS is off (`-n`).
+  - Conservative options: `-sV --version-light -T3 --top-ports 100`, plus `-O --osscan-limit` with root rights; without them the tool says so and runs service detection only. Started without a shell, with a time limit and a size limit on its XML report.
+  - Hardware CPEs and product strings of probed services identify a device when the maker is named and agrees with the MAC vendor. OS fingerprints and services matched from the port table are shown as "possible match, NOT confirmed" only.
+  - Results are merged with the normal scan by IP, then MAC; the normal scan's identification is kept. `--json` adds `discovered_by` and `nmap` (open ports, OS guess, possible matches) to each device.
+  - Tests on saved Nmap XML reports (`test/fixtures/nmap/`); Nmap is never run by the tests.
+
 ## 1.12.0 - 2026-11-20
 
 - 260 more rows, mostly for the U.S. market (11,760 rows, 9,964 models, 100 brands; dataset 0.6.1):
