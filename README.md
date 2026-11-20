@@ -204,7 +204,7 @@ Each row records the date exactly as written (`support_end_raw`), whether it is 
 |---|---|---|
 | AVM (FRITZ!Box) | 9 | AVM download server (`download.avm.de/fritzbox/<model>/deutschland/fritz.os/`): the version of the image file, the release date from the release notes (`info_de.txt`, `info_en.txt`) when they describe that same version |
 
-`scripts/update-firmware.js` (`npm run update:firmware`) refreshes the AVM rows for every FRITZ!Box in the dataset (54 download folders, including the separate folders of later hardware versions such as 6820 LTE v2 to v4), one request at a time; it runs in the weekly GitHub Action. A model that cannot be read keeps its previous row.
+The AVM rows are refreshed every week from AVM's download server.
 
 Limits of the firmware check:
 
@@ -215,19 +215,7 @@ Limits of the firmware check:
 
 ## Keeping the dataset current
 
-A weekly GitHub Action (`.github/workflows/watch-sources.yml`) downloads every official source the dataset cites, plus the index pages that link to new documents (`data/source-indexes.json`), and compares fingerprints with `data/sources-state.json`:
-
-- PDF files: hash of the bytes;
-- web pages: hash of the lines that matter, those naming a model or repeating an end date the dataset took from the page. Menus, banners, related articles and other page furniture are ignored, and a change lists the lines added and removed (`now reads` / `no longer reads`);
-- index pages: new or removed document links.
-
-When something changed, it opens (or comments on) an issue labelled `source-watch`. After reviewing and updating the rows, run `node scripts/watch-sources.js --update` to accept the new fingerprints. Each source keeps a history of its fingerprints.
-
-Seven vendor lists are mirrored automatically by `scripts/update-vendor-lists.js` (`npm run update:vendors`), each into its own file in `raw/`: QNAP (the data feed behind its product support status page), Linksys (the table its end-of-life page loads from `productTable.js`), WatchGuard (end-of-life policy page), Meraki (end-of-life products and dates page), SonicWall (five product life cycle tables), Brother (four Software Security Updates Guarantee PDFs) and Epson Australia (security support periods PDF; the PDFs are read with `pdftotext` from poppler-utils). When a mirrored list exists, rows copied by hand from the same page are dropped at build time; a list that cannot be fetched, or comes back much shorter than expected, is left as it was. The weekly Action runs it and opens a pull request when a list changed, so date changes are reviewed before they reach the dataset. Index pages also watched for new documents include Brother's security page, Canon's UK PSTI page, Samsung Australia's statements page, Genexis and Three.
-
-Sources the Action cannot read (pages filled by scripts, sites that block automated requests) are checked by hand in a browser; `data/manual-checks.json` records each check, the rows compared and the result.
-
-The report stays short on purpose. A source that fails to download is reported the week it starts failing, then listed in a folded "still failing" section. Pages whose rows are filled in by a script (they contain none of the dataset models) are listed in a folded "need a browser" section: they cannot be checked automatically.
+Every official source the dataset cites is checked again every week, and the changes are reviewed by hand before the rows are updated. Sources that cannot be read automatically are checked in a browser. Mirrored vendor lists (QNAP, Linksys, WatchGuard, Meraki, SonicWall, Brother, Epson) and the CISA exploited vulnerabilities extract are refreshed the same way.
 
 ## Website
 
@@ -252,7 +240,7 @@ The data is under the Open Database License: reuse is free, including commercial
 
 Found a wrong date or a missing manufacturer document? [Open an issue](https://github.com/Enigmacker/lastpatch/issues) with a link to the official page. Only manufacturer documents are accepted: no forums, retailers or press articles.
 
-To add rows yourself, put them in a file in `raw/` (same fields as above), then run `npm run build:data` and `npm test`. Batches collected from several documents can be imported with `node scripts/import-research.js <batch.json> raw/<name>.json`, which applies the cleanup rules (canonical source addresses, one model per Linksys market SKU, ambiguous dates left out). Rows without a source URL or with a malformed date are rejected.
+To add rows yourself, put them in a file in `raw/` (same fields as above), then run `npm run build:data` and `npm test`. Rows without a source URL or with a malformed date are rejected.
 
 ## Roadmap
 

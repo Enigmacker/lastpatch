@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.10.1 - 2026-11-20
+
+- The scripts that collect and watch the official sources, their state files and the weekly workflow are no longer part of this repository. The dataset, its format, the build script and the command-line tool stay here, and the sources are still checked every week.
+
 ## 1.10.0 - 2026-11-19
 
 - 587 rows from five more sources (11,500 rows, 9,794 models, 95 brands; dataset 0.5.7):

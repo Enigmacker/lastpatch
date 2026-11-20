@@ -1,8 +1,7 @@
 'use strict';
 
 // Installed vs latest firmware: version parsing and comparison, the parsers
-// of the files devices publish on the LAN, and the AVM download server
-// parsers. Fixtures only: nothing here sends a packet.
+// of the files devices publish on the LAN. Fixtures only: nothing here sends a packet.
 
 const test = require('node:test');
 const assert = require('node:assert');
@@ -11,7 +10,6 @@ const path = require('node:path');
 const fw = require('../src/firmware');
 const probe = require('../src/fwprobe');
 const { parseDescription } = require('../src/ssdp');
-const upd = require('../scripts/update-firmware');
 
 const fixture = (name) => fs.readFileSync(path.join(__dirname, 'fixtures', 'firmware', name), 'utf8');
 
@@ -234,70 +232,6 @@ test('scan report carries the firmware block', () => {
   // No firmware read: the block is null, not "up to date".
   const [r2] = scanReport(identify([{ ...host, firmware: null }], devices), 365);
   assert.strictEqual(r2.firmware, null);
-});
-
-// AVM download server
-
-test('AVM folder names', () => {
-  assert.strictEqual(upd.avmFolder('FRITZ!Box 7530 AX'), 'fritzbox-7530-ax');
-  assert.strictEqual(upd.avmFolder('FRITZ!Box 6660 Cable'), 'fritzbox-6660-cable');
-  assert.strictEqual(upd.avmFolder('FRITZ!Box DSL/Fiber 7-90'), 'fritzbox-dsl-fiber-7-90');
-  assert.strictEqual(upd.avmFolder('FRITZ!Repeater 1200'), null);
-  const targets = upd.avmTargets([
-    { vendor: 'AVM', model: 'FRITZ!Box 6820' },
-    { vendor: 'AVM', model: 'FRITZ!Box 7590' },
-    { vendor: 'AVM', model: 'FRITZ!Repeater 600' },
-    { vendor: 'TP-Link', model: 'Archer C7' },
-  ]);
-  assert.deepStrictEqual(targets.map((t) => `${t.folder}|${t.hw}`),
-    ['fritzbox-6820-lte|null', 'fritzbox-6820-lte-v2|V2', 'fritzbox-6820-lte-v3|V3', 'fritzbox-6820-lte-v4|V4', 'fritzbox-7590|null']);
-});
-
-test('AVM directory listing and image file names', () => {
-  const files = upd.parseListing(fixture('avm-listing.html'));
-  assert.deepStrictEqual(files, ['FRITZ.Box_7590-08.51.image', 'info_de.txt', 'info_en.txt', 'update_info_de.txt', 'update_info_en.txt']);
-  assert.strictEqual(upd.imageVersion('FRITZ.Box_7590-08.51.image'), '8.51');
-  assert.strictEqual(upd.imageVersion('FRITZ.Box_Fon_WLAN_7390-06.88.image'), '6.88');
-  assert.strictEqual(upd.imageVersion('FRITZ.Box_7490-07.62.image'), '7.62');
-  assert.strictEqual(upd.imageVersion('info_de.txt'), null);
-});
-
-test('AVM release note headers (German, English, legacy)', () => {
-  assert.deepStrictEqual(upd.parseInfo(fixture('info_de.txt')), { product: 'FRITZ!Box 7590', version: '8.51', release_date: '2026-11-09' });
-  assert.deepStrictEqual(upd.parseInfo(fixture('info_en_stale.txt')), { product: 'FRITZ!Box 7590', version: '8.25', release_date: '2026-03-26' });
-  const legacy = upd.parseInfo('Product: FRITZ!Box 7490\nVersion: 113.07.57\nRelease-Date: 2023-09-12\n');
-  assert.deepStrictEqual(legacy, { product: 'FRITZ!Box 7490', version: '7.57', release_date: '2023-09-12' });
-  assert.strictEqual(upd.parseInfo('nothing here'), null);
-  assert.strictEqual(upd.parseDate('31.02.2026'), null); // not a calendar date
-  assert.strictEqual(upd.parseDate('13/13/2026'), null);
-});
-
-test('AVM: the image decides the version; a stale note gives no date', () => {
-  const de = upd.parseInfo(fixture('info_de.txt'));
-  const en = upd.parseInfo(fixture('info_en_stale.txt'));
-  const ok = upd.pickLatest(['FRITZ.Box_7590-08.51.image'], [en, de]);
-  assert.deepStrictEqual([ok.latest, ok.release_date], ['8.51', '2026-11-09']);
-  const stale = upd.pickLatest(['FRITZ.Box_7590_AX-08.51.image'], [en]);
-  assert.deepStrictEqual([stale.latest, stale.release_date], ['8.51', null]);
-  assert.match(stale.warnings[0], /describe 8\.25, not 8\.51/);
-  assert.strictEqual(upd.pickLatest([], []).latest, null);
-});
-
-test('AVM: full folder read with a fake server, and merge keeps old rows', async () => {
-  const dir = 'https://download.avm.de/fritzbox/fritzbox-7590/deutschland/fritz.os/';
-  const served = { [dir]: fixture('avm-listing.html'), [`${dir}info_de.txt`]: fixture('info_de.txt') };
-  const asked = [];
-  const fetchText = async (url) => { asked.push(url); return served[url] || null; };
-  const { row } = await upd.avmRow({ model: 'FRITZ!Box 7590', folder: 'fritzbox-7590', hw: null }, fetchText, '2026-11-11');
-  assert.deepStrictEqual(row, {
-    vendor: 'AVM', model: 'FRITZ!Box 7590', hw_version: null, region: 'DE', latest_version: '8.51',
-    release_date: '2026-11-09', source_url: dir, retrieved: '2026-11-11',
-  });
-  assert.deepStrictEqual(asked, [dir, `${dir}info_de.txt`]); // stops at the first matching note
-
-  const merged = upd.merge([{ vendor: 'AVM', model: 'FRITZ!Box 7490', hw_version: null, latest_version: '7.62' },
-    { vendor: 'AVM', model: 'FRITZ!Box 7590', hw_version: null, latest_version: '8.25' }], [row]);
-  assert.deepStrictEqual(merged.map((r) => `${r.model} ${r.latest_version}`), ['FRITZ!Box 7490 7.62', 'FRITZ!Box 7590 8.51']);
 });
 
 test('GL.iNet 4.x: the login challenge identifies the firmware without a password', async () => {
