@@ -112,6 +112,11 @@ const VENDOR_ALIASES = {
   fairphone: ['fairphone'],
   oppo: ['oppo'],
   motorola: ['motorola', 'moto', 'razr', 'thinkphone'],
+  verizon: ['verizon', 'fios'],
+  actiontec: ['actiontec'],
+  westell: ['westell', 'versalink'],
+  airties: ['airties', 'air ties'],
+  comtrend: ['comtrend'],
 };
 
 const DAY_MS = 24 * 60 * 60 * 1000;
